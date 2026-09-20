@@ -1,0 +1,38 @@
+family_id: rpoC_RNAP_beta_prime
+display_name: bacterial RNA polymerase subunit beta-prime (RpoC)
+role: partner family for fusion tests; not a substitute rpoB definition
+members:
+- protein_id: NP_418415.1
+  species: Escherichia coli str. K-12 substr. MG1655
+  gene_id: '948489'
+  locus_tag: b3988
+  length_aa: 1407
+  fusion_or_split: canonical
+  source: NCBI RefSeq protein FASTA
+  retrieved: '2026-09-18'
+- protein_id: NP_215182.1
+  species: Mycobacterium tuberculosis H37Rv
+  gene_id: null
+  locus_tag: Rv0668
+  length_aa: 1316
+  fusion_or_split: canonical
+  source: NCBI RefSeq protein FASTA
+  retrieved: '2026-09-18'
+forbidden_protein_ids:
+- NP_252960.1
+- WP_000037869.1
+- NP_463022.1
+- WP_003255495.1
+- YP_499096.2
+- NP_387988.1
+- NP_387989.1
+domain_architecture:
+- PF04997 RNA_pol_Rpb1_1
+- PF00623 RNA_pol_Rpb1_2
+- PF04983 RNA_pol_Rpb1_3
+msa_provenance:
+  method: star MSA seeded on NP_418415.1
+hmm_provenance:
+  method: hmmbuild from members.aln.faa at first use
+phylo_provenance:
+  default: not used unless extra fusion sequence identity is ambiguous

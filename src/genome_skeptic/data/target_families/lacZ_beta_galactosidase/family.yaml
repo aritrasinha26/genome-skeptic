@@ -1,0 +1,38 @@
+family_id: lacZ_beta_galactosidase
+display_name: beta-galactosidase LacZ (accessory, absent from many strains)
+biological_property: accessory_absent_from_many_strains
+partner_families: []
+members:
+- protein_id: NP_414878.1
+  species: Escherichia coli str. K-12 substr. MG1655
+  length_aa: 1024
+  fusion_or_split: canonical
+  source: NCBI protein FASTA
+  retrieved: '2026-09-18'
+- protein_id: WP_000241775.1
+  species: Shigella flexneri
+  length_aa: 385
+  fusion_or_split: canonical
+  source: NCBI protein FASTA
+  retrieved: '2026-09-18'
+- protein_id: WP_004084538.1
+  species: Klebsiella pneumoniae
+  length_aa: 135
+  fusion_or_split: canonical
+  source: NCBI protein FASTA
+  retrieved: '2026-09-18'
+forbidden_protein_ids:
+- NP_252960.1
+- NP_387988.1
+- NP_387989.1
+- NP_463022.1
+- WP_000037869.1
+- WP_003255495.1
+- YP_499096.2
+forbidden_reason: FAST_PILOT hidden genomes are not family members.
+msa_provenance:
+  method: star multiple alignment seeded on the first member (Needleman-Wunsch)
+  aligner: genome_skeptic.families.build_star_msa
+hmm_provenance:
+  method: hmmbuild from members.aln.faa at first use
+  not_invented_by_llm: true

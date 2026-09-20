@@ -1,0 +1,29 @@
+{
+  "python_executable": "C:\\Program Files\\Python313\\python.exe",
+  "python_version": "3.13.1 (tags/v3.13.1:0671451, Dec  3 2024, 19:06:28) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "blast": {
+    "name": "blastn",
+    "path": null,
+    "version": null,
+    "available": false
+  },
+  "hmmer": {
+    "name": "hmmsearch",
+    "path": null,
+    "version": null,
+    "available": false
+  },
+  "mmseqs": {
+    "name": "mmseqs",
+    "path": null,
+    "version": null,
+    "available": false
+  },
+  "diamond": {
+    "name": "diamond",
+    "path": null,
+    "version": null,
+    "available": false
+  }
+}

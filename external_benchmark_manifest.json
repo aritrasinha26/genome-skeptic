@@ -1,0 +1,223 @@
+{
+  "kind": "external_benchmark_manifest",
+  "benchmarks": {
+    "bioagent_bench": {
+      "benchmark": "bioagent_bench",
+      "local_root": null,
+      "source": "catalog_fallback_no_inputs",
+      "n_tasks": 8,
+      "n_supported": 2,
+      "n_partial": 3,
+      "n_unsupported": 3,
+      "tasks": [
+        {
+          "task": "comparative_genomics",
+          "compatibility": "supported",
+          "reason": "bacterial/genome-analysis gene or homology task",
+          "scored_as_genome_skeptic": true,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Comparative genomics of bacterial isolates",
+          "inputs_present": false
+        },
+        {
+          "task": "rna_seq",
+          "compatibility": "unsupported",
+          "reason": "outside Genome Skeptic bacterial isolate / gene-orthologue scope",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Bulk RNA-seq quantification and DE",
+          "inputs_present": false
+        },
+        {
+          "task": "single_cell",
+          "compatibility": "unsupported",
+          "reason": "outside Genome Skeptic bacterial isolate / gene-orthologue scope",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Single-cell RNA-seq clustering",
+          "inputs_present": false
+        },
+        {
+          "task": "giab_variant_calling",
+          "compatibility": "partially_supported",
+          "reason": "genomics-adjacent but not Genome Skeptic's gene-orthologue claim engine",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "GIAB NA12878 germline variant calling",
+          "inputs_present": false
+        },
+        {
+          "task": "metagenomics",
+          "compatibility": "partially_supported",
+          "reason": "genomics-adjacent but not Genome Skeptic's gene-orthologue claim engine",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Metagenomic taxonomic profiling",
+          "inputs_present": false
+        },
+        {
+          "task": "viral_metagenomics",
+          "compatibility": "partially_supported",
+          "reason": "genomics-adjacent but not Genome Skeptic's gene-orthologue claim engine",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Viral metagenomics",
+          "inputs_present": false
+        },
+        {
+          "task": "transcript_quantification",
+          "compatibility": "unsupported",
+          "reason": "outside Genome Skeptic bacterial isolate / gene-orthologue scope",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Transcript quantification",
+          "inputs_present": false
+        },
+        {
+          "task": "experimental_evolution",
+          "compatibility": "supported",
+          "reason": "bacterial/genome-analysis gene or homology task",
+          "scored_as_genome_skeptic": true,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Experimental evolution genome analysis",
+          "inputs_present": false
+        }
+      ],
+      "note": "Unsupported and missing-input tasks are not scored as Genome Skeptic performance. Prompts were not rewritten."
+    },
+    "promptbio_bench": {
+      "benchmark": "promptbio_bench",
+      "local_root": null,
+      "source": "catalog_fallback_no_inputs",
+      "n_tasks": 6,
+      "n_supported": 2,
+      "n_partial": 1,
+      "n_unsupported": 3,
+      "tasks": [
+        {
+          "task": "trackA_blast_homology",
+          "compatibility": "supported",
+          "reason": "bacterial/genome-analysis gene or homology task",
+          "scored_as_genome_skeptic": true,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "BLAST homology search on FASTA",
+          "inputs_present": false
+        },
+        {
+          "task": "trackA_amr_gene",
+          "compatibility": "supported",
+          "reason": "bacterial/genome-analysis gene or homology task",
+          "scored_as_genome_skeptic": true,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Detect AMR genes in a bacterial genome",
+          "inputs_present": false
+        },
+        {
+          "task": "trackA_deseq2",
+          "compatibility": "unsupported",
+          "reason": "outside Genome Skeptic bacterial isolate / gene-orthologue scope",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "RNA-seq DESeq2",
+          "inputs_present": false
+        },
+        {
+          "task": "trackA_seurat",
+          "compatibility": "unsupported",
+          "reason": "outside Genome Skeptic bacterial isolate / gene-orthologue scope",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Seurat single-cell",
+          "inputs_present": false
+        },
+        {
+          "task": "trackA_gatk",
+          "compatibility": "partially_supported",
+          "reason": "genomics-adjacent but not Genome Skeptic's gene-orthologue claim engine",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "GATK variant calling",
+          "inputs_present": false
+        },
+        {
+          "task": "trackB_ml",
+          "compatibility": "unsupported",
+          "reason": "task domain could not be mapped onto Genome Skeptic without rewriting the prompt",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Generic data science ML",
+          "inputs_present": false
+        }
+      ],
+      "note": "Unsupported and missing-input tasks are not scored as Genome Skeptic performance. Prompts were not rewritten."
+    },
+    "bixbench": {
+      "benchmark": "bixbench",
+      "local_root": null,
+      "source": "catalog_fallback_no_inputs",
+      "n_tasks": 4,
+      "n_supported": 1,
+      "n_partial": 1,
+      "n_unsupported": 2,
+      "tasks": [
+        {
+          "task": "bacterial_comparative",
+          "compatibility": "supported",
+          "reason": "bacterial/genome-analysis gene or homology task",
+          "scored_as_genome_skeptic": true,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Compare gene content across bacterial datasets",
+          "inputs_present": false
+        },
+        {
+          "task": "rnaseq_notebook",
+          "compatibility": "unsupported",
+          "reason": "outside Genome Skeptic bacterial isolate / gene-orthologue scope",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Analyze RNA-seq counts",
+          "inputs_present": false
+        },
+        {
+          "task": "scrna_notebook",
+          "compatibility": "unsupported",
+          "reason": "outside Genome Skeptic bacterial isolate / gene-orthologue scope",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Single-cell notebook analysis",
+          "inputs_present": false
+        },
+        {
+          "task": "phylogeny_notebook",
+          "compatibility": "partially_supported",
+          "reason": "genomics-adjacent but not Genome Skeptic's gene-orthologue claim engine",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": null,
+          "original_prompt": "Build a phylogenetic tree",
+          "inputs_present": false
+        }
+      ],
+      "note": "Unsupported and missing-input tasks are not scored as Genome Skeptic performance. Prompts were not rewritten."
+    }
+  },
+  "scoring_rule": "only_supported_tasks_with_local_inputs",
+  "truth_labels_modified": false
+}

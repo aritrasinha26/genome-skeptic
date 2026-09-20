@@ -1,0 +1,540 @@
+{
+  "kind": "cohort_C_pilot5_manifest",
+  "created_utc": "2026-09-19T10:37:21.809960+00:00",
+  "preliminary_external_pilot": true,
+  "full_40_case_execution_stopped": true,
+  "selection_rule": "exactly the first 5 genome-target cases in the already-frozen Cohort C execution order",
+  "execution_order_definition": "for genome in cohort_C_input_manifest.json['genomes'] (same accession order as cohort_C_manifest.json['assemblies']): for target in cohort_C_manifest.json['targets_locked']: emit (genome, target). This is the main loop of scripts/run_cohort_c_agentic.py.",
+  "selection_used_predictions": false,
+  "selection_used_external_labels": false,
+  "selection_used_annotations": false,
+  "selection_used_gene_content": false,
+  "external_labels_opened": false,
+  "scores_computed": false,
+  "adjudication_performed": false,
+  "agent_modified": false,
+  "cohort_C_manifest_modified": false,
+  "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V1",
+  "agentic_v1_freeze_hash": "9ca874bb38efa073b2e0801f6f492e6bb1fdabd27ba2a225c70e559ba5bf8c54",
+  "agentic_v1_freeze_summary_sha256": "e5cc95523e18c9472211bb89235ccb624bc6cbbbad0d0ba5f56fddb1e8f9b38e",
+  "genome_skeptic_v5_freeze_hash": "0e993125d2d620e54bbb42b3e420b4b9fda951c28b358ff8a2aed2d5b55a8f1b",
+  "cohort_C_manifest_sha256": "3e4aa633a0e7a6606d5b3d6d204bd8ae29f74f81c41e0c1b3d52c62cfdc83934",
+  "cohort_C_input_manifest_sha256": "732eb450cba01679b6eb228e1177a57da653fc70c7310c584d767bcbcefae98f",
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "thinking": false,
+  "temperature": 0,
+  "structured_output": "Ollama native schema",
+  "maximum_repairs": 1,
+  "final_scientific_authority": "deterministic validator",
+  "required_agentic_path": [
+    "deterministic evidence",
+    "Qwen planner",
+    "registered action",
+    "new deterministic evidence",
+    "Qwen critic",
+    "deterministic validator"
+  ],
+  "silent_deterministic_fallback_forbidden": true,
+  "conditions": [
+    "GENOME_SKEPTIC_AGENTIC_V1",
+    "DETERMINISTIC_GENOME_SKEPTIC_V5",
+    "FROZEN_CONVENTIONAL_BASELINE"
+  ],
+  "n_frozen_genome_target_cases": 40,
+  "n_pilot_genome_target_cases": 5,
+  "n_predictions": 15,
+  "frozen_targets_locked": [
+    "rpoB_RNAP_beta",
+    "tuf_EF_Tu",
+    "lacZ_beta_galactosidase",
+    "tetA_tetracycline_efflux"
+  ],
+  "frozen_genome_order": [
+    "GCF_055394735.1",
+    "GCF_055378285.1",
+    "GCF_055181375.1",
+    "GCF_965234685.1",
+    "GCF_055379825.1",
+    "GCF_049478495.1",
+    "GCF_055305445.1",
+    "GCF_047785965.1",
+    "GCF_046602855.1",
+    "GCF_057063505.1"
+  ],
+  "proof_positions_1_to_5": {
+    "method": "prefix of frozen cartesian execution order",
+    "frozen_execution_positions": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "next_excluded_position": 6,
+    "next_excluded_case": {
+      "frozen_execution_position": 6,
+      "assembly_accession": "GCF_055378285.1",
+      "target": "tuf_EF_Tu"
+    }
+  },
+  "pilot_cases": [
+    {
+      "frozen_execution_position": 1,
+      "assembly_accession": "GCF_055394735.1",
+      "organism": "Desulfatiglans parachlorophenolica",
+      "genus": "Desulfatiglans",
+      "phylum": "Thermodesulfobacteriota",
+      "assembly_level": "Complete Genome",
+      "target": "rpoB_RNAP_beta",
+      "agentic_case_locked_path": "external_validation_agentic/cohort_C_runs/GCF_055394735.1/genome_skeptic_agentic/rpoB_RNAP_beta/case_locked.json",
+      "immutable_agentic_result_present": true,
+      "execution_plan": "reuse_immutable_case_locked_json"
+    },
+    {
+      "frozen_execution_position": 2,
+      "assembly_accession": "GCF_055394735.1",
+      "organism": "Desulfatiglans parachlorophenolica",
+      "genus": "Desulfatiglans",
+      "phylum": "Thermodesulfobacteriota",
+      "assembly_level": "Complete Genome",
+      "target": "tuf_EF_Tu",
+      "agentic_case_locked_path": "external_validation_agentic/cohort_C_runs/GCF_055394735.1/genome_skeptic_agentic/tuf_EF_Tu/case_locked.json",
+      "immutable_agentic_result_present": false,
+      "execution_plan": "incomplete_may_rerun"
+    },
+    {
+      "frozen_execution_position": 3,
+      "assembly_accession": "GCF_055394735.1",
+      "organism": "Desulfatiglans parachlorophenolica",
+      "genus": "Desulfatiglans",
+      "phylum": "Thermodesulfobacteriota",
+      "assembly_level": "Complete Genome",
+      "target": "lacZ_beta_galactosidase",
+      "agentic_case_locked_path": "external_validation_agentic/cohort_C_runs/GCF_055394735.1/genome_skeptic_agentic/lacZ_beta_galactosidase/case_locked.json",
+      "immutable_agentic_result_present": false,
+      "execution_plan": "incomplete_may_rerun"
+    },
+    {
+      "frozen_execution_position": 4,
+      "assembly_accession": "GCF_055394735.1",
+      "organism": "Desulfatiglans parachlorophenolica",
+      "genus": "Desulfatiglans",
+      "phylum": "Thermodesulfobacteriota",
+      "assembly_level": "Complete Genome",
+      "target": "tetA_tetracycline_efflux",
+      "agentic_case_locked_path": "external_validation_agentic/cohort_C_runs/GCF_055394735.1/genome_skeptic_agentic/tetA_tetracycline_efflux/case_locked.json",
+      "immutable_agentic_result_present": false,
+      "execution_plan": "incomplete_may_rerun"
+    },
+    {
+      "frozen_execution_position": 5,
+      "assembly_accession": "GCF_055378285.1",
+      "organism": "Desulfurispirillum alkaliphilum",
+      "genus": "Desulfurispirillum",
+      "phylum": "Chrysiogenota",
+      "assembly_level": "Complete Genome",
+      "target": "rpoB_RNAP_beta",
+      "agentic_case_locked_path": "external_validation_agentic/cohort_C_runs/GCF_055378285.1/genome_skeptic_agentic/rpoB_RNAP_beta/case_locked.json",
+      "immutable_agentic_result_present": false,
+      "execution_plan": "incomplete_may_rerun"
+    }
+  ],
+  "frozen_full_execution_order_genome_target_cases": [
+    {
+      "frozen_execution_position": 1,
+      "assembly_accession": "GCF_055394735.1",
+      "organism": "Desulfatiglans parachlorophenolica",
+      "genus": "Desulfatiglans",
+      "phylum": "Thermodesulfobacteriota",
+      "assembly_level": "Complete Genome",
+      "target": "rpoB_RNAP_beta"
+    },
+    {
+      "frozen_execution_position": 2,
+      "assembly_accession": "GCF_055394735.1",
+      "organism": "Desulfatiglans parachlorophenolica",
+      "genus": "Desulfatiglans",
+      "phylum": "Thermodesulfobacteriota",
+      "assembly_level": "Complete Genome",
+      "target": "tuf_EF_Tu"
+    },
+    {
+      "frozen_execution_position": 3,
+      "assembly_accession": "GCF_055394735.1",
+      "organism": "Desulfatiglans parachlorophenolica",
+      "genus": "Desulfatiglans",
+      "phylum": "Thermodesulfobacteriota",
+      "assembly_level": "Complete Genome",
+      "target": "lacZ_beta_galactosidase"
+    },
+    {
+      "frozen_execution_position": 4,
+      "assembly_accession": "GCF_055394735.1",
+      "organism": "Desulfatiglans parachlorophenolica",
+      "genus": "Desulfatiglans",
+      "phylum": "Thermodesulfobacteriota",
+      "assembly_level": "Complete Genome",
+      "target": "tetA_tetracycline_efflux"
+    },
+    {
+      "frozen_execution_position": 5,
+      "assembly_accession": "GCF_055378285.1",
+      "organism": "Desulfurispirillum alkaliphilum",
+      "genus": "Desulfurispirillum",
+      "phylum": "Chrysiogenota",
+      "assembly_level": "Complete Genome",
+      "target": "rpoB_RNAP_beta"
+    },
+    {
+      "frozen_execution_position": 6,
+      "assembly_accession": "GCF_055378285.1",
+      "organism": "Desulfurispirillum alkaliphilum",
+      "genus": "Desulfurispirillum",
+      "phylum": "Chrysiogenota",
+      "assembly_level": "Complete Genome",
+      "target": "tuf_EF_Tu"
+    },
+    {
+      "frozen_execution_position": 7,
+      "assembly_accession": "GCF_055378285.1",
+      "organism": "Desulfurispirillum alkaliphilum",
+      "genus": "Desulfurispirillum",
+      "phylum": "Chrysiogenota",
+      "assembly_level": "Complete Genome",
+      "target": "lacZ_beta_galactosidase"
+    },
+    {
+      "frozen_execution_position": 8,
+      "assembly_accession": "GCF_055378285.1",
+      "organism": "Desulfurispirillum alkaliphilum",
+      "genus": "Desulfurispirillum",
+      "phylum": "Chrysiogenota",
+      "assembly_level": "Complete Genome",
+      "target": "tetA_tetracycline_efflux"
+    },
+    {
+      "frozen_execution_position": 9,
+      "assembly_accession": "GCF_055181375.1",
+      "organism": "Dictyoglomus sp. DH",
+      "genus": "Dictyoglomus",
+      "phylum": "Dictyoglomota",
+      "assembly_level": "Complete Genome",
+      "target": "rpoB_RNAP_beta"
+    },
+    {
+      "frozen_execution_position": 10,
+      "assembly_accession": "GCF_055181375.1",
+      "organism": "Dictyoglomus sp. DH",
+      "genus": "Dictyoglomus",
+      "phylum": "Dictyoglomota",
+      "assembly_level": "Complete Genome",
+      "target": "tuf_EF_Tu"
+    },
+    {
+      "frozen_execution_position": 11,
+      "assembly_accession": "GCF_055181375.1",
+      "organism": "Dictyoglomus sp. DH",
+      "genus": "Dictyoglomus",
+      "phylum": "Dictyoglomota",
+      "assembly_level": "Complete Genome",
+      "target": "lacZ_beta_galactosidase"
+    },
+    {
+      "frozen_execution_position": 12,
+      "assembly_accession": "GCF_055181375.1",
+      "organism": "Dictyoglomus sp. DH",
+      "genus": "Dictyoglomus",
+      "phylum": "Dictyoglomota",
+      "assembly_level": "Complete Genome",
+      "target": "tetA_tetracycline_efflux"
+    },
+    {
+      "frozen_execution_position": 13,
+      "assembly_accession": "GCF_965234685.1",
+      "organism": "Fimbriicoccus planktonicus (SeqCode)",
+      "genus": "Fimbriicoccus (SeqCode)",
+      "phylum": "Armatimonadota",
+      "assembly_level": "Complete Genome",
+      "target": "rpoB_RNAP_beta"
+    },
+    {
+      "frozen_execution_position": 14,
+      "assembly_accession": "GCF_965234685.1",
+      "organism": "Fimbriicoccus planktonicus (SeqCode)",
+      "genus": "Fimbriicoccus (SeqCode)",
+      "phylum": "Armatimonadota",
+      "assembly_level": "Complete Genome",
+      "target": "tuf_EF_Tu"
+    },
+    {
+      "frozen_execution_position": 15,
+      "assembly_accession": "GCF_965234685.1",
+      "organism": "Fimbriicoccus planktonicus (SeqCode)",
+      "genus": "Fimbriicoccus (SeqCode)",
+      "phylum": "Armatimonadota",
+      "assembly_level": "Complete Genome",
+      "target": "lacZ_beta_galactosidase"
+    },
+    {
+      "frozen_execution_position": 16,
+      "assembly_accession": "GCF_965234685.1",
+      "organism": "Fimbriicoccus planktonicus (SeqCode)",
+      "genus": "Fimbriicoccus (SeqCode)",
+      "phylum": "Armatimonadota",
+      "assembly_level": "Complete Genome",
+      "target": "tetA_tetracycline_efflux"
+    },
+    {
+      "frozen_execution_position": 17,
+      "assembly_accession": "GCF_055379825.1",
+      "organism": "Longimonas haloalkaliphila",
+      "genus": "Longimonas",
+      "phylum": "Rhodothermota",
+      "assembly_level": "Complete Genome",
+      "target": "rpoB_RNAP_beta"
+    },
+    {
+      "frozen_execution_position": 18,
+      "assembly_accession": "GCF_055379825.1",
+      "organism": "Longimonas haloalkaliphila",
+      "genus": "Longimonas",
+      "phylum": "Rhodothermota",
+      "assembly_level": "Complete Genome",
+      "target": "tuf_EF_Tu"
+    },
+    {
+      "frozen_execution_position": 19,
+      "assembly_accession": "GCF_055379825.1",
+      "organism": "Longimonas haloalkaliphila",
+      "genus": "Longimonas",
+      "phylum": "Rhodothermota",
+      "assembly_level": "Complete Genome",
+      "target": "lacZ_beta_galactosidase"
+    },
+    {
+      "frozen_execution_position": 20,
+      "assembly_accession": "GCF_055379825.1",
+      "organism": "Longimonas haloalkaliphila",
+      "genus": "Longimonas",
+      "phylum": "Rhodothermota",
+      "assembly_level": "Complete Genome",
+      "target": "tetA_tetracycline_efflux"
+    },
+    {
+      "frozen_execution_position": 21,
+      "assembly_accession": "GCF_049478495.1",
+      "organism": "Mycoplasma sp. P36-A1",
+      "genus": "Mycoplasma",
+      "phylum": "Mycoplasmatota",
+      "assembly_level": "Complete Genome",
+      "target": "rpoB_RNAP_beta"
+    },
+    {
+      "frozen_execution_position": 22,
+      "assembly_accession": "GCF_049478495.1",
+      "organism": "Mycoplasma sp. P36-A1",
+      "genus": "Mycoplasma",
+      "phylum": "Mycoplasmatota",
+      "assembly_level": "Complete Genome",
+      "target": "tuf_EF_Tu"
+    },
+    {
+      "frozen_execution_position": 23,
+      "assembly_accession": "GCF_049478495.1",
+      "organism": "Mycoplasma sp. P36-A1",
+      "genus": "Mycoplasma",
+      "phylum": "Mycoplasmatota",
+      "assembly_level": "Complete Genome",
+      "target": "lacZ_beta_galactosidase"
+    },
+    {
+      "frozen_execution_position": 24,
+      "assembly_accession": "GCF_049478495.1",
+      "organism": "Mycoplasma sp. P36-A1",
+      "genus": "Mycoplasma",
+      "phylum": "Mycoplasmatota",
+      "assembly_level": "Complete Genome",
+      "target": "tetA_tetracycline_efflux"
+    },
+    {
+      "frozen_execution_position": 25,
+      "assembly_accession": "GCF_055305445.1",
+      "organism": "Pelodictyon clathratiforme",
+      "genus": "Pelodictyon",
+      "phylum": "Chlorobiota",
+      "assembly_level": "Complete Genome",
+      "target": "rpoB_RNAP_beta"
+    },
+    {
+      "frozen_execution_position": 26,
+      "assembly_accession": "GCF_055305445.1",
+      "organism": "Pelodictyon clathratiforme",
+      "genus": "Pelodictyon",
+      "phylum": "Chlorobiota",
+      "assembly_level": "Complete Genome",
+      "target": "tuf_EF_Tu"
+    },
+    {
+      "frozen_execution_position": 27,
+      "assembly_accession": "GCF_055305445.1",
+      "organism": "Pelodictyon clathratiforme",
+      "genus": "Pelodictyon",
+      "phylum": "Chlorobiota",
+      "assembly_level": "Complete Genome",
+      "target": "lacZ_beta_galactosidase"
+    },
+    {
+      "frozen_execution_position": 28,
+      "assembly_accession": "GCF_055305445.1",
+      "organism": "Pelodictyon clathratiforme",
+      "genus": "Pelodictyon",
+      "phylum": "Chlorobiota",
+      "assembly_level": "Complete Genome",
+      "target": "tetA_tetracycline_efflux"
+    },
+    {
+      "frozen_execution_position": 29,
+      "assembly_accession": "GCF_047785965.1",
+      "organism": "Caldisericum insulae",
+      "genus": "Caldisericum",
+      "phylum": "Caldisericota",
+      "assembly_level": "Contig",
+      "target": "rpoB_RNAP_beta"
+    },
+    {
+      "frozen_execution_position": 30,
+      "assembly_accession": "GCF_047785965.1",
+      "organism": "Caldisericum insulae",
+      "genus": "Caldisericum",
+      "phylum": "Caldisericota",
+      "assembly_level": "Contig",
+      "target": "tuf_EF_Tu"
+    },
+    {
+      "frozen_execution_position": 31,
+      "assembly_accession": "GCF_047785965.1",
+      "organism": "Caldisericum insulae",
+      "genus": "Caldisericum",
+      "phylum": "Caldisericota",
+      "assembly_level": "Contig",
+      "target": "lacZ_beta_galactosidase"
+    },
+    {
+      "frozen_execution_position": 32,
+      "assembly_accession": "GCF_047785965.1",
+      "organism": "Caldisericum insulae",
+      "genus": "Caldisericum",
+      "phylum": "Caldisericota",
+      "assembly_level": "Contig",
+      "target": "tetA_tetracycline_efflux"
+    },
+    {
+      "frozen_execution_position": 33,
+      "assembly_accession": "GCF_046602855.1",
+      "organism": "Gracilimonas qinghaiensis",
+      "genus": "Gracilimonas",
+      "phylum": "Balneolota",
+      "assembly_level": "Contig",
+      "target": "rpoB_RNAP_beta"
+    },
+    {
+      "frozen_execution_position": 34,
+      "assembly_accession": "GCF_046602855.1",
+      "organism": "Gracilimonas qinghaiensis",
+      "genus": "Gracilimonas",
+      "phylum": "Balneolota",
+      "assembly_level": "Contig",
+      "target": "tuf_EF_Tu"
+    },
+    {
+      "frozen_execution_position": 35,
+      "assembly_accession": "GCF_046602855.1",
+      "organism": "Gracilimonas qinghaiensis",
+      "genus": "Gracilimonas",
+      "phylum": "Balneolota",
+      "assembly_level": "Contig",
+      "target": "lacZ_beta_galactosidase"
+    },
+    {
+      "frozen_execution_position": 36,
+      "assembly_accession": "GCF_046602855.1",
+      "organism": "Gracilimonas qinghaiensis",
+      "genus": "Gracilimonas",
+      "phylum": "Balneolota",
+      "assembly_level": "Contig",
+      "target": "tetA_tetracycline_efflux"
+    },
+    {
+      "frozen_execution_position": 37,
+      "assembly_accession": "GCF_057063505.1",
+      "organism": "Pyramidobacter sp. N5",
+      "genus": "Pyramidobacter",
+      "phylum": "Synergistota",
+      "assembly_level": "Contig",
+      "target": "rpoB_RNAP_beta"
+    },
+    {
+      "frozen_execution_position": 38,
+      "assembly_accession": "GCF_057063505.1",
+      "organism": "Pyramidobacter sp. N5",
+      "genus": "Pyramidobacter",
+      "phylum": "Synergistota",
+      "assembly_level": "Contig",
+      "target": "tuf_EF_Tu"
+    },
+    {
+      "frozen_execution_position": 39,
+      "assembly_accession": "GCF_057063505.1",
+      "organism": "Pyramidobacter sp. N5",
+      "genus": "Pyramidobacter",
+      "phylum": "Synergistota",
+      "assembly_level": "Contig",
+      "target": "lacZ_beta_galactosidase"
+    },
+    {
+      "frozen_execution_position": 40,
+      "assembly_accession": "GCF_057063505.1",
+      "organism": "Pyramidobacter sp. N5",
+      "genus": "Pyramidobacter",
+      "phylum": "Synergistota",
+      "assembly_level": "Contig",
+      "target": "tetA_tetracycline_efflux"
+    }
+  ],
+  "reused_immutable_agentic_results": [
+    {
+      "frozen_execution_position": 1,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "rpoB_RNAP_beta"
+    }
+  ],
+  "incomplete_cases_to_rerun": [
+    {
+      "frozen_execution_position": 2,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "tuf_EF_Tu",
+      "reason": "incomplete_may_rerun"
+    },
+    {
+      "frozen_execution_position": 3,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "lacZ_beta_galactosidase",
+      "reason": "incomplete_may_rerun"
+    },
+    {
+      "frozen_execution_position": 4,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "tetA_tetracycline_efflux",
+      "reason": "incomplete_may_rerun"
+    },
+    {
+      "frozen_execution_position": 5,
+      "assembly_accession": "GCF_055378285.1",
+      "target": "rpoB_RNAP_beta",
+      "reason": "incomplete_may_rerun"
+    }
+  ],
+  "lock_after_completion": "external_validation_agentic/cohort_C_pilot5_predictions_locked.jsonl",
+  "stop_before_label_access": true
+}

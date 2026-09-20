@@ -1,0 +1,8 @@
+{
+  "path": "manuscript_benchmark/M60_EXCLUSION_MANIFEST.json",
+  "sha256": "7fe225d0bc779e8b887a3f7980141272f85f3cc8c58c309f99118ff91fe4ef55",
+  "hashed_utc": "2026-09-20T01:52:36.200951+00:00",
+  "n_excluded": 183,
+  "m60_cases_selected": false,
+  "d20_touched": false
+}

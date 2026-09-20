@@ -1,0 +1,803 @@
+{
+  "freeze_id": "GENOME_SKEPTIC_AGENTIC_V2_D20",
+  "kind": "agentic_implementation_freeze",
+  "separate_from": [
+    "frozen deterministic V5",
+    "GENOME_SKEPTIC_AGENTIC_V1"
+  ],
+  "created_utc": "2026-09-20T11:14:11.988331+00:00",
+  "system": "genome_skeptic_agentic_v2",
+  "live_loop": "src/genome_skeptic/agents/assembly_loop_v2.py",
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "model_blob_sha256": "3e4cb14174460404e7a233e531675303b2fbf7749c02f91864fe311ab6344e4f",
+  "quantization": "Q4_K_M",
+  "think": false,
+  "thinking": false,
+  "temperature": 0.0,
+  "context_length": 262144,
+  "context_length_source": "Ollama model_info qwen3.context_length",
+  "request_sets_num_ctx": false,
+  "modelfile_parameter_num_ctx": null,
+  "planner_max_output_tokens": 320,
+  "critic_max_output_tokens": 320,
+  "repair_limit": 1,
+  "keep_alive": "30m",
+  "structured_output": "Ollama native schema",
+  "repair_policy": "maximum one repair per planner call and maximum one repair per critic call; fail closed",
+  "final_authority": "deterministic validator",
+  "runtime": {
+    "model": "qwen3:4b",
+    "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "provider": "openai_compatible",
+    "think": false,
+    "temperature": 0.0,
+    "context_length": 262144,
+    "planner_max_output_tokens": 320,
+    "critic_max_output_tokens": 320,
+    "default_max_output_tokens": 256,
+    "repair_limit": 1,
+    "keep_alive": "30m",
+    "timeout_seconds": 600,
+    "config": "config/qwen_agentic_dev.yaml"
+  },
+  "environment": {
+    "python_executable": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/python",
+    "python_version": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "implementation": "CPython",
+    "genome_skeptic_file": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/src/genome_skeptic/__init__.py"
+  },
+  "readiness": {
+    "full_regression_status": "67/67 PASS",
+    "ask_human_to_ABSTAIN_UNRESOLVED_mapping_regression": "PASS",
+    "planner_valid_one_call_json": true,
+    "planner_warm_time_seconds": 88.2,
+    "planner_repairs": 0,
+    "planner_truncation": false,
+    "critic_valid_one_call_json": true,
+    "critic_repairs": 0,
+    "think": false,
+    "unavailable_actions_filtered": true,
+    "redundant_inert_actions_filtered": true,
+    "deterministic_state_recomputation_enabled": true,
+    "tuf_multiplicity_consistency_invariant_enabled": true,
+    "gate0_live_corroboration": {
+      "report": "dev_work/agentic_v2_d20_gate0/GATE0_REPORT.json",
+      "pass": true,
+      "planner_seconds": 91.664,
+      "planner_repairs": 0,
+      "planner_truncation": false,
+      "critic_seconds": 60.39,
+      "critic_repairs": 0
+    }
+  },
+  "deterministic_v5_identity": {
+    "v5_freeze_manifest": "v5_freeze_manifest.json",
+    "v5_freeze_manifest_sha256": "5c36a0dbd0e1ab17ef7c0c598fd209bcbb77edf596286bf05ff165a08d04e7a3",
+    "v5_aggregate_sha256": "0e993125d2d620e54bbb42b3e420b4b9fda951c28b358ff8a2aed2d5b55a8f1b",
+    "v5_n_files": 149
+  },
+  "external_scoring_contracts": {
+    "v5_external_scoring_contract": {
+      "path": "external_validation/v5_external_scoring_contract.json",
+      "sha256": "d224b8b829b3a46c03e42aae324062b7ff72c75d2b6906a0cab45618818f9cb9",
+      "sidecar_sha256": "d224b8b829b3a46c03e42aae324062b7ff72c75d2b6906a0cab45618818f9cb9",
+      "sidecar_match": true
+    },
+    "v5_external_input_policy": {
+      "path": "external_validation/v5_external_input_policy.json",
+      "sha256": "6d99f26208175a5f7a77017d3d99461ed4c75d333930622059ed01c9b18d0978",
+      "sidecar_sha256": "6d99f26208175a5f7a77017d3d99461ed4c75d333930622059ed01c9b18d0978",
+      "sidecar_match": true
+    },
+    "v5_frozen_target_inventory": {
+      "path": "external_validation/v5_frozen_target_inventory.json",
+      "sha256": "b82969ad6e4e3e5a134ea831a0370d32b19612f9440b71d6ad8fbd03a3467e85"
+    },
+    "v5_external_reference_overlap": {
+      "path": "external_validation/v5_external_reference_overlap.json",
+      "sha256": "1ce6e871e1bf20441e54c76bc6bbe90f7066201574ffcaaef6cde8095fbcbc59"
+    }
+  },
+  "provenance_exclusion_contracts": {
+    "v5_reference_provenance_exclusions": {
+      "path": "external_validation/v5_reference_provenance_exclusions.json",
+      "sha256": "205d468d98090bca51099785407d8df004cb97f04603bd93f5521e63484ddf80",
+      "sidecar_sha256": "205d468d98090bca51099785407d8df004cb97f04603bd93f5521e63484ddf80",
+      "sidecar_match": true
+    }
+  },
+  "parent_agentic_v1": {
+    "freeze_id": "GENOME_SKEPTIC_AGENTIC_V1",
+    "manifest": "agentic_freeze/GENOME_SKEPTIC_AGENTIC_V1_manifest.json",
+    "manifest_sha256": "9ca874bb38efa073b2e0801f6f492e6bb1fdabd27ba2a225c70e559ba5bf8c54"
+  },
+  "out_of_scope": [
+    "Cohort D20 candidate discovery not started",
+    "external genomes not run",
+    "external truth not accessed",
+    "scientific/agentic source not modified by this freeze"
+  ],
+  "d20_candidate_discovery_started": false,
+  "external_truth_accessed": false,
+  "component_roles": {
+    "assembly_loop.py": [
+      {
+        "path": "src/genome_skeptic/agents/assembly_loop.py",
+        "sha256": "1d16daf228cb3d3cfccd61656205a4054b1480bb7cd38a4f15088c8ed781f114"
+      }
+    ],
+    "reasoner_planner_implementation": [
+      {
+        "path": "src/genome_skeptic/agents/reasoner.py",
+        "sha256": "263c06a186c8fa40b5ecd8ca0484c9e85742136743a6ecf30feaac33a8909301"
+      },
+      {
+        "path": "src/genome_skeptic/agents/planner_views.py",
+        "sha256": "88630234bc8fea972010729575ea7975f1df4d950a22a0a2988f0a84450c3e45"
+      },
+      {
+        "path": "src/genome_skeptic/agents/assembly_loop_v2.py",
+        "sha256": "7c5199d361ebadfb6e78c78638b47f63c59fdcdd561ca745721d2e3ac1146b02"
+      }
+    ],
+    "critic_implementation": [
+      {
+        "path": "src/genome_skeptic/agents/critic.py",
+        "sha256": "2b972b5415499126b6cfa989c6b4a4bba655053f02eef5d4ca763735f5f2725b"
+      },
+      {
+        "path": "src/genome_skeptic/agents/assembly_loop_v2.py",
+        "sha256": "7c5199d361ebadfb6e78c78638b47f63c59fdcdd561ca745721d2e3ac1146b02"
+      }
+    ],
+    "planner_schema": [
+      {
+        "path": "src/genome_skeptic/models.py",
+        "sha256": "33597ad317d02134f0470391b937b173f3f7899c3f8950f2e72f44d6567c9a2a"
+      }
+    ],
+    "critic_schema": [
+      {
+        "path": "src/genome_skeptic/models.py",
+        "sha256": "33597ad317d02134f0470391b937b173f3f7899c3f8950f2e72f44d6567c9a2a"
+      }
+    ],
+    "action_registry": [
+      {
+        "path": "src/genome_skeptic/agents/action_catalog.py",
+        "sha256": "f1f76ed5bd9dce28fd04f7be0eae263ea4d391d0754193d77923ffebaa06e26a"
+      }
+    ],
+    "action_prerequisite_filtering": [
+      {
+        "path": "src/genome_skeptic/agents/action_catalog.py",
+        "sha256": "f1f76ed5bd9dce28fd04f7be0eae263ea4d391d0754193d77923ffebaa06e26a"
+      }
+    ],
+    "redundant_inert_action_filtering": [
+      {
+        "path": "src/genome_skeptic/agents/action_catalog.py",
+        "sha256": "f1f76ed5bd9dce28fd04f7be0eae263ea4d391d0754193d77923ffebaa06e26a"
+      }
+    ],
+    "ActionResult_schema": [
+      {
+        "path": "src/genome_skeptic/agents/action_contract.py",
+        "sha256": "be2e108bf49d4c57f05fe456d69c77d2e71773ffafe786ccfc73bab051d454c8"
+      }
+    ],
+    "apply_action_result": [
+      {
+        "path": "src/genome_skeptic/agents/action_contract.py",
+        "sha256": "be2e108bf49d4c57f05fe456d69c77d2e71773ffafe786ccfc73bab051d454c8"
+      }
+    ],
+    "deterministic_derived_state_recomputation": [
+      {
+        "path": "src/genome_skeptic/agents/derived_state.py",
+        "sha256": "e4ecc5636bfe7520862c7f44b5df431c6da4c7c98583f22eaded7fd7c6b28759"
+      },
+      {
+        "path": "src/genome_skeptic/agents/action_contract.py",
+        "sha256": "be2e108bf49d4c57f05fe456d69c77d2e71773ffafe786ccfc73bab051d454c8"
+      }
+    ],
+    "state_consistency_assertions": [
+      {
+        "path": "src/genome_skeptic/agents/derived_state.py",
+        "sha256": "e4ecc5636bfe7520862c7f44b5df431c6da4c7c98583f22eaded7fd7c6b28759"
+      }
+    ],
+    "locus_measurement_pipeline": [
+      {
+        "path": "src/genome_skeptic/locus/pipeline.py",
+        "sha256": "b8aa9148ed0418ad8ee11cffd564bb8d82df715d137508021fe341f693a301e1"
+      },
+      {
+        "path": "src/genome_skeptic/locus/orthology.py",
+        "sha256": "5dae5ab6887fc45a2e33cee318cda9be9966d5eaf74c8620e40fc4baa0db3218"
+      },
+      {
+        "path": "src/genome_skeptic/locus/references.py",
+        "sha256": "302c53853babbc02d23b32a9c5e428c84fbc86e4255bcb4d1580b7a43b55fec3"
+      },
+      {
+        "path": "src/genome_skeptic/locus/validate.py",
+        "sha256": "be45c54f11cd1b9c04ae540dd2f7e1e5989b1ab28962d5f8a60646f16b240e5f"
+      },
+      {
+        "path": "src/genome_skeptic/locus/synteny.py",
+        "sha256": "a3750aa1e8b6c05bcd93be3b171b83aa74fff32715929d688de55a34d219a3d9"
+      },
+      {
+        "path": "src/genome_skeptic/locus/phylo.py",
+        "sha256": "bcc442dcd3da348e871278cd8bd9b3530feba35c2523c78a618f9834542dd982"
+      },
+      {
+        "path": "src/genome_skeptic/tools/gene_search.py",
+        "sha256": "767936914e85d2777c0b1d9e0b1e157b0c88dd0b98d5e0d8bf6008d0cc7f2dc0"
+      },
+      {
+        "path": "src/genome_skeptic/tools/hmmer.py",
+        "sha256": "844cba7fffc23eab2fb9678b3b965175c93f543d9cdf4232213d3bd1c391455a"
+      },
+      {
+        "path": "src/genome_skeptic/tools/similarity.py",
+        "sha256": "adb6549f782f8421257f4684d86b97866ec9f3fd0e5134b66f994981dd74c7d4"
+      },
+      {
+        "path": "src/genome_skeptic/tools/breaks.py",
+        "sha256": "77154feb90fcfb9a8e1418b60fd47c047019def81f9e8ceb175586e6046a57fc"
+      },
+      {
+        "path": "src/genome_skeptic/tools/taxonomy.py",
+        "sha256": "f409f09da832bf7f423428b4ec608d874a627113c386092a44b7e1a41d9223eb"
+      },
+      {
+        "path": "src/genome_skeptic/tools/base.py",
+        "sha256": "e69defe2cf0b516e92cc224cea2d4d018e87faa310baead831a599b6bd7e41ee"
+      }
+    ],
+    "validators_falsification.py": [
+      {
+        "path": "src/genome_skeptic/validators/falsification.py",
+        "sha256": "a062415a7a30c76b1f52c4958e953aca9d75f56f28f4f3893db0ca8a62ec6966"
+      }
+    ],
+    "conventional_baseline_implementation": [
+      {
+        "path": "src/genome_skeptic/eval/baselines.py",
+        "sha256": "778efbc91bd2becf35c53717b84166099e78222999bae970b386c31156ccaa46"
+      }
+    ],
+    "deterministic_v5_baseline_implementation": [
+      {
+        "path": "src/genome_skeptic/orchestrator.py",
+        "sha256": "76c2aee991ae6cb1313808e818fa241b684239350df7ab0fc1e59c3253abd561"
+      },
+      {
+        "path": "src/genome_skeptic/locus/pipeline.py",
+        "sha256": "b8aa9148ed0418ad8ee11cffd564bb8d82df715d137508021fe341f693a301e1"
+      },
+      {
+        "path": "src/genome_skeptic/validators/falsification.py",
+        "sha256": "a062415a7a30c76b1f52c4958e953aca9d75f56f28f4f3893db0ca8a62ec6966"
+      },
+      {
+        "path": "config/qwen_external_v5.yaml",
+        "sha256": "97d19886d91d9f57b7d355cf6802c082d148765e89091ede43a43808b12f3a78"
+      }
+    ],
+    "target_definitions": [
+      {
+        "path": "src/genome_skeptic/targets.py",
+        "sha256": "56671f7fe9a58e1114551e23c301717664254910e107eb2d741217ca6f2ee5e3"
+      }
+    ],
+    "family_definitions": [
+      {
+        "path": "src/genome_skeptic/families.py",
+        "sha256": "fc13a07c21df567893a39ac5c70d986b7d8b9bc1bd1c2e6237b546ed2ac128df"
+      },
+      {
+        "path": "data/target_families/index.yaml",
+        "sha256": "b7927c8f20123101c8af89165d5bc5973d35d927fc64a4e82398af36849d15a3"
+      },
+      {
+        "path": "src/genome_skeptic/data/target_families/index.yaml",
+        "sha256": "b7927c8f20123101c8af89165d5bc5973d35d927fc64a4e82398af36849d15a3"
+      }
+    ],
+    "reference_family_configuration": [
+      {
+        "path": "src/genome_skeptic/families.py",
+        "sha256": "fc13a07c21df567893a39ac5c70d986b7d8b9bc1bd1c2e6237b546ed2ac128df"
+      },
+      {
+        "path": "data/target_families/index.yaml",
+        "sha256": "b7927c8f20123101c8af89165d5bc5973d35d927fc64a4e82398af36849d15a3"
+      }
+    ],
+    "agentic_v2_yaml_config": [
+      {
+        "path": "config/qwen_agentic_dev.yaml",
+        "sha256": "32c4492db261c4185191b908a32886d05050d00831cf91790ae88a3b24bea744"
+      },
+      {
+        "path": "src/genome_skeptic/config.py",
+        "sha256": "1daf2c00ddf5b9307e8b753000b7058af09080922c574517718cd1fb5dbfe3a3"
+      }
+    ],
+    "model_adapter_provider_code": [
+      {
+        "path": "src/genome_skeptic/agents/ollama.py",
+        "sha256": "e02cef1f7a1921b99d6d144a33039564da83471064bf99013530e565108e9b09"
+      },
+      {
+        "path": "src/genome_skeptic/agents/providers.py",
+        "sha256": "b29eae9339d9a508a2d497ea2a19dc3f2cac958211503391d7485b47c65dd6f3"
+      },
+      {
+        "path": "src/genome_skeptic/agents/adapter.py",
+        "sha256": "7bb18c22323fd4cf9f56c57b979950493c724107b6e6a06edf432783ffcc5bec"
+      },
+      {
+        "path": "src/genome_skeptic/config.py",
+        "sha256": "1daf2c00ddf5b9307e8b753000b7058af09080922c574517718cd1fb5dbfe3a3"
+      }
+    ]
+  },
+  "n_files": 112,
+  "files": [
+    {
+      "path": "config/qwen_agentic_dev.yaml",
+      "sha256": "32c4492db261c4185191b908a32886d05050d00831cf91790ae88a3b24bea744"
+    },
+    {
+      "path": "config/qwen_external_v5.yaml",
+      "sha256": "97d19886d91d9f57b7d355cf6802c082d148765e89091ede43a43808b12f3a78"
+    },
+    {
+      "path": "data/target_families/index.yaml",
+      "sha256": "b7927c8f20123101c8af89165d5bc5973d35d927fc64a4e82398af36849d15a3"
+    },
+    {
+      "path": "data/target_families/lacZ_beta_galactosidase/family.yaml",
+      "sha256": "7e9eb83c8e18f6ae0ca0697b79ab08d7ff74720b0114f9621655842462ef9628"
+    },
+    {
+      "path": "data/target_families/lacZ_beta_galactosidase/members.aln.faa",
+      "sha256": "e202a40b072f2499fd31677ff44400c898452f59f01eb563332ce3c7efe201a9"
+    },
+    {
+      "path": "data/target_families/lacZ_beta_galactosidase/members.faa",
+      "sha256": "ede95cd092b622f37f39a45a07173c4d7a16f765a3a15f9967eb8a75010baaaa"
+    },
+    {
+      "path": "data/target_families/mfs_multidrug_efflux/family.yaml",
+      "sha256": "c0aad8115c7819772ca9e7ffeb24240541fbadd215daeb2315f1d7aef005fbd0"
+    },
+    {
+      "path": "data/target_families/mfs_multidrug_efflux/members.aln.faa",
+      "sha256": "8a3d047d427a1f2e1d8ce3fa8607864ccb1d8704c6a544d90094f756dcbab143"
+    },
+    {
+      "path": "data/target_families/mfs_multidrug_efflux/members.faa",
+      "sha256": "09c34a3dde72ff127f396c5226a9b3c0887edc1cfd5c8726dff88c6555c8a880"
+    },
+    {
+      "path": "data/target_families/recA_recombinase/family.yaml",
+      "sha256": "75e4b5cae339db74e8aa3245ffe0577a55ab4abb2b0db8e75800a43876d46f3f"
+    },
+    {
+      "path": "data/target_families/recA_recombinase/members.aln.faa",
+      "sha256": "49ab1020b9523728719118badbb5c01e209d2bd3643cc91b9e288838ebb02b7f"
+    },
+    {
+      "path": "data/target_families/recA_recombinase/members.faa",
+      "sha256": "22b3bd94d515ef761a4c5da81fc1d9d84ee2f14a10b25816a86b0d936bcf8f27"
+    },
+    {
+      "path": "data/target_families/rnd_efflux/family.yaml",
+      "sha256": "c14be4668c4e201aa7b764c26bcaf65f4289b7119fc43b4d6f856a62abed8e13"
+    },
+    {
+      "path": "data/target_families/rnd_efflux/members.aln.faa",
+      "sha256": "887e5bd75a5904db8090449d46a2e271f282ef1b1752c9c24aa8a4fa616365af"
+    },
+    {
+      "path": "data/target_families/rnd_efflux/members.faa",
+      "sha256": "bc8a7c9f8d2d90dd0fb50ddadb32a6cd0b57679e2825b5b5e7bdb5ec39f3c56a"
+    },
+    {
+      "path": "data/target_families/rpoB_RNAP_beta/family.yaml",
+      "sha256": "8b118c3c27c4b9b9e8b99853e2e2158bceb2a425cefe67fb21606b4b084ceb89"
+    },
+    {
+      "path": "data/target_families/rpoB_RNAP_beta/members.aln.faa",
+      "sha256": "4f2d0f3bedef0f133400b048a2d0657da4bba651741944d81060f47b0712a02a"
+    },
+    {
+      "path": "data/target_families/rpoB_RNAP_beta/members.faa",
+      "sha256": "c284f245e24285d8633cc9fac4f63b1e18b94995ad721e3cc117724f61f68c42"
+    },
+    {
+      "path": "data/target_families/rpoC_RNAP_beta_prime/family.yaml",
+      "sha256": "7c9246799842e5140cd728ac6a44dfae191329ee1feffecaa1b4305442e59447"
+    },
+    {
+      "path": "data/target_families/rpoC_RNAP_beta_prime/members.aln.faa",
+      "sha256": "3b36b30abecaddbb2e18831d6d54725a73d843969f3d562a44dd3c87ec4e3c44"
+    },
+    {
+      "path": "data/target_families/rpoC_RNAP_beta_prime/members.faa",
+      "sha256": "2b7609f19c0ce06c6224cf32023549df9a32bb67d4c1d4d422ce61ba4caa4840"
+    },
+    {
+      "path": "data/target_families/tetA_tetracycline_efflux/family.yaml",
+      "sha256": "33120a6e214404dee8d4f4daff9d7dcfa5fd5acbe92747464d0b6a86e93b8379"
+    },
+    {
+      "path": "data/target_families/tetA_tetracycline_efflux/members.aln.faa",
+      "sha256": "6ace4d925b5f714c69b1ada52757ba0462f8bbc846a5d340fa3ef936f97c9995"
+    },
+    {
+      "path": "data/target_families/tetA_tetracycline_efflux/members.faa",
+      "sha256": "cc4737c3ab9dc07178f655beb8c108565c44eb2541cce6144ec0e254a2807364"
+    },
+    {
+      "path": "data/target_families/tuf_EF_Tu/family.yaml",
+      "sha256": "bdcff374d7c3b56e38fb6f4371687759260fbc2ead2ba53abbe03e8f45b9bcff"
+    },
+    {
+      "path": "data/target_families/tuf_EF_Tu/members.aln.faa",
+      "sha256": "3a15ed2eafbb599f86d1d8a9b22ba4f2f37848f7b20d178aac1b7a97b112560f"
+    },
+    {
+      "path": "data/target_families/tuf_EF_Tu/members.faa",
+      "sha256": "6bf8a132bf954086733da3ec87b4c6726595c624e2e8aff08bfadce561001071"
+    },
+    {
+      "path": "external_validation/v5_external_input_policy.json",
+      "sha256": "6d99f26208175a5f7a77017d3d99461ed4c75d333930622059ed01c9b18d0978"
+    },
+    {
+      "path": "external_validation/v5_external_input_policy.sha256.json",
+      "sha256": "24d1ab9008010b6b03509cf22448737ea1a225c154f0da6e5bcea55dcd560738"
+    },
+    {
+      "path": "external_validation/v5_external_reference_overlap.json",
+      "sha256": "1ce6e871e1bf20441e54c76bc6bbe90f7066201574ffcaaef6cde8095fbcbc59"
+    },
+    {
+      "path": "external_validation/v5_external_scoring_contract.json",
+      "sha256": "d224b8b829b3a46c03e42aae324062b7ff72c75d2b6906a0cab45618818f9cb9"
+    },
+    {
+      "path": "external_validation/v5_external_scoring_contract.sha256.json",
+      "sha256": "e2442e711a2438ff1df90fa9868083fd4daf9b2b13d82538713285cbc6204ce3"
+    },
+    {
+      "path": "external_validation/v5_frozen_target_inventory.json",
+      "sha256": "b82969ad6e4e3e5a134ea831a0370d32b19612f9440b71d6ad8fbd03a3467e85"
+    },
+    {
+      "path": "external_validation/v5_reference_provenance_exclusions.json",
+      "sha256": "205d468d98090bca51099785407d8df004cb97f04603bd93f5521e63484ddf80"
+    },
+    {
+      "path": "external_validation/v5_reference_provenance_exclusions.sha256.json",
+      "sha256": "782062eefd6d86065a867452f75f1fd2502d051f0bfe2ed797588fc7076acadd"
+    },
+    {
+      "path": "src/genome_skeptic/agents/action_catalog.py",
+      "sha256": "f1f76ed5bd9dce28fd04f7be0eae263ea4d391d0754193d77923ffebaa06e26a"
+    },
+    {
+      "path": "src/genome_skeptic/agents/action_contract.py",
+      "sha256": "be2e108bf49d4c57f05fe456d69c77d2e71773ffafe786ccfc73bab051d454c8"
+    },
+    {
+      "path": "src/genome_skeptic/agents/adapter.py",
+      "sha256": "7bb18c22323fd4cf9f56c57b979950493c724107b6e6a06edf432783ffcc5bec"
+    },
+    {
+      "path": "src/genome_skeptic/agents/assembly_loop.py",
+      "sha256": "1d16daf228cb3d3cfccd61656205a4054b1480bb7cd38a4f15088c8ed781f114"
+    },
+    {
+      "path": "src/genome_skeptic/agents/assembly_loop_v2.py",
+      "sha256": "7c5199d361ebadfb6e78c78638b47f63c59fdcdd561ca745721d2e3ac1146b02"
+    },
+    {
+      "path": "src/genome_skeptic/agents/critic.py",
+      "sha256": "2b972b5415499126b6cfa989c6b4a4bba655053f02eef5d4ca763735f5f2725b"
+    },
+    {
+      "path": "src/genome_skeptic/agents/derived_state.py",
+      "sha256": "e4ecc5636bfe7520862c7f44b5df431c6da4c7c98583f22eaded7fd7c6b28759"
+    },
+    {
+      "path": "src/genome_skeptic/agents/genome_workspace.py",
+      "sha256": "8ff3418c11064bb33e842de1804f9b5901e4b78b9853faa339863571c168552c"
+    },
+    {
+      "path": "src/genome_skeptic/agents/ollama.py",
+      "sha256": "e02cef1f7a1921b99d6d144a33039564da83471064bf99013530e565108e9b09"
+    },
+    {
+      "path": "src/genome_skeptic/agents/planner_views.py",
+      "sha256": "88630234bc8fea972010729575ea7975f1df4d950a22a0a2988f0a84450c3e45"
+    },
+    {
+      "path": "src/genome_skeptic/agents/providers.py",
+      "sha256": "b29eae9339d9a508a2d497ea2a19dc3f2cac958211503391d7485b47c65dd6f3"
+    },
+    {
+      "path": "src/genome_skeptic/agents/questions.py",
+      "sha256": "05911864b16a55c4612c89e88169fc43e692ee05d9315827cfb733e63a1eb84e"
+    },
+    {
+      "path": "src/genome_skeptic/agents/reasoner.py",
+      "sha256": "263c06a186c8fa40b5ecd8ca0484c9e85742136743a6ecf30feaac33a8909301"
+    },
+    {
+      "path": "src/genome_skeptic/claims/action_policy.py",
+      "sha256": "47fce3b35746c59cec2f695b9bfa6c34a271f46d9fbd8fc4837b32a7c2153238"
+    },
+    {
+      "path": "src/genome_skeptic/claims/actions.py",
+      "sha256": "33474fead822a6d6af83980bc60262474282a8f3defa17a343d5e16ddc971df9"
+    },
+    {
+      "path": "src/genome_skeptic/claims/attack_plan.py",
+      "sha256": "6d089f0e23bb21f5650256cfb7affe39ad2becd64b6a2787809f32b5e16a2472"
+    },
+    {
+      "path": "src/genome_skeptic/claims/completeness.py",
+      "sha256": "80f70743b0c1279d48f5cc734625b9bb9e7a52740e9bfed09c838db81e89197c"
+    },
+    {
+      "path": "src/genome_skeptic/claims/confidence.py",
+      "sha256": "ae189fcee112a225346ec63098baa267bef0fd7ba81046e567d3e767c3949b1d"
+    },
+    {
+      "path": "src/genome_skeptic/claims/hypothesis_graph.py",
+      "sha256": "fbbb0bfa942d210d387d67070273ba5399294c634b220ee4d6c7818f819897bc"
+    },
+    {
+      "path": "src/genome_skeptic/claims/state_machine.py",
+      "sha256": "7333eea2438eee4e2a2ac04b0aed08dbaa3d8e5bf0700e76a056b40399284b8d"
+    },
+    {
+      "path": "src/genome_skeptic/config.py",
+      "sha256": "1daf2c00ddf5b9307e8b753000b7058af09080922c574517718cd1fb5dbfe3a3"
+    },
+    {
+      "path": "src/genome_skeptic/coords.py",
+      "sha256": "ac390a8bf81466c4172060a24841e3cadd324c7cb7ed46c3bc7204f780d32006"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/index.yaml",
+      "sha256": "b7927c8f20123101c8af89165d5bc5973d35d927fc64a4e82398af36849d15a3"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/lacZ_beta_galactosidase/family.yaml",
+      "sha256": "7e9eb83c8e18f6ae0ca0697b79ab08d7ff74720b0114f9621655842462ef9628"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/lacZ_beta_galactosidase/members.aln.faa",
+      "sha256": "e202a40b072f2499fd31677ff44400c898452f59f01eb563332ce3c7efe201a9"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/lacZ_beta_galactosidase/members.faa",
+      "sha256": "ede95cd092b622f37f39a45a07173c4d7a16f765a3a15f9967eb8a75010baaaa"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/mfs_multidrug_efflux/family.yaml",
+      "sha256": "c0aad8115c7819772ca9e7ffeb24240541fbadd215daeb2315f1d7aef005fbd0"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/mfs_multidrug_efflux/members.aln.faa",
+      "sha256": "8a3d047d427a1f2e1d8ce3fa8607864ccb1d8704c6a544d90094f756dcbab143"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/mfs_multidrug_efflux/members.faa",
+      "sha256": "09c34a3dde72ff127f396c5226a9b3c0887edc1cfd5c8726dff88c6555c8a880"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/recA_recombinase/family.yaml",
+      "sha256": "75e4b5cae339db74e8aa3245ffe0577a55ab4abb2b0db8e75800a43876d46f3f"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/recA_recombinase/members.aln.faa",
+      "sha256": "49ab1020b9523728719118badbb5c01e209d2bd3643cc91b9e288838ebb02b7f"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/recA_recombinase/members.faa",
+      "sha256": "22b3bd94d515ef761a4c5da81fc1d9d84ee2f14a10b25816a86b0d936bcf8f27"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/rnd_efflux/family.yaml",
+      "sha256": "c14be4668c4e201aa7b764c26bcaf65f4289b7119fc43b4d6f856a62abed8e13"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/rnd_efflux/members.aln.faa",
+      "sha256": "887e5bd75a5904db8090449d46a2e271f282ef1b1752c9c24aa8a4fa616365af"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/rnd_efflux/members.faa",
+      "sha256": "bc8a7c9f8d2d90dd0fb50ddadb32a6cd0b57679e2825b5b5e7bdb5ec39f3c56a"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/rpoB_RNAP_beta/family.yaml",
+      "sha256": "8b118c3c27c4b9b9e8b99853e2e2158bceb2a425cefe67fb21606b4b084ceb89"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/rpoB_RNAP_beta/members.aln.faa",
+      "sha256": "4f2d0f3bedef0f133400b048a2d0657da4bba651741944d81060f47b0712a02a"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/rpoB_RNAP_beta/members.faa",
+      "sha256": "c284f245e24285d8633cc9fac4f63b1e18b94995ad721e3cc117724f61f68c42"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/rpoC_RNAP_beta_prime/family.yaml",
+      "sha256": "7c9246799842e5140cd728ac6a44dfae191329ee1feffecaa1b4305442e59447"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/rpoC_RNAP_beta_prime/members.aln.faa",
+      "sha256": "3b36b30abecaddbb2e18831d6d54725a73d843969f3d562a44dd3c87ec4e3c44"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/rpoC_RNAP_beta_prime/members.faa",
+      "sha256": "2b7609f19c0ce06c6224cf32023549df9a32bb67d4c1d4d422ce61ba4caa4840"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/tetA_tetracycline_efflux/family.yaml",
+      "sha256": "33120a6e214404dee8d4f4daff9d7dcfa5fd5acbe92747464d0b6a86e93b8379"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/tetA_tetracycline_efflux/members.aln.faa",
+      "sha256": "6ace4d925b5f714c69b1ada52757ba0462f8bbc846a5d340fa3ef936f97c9995"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/tetA_tetracycline_efflux/members.faa",
+      "sha256": "cc4737c3ab9dc07178f655beb8c108565c44eb2541cce6144ec0e254a2807364"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/tuf_EF_Tu/family.yaml",
+      "sha256": "bdcff374d7c3b56e38fb6f4371687759260fbc2ead2ba53abbe03e8f45b9bcff"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/tuf_EF_Tu/members.aln.faa",
+      "sha256": "3a15ed2eafbb599f86d1d8a9b22ba4f2f37848f7b20d178aac1b7a97b112560f"
+    },
+    {
+      "path": "src/genome_skeptic/data/target_families/tuf_EF_Tu/members.faa",
+      "sha256": "6bf8a132bf954086733da3ec87b4c6726595c624e2e8aff08bfadce561001071"
+    },
+    {
+      "path": "src/genome_skeptic/eval/baselines.py",
+      "sha256": "778efbc91bd2becf35c53717b84166099e78222999bae970b386c31156ccaa46"
+    },
+    {
+      "path": "src/genome_skeptic/families.py",
+      "sha256": "fc13a07c21df567893a39ac5c70d986b7d8b9bc1bd1c2e6237b546ed2ac128df"
+    },
+    {
+      "path": "src/genome_skeptic/io_utils.py",
+      "sha256": "4b8aca1d17e7920feb78a7c35d855f4d570108676e6b50d11cac45b0173940c2"
+    },
+    {
+      "path": "src/genome_skeptic/isolation.py",
+      "sha256": "94a9f5afe94af84eea0aaf7a283f750ba614a5fea43664a00f59649b12398434"
+    },
+    {
+      "path": "src/genome_skeptic/locus/orthology.py",
+      "sha256": "5dae5ab6887fc45a2e33cee318cda9be9966d5eaf74c8620e40fc4baa0db3218"
+    },
+    {
+      "path": "src/genome_skeptic/locus/phylo.py",
+      "sha256": "bcc442dcd3da348e871278cd8bd9b3530feba35c2523c78a618f9834542dd982"
+    },
+    {
+      "path": "src/genome_skeptic/locus/pipeline.py",
+      "sha256": "b8aa9148ed0418ad8ee11cffd564bb8d82df715d137508021fe341f693a301e1"
+    },
+    {
+      "path": "src/genome_skeptic/locus/references.py",
+      "sha256": "302c53853babbc02d23b32a9c5e428c84fbc86e4255bcb4d1580b7a43b55fec3"
+    },
+    {
+      "path": "src/genome_skeptic/locus/synteny.py",
+      "sha256": "a3750aa1e8b6c05bcd93be3b171b83aa74fff32715929d688de55a34d219a3d9"
+    },
+    {
+      "path": "src/genome_skeptic/locus/validate.py",
+      "sha256": "be45c54f11cd1b9c04ae540dd2f7e1e5989b1ab28962d5f8a60646f16b240e5f"
+    },
+    {
+      "path": "src/genome_skeptic/models.py",
+      "sha256": "33597ad317d02134f0470391b937b173f3f7899c3f8950f2e72f44d6567c9a2a"
+    },
+    {
+      "path": "src/genome_skeptic/orchestrator.py",
+      "sha256": "76c2aee991ae6cb1313808e818fa241b684239350df7ab0fc1e59c3253abd561"
+    },
+    {
+      "path": "src/genome_skeptic/provenance.py",
+      "sha256": "9777d06e71ac2ea2143173ddf7057cda88ac53c7f1a390ef2e8839a7dfaaf1e9"
+    },
+    {
+      "path": "src/genome_skeptic/targets.py",
+      "sha256": "56671f7fe9a58e1114551e23c301717664254910e107eb2d741217ca6f2ee5e3"
+    },
+    {
+      "path": "src/genome_skeptic/tools/base.py",
+      "sha256": "e69defe2cf0b516e92cc224cea2d4d018e87faa310baead831a599b6bd7e41ee"
+    },
+    {
+      "path": "src/genome_skeptic/tools/breaks.py",
+      "sha256": "77154feb90fcfb9a8e1418b60fd47c047019def81f9e8ceb175586e6046a57fc"
+    },
+    {
+      "path": "src/genome_skeptic/tools/gene_search.py",
+      "sha256": "767936914e85d2777c0b1d9e0b1e157b0c88dd0b98d5e0d8bf6008d0cc7f2dc0"
+    },
+    {
+      "path": "src/genome_skeptic/tools/hmmer.py",
+      "sha256": "844cba7fffc23eab2fb9678b3b965175c93f543d9cdf4232213d3bd1c391455a"
+    },
+    {
+      "path": "src/genome_skeptic/tools/similarity.py",
+      "sha256": "adb6549f782f8421257f4684d86b97866ec9f3fd0e5134b66f994981dd74c7d4"
+    },
+    {
+      "path": "src/genome_skeptic/tools/taxonomy.py",
+      "sha256": "f409f09da832bf7f423428b4ec608d874a627113c386092a44b7e1a41d9223eb"
+    },
+    {
+      "path": "src/genome_skeptic/validators/competitive_family.py",
+      "sha256": "19d73cdf1255d4f1e8379d453b5838a581c3e8c4802005f771f771c7c4ae7cdc"
+    },
+    {
+      "path": "src/genome_skeptic/validators/core.py",
+      "sha256": "00f59037b6d71c5c8d97b33ebb6c799cbdd67f6142561bcc782708c052b36970"
+    },
+    {
+      "path": "src/genome_skeptic/validators/divergence.py",
+      "sha256": "ea8cfc1f9d82aebb3bc0ac4581bbceb9c5883e0f83841a391f1d8b7d7fcd5203"
+    },
+    {
+      "path": "src/genome_skeptic/validators/falsification.py",
+      "sha256": "a062415a7a30c76b1f52c4958e953aca9d75f56f28f4f3893db0ca8a62ec6966"
+    },
+    {
+      "path": "src/genome_skeptic/validators/family_orthology.py",
+      "sha256": "c175eec390a15783c15dc0f6874ce27cd1d3354d465f4fc8a958353fd0bed95e"
+    },
+    {
+      "path": "src/genome_skeptic/validators/gene_target.py",
+      "sha256": "235baf9d379ba4dbe7da0b14d51ff5ffcda10eede76d7e770d83427dc016796f"
+    },
+    {
+      "path": "src/genome_skeptic/validators/homology.py",
+      "sha256": "a972961fb4f8bf16940d37b52bc02ed8a7a56dc19ac52b3ea9a2311c32019b45"
+    },
+    {
+      "path": "src/genome_skeptic/validators/locus_multiplicity.py",
+      "sha256": "922cd47b4ebed292359b744ab05698085f92177c6f2efc74f7999607ddd84ed1"
+    },
+    {
+      "path": "src/genome_skeptic/validators/locus_reconstruction.py",
+      "sha256": "8cce6d6c1f9953a9089bc5b35a4a1878185f06f8b62d4901d6f35456a8d80ade"
+    },
+    {
+      "path": "src/genome_skeptic/validators/paralogy.py",
+      "sha256": "63e571ee9509502a181fa72dac608b6c375d6dad953f9064af520856259204fe"
+    }
+  ]
+}

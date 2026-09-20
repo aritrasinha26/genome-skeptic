@@ -1,0 +1,44 @@
+family_id: recA_recombinase
+display_name: RecA recombinase (single-copy housekeeping)
+biological_property: highly_conserved_single_copy_housekeeping
+partner_families: []
+members:
+- protein_id: NP_417179.1
+  species: Escherichia coli str. K-12 substr. MG1655
+  length_aa: 353
+  fusion_or_split: canonical
+  source: NCBI protein FASTA
+  retrieved: '2026-09-18'
+- protein_id: NP_214765.1
+  species: Mycobacterium tuberculosis H37Rv
+  length_aa: 159
+  fusion_or_split: canonical
+  source: NCBI protein FASTA
+  retrieved: '2026-09-18'
+- protein_id: NP_228245.1
+  species: Thermotoga maritima
+  length_aa: 159
+  fusion_or_split: canonical
+  source: NCBI protein FASTA
+  retrieved: '2026-09-18'
+- protein_id: NP_213126.1
+  species: Aquifex aeolicus
+  length_aa: 216
+  fusion_or_split: canonical
+  source: NCBI protein FASTA
+  retrieved: '2026-09-18'
+forbidden_protein_ids:
+- NP_252960.1
+- NP_387988.1
+- NP_387989.1
+- NP_463022.1
+- WP_000037869.1
+- WP_003255495.1
+- YP_499096.2
+forbidden_reason: FAST_PILOT hidden genomes are not family members.
+msa_provenance:
+  method: star multiple alignment seeded on the first member (Needleman-Wunsch)
+  aligner: genome_skeptic.families.build_star_msa
+hmm_provenance:
+  method: hmmbuild from members.aln.faa at first use
+  not_invented_by_llm: true

@@ -1,0 +1,9 @@
+{
+  "path": "manuscript_benchmark/GENOME_SKEPTIC_V4_1_MANUSCRIPT_manifest.json",
+  "sha256": "97a94dfefcecc855ebbba2010fd3f02f79ae84fbc61ca0f173e718d6bffd863b",
+  "hashed_utc": "2026-09-20T01:52:50.396188+00:00",
+  "freeze_id": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+  "immutable": true,
+  "m60_cases_selected": false,
+  "d20_touched": false
+}

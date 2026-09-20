@@ -1,0 +1,45 @@
+# External Qwen3:4b via Ollama's OpenAI-compatible endpoint.
+# Transport/integration only. Does not change V5 scientific thresholds,
+# validators, calibration, claim rules, hypothesis graph, or freeze files.
+# Thinking is configurable for later scientific runs and is disabled here.
+
+project:
+  organism_mode: bacterial_isolate
+  threads: 4
+
+llm:
+  enabled: true
+  provider: openai_compatible
+  model: qwen3:4b
+  base_url: http://172.17.32.1:11434/v1
+  api_key: ollama
+  temperature: 0.0
+  timeout_seconds: 120
+  thinking: false
+  keep_alive: 30m
+  max_output_tokens: 256
+  planner:
+    provider: openai_compatible
+    model: qwen3:4b
+    base_url: http://172.17.32.1:11434/v1
+    api_key: ollama
+    temperature: 0.0
+    timeout_seconds: 120
+    thinking: false
+    keep_alive: 30m
+    max_output_tokens: 256
+  critic:
+    provider: openai_compatible
+    model: qwen3:4b
+    base_url: http://172.17.32.1:11434/v1
+    api_key: ollama
+    temperature: 0.0
+    timeout_seconds: 120
+    thinking: false
+    keep_alive: 30m
+    max_output_tokens: 256
+
+execution:
+  enable_critic: true
+  allow_model_to_choose_actions: true
+  stop_on_hard_gate: true

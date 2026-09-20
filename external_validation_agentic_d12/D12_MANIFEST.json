@@ -1,0 +1,1338 @@
+{
+  "kind": "D12_MANIFEST",
+  "name": "V3_D12_EXTERNAL",
+  "created_utc": "2026-09-20T16:58:41.219772+00:00",
+  "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+  "agentic_freeze_manifest_sha256": "4941a5197ea1a78a358070009e7df963fcdc67e651ba293015903ed6f5b76237",
+  "candidate_pool_sha256": "ae71569c554bf1d675e7de5091f29bb9bb09a6aae66a3c262f786ea8c5396d21",
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "seed": "20260920",
+  "sampling_hash_formula": "SHA256(\"V3_D12_POOL|20260920|<target>|<assembly_accession>\")",
+  "selection_tie_break_formula": "SHA256(\"V3_D12_EXTERNAL|20260920|<target>|<assembly_accession>\")",
+  "execution_hash_formula": "SHA256(\"V3_D12_EXECUTION|20260920|<target>|<assembly_accession>\")",
+  "n_cases": 12,
+  "target_counts": {
+    "rpoB_RNAP_beta": 3,
+    "tuf_EF_Tu": 3,
+    "lacZ_beta_galactosidase": 3,
+    "tetA_tetracycline_efflux": 3
+  },
+  "assembly_quality_counts": {
+    "complete_or_chromosome": 7,
+    "scaffold_or_contig": 5
+  },
+  "n_unique_genomes": 12,
+  "n_unique_species": 12,
+  "n_unique_genera": 12,
+  "d8_excluded": true,
+  "d20_pool_excluded": true,
+  "d20_candidate_pool_sha256": "61a3e03bde2341d1bccd7a065cc53411ad10ad61ffc0410295a55ce9f8009f4c",
+  "d20_directory_modified": false,
+  "external_labels_opened": false,
+  "gene_content_used_for_selection": false,
+  "challenge_enriched": true,
+  "v5_used_for_selection": true,
+  "ambiguity_score_used": true,
+  "agentic_v3_executed": false,
+  "conventional_executed": false,
+  "frozen_before_agentic_v3": true,
+  "current_lacz_limitation": "No frozen deterministic instrument currently distinguishes true LacZ orthology from relevant competing beta-galactosidase families when reference/GFF/orthology resources are absent.",
+  "lacz_not_downweighted_for_missing_competing_family_instrument": true,
+  "n_lacz_selected": 3,
+  "cases": [
+    {
+      "execution_position": 1,
+      "assembly_accession": "GCF_060416925.1",
+      "organism": "Sphingomonas faeni",
+      "genus": "Sphingomonas",
+      "species": "Sphingomonas faeni",
+      "target": "tetA_tetracycline_efflux",
+      "release_date": "2026-08-25",
+      "assembly_level": "Contig",
+      "assembly_quality": "scaffold_or_contig",
+      "solver_fasta": "external_validation_agentic_d12/inputs/solver/GCF_060416925.1.fna",
+      "fasta_sha256": "ccc3cfd33ef09387da4dc5a4256852e66725338dca992cded32b5b74228b6d58",
+      "sampling_hash": "0008cea3f886e214345aeb891ee3a5e93c9ae34d55a0d39e726d333bbc356f81",
+      "selection_tie_hash": "081f25423279540eb7ab12bc46fc60980926ccdb13018113e0b420319cba1e77",
+      "execution_hash": "13d44563394724921ff77303d61797f142607aa961a1aa0427c102c03c4890fc",
+      "ambiguity_score": 10,
+      "ambiguity_score_components": [
+        {
+          "points": 2,
+          "rule": "candidate_hit_without_strong_hit_gate",
+          "source": {
+            "n_hits": 1,
+            "n_strong": 0
+          }
+        },
+        {
+          "points": 0,
+          "rule": "identity_near_orthologue_threshold",
+          "source": {
+            "identity": 0.29508,
+            "threshold": 0.6
+          }
+        },
+        {
+          "points": 0,
+          "rule": "coverage_near_orthologue_threshold",
+          "source": {
+            "query_coverage": 0.2892768079800499,
+            "threshold": 0.8
+          }
+        },
+        {
+          "points": 2,
+          "rule": "challenge_architecture",
+          "source": {
+            "architecture": "divergent_full_length"
+          }
+        },
+        {
+          "points": 2,
+          "rule": "candidate_vs_family_disagreement_or_competing_family",
+          "source": {
+            "supports_orthologue": true,
+            "homology_detected": false,
+            "claim_detected": true,
+            "competitive_family_classification": "target_family_supported",
+            "best_competing_family": null,
+            "disagree": true,
+            "competing": false
+          }
+        },
+        {
+          "points": 0,
+          "rule": "multiplicity_ambiguous_or_multiple_loci",
+          "source": {
+            "number_of_candidate_loci": 1,
+            "classification": "single_locus"
+          }
+        },
+        {
+          "points": 1,
+          "rule": "contig_edge_or_possible_truncation",
+          "source": {
+            "any_near_edge": true,
+            "any_possible_edge_truncation": true
+          }
+        },
+        {
+          "points": 2,
+          "rule": "missing_or_incomplete_falsification_category",
+          "source": {
+            "incomplete_categories": [
+              "contamination",
+              "orthology_versus_paralogy",
+              "reciprocal_best_hit",
+              "protein_identity_and_coverage",
+              "local_gene_order",
+              "phylogenetic_placement"
+            ],
+            "capped_at": 2
+          }
+        },
+        {
+          "points": 1,
+          "rule": "v5_claim_weakened_or_unresolved",
+          "source": {
+            "claim_class": "weakened"
+          }
+        }
+      ],
+      "selection_rank": 1,
+      "pool_stratum": "scaffold_or_contig",
+      "prescreen_v5_reference": "external_validation_agentic_d12/v5_prescreen/GCF_060416925.1/tetA_tetracycline_efflux/v5_case.json",
+      "frozen_m0_hash": "d1e0aaf04911cada8675ee4edceda86cc09e4dff7314cc44b73b0174120c0f37",
+      "prescreen_v5_final_result": "target_gene_detected",
+      "prescreen_v5_claim_class": "weakened",
+      "prescreen_v5_architecture": "divergent_full_length",
+      "external_labels_opened": false
+    },
+    {
+      "execution_position": 2,
+      "assembly_accession": "GCF_057626335.1",
+      "organism": "Gardnerella vaginalis",
+      "genus": "Gardnerella",
+      "species": "Gardnerella vaginalis",
+      "target": "rpoB_RNAP_beta",
+      "release_date": "2026-05-19",
+      "assembly_level": "Complete Genome",
+      "assembly_quality": "complete_or_chromosome",
+      "solver_fasta": "external_validation_agentic_d12/inputs/solver/GCF_057626335.1.fna",
+      "fasta_sha256": "fab5751dc955a0f2bcdb46e34d353de1133a4c8df3c5c0692a6037c6226aeb2a",
+      "sampling_hash": "001256458875d1a7c5f270f8c95112e91a8368236dc2ac6d46469fe78515b748",
+      "selection_tie_hash": "26dc64a94b2dd142cfc29535bcc9375e3d3ee575b8f308888b2124dd46aa9731",
+      "execution_hash": "4748211b0f61d79b49d9962aa012060f69e53e3a06e883729338c53204c5a854",
+      "ambiguity_score": 12,
+      "ambiguity_score_components": [
+        {
+          "points": 2,
+          "rule": "candidate_hit_without_strong_hit_gate",
+          "source": {
+            "n_hits": 3,
+            "n_strong": 0
+          }
+        },
+        {
+          "points": 2,
+          "rule": "identity_near_orthologue_threshold",
+          "source": {
+            "identity": 0.53832,
+            "threshold": 0.6
+          }
+        },
+        {
+          "points": 0,
+          "rule": "coverage_near_orthologue_threshold",
+          "source": {
+            "query_coverage": 0.3528610354223433,
+            "threshold": 0.8
+          }
+        },
+        {
+          "points": 2,
+          "rule": "challenge_architecture",
+          "source": {
+            "architecture": "divergent_full_length"
+          }
+        },
+        {
+          "points": 2,
+          "rule": "candidate_vs_family_disagreement_or_competing_family",
+          "source": {
+            "supports_orthologue": true,
+            "homology_detected": false,
+            "claim_detected": true,
+            "competitive_family_classification": "target_family_supported",
+            "best_competing_family": null,
+            "disagree": true,
+            "competing": false
+          }
+        },
+        {
+          "points": 0,
+          "rule": "multiplicity_ambiguous_or_multiple_loci",
+          "source": {
+            "number_of_candidate_loci": 1,
+            "classification": "single_locus"
+          }
+        },
+        {
+          "points": 1,
+          "rule": "contig_edge_or_possible_truncation",
+          "source": {
+            "any_near_edge": true,
+            "any_possible_edge_truncation": true
+          }
+        },
+        {
+          "points": 2,
+          "rule": "missing_or_incomplete_falsification_category",
+          "source": {
+            "incomplete_categories": [
+              "contamination",
+              "orthology_versus_paralogy",
+              "reciprocal_best_hit",
+              "protein_identity_and_coverage",
+              "local_gene_order",
+              "phylogenetic_placement"
+            ],
+            "capped_at": 2
+          }
+        },
+        {
+          "points": 1,
+          "rule": "v5_claim_weakened_or_unresolved",
+          "source": {
+            "claim_class": "weakened"
+          }
+        }
+      ],
+      "selection_rank": 1,
+      "pool_stratum": "complete_or_chromosome",
+      "prescreen_v5_reference": "external_validation_agentic_d12/v5_prescreen/GCF_057626335.1/rpoB_RNAP_beta/v5_case.json",
+      "frozen_m0_hash": "1758ec9dc27ec7a2c26eedec8043a549eaf0f39872960039376c265a0cc56340",
+      "prescreen_v5_final_result": "target_gene_detected",
+      "prescreen_v5_claim_class": "weakened",
+      "prescreen_v5_architecture": "divergent_full_length",
+      "external_labels_opened": false
+    },
+    {
+      "execution_position": 3,
+      "assembly_accession": "GCF_053795755.1",
+      "organism": "Bartonella sp. B17",
+      "genus": "Bartonella",
+      "species": "Bartonella sp. B17",
+      "target": "tetA_tetracycline_efflux",
+      "release_date": "2025-12-02",
+      "assembly_level": "Complete Genome",
+      "assembly_quality": "complete_or_chromosome",
+      "solver_fasta": "external_validation_agentic_d12/inputs/solver/GCF_053795755.1.fna",
+      "fasta_sha256": "d0ffc2ae2fa5d97e9233f9152be8f41510bac931de7f3cf2a93195d3a26b65ad",
+      "sampling_hash": "0027fbdc229aef59839c454ce9c19273e5991b672600bb4168e34fb56e13079c",
+      "selection_tie_hash": "5e7c81cb94e3f26ac7136cb94c2d5c1f84b195d118b21b681a14b12ad585927b",
+      "execution_hash": "4a1dc836de5b7451396dbb66caa31f3390d6c60a9cfe758ca012e3ce366ee547",
+      "ambiguity_score": 10,
+      "ambiguity_score_components": [
+        {
+          "points": 2,
+          "rule": "candidate_hit_without_strong_hit_gate",
+          "source": {
+            "n_hits": 1,
+            "n_strong": 0
+          }
+        },
+        {
+          "points": 0,
+          "rule": "identity_near_orthologue_threshold",
+          "source": {
+            "identity": 0.31623999999999997,
+            "threshold": 0.6
+          }
+        },
+        {
+          "points": 0,
+          "rule": "coverage_near_orthologue_threshold",
+          "source": {
+            "query_coverage": 0.28428927680798005,
+            "threshold": 0.8
+          }
+        },
+        {
+          "points": 2,
+          "rule": "challenge_architecture",
+          "source": {
+            "architecture": "divergent_full_length"
+          }
+        },
+        {
+          "points": 2,
+          "rule": "candidate_vs_family_disagreement_or_competing_family",
+          "source": {
+            "supports_orthologue": true,
+            "homology_detected": false,
+            "claim_detected": true,
+            "competitive_family_classification": "target_family_supported",
+            "best_competing_family": null,
+            "disagree": true,
+            "competing": false
+          }
+        },
+        {
+          "points": 0,
+          "rule": "multiplicity_ambiguous_or_multiple_loci",
+          "source": {
+            "number_of_candidate_loci": 1,
+            "classification": "single_locus"
+          }
+        },
+        {
+          "points": 1,
+          "rule": "contig_edge_or_possible_truncation",
+          "source": {
+            "any_near_edge": true,
+            "any_possible_edge_truncation": true
+          }
+        },
+        {
+          "points": 2,
+          "rule": "missing_or_incomplete_falsification_category",
+          "source": {
+            "incomplete_categories": [
+              "contamination",
+              "orthology_versus_paralogy",
+              "reciprocal_best_hit",
+              "protein_identity_and_coverage",
+              "local_gene_order",
+              "phylogenetic_placement"
+            ],
+            "capped_at": 2
+          }
+        },
+        {
+          "points": 1,
+          "rule": "v5_claim_weakened_or_unresolved",
+          "source": {
+            "claim_class": "weakened"
+          }
+        }
+      ],
+      "selection_rank": 2,
+      "pool_stratum": "complete_or_chromosome",
+      "prescreen_v5_reference": "external_validation_agentic_d12/v5_prescreen/GCF_053795755.1/tetA_tetracycline_efflux/v5_case.json",
+      "frozen_m0_hash": "dffc8a4ceda5c8e5850bfca86aeed6c1410779a0a9ca8cf8f9836a765f08ed3b",
+      "prescreen_v5_final_result": "target_gene_detected",
+      "prescreen_v5_claim_class": "weakened",
+      "prescreen_v5_architecture": "divergent_full_length",
+      "external_labels_opened": false
+    },
+    {
+      "execution_position": 4,
+      "assembly_accession": "GCF_047943045.1",
+      "organism": "Agrilactobacillus fermenti",
+      "genus": "Agrilactobacillus",
+      "species": "Agrilactobacillus fermenti",
+      "target": "rpoB_RNAP_beta",
+      "release_date": "2025-02-23",
+      "assembly_level": "Complete Genome",
+      "assembly_quality": "complete_or_chromosome",
+      "solver_fasta": "external_validation_agentic_d12/inputs/solver/GCF_047943045.1.fna",
+      "fasta_sha256": "83f93403c961e04efff4bb772fc9babadd9bc8b7fba65c2f41f051a6925f4955",
+      "sampling_hash": "00198f090100cbbe7a2a31de22dce48b4d5c14c2f964606ff6477b7e13581c64",
+      "selection_tie_hash": "9cac1b7751c123e5be8d37b0cf4a7a4c6a59f631ab50a349051323e816779692",
+      "execution_hash": "6804cb31ad02153c207636f566ae9cd3e5070f3e8c09e61bad91142bfe85a678",
+      "ambiguity_score": 10,
+      "ambiguity_score_components": [
+        {
+          "points": 2,
+          "rule": "candidate_hit_without_strong_hit_gate",
+          "source": {
+            "n_hits": 4,
+            "n_strong": 0
+          }
+        },
+        {
+          "points": 0,
+          "rule": "identity_near_orthologue_threshold",
+          "source": {
+            "identity": 0.48184,
+            "threshold": 0.6
+          }
+        },
+        {
+          "points": 0,
+          "rule": "coverage_near_orthologue_threshold",
+          "source": {
+            "query_coverage": 0.45844686648501365,
+            "threshold": 0.8
+          }
+        },
+        {
+          "points": 2,
+          "rule": "challenge_architecture",
+          "source": {
+            "architecture": "divergent_full_length"
+          }
+        },
+        {
+          "points": 2,
+          "rule": "candidate_vs_family_disagreement_or_competing_family",
+          "source": {
+            "supports_orthologue": true,
+            "homology_detected": false,
+            "claim_detected": true,
+            "competitive_family_classification": "target_family_supported",
+            "best_competing_family": null,
+            "disagree": true,
+            "competing": false
+          }
+        },
+        {
+          "points": 0,
+          "rule": "multiplicity_ambiguous_or_multiple_loci",
+          "source": {
+            "number_of_candidate_loci": 1,
+            "classification": "single_locus"
+          }
+        },
+        {
+          "points": 1,
+          "rule": "contig_edge_or_possible_truncation",
+          "source": {
+            "any_near_edge": true,
+            "any_possible_edge_truncation": true
+          }
+        },
+        {
+          "points": 2,
+          "rule": "missing_or_incomplete_falsification_category",
+          "source": {
+            "incomplete_categories": [
+              "contamination",
+              "orthology_versus_paralogy",
+              "reciprocal_best_hit",
+              "protein_identity_and_coverage",
+              "local_gene_order",
+              "phylogenetic_placement"
+            ],
+            "capped_at": 2
+          }
+        },
+        {
+          "points": 1,
+          "rule": "v5_claim_weakened_or_unresolved",
+          "source": {
+            "claim_class": "weakened"
+          }
+        }
+      ],
+      "selection_rank": 3,
+      "pool_stratum": "complete_or_chromosome",
+      "prescreen_v5_reference": "external_validation_agentic_d12/v5_prescreen/GCF_047943045.1/rpoB_RNAP_beta/v5_case.json",
+      "frozen_m0_hash": "89eed6e779a3e793bcc11175bca0f8a74dc6b32b18b932684ed764b75e73c88a",
+      "prescreen_v5_final_result": "target_gene_detected",
+      "prescreen_v5_claim_class": "weakened",
+      "prescreen_v5_architecture": "divergent_full_length",
+      "external_labels_opened": false
+    },
+    {
+      "execution_position": 5,
+      "assembly_accession": "GCF_058596135.1",
+      "organism": "Parabacteroides distasonis",
+      "genus": "Parabacteroides",
+      "species": "Parabacteroides distasonis",
+      "target": "lacZ_beta_galactosidase",
+      "release_date": "2026-06-29",
+      "assembly_level": "Complete Genome",
+      "assembly_quality": "complete_or_chromosome",
+      "solver_fasta": "external_validation_agentic_d12/inputs/solver/GCF_058596135.1.fna",
+      "fasta_sha256": "f6e2b069e095bdb83af6465925ad44c030e4d3ee799b81579ddb100565951f86",
+      "sampling_hash": "0018bb994fb891b62f11ad8b3dfd1a5a0a57dcedb602c8b8a025b8a4dafd4aab",
+      "selection_tie_hash": "454edd04519ba6e78db91c13f82555adaaa27eb5fcea8169b51011bc0cd7c955",
+      "execution_hash": "a91e80b02a1de66195cea80138b029e8c61ee29572b046d3852702eb9476033c",
+      "ambiguity_score": 10,
+      "ambiguity_score_components": [
+        {
+          "points": 2,
+          "rule": "candidate_hit_without_strong_hit_gate",
+          "source": {
+            "n_hits": 8,
+            "n_strong": 0
+          }
+        },
+        {
+          "points": 0,
+          "rule": "identity_near_orthologue_threshold",
+          "source": {
+            "identity": 0.34112000000000003,
+            "threshold": 0.6
+          }
+        },
+        {
+          "points": 0,
+          "rule": "coverage_near_orthologue_threshold",
+          "source": {
+            "query_coverage": 0.99609375,
+            "threshold": 0.8
+          }
+        },
+        {
+          "points": 2,
+          "rule": "challenge_architecture",
+          "source": {
+            "architecture": "divergent_full_length"
+          }
+        },
+        {
+          "points": 2,
+          "rule": "candidate_vs_family_disagreement_or_competing_family",
+          "source": {
+            "supports_orthologue": true,
+            "homology_detected": false,
+            "claim_detected": true,
+            "competitive_family_classification": "target_family_supported",
+            "best_competing_family": null,
+            "disagree": true,
+            "competing": false
+          }
+        },
+        {
+          "points": 0,
+          "rule": "multiplicity_ambiguous_or_multiple_loci",
+          "source": {
+            "number_of_candidate_loci": 1,
+            "classification": "single_locus"
+          }
+        },
+        {
+          "points": 1,
+          "rule": "contig_edge_or_possible_truncation",
+          "source": {
+            "any_near_edge": true,
+            "any_possible_edge_truncation": true
+          }
+        },
+        {
+          "points": 2,
+          "rule": "missing_or_incomplete_falsification_category",
+          "source": {
+            "incomplete_categories": [
+              "contamination",
+              "orthology_versus_paralogy",
+              "reciprocal_best_hit",
+              "protein_identity_and_coverage",
+              "local_gene_order",
+              "phylogenetic_placement"
+            ],
+            "capped_at": 2
+          }
+        },
+        {
+          "points": 1,
+          "rule": "v5_claim_weakened_or_unresolved",
+          "source": {
+            "claim_class": "weakened"
+          }
+        }
+      ],
+      "selection_rank": 2,
+      "pool_stratum": "complete_or_chromosome",
+      "prescreen_v5_reference": "external_validation_agentic_d12/v5_prescreen/GCF_058596135.1/lacZ_beta_galactosidase/v5_case.json",
+      "frozen_m0_hash": "b93f57780449c11d31331dc0d7d3821dd4c11b0014804bcc0cf21275bbb8b385",
+      "prescreen_v5_final_result": "target_gene_detected",
+      "prescreen_v5_claim_class": "weakened",
+      "prescreen_v5_architecture": "divergent_full_length",
+      "external_labels_opened": false
+    },
+    {
+      "execution_position": 6,
+      "assembly_accession": "GCF_059683705.1",
+      "organism": "Akkermansia muciniphila",
+      "genus": "Akkermansia",
+      "species": "Akkermansia muciniphila",
+      "target": "tuf_EF_Tu",
+      "release_date": "2026-07-29",
+      "assembly_level": "Complete Genome",
+      "assembly_quality": "complete_or_chromosome",
+      "solver_fasta": "external_validation_agentic_d12/inputs/solver/GCF_059683705.1.fna",
+      "fasta_sha256": "1f6660d1586c621d04c1e22344a510c3dc968c54475050fef160e55a70eaa599",
+      "sampling_hash": "00101051348d7bbaf825dfcb68e14ef7569bfde04c95d0b5e6fe076c5131f5fc",
+      "selection_tie_hash": "74dfe2028e204b97087f42585074c1bc1d3499c630b57115d91e0c9338d71958",
+      "execution_hash": "abf7ca6ace4870759b41315fd17b73413497107fe8fd63a3dccab17b709acd40",
+      "ambiguity_score": 7,
+      "ambiguity_score_components": [
+        {
+          "points": 2,
+          "rule": "candidate_hit_without_strong_hit_gate",
+          "source": {
+            "n_hits": 20,
+            "n_strong": 0
+          }
+        },
+        {
+          "points": 0,
+          "rule": "identity_near_orthologue_threshold",
+          "source": {
+            "identity": 0.4074074074074074,
+            "threshold": 0.6
+          }
+        },
+        {
+          "points": 0,
+          "rule": "coverage_near_orthologue_threshold",
+          "source": {
+            "query_coverage": 0.07520891364902507,
+            "threshold": 0.8
+          }
+        },
+        {
+          "points": 2,
+          "rule": "challenge_architecture",
+          "source": {
+            "architecture": "divergent_full_length"
+          }
+        },
+        {
+          "points": 0,
+          "rule": "candidate_vs_family_disagreement_or_competing_family",
+          "source": {
+            "supports_orthologue": false,
+            "homology_detected": false,
+            "claim_detected": false,
+            "competitive_family_classification": "unresolved_candidate",
+            "disagree": false,
+            "competing": false
+          }
+        },
+        {
+          "points": 0,
+          "rule": "multiplicity_ambiguous_or_multiple_loci",
+          "source": {
+            "number_of_candidate_loci": 0,
+            "classification": "single_locus"
+          }
+        },
+        {
+          "points": 0,
+          "rule": "contig_edge_or_possible_truncation",
+          "source": {
+            "any_near_edge": false,
+            "any_possible_edge_truncation": false
+          }
+        },
+        {
+          "points": 2,
+          "rule": "missing_or_incomplete_falsification_category",
+          "source": {
+            "incomplete_categories": [
+              "local_read_coverage",
+              "read_supported_break"
+            ],
+            "capped_at": 2
+          }
+        },
+        {
+          "points": 1,
+          "rule": "v5_claim_weakened_or_unresolved",
+          "source": {
+            "claim_class": "weakened"
+          }
+        }
+      ],
+      "selection_rank": 1,
+      "pool_stratum": "complete_or_chromosome",
+      "prescreen_v5_reference": "external_validation_agentic_d12/v5_prescreen/GCF_059683705.1/tuf_EF_Tu/v5_case.json",
+      "frozen_m0_hash": "0bb91871f061ec468af94f6ea47878fd17da2663ebf740f4e9f6e13aa229626f",
+      "prescreen_v5_final_result": "target_gene_not_detected",
+      "prescreen_v5_claim_class": "weakened",
+      "prescreen_v5_architecture": "divergent_full_length",
+      "external_labels_opened": false
+    },
+    {
+      "execution_position": 7,
+      "assembly_accession": "GCF_048585425.2",
+      "organism": "Sinorhizobium fredii HH103",
+      "genus": "Sinorhizobium",
+      "species": "Sinorhizobium fredii",
+      "target": "lacZ_beta_galactosidase",
+      "release_date": "2026-09-02",
+      "assembly_level": "Complete Genome",
+      "assembly_quality": "complete_or_chromosome",
+      "solver_fasta": "external_validation_agentic_d12/inputs/solver/GCF_048585425.2.fna",
+      "fasta_sha256": "ef03adf1941d53991a4bd03d725134832be9b9daa0e001b717183e01c9005248",
+      "sampling_hash": "0027f517bcdc75a6f07557be1a88a10b688f334987e2de08d65c07ba70ca05f2",
+      "selection_tie_hash": "607836adf666f641c957ae44ce7dfcd71bda85fef585203a7abf662edd9a5eeb",
+      "execution_hash": "b0d6b7d49099894b4c0153244bc6b4e990e815c3a45d529aaa06d38853f07bcf",
+      "ambiguity_score": 10,
+      "ambiguity_score_components": [
+        {
+          "points": 2,
+          "rule": "candidate_hit_without_strong_hit_gate",
+          "source": {
+            "n_hits": 1,
+            "n_strong": 0
+          }
+        },
+        {
+          "points": 0,
+          "rule": "identity_near_orthologue_threshold",
+          "source": {
+            "identity": 0.26279,
+            "threshold": 0.6
+          }
+        },
+        {
+          "points": 0,
+          "rule": "coverage_near_orthologue_threshold",
+          "source": {
+            "query_coverage": 0.3955078125,
+            "threshold": 0.8
+          }
+        },
+        {
+          "points": 2,
+          "rule": "challenge_architecture",
+          "source": {
+            "architecture": "divergent_full_length"
+          }
+        },
+        {
+          "points": 2,
+          "rule": "candidate_vs_family_disagreement_or_competing_family",
+          "source": {
+            "supports_orthologue": true,
+            "homology_detected": false,
+            "claim_detected": true,
+            "competitive_family_classification": "target_family_supported",
+            "best_competing_family": null,
+            "disagree": true,
+            "competing": false
+          }
+        },
+        {
+          "points": 0,
+          "rule": "multiplicity_ambiguous_or_multiple_loci",
+          "source": {
+            "number_of_candidate_loci": 1,
+            "classification": "single_locus"
+          }
+        },
+        {
+          "points": 1,
+          "rule": "contig_edge_or_possible_truncation",
+          "source": {
+            "any_near_edge": true,
+            "any_possible_edge_truncation": true
+          }
+        },
+        {
+          "points": 2,
+          "rule": "missing_or_incomplete_falsification_category",
+          "source": {
+            "incomplete_categories": [
+              "contamination",
+              "orthology_versus_paralogy",
+              "reciprocal_best_hit",
+              "protein_identity_and_coverage",
+              "local_gene_order",
+              "phylogenetic_placement"
+            ],
+            "capped_at": 2
+          }
+        },
+        {
+          "points": 1,
+          "rule": "v5_claim_weakened_or_unresolved",
+          "source": {
+            "claim_class": "weakened"
+          }
+        }
+      ],
+      "selection_rank": 3,
+      "pool_stratum": "complete_or_chromosome",
+      "prescreen_v5_reference": "external_validation_agentic_d12/v5_prescreen/GCF_048585425.2/lacZ_beta_galactosidase/v5_case.json",
+      "frozen_m0_hash": "0819e09ec3c7917bfd0ab09c1dc26956464077d077e3b1a1b332a1222d38a230",
+      "prescreen_v5_final_result": "target_gene_detected",
+      "prescreen_v5_claim_class": "weakened",
+      "prescreen_v5_architecture": "divergent_full_length",
+      "external_labels_opened": false
+    },
+    {
+      "execution_position": 8,
+      "assembly_accession": "GCF_046562475.1",
+      "organism": "Phocaeicola dorei",
+      "genus": "Phocaeicola",
+      "species": "Phocaeicola dorei",
+      "target": "lacZ_beta_galactosidase",
+      "release_date": "2025-01-08",
+      "assembly_level": "Scaffold",
+      "assembly_quality": "scaffold_or_contig",
+      "solver_fasta": "external_validation_agentic_d12/inputs/solver/GCF_046562475.1.fna",
+      "fasta_sha256": "8346f3aa55fafa22932a764a7a1de2e60592cff176d5d85d3e79c33af26a6d80",
+      "sampling_hash": "00039cca9aae22af3a07b6557d7247859c80eda6b410117dcfc077798d58e636",
+      "selection_tie_hash": "392424e379bbfed835bdff07a0fb561f4fb8314046200d6b57c682569fd490f2",
+      "execution_hash": "b1506ecbca1645ae0cf921dedf110c393f28eb574efcfcc386b046fdb7a9bc6f",
+      "ambiguity_score": 10,
+      "ambiguity_score_components": [
+        {
+          "points": 2,
+          "rule": "candidate_hit_without_strong_hit_gate",
+          "source": {
+            "n_hits": 20,
+            "n_strong": 0
+          }
+        },
+        {
+          "points": 0,
+          "rule": "identity_near_orthologue_threshold",
+          "source": {
+            "identity": 0.36045,
+            "threshold": 0.6
+          }
+        },
+        {
+          "points": 0,
+          "rule": "coverage_near_orthologue_threshold",
+          "source": {
+            "query_coverage": 0.9833984375,
+            "threshold": 0.8
+          }
+        },
+        {
+          "points": 2,
+          "rule": "challenge_architecture",
+          "source": {
+            "architecture": "divergent_full_length"
+          }
+        },
+        {
+          "points": 2,
+          "rule": "candidate_vs_family_disagreement_or_competing_family",
+          "source": {
+            "supports_orthologue": true,
+            "homology_detected": false,
+            "claim_detected": true,
+            "competitive_family_classification": "target_family_supported",
+            "best_competing_family": null,
+            "disagree": true,
+            "competing": false
+          }
+        },
+        {
+          "points": 0,
+          "rule": "multiplicity_ambiguous_or_multiple_loci",
+          "source": {
+            "number_of_candidate_loci": 1,
+            "classification": "single_locus"
+          }
+        },
+        {
+          "points": 1,
+          "rule": "contig_edge_or_possible_truncation",
+          "source": {
+            "any_near_edge": true,
+            "any_possible_edge_truncation": true
+          }
+        },
+        {
+          "points": 2,
+          "rule": "missing_or_incomplete_falsification_category",
+          "source": {
+            "incomplete_categories": [
+              "contamination",
+              "orthology_versus_paralogy",
+              "reciprocal_best_hit",
+              "protein_identity_and_coverage",
+              "local_gene_order",
+              "phylogenetic_placement"
+            ],
+            "capped_at": 2
+          }
+        },
+        {
+          "points": 1,
+          "rule": "v5_claim_weakened_or_unresolved",
+          "source": {
+            "claim_class": "weakened"
+          }
+        }
+      ],
+      "selection_rank": 1,
+      "pool_stratum": "scaffold_or_contig",
+      "prescreen_v5_reference": "external_validation_agentic_d12/v5_prescreen/GCF_046562475.1/lacZ_beta_galactosidase/v5_case.json",
+      "frozen_m0_hash": "e12867db3f89c4c0b7069d493551ab8b3084d173b4b6fac0e1bf3cddf7013a82",
+      "prescreen_v5_final_result": "target_gene_detected",
+      "prescreen_v5_claim_class": "weakened",
+      "prescreen_v5_architecture": "divergent_full_length",
+      "external_labels_opened": false
+    },
+    {
+      "execution_position": 9,
+      "assembly_accession": "GCF_052955985.1",
+      "organism": "Vibrio sp. B1Z05",
+      "genus": "Vibrio",
+      "species": "Vibrio sp. B1Z05",
+      "target": "tuf_EF_Tu",
+      "release_date": "2025-10-02",
+      "assembly_level": "Complete Genome",
+      "assembly_quality": "complete_or_chromosome",
+      "solver_fasta": "external_validation_agentic_d12/inputs/solver/GCF_052955985.1.fna",
+      "fasta_sha256": "bb7d7778cf0195de9fc51bec4374b9066eaef49a12814778d340416ba3898ff6",
+      "sampling_hash": "000913cdac31f3443ea3c06d2e4c1229aaed54588137a9e68a6ab5a1bf6c2a84",
+      "selection_tie_hash": "e9ffec90d69ec55d3f7136d834be07e6fc0bce6ff7f8eae080f1aef3a284b815",
+      "execution_hash": "b8ca3cdf8fb0870a849133e23a900d1356c4b9bffedeabae0c25aefdf4f898ca",
+      "ambiguity_score": 7,
+      "ambiguity_score_components": [
+        {
+          "points": 2,
+          "rule": "candidate_hit_without_strong_hit_gate",
+          "source": {
+            "n_hits": 20,
+            "n_strong": 0
+          }
+        },
+        {
+          "points": 0,
+          "rule": "identity_near_orthologue_threshold",
+          "source": {
+            "identity": 0.4,
+            "threshold": 0.6
+          }
+        },
+        {
+          "points": 0,
+          "rule": "coverage_near_orthologue_threshold",
+          "source": {
+            "query_coverage": 0.08356545961002786,
+            "threshold": 0.8
+          }
+        },
+        {
+          "points": 2,
+          "rule": "challenge_architecture",
+          "source": {
+            "architecture": "divergent_full_length"
+          }
+        },
+        {
+          "points": 0,
+          "rule": "candidate_vs_family_disagreement_or_competing_family",
+          "source": {
+            "supports_orthologue": false,
+            "homology_detected": false,
+            "claim_detected": false,
+            "competitive_family_classification": "unresolved_candidate",
+            "disagree": false,
+            "competing": false
+          }
+        },
+        {
+          "points": 0,
+          "rule": "multiplicity_ambiguous_or_multiple_loci",
+          "source": {
+            "number_of_candidate_loci": 0,
+            "classification": "single_locus"
+          }
+        },
+        {
+          "points": 0,
+          "rule": "contig_edge_or_possible_truncation",
+          "source": {
+            "any_near_edge": false,
+            "any_possible_edge_truncation": false
+          }
+        },
+        {
+          "points": 2,
+          "rule": "missing_or_incomplete_falsification_category",
+          "source": {
+            "incomplete_categories": [
+              "local_read_coverage",
+              "read_supported_break"
+            ],
+            "capped_at": 2
+          }
+        },
+        {
+          "points": 1,
+          "rule": "v5_claim_weakened_or_unresolved",
+          "source": {
+            "claim_class": "weakened"
+          }
+        }
+      ],
+      "selection_rank": 3,
+      "pool_stratum": "complete_or_chromosome",
+      "prescreen_v5_reference": "external_validation_agentic_d12/v5_prescreen/GCF_052955985.1/tuf_EF_Tu/v5_case.json",
+      "frozen_m0_hash": "8fa51b4e8c884b6a37a7c55069ca7e678893741ef9c7db15e1166ffdc4f8d70a",
+      "prescreen_v5_final_result": "target_gene_not_detected",
+      "prescreen_v5_claim_class": "weakened",
+      "prescreen_v5_architecture": "divergent_full_length",
+      "external_labels_opened": false
+    },
+    {
+      "execution_position": 10,
+      "assembly_accession": "GCF_050871785.1",
+      "organism": "Kineococcus esterisolvens",
+      "genus": "Kineococcus",
+      "species": "Kineococcus esterisolvens",
+      "target": "rpoB_RNAP_beta",
+      "release_date": "2025-06-10",
+      "assembly_level": "Contig",
+      "assembly_quality": "scaffold_or_contig",
+      "solver_fasta": "external_validation_agentic_d12/inputs/solver/GCF_050871785.1.fna",
+      "fasta_sha256": "1217d2170ea7587a45024aa8b278d42b9bca1fe0d4ae4d2599f142f2c09280c0",
+      "sampling_hash": "0006bc667a841ead892243184bb30e97da56fc2df447d6d1b5ff70bf30bccfca",
+      "selection_tie_hash": "78449c57d0dc7efb0fa4409aac2314a564f3b2b2b7d54c425fa5242be4bd4cba",
+      "execution_hash": "da339f910ff754469ad95eaa3bda5cff43c9e8921184f7d49a2360b104e51262",
+      "ambiguity_score": 12,
+      "ambiguity_score_components": [
+        {
+          "points": 2,
+          "rule": "candidate_hit_without_strong_hit_gate",
+          "source": {
+            "n_hits": 3,
+            "n_strong": 0
+          }
+        },
+        {
+          "points": 2,
+          "rule": "identity_near_orthologue_threshold",
+          "source": {
+            "identity": 0.5173,
+            "threshold": 0.6
+          }
+        },
+        {
+          "points": 0,
+          "rule": "coverage_near_orthologue_threshold",
+          "source": {
+            "query_coverage": 0.3739782016348774,
+            "threshold": 0.8
+          }
+        },
+        {
+          "points": 2,
+          "rule": "challenge_architecture",
+          "source": {
+            "architecture": "divergent_full_length"
+          }
+        },
+        {
+          "points": 2,
+          "rule": "candidate_vs_family_disagreement_or_competing_family",
+          "source": {
+            "supports_orthologue": true,
+            "homology_detected": false,
+            "claim_detected": true,
+            "competitive_family_classification": "target_family_supported",
+            "best_competing_family": null,
+            "disagree": true,
+            "competing": false
+          }
+        },
+        {
+          "points": 0,
+          "rule": "multiplicity_ambiguous_or_multiple_loci",
+          "source": {
+            "number_of_candidate_loci": 1,
+            "classification": "single_locus"
+          }
+        },
+        {
+          "points": 1,
+          "rule": "contig_edge_or_possible_truncation",
+          "source": {
+            "any_near_edge": true,
+            "any_possible_edge_truncation": true
+          }
+        },
+        {
+          "points": 2,
+          "rule": "missing_or_incomplete_falsification_category",
+          "source": {
+            "incomplete_categories": [
+              "contamination",
+              "orthology_versus_paralogy",
+              "reciprocal_best_hit",
+              "protein_identity_and_coverage",
+              "local_gene_order",
+              "phylogenetic_placement"
+            ],
+            "capped_at": 2
+          }
+        },
+        {
+          "points": 1,
+          "rule": "v5_claim_weakened_or_unresolved",
+          "source": {
+            "claim_class": "weakened"
+          }
+        }
+      ],
+      "selection_rank": 2,
+      "pool_stratum": "scaffold_or_contig",
+      "prescreen_v5_reference": "external_validation_agentic_d12/v5_prescreen/GCF_050871785.1/rpoB_RNAP_beta/v5_case.json",
+      "frozen_m0_hash": "5964b8a47bf4422910f581cb9280cb18d0f262f666d860cfaa77058fa9f5fc22",
+      "prescreen_v5_final_result": "target_gene_detected",
+      "prescreen_v5_claim_class": "weakened",
+      "prescreen_v5_architecture": "divergent_full_length",
+      "external_labels_opened": false
+    },
+    {
+      "execution_position": 11,
+      "assembly_accession": "GCF_054055795.1",
+      "organism": "Variovorax sp. PvP013_2",
+      "genus": "Variovorax",
+      "species": "Variovorax sp. PvP013_2",
+      "target": "tetA_tetracycline_efflux",
+      "release_date": "2025-12-17",
+      "assembly_level": "Contig",
+      "assembly_quality": "scaffold_or_contig",
+      "solver_fasta": "external_validation_agentic_d12/inputs/solver/GCF_054055795.1.fna",
+      "fasta_sha256": "2d0b2c90bd6586ff88953e86a7d933d5806c5798d9e531c456f131f6f9cfc036",
+      "sampling_hash": "000535e7132538eb614b62caf817689b0cbcc68e6281827bc49b6ee743e696c8",
+      "selection_tie_hash": "bbeaa688621c9cf0aa97044735afc3327601bf6933d065b9d9a539ec369a3391",
+      "execution_hash": "ef6cfa3bfb45070b478203faa1e5787b0f2f66eca9a01c27ef1c3b0e839bddd0",
+      "ambiguity_score": 10,
+      "ambiguity_score_components": [
+        {
+          "points": 2,
+          "rule": "candidate_hit_without_strong_hit_gate",
+          "source": {
+            "n_hits": 20,
+            "n_strong": 0
+          }
+        },
+        {
+          "points": 0,
+          "rule": "identity_near_orthologue_threshold",
+          "source": {
+            "identity": 0.4,
+            "threshold": 0.6
+          }
+        },
+        {
+          "points": 0,
+          "rule": "coverage_near_orthologue_threshold",
+          "source": {
+            "query_coverage": 0.1371571072319202,
+            "threshold": 0.8
+          }
+        },
+        {
+          "points": 2,
+          "rule": "challenge_architecture",
+          "source": {
+            "architecture": "close_paralogue"
+          }
+        },
+        {
+          "points": 2,
+          "rule": "candidate_vs_family_disagreement_or_competing_family",
+          "source": {
+            "supports_orthologue": true,
+            "homology_detected": false,
+            "claim_detected": true,
+            "competitive_family_classification": "target_family_supported",
+            "best_competing_family": null,
+            "disagree": true,
+            "competing": false
+          }
+        },
+        {
+          "points": 1,
+          "rule": "multiplicity_ambiguous_or_multiple_loci",
+          "source": {
+            "number_of_candidate_loci": 4,
+            "classification": "paralogous_copy"
+          }
+        },
+        {
+          "points": 0,
+          "rule": "contig_edge_or_possible_truncation",
+          "source": {
+            "any_near_edge": false,
+            "any_possible_edge_truncation": false
+          }
+        },
+        {
+          "points": 2,
+          "rule": "missing_or_incomplete_falsification_category",
+          "source": {
+            "incomplete_categories": [
+              "contamination",
+              "orthology_versus_paralogy",
+              "reciprocal_best_hit",
+              "protein_identity_and_coverage",
+              "local_gene_order",
+              "phylogenetic_placement"
+            ],
+            "capped_at": 2
+          }
+        },
+        {
+          "points": 1,
+          "rule": "v5_claim_weakened_or_unresolved",
+          "source": {
+            "claim_class": "weakened"
+          }
+        }
+      ],
+      "selection_rank": 3,
+      "pool_stratum": "scaffold_or_contig",
+      "prescreen_v5_reference": "external_validation_agentic_d12/v5_prescreen/GCF_054055795.1/tetA_tetracycline_efflux/v5_case.json",
+      "frozen_m0_hash": "7dd87eb6af98ecc5b38ab7b279f9922c47b6a6954206a6df1cbbfffda0de81bb",
+      "prescreen_v5_final_result": "target_gene_detected",
+      "prescreen_v5_claim_class": "weakened",
+      "prescreen_v5_architecture": "close_paralogue",
+      "external_labels_opened": false
+    },
+    {
+      "execution_position": 12,
+      "assembly_accession": "GCF_049340285.1",
+      "organism": "Undibacterium sp. SXout20W",
+      "genus": "Undibacterium",
+      "species": "Undibacterium sp. SXout20W",
+      "target": "tuf_EF_Tu",
+      "release_date": "2025-04-07",
+      "assembly_level": "Scaffold",
+      "assembly_quality": "scaffold_or_contig",
+      "solver_fasta": "external_validation_agentic_d12/inputs/solver/GCF_049340285.1.fna",
+      "fasta_sha256": "c217fbf7d74dde7a920caf6c15d35eabf8858a17d5da77ea219bbed766622949",
+      "sampling_hash": "001098227b0cd944af60fb66972cad721f88aae1de863cf1d8a2c739995f8ce9",
+      "selection_tie_hash": "b4158da1c2bbdf15d8f726808dfcc28f4d3f94b2a9adbfe43841283e7a9dea3b",
+      "execution_hash": "f629fc8f5b3b0c1d6c637780f3dee155ebdf78ac995e66c5343da87444507af5",
+      "ambiguity_score": 7,
+      "ambiguity_score_components": [
+        {
+          "points": 2,
+          "rule": "candidate_hit_without_strong_hit_gate",
+          "source": {
+            "n_hits": 20,
+            "n_strong": 0
+          }
+        },
+        {
+          "points": 0,
+          "rule": "identity_near_orthologue_threshold",
+          "source": {
+            "identity": 0.4,
+            "threshold": 0.6
+          }
+        },
+        {
+          "points": 0,
+          "rule": "coverage_near_orthologue_threshold",
+          "source": {
+            "query_coverage": 0.09749303621169916,
+            "threshold": 0.8
+          }
+        },
+        {
+          "points": 2,
+          "rule": "challenge_architecture",
+          "source": {
+            "architecture": "divergent_full_length"
+          }
+        },
+        {
+          "points": 0,
+          "rule": "candidate_vs_family_disagreement_or_competing_family",
+          "source": {
+            "supports_orthologue": false,
+            "homology_detected": false,
+            "claim_detected": false,
+            "competitive_family_classification": "unresolved_candidate",
+            "disagree": false,
+            "competing": false
+          }
+        },
+        {
+          "points": 0,
+          "rule": "multiplicity_ambiguous_or_multiple_loci",
+          "source": {
+            "number_of_candidate_loci": 0,
+            "classification": "single_locus"
+          }
+        },
+        {
+          "points": 0,
+          "rule": "contig_edge_or_possible_truncation",
+          "source": {
+            "any_near_edge": false,
+            "any_possible_edge_truncation": false
+          }
+        },
+        {
+          "points": 2,
+          "rule": "missing_or_incomplete_falsification_category",
+          "source": {
+            "incomplete_categories": [
+              "local_read_coverage",
+              "read_supported_break"
+            ],
+            "capped_at": 2
+          }
+        },
+        {
+          "points": 1,
+          "rule": "v5_claim_weakened_or_unresolved",
+          "source": {
+            "claim_class": "weakened"
+          }
+        }
+      ],
+      "selection_rank": 2,
+      "pool_stratum": "scaffold_or_contig",
+      "prescreen_v5_reference": "external_validation_agentic_d12/v5_prescreen/GCF_049340285.1/tuf_EF_Tu/v5_case.json",
+      "frozen_m0_hash": "931d8292c08d421aebbc30e84fca154c0adbe0694c232b0155d5a0ec9dc0ef06",
+      "prescreen_v5_final_result": "target_gene_not_detected",
+      "prescreen_v5_claim_class": "weakened",
+      "prescreen_v5_architecture": "divergent_full_length",
+      "external_labels_opened": false
+    }
+  ]
+}

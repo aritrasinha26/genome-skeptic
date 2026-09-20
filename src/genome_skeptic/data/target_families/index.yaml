@@ -1,0 +1,16 @@
+aliases:
+  rpoB: rpoB_RNAP_beta
+  rpoB_RNAP_beta: rpoB_RNAP_beta
+  rpoC: rpoC_RNAP_beta_prime
+  rpoC_RNAP_beta_prime: rpoC_RNAP_beta_prime
+  recA: recA_recombinase
+  recA_recombinase: recA_recombinase
+  tuf: tuf_EF_Tu
+  tuf_EF_Tu: tuf_EF_Tu
+  lacZ: lacZ_beta_galactosidase
+  lacZ_beta_galactosidase: lacZ_beta_galactosidase
+  tetA: tetA_tetracycline_efflux
+  tetA_tetracycline_efflux: tetA_tetracycline_efflux
+  mdfA: mfs_multidrug_efflux
+  mfs_multidrug_efflux: mfs_multidrug_efflux
+  rnd_efflux: rnd_efflux

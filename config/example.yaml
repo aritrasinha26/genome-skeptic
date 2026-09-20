@@ -1,0 +1,66 @@
+project:
+  organism_mode: bacterial_isolate
+  threads: 8
+
+llm:
+  enabled: true
+  provider: ollama
+  base_url: http://localhost:11434
+  model: qwen3:8b
+  temperature: 0.1
+  timeout_seconds: 180
+
+paths:
+  bakta_db: null
+  checkm2_db: null
+    hmm_db: null
+    references: null
+    taxonomy_db: null
+
+thresholds:
+  min_q30_rate: 0.75
+  min_post_trim_read_fraction: 0.70
+  bacterial_genome_min_bp: 500000
+  bacterial_genome_max_bp: 15000000
+  max_contigs_soft: 300
+  min_n50_soft_bp: 20000
+  min_mapping_rate_soft: 0.90
+  min_completeness_soft: 90.0
+  max_contamination_soft: 5.0
+  max_contamination_hard: 10.0
+  min_gene_density_per_kb_soft: 0.60
+  max_gene_density_per_kb_soft: 1.40
+  gene_nt_min_identity: 0.80
+  gene_nt_min_query_coverage: 0.80
+  gene_aa_min_identity: 0.60
+  gene_aa_min_query_coverage: 0.80
+  gene_partial_min_nt_bp: 60
+  gene_partial_min_aa: 20
+  contig_edge_proximity_bp: 300
+  gene_search_kmer_nt: 8
+  gene_search_kmer_aa: 3
+  gene_max_hits_per_query: 20
+  gene_length_ratio_min: 0.80
+  gene_length_ratio_max: 1.20
+  gene_paralogue_min_loci: 2
+  gene_paralogue_min_coverage: 0.50
+  gene_coverage_weaken_below: 0.90
+  gene_domain_short_coverage: 0.50
+  gene_relative_depth_low: 0.50
+  gene_relative_depth_high: 2.50
+  gene_gc_outlier: 0.15
+  max_claim_confidence: 0.85
+  max_not_detected_confidence: 0.65
+  synteny_flank_genes: 2
+  synteny_spacing_fold: 3.0
+  orthologue_min_identity: 0.50
+  orthologue_min_coverage: 0.70
+  break_edge_window_bp: 80
+  break_clip_rate: 0.15
+  break_mate_unmapped_rate: 0.20
+
+execution:
+  stop_on_hard_gate: true
+  keep_intermediates: true
+  allow_model_to_choose_actions: true
+  enable_falsification: true

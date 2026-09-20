@@ -1,0 +1,43 @@
+# Independent curated orthology reference set.
+# Not taken from D8, D12, D20, or M80 genomes.
+# Sequences are reviewed UniProt Swiss-Prot records.
+# Annotation-name equality is not used as truth.
+family_id: lacZ_beta_galactosidase
+display_name: LacZ versus competing beta-galactosidases
+created: "2026-09-20"
+not_from_d8_d12_d20_m80: true
+annotation_name_equality_is_not_truth: true
+members:
+  - protein_id: P00722
+    category: true_orthologue
+    gene: lacZ
+    organism: Escherichia coli K-12
+    source: UniProt Swiss-Prot
+    accession: P00722
+    retrieved: "2026-09-20"
+    sequence_sha256: d192d45958b03c26f677259276df226f5442462bf8c0a20fea4a10f0f426ad39
+    length_aa: 1024
+    fasta: P00722.faa
+    provenance: reviewed Swiss-Prot BGAL_ECOLI; canonical GH2 LacZ
+  - protein_id: P06864
+    category: competing_beta_galactosidase
+    gene: ebgA
+    organism: Escherichia coli K-12
+    source: UniProt Swiss-Prot
+    accession: P06864
+    retrieved: "2026-09-20"
+    sequence_sha256: ea7c167a890b14803acb68f1c9cfb7b49271f1537ee26d951731850a9d4edb74
+    length_aa: 1030
+    fasta: P06864.faa
+    provenance: reviewed Swiss-Prot BGA2_ECOLI; cryptic/evolved GH2, not LacZ
+  - protein_id: P19668
+    category: competing_beta_galactosidase
+    gene: bgaB
+    organism: Geobacillus kaustophilus
+    source: UniProt Swiss-Prot
+    accession: P19668
+    retrieved: "2026-09-20"
+    sequence_sha256: 3998d11342c8c6d705e1d8b60c23facbcb45410448353278ecbe606517abc322
+    length_aa: 672
+    fasta: P19668.faa
+    provenance: reviewed Swiss-Prot BGAL_GEOKU; GH42 beta-galactosidase

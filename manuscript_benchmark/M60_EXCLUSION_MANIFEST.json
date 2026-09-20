@@ -1,0 +1,1823 @@
+{
+  "kind": "M60_EXCLUSION_MANIFEST",
+  "created_utc": "2026-09-20T01:52:36.178927+00:00",
+  "seed": "20260920",
+  "m60_cases_selected": false,
+  "d8_rerun": false,
+  "d12_rerun": false,
+  "d20_touched": false,
+  "d20_results_opened": false,
+  "external_truth_opened": false,
+  "note": "Accession/identifier exclusion set frozen before M60 case selection. D20 contributed only candidate-pool accessions. No D20 predictions or labels were read.",
+  "source_files": [
+    {
+      "path": "external_validation_agentic_d8/D8_MANIFEST.json",
+      "exists": true,
+      "sha256": "37862918643052fa8cb81ff5e180161973a6dd5311aef62bd78c59f8ea74cdbd",
+      "n_records": 8,
+      "d20_results_opened": false
+    },
+    {
+      "path": "external_validation_agentic_d12/D12_MANIFEST.json",
+      "exists": true,
+      "sha256": "54b477d3cf8197ffa73d7ffb2e94ffe4a993b861565a3266085d33ae68b0546f",
+      "n_records": 12,
+      "d20_results_opened": false
+    },
+    {
+      "path": "external_validation_agentic_d12/D12_CANDIDATE_POOL.json",
+      "exists": true,
+      "sha256": "ae71569c554bf1d675e7de5091f29bb9bb09a6aae66a3c262f786ea8c5396d21",
+      "n_records": 24,
+      "d20_results_opened": false
+    },
+    {
+      "path": "external_validation_agentic_d20/candidate_pool_manifest.json",
+      "exists": true,
+      "sha256": "61a3e03bde2341d1bccd7a065cc53411ad10ad61ffc0410295a55ce9f8009f4c",
+      "n_records": 40,
+      "d20_results_opened": false
+    },
+    {
+      "path": "external_validation/cohort_A_naturalistic_manifest.json",
+      "exists": true,
+      "sha256": "292d96e1c1bdd431e44add115e9fbe06b7ddaf412bb89719450a7f5b8ad15f6e",
+      "n_records": 30,
+      "d20_results_opened": false
+    },
+    {
+      "path": "external_validation_agentic/cohort_C_manifest.json",
+      "exists": true,
+      "sha256": "3e4aa633a0e7a6606d5b3d6d204bd8ae29f74f81c41e0c1b3d52c62cfdc83934",
+      "n_records": 10,
+      "d20_results_opened": false
+    },
+    {
+      "path": "external_validation_agentic/cohort_C_pilot5_manifest.json",
+      "exists": true,
+      "sha256": "9107b54b5afdba8dd77088a07206fcc566f0632e2d97b88d8ac891f3943ae7ee",
+      "n_records": 51,
+      "d20_results_opened": false
+    },
+    {
+      "path": "dev_work/agentic_gate/agentic_internal_gate_manifest.json",
+      "exists": true,
+      "sha256": "801c5591b944dc31e8817595fb487cf872471469c5ec4c715f8a3e548e0d58fe",
+      "n_records": 0,
+      "d20_results_opened": false
+    }
+  ],
+  "n_excluded": 183,
+  "excluded": [
+    {
+      "accession": "Aquifex aeolicus",
+      "sources": [
+        "family:recA_recombinase",
+        "family:rpoB_RNAP_beta",
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Bacillus subtilis 168",
+      "sources": [
+        "reference_source_genome"
+      ],
+      "reasons": [
+        "development catalog"
+      ]
+    },
+    {
+      "accession": "Deinococcus radiodurans",
+      "sources": [
+        "family:rpoB_RNAP_beta"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Escherichia coli AcrB",
+      "sources": [
+        "family:rnd_efflux"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Escherichia coli AcrD",
+      "sources": [
+        "family:rnd_efflux"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Escherichia coli Bcr",
+      "sources": [
+        "family:mfs_multidrug_efflux"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Escherichia coli EmrB",
+      "sources": [
+        "family:mfs_multidrug_efflux"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Escherichia coli K-12",
+      "sources": [
+        "ortholog_ref:lacZ_beta_galactosidase"
+      ],
+      "reasons": [
+        "orthology_reference_source_organism"
+      ]
+    },
+    {
+      "accession": "Escherichia coli K-12 MG1655",
+      "sources": [
+        "reference_source_genome"
+      ],
+      "reasons": [
+        "family/query source genome"
+      ]
+    },
+    {
+      "accession": "Escherichia coli MdfA",
+      "sources": [
+        "family:mfs_multidrug_efflux"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Escherichia coli str. K-12 substr. MG1655",
+      "sources": [
+        "family:lacZ_beta_galactosidase",
+        "family:recA_recombinase",
+        "family:rpoB_RNAP_beta",
+        "family:rpoC_RNAP_beta_prime"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Escherichia coli str. K-12 substr. MG1655 tufA",
+      "sources": [
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "GCF_024705055.2",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_032595855.2",
+      "sources": [
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_046562475.1",
+      "sources": [
+        "D12",
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_selected_case",
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_046602855.1",
+      "sources": [
+        "cohort_C",
+        "cohort_C_pilot5"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_046603865.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_046846385.1",
+      "sources": [
+        "D8"
+      ],
+      "reasons": [
+        "D8_selected_case"
+      ]
+    },
+    {
+      "accession": "GCF_046939035.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_047374865.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_047421435.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_047456205.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_047470275.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_047650335.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_047782765.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_047785965.1",
+      "sources": [
+        "cohort_C",
+        "cohort_C_pilot5"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_047918715.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_047936695.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_047943045.1",
+      "sources": [
+        "D12",
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_selected_case",
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_048282645.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_048296675.2",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_048585425.2",
+      "sources": [
+        "D12",
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_selected_case",
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_048684825.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_048851505.1",
+      "sources": [
+        "D8"
+      ],
+      "reasons": [
+        "D8_selected_case"
+      ]
+    },
+    {
+      "accession": "GCF_049190845.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_049340285.1",
+      "sources": [
+        "D12",
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_selected_case",
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_049373995.1",
+      "sources": [
+        "D8"
+      ],
+      "reasons": [
+        "D8_selected_case"
+      ]
+    },
+    {
+      "accession": "GCF_049478495.1",
+      "sources": [
+        "cohort_C",
+        "cohort_C_pilot5"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_049727805.1",
+      "sources": [
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_049904655.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_049913195.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_050039175.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_050310035.1",
+      "sources": [
+        "D8"
+      ],
+      "reasons": [
+        "D8_selected_case"
+      ]
+    },
+    {
+      "accession": "GCF_050749805.1",
+      "sources": [
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_050871785.1",
+      "sources": [
+        "D12",
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_selected_case",
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_050995455.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_051037005.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_051388135.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_051549685.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_051791395.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_051853115.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_051908375.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_051917095.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_051917665.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_051937875.1",
+      "sources": [
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_052114445.1",
+      "sources": [
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_052115545.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_052402035.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_052416375.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_052566715.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_052855985.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_052946635.1",
+      "sources": [
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_052954335.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_052955985.1",
+      "sources": [
+        "D12",
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_selected_case",
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_053618555.1",
+      "sources": [
+        "D8"
+      ],
+      "reasons": [
+        "D8_selected_case"
+      ]
+    },
+    {
+      "accession": "GCF_053698625.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_053795755.1",
+      "sources": [
+        "D12",
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_selected_case",
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_053819165.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_054052205.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_054055795.1",
+      "sources": [
+        "D12",
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_selected_case",
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_054061855.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_054331495.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_054475615.1",
+      "sources": [
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_054792365.1",
+      "sources": [
+        "D8"
+      ],
+      "reasons": [
+        "D8_selected_case"
+      ]
+    },
+    {
+      "accession": "GCF_055181375.1",
+      "sources": [
+        "cohort_C",
+        "cohort_C_pilot5"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_055305445.1",
+      "sources": [
+        "cohort_C",
+        "cohort_C_pilot5"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_055378285.1",
+      "sources": [
+        "cohort_C",
+        "cohort_C_pilot5"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_055379825.1",
+      "sources": [
+        "cohort_C",
+        "cohort_C_pilot5"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_055388155.1",
+      "sources": [
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_055394735.1",
+      "sources": [
+        "cohort_C",
+        "cohort_C_pilot5"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_055523395.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_055576875.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_055698855.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_056267885.1",
+      "sources": [
+        "D8"
+      ],
+      "reasons": [
+        "D8_selected_case"
+      ]
+    },
+    {
+      "accession": "GCF_056483745.1",
+      "sources": [
+        "D8"
+      ],
+      "reasons": [
+        "D8_selected_case"
+      ]
+    },
+    {
+      "accession": "GCF_056497905.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_056688965.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_056821935.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_056850595.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_057063505.1",
+      "sources": [
+        "cohort_C",
+        "cohort_C_pilot5"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_057180445.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_057327385.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_057546125.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_057612195.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_057626335.1",
+      "sources": [
+        "D12",
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_selected_case",
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_057813005.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_058182195.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_058188625.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_058350045.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_058513295.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_058596135.1",
+      "sources": [
+        "D12",
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_selected_case",
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_058663115.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_058684075.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_058702785.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_058896565.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_059417765.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_059508655.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_059683705.1",
+      "sources": [
+        "D12",
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_selected_case",
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_059729245.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_059917585.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_060026665.1",
+      "sources": [
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_060276355.1",
+      "sources": [
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_060416925.1",
+      "sources": [
+        "D12",
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_selected_case",
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_060938735.1",
+      "sources": [
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_964023145.2",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_964283505.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_965234685.1",
+      "sources": [
+        "cohort_C",
+        "cohort_C_pilot5"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_977971445.1",
+      "sources": [
+        "D12_candidate_pool"
+      ],
+      "reasons": [
+        "D12_candidate_pool"
+      ]
+    },
+    {
+      "accession": "GCF_984667895.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_988231885.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_988232335.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "GCF_988233015.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_988234735.1",
+      "sources": [
+        "cohort_A"
+      ],
+      "reasons": [
+        "previous_external_cohort"
+      ]
+    },
+    {
+      "accession": "GCF_988235165.1",
+      "sources": [
+        "D20_candidate_pool"
+      ],
+      "reasons": [
+        "D20_candidate_pool_accession_only"
+      ]
+    },
+    {
+      "accession": "Geobacillus kaustophilus",
+      "sources": [
+        "ortholog_ref:lacZ_beta_galactosidase"
+      ],
+      "reasons": [
+        "orthology_reference_source_organism"
+      ]
+    },
+    {
+      "accession": "Helicobacter pylori 26695",
+      "sources": [
+        "reference_source_genome"
+      ],
+      "reasons": [
+        "development catalog"
+      ]
+    },
+    {
+      "accession": "Klebsiella pneumoniae",
+      "sources": [
+        "family:lacZ_beta_galactosidase"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Mycobacterium tuberculosis H37Rv",
+      "sources": [
+        "family:recA_recombinase",
+        "family:rpoB_RNAP_beta",
+        "family:rpoC_RNAP_beta_prime",
+        "family:tuf_EF_Tu",
+        "reference_source_genome"
+      ],
+      "reasons": [
+        "family_source_organism",
+        "rpoB/tuf family source genome"
+      ]
+    },
+    {
+      "accession": "NC_000913.3",
+      "sources": [
+        "eval_catalog",
+        "reference_source_genome"
+      ],
+      "reasons": [
+        "catalog_development_ecoli_k12",
+        "family/query source genome"
+      ]
+    },
+    {
+      "accession": "NC_000915.1",
+      "sources": [
+        "eval_catalog",
+        "reference_source_genome"
+      ],
+      "reasons": [
+        "catalog_development_hpylori",
+        "development catalog"
+      ]
+    },
+    {
+      "accession": "NC_000962.3",
+      "sources": [
+        "reference_source_genome"
+      ],
+      "reasons": [
+        "rpoB/tuf family source genome"
+      ]
+    },
+    {
+      "accession": "NC_000964.3",
+      "sources": [
+        "eval_catalog",
+        "reference_source_genome"
+      ],
+      "reasons": [
+        "catalog_development_bsubtilis",
+        "development catalog"
+      ]
+    },
+    {
+      "accession": "NC_002505.1",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_held_out_vcholerae_chr1"
+      ]
+    },
+    {
+      "accession": "NC_002516.2",
+      "sources": [
+        "eval_catalog",
+        "reference_source_genome"
+      ],
+      "reasons": [
+        "catalog_development_pao1",
+        "development catalog / forbidden family member host"
+      ]
+    },
+    {
+      "accession": "NC_002947.4",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_held_out_pputida_kt2440"
+      ]
+    },
+    {
+      "accession": "NC_003197.2",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_held_out_salmonella_lt2"
+      ]
+    },
+    {
+      "accession": "NC_003277.2",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_held_out_salmonella_lt2_extra"
+      ]
+    },
+    {
+      "accession": "NC_007795.1",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_held_out_staph_8325"
+      ]
+    },
+    {
+      "accession": "NP_213126.1",
+      "sources": [
+        "family:recA_recombinase"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_213616.1",
+      "sources": [
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_214765.1",
+      "sources": [
+        "family:recA_recombinase"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_215181.1",
+      "sources": [
+        "family:rpoB_RNAP_beta"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_215182.1",
+      "sources": [
+        "family:rpoC_RNAP_beta_prime"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_216072.1",
+      "sources": [
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_228108.1",
+      "sources": [
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_228245.1",
+      "sources": [
+        "family:recA_recombinase"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_252960.1",
+      "sources": [
+        "family:lacZ_beta_galactosidase",
+        "family:mfs_multidrug_efflux",
+        "family:recA_recombinase",
+        "family:rnd_efflux",
+        "family:rpoB_RNAP_beta",
+        "family:rpoC_RNAP_beta_prime",
+        "family:tetA_tetracycline_efflux",
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_387988.1",
+      "sources": [
+        "family:lacZ_beta_galactosidase",
+        "family:mfs_multidrug_efflux",
+        "family:recA_recombinase",
+        "family:rnd_efflux",
+        "family:rpoB_RNAP_beta",
+        "family:rpoC_RNAP_beta_prime",
+        "family:tetA_tetracycline_efflux",
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_387989.1",
+      "sources": [
+        "family:lacZ_beta_galactosidase",
+        "family:mfs_multidrug_efflux",
+        "family:recA_recombinase",
+        "family:rnd_efflux",
+        "family:rpoB_RNAP_beta",
+        "family:rpoC_RNAP_beta_prime",
+        "family:tetA_tetracycline_efflux",
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_414878.1",
+      "sources": [
+        "family:lacZ_beta_galactosidase"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_417179.1",
+      "sources": [
+        "family:recA_recombinase"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_418240.1",
+      "sources": [
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_418414.1",
+      "sources": [
+        "family:rpoB_RNAP_beta"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_418415.1",
+      "sources": [
+        "family:rpoC_RNAP_beta_prime"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "NP_463022.1",
+      "sources": [
+        "family:lacZ_beta_galactosidase",
+        "family:mfs_multidrug_efflux",
+        "family:recA_recombinase",
+        "family:rnd_efflux",
+        "family:rpoB_RNAP_beta",
+        "family:rpoC_RNAP_beta_prime",
+        "family:tetA_tetracycline_efflux",
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "P00722",
+      "sources": [
+        "ortholog_ref:lacZ_beta_galactosidase"
+      ],
+      "reasons": [
+        "orthology_reference_protein"
+      ]
+    },
+    {
+      "accession": "P06864",
+      "sources": [
+        "ortholog_ref:lacZ_beta_galactosidase"
+      ],
+      "reasons": [
+        "orthology_reference_protein"
+      ]
+    },
+    {
+      "accession": "P19668",
+      "sources": [
+        "ortholog_ref:lacZ_beta_galactosidase"
+      ],
+      "reasons": [
+        "orthology_reference_protein"
+      ]
+    },
+    {
+      "accession": "Pseudomonas aeruginosa PAO1",
+      "sources": [
+        "reference_source_genome"
+      ],
+      "reasons": [
+        "development catalog / forbidden family member host"
+      ]
+    },
+    {
+      "accession": "Shigella flexneri",
+      "sources": [
+        "family:lacZ_beta_galactosidase"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Streptococcus pyogenes",
+      "sources": [
+        "family:rpoB_RNAP_beta"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Synechocystis sp.",
+      "sources": [
+        "family:rpoB_RNAP_beta"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "TetA/TCR1 tetracycline efflux",
+      "sources": [
+        "family:tetA_tetracycline_efflux"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Thermotoga maritima",
+      "sources": [
+        "family:recA_recombinase",
+        "family:rpoB_RNAP_beta",
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "Tn10 TetA class B",
+      "sources": [
+        "family:tetA_tetracycline_efflux"
+      ],
+      "reasons": [
+        "family_source_organism"
+      ]
+    },
+    {
+      "accession": "WP_000037869.1",
+      "sources": [
+        "family:lacZ_beta_galactosidase",
+        "family:mfs_multidrug_efflux",
+        "family:recA_recombinase",
+        "family:rnd_efflux",
+        "family:rpoB_RNAP_beta",
+        "family:rpoC_RNAP_beta_prime",
+        "family:tetA_tetracycline_efflux",
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "WP_000241775.1",
+      "sources": [
+        "family:lacZ_beta_galactosidase"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "WP_003255495.1",
+      "sources": [
+        "family:lacZ_beta_galactosidase",
+        "family:mfs_multidrug_efflux",
+        "family:recA_recombinase",
+        "family:rnd_efflux",
+        "family:rpoB_RNAP_beta",
+        "family:rpoC_RNAP_beta_prime",
+        "family:tetA_tetracycline_efflux",
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "WP_004081508.1",
+      "sources": [
+        "family:rpoB_RNAP_beta"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "WP_004084538.1",
+      "sources": [
+        "family:lacZ_beta_galactosidase"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "WP_010871995.1",
+      "sources": [
+        "family:rpoB_RNAP_beta"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "WP_010881267.1",
+      "sources": [
+        "family:rpoB_RNAP_beta"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "WP_243759718.1",
+      "sources": [
+        "family:rpoB_RNAP_beta"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "WP_506804874.1",
+      "sources": [
+        "family:rpoB_RNAP_beta"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "YP_499096.2",
+      "sources": [
+        "family:lacZ_beta_galactosidase",
+        "family:mfs_multidrug_efflux",
+        "family:recA_recombinase",
+        "family:rnd_efflux",
+        "family:rpoB_RNAP_beta",
+        "family:rpoC_RNAP_beta_prime",
+        "family:tetA_tetracycline_efflux",
+        "family:tuf_EF_Tu"
+      ],
+      "reasons": [
+        "family_or_competitor_reference_asset"
+      ]
+    },
+    {
+      "accession": "bsubtilis",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_genome_id_development"
+      ]
+    },
+    {
+      "accession": "ecoli_k12",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_genome_id_development"
+      ]
+    },
+    {
+      "accession": "hpylori",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_genome_id_development"
+      ]
+    },
+    {
+      "accession": "pao1",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_genome_id_development"
+      ]
+    },
+    {
+      "accession": "pputida_kt2440",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_genome_id_held_out"
+      ]
+    },
+    {
+      "accession": "salmonella_lt2",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_genome_id_held_out"
+      ]
+    },
+    {
+      "accession": "staph_8325",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_genome_id_held_out"
+      ]
+    },
+    {
+      "accession": "vcholerae_chr1",
+      "sources": [
+        "eval_catalog"
+      ],
+      "reasons": [
+        "catalog_genome_id_held_out"
+      ]
+    }
+  ]
+}
