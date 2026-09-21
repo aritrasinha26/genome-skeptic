@@ -1,0 +1,47 @@
+{
+  "DEVELOPMENT_POST_HOC": true,
+  "NOT_VALIDATION": true,
+  "NOT_PROSPECTIVE": true,
+  "label": "DEVELOPMENT / POST-HOC ; NOT VALIDATION",
+  "n_cases": 60,
+  "n_evaluable": 41,
+  "v4_correct_over_n": "33/41",
+  "v5_correct_over_n": "36/41",
+  "n_changed": 3,
+  "changed_positions": [
+    13,
+    36,
+    48
+  ],
+  "n_rescued_known_errors": 3,
+  "rescued_positions": [
+    13,
+    36,
+    48
+  ],
+  "n_remaining_known_errors": 5,
+  "remaining_error_positions": [
+    14,
+    19,
+    37,
+    41,
+    44
+  ],
+  "n_previously_correct_degraded": 0,
+  "degraded_positions": [],
+  "teta_v5_positive": 2,
+  "teta_v5_negative": 28,
+  "rpob_v5_positive": 30,
+  "rpob_v5_negative": 0,
+  "teta_constant_classifier": false,
+  "rpob_constant_classifier": true,
+  "v5_constant_classifier_on_m60": false,
+  "additional_tuning_performed": false,
+  "search_hmm_llm_rerun": false,
+  "position_locks_written": false,
+  "written_utc": "2026-09-21T20:41:44.152115+00:00",
+  "outputs": {
+    "V5_DEVELOPMENT_REPLAY_CASE_LEVEL.csv": "90a8a624da0be14c9cdf26009a9ee72515dfa2f07b76bc1ba5d22365e1b84d6d",
+    "V5_DEVELOPMENT_REPLAY_MANIFEST.json": "9f6dcb902eec996040e77cb4c1e99f632f6611f1e8d83578854075e28e224bb9"
+  }
+}

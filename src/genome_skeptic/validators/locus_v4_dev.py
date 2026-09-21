@@ -239,8 +239,12 @@ def assert_locus_count_invariant(m: TargetMeasurements, settings: Settings) -> N
 def refine_weak_family_classification(m: TargetMeasurements) -> bool:
     """Reclassify a non-decisive target_family_supported call as ambiguous_family.
 
-    Uses only stored competitive-family measurements and the frozen 0.70
+    Uses only stored competitive-family measurements and the 0.70
     identity-product gate. Does not consult truth labels.
+
+    V5: a competitor that failed the family gate is not a reason to treat
+    target_family_supported as ambiguous. The 0.70 comparison is identity ×
+    coverage, not coverage alone.
     """
     from genome_skeptic.agents.diagnostic_needs_v4_dev import family_identity_is_decisive
 
@@ -253,7 +257,7 @@ def refine_weak_family_classification(m: TargetMeasurements) -> bool:
         return False
     if competitive.get("classification") != "target_family_supported":
         return False
-    if family_identity_is_decisive(competitive):
+    if family_identity_is_decisive(competitive, reconstruction=recon):
         return False
     competitive["classification"] = "ambiguous_family"
     conflicts = list(competitive.get("conflicting_evidence") or [])

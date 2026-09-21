@@ -1,0 +1,20 @@
+GENOME_SKEPTIC_V5_VALIDATOR_REPAIR test report
+DEVELOPMENT / POST-HOC tests are not prospective validation.
+
+Command:
+python -m pytest tests/ --ignore=tests/test_amrfinder_parser.py --ignore=tests/test_real_genomes.py --ignore=tests/test_realworld.py --ignore=tests/test_fast_pilot.py -q --tb=line
+
+Result:
+248 passed / 0 failed
+elapsed 29.65s
+
+V5 repair unit tests (tests/test_v5_validator_repair.py):
+8 passed / 0 failed
+
+Ignored as not active scientific-core for this freeze:
+- tests/test_amrfinder_parser.py (uncommitted comparator remediation, not V5 scientific core)
+- tests/test_real_genomes.py (external genome fixtures)
+- tests/test_realworld.py (external fixtures)
+- tests/test_fast_pilot.py (assembly-profile pilot, not validator freeze)
+
+Further M60 tuning after repair: NO

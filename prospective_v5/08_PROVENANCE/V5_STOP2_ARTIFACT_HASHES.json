@@ -1,0 +1,94 @@
+{
+  "kind": "V5_STOP2_ARTIFACT_HASHES",
+  "n": 22,
+  "files": [
+    {
+      "path": "prospective_v5/00_PROTOCOL/V5_PHASE123_DEVELOPMENT_REPORT.md",
+      "sha256": "ed65c6db429a0369b5c92ba6fe7dae3a89984d8ed11b7a9cf92e289f9459c8de"
+    },
+    {
+      "path": "prospective_v5/00_PROTOCOL/V5_PROSPECTIVE_ANALYSIS_PLAN.md",
+      "sha256": "c4f5c64b677a7d07d1b576d22312c733f36a40c600e7272c9c25d263aa848ddf"
+    },
+    {
+      "path": "prospective_v5/00_PROTOCOL/V5_VALIDATOR_REPAIR_RULES.md",
+      "sha256": "4df9cfbdc971bed6701223f251e242815a009f0e676b5d9f00baa0a1850ae754"
+    },
+    {
+      "path": "prospective_v5/01_V5_FREEZE/V5_DEVELOPMENT_BOUNDARY.md",
+      "sha256": "189330ffa0c6262e8fc363828d8dd65d9238065f0f5978c92c9996a21bc5e1fe"
+    },
+    {
+      "path": "prospective_v5/01_V5_FREEZE/V5_FREEZE_MANIFEST.json",
+      "sha256": "f732c53beb362bbc5d4e5aa54edfdb7083e0157377013889ed5bc8bacace99f3"
+    },
+    {
+      "path": "prospective_v5/01_V5_FREEZE/V5_SCIENTIFIC_CORE_HASH.txt",
+      "sha256": "2d1fd3cd30cfacd24bf546449abf291d676794ec0af59af119573a1f4ce8a7e6"
+    },
+    {
+      "path": "prospective_v5/01_V5_FREEZE/V5_TEST_REPORT.txt",
+      "sha256": "343265dc8ee9f5f8a2e8a54a7cf8cc817f098f30f89e5f0453ba1ae5b84388e0"
+    },
+    {
+      "path": "prospective_v5/02_POWER/V5_MCNEMAR_POWER_MATRIX.csv",
+      "sha256": "647e84ec4cee496bf7db45b55aa4eb7787bf38d59e1e7bad5d17124200a4122f"
+    },
+    {
+      "path": "prospective_v5/02_POWER/V5_POWER_ASSUMPTIONS.md",
+      "sha256": "e3233702874bf75ac0012971646b0405a700379ebf83d6786004488c3ce2bebf"
+    },
+    {
+      "path": "prospective_v5/02_POWER/V5_SAMPLE_SIZE_RECOMMENDATION.md",
+      "sha256": "5d8f87e2f84ea2f1877fb07d55510b4cebb41875f29c75f849f31bb2a34736b5"
+    },
+    {
+      "path": "prospective_v5/02_POWER/V5_ZERO_DISCORDANCE_BOUNDS.csv",
+      "sha256": "9c9fb37489e60d7c3bc9a8bfbc7044a64733b9a3c669b737d46d9b8ba2435836"
+    },
+    {
+      "path": "prospective_v5/DEVELOPMENT_REPLAY/V5_DEVELOPMENT_REPLAY_CASE_LEVEL.csv",
+      "sha256": "90a8a624da0be14c9cdf26009a9ee72515dfa2f07b76bc1ba5d22365e1b84d6d"
+    },
+    {
+      "path": "prospective_v5/DEVELOPMENT_REPLAY/V5_DEVELOPMENT_REPLAY_MANIFEST.json",
+      "sha256": "7b1747723ecd57cd3def00b85e8aba56884703fadc2a876547f355dfbdafae51"
+    },
+    {
+      "path": "prospective_v5/DEVELOPMENT_REPLAY/V5_DEVELOPMENT_REPLAY_REPORT.md",
+      "sha256": "f2ed34fc299e9d9f29743e1b653642582a0e1959939441bce4b292adee7319da"
+    },
+    {
+      "path": "scripts/freeze_v5_validator_repair.py",
+      "sha256": "c1e1502bb372a2c1c389bae225ac89891c3e4754e530df0ab85664ad24b12381"
+    },
+    {
+      "path": "scripts/power_v5_mcnemar.py",
+      "sha256": "f1998e92ab44626de767207d51e2e9758ff92e70373ba37ad81c69e3eb856c7c"
+    },
+    {
+      "path": "scripts/run_v5_validator_development_replay.py",
+      "sha256": "17f3ef2a732f55db9b0b037f092f5ae49d6fc99cb47e9e722463d115c2fb7e47"
+    },
+    {
+      "path": "src/genome_skeptic/agents/diagnostic_needs_v4_1_dev.py",
+      "sha256": "f398cdf64136d55ba18b697a0aa403031add878c1ce7b2c7ce3977f8ff0158f9"
+    },
+    {
+      "path": "src/genome_skeptic/agents/diagnostic_needs_v4_dev.py",
+      "sha256": "8c3f12aabfab9c7abc3984f25289058b47599e595a4c5d437ef8c8ab6a1e2bfb"
+    },
+    {
+      "path": "src/genome_skeptic/validators/locus_reconstruction.py",
+      "sha256": "fd1e70c71cd3ed5e97eed991be3c12569455b7779c7ed07dca11237d53fb04a3"
+    },
+    {
+      "path": "src/genome_skeptic/validators/locus_v4_dev.py",
+      "sha256": "bdd927f18527ccd61b51fd04155c0c3c0a17be5d021123b3fea27bcd49346bb0"
+    },
+    {
+      "path": "tests/test_v5_validator_repair.py",
+      "sha256": "0f7bf4ec3dd7f3dfe1a95426dde0ddb737db81e5665c759943fafe17b420d420"
+    }
+  ]
+}

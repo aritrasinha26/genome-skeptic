@@ -38,20 +38,39 @@ from genome_skeptic.validators.ortholog_references import (
 _DECISIVE_IDENTITY_PRODUCT = 0.70
 
 
-def family_identity_is_decisive(competitive: dict[str, Any]) -> bool:
-    """True only when stored competitive-family scores already settle identity."""
+def _stored_target_identity(competitive: dict[str, Any], reconstruction: dict[str, Any] | None = None) -> float:
+    """Identity already stored on the competitive blob or the parent reconstruction."""
+    for blob in (competitive, reconstruction or {}):
+        for key in ("target_family_sequence_identity", "sequence_identity", "query_identity"):
+            value = blob.get(key)
+            if value is not None:
+                return float(value)
+    placement = (competitive.get("reference_family_placement") or {})
+    if placement.get("identity_product") is not None and competitive.get("target_family_sequence_coverage"):
+        coverage = float(competitive.get("target_family_sequence_coverage") or 0.0)
+        if coverage > 0:
+            return float(placement["identity_product"]) / coverage
+    return 0.0
+
+
+def family_identity_is_decisive(
+    competitive: dict[str, Any],
+    reconstruction: dict[str, Any] | None = None,
+) -> bool:
+    """True only when stored competitive-family scores already settle identity.
+
+    V5 rule (decision layer only):
+    - A competitor that failed the family gate is not evidence against the target.
+    - The 0.70 gate is the identity-product (identity × coverage), not coverage alone.
+    """
     cls = competitive.get("classification")
     if cls == "competing_family_preferred":
         return True
     if cls != "target_family_supported":
         return False
+    identity = _stored_target_identity(competitive, reconstruction)
     coverage = float(competitive.get("target_family_sequence_coverage") or 0.0)
-    if coverage < _DECISIVE_IDENTITY_PRODUCT:
-        return False
-    conflicts = [str(item).lower() for item in (competitive.get("conflicting_evidence") or [])]
-    if any("did not pass the family gate" in item for item in conflicts):
-        return False
-    return True
+    return (identity * coverage) >= _DECISIVE_IDENTITY_PRODUCT
 
 
 def derive_diagnostic_needs_v4_1_dev(
@@ -79,7 +98,8 @@ def derive_diagnostic_needs_v4_1_dev(
     competing_ready = bool(capabilities.get("competing_families")) and bool(capabilities.get("hits"))
     ortholog_ready = bool(capabilities.get("ortholog_reference_set")) and bool(capabilities.get("hits"))
     competitive = _competitive(m)
-    if (competing_ready or ortholog_ready) and not family_identity_is_decisive(competitive):
+    recon = ((getattr(m.family_evidence, "reconstruction", None) or {}) if m.family_evidence else {}) or {}
+    if (competing_ready or ortholog_ready) and not family_identity_is_decisive(competitive, reconstruction=recon):
         needs.append(FAMILY_IDENTITY_UNRESOLVED)
 
     ortho = ((getattr(m.family_evidence, "reconstruction", None) or {}) if m.family_evidence else {}) or {}

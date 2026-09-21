@@ -1,0 +1,5 @@
+N,observed_discordances,clopper_pearson_two_sided_95_upper,clopper_pearson_one_sided_95_upper,method,not_equivalence
+40,0,0.088097,0.072158,exact_binomial_clopper_pearson,True
+60,0,0.059629,0.048703,exact_binomial_clopper_pearson,True
+80,0,0.045064,0.036754,exact_binomial_clopper_pearson,True
+100,0,0.036217,0.029513,exact_binomial_clopper_pearson,True

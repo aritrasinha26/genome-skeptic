@@ -182,6 +182,52 @@ def _stops_between(seq: str, strand: str, start: int, end: int) -> list[dict]:
     return stops
 
 
+def _best_hmm_same_orf(reconstruction: LocusReconstruction, best_hmm: dict | None) -> bool:
+    """True when best_hmm was measured on the reconstructed locus ORF."""
+    if not best_hmm:
+        return False
+    tid = str(best_hmm.get("target_id") or "")
+    segs = list(reconstruction.candidate_segments or [])
+    orf_ids = {s.orf_id for s in segs if s.orf_id}
+    if tid and tid in orf_ids:
+        return True
+    loc = _parse_orf_id(tid) if tid else None
+    if loc is None:
+        return False
+    if reconstruction.contig and loc.get("contig_id") != reconstruction.contig:
+        return False
+    if reconstruction.genomic_start is None or reconstruction.genomic_end is None:
+        return True
+    return int(loc["start"]) < int(reconstruction.genomic_end) and int(loc["end"]) > int(reconstruction.genomic_start)
+
+
+def architecture_profile_coverage(reconstruction: LocusReconstruction, best_hmm: dict | None) -> float:
+    """Coverage consumed by architecture classification.
+
+    V5: when reconstruction.hmm_coverage and best_hmm.model_coverage both exist
+    for the same ORF, do not prefer the lower reconstruction value.
+    """
+    recon_cov = float(reconstruction.hmm_coverage or 0.0)
+    if not best_hmm or best_hmm.get("model_coverage") is None:
+        return recon_cov
+    if not _best_hmm_same_orf(reconstruction, best_hmm):
+        return recon_cov
+    return max(recon_cov, float(best_hmm.get("model_coverage") or 0.0))
+
+
+def _select_best_hmm(hmm_by_target: dict | None) -> dict | None:
+    ranked = [v for v in (hmm_by_target or {}).values() if v]
+    if not ranked:
+        return None
+    return min(
+        ranked,
+        key=lambda h: (
+            h.get("full_evalue") if h.get("full_evalue") is not None else 1e9,
+            -(h.get("model_coverage") or 0),
+        ),
+    )
+
+
 def classify_architecture(
     *,
     reconstruction: LocusReconstruction,
@@ -193,13 +239,14 @@ def classify_architecture(
     query_hits: list[GeneSearchHit] | None = None,
     query_aa: str | None = None,
     locus_evidence: list | None = None,
+    best_hmm: dict | None = None,
 ) -> LocusReconstruction:
     t = settings.thresholds
     segs = list(reconstruction.candidate_segments)
     model_len = 0
     if family.members:
         model_len = max((m.length_aa or len(m.sequence) or 0) for m in family.members)
-    hmm_cov = float(reconstruction.hmm_coverage or 0.0)
+    hmm_cov = architecture_profile_coverage(reconstruction, best_hmm)
     gate = hmm_cov >= t.hmm_min_gate_model_coverage or any(
         h.identity >= t.family_member_min_identity and h.query_coverage >= 0.20
         for h in member_hits
@@ -471,6 +518,7 @@ def reconstruct_locus(
         query_hits=qhits,
         query_aa=query_aa,
         locus_evidence=locus_evidence,
+        best_hmm=_select_best_hmm(hmm_by_target),
     )
     from genome_skeptic.validators.competitive_family import discriminate_family
     dest = Path(out_dir) / "competitive" if out_dir else Path(tempfile.mkdtemp(prefix="gs_competitive_"))
