@@ -1,0 +1,1129 @@
+{
+  "kind": "D12_EXTERNAL_TRUTH_LOCKED",
+  "cohort": "V3_D12_EXTERNAL",
+  "created_utc": "2026-09-20T00:18:27.020305+00:00",
+  "predictions_consulted": false,
+  "d20_touched": false,
+  "d20_candidate_pool_sha256": "61a3e03bde2341d1bccd7a065cc53411ad10ad61ffc0410295a55ce9f8009f4c",
+  "lock_hashes_verified_before_truth": {
+    "D12_MANIFEST.json": "54b477d3cf8197ffa73d7ffb2e94ffe4a993b861565a3266085d33ae68b0546f",
+    "D12_CONVENTIONAL_LOCKED.json": "9cd5657a0e24e877f20f3ad83ec34d495231c1d0f2897336861999d9f4082f57",
+    "D12_V5_LOCKED.json": "66652425bbdff574f91c9da19876c02f7a684653a9096f65bd44a95745dfead4",
+    "D12_AGENTIC_V3_LOCKED.json": "64a2dd3365805d68f431f487d9aebd7cb685466096d1710d67d962895c3cc25c"
+  },
+  "structural_counts_before_truth": {
+    "conventional": {
+      "n": 12,
+      "n_ok": 12,
+      "n_failures": 0
+    },
+    "v5": {
+      "n": 12,
+      "n_ok": 12,
+      "n_failures": 0
+    },
+    "agentic": {
+      "n": 12,
+      "n_ok": 12,
+      "n_failures": 0
+    }
+  },
+  "endpoint_audit_n_identical_before_truth": 12,
+  "frozen_family_tet_positives": [
+    "tet(A)",
+    "tet(B)"
+  ],
+  "tetC_not_a_frozen_member": true,
+  "tuf_seed_used": "NP_417798.1 / gene_id 947838 (authentic tufA); NP_418240.1 not used",
+  "n_cases": 12,
+  "cases": [
+    {
+      "execution_position": 1,
+      "assembly_accession": "GCF_060416925.1",
+      "organism": "Sphingomonas faeni",
+      "taxonomy_id": 185950,
+      "target": "tetA_tetracycline_efflux",
+      "endpoint": "FAMILY_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "NEGATIVE",
+      "family_members_counted_as_positive": [
+        "tet(A)",
+        "tet(B)"
+      ],
+      "tetC_counted_as_positive": false,
+      "amrfinder_software_version": null,
+      "amrfinder_database_version": null,
+      "pgap_annotation": {
+        "pgap_pipeline": "NCBI Prokaryotic Genome Annotation Pipeline (PGAP)",
+        "pgap_software_version": "6.11",
+        "annotation_name": "GCF_060416925.1-RS_2026_08_26",
+        "annotation_release_date": "2026-08-26",
+        "annotation_method": "Best-placed reference protein set; GeneMarkS-2+",
+        "annotation_provider": "NCBI RefSeq"
+      },
+      "amrfinder_source": "Post-lock NCBI RefSeq/PGAP AMR gene annotation on this assembly (PGAP 6.11; annotation GCF_060416925.1-RS_2026_08_26; release 2026-08-26). PGAP uses AMRFinderPlus/NCBIfam-AMRFinder for AMR genes. This GBFF did not embed AMRFinderPlus software/database version strings. Frozen FAMILY positives = tet(A) OR tet(B); tet(C) not counted. tetR is not a family member.",
+      "exact_calls": [],
+      "related_calls": [],
+      "supporting_accessions": [],
+      "ftp_amrfinder_report": {
+        "found": false,
+        "url": null,
+        "n_tet_rows": 0
+      },
+      "gbff_n_amrfinder_inference": 0,
+      "short_rationale": "No tet(A) or tet(B) AMRFinderPlus/PGAP AMR gene call on this assembly. Absence of a frozen-family call is scored FAMILY negative.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 2,
+      "assembly_accession": "GCF_057626335.1",
+      "organism": "Gardnerella vaginalis",
+      "taxonomy_id": 2702,
+      "target": "rpoB_RNAP_beta",
+      "endpoint": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "POSITIVE",
+      "candidate_loci": [
+        {
+          "seqid": "NZ_CM172654.1",
+          "start": 1474360,
+          "end": 1477926,
+          "strand": "+",
+          "locus_tag": "AC28R1_RS05885",
+          "gene": "rpoB",
+          "product": "DNA-directed RNA polymerase subunit beta",
+          "protein_ids": [
+            "WP_004116667.1",
+            "WP_004107540.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_004116667.1",
+            "tlen": 1188,
+            "evalue": 0.0,
+            "score": 1160.3,
+            "qlen": 1342,
+            "n_domains": 4,
+            "hmm_coverage_aa": 1084,
+            "qcov": 0.9910581222056631,
+            "qcov_envelope": 0.9910581222056631,
+            "description": "MULTISPECIES: DNA-directed RNA polymerase subunit beta [Gardnerella]"
+          }
+        }
+      ],
+      "orthology_source": "NCBI Gene Orthologs seed NP_418414.1 / gene_id 948488; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP gene symbol used only as corroboration",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_418414.1",
+        "seed_gene_id": "948488",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": false,
+          "n_reported": 0,
+          "raw_keys": [
+            "messages"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_418414.1",
+        "n_hits_e1e5": 1,
+        "genuine_hits": [
+          {
+            "target": "WP_004116667.1",
+            "tlen": 1188,
+            "evalue": 0.0,
+            "score": 1160.3,
+            "qlen": 1342,
+            "n_domains": 4,
+            "hmm_coverage_aa": 1084,
+            "qcov": 0.9910581222056631,
+            "qcov_envelope": 0.9910581222056631,
+            "description": "MULTISPECIES: DNA-directed RNA polymerase subunit beta [Gardnerella]"
+          }
+        ]
+      },
+      "pgap_symbol_cds_count": 1,
+      "related_symbol_cds_count": 1,
+      "corroboration": [
+        "independent_phmmer_seed_vs_proteome",
+        "PGAP_symbol_corroboration_only"
+      ],
+      "short_rationale": "independent phmmer of the frozen/authentic seed produced a complete orthologous hit. PGAP gene-name equality was not used as the sole standard.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 3,
+      "assembly_accession": "GCF_053795755.1",
+      "organism": "Bartonella sp. B17",
+      "taxonomy_id": 3239291,
+      "target": "tetA_tetracycline_efflux",
+      "endpoint": "FAMILY_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "NEGATIVE",
+      "family_members_counted_as_positive": [
+        "tet(A)",
+        "tet(B)"
+      ],
+      "tetC_counted_as_positive": false,
+      "amrfinder_software_version": null,
+      "amrfinder_database_version": null,
+      "pgap_annotation": {
+        "pgap_pipeline": "NCBI Prokaryotic Genome Annotation Pipeline (PGAP)",
+        "pgap_software_version": "6.10",
+        "annotation_name": "GCF_053795755.1-RS_2025_12_03",
+        "annotation_release_date": "2025-12-03",
+        "annotation_method": "Best-placed reference protein set; GeneMarkS-2+",
+        "annotation_provider": "NCBI RefSeq"
+      },
+      "amrfinder_source": "Post-lock NCBI RefSeq/PGAP AMR gene annotation on this assembly (PGAP 6.10; annotation GCF_053795755.1-RS_2025_12_03; release 2025-12-03). PGAP uses AMRFinderPlus/NCBIfam-AMRFinder for AMR genes. This GBFF did not embed AMRFinderPlus software/database version strings. Frozen FAMILY positives = tet(A) OR tet(B); tet(C) not counted. tetR is not a family member.",
+      "exact_calls": [],
+      "related_calls": [],
+      "supporting_accessions": [],
+      "ftp_amrfinder_report": {
+        "found": false,
+        "url": null,
+        "n_tet_rows": 0
+      },
+      "gbff_n_amrfinder_inference": 0,
+      "short_rationale": "No tet(A) or tet(B) AMRFinderPlus/PGAP AMR gene call on this assembly. Absence of a frozen-family call is scored FAMILY negative.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 4,
+      "assembly_accession": "GCF_047943045.1",
+      "organism": "Agrilactobacillus fermenti",
+      "taxonomy_id": 2586909,
+      "target": "rpoB_RNAP_beta",
+      "endpoint": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "POSITIVE",
+      "candidate_loci": [
+        {
+          "seqid": "NZ_CP181347.1",
+          "start": 1916010,
+          "end": 1919603,
+          "strand": "-",
+          "locus_tag": "ACNAN0_RS09665",
+          "gene": "WP_230914520.1",
+          "product": "DNA-directed RNA polymerase subunit beta",
+          "protein_ids": [
+            "WP_230914520.1",
+            "WP_010580243.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_230914520.1",
+            "tlen": 1197,
+            "evalue": 0.0,
+            "score": 1181.6,
+            "qlen": 1342,
+            "n_domains": 5,
+            "hmm_coverage_aa": 1034,
+            "qcov": 0.9932935916542474,
+            "qcov_envelope": 0.9932935916542474,
+            "description": "DNA-directed RNA polymerase subunit beta [Agrilactobacillus fermenti]"
+          }
+        }
+      ],
+      "orthology_source": "NCBI Gene Orthologs seed NP_418414.1 / gene_id 948488; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP gene symbol used only as corroboration",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_418414.1",
+        "seed_gene_id": "948488",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": false,
+          "n_reported": 0,
+          "raw_keys": [
+            "messages"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_418414.1",
+        "n_hits_e1e5": 1,
+        "genuine_hits": [
+          {
+            "target": "WP_230914520.1",
+            "tlen": 1197,
+            "evalue": 0.0,
+            "score": 1181.6,
+            "qlen": 1342,
+            "n_domains": 5,
+            "hmm_coverage_aa": 1034,
+            "qcov": 0.9932935916542474,
+            "qcov_envelope": 0.9932935916542474,
+            "description": "DNA-directed RNA polymerase subunit beta [Agrilactobacillus fermenti]"
+          }
+        ]
+      },
+      "pgap_symbol_cds_count": 0,
+      "related_symbol_cds_count": 3,
+      "corroboration": [
+        "independent_phmmer_seed_vs_proteome"
+      ],
+      "short_rationale": "independent phmmer of the frozen/authentic seed produced a complete orthologous hit. PGAP gene-name equality was not used as the sole standard.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 5,
+      "assembly_accession": "GCF_058596135.1",
+      "organism": "Parabacteroides distasonis",
+      "taxonomy_id": 823,
+      "target": "lacZ_beta_galactosidase",
+      "endpoint": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "POSITIVE",
+      "candidate_loci": [
+        {
+          "seqid": "NZ_CM178644.1",
+          "start": 268461,
+          "end": 271799,
+          "strand": "-",
+          "locus_tag": "ACY5A6_RS01305",
+          "gene": "WP_491857936.1",
+          "product": "glycoside hydrolase family 2 TIM barrel-domain containing protein",
+          "protein_ids": [
+            "WP_491857936.1",
+            "WP_011965928.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_491857936.1",
+            "tlen": 1112,
+            "evalue": 3e-145,
+            "score": 483.2,
+            "qlen": 1024,
+            "n_domains": 2,
+            "hmm_coverage_aa": 858,
+            "qcov": 0.908203125,
+            "qcov_envelope": 0.908203125,
+            "description": "glycoside hydrolase family 2 TIM barrel-domain containing protein [Parabacteroides distasonis]"
+          }
+        },
+        {
+          "seqid": "NZ_CM178644.1",
+          "start": 1182521,
+          "end": 1185631,
+          "strand": "-",
+          "locus_tag": "ACY5A6_RS04900",
+          "gene": "lacZ",
+          "product": "beta-galactosidase%2C LacZ type",
+          "protein_ids": [
+            "WP_491858174.1",
+            "WP_005857161.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_491858174.1",
+            "tlen": 1036,
+            "evalue": 5.7e-161,
+            "score": 535.3,
+            "qlen": 1024,
+            "n_domains": 1,
+            "hmm_coverage_aa": 1012,
+            "qcov": 0.98828125,
+            "qcov_envelope": 0.98828125,
+            "description": "beta-galactosidase, LacZ type [Parabacteroides distasonis]"
+          }
+        }
+      ],
+      "orthology_source": "NCBI Gene Orthologs seed NP_414878.1 / gene_id 945006; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP gene symbol used only as corroboration",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_414878.1",
+        "seed_gene_id": "945006",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": true,
+          "n_reported": 4515,
+          "raw_keys": [
+            "next_page_token",
+            "reports",
+            "total_count"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_414878.1",
+        "n_hits_e1e5": 8,
+        "genuine_hits": [
+          {
+            "target": "WP_491858174.1",
+            "tlen": 1036,
+            "evalue": 5.7e-161,
+            "score": 535.3,
+            "qlen": 1024,
+            "n_domains": 1,
+            "hmm_coverage_aa": 1012,
+            "qcov": 0.98828125,
+            "qcov_envelope": 0.98828125,
+            "description": "beta-galactosidase, LacZ type [Parabacteroides distasonis]"
+          },
+          {
+            "target": "WP_491857936.1",
+            "tlen": 1112,
+            "evalue": 3e-145,
+            "score": 483.2,
+            "qlen": 1024,
+            "n_domains": 2,
+            "hmm_coverage_aa": 858,
+            "qcov": 0.908203125,
+            "qcov_envelope": 0.908203125,
+            "description": "glycoside hydrolase family 2 TIM barrel-domain containing protein [Parabacteroides distasonis]"
+          }
+        ]
+      },
+      "pgap_symbol_cds_count": 1,
+      "related_symbol_cds_count": 3,
+      "corroboration": [
+        "independent_phmmer_seed_vs_proteome",
+        "PGAP_symbol_corroboration_only"
+      ],
+      "short_rationale": "independent phmmer of the frozen/authentic seed produced a complete orthologous hit. PGAP gene-name equality was not used as the sole standard. Other beta-galactosidases were not treated as lacZ.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 6,
+      "assembly_accession": "GCF_059683705.1",
+      "organism": "Akkermansia muciniphila",
+      "taxonomy_id": 239935,
+      "target": "tuf_EF_Tu",
+      "endpoint": "EXACT_MULTIPLICITY",
+      "truth_status": "EVALUABLE",
+      "truth": 1,
+      "multiplicity": 1,
+      "genuine_tuf_loci": [
+        {
+          "seqid": "NZ_CM185036.1",
+          "start": 1367867,
+          "end": 1369051,
+          "strand": "-",
+          "locus_tag": "AC56LQ_RS05935",
+          "gene": "tuf",
+          "product": "elongation factor Tu",
+          "protein_ids": [
+            "WP_012420089.1",
+            "WP_008963462.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_012420089.1",
+            "tlen": 394,
+            "evalue": 5.2e-208,
+            "score": 687.6,
+            "qlen": 394,
+            "n_domains": 1,
+            "hmm_coverage_aa": 393,
+            "qcov": 0.9974619289340102,
+            "qcov_envelope": 0.9974619289340102,
+            "description": "MULTISPECIES: elongation factor Tu [Akkermansia]"
+          }
+        }
+      ],
+      "orthology_source": "NCBI Gene Orthologs seed tufA NP_417798.1 / gene_id 947838; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP symbols corroboration only. NP_418240.1 was not used because the current NCBI record is not EF-Tu.",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_417798.1",
+        "seed_gene_id": "947838",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": true,
+          "n_reported": 2443,
+          "raw_keys": [
+            "next_page_token",
+            "reports",
+            "total_count"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_417798.1",
+        "n_hits_e1e5": 5,
+        "genuine_hits": [
+          {
+            "target": "WP_012420089.1",
+            "tlen": 394,
+            "evalue": 5.2e-208,
+            "score": 687.6,
+            "qlen": 394,
+            "n_domains": 1,
+            "hmm_coverage_aa": 393,
+            "qcov": 0.9974619289340102,
+            "qcov_envelope": 0.9974619289340102,
+            "description": "MULTISPECIES: elongation factor Tu [Akkermansia]"
+          }
+        ]
+      },
+      "pgap_symbol_cds_count": 1,
+      "related_symbol_cds_count": 3,
+      "corroboration": [
+        "independent_phmmer_seed_vs_proteome",
+        "PGAP_symbol_corroboration_only"
+      ],
+      "short_rationale": "independent phmmer mapping of authentic tufA identified 1 distinct complete non-pseudo EF-Tu locus/loci. Counts are genomic intervals, not collapsed annotation names. PGAP tuf/tufA/tufB symbols were not used as the sole standard.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 7,
+      "assembly_accession": "GCF_048585425.2",
+      "organism": "Sinorhizobium fredii HH103",
+      "taxonomy_id": 1117943,
+      "target": "lacZ_beta_galactosidase",
+      "endpoint": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "NEGATIVE",
+      "candidate_loci": [],
+      "orthology_source": "NCBI Gene Orthologs seed NP_414878.1 / gene_id 945006; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP gene symbol used only as corroboration",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_414878.1",
+        "seed_gene_id": "945006",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": false,
+          "n_reported": 0,
+          "raw_keys": [
+            "messages"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_414878.1",
+        "n_hits_e1e5": 1,
+        "genuine_hits": []
+      },
+      "pgap_symbol_cds_count": 0,
+      "related_symbol_cds_count": 0,
+      "corroboration": [],
+      "short_rationale": "NCBI Gene Orthologs does not reliably index taxid 1117943. Independent phmmer of seed NP_414878.1 against all proteins of this assembly at the frozen-seed completeness thresholds returned no genuine orthologous hit. Absence is assigned from the independent seed search, not from PGAP name equality. Beta-galactosidase-like names without LacZ seed orthology were not counted.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 8,
+      "assembly_accession": "GCF_046562475.1",
+      "organism": "Phocaeicola dorei",
+      "taxonomy_id": 357276,
+      "target": "lacZ_beta_galactosidase",
+      "endpoint": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "POSITIVE",
+      "candidate_loci": [
+        {
+          "seqid": "NZ_JBJHRI010000013.1",
+          "start": 48541,
+          "end": 51771,
+          "strand": "+",
+          "locus_tag": "ACJEEX_RS10760",
+          "gene": "lacZ",
+          "product": "beta-galactosidase%2C LacZ type",
+          "protein_ids": [
+            "WP_132039778.1",
+            "WP_005845677.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_132039778.1",
+            "tlen": 1076,
+            "evalue": 1.1e-180,
+            "score": 600.6,
+            "qlen": 1024,
+            "n_domains": 1,
+            "hmm_coverage_aa": 1008,
+            "qcov": 0.984375,
+            "qcov_envelope": 0.984375,
+            "description": "beta-galactosidase, LacZ type [Phocaeicola dorei]"
+          }
+        },
+        {
+          "seqid": "NZ_JBJHRI010000017.1",
+          "start": 14475,
+          "end": 17342,
+          "strand": "+",
+          "locus_tag": "ACJEEX_RS12685",
+          "gene": "WP_410893522.1",
+          "product": "glycoside hydrolase family 2 TIM barrel-domain containing protein",
+          "protein_ids": [
+            "WP_410893522.1",
+            "WP_016277754.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_410893522.1",
+            "tlen": 955,
+            "evalue": 2.6e-61,
+            "score": 205.4,
+            "qlen": 1024,
+            "n_domains": 2,
+            "hmm_coverage_aa": 633,
+            "qcov": 0.849609375,
+            "qcov_envelope": 0.849609375,
+            "description": "glycoside hydrolase family 2 TIM barrel-domain containing protein [Phocaeicola dorei]"
+          }
+        },
+        {
+          "seqid": "NZ_JBJHRI010000001.1",
+          "start": 166229,
+          "end": 169558,
+          "strand": "+",
+          "locus_tag": "ACJEEX_RS00570",
+          "gene": "WP_132039649.1",
+          "product": "glycoside hydrolase family 2 TIM barrel-domain containing protein",
+          "protein_ids": [
+            "WP_132039649.1",
+            "WP_007841365.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_132039649.1",
+            "tlen": 1109,
+            "evalue": 3.7e-149,
+            "score": 496.2,
+            "qlen": 1024,
+            "n_domains": 3,
+            "hmm_coverage_aa": 923,
+            "qcov": 0.9765625,
+            "qcov_envelope": 0.9765625,
+            "description": "glycoside hydrolase family 2 TIM barrel-domain containing protein [Phocaeicola dorei]"
+          }
+        },
+        {
+          "seqid": "NZ_JBJHRI010000024.1",
+          "start": 54535,
+          "end": 57726,
+          "strand": "-",
+          "locus_tag": "ACJEEX_RS15695",
+          "gene": "WP_007852566.1",
+          "product": "glycoside hydrolase family 2 TIM barrel-domain containing protein",
+          "protein_ids": [
+            "WP_007852566.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_007852566.1",
+            "tlen": 1063,
+            "evalue": 1.6e-157,
+            "score": 524.0,
+            "qlen": 1024,
+            "n_domains": 3,
+            "hmm_coverage_aa": 801,
+            "qcov": 0.9794921875,
+            "qcov_envelope": 0.9794921875,
+            "description": "MULTISPECIES: glycoside hydrolase family 2 TIM barrel-domain containing protein [Phocaeicola]"
+          }
+        },
+        {
+          "seqid": "NZ_JBJHRI010000035.1",
+          "start": 16615,
+          "end": 19710,
+          "strand": "-",
+          "locus_tag": "ACJEEX_RS19075",
+          "gene": "lacZ",
+          "product": "beta-galactosidase%2C LacZ type",
+          "protein_ids": [
+            "WP_008654564.1",
+            "WP_008672810.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_008654564.1",
+            "tlen": 1031,
+            "evalue": 2.7e-161,
+            "score": 536.4,
+            "qlen": 1024,
+            "n_domains": 1,
+            "hmm_coverage_aa": 1006,
+            "qcov": 0.982421875,
+            "qcov_envelope": 0.982421875,
+            "description": "beta-galactosidase, LacZ type [Phocaeicola dorei]"
+          }
+        },
+        {
+          "seqid": "NZ_JBJHRI010000045.1",
+          "start": 21902,
+          "end": 25078,
+          "strand": "-",
+          "locus_tag": "ACJEEX_RS21210",
+          "gene": "lacZ",
+          "product": "beta-galactosidase%2C LacZ type",
+          "protein_ids": [
+            "WP_410894136.1",
+            "WP_016275152.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_410894136.1",
+            "tlen": 1058,
+            "evalue": 4.2e-186,
+            "score": 618.6,
+            "qlen": 1024,
+            "n_domains": 1,
+            "hmm_coverage_aa": 1003,
+            "qcov": 0.9794921875,
+            "qcov_envelope": 0.9794921875,
+            "description": "beta-galactosidase, LacZ type [Phocaeicola dorei]"
+          }
+        },
+        {
+          "seqid": "NZ_JBJHRI010000009.1",
+          "start": 41858,
+          "end": 44917,
+          "strand": "+",
+          "locus_tag": "ACJEEX_RS08230",
+          "gene": "WP_007833017.1",
+          "product": "glycoside hydrolase family 2 TIM barrel-domain containing protein",
+          "protein_ids": [
+            "WP_007833017.1",
+            "WP_008674980.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_007833017.1",
+            "tlen": 1019,
+            "evalue": 1.6e-162,
+            "score": 540.5,
+            "qlen": 1024,
+            "n_domains": 1,
+            "hmm_coverage_aa": 1011,
+            "qcov": 0.9873046875,
+            "qcov_envelope": 0.9873046875,
+            "description": "MULTISPECIES: glycoside hydrolase family 2 TIM barrel-domain containing protein [Phocaeicola]"
+          }
+        }
+      ],
+      "orthology_source": "NCBI Gene Orthologs seed NP_414878.1 / gene_id 945006; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP gene symbol used only as corroboration",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_414878.1",
+        "seed_gene_id": "945006",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": true,
+          "n_reported": 4642,
+          "raw_keys": [
+            "next_page_token",
+            "reports",
+            "total_count"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_414878.1",
+        "n_hits_e1e5": 24,
+        "genuine_hits": [
+          {
+            "target": "WP_410894136.1",
+            "tlen": 1058,
+            "evalue": 4.2e-186,
+            "score": 618.6,
+            "qlen": 1024,
+            "n_domains": 1,
+            "hmm_coverage_aa": 1003,
+            "qcov": 0.9794921875,
+            "qcov_envelope": 0.9794921875,
+            "description": "beta-galactosidase, LacZ type [Phocaeicola dorei]"
+          },
+          {
+            "target": "WP_132039778.1",
+            "tlen": 1076,
+            "evalue": 1.1e-180,
+            "score": 600.6,
+            "qlen": 1024,
+            "n_domains": 1,
+            "hmm_coverage_aa": 1008,
+            "qcov": 0.984375,
+            "qcov_envelope": 0.984375,
+            "description": "beta-galactosidase, LacZ type [Phocaeicola dorei]"
+          },
+          {
+            "target": "WP_007833017.1",
+            "tlen": 1019,
+            "evalue": 1.6e-162,
+            "score": 540.5,
+            "qlen": 1024,
+            "n_domains": 1,
+            "hmm_coverage_aa": 1011,
+            "qcov": 0.9873046875,
+            "qcov_envelope": 0.9873046875,
+            "description": "MULTISPECIES: glycoside hydrolase family 2 TIM barrel-domain containing protein [Phocaeicola]"
+          },
+          {
+            "target": "WP_008654564.1",
+            "tlen": 1031,
+            "evalue": 2.7e-161,
+            "score": 536.4,
+            "qlen": 1024,
+            "n_domains": 1,
+            "hmm_coverage_aa": 1006,
+            "qcov": 0.982421875,
+            "qcov_envelope": 0.982421875,
+            "description": "beta-galactosidase, LacZ type [Phocaeicola dorei]"
+          },
+          {
+            "target": "WP_007852566.1",
+            "tlen": 1063,
+            "evalue": 1.6e-157,
+            "score": 524.0,
+            "qlen": 1024,
+            "n_domains": 3,
+            "hmm_coverage_aa": 801,
+            "qcov": 0.9794921875,
+            "qcov_envelope": 0.9794921875,
+            "description": "MULTISPECIES: glycoside hydrolase family 2 TIM barrel-domain containing protein [Phocaeicola]"
+          },
+          {
+            "target": "WP_132039649.1",
+            "tlen": 1109,
+            "evalue": 3.7e-149,
+            "score": 496.2,
+            "qlen": 1024,
+            "n_domains": 3,
+            "hmm_coverage_aa": 923,
+            "qcov": 0.9765625,
+            "qcov_envelope": 0.9765625,
+            "description": "glycoside hydrolase family 2 TIM barrel-domain containing protein [Phocaeicola dorei]"
+          },
+          {
+            "target": "WP_410893522.1",
+            "tlen": 955,
+            "evalue": 2.6e-61,
+            "score": 205.4,
+            "qlen": 1024,
+            "n_domains": 2,
+            "hmm_coverage_aa": 633,
+            "qcov": 0.849609375,
+            "qcov_envelope": 0.849609375,
+            "description": "glycoside hydrolase family 2 TIM barrel-domain containing protein [Phocaeicola dorei]"
+          }
+        ]
+      },
+      "pgap_symbol_cds_count": 3,
+      "related_symbol_cds_count": 1,
+      "corroboration": [
+        "independent_phmmer_seed_vs_proteome",
+        "PGAP_symbol_corroboration_only"
+      ],
+      "short_rationale": "independent phmmer of the frozen/authentic seed produced a complete orthologous hit. PGAP gene-name equality was not used as the sole standard. Other beta-galactosidases were not treated as lacZ.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 9,
+      "assembly_accession": "GCF_052955985.1",
+      "organism": "Vibrio sp. B1Z05",
+      "taxonomy_id": 2654980,
+      "target": "tuf_EF_Tu",
+      "endpoint": "EXACT_MULTIPLICITY",
+      "truth_status": "EVALUABLE",
+      "truth": 2,
+      "multiplicity": 2,
+      "genuine_tuf_loci": [
+        {
+          "seqid": "NZ_CP130463.1",
+          "start": 227399,
+          "end": 228583,
+          "strand": "+",
+          "locus_tag": "QV280_RS01075",
+          "gene": "tuf",
+          "product": "elongation factor Tu",
+          "protein_ids": [
+            "WP_023402465.1",
+            "WP_005438393.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_023402465.1",
+            "tlen": 394,
+            "evalue": 9.9e-229,
+            "score": 756.3,
+            "qlen": 394,
+            "n_domains": 1,
+            "hmm_coverage_aa": 393,
+            "qcov": 0.9974619289340102,
+            "qcov_envelope": 0.9974619289340102,
+            "description": "elongation factor Tu [Vibrio halioticoli]"
+          }
+        },
+        {
+          "seqid": "NZ_CP130463.1",
+          "start": 2675060,
+          "end": 2676244,
+          "strand": "-",
+          "locus_tag": "QV280_RS12195",
+          "gene": "tuf",
+          "product": "elongation factor Tu",
+          "protein_ids": [
+            "WP_023404590.1",
+            "WP_005438393.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_023404590.1",
+            "tlen": 394,
+            "evalue": 4.1e-229,
+            "score": 757.5,
+            "qlen": 394,
+            "n_domains": 1,
+            "hmm_coverage_aa": 393,
+            "qcov": 0.9974619289340102,
+            "qcov_envelope": 0.9974619289340102,
+            "description": "MULTISPECIES: elongation factor Tu [Vibrio]"
+          }
+        }
+      ],
+      "orthology_source": "NCBI Gene Orthologs seed tufA NP_417798.1 / gene_id 947838; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP symbols corroboration only. NP_418240.1 was not used because the current NCBI record is not EF-Tu.",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_417798.1",
+        "seed_gene_id": "947838",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": false,
+          "n_reported": 0,
+          "raw_keys": [
+            "messages"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_417798.1",
+        "n_hits_e1e5": 9,
+        "genuine_hits": [
+          {
+            "target": "WP_023404590.1",
+            "tlen": 394,
+            "evalue": 4.1e-229,
+            "score": 757.5,
+            "qlen": 394,
+            "n_domains": 1,
+            "hmm_coverage_aa": 393,
+            "qcov": 0.9974619289340102,
+            "qcov_envelope": 0.9974619289340102,
+            "description": "MULTISPECIES: elongation factor Tu [Vibrio]"
+          },
+          {
+            "target": "WP_023402465.1",
+            "tlen": 394,
+            "evalue": 9.9e-229,
+            "score": 756.3,
+            "qlen": 394,
+            "n_domains": 1,
+            "hmm_coverage_aa": 393,
+            "qcov": 0.9974619289340102,
+            "qcov_envelope": 0.9974619289340102,
+            "description": "elongation factor Tu [Vibrio halioticoli]"
+          }
+        ]
+      },
+      "pgap_symbol_cds_count": 2,
+      "related_symbol_cds_count": 4,
+      "corroboration": [
+        "independent_phmmer_seed_vs_proteome",
+        "PGAP_symbol_corroboration_only"
+      ],
+      "short_rationale": "independent phmmer mapping of authentic tufA identified 2 distinct complete non-pseudo EF-Tu locus/loci. Counts are genomic intervals, not collapsed annotation names. PGAP tuf/tufA/tufB symbols were not used as the sole standard.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 10,
+      "assembly_accession": "GCF_050871785.1",
+      "organism": "Kineococcus esterisolvens",
+      "taxonomy_id": 3383139,
+      "target": "rpoB_RNAP_beta",
+      "endpoint": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "POSITIVE",
+      "candidate_loci": [
+        {
+          "seqid": "NZ_JBJLSA010000093.1",
+          "start": 2605,
+          "end": 6090,
+          "strand": "+",
+          "locus_tag": "ACRYR4_RS19975",
+          "gene": "rpoB",
+          "product": "DNA-directed RNA polymerase subunit beta",
+          "protein_ids": [
+            "WP_432483628.1",
+            "WP_018385568.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_432483628.1",
+            "tlen": 1161,
+            "evalue": 0.0,
+            "score": 1221.3,
+            "qlen": 1342,
+            "n_domains": 4,
+            "hmm_coverage_aa": 1057,
+            "qcov": 0.9895678092399404,
+            "qcov_envelope": 0.9895678092399404,
+            "description": "DNA-directed RNA polymerase subunit beta [Kineococcus esterisolvens]"
+          }
+        }
+      ],
+      "orthology_source": "NCBI Gene Orthologs seed NP_418414.1 / gene_id 948488; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP gene symbol used only as corroboration",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_418414.1",
+        "seed_gene_id": "948488",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": false,
+          "n_reported": 0,
+          "raw_keys": [
+            "messages"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_418414.1",
+        "n_hits_e1e5": 1,
+        "genuine_hits": [
+          {
+            "target": "WP_432483628.1",
+            "tlen": 1161,
+            "evalue": 0.0,
+            "score": 1221.3,
+            "qlen": 1342,
+            "n_domains": 4,
+            "hmm_coverage_aa": 1057,
+            "qcov": 0.9895678092399404,
+            "qcov_envelope": 0.9895678092399404,
+            "description": "DNA-directed RNA polymerase subunit beta [Kineococcus esterisolvens]"
+          }
+        ]
+      },
+      "pgap_symbol_cds_count": 1,
+      "related_symbol_cds_count": 1,
+      "corroboration": [
+        "independent_phmmer_seed_vs_proteome",
+        "PGAP_symbol_corroboration_only"
+      ],
+      "short_rationale": "independent phmmer of the frozen/authentic seed produced a complete orthologous hit. PGAP gene-name equality was not used as the sole standard.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 11,
+      "assembly_accession": "GCF_054055795.1",
+      "organism": "Variovorax sp. PvP013_2",
+      "taxonomy_id": 3469737,
+      "target": "tetA_tetracycline_efflux",
+      "endpoint": "FAMILY_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "NEGATIVE",
+      "family_members_counted_as_positive": [
+        "tet(A)",
+        "tet(B)"
+      ],
+      "tetC_counted_as_positive": false,
+      "amrfinder_software_version": null,
+      "amrfinder_database_version": null,
+      "pgap_annotation": {
+        "pgap_pipeline": "NCBI Prokaryotic Genome Annotation Pipeline (PGAP)",
+        "pgap_software_version": "6.10",
+        "annotation_name": "GCF_054055795.1-RS_2025_12_18",
+        "annotation_release_date": "2025-12-18",
+        "annotation_method": "Best-placed reference protein set; GeneMarkS-2+",
+        "annotation_provider": "NCBI RefSeq"
+      },
+      "amrfinder_source": "Post-lock NCBI RefSeq/PGAP AMR gene annotation on this assembly (PGAP 6.10; annotation GCF_054055795.1-RS_2025_12_18; release 2025-12-18). PGAP uses AMRFinderPlus/NCBIfam-AMRFinder for AMR genes. This GBFF did not embed AMRFinderPlus software/database version strings. Frozen FAMILY positives = tet(A) OR tet(B); tet(C) not counted. tetR is not a family member.",
+      "exact_calls": [],
+      "related_calls": [],
+      "supporting_accessions": [],
+      "ftp_amrfinder_report": {
+        "found": false,
+        "url": null,
+        "n_tet_rows": 0
+      },
+      "gbff_n_amrfinder_inference": 0,
+      "short_rationale": "No tet(A) or tet(B) AMRFinderPlus/PGAP AMR gene call on this assembly. Absence of a frozen-family call is scored FAMILY negative.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 12,
+      "assembly_accession": "GCF_049340285.1",
+      "organism": "Undibacterium sp. SXout20W",
+      "taxonomy_id": 3413051,
+      "target": "tuf_EF_Tu",
+      "endpoint": "EXACT_MULTIPLICITY",
+      "truth_status": "EVALUABLE",
+      "truth": 0,
+      "multiplicity": 0,
+      "genuine_tuf_loci": [],
+      "orthology_source": "NCBI Gene Orthologs seed tufA NP_417798.1 / gene_id 947838; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP symbols corroboration only. NP_418240.1 was not used because the current NCBI record is not EF-Tu.",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_417798.1",
+        "seed_gene_id": "947838",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": false,
+          "n_reported": 0,
+          "raw_keys": [
+            "messages"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_417798.1",
+        "n_hits_e1e5": 11,
+        "genuine_hits": []
+      },
+      "pgap_symbol_cds_count": 2,
+      "related_symbol_cds_count": 4,
+      "corroboration": [
+        "PGAP_symbol_corroboration_only"
+      ],
+      "short_rationale": "NCBI Gene Orthologs does not index this taxid. Independent phmmer of authentic tufA NP_417798.1 against all proteins of this assembly found no complete EF-Tu ortholog.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    }
+  ]
+}

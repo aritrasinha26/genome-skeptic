@@ -1,0 +1,42 @@
+{
+  "kind": "D20_GATE1_V5_EXECUTION_BLOCK",
+  "created_utc": "2026-09-20T11:35:00+00:00",
+  "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V2_D20",
+  "agentic_freeze_manifest_sha256": "736bd2bdc34b1967a429602903f26ebfa5cdb031c6787a7f0ebf77926517c696",
+  "candidate_pool_manifest_sha256": "61a3e03bde2341d1bccd7a065cc53411ad10ad61ffc0410295a55ce9f8009f4c",
+  "candidate_pool_csv_sha256": "3b3660668aacddf85e613c70983cb0f94ed58d5c53e630f008f8798f27c8e4e6",
+  "gate1_step1_candidate_pool": "FROZEN",
+  "gate1_step2_v5_prescreen": "BLOCKED",
+  "gate1_step3_ambiguity_score": "NOT_RUN",
+  "gate1_step4_final_d20": "NOT_LOCKED",
+  "n_v5_completed": 1,
+  "n_v5_required": 40,
+  "completed_v5_cases": [
+    {
+      "assembly_accession": "GCF_059508655.1",
+      "target": "lacZ_beta_galactosidase",
+      "note": "frozen V5 completed; BLAST+ returned hits so internal ungapped fallback was not used"
+    }
+  ],
+  "blocked_case": {
+    "assembly_accession": "GCF_048282645.1",
+    "organism": "Pimelobacter simplex",
+    "genus": "Pimelobacter",
+    "target": "lacZ_beta_galactosidase",
+    "assembly_level": "Chromosome",
+    "genome_size": 5554730,
+    "contig_count": 1,
+    "tblastn_direct_runtime_seconds": 1,
+    "tblastn_hit_rows": 0,
+    "frozen_path_taken": "run_gene_search uses BLAST+ when present; empty BLAST hits fall back to internal ungapped search (gene_search_kmer_aa=3) over the full chromosome",
+    "observed_failure": "Python process SIGKILL after ~45s during internal fallback; no Python traceback; WSL memory=5GB, host RAM=7.5GB"
+  },
+  "why_scientific_code_was_not_changed": "Completing this case would require altering frozen gene_search fallback behaviour, k-mer size, hit buffering, or BLAST-empty handling. Gate 1 forbids modifying frozen scientific source.",
+  "why_candidate_was_not_replaced": "The 40-case pool is already frozen. Replacing a BLAST-empty genome after seeing solver measurements would repair/tune the benchmark and bias toward BLAST-detectable cases.",
+  "external_labels_opened": false,
+  "agentic_v2_executed": false,
+  "planner_called": false,
+  "critic_called": false,
+  "conventional_executed": false,
+  "d20_position_1_started": false
+}

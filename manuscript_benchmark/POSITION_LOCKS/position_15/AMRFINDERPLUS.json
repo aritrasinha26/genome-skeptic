@@ -1,0 +1,51 @@
+{
+  "case_id": "M60_tetA_tetracycline_efflux_GCF_965236745.1",
+  "position": 15,
+  "accession": "GCF_965236745.1",
+  "target": "tetA_tetracycline_efflux",
+  "stratum": "routine",
+  "system": "AMRFINDERPLUS",
+  "system_version": "4.2.7",
+  "git_commit": "8f66868850a98494778966bd729b88a6fc2952eb",
+  "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+  "input_assembly_hash": "950f845c0c5553d041434e1c0c3304d908cb747256796aa0c5d8fda119e2bcec",
+  "start_time": "2026-09-20T05:11:22.274925+00:00",
+  "end_time": "2026-09-20T05:11:34.756991+00:00",
+  "runtime_seconds": 12.482,
+  "peak_memory": 400314368,
+  "tool_versions": {
+    "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+    "blastn": "USAGE",
+    "hmmsearch": "HMMER 3.4 (Aug 2023); http://hmmer.org/",
+    "mmseqs": "18.8cc5c",
+    "diamond": "diamond version 2.2.6",
+    "amrfinder": "4.2.7"
+  },
+  "database_versions": {
+    "amrfinder_database_version": "2026-08-07.1",
+    "amrfinder_database_directory": "/home/aritr/micromamba/envs/genome-skeptic-prod/share/amrfinderplus/data/2026-08-07.1",
+    "amrfinder_database_freeze_sha256": "d7ae98063c3b7795fa443f90f51a267e5b28002e1e5d59f364f403dde8a188be",
+    "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+    "family_definitions_hash": "ed4210640e318b8ed94ebf6d72b9c37afa9039eed858fdd54c4165fbcce09605"
+  },
+  "completion_status": "complete",
+  "failure_reason": null,
+  "output_file": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/RUNS/position_15/GCF_965236745.1/tetA_tetracycline_efflux/AMRFINDERPLUS/case_locked.json",
+  "ok": true,
+  "binary_call": "NEGATIVE",
+  "gene_symbols": [],
+  "command": [
+    "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/amrfinder",
+    "-n",
+    "/home/aritr/m60_work/fasta/solver/GCF_965236745.1.fna",
+    "--plus",
+    "-o",
+    "/home/aritr/m60_work/runs/position_15/GCF_965236745.1/tetA_tetracycline_efflux/AMRFINDERPLUS/amrfinder.tsv",
+    "-d",
+    "/home/aritr/micromamba/envs/genome-skeptic-prod/share/amrfinderplus/data/2026-08-07.1"
+  ],
+  "truth_opened": false,
+  "d20_touched": false,
+  "accuracy_scored": false,
+  "output_sha256": "b404edd8843a9bce4ed65e300170b6f54d29ed067bc0adcd66d5077f74e2e874"
+}

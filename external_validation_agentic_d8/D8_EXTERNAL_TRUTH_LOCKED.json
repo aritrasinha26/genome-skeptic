@@ -1,0 +1,568 @@
+{
+  "kind": "D8_EXTERNAL_TRUTH_LOCKED",
+  "cohort": "D8_MINI_EXTERNAL",
+  "created_utc": "2026-09-20T14:09:37.954465+00:00",
+  "predictions_consulted": false,
+  "d20_touched": false,
+  "lock_hashes_verified_before_truth": {
+    "D8_MANIFEST.json": "37862918643052fa8cb81ff5e180161973a6dd5311aef62bd78c59f8ea74cdbd",
+    "D8_CONVENTIONAL_LOCKED.json": "e2cdb6c91a788f6dd6126ba1bb1ce14aea512e71c110036a66e97e05b4214b51",
+    "D8_V5_LOCKED.json": "0475084d908218c7676820e612745c4e6a309f71b0644642ac08dd8f4b4665db",
+    "D8_AGENTIC_V2_LOCKED.json": "2331e5fd5c265df2046f7fcc1f43dd7ed9e5f51ed4b2c5ecf03b48fc5df63d16"
+  },
+  "agentic_position_7_failure_confirmed_before_truth": {
+    "assembly_accession": "GCF_053618555.1",
+    "target": "tetA_tetracycline_efflux",
+    "ok": false,
+    "reason": "planner cited no evidence IDs"
+  },
+  "frozen_family_tet_positives": [
+    "tet(A)",
+    "tet(B)"
+  ],
+  "tetC_not_a_frozen_member": true,
+  "tuf_seed_used": "NP_417798.1 / gene_id 947838 (authentic tufA); NP_418240.1 not used",
+  "n_cases": 8,
+  "cases": [
+    {
+      "execution_position": 1,
+      "assembly_accession": "GCF_054792365.1",
+      "organism": "Arthrobacter sp. R4-81",
+      "taxonomy_id": 2937814,
+      "target": "rpoB_RNAP_beta",
+      "endpoint": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "POSITIVE",
+      "candidate_loci": [
+        {
+          "seqid": "NZ_CP096445.1",
+          "start": 1367117,
+          "end": 1370635,
+          "strand": "+",
+          "locus_tag": "M1E05_RS06445",
+          "gene": "rpoB",
+          "product": "DNA-directed RNA polymerase subunit beta",
+          "protein_ids": [
+            "WP_458111620.1",
+            "WP_011692816.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_458111620.1",
+            "tlen": 1172,
+            "evalue": 0.0,
+            "score": 1210.2,
+            "qlen": 1342,
+            "n_domains": 4,
+            "hmm_coverage_aa": 1055,
+            "qcov": 0.9895678092399404,
+            "qcov_envelope": 0.9895678092399404,
+            "description": "DNA-directed RNA polymerase subunit beta [Arthrobacter sp. R1-13]"
+          }
+        }
+      ],
+      "orthology_source": "NCBI Gene Orthologs seed NP_418414.1 / gene_id 948488; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP gene symbol used only as corroboration",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_418414.1",
+        "seed_gene_id": "948488",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": false,
+          "n_reported": 0,
+          "raw_keys": [
+            "messages"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_418414.1",
+        "n_hits_e1e5": 1,
+        "genuine_hits": [
+          {
+            "target": "WP_458111620.1",
+            "tlen": 1172,
+            "evalue": 0.0,
+            "score": 1210.2,
+            "qlen": 1342,
+            "n_domains": 4,
+            "hmm_coverage_aa": 1055,
+            "qcov": 0.9895678092399404,
+            "qcov_envelope": 0.9895678092399404,
+            "description": "DNA-directed RNA polymerase subunit beta [Arthrobacter sp. R1-13]"
+          }
+        ]
+      },
+      "pgap_symbol_cds_count": 1,
+      "related_symbol_cds_count": 1,
+      "corroboration": [
+        "independent_phmmer_seed_vs_proteome",
+        "PGAP_symbol_corroboration_only"
+      ],
+      "short_rationale": "independent phmmer of the frozen/authentic seed produced a complete orthologous hit. PGAP gene-name equality was not used as the sole standard.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 2,
+      "assembly_accession": "GCF_049373995.1",
+      "organism": "Mycoplasmopsis bovis",
+      "taxonomy_id": 28903,
+      "target": "rpoB_RNAP_beta",
+      "endpoint": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "POSITIVE",
+      "candidate_loci": [
+        {
+          "seqid": "NZ_JBMQFC010000013.1",
+          "start": 11881,
+          "end": 15516,
+          "strand": "+",
+          "locus_tag": "ACO1HI_RS02710",
+          "gene": "rpoB",
+          "product": "DNA-directed RNA polymerase subunit beta",
+          "protein_ids": [
+            "WP_013456481.1",
+            "WP_011949769.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_013456481.1",
+            "tlen": 1211,
+            "evalue": 2.1e-270,
+            "score": 895.9,
+            "qlen": 1342,
+            "n_domains": 5,
+            "hmm_coverage_aa": 1027,
+            "qcov": 0.9895678092399404,
+            "qcov_envelope": 0.9895678092399404,
+            "description": "DNA-directed RNA polymerase subunit beta [Mycoplasmopsis bovis]"
+          }
+        }
+      ],
+      "orthology_source": "NCBI Gene Orthologs seed NP_418414.1 / gene_id 948488; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP gene symbol used only as corroboration",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_418414.1",
+        "seed_gene_id": "948488",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": false,
+          "n_reported": 0,
+          "raw_keys": [
+            "messages"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_418414.1",
+        "n_hits_e1e5": 1,
+        "genuine_hits": [
+          {
+            "target": "WP_013456481.1",
+            "tlen": 1211,
+            "evalue": 2.1e-270,
+            "score": 895.9,
+            "qlen": 1342,
+            "n_domains": 5,
+            "hmm_coverage_aa": 1027,
+            "qcov": 0.9895678092399404,
+            "qcov_envelope": 0.9895678092399404,
+            "description": "DNA-directed RNA polymerase subunit beta [Mycoplasmopsis bovis]"
+          }
+        ]
+      },
+      "pgap_symbol_cds_count": 1,
+      "related_symbol_cds_count": 1,
+      "corroboration": [
+        "independent_phmmer_seed_vs_proteome",
+        "PGAP_symbol_corroboration_only"
+      ],
+      "short_rationale": "independent phmmer of the frozen/authentic seed produced a complete orthologous hit. PGAP gene-name equality was not used as the sole standard.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 3,
+      "assembly_accession": "GCF_048851505.1",
+      "organism": "Glaesserella parasuis",
+      "taxonomy_id": 738,
+      "target": "tuf_EF_Tu",
+      "endpoint": "EXACT_MULTIPLICITY",
+      "truth_status": "EVALUABLE",
+      "truth": 1,
+      "multiplicity": 1,
+      "genuine_tuf_loci": [
+        {
+          "seqid": "NZ_JBMALP010000067.1",
+          "start": 289,
+          "end": 1476,
+          "strand": "-",
+          "locus_tag": "ACN9OV_RS11580",
+          "gene": "tuf",
+          "product": "elongation factor Tu",
+          "protein_ids": [
+            "WP_016527483.1",
+            "WP_011199348.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_016527483.1",
+            "tlen": 395,
+            "evalue": 2.1e-243,
+            "score": 804.0,
+            "qlen": 394,
+            "n_domains": 1,
+            "hmm_coverage_aa": 393,
+            "qcov": 0.9974619289340102,
+            "qcov_envelope": 0.9974619289340102,
+            "description": "elongation factor Tu [Glaesserella parasuis]"
+          }
+        }
+      ],
+      "orthology_source": "NCBI Gene Orthologs seed tufA NP_417798.1 / gene_id 947838; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP symbols corroboration only. NP_418240.1 was not used because the current NCBI record is not EF-Tu.",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_417798.1",
+        "seed_gene_id": "947838",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": true,
+          "n_reported": 2369,
+          "raw_keys": [
+            "next_page_token",
+            "reports",
+            "total_count"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_417798.1",
+        "n_hits_e1e5": 8,
+        "genuine_hits": [
+          {
+            "target": "WP_016527483.1",
+            "tlen": 395,
+            "evalue": 2.1e-243,
+            "score": 804.0,
+            "qlen": 394,
+            "n_domains": 1,
+            "hmm_coverage_aa": 393,
+            "qcov": 0.9974619289340102,
+            "qcov_envelope": 0.9974619289340102,
+            "description": "elongation factor Tu [Glaesserella parasuis]"
+          }
+        ]
+      },
+      "pgap_symbol_cds_count": 1,
+      "related_symbol_cds_count": 4,
+      "corroboration": [
+        "independent_phmmer_seed_vs_proteome",
+        "PGAP_symbol_corroboration_only"
+      ],
+      "short_rationale": "independent phmmer mapping of authentic tufA identified 1 distinct complete non-pseudo EF-Tu locus/loci. Counts are genomic intervals, not collapsed annotation names. PGAP tuf/tufA/tufB symbols were not used as the sole standard.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 4,
+      "assembly_accession": "GCF_056483745.1",
+      "organism": "Stenotrophomonas sepilia",
+      "taxonomy_id": 2860290,
+      "target": "lacZ_beta_galactosidase",
+      "endpoint": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "NEGATIVE",
+      "candidate_loci": [],
+      "orthology_source": "NCBI Gene Orthologs seed NP_414878.1 / gene_id 945006; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP gene symbol used only as corroboration",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_414878.1",
+        "seed_gene_id": "945006",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": true,
+          "n_reported": 4186,
+          "raw_keys": [
+            "next_page_token",
+            "reports",
+            "total_count"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_414878.1",
+        "n_hits_e1e5": 0,
+        "genuine_hits": []
+      },
+      "pgap_symbol_cds_count": 0,
+      "related_symbol_cds_count": 0,
+      "corroboration": [],
+      "short_rationale": "NCBI Gene Orthologs of seed NP_414878.1 / gene_id 945006 was applied to taxid 2860290 and returned no member; independent phmmer of that seed against this proteome also found no complete orthologous hit. Generic beta-galactosidase products without LacZ orthology were not counted as lacZ.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 5,
+      "assembly_accession": "GCF_046846385.1",
+      "organism": "Arachnia propionica",
+      "taxonomy_id": 1750,
+      "target": "tuf_EF_Tu",
+      "endpoint": "EXACT_MULTIPLICITY",
+      "truth_status": "EVALUABLE",
+      "truth": 1,
+      "multiplicity": 1,
+      "genuine_tuf_loci": [
+        {
+          "seqid": "NZ_CP128406.1",
+          "start": 2441927,
+          "end": 2443126,
+          "strand": "-",
+          "locus_tag": "QTN80_RS11055",
+          "gene": "tuf",
+          "product": "elongation factor Tu",
+          "protein_ids": [
+            "WP_014847268.1",
+            "WP_011757350.1"
+          ],
+          "gene_ids": [],
+          "phmmer": {
+            "target": "WP_014847268.1",
+            "tlen": 399,
+            "evalue": 2.9e-185,
+            "score": 613.1,
+            "qlen": 394,
+            "n_domains": 1,
+            "hmm_coverage_aa": 393,
+            "qcov": 0.9974619289340102,
+            "qcov_envelope": 0.9974619289340102,
+            "description": "MULTISPECIES: elongation factor Tu [Arachnia]"
+          }
+        }
+      ],
+      "orthology_source": "NCBI Gene Orthologs seed tufA NP_417798.1 / gene_id 947838; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP symbols corroboration only. NP_418240.1 was not used because the current NCBI record is not EF-Tu.",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_417798.1",
+        "seed_gene_id": "947838",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": true,
+          "n_reported": 3075,
+          "raw_keys": [
+            "next_page_token",
+            "reports",
+            "total_count"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_417798.1",
+        "n_hits_e1e5": 5,
+        "genuine_hits": [
+          {
+            "target": "WP_014847268.1",
+            "tlen": 399,
+            "evalue": 2.9e-185,
+            "score": 613.1,
+            "qlen": 394,
+            "n_domains": 1,
+            "hmm_coverage_aa": 393,
+            "qcov": 0.9974619289340102,
+            "qcov_envelope": 0.9974619289340102,
+            "description": "MULTISPECIES: elongation factor Tu [Arachnia]"
+          }
+        ]
+      },
+      "pgap_symbol_cds_count": 1,
+      "related_symbol_cds_count": 3,
+      "corroboration": [
+        "independent_phmmer_seed_vs_proteome",
+        "PGAP_symbol_corroboration_only"
+      ],
+      "short_rationale": "independent phmmer mapping of authentic tufA identified 1 distinct complete non-pseudo EF-Tu locus/loci. Counts are genomic intervals, not collapsed annotation names. PGAP tuf/tufA/tufB symbols were not used as the sole standard.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 6,
+      "assembly_accession": "GCF_056267885.1",
+      "organism": "Salinispora arenicola",
+      "taxonomy_id": 168697,
+      "target": "lacZ_beta_galactosidase",
+      "endpoint": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "NEGATIVE",
+      "candidate_loci": [],
+      "orthology_source": "NCBI Gene Orthologs seed NP_414878.1 / gene_id 945006; independent post-lock phmmer of that seed against all proteins of this assembly; PGAP gene symbol used only as corroboration",
+      "ncbi_gene_orthologs": {
+        "seed_protein": "NP_414878.1",
+        "seed_gene_id": "945006",
+        "taxon_query_ok": true,
+        "taxon_query_error": null,
+        "taxon_indexed_in_ncbi_gene": {
+          "indexed": true,
+          "n_reported": 5039,
+          "raw_keys": [
+            "next_page_token",
+            "reports",
+            "total_count"
+          ]
+        },
+        "n_ortholog_records_in_taxon": 0,
+        "ortholog_gene_ids": [],
+        "ortholog_proteins": [],
+        "records_annotated_on_this_assembly": []
+      },
+      "phmmer": {
+        "seed": "NP_414878.1",
+        "n_hits_e1e5": 0,
+        "genuine_hits": []
+      },
+      "pgap_symbol_cds_count": 0,
+      "related_symbol_cds_count": 0,
+      "corroboration": [],
+      "short_rationale": "NCBI Gene Orthologs of seed NP_414878.1 / gene_id 945006 was applied to taxid 168697 and returned no member; independent phmmer of that seed against this proteome also found no complete orthologous hit. Generic beta-galactosidase products without LacZ orthology were not counted as lacZ.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 7,
+      "assembly_accession": "GCF_053618555.1",
+      "organism": "Heyndrickxia sporothermodurans",
+      "taxonomy_id": 46224,
+      "target": "tetA_tetracycline_efflux",
+      "endpoint": "FAMILY_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "NEGATIVE",
+      "family_members_counted_as_positive": [
+        "tet(A)",
+        "tet(B)"
+      ],
+      "tetC_counted_as_positive": false,
+      "amrfinder_software_version": null,
+      "amrfinder_database_version": null,
+      "pgap_annotation": {
+        "pgap_pipeline": "NCBI Prokaryotic Genome Annotation Pipeline (PGAP)",
+        "pgap_software_version": "6.10",
+        "annotation_name": "GCF_053618555.1-RS_2025_11_24",
+        "annotation_release_date": "2025-11-24",
+        "annotation_method": "Best-placed reference protein set; GeneMarkS-2+",
+        "annotation_provider": "NCBI RefSeq"
+      },
+      "amrfinder_source": "Post-lock NCBI RefSeq/PGAP AMR gene annotation on this assembly (PGAP 6.10; annotation GCF_053618555.1-RS_2025_11_24; release 2025-11-24). PGAP uses AMRFinderPlus/NCBIfam-AMRFinder for AMR genes. This GBFF did not embed AMRFinderPlus software/database version strings. Frozen FAMILY positives = tet(A) OR tet(B); tet(C) not counted. tetR is not a family member.",
+      "exact_calls": [],
+      "related_calls": [],
+      "supporting_accessions": [],
+      "ftp_amrfinder_report": {
+        "found": false,
+        "url": null,
+        "n_tet_rows": 0
+      },
+      "gbff_n_amrfinder_inference": 0,
+      "short_rationale": "No tet(A) or tet(B) AMRFinderPlus/PGAP AMR gene call on this assembly. Absence of a frozen-family call is scored FAMILY negative.",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    },
+    {
+      "execution_position": 8,
+      "assembly_accession": "GCF_050310035.1",
+      "organism": "Comamonas thiooxydans",
+      "taxonomy_id": 363952,
+      "target": "tetA_tetracycline_efflux",
+      "endpoint": "FAMILY_PRESENCE_ABSENCE",
+      "truth_status": "EVALUABLE",
+      "truth": "POSITIVE",
+      "family_members_counted_as_positive": [
+        "tet(A)",
+        "tet(B)"
+      ],
+      "tetC_counted_as_positive": false,
+      "amrfinder_software_version": null,
+      "amrfinder_database_version": null,
+      "pgap_annotation": {
+        "pgap_pipeline": "NCBI Prokaryotic Genome Annotation Pipeline (PGAP)",
+        "pgap_software_version": "6.10",
+        "annotation_name": "GCF_050310035.1-RS_2025_05_12",
+        "annotation_release_date": "2025-05-12",
+        "annotation_method": "Best-placed reference protein set; GeneMarkS-2+",
+        "annotation_provider": "NCBI RefSeq"
+      },
+      "amrfinder_source": "Post-lock NCBI RefSeq/PGAP AMR gene annotation on this assembly (PGAP 6.10; annotation GCF_050310035.1-RS_2025_05_12; release 2025-05-12). PGAP uses AMRFinderPlus/NCBIfam-AMRFinder for AMR genes. This GBFF did not embed AMRFinderPlus software/database version strings. Frozen FAMILY positives = tet(A) OR tet(B); tet(C) not counted. tetR is not a family member.",
+      "exact_calls": [
+        {
+          "gene": "tet(A)",
+          "product": "tetracycline efflux MFS transporter Tet(A)",
+          "protein_id": "WP_000804064.1",
+          "locus_tag": "ACORJC_RS24550",
+          "seqid": "NZ_CP190003.1",
+          "start": 2213,
+          "end": 3412,
+          "class_parsed": "tet(A)",
+          "related_label": null,
+          "pseudo": false,
+          "partial": false,
+          "inference": "COORDINATES: similar to AA sequence:RefSeq:WP_000804064.1",
+          "source": "Protein Homology",
+          "type": "CDS"
+        }
+      ],
+      "related_calls": [
+        {
+          "gene": "tetR(A)",
+          "product": "tetracycline resistance transcriptional repressor TetR(A)",
+          "protein_id": "WP_000164043.1",
+          "locus_tag": "ACORJC_RS24555",
+          "seqid": "NZ_CP190003.1",
+          "start": 3518,
+          "end": 4168,
+          "class_parsed": null,
+          "related_label": "tetR(A)",
+          "pseudo": false,
+          "partial": false,
+          "inference": "COORDINATES: similar to AA sequence:RefSeq:WP_000164043.1",
+          "source": "Protein Homology",
+          "type": "CDS"
+        }
+      ],
+      "supporting_accessions": [
+        {
+          "gene": "tet(A)",
+          "product": "tetracycline efflux MFS transporter Tet(A)",
+          "protein_id": "WP_000804064.1",
+          "locus_tag": "ACORJC_RS24550",
+          "parsed_class": "tet(A)"
+        }
+      ],
+      "ftp_amrfinder_report": {
+        "found": false,
+        "url": null,
+        "n_tet_rows": 0
+      },
+      "gbff_n_amrfinder_inference": 0,
+      "short_rationale": "AMRFinderPlus/PGAP AMR call on this assembly includes complete non-pseudo tet(A)/tet(B): ['tet(A)'].",
+      "pgap_used_as_sole_truth": false,
+      "predictions_consulted": false
+    }
+  ]
+}

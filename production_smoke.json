@@ -1,0 +1,78 @@
+{
+  "wgsim": {
+    "ran": true,
+    "ok": true,
+    "error": null
+  },
+  "fastp": {
+    "ran": true,
+    "ok": true,
+    "error": null
+  },
+  "fastqc": {
+    "ran": true,
+    "ok": true,
+    "error": null
+  },
+  "spades.py": {
+    "ran": true,
+    "ok": true,
+    "error": null,
+    "contigs": "smoke_work/spades/contigs.fasta"
+  },
+  "quast.py": {
+    "ran": true,
+    "ok": true,
+    "error": null
+  },
+  "minimap2": {
+    "ran": true,
+    "ok": true,
+    "error": null
+  },
+  "samtools": {
+    "ran": true,
+    "ok": true,
+    "error": null
+  },
+  "mmseqs": {
+    "ran": true,
+    "ok": false,
+    "error": "mmseqs exited with code 1"
+  },
+  "diamond": {
+    "ran": true,
+    "ok": true,
+    "error": null
+  },
+  "hmmsearch": {
+    "ran": true,
+    "ok": true,
+    "error": null
+  },
+  "FastTree": {
+    "ran": true,
+    "ok": true,
+    "error": null
+  },
+  "bakta": {
+    "ran": false,
+    "ok": false,
+    "error": "database not configured; not treated as operational"
+  },
+  "checkm2": {
+    "ran": false,
+    "ok": false,
+    "error": "not installed"
+  },
+  "kraken2": {
+    "ran": false,
+    "ok": false,
+    "error": "database not configured; not treated as operational"
+  },
+  "sourmash": {
+    "ran": false,
+    "ok": false,
+    "error": "database not configured; not treated as operational"
+  }
+}

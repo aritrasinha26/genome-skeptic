@@ -1,0 +1,15 @@
+services:
+  genome-skeptic:
+    build: .
+    image: genome-skeptic-prod:latest
+    working_dir: /opt/genome-skeptic
+    volumes:
+      - ./benchmarks:/opt/genome-skeptic/benchmarks
+      - ./config:/opt/genome-skeptic/config
+      - ./databases:/opt/genome-skeptic/databases
+    environment:
+      GENOME_SKEPTIC_ENV: production
+      BAKTA_DB: /opt/genome-skeptic/databases/bakta
+      CHECKM2DB: /opt/genome-skeptic/databases/checkm2
+    mem_limit: 8g
+    cpus: 4

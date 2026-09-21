@@ -1,0 +1,27 @@
+{
+  "kind": "RPOB_COMPARATOR_PROVENANCE",
+  "frozen_before_position_1": true,
+  "not_truth": true,
+  "do_not_use_as_independent_truth": true,
+  "name": "NCBI RefSeq PGAP CDS annotation",
+  "software": "NCBI RefSeq annotated assembly distribution (no local PGAP re-run; no eggNOG-mapper)",
+  "gff_source": "NCBI RefSeq/PGAP genomic GFF shipped with the exact same GCF assembly version as the selected M60 case",
+  "retrieval_method": "HTTPS GET of <ftp_path>/<assembly_directory_basename>_genomic.gff.gz from the case ftp_path recorded in M60_COHORT_MANIFEST.json. Fallback: same directory <basename>_feature_table.txt.gz. No later reannotation of the same organism is substituted.",
+  "assembly_accession_matching_rule": "The GCF accession in the URL path, the GFF/feature-table filename prefix, and the M60 case accession must be identical strings (including version suffix). A different GCF version is a comparator failure, not a substitution.",
+  "parser": {
+    "name": "m60_pgap_gff_v1_frozen_protocol_v1_1",
+    "implementation": "scripts/run_m60_position.py:run_rpob_pgap_comparator",
+    "language": "Python 3 stdlib (gzip, urllib). No BioPython. No manual interpretation.",
+    "version": "1.0"
+  },
+  "binary_conversion_rule": {
+    "POSITIVE": "The frozen PGAP annotation identifies the corresponding rpoB / DNA-directed RNA polymerase beta-subunit locus according to the pre-registered rule: any CDS has gene exactly rpoB (case-insensitive) OR product matches RNA polymerase subunit beta / rpoB naming (product contains 'rna polymerase' AND 'beta' AND NOT 'beta prime' AND NOT \"beta'\" AND NOT 'rpoC' AND NOT 'beta-prime').",
+    "NEGATIVE": "Annotation file is present and parseable and has zero rpoB hits under that rule.",
+    "UNCERTAIN": "GFF/feature table missing, unreadable, or has no CDS features.",
+    "rpoC_exclusion": "A CDS with gene=rpoC or a product naming RNA polymerase beta-prime / rpoC is not an rpoB POSITIVE."
+  },
+  "manual_interpretation": false,
+  "pgap_defines_rpob_truth": false,
+  "protocol": "manuscript_benchmark/M60_PROTOCOL_V1_1.md",
+  "protocol_v1_1_sha256": "73aebeba60e7c03390920c866541a977f86776a2711f804e0b960c08a3aa8660"
+}

@@ -1,0 +1,94 @@
+[
+  {
+    "target": "rpoB",
+    "candidate_locus": {
+      "contig": "c3",
+      "start": 19,
+      "end": 151,
+      "strand": "+"
+    },
+    "reference_genome": "trusted_reference",
+    "orthologues": [
+      {
+        "query_id": "rpoB",
+        "subject_id": "rpoB",
+        "identity": 1.0,
+        "query_coverage": 1.0,
+        "subject_coverage": 1.0,
+        "evalue": null,
+        "reciprocal_best_hit": true,
+        "tool": "internal_gene_search",
+        "orientation": "+"
+      }
+    ],
+    "gene_order": [],
+    "orientation": "+",
+    "distance": {
+      "query": {
+        "upstream_bp": null,
+        "downstream_bp": null
+      },
+      "reference": {
+        "upstream_bp": 30,
+        "downstream_bp": 30
+      },
+      "query_upstream": [],
+      "query_downstream": [],
+      "reference_upstream": [
+        "dnaA",
+        "gyrA"
+      ],
+      "reference_downstream": [
+        "rpoC",
+        "rplK"
+      ],
+      "assembly_neighbor_products": [],
+      "reference_neighbor_products": [
+        "dnaA",
+        "gyrA",
+        "rpoC",
+        "rplK"
+      ]
+    },
+    "sequence_similarity": {
+      "identity": 1.0,
+      "query_coverage": 1.0,
+      "subject_coverage": 1.0,
+      "evalue": null,
+      "orthology_class": "paralog",
+      "length_ratio": 1.0,
+      "placement": {
+        "status": "completed",
+        "clade": "paralog",
+        "sisters": [
+          "rpoB_paralog"
+        ],
+        "sister_clades": [
+          "paralog"
+        ],
+        "n_homologues": 2,
+        "n_identities_measured": 3,
+        "provenance": {
+          "created_by": "deterministic_phylogenetic_placement",
+          "notes": "LLM did not invent tree placement, identities, or clades.",
+          "method": "identity_neighbor_joining"
+        }
+      }
+    },
+    "coverage": {},
+    "conflicts": [
+      "paralogous_copies",
+      "phylogenetic_paralog",
+      "query_annotation_missing"
+    ],
+    "provenance": {
+      "created_by": "deterministic_locus_validator",
+      "reference_id": "trusted_reference",
+      "reference_gff": "C:\\Users\\aritr\\Downloads\\GenomeSkeptic_Cursor\\GenomeSkeptic_Cursor\\benchmarks\\realworld\\agent_visible\\case_09\\ref.gff",
+      "tools": [
+        "internal_gene_search"
+      ],
+      "notes": "LLM did not invent orthologues, identities, gene order, or reciprocal hits."
+    }
+  }
+]

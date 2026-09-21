@@ -1,0 +1,184 @@
+{
+  "kind": "v5_external_reference_overlap",
+  "created_utc": "2026-09-18T22:20:00+00:00",
+  "genome_skeptic_v5_freeze_hash": "0e993125d2d620e54bbb42b3e420b4b9fda951c28b358ff8a2aed2d5b55a8f1b",
+  "scientific_logic_modified": false,
+  "isolates_selected": false,
+  "per_isolate_labels_inspected": false,
+  "microbigge_inspected": false,
+  "amrfinderplus_used_as_inference_input": false,
+  "definition_sources": {
+    "amrfinderplus_hierarchy": "https://ftp.ncbi.nlm.nih.gov/pathogen/Antimicrobial_resistance/AMRFinderPlus/database/latest/ReferenceGeneHierarchy.txt",
+    "amrfinderplus_catalog": "https://ftp.ncbi.nlm.nih.gov/pathogen/Antimicrobial_resistance/AMRFinderPlus/database/latest/ReferenceGeneCatalog.txt",
+    "pgap_schema_docs": "https://www.ncbi.nlm.nih.gov/refseq/annotation_prok/",
+    "hmm_profiles_downloaded": false,
+    "amrfinderplus_reference_sequences_downloaded": false,
+    "amrfinderplus_thresholds_ingested": false,
+    "amrfinderplus_hierarchy_rules_used_for_inference": false
+  },
+  "anti_leakage_rule": {
+    "forbidden_as_inference_inputs": [
+      "AMRFinderPlus HMM profiles",
+      "AMRFinderPlus reference sequences",
+      "AMRFinderPlus curated thresholds",
+      "AMRFinderPlus gene hierarchy rules",
+      "MicroBIGG-E calls"
+    ],
+    "permitted_after_predictions_frozen": "external reference labels only"
+  },
+  "pgap_schema_availability": {
+    "available": true,
+    "genome_labels_inspected": false,
+    "note": "NCBI PGAP/RefSeq prokaryotic annotation emits CDS gene symbols (GFF gene=) for standard bacterial genes. This screen is schema/availability only, not selected-isolate annotations."
+  },
+  "n_frozen_targets": 8,
+  "targets": [
+    {
+      "target": "tetA_tetracycline_efflux",
+      "amrfinderplus_overlap": "DIRECT",
+      "amrfinderplus_definition": {
+        "symbols": ["tet(A)", "tet(B)"],
+        "names": [
+          "tetracycline efflux MFS transporter Tet(A)",
+          "tetracycline efflux MFS transporter Tet(B)"
+        ],
+        "parent_node": "tet_A_B_C_D",
+        "type": "AMR",
+        "class": "TETRACYCLINE",
+        "note": "Exact NCBI presence-gene definitions exist for TetA/TetB tetracycline MFS efflux. Distinct from ABC-transporter tetA subunit nodes."
+      },
+      "pgap_overlap": "DIRECT",
+      "pgap_gene_symbols": ["tetA", "tetB"],
+      "available_external_reference": ["AMRFinderPlus gene/family presence definitions", "RefSeq/PGAP gene symbols"],
+      "proposed_reference_source": "AMRFinderPlus tet(A)/tet(B) presence labels after Genome Skeptic predictions are frozen; PGAP gene symbols as a second independent label for annotated assemblies",
+      "leakage_risk": "high_if_used_as_inference_input; acceptable_as_post_hoc_label",
+      "suitable_for_external_validation": true,
+      "isolates_not_inspected": true
+    },
+    {
+      "target": "mfs_multidrug_efflux",
+      "amrfinderplus_overlap": "RELATED",
+      "amrfinderplus_definition": {
+        "symbols": ["emrB"],
+        "parent_node": "MFS_efflux",
+        "note": "NCBI has MFS_efflux as a hierarchy parent and emrB as a member gene. mdfA and E. coli Bcr were not present as equivalent presence-gene nodes. The V5 family is a competitor panel, not one NCBI family."
+      },
+      "pgap_overlap": "DIRECT",
+      "pgap_gene_symbols": ["mdfA", "emrB", "bcr"],
+      "available_external_reference": ["RefSeq/PGAP gene symbols for member genes", "AMRFinderPlus related MFS_efflux/emrB definitions"],
+      "proposed_reference_source": "RefSeq/PGAP member-gene symbols as the independent presence reference; AMRFinderPlus only as a related-family check after freeze",
+      "leakage_risk": "high_if_used_as_inference_input; acceptable_as_post_hoc_label",
+      "suitable_for_external_validation": true,
+      "isolates_not_inspected": true
+    },
+    {
+      "target": "rnd_efflux",
+      "amrfinderplus_overlap": "RELATED",
+      "amrfinderplus_definition": {
+        "symbols": ["acrB"],
+        "note": "No AcrB/AcrD presence-gene hierarchy node. Catalog contains acrB only as POINT-mutation alleles on the RND permease, which is not equivalent to V5 gene-orthologue presence."
+      },
+      "pgap_overlap": "DIRECT",
+      "pgap_gene_symbols": ["acrB", "acrD"],
+      "available_external_reference": ["RefSeq/PGAP gene symbols"],
+      "proposed_reference_source": "RefSeq/PGAP acrB/acrD gene symbols after predictions are frozen. Do not use AMRFinderPlus POINT alleles as presence labels.",
+      "leakage_risk": "high_if_point_mutations_used_as_presence_labels; acceptable_as_post_hoc_pgap_label",
+      "suitable_for_external_validation": true,
+      "isolates_not_inspected": true
+    },
+    {
+      "target": "recA_recombinase",
+      "amrfinderplus_overlap": "NONE",
+      "amrfinderplus_definition": {
+        "symbols": [],
+        "note": "No recA node in the AMRFinderPlus Reference Gene Hierarchy."
+      },
+      "pgap_overlap": "DIRECT",
+      "pgap_gene_symbols": ["recA"],
+      "available_external_reference": ["RefSeq/PGAP gene symbol recA"],
+      "proposed_reference_source": "RefSeq/PGAP recA annotation after predictions are frozen",
+      "leakage_risk": "low_for_pgap_post_hoc_labels; amrfinderplus_not_applicable",
+      "suitable_for_external_validation": true,
+      "isolates_not_inspected": true
+    },
+    {
+      "target": "tuf_EF_Tu",
+      "amrfinderplus_overlap": "NONE",
+      "amrfinderplus_definition": {
+        "symbols": [],
+        "note": "No tuf/tufA/tufB node in the AMRFinderPlus Reference Gene Hierarchy."
+      },
+      "pgap_overlap": "DIRECT",
+      "pgap_gene_symbols": ["tuf", "tufA", "tufB"],
+      "available_external_reference": ["RefSeq/PGAP gene symbols tuf/tufA/tufB"],
+      "proposed_reference_source": "RefSeq/PGAP tufA/tufB (or tuf) annotation after predictions are frozen; this is the independent reference for multiplicity",
+      "leakage_risk": "low_for_pgap_post_hoc_labels; amrfinderplus_not_applicable",
+      "suitable_for_external_validation": true,
+      "isolates_not_inspected": true
+    },
+    {
+      "target": "lacZ_beta_galactosidase",
+      "amrfinderplus_overlap": "NONE",
+      "amrfinderplus_definition": {
+        "symbols": [],
+        "note": "No lacZ node in the AMRFinderPlus Reference Gene Hierarchy."
+      },
+      "pgap_overlap": "DIRECT",
+      "pgap_gene_symbols": ["lacZ"],
+      "available_external_reference": ["RefSeq/PGAP gene symbol lacZ"],
+      "proposed_reference_source": "RefSeq/PGAP lacZ annotation after predictions are frozen",
+      "leakage_risk": "low_for_pgap_post_hoc_labels; amrfinderplus_not_applicable",
+      "suitable_for_external_validation": true,
+      "isolates_not_inspected": true
+    },
+    {
+      "target": "rpoB_RNAP_beta",
+      "amrfinderplus_overlap": "RELATED",
+      "amrfinderplus_definition": {
+        "symbols": ["rpoB"],
+        "subtype": "POINT",
+        "class": "RIFAMYCIN",
+        "note": "AMRFinderPlus catalogs rpoB rifampin POINT mutations, not rpoB gene presence/orthology."
+      },
+      "pgap_overlap": "DIRECT",
+      "pgap_gene_symbols": ["rpoB"],
+      "available_external_reference": ["RefSeq/PGAP gene symbol rpoB"],
+      "proposed_reference_source": "RefSeq/PGAP rpoB annotation after predictions are frozen. Do not use AMRFinderPlus POINT alleles as orthologue-presence labels.",
+      "leakage_risk": "high_if_point_mutations_used_as_presence_labels; acceptable_as_post_hoc_pgap_label",
+      "suitable_for_external_validation": true,
+      "isolates_not_inspected": true
+    },
+    {
+      "target": "rpoC_RNAP_beta_prime",
+      "amrfinderplus_overlap": "RELATED",
+      "amrfinderplus_definition": {
+        "symbols": ["rpoC"],
+        "subtype": "POINT",
+        "note": "AMRFinderPlus catalogs rpoC POINT mutations, not rpoC gene presence/orthology."
+      },
+      "pgap_overlap": "DIRECT",
+      "pgap_gene_symbols": ["rpoC"],
+      "available_external_reference": ["RefSeq/PGAP gene symbol rpoC"],
+      "proposed_reference_source": "RefSeq/PGAP rpoC annotation after predictions are frozen. Do not use AMRFinderPlus POINT alleles as orthologue-presence labels.",
+      "leakage_risk": "high_if_point_mutations_used_as_presence_labels; acceptable_as_post_hoc_pgap_label",
+      "suitable_for_external_validation": true,
+      "isolates_not_inspected": true
+    }
+  ],
+  "summary": {
+    "direct_amrfinderplus_presence_overlaps": ["tetA_tetracycline_efflux"],
+    "related_amrfinderplus_only": ["mfs_multidrug_efflux", "rnd_efflux", "rpoB_RNAP_beta", "rpoC_RNAP_beta_prime"],
+    "no_amrfinderplus_definition": ["recA_recombinase", "tuf_EF_Tu", "lacZ_beta_galactosidase"],
+    "direct_refseq_pgap_overlaps": [
+      "tetA_tetracycline_efflux",
+      "mfs_multidrug_efflux",
+      "rnd_efflux",
+      "recA_recombinase",
+      "tuf_EF_Tu",
+      "lacZ_beta_galactosidase",
+      "rpoB_RNAP_beta",
+      "rpoC_RNAP_beta_prime"
+    ],
+    "no_suitable_independent_reference": []
+  }
+}

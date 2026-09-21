@@ -1,0 +1,8 @@
+{
+  "path": "manuscript_benchmark/POSITION_LOCKS/position_20/NCBI_REFSEQ_PGAP.json",
+  "sha256": "47c9c9b579a7adc6ee22f137802bbcf5c5cf906dc3db2eb7f95d3ff1240cc6ce",
+  "hashed_utc": "2026-09-20T05:42:10.140441+00:00",
+  "truth_opened": false,
+  "d20_touched": false,
+  "accuracy_scored": false
+}

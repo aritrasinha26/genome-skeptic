@@ -1,0 +1,208 @@
+{
+  "kind": "v5_frozen_target_inventory",
+  "created_utc": "2026-09-18T22:20:00+00:00",
+  "genome_skeptic_v5_freeze_hash": "0e993125d2d620e54bbb42b3e420b4b9fda951c28b358ff8a2aed2d5b55a8f1b",
+  "scientific_logic_modified": false,
+  "note": "Inventory of curated families frozen Genome Skeptic V5 can analyse without adding scientific functionality. Locus reconstruction and multiplicity are general V5 gene_orthologue capabilities, not gene-specific rules. Arbitrary extra FASTA queries are possible at runtime but are not additional frozen families.",
+  "n_frozen_targets": 8,
+  "v5_capabilities_apply_to_all_gene_orthologue_families": {
+    "locus_reconstruction": true,
+    "copy_number_multiplicity_reasoning": true,
+    "family_hmm_from_internal_msa": true,
+    "source": "ExecutionConfig.enable_locus_reconstruction and locus_multiplicity validator; hmmbuild from members.aln.faa"
+  },
+  "targets": [
+    {
+      "target_name": "tetA_tetracycline_efflux",
+      "aliases": ["tetA"],
+      "display_name": "tetracycline efflux TetA (mobile/plasmid-associated)",
+      "target_type": "gene_orthologue",
+      "family_class": "mfs_transporter",
+      "biological_property": "mobile_plasmid_associated",
+      "reference_sequences": [
+        {"protein_id": "P02980", "source": "UniProt FASTA", "length_aa": 401, "note": "Tn10 TetA class B"},
+        {"protein_id": "P02982", "source": "UniProt FASTA", "length_aa": 399, "note": "TetA/TCR1 tetracycline efflux"}
+      ],
+      "family_profile_resource_internal": {
+        "members_fasta": "data/target_families/tetA_tetracycline_efflux/members.faa",
+        "msa": "data/target_families/tetA_tetracycline_efflux/members.aln.faa",
+        "hmm": "hmmbuild from internal MSA at first use",
+        "not_amrfinderplus_hmm": true
+      },
+      "competitive_family_discrimination": true,
+      "competing_families": ["mfs_multidrug_efflux", "rnd_efflux"],
+      "locus_reconstruction_supported": true,
+      "copy_number_multiplicity_supported": true
+    },
+    {
+      "target_name": "mfs_multidrug_efflux",
+      "aliases": ["mdfA"],
+      "display_name": "MFS multidrug efflux (non-TetA competitors)",
+      "target_type": "gene_orthologue",
+      "family_class": "mfs_transporter",
+      "biological_property": "membrane_transporter_competing_families",
+      "reference_sequences": [
+        {"protein_id": "P0AEY8", "source": "UniProt FASTA", "length_aa": 410, "note": "Escherichia coli MdfA"},
+        {"protein_id": "P0AEJ0", "source": "UniProt FASTA", "length_aa": 512, "note": "Escherichia coli EmrB"},
+        {"protein_id": "P28246", "source": "UniProt FASTA", "length_aa": 396, "note": "Escherichia coli Bcr"}
+      ],
+      "family_profile_resource_internal": {
+        "members_fasta": "data/target_families/mfs_multidrug_efflux/members.faa",
+        "msa": "data/target_families/mfs_multidrug_efflux/members.aln.faa",
+        "hmm": "hmmbuild from internal MSA at first use",
+        "not_amrfinderplus_hmm": true
+      },
+      "competitive_family_discrimination": true,
+      "competing_families": ["tetA_tetracycline_efflux"],
+      "locus_reconstruction_supported": true,
+      "copy_number_multiplicity_supported": true
+    },
+    {
+      "target_name": "rnd_efflux",
+      "aliases": ["rnd_efflux"],
+      "display_name": "RND family efflux (AcrB-like)",
+      "target_type": "gene_orthologue",
+      "family_class": "rnd_transporter",
+      "biological_property": "membrane_transporter_competing_families",
+      "reference_sequences": [
+        {"protein_id": "P31224", "source": "UniProt FASTA", "length_aa": 1049, "note": "Escherichia coli AcrB"},
+        {"protein_id": "P24177", "source": "UniProt FASTA", "length_aa": 1037, "note": "Escherichia coli AcrD"}
+      ],
+      "family_profile_resource_internal": {
+        "members_fasta": "data/target_families/rnd_efflux/members.faa",
+        "msa": "data/target_families/rnd_efflux/members.aln.faa",
+        "hmm": "hmmbuild from internal MSA at first use",
+        "not_amrfinderplus_hmm": true
+      },
+      "competitive_family_discrimination": true,
+      "competing_families": ["tetA_tetracycline_efflux", "mfs_multidrug_efflux"],
+      "locus_reconstruction_supported": true,
+      "copy_number_multiplicity_supported": true
+    },
+    {
+      "target_name": "recA_recombinase",
+      "aliases": ["recA"],
+      "display_name": "RecA recombinase (single-copy housekeeping)",
+      "target_type": "gene_orthologue",
+      "family_class": "",
+      "biological_property": "highly_conserved_single_copy_housekeeping",
+      "reference_sequences": [
+        {"protein_id": "NP_417179.1", "source": "NCBI protein FASTA", "length_aa": 353},
+        {"protein_id": "NP_214765.1", "source": "NCBI protein FASTA", "length_aa": 159},
+        {"protein_id": "NP_228245.1", "source": "NCBI protein FASTA", "length_aa": 159},
+        {"protein_id": "NP_213126.1", "source": "NCBI protein FASTA", "length_aa": 216}
+      ],
+      "family_profile_resource_internal": {
+        "members_fasta": "data/target_families/recA_recombinase/members.faa",
+        "msa": "data/target_families/recA_recombinase/members.aln.faa",
+        "hmm": "hmmbuild from internal MSA at first use",
+        "not_amrfinderplus_hmm": true
+      },
+      "competitive_family_discrimination": false,
+      "competing_families": [],
+      "locus_reconstruction_supported": true,
+      "copy_number_multiplicity_supported": true
+    },
+    {
+      "target_name": "tuf_EF_Tu",
+      "aliases": ["tuf"],
+      "display_name": "elongation factor Tu (multi-copy paralogues tufA/tufB)",
+      "target_type": "gene_orthologue",
+      "family_class": "",
+      "biological_property": "multi_copy_genuine_paralogues",
+      "reference_sequences": [
+        {"protein_id": "NP_418240.1", "source": "NCBI protein FASTA", "length_aa": 359, "note": "E. coli MG1655 tufA"},
+        {"protein_id": "NP_216072.1", "source": "NCBI protein FASTA", "length_aa": 202},
+        {"protein_id": "NP_228108.1", "source": "NCBI protein FASTA", "length_aa": 315},
+        {"protein_id": "NP_213616.1", "source": "NCBI protein FASTA", "length_aa": 191}
+      ],
+      "family_profile_resource_internal": {
+        "members_fasta": "data/target_families/tuf_EF_Tu/members.faa",
+        "msa": "data/target_families/tuf_EF_Tu/members.aln.faa",
+        "hmm": "hmmbuild from internal MSA at first use",
+        "not_amrfinderplus_hmm": true
+      },
+      "competitive_family_discrimination": false,
+      "competing_families": [],
+      "locus_reconstruction_supported": true,
+      "copy_number_multiplicity_supported": true
+    },
+    {
+      "target_name": "lacZ_beta_galactosidase",
+      "aliases": ["lacZ"],
+      "display_name": "beta-galactosidase LacZ (accessory, absent from many strains)",
+      "target_type": "gene_orthologue",
+      "family_class": "",
+      "biological_property": "accessory_absent_from_many_strains",
+      "reference_sequences": [
+        {"protein_id": "NP_414878.1", "source": "NCBI protein FASTA", "length_aa": 1024},
+        {"protein_id": "WP_000241775.1", "source": "NCBI protein FASTA", "length_aa": 385},
+        {"protein_id": "WP_004084538.1", "source": "NCBI protein FASTA", "length_aa": 135}
+      ],
+      "family_profile_resource_internal": {
+        "members_fasta": "data/target_families/lacZ_beta_galactosidase/members.faa",
+        "msa": "data/target_families/lacZ_beta_galactosidase/members.aln.faa",
+        "hmm": "hmmbuild from internal MSA at first use",
+        "not_amrfinderplus_hmm": true
+      },
+      "competitive_family_discrimination": false,
+      "competing_families": [],
+      "locus_reconstruction_supported": true,
+      "copy_number_multiplicity_supported": true
+    },
+    {
+      "target_name": "rpoB_RNAP_beta",
+      "aliases": ["rpoB"],
+      "display_name": "bacterial RNA polymerase subunit beta (RpoB)",
+      "target_type": "gene_orthologue",
+      "family_class": "",
+      "biological_property": "",
+      "reference_sequences": [
+        {"protein_id": "NP_418414.1", "source": "NCBI RefSeq protein FASTA", "length_aa": 1342},
+        {"protein_id": "NP_215181.1", "source": "NCBI RefSeq protein FASTA", "length_aa": 1172},
+        {"protein_id": "WP_004081508.1", "source": "NCBI RefSeq protein FASTA", "length_aa": 1263},
+        {"protein_id": "WP_010871995.1", "source": "NCBI RefSeq protein FASTA", "length_aa": 1102},
+        {"protein_id": "WP_243759718.1", "source": "NCBI RefSeq protein FASTA", "length_aa": 1141},
+        {"protein_id": "WP_506804874.1", "source": "NCBI RefSeq protein FASTA", "length_aa": 1188},
+        {"protein_id": "WP_010881267.1", "source": "NCBI RefSeq protein FASTA", "length_aa": 1468}
+      ],
+      "family_profile_resource_internal": {
+        "members_fasta": "data/target_families/rpoB_RNAP_beta/members.faa",
+        "msa": "data/target_families/rpoB_RNAP_beta/members.aln.faa",
+        "hmm": "hmmbuild from internal MSA at first use",
+        "documented_domains": ["PF00562", "PF04560", "PF04561", "PF04565", "PF04566", "PF04563", "PF10385"],
+        "not_amrfinderplus_hmm": true
+      },
+      "competitive_family_discrimination": false,
+      "competing_families": [],
+      "partner_families": ["rpoC_RNAP_beta_prime"],
+      "locus_reconstruction_supported": true,
+      "copy_number_multiplicity_supported": true
+    },
+    {
+      "target_name": "rpoC_RNAP_beta_prime",
+      "aliases": ["rpoC"],
+      "display_name": "bacterial RNA polymerase subunit beta-prime (RpoC)",
+      "target_type": "gene_orthologue",
+      "family_class": "",
+      "biological_property": "",
+      "note": "Partner family for rpoB fusion tests; not a substitute rpoB definition.",
+      "reference_sequences": [
+        {"protein_id": "NP_418415.1", "source": "NCBI RefSeq protein FASTA", "length_aa": 1407},
+        {"protein_id": "NP_215182.1", "source": "NCBI RefSeq protein FASTA", "length_aa": 1316}
+      ],
+      "family_profile_resource_internal": {
+        "members_fasta": "data/target_families/rpoC_RNAP_beta_prime/members.faa",
+        "msa": "data/target_families/rpoC_RNAP_beta_prime/members.aln.faa",
+        "hmm": "hmmbuild from internal MSA at first use",
+        "documented_domains": ["PF04997", "PF00623", "PF04983"],
+        "not_amrfinderplus_hmm": true
+      },
+      "competitive_family_discrimination": false,
+      "competing_families": [],
+      "partner_families": ["rpoB_RNAP_beta"],
+      "locus_reconstruction_supported": true,
+      "copy_number_multiplicity_supported": true
+    }
+  ]
+}

@@ -1,0 +1,481 @@
+{
+  "kind": "locus_multiplicity_v5",
+  "cases": [
+    {
+      "case_id": "ctrl_multi_near_identical",
+      "architecture": "close_paralogue",
+      "competitive": {
+        "target_family": "tuf_EF_Tu",
+        "candidate_locus": {
+          "contig": "chr",
+          "genomic_start": 0,
+          "genomic_end": 4206,
+          "strand": "+",
+          "protein_length": 1402
+        },
+        "target_family_score": 0.8384,
+        "target_family_HMM_score": 234.2,
+        "target_family_model_coverage": 0.9767,
+        "target_family_sequence_coverage": 0.25606276747503565,
+        "best_competing_family": null,
+        "competing_family_score": null,
+        "competing_family_HMM_score": null,
+        "competing_family_model_coverage": null,
+        "score_margin": null,
+        "domain_architecture": [],
+        "protein_length": 1402,
+        "transmembrane_topology": {
+          "hydrophobic_windows_19aa": 0,
+          "measured": true
+        },
+        "conserved_motif_evidence": null,
+        "reciprocal_family_assignment": null,
+        "reference_family_placement": null,
+        "conflicting_evidence": [],
+        "classification": "target_family_supported",
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_competitive_family"
+        ],
+        "provenance": {
+          "created_by": "deterministic_competitive_family",
+          "llm_invented_scores": false,
+          "gene_specific_rules": false
+        },
+        "competitors_scored": []
+      },
+      "multiplicity": {
+        "family": "tuf_EF_Tu",
+        "number_of_candidate_loci": 4,
+        "coordinates": [
+          {
+            "contig": "chr",
+            "start": 900,
+            "end": 1977,
+            "strand": "+"
+          },
+          {
+            "contig": "chr",
+            "start": 4177,
+            "end": 5254,
+            "strand": "+"
+          },
+          {
+            "contig": "chr",
+            "start": 0,
+            "end": 4206,
+            "strand": "+"
+          },
+          {
+            "contig": "chr",
+            "start": 1954,
+            "end": 6154,
+            "strand": "+"
+          }
+        ],
+        "contigs": [
+          "chr"
+        ],
+        "strand": [
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "sequence_identity_between_copies": 1.0,
+        "family_evidence_per_locus": [
+          {
+            "contig": "chr",
+            "identity": 1.0,
+            "coverage": 1.0,
+            "hmm_coverage": 1.0,
+            "family_gate_passed": true
+          },
+          {
+            "contig": "chr",
+            "identity": 1.0,
+            "coverage": 1.0,
+            "hmm_coverage": 1.0,
+            "family_gate_passed": true
+          },
+          {
+            "contig": "chr",
+            "identity": 0.0,
+            "coverage": 0.9767,
+            "hmm_coverage": 0.9767,
+            "family_gate_passed": true
+          },
+          {
+            "contig": "chr",
+            "identity": 0.0,
+            "coverage": 0.9767,
+            "hmm_coverage": 0.9767,
+            "family_gate_passed": true
+          }
+        ],
+        "read_depth_per_locus": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "upstream_context": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "",
+          "CTACTGATGATTTAAATGAAGATATTGTTCGTGAAGCTCAACGTCAATTAGCTTCTGTTGATAAAAATACTATTGCTTTT"
+        ],
+        "downstream_context": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "TGATATTCCTCATCATAATCGTACTGTTTTACGTTTTTTTAATGATGCTTTAGCTGCTACTTCTGAACATGCTCGTGAAT",
+          ""
+        ],
+        "assembly_fragment_relationship": false,
+        "plasmid_chromosome_context": null,
+        "contamination_evidence": false,
+        "classification": "recent_duplication",
+        "loci": [
+          {
+            "contig": "chr",
+            "strand": "+",
+            "genomic_start": 900,
+            "genomic_end": 1977,
+            "identity": 1.0,
+            "coverage": 1.0,
+            "query_identity": 1.0,
+            "query_coverage": 1.0,
+            "hmm_from": 1,
+            "hmm_to": 359,
+            "hmm_coverage": 1.0,
+            "contig_length": 6154,
+            "contig_edge": true,
+            "gc": null,
+            "orf_ids": [
+              "chr:900-1977:+"
+            ],
+            "upstream_context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "downstream_context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "family_gate_passed": true
+          },
+          {
+            "contig": "chr",
+            "strand": "+",
+            "genomic_start": 4177,
+            "genomic_end": 5254,
+            "identity": 1.0,
+            "coverage": 1.0,
+            "query_identity": 1.0,
+            "query_coverage": 1.0,
+            "hmm_from": 1,
+            "hmm_to": 359,
+            "hmm_coverage": 1.0,
+            "contig_length": 6154,
+            "contig_edge": true,
+            "gc": null,
+            "orf_ids": [
+              "chr:4177-5254:+"
+            ],
+            "upstream_context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "downstream_context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "family_gate_passed": true
+          },
+          {
+            "contig": "chr",
+            "strand": "+",
+            "genomic_start": 0,
+            "genomic_end": 4206,
+            "identity": 0.0,
+            "coverage": 0.9767,
+            "query_identity": null,
+            "hmm_from": 7,
+            "hmm_to": 258,
+            "hmm_coverage": 0.9767,
+            "contig_length": 6154,
+            "contig_edge": true,
+            "gc": 0.1774,
+            "contig_gc": 0.1748,
+            "orf_ids": [
+              "chr:0-4206:+"
+            ],
+            "upstream_context": "",
+            "downstream_context": "TGATATTCCTCATCATAATCGTACTGTTTTACGTTTTTTTAATGATGCTTTAGCTGCTACTTCTGAACATGCTCGTGAAT",
+            "family_gate_passed": true
+          },
+          {
+            "contig": "chr",
+            "strand": "+",
+            "genomic_start": 1954,
+            "genomic_end": 6154,
+            "identity": 0.0,
+            "coverage": 0.9767,
+            "query_identity": null,
+            "hmm_from": 7,
+            "hmm_to": 258,
+            "hmm_coverage": 0.9767,
+            "contig_length": 6154,
+            "contig_edge": true,
+            "gc": 0.1783,
+            "contig_gc": 0.1748,
+            "orf_ids": [
+              "chr:1954-6154:+"
+            ],
+            "upstream_context": "CTACTGATGATTTAAATGAAGATATTGTTCGTGAAGCTCAACGTCAATTAGCTTCTGTTGATAAAAATACTATTGCTTTT",
+            "downstream_context": "",
+            "family_gate_passed": true
+          }
+        ],
+        "provenance": {
+          "created_by": "deterministic_locus_multiplicity",
+          "llm_invented_scores": false,
+          "collapsed_near_identical_copies": false
+        },
+        "evidence_ids": [
+          "E_locus_reconstruction",
+          "E_paralogy",
+          "E_multiplicity"
+        ]
+      },
+      "query_identity": 1.0
+    },
+    {
+      "case_id": "ctrl_multi_single",
+      "architecture": "canonical_full_length",
+      "competitive": {
+        "target_family": "recA_recombinase",
+        "candidate_locus": {
+          "contig": "c1",
+          "genomic_start": 900,
+          "genomic_end": 1959,
+          "strand": "+",
+          "protein_length": 353
+        },
+        "target_family_score": 0.9441,
+        "target_family_HMM_score": 171.7,
+        "target_family_model_coverage": 0.9626,
+        "target_family_sequence_coverage": 1.0,
+        "best_competing_family": null,
+        "competing_family_score": null,
+        "competing_family_HMM_score": null,
+        "competing_family_model_coverage": null,
+        "score_margin": null,
+        "domain_architecture": [],
+        "protein_length": 353,
+        "transmembrane_topology": {
+          "hydrophobic_windows_19aa": 1,
+          "measured": true
+        },
+        "conserved_motif_evidence": null,
+        "reciprocal_family_assignment": null,
+        "reference_family_placement": null,
+        "conflicting_evidence": [],
+        "classification": "target_family_supported",
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_competitive_family"
+        ],
+        "provenance": {
+          "created_by": "deterministic_competitive_family",
+          "llm_invented_scores": false,
+          "gene_specific_rules": false
+        },
+        "competitors_scored": []
+      },
+      "multiplicity": {
+        "family": "recA_recombinase",
+        "number_of_candidate_loci": 1,
+        "coordinates": [
+          {
+            "contig": "c1",
+            "start": 900,
+            "end": 1959,
+            "strand": "+"
+          }
+        ],
+        "contigs": [
+          "c1"
+        ],
+        "strand": [
+          "+"
+        ],
+        "sequence_identity_between_copies": null,
+        "family_evidence_per_locus": [
+          {
+            "contig": "c1",
+            "identity": 1.0,
+            "coverage": 1.0,
+            "hmm_coverage": 1.0,
+            "family_gate_passed": true
+          }
+        ],
+        "read_depth_per_locus": [
+          null
+        ],
+        "upstream_context": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "downstream_context": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+        ],
+        "assembly_fragment_relationship": false,
+        "plasmid_chromosome_context": null,
+        "contamination_evidence": false,
+        "classification": "single_locus",
+        "loci": [
+          {
+            "contig": "c1",
+            "strand": "+",
+            "genomic_start": 900,
+            "genomic_end": 1959,
+            "identity": 1.0,
+            "coverage": 1.0,
+            "query_identity": 1.0,
+            "query_coverage": 1.0,
+            "hmm_from": 1,
+            "hmm_to": 353,
+            "hmm_coverage": 1.0,
+            "contig_length": 2859,
+            "contig_edge": true,
+            "gc": null,
+            "orf_ids": [
+              "c1:900-1959:+"
+            ],
+            "upstream_context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "downstream_context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "family_gate_passed": true
+          }
+        ],
+        "provenance": {
+          "created_by": "deterministic_locus_multiplicity",
+          "llm_invented_scores": false,
+          "collapsed_near_identical_copies": false
+        },
+        "evidence_ids": [
+          "E_locus_reconstruction",
+          "E_paralogy",
+          "E_multiplicity"
+        ]
+      },
+      "query_identity": 1.0
+    },
+    {
+      "case_id": "dev_01_tuf",
+      "architecture": "canonical_full_length",
+      "competitive": {
+        "target_family": "tuf_EF_Tu",
+        "candidate_locus": {
+          "contig": "NODE_18_length_88228_cov_10.706815",
+          "genomic_start": 56516,
+          "genomic_end": 57599,
+          "strand": "-",
+          "protein_length": 361
+        },
+        "target_family_score": 0.9861,
+        "target_family_HMM_score": 238.0,
+        "target_family_model_coverage": 0.9767,
+        "target_family_sequence_coverage": 0.9944598337950139,
+        "best_competing_family": null,
+        "competing_family_score": null,
+        "competing_family_HMM_score": null,
+        "competing_family_model_coverage": null,
+        "score_margin": null,
+        "domain_architecture": [],
+        "protein_length": 361,
+        "transmembrane_topology": {
+          "hydrophobic_windows_19aa": 0,
+          "measured": true
+        },
+        "conserved_motif_evidence": null,
+        "reciprocal_family_assignment": null,
+        "reference_family_placement": null,
+        "conflicting_evidence": [],
+        "classification": "target_family_supported",
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_competitive_family"
+        ],
+        "provenance": {
+          "created_by": "deterministic_competitive_family",
+          "llm_invented_scores": false,
+          "gene_specific_rules": false
+        },
+        "competitors_scored": []
+      },
+      "multiplicity": {
+        "family": "tuf_EF_Tu",
+        "number_of_candidate_loci": 1,
+        "coordinates": [
+          {
+            "contig": "NODE_18_length_88228_cov_10.706815",
+            "start": 56516,
+            "end": 57593,
+            "strand": "-"
+          }
+        ],
+        "contigs": [
+          "NODE_18_length_88228_cov_10.706815"
+        ],
+        "strand": [
+          "-"
+        ],
+        "sequence_identity_between_copies": null,
+        "family_evidence_per_locus": [
+          {
+            "contig": "NODE_18_length_88228_cov_10.706815",
+            "identity": 1.0,
+            "coverage": 1.0,
+            "hmm_coverage": 1.0,
+            "family_gate_passed": true
+          }
+        ],
+        "read_depth_per_locus": [
+          null
+        ],
+        "upstream_context": [
+          "ATGAAAAGAAGACATTGAAGTTAAAGCGCACACGGCGAAACTCAAACCAGGTCAGCGTGGCAATAAACAGCGTGCAGAGC"
+        ],
+        "downstream_context": [
+          "GCCCGCCTACGCCAGAGTAAAAACACGCCACAACAAAGAGAAAAATAGACGATATAAGTTGCCATATATGCCTGCGCCGC"
+        ],
+        "assembly_fragment_relationship": false,
+        "plasmid_chromosome_context": null,
+        "contamination_evidence": false,
+        "classification": "single_locus",
+        "loci": [
+          {
+            "contig": "NODE_18_length_88228_cov_10.706815",
+            "strand": "-",
+            "genomic_start": 56516,
+            "genomic_end": 57593,
+            "identity": 1.0,
+            "coverage": 1.0,
+            "query_identity": 1.0,
+            "query_coverage": 1.0,
+            "hmm_from": 1,
+            "hmm_to": 359,
+            "hmm_coverage": 1.0,
+            "contig_length": 88228,
+            "contig_edge": true,
+            "gc": null,
+            "orf_ids": [
+              "NODE_18_length_88228_cov_10.706815:56516-57593:-"
+            ],
+            "upstream_context": "ATGAAAAGAAGACATTGAAGTTAAAGCGCACACGGCGAAACTCAAACCAGGTCAGCGTGGCAATAAACAGCGTGCAGAGC",
+            "downstream_context": "GCCCGCCTACGCCAGAGTAAAAACACGCCACAACAAAGAGAAAAATAGACGATATAAGTTGCCATATATGCCTGCGCCGC",
+            "family_gate_passed": true
+          }
+        ],
+        "provenance": {
+          "created_by": "deterministic_locus_multiplicity",
+          "llm_invented_scores": false,
+          "collapsed_near_identical_copies": false
+        },
+        "evidence_ids": [
+          "E_locus_reconstruction",
+          "E_paralogy",
+          "E_multiplicity"
+        ]
+      }
+    }
+  ]
+}

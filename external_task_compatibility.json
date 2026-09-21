@@ -1,0 +1,142 @@
+{
+  "kind": "external_benchmark_manifest",
+  "benchmarks": {
+    "bioagent_bench": {
+      "benchmark": "bioagent_bench",
+      "local_root": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bioagent_bench",
+      "source": "official_clone",
+      "n_tasks": 10,
+      "n_supported": 0,
+      "n_partial": 3,
+      "n_unsupported": 7,
+      "tasks": [
+        {
+          "task": "alzheimer-mouse",
+          "compatibility": "unsupported",
+          "reason": "task domain could not be mapped onto Genome Skeptic without rewriting the prompt",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bioagent_bench/src",
+          "original_prompt": "",
+          "inputs_present": true
+        },
+        {
+          "task": "comparative-genomics",
+          "compatibility": "unsupported",
+          "reason": "task domain could not be mapped onto Genome Skeptic without rewriting the prompt",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bioagent_bench/src",
+          "original_prompt": "",
+          "inputs_present": true
+        },
+        {
+          "task": "cystic-fibrosis",
+          "compatibility": "unsupported",
+          "reason": "task domain could not be mapped onto Genome Skeptic without rewriting the prompt",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bioagent_bench/src",
+          "original_prompt": "",
+          "inputs_present": true
+        },
+        {
+          "task": "deseq",
+          "compatibility": "unsupported",
+          "reason": "outside Genome Skeptic bacterial isolate / gene-orthologue scope",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bioagent_bench/src",
+          "original_prompt": "",
+          "inputs_present": true
+        },
+        {
+          "task": "evolution",
+          "compatibility": "unsupported",
+          "reason": "task domain could not be mapped onto Genome Skeptic without rewriting the prompt",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bioagent_bench/src",
+          "original_prompt": "",
+          "inputs_present": true
+        },
+        {
+          "task": "giab",
+          "compatibility": "partially_supported",
+          "reason": "genomics-adjacent but not Genome Skeptic's gene-orthologue claim engine",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bioagent_bench/src",
+          "original_prompt": "",
+          "inputs_present": true
+        },
+        {
+          "task": "metagenomics",
+          "compatibility": "partially_supported",
+          "reason": "genomics-adjacent but not Genome Skeptic's gene-orthologue claim engine",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bioagent_bench/src",
+          "original_prompt": "",
+          "inputs_present": true
+        },
+        {
+          "task": "single-cell",
+          "compatibility": "unsupported",
+          "reason": "outside Genome Skeptic bacterial isolate / gene-orthologue scope",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bioagent_bench/src",
+          "original_prompt": "",
+          "inputs_present": true
+        },
+        {
+          "task": "transcript-quant",
+          "compatibility": "unsupported",
+          "reason": "task domain could not be mapped onto Genome Skeptic without rewriting the prompt",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bioagent_bench/src",
+          "original_prompt": "",
+          "inputs_present": true
+        },
+        {
+          "task": "viral-metagenomics",
+          "compatibility": "partially_supported",
+          "reason": "genomics-adjacent but not Genome Skeptic's gene-orthologue claim engine",
+          "scored_as_genome_skeptic": false,
+          "prompt_rewritten": false,
+          "local_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bioagent_bench/src",
+          "original_prompt": "",
+          "inputs_present": true
+        }
+      ],
+      "note": "Only files present in the official clone were classified. Prompts were not rewritten. Missing inputs were not fabricated."
+    },
+    "promptbio_bench": {
+      "benchmark": "promptbio_bench",
+      "local_root": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/promptbio_bench",
+      "source": "official_clone",
+      "n_tasks": 0,
+      "n_supported": 0,
+      "n_partial": 0,
+      "n_unsupported": 0,
+      "tasks": [],
+      "note": "Only files present in the official clone were classified. Prompts were not rewritten. Missing inputs were not fabricated."
+    },
+    "bixbench": {
+      "benchmark": "bixbench",
+      "local_root": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bixbench",
+      "source": "official_clone",
+      "n_tasks": 0,
+      "n_supported": 0,
+      "n_partial": 0,
+      "n_unsupported": 0,
+      "tasks": [],
+      "note": "Only files present in the official clone were classified. Prompts were not rewritten. Missing inputs were not fabricated."
+    }
+  },
+  "scoring_rule": "only_supported_tasks_with_local_original_inputs_and_original_scorer",
+  "truth_labels_modified": false,
+  "tasks_reconstructed_from_papers": false
+}

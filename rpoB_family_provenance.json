@@ -1,0 +1,101 @@
+{
+  "family_id": "rpoB_RNAP_beta",
+  "display_name": "bacterial RNA polymerase subunit beta (RpoB)",
+  "reference_proteins": [
+    "NP_418414.1",
+    "NP_215181.1",
+    "WP_004081508.1",
+    "WP_010871995.1",
+    "WP_243759718.1",
+    "WP_506804874.1",
+    "WP_010881267.1"
+  ],
+  "reference_species": [
+    "Escherichia coli str. K-12 substr. MG1655",
+    "Mycobacterium tuberculosis H37Rv",
+    "Thermotoga maritima",
+    "Synechocystis sp.",
+    "Deinococcus radiodurans",
+    "Streptococcus pyogenes",
+    "Aquifex aeolicus"
+  ],
+  "reference_gene_ids": [
+    "948488",
+    "888164",
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "protein_lengths": [
+    1342,
+    1172,
+    1263,
+    1102,
+    1141,
+    1188,
+    1468
+  ],
+  "domain_architecture": [
+    "PF00562 RNA_pol_Rpb2_1",
+    "PF04560 RNA_pol_Rpb2_2",
+    "PF04561 RNA_pol_Rpb2_3",
+    "PF04565 RNA_pol_Rpb2_4",
+    "PF04566 RNA_pol_Rpb2_5",
+    "PF04563 RNA_pol_Rpb2_6",
+    "PF10385 RNA_pol_Rpb2_7"
+  ],
+  "known_fusion_or_split": [
+    {
+      "state": "fusion",
+      "partner_family": "rpoC_RNAP_beta_prime",
+      "description": "Some bacteria encode RNA polymerase beta and beta-prime as a single polypeptide. Family-profile coverage inside a longer protein plus partner-family evidence distinguishes a fusion orthologue from a domain fragment.",
+      "not_a_species_rule": true
+    },
+    {
+      "state": "split",
+      "description": "Adjacent ORFs on the same contig and strand may jointly cover the family profile in order. This is distinct from assembly fragmentation across contig boundaries."
+    }
+  ],
+  "msa_provenance": {
+    "method": "star multiple alignment seeded on NP_418414.1 using Needleman-Wunsch (match=1 mismatch=-1 gap=-1)",
+    "aligner": "genome_skeptic.families.build_star_msa",
+    "n_sequences": 7,
+    "alignment_width": 1954,
+    "not_a_published_pfam_msa": true
+  },
+  "hmm_provenance": {
+    "method": "hmmbuild from the curated star MSA at first use",
+    "built_from": "members.aln.faa",
+    "not_invented_by_llm": true
+  },
+  "phylogenetic_reference_provenance": {
+    "default": "phylogenetic placement is not required for classification",
+    "used_when": "cheaper evidence leaves paralogy or family identity ambiguous",
+    "tool": "FastTree when available; never invented"
+  },
+  "mg1655_is_one_member_not_the_family_definition": true,
+  "forbidden_protein_ids": [
+    "NP_252960.1",
+    "WP_000037869.1",
+    "NP_463022.1",
+    "WP_003255495.1",
+    "YP_499096.2",
+    "NP_387988.1",
+    "NP_387989.1"
+  ],
+  "partner_family": {
+    "family_id": "rpoC_RNAP_beta_prime",
+    "reference_proteins": [
+      "NP_418415.1",
+      "NP_215182.1"
+    ],
+    "reference_species": [
+      "Escherichia coli str. K-12 substr. MG1655",
+      "Mycobacterium tuberculosis H37Rv"
+    ]
+  },
+  "hidden_benchmark_genomes_used_as_family_members": false,
+  "species_name_special_case": false
+}

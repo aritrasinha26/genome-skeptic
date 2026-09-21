@@ -1,0 +1,1012 @@
+{
+  "kind": "D12_V5_LOCKED",
+  "n_cases": 12,
+  "do_not_regenerate": true,
+  "external_labels_opened": false,
+  "d20_touched": false,
+  "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+  "created_utc": "2026-09-19T23:49:16.853332+00:00",
+  "predictions": [
+    {
+      "assembly_accession": "GCF_060416925.1",
+      "target": "tetA_tetracycline_efflux",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 8.715252404000239,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 1,
+        "classification": "single_locus"
+      },
+      "n_hits": 1,
+      "falsification_tests": [
+        {
+          "test_id": "wrong_paralogue:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "short_conserved_domain:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "low_alignment_coverage:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "contamination:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "orthology_versus_paralogy:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "reciprocal_best_hit:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "protein_identity_and_coverage:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "local_gene_order:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "phylogenetic_placement:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.4316,
+      "homology_support": 0.62,
+      "orthology_class": "divergent_full_length",
+      "statement": "Target gene 'tetA_tetracycline_efflux' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_057626335.1",
+      "target": "rpoB_RNAP_beta",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 13.993401275999986,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 1,
+        "classification": "single_locus"
+      },
+      "n_hits": 3,
+      "falsification_tests": [
+        {
+          "test_id": "wrong_paralogue:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "short_conserved_domain:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "low_alignment_coverage:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "contamination:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "orthology_versus_paralogy:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "reciprocal_best_hit:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "protein_identity_and_coverage:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "local_gene_order:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "phylogenetic_placement:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "homology_support": 0.62,
+      "orthology_class": "exact_strong_homolog,multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'rpoB_RNAP_beta' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_053795755.1",
+      "target": "tetA_tetracycline_efflux",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 8.324985695999999,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 1,
+        "classification": "single_locus"
+      },
+      "n_hits": 1,
+      "falsification_tests": [
+        {
+          "test_id": "wrong_paralogue:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "short_conserved_domain:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "low_alignment_coverage:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "contamination:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "orthology_versus_paralogy:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "reciprocal_best_hit:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "protein_identity_and_coverage:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "local_gene_order:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "phylogenetic_placement:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.5038,
+      "homology_support": 0.62,
+      "orthology_class": "profile_hmm_family_match",
+      "statement": "Target gene 'tetA_tetracycline_efflux' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_047943045.1",
+      "target": "rpoB_RNAP_beta",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 18.477499444000046,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 1,
+        "classification": "single_locus"
+      },
+      "n_hits": 4,
+      "falsification_tests": [
+        {
+          "test_id": "wrong_paralogue:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "short_conserved_domain:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "low_alignment_coverage:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "contamination:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "orthology_versus_paralogy:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "reciprocal_best_hit:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "protein_identity_and_coverage:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "local_gene_order:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "phylogenetic_placement:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "homology_support": 0.62,
+      "orthology_class": "exact_strong_homolog,multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'rpoB_RNAP_beta' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_058596135.1",
+      "target": "lacZ_beta_galactosidase",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 13.824964244000057,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 1,
+        "classification": "single_locus"
+      },
+      "n_hits": 8,
+      "falsification_tests": [
+        {
+          "test_id": "wrong_paralogue:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "short_conserved_domain:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "low_alignment_coverage:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "contamination:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "orthology_versus_paralogy:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "reciprocal_best_hit:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "protein_identity_and_coverage:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "local_gene_order:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "phylogenetic_placement:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.5126,
+      "homology_support": 0.58,
+      "orthology_class": "profile_hmm_family_match",
+      "statement": "Target gene 'lacZ_beta_galactosidase' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_059683705.1",
+      "target": "tuf_EF_Tu",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 16.39871992199994,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 0,
+        "classification": "single_locus"
+      },
+      "n_hits": 20,
+      "falsification_tests": [
+        {
+          "test_id": "nucleotide_homology:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "translated_homology:tuf_EF_Tu",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "contig_edge_truncation:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "local_read_coverage:tuf_EF_Tu",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "divergent_homologues:tuf_EF_Tu",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "locus_multiplicity:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "fusion_orf:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "split_gene:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "read_supported_break:tuf_EF_Tu",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "final_result": "target_gene_not_detected",
+      "claim_class": "weakened",
+      "confidence": 0.4633,
+      "homology_support": 0.0199,
+      "orthology_class": "divergent_full_length",
+      "statement": "Target gene 'tuf_EF_Tu' was not detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_048585425.2",
+      "target": "lacZ_beta_galactosidase",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 12.996804972000064,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 1,
+        "classification": "single_locus"
+      },
+      "n_hits": 1,
+      "falsification_tests": [
+        {
+          "test_id": "wrong_paralogue:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "short_conserved_domain:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "low_alignment_coverage:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "contamination:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "orthology_versus_paralogy:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "reciprocal_best_hit:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "protein_identity_and_coverage:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "local_gene_order:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "phylogenetic_placement:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "homology_support": 0.62,
+      "orthology_class": "multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'lacZ_beta_galactosidase' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_046562475.1",
+      "target": "lacZ_beta_galactosidase",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 8.824249868000152,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 1,
+        "classification": "single_locus"
+      },
+      "n_hits": 20,
+      "falsification_tests": [
+        {
+          "test_id": "wrong_paralogue:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "short_conserved_domain:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "low_alignment_coverage:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "contamination:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "orthology_versus_paralogy:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "reciprocal_best_hit:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "protein_identity_and_coverage:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "local_gene_order:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "phylogenetic_placement:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.5459,
+      "homology_support": 0.58,
+      "orthology_class": "multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'lacZ_beta_galactosidase' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_052955985.1",
+      "target": "tuf_EF_Tu",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 23.462593622999975,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 0,
+        "classification": "single_locus"
+      },
+      "n_hits": 20,
+      "falsification_tests": [
+        {
+          "test_id": "nucleotide_homology:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "translated_homology:tuf_EF_Tu",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "contig_edge_truncation:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "local_read_coverage:tuf_EF_Tu",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "divergent_homologues:tuf_EF_Tu",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "locus_multiplicity:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "fusion_orf:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "split_gene:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "read_supported_break:tuf_EF_Tu",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "final_result": "target_gene_not_detected",
+      "claim_class": "weakened",
+      "confidence": 0.4858,
+      "homology_support": 0.0217,
+      "orthology_class": "divergent_full_length",
+      "statement": "Target gene 'tuf_EF_Tu' was not detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_050871785.1",
+      "target": "rpoB_RNAP_beta",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 19.02035975900003,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 1,
+        "classification": "single_locus"
+      },
+      "n_hits": 3,
+      "falsification_tests": [
+        {
+          "test_id": "wrong_paralogue:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "short_conserved_domain:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "low_alignment_coverage:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:rpoB_RNAP_beta",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "contamination:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "orthology_versus_paralogy:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "reciprocal_best_hit:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "protein_identity_and_coverage:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "local_gene_order:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "phylogenetic_placement:rpoB_RNAP_beta",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "homology_support": 0.62,
+      "orthology_class": "exact_strong_homolog,multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'rpoB_RNAP_beta' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_054055795.1",
+      "target": "tetA_tetracycline_efflux",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 104.3244766429998,
+      "reused": false,
+      "architecture": "close_paralogue",
+      "multiplicity": {
+        "number_of_candidate_loci": 4,
+        "classification": "paralogous_copy"
+      },
+      "n_hits": 20,
+      "falsification_tests": [
+        {
+          "test_id": "wrong_paralogue:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "short_conserved_domain:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "low_alignment_coverage:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "locus_multiplicity:tetA_tetracycline_efflux",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "contamination:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "orthology_versus_paralogy:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "reciprocal_best_hit:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "protein_identity_and_coverage:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "local_gene_order:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "phylogenetic_placement:tetA_tetracycline_efflux",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.3774,
+      "homology_support": 0.3102,
+      "orthology_class": "close_paralogue",
+      "statement": "Target gene 'tetA_tetracycline_efflux' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_049340285.1",
+      "target": "tuf_EF_Tu",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 21.119292657999722,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 0,
+        "classification": "single_locus"
+      },
+      "n_hits": 20,
+      "falsification_tests": [
+        {
+          "test_id": "nucleotide_homology:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "translated_homology:tuf_EF_Tu",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "contig_edge_truncation:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "local_read_coverage:tuf_EF_Tu",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "divergent_homologues:tuf_EF_Tu",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "locus_multiplicity:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "fusion_orf:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "split_gene:tuf_EF_Tu",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "read_supported_break:tuf_EF_Tu",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "final_result": "target_gene_not_detected",
+      "claim_class": "weakened",
+      "confidence": 0.4793,
+      "homology_support": 0.0253,
+      "orthology_class": "divergent_full_length",
+      "statement": "Target gene 'tuf_EF_Tu' was not detected in the current assembly.",
+      "external_labels_opened": false
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "kind": "cohort_C_pilot5_execution_manifest",
+  "locked_utc": "2026-09-19T16:37:16.180825+00:00",
+  "started_utc": "2026-09-19T16:36:48.217565+00:00",
+  "preliminary_external_pilot": true,
+  "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V1",
+  "agentic_v1_freeze_hash": "9ca874bb38efa073b2e0801f6f492e6bb1fdabd27ba2a225c70e559ba5bf8c54",
+  "agentic_v1_freeze_summary_sha256": "e5cc95523e18c9472211bb89235ccb624bc6cbbbad0d0ba5f56fddb1e8f9b38e",
+  "genome_skeptic_v5_freeze_hash": "0e993125d2d620e54bbb42b3e420b4b9fda951c28b358ff8a2aed2d5b55a8f1b",
+  "cohort_manifest_sha256": "3e4aa633a0e7a6606d5b3d6d204bd8ae29f74f81c41e0c1b3d52c62cfdc83934",
+  "input_manifest_sha256": "732eb450cba01679b6eb228e1177a57da653fc70c7310c584d767bcbcefae98f",
+  "pilot_manifest_sha256": "9107b54b5afdba8dd77088a07206fcc566f0632e2d97b88d8ac891f3943ae7ee",
+  "predictions_locked_sha256": "aac2a69ec747474c33d1d710e4d9a9389f8f5809832a3fb2cf33e97572869648",
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "thinking": false,
+  "temperature": 0,
+  "structured_output": "Ollama native schema",
+  "maximum_repairs": 1,
+  "final_scientific_authority": "deterministic validator",
+  "conditions": [
+    "GENOME_SKEPTIC_AGENTIC_V1",
+    "DETERMINISTIC_GENOME_SKEPTIC_V5",
+    "FROZEN_CONVENTIONAL_BASELINE"
+  ],
+  "n_pilot_genome_target_cases": 5,
+  "n_predictions": 15,
+  "pilot_cases": [
+    {
+      "frozen_execution_position": 1,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "rpoB_RNAP_beta"
+    },
+    {
+      "frozen_execution_position": 2,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "tuf_EF_Tu"
+    },
+    {
+      "frozen_execution_position": 3,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "lacZ_beta_galactosidase"
+    },
+    {
+      "frozen_execution_position": 4,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "tetA_tetracycline_efflux"
+    },
+    {
+      "frozen_execution_position": 5,
+      "assembly_accession": "GCF_055378285.1",
+      "target": "rpoB_RNAP_beta"
+    }
+  ],
+  "predictions_per_condition": {
+    "GENOME_SKEPTIC_AGENTIC_V1": 5,
+    "DETERMINISTIC_GENOME_SKEPTIC_V5": 5,
+    "FROZEN_CONVENTIONAL_BASELINE": 5
+  },
+  "successful_agentic_cases": 4,
+  "agent_execution_failures": 1,
+  "completed_cases": [
+    {
+      "frozen_execution_position": 1,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "rpoB_RNAP_beta",
+      "agentic_ok": true,
+      "v5_ok": true,
+      "conventional_ok": true,
+      "reused_immutable_agentic": true
+    },
+    {
+      "frozen_execution_position": 2,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "tuf_EF_Tu",
+      "agentic_ok": false,
+      "v5_ok": true,
+      "conventional_ok": true,
+      "reused_immutable_agentic": false
+    },
+    {
+      "frozen_execution_position": 3,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "lacZ_beta_galactosidase",
+      "agentic_ok": true,
+      "v5_ok": true,
+      "conventional_ok": true,
+      "reused_immutable_agentic": false
+    },
+    {
+      "frozen_execution_position": 4,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "tetA_tetracycline_efflux",
+      "agentic_ok": true,
+      "v5_ok": true,
+      "conventional_ok": true,
+      "reused_immutable_agentic": false
+    },
+    {
+      "frozen_execution_position": 5,
+      "assembly_accession": "GCF_055378285.1",
+      "target": "rpoB_RNAP_beta",
+      "agentic_ok": true,
+      "v5_ok": true,
+      "conventional_ok": true,
+      "reused_immutable_agentic": false
+    }
+  ],
+  "planner_calls": 6,
+  "critic_calls": 4,
+  "repair_calls": 1,
+  "timeouts": 0,
+  "malformed_responses": 0,
+  "distinct_registered_actions_selected": [
+    "inspect_contig_edges_for_target",
+    "inspect_local_coverage_for_target"
+  ],
+  "action_frequency_table": {
+    "inspect_contig_edges_for_target": 3,
+    "inspect_local_coverage_for_target": 1
+  },
+  "runtime_per_case": [
+    {
+      "frozen_execution_position": 1,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "rpoB_RNAP_beta",
+      "runtime_seconds_by_condition": {
+        "GENOME_SKEPTIC_AGENTIC_V1": 745.562,
+        "DETERMINISTIC_GENOME_SKEPTIC_V5": 95.58941203100039,
+        "FROZEN_CONVENTIONAL_BASELINE": 5.856980012999998
+      },
+      "agentic_runtime_seconds": 745.562
+    },
+    {
+      "frozen_execution_position": 2,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "tuf_EF_Tu",
+      "runtime_seconds_by_condition": {
+        "GENOME_SKEPTIC_AGENTIC_V1": 406.266,
+        "DETERMINISTIC_GENOME_SKEPTIC_V5": 95.58941203100039,
+        "FROZEN_CONVENTIONAL_BASELINE": 5.856980012999998
+      },
+      "agentic_runtime_seconds": 406.266
+    },
+    {
+      "frozen_execution_position": 3,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "lacZ_beta_galactosidase",
+      "runtime_seconds_by_condition": {
+        "GENOME_SKEPTIC_AGENTIC_V1": 1498.27,
+        "DETERMINISTIC_GENOME_SKEPTIC_V5": 95.58941203100039,
+        "FROZEN_CONVENTIONAL_BASELINE": 5.856980012999998
+      },
+      "agentic_runtime_seconds": 1498.27
+    },
+    {
+      "frozen_execution_position": 4,
+      "assembly_accession": "GCF_055394735.1",
+      "target": "tetA_tetracycline_efflux",
+      "runtime_seconds_by_condition": {
+        "GENOME_SKEPTIC_AGENTIC_V1": 978.902,
+        "DETERMINISTIC_GENOME_SKEPTIC_V5": 95.58941203100039,
+        "FROZEN_CONVENTIONAL_BASELINE": 5.856980012999998
+      },
+      "agentic_runtime_seconds": 978.902
+    },
+    {
+      "frozen_execution_position": 5,
+      "assembly_accession": "GCF_055378285.1",
+      "target": "rpoB_RNAP_beta",
+      "runtime_seconds_by_condition": {
+        "GENOME_SKEPTIC_AGENTIC_V1": 619.999,
+        "DETERMINISTIC_GENOME_SKEPTIC_V5": 20.39824684,
+        "FROZEN_CONVENTIONAL_BASELINE": 0.8004423659999986
+      },
+      "agentic_runtime_seconds": 619.999
+    }
+  ],
+  "total_runtime_seconds": 27.935402090000004,
+  "external_labels_opened": false,
+  "scores_computed": false,
+  "adjudication_performed": false,
+  "agent_modified": false,
+  "silent_deterministic_fallback_used": false,
+  "stop_before_label_access": true
+}

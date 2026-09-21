@@ -1,0 +1,112 @@
+{
+  "case_id": "M60_rpoB_RNAP_beta_GCF_059424735.1",
+  "position": 60,
+  "accession": "GCF_059424735.1",
+  "target": "rpoB_RNAP_beta",
+  "stratum": "challenge",
+  "system": "GS_DETERMINISTIC_V4_1",
+  "system_version": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+  "git_commit": "8f66868850a98494778966bd729b88a6fc2952eb",
+  "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+  "input_assembly_hash": "c4e2d0bcc0d724b847fdbcf7a730835a31cfb0134d0eda81222d99b8148bb542",
+  "start_time": "2026-09-21T07:31:04.810464+00:00",
+  "end_time": "2026-09-21T07:31:26.609469+00:00",
+  "runtime_seconds": 21.799,
+  "peak_memory": 283664384,
+  "tool_versions": {
+    "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+    "blastn": "USAGE",
+    "hmmsearch": "HMMER 3.4 (Aug 2023); http://hmmer.org/",
+    "mmseqs": "18.8cc5c",
+    "diamond": "diamond version 2.2.6",
+    "amrfinder": "4.2.7"
+  },
+  "database_versions": {
+    "amrfinder_database_version": "2026-08-07.1",
+    "amrfinder_database_directory": "/home/aritr/micromamba/envs/genome-skeptic-prod/share/amrfinderplus/data/2026-08-07.1",
+    "amrfinder_database_freeze_sha256": "d7ae98063c3b7795fa443f90f51a267e5b28002e1e5d59f364f403dde8a188be",
+    "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+    "family_definitions_hash": "ed4210640e318b8ed94ebf6d72b9c37afa9039eed858fdd54c4165fbcce09605"
+  },
+  "completion_status": "complete",
+  "failure_reason": null,
+  "output_file": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/RUNS/position_60/GCF_059424735.1/rpoB_RNAP_beta/GS_DETERMINISTIC_V4_1/case_locked.json",
+  "truth_opened": false,
+  "d20_touched": false,
+  "accuracy_scored": false,
+  "ok": true,
+  "planner_invoked": false,
+  "planner_decision": null,
+  "planner_actions": "inspect_hit_contig_contamination",
+  "planner_control_decision": null,
+  "planner_grounding_status": null,
+  "critic_invoked": false,
+  "critic_verdict": null,
+  "critic_actions": null,
+  "actions_executed": [
+    "inspect_hit_contig_contamination"
+  ],
+  "action_results": [
+    {
+      "action_id": "inspect_hit_contig_contamination",
+      "status": "INFORMATIVE"
+    }
+  ],
+  "m0_hash": "f4e6f9b35e042335f3eab9a2739c05b452812f726f384f2b0c02c4ec6c747892",
+  "m_final_hash": "47915e47d0058fba7ae23aa947ed6e792942e51b6dc85539d88b3e495c8cb27b",
+  "measurements_changed_before_validation": true,
+  "validator_consumed_measurement_hash": "47915e47d0058fba7ae23aa947ed6e792942e51b6dc85539d88b3e495c8cb27b",
+  "validator_consumed_m0": false,
+  "validator_consumed_final_state": true,
+  "model_call_count": 0,
+  "planner_call_count": 0,
+  "critic_call_count": 0,
+  "repair_count": 0,
+  "agent_failure": null,
+  "final_validator_ran": true,
+  "silent_deterministic_fallback": false,
+  "llm_measurement_entered_claim": false,
+  "unregistered_actions": [],
+  "unknown_evidence_ids": [],
+  "diagnostic_needs_m0": [
+    {
+      "need": "CONTAMINATION_UNRESOLVED",
+      "priority": 1
+    }
+  ],
+  "actions_offered": [
+    "inspect_hit_contig_contamination"
+  ],
+  "ranked_candidate_actions": [
+    {
+      "action_id": "inspect_hit_contig_contamination",
+      "tests": [
+        "CONTAMINATION_UNRESOLVED"
+      ],
+      "matched_needs": [
+        "CONTAMINATION_UNRESOLVED"
+      ],
+      "updates": [
+        "contig_gc",
+        "genome_gc"
+      ],
+      "relative_cost": 1,
+      "endpoint_relevance": [
+        "CONTAMINATION_UNRESOLVED"
+      ],
+      "expected_novelty": "discriminating",
+      "decision_relevance": {
+        "CONTAMINATION_UNRESOLVED": "discriminating"
+      },
+      "priority_score": 424
+    }
+  ],
+  "final_result": "target_gene_detected",
+  "claim_class": "supported",
+  "confidence": 0.55,
+  "architecture": "divergent_full_length",
+  "homology_support": 0.62,
+  "orthology_class": "multi_reference_protein_homolog,profile_hmm_family_match",
+  "statement": "Target gene 'rpoB_RNAP_beta' is detected in the current assembly.",
+  "output_sha256": "686c1bde093dd9befbfb0ea0c6877733f4503d63eb156d0d896fff7b21e5ee86"
+}

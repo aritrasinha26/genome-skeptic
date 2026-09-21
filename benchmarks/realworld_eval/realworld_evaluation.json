@@ -1,0 +1,1347 @@
+{
+  "systems": {
+    "conventional": {
+      "totals": {
+        "correct_detection": {
+          "n": 9,
+          "correct": 9,
+          "rate": 1.0
+        },
+        "false_detection": {
+          "n": 1,
+          "correct": 1,
+          "rate": 1.0
+        },
+        "correct_non_detection": {
+          "n": 1,
+          "correct": 1,
+          "rate": 1.0
+        },
+        "false_absence": {
+          "n": 13,
+          "correct": 11,
+          "rate": 0.8461538461538461
+        },
+        "contamination_recognition": {
+          "n": 2,
+          "correct": 0,
+          "rate": 0.0
+        },
+        "paralogue_recognition": {
+          "n": 1,
+          "correct": 0,
+          "rate": 0.0
+        },
+        "fragmentation_recognition": {
+          "n": 4,
+          "correct": 0,
+          "rate": 0.0
+        },
+        "appropriate_uncertainty": {
+          "n": 11,
+          "correct": 0,
+          "rate": 0.0
+        },
+        "unsupported_overclaiming": {
+          "n": 14,
+          "correct": 0,
+          "rate": 0.0
+        },
+        "useful_follow_up_analyses": {
+          "n": 17,
+          "correct": 0,
+          "rate": 0.0
+        },
+        "unnecessary_analyses": {
+          "n": 14,
+          "correct": 14,
+          "rate": 1.0
+        },
+        "correct_next_action": {
+          "n": 14,
+          "correct": 2,
+          "rate": 0.14285714285714285
+        }
+      },
+      "overall": 0.37623762376237624,
+      "targets": [
+        {
+          "case_id": "case_01",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_02",
+          "target": "rpoB",
+          "claim_type": "target_gene_not_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "false_absence": false,
+            "fragmentation_recognition": false,
+            "appropriate_uncertainty": false,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_03",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "appropriate_uncertainty": false,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_04",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "appropriate_uncertainty": false,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_05",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "contamination_recognition": false,
+            "appropriate_uncertainty": false,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_06",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "contamination_recognition": false,
+            "appropriate_uncertainty": false,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_07",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_08",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "paralogue_recognition": false,
+            "appropriate_uncertainty": false,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_09",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "false_absence": true,
+            "fragmentation_recognition": false,
+            "appropriate_uncertainty": false,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_10",
+          "target": "rpoB",
+          "claim_type": "target_gene_not_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "false_absence": false,
+            "fragmentation_recognition": false,
+            "appropriate_uncertainty": false,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_11",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "false_absence": true,
+            "fragmentation_recognition": false,
+            "appropriate_uncertainty": false,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_12",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "appropriate_uncertainty": false,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_13",
+          "target": "rpoB",
+          "claim_type": "target_gene_not_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "false_detection": true,
+            "correct_non_detection": true,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_14",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "supported",
+          "confidence": 0.99,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "appropriate_uncertainty": false,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        }
+      ]
+    },
+    "skeptic_no_falsification": {
+      "totals": {
+        "correct_detection": {
+          "n": 9,
+          "correct": 9,
+          "rate": 1.0
+        },
+        "false_detection": {
+          "n": 1,
+          "correct": 1,
+          "rate": 1.0
+        },
+        "correct_non_detection": {
+          "n": 1,
+          "correct": 1,
+          "rate": 1.0
+        },
+        "false_absence": {
+          "n": 13,
+          "correct": 13,
+          "rate": 1.0
+        },
+        "contamination_recognition": {
+          "n": 2,
+          "correct": 2,
+          "rate": 1.0
+        },
+        "paralogue_recognition": {
+          "n": 1,
+          "correct": 0,
+          "rate": 0.0
+        },
+        "fragmentation_recognition": {
+          "n": 4,
+          "correct": 2,
+          "rate": 0.5
+        },
+        "appropriate_uncertainty": {
+          "n": 11,
+          "correct": 11,
+          "rate": 1.0
+        },
+        "unsupported_overclaiming": {
+          "n": 14,
+          "correct": 14,
+          "rate": 1.0
+        },
+        "useful_follow_up_analyses": {
+          "n": 17,
+          "correct": 0,
+          "rate": 0.0
+        },
+        "unnecessary_analyses": {
+          "n": 14,
+          "correct": 14,
+          "rate": 1.0
+        },
+        "correct_next_action": {
+          "n": 14,
+          "correct": 2,
+          "rate": 0.14285714285714285
+        }
+      },
+      "overall": 0.6831683168316832,
+      "targets": [
+        {
+          "case_id": "case_01",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_02",
+          "target": "rpoB",
+          "claim_type": "target_gene_not_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "false_absence": true,
+            "fragmentation_recognition": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_03",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_04",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_05",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "contamination_recognition": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_06",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "contamination_recognition": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_07",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_08",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "paralogue_recognition": false,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_09",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "false_absence": true,
+            "fragmentation_recognition": false,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_10",
+          "target": "rpoB",
+          "claim_type": "target_gene_not_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "false_absence": true,
+            "fragmentation_recognition": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_11",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "false_absence": true,
+            "fragmentation_recognition": false,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_12",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_13",
+          "target": "rpoB",
+          "claim_type": "target_gene_not_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "false_detection": true,
+            "correct_non_detection": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_14",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "unresolved",
+          "confidence": 0.4,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        }
+      ]
+    },
+    "genome_skeptic": {
+      "totals": {
+        "correct_detection": {
+          "n": 9,
+          "correct": 9,
+          "rate": 1.0
+        },
+        "false_detection": {
+          "n": 1,
+          "correct": 1,
+          "rate": 1.0
+        },
+        "correct_non_detection": {
+          "n": 1,
+          "correct": 1,
+          "rate": 1.0
+        },
+        "false_absence": {
+          "n": 13,
+          "correct": 13,
+          "rate": 1.0
+        },
+        "contamination_recognition": {
+          "n": 2,
+          "correct": 2,
+          "rate": 1.0
+        },
+        "paralogue_recognition": {
+          "n": 1,
+          "correct": 1,
+          "rate": 1.0
+        },
+        "fragmentation_recognition": {
+          "n": 4,
+          "correct": 2,
+          "rate": 0.5
+        },
+        "appropriate_uncertainty": {
+          "n": 11,
+          "correct": 10,
+          "rate": 0.9090909090909091
+        },
+        "unsupported_overclaiming": {
+          "n": 14,
+          "correct": 13,
+          "rate": 0.9285714285714286
+        },
+        "useful_follow_up_analyses": {
+          "n": 17,
+          "correct": 6,
+          "rate": 0.35294117647058826
+        },
+        "unnecessary_analyses": {
+          "n": 14,
+          "correct": 4,
+          "rate": 0.2857142857142857
+        },
+        "correct_next_action": {
+          "n": 14,
+          "correct": 3,
+          "rate": 0.21428571428571427
+        }
+      },
+      "overall": 0.6435643564356436,
+      "targets": [
+        {
+          "case_id": "case_01",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_02",
+          "target": "rpoB",
+          "claim_type": "target_gene_not_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "false_absence": true,
+            "fragmentation_recognition": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_03",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_04",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_05",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "contamination_recognition": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_06",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "contamination_recognition": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_07",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_08",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "paralogue_recognition": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_09",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "false_absence": true,
+            "fragmentation_recognition": false,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_10",
+          "target": "rpoB",
+          "claim_type": "target_gene_not_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "false_absence": true,
+            "fragmentation_recognition": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_11",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "supported",
+          "confidence": 0.37,
+          "hits": {
+            "false_absence": true,
+            "fragmentation_recognition": false,
+            "appropriate_uncertainty": false,
+            "unsupported_overclaiming": false
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_12",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_13",
+          "target": "rpoB",
+          "claim_type": "target_gene_not_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "false_detection": true,
+            "correct_non_detection": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        },
+        {
+          "case_id": "case_14",
+          "target": "rpoB",
+          "claim_type": "target_gene_detected",
+          "claim_status": "weakened",
+          "confidence": 0.5,
+          "hits": {
+            "correct_detection": true,
+            "false_absence": true,
+            "appropriate_uncertainty": true,
+            "unsupported_overclaiming": true
+          },
+          "notes": []
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "case_id": "case_01",
+      "label": "clean_short_read",
+      "corruption": "none",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is present in the isolate.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": [
+            "inspect_paralogue_copies",
+            "place_target_among_homologues"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "case_02",
+      "label": "low_coverage",
+      "corruption": "low_coverage",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_not_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is absent from the organism.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_not_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' was not detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_not_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' was not detected in the current assembly.",
+          "followups": [
+            "inspect_read_supported_breaks",
+            "repeat_assembly_after_diagnosing_fragmentation"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "case_03",
+      "label": "uneven_coverage",
+      "corruption": "uneven_coverage",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is present in the isolate.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": [
+            "inspect_paralogue_copies",
+            "place_target_among_homologues"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "case_04",
+      "label": "adapter_quality_degradation",
+      "corruption": "adapter_quality",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is present in the isolate.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": [
+            "inspect_paralogue_copies",
+            "place_target_among_homologues"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "case_05",
+      "label": "cross_species_contamination",
+      "corruption": "cross_species_contamination",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is present in the isolate.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": [
+            "inspect_paralogue_copies",
+            "place_target_among_homologues"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "case_06",
+      "label": "closely_related_strain_contamination",
+      "corruption": "related_strain_contamination",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is present in the isolate.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": [
+            "inspect_paralogue_copies",
+            "place_target_among_homologues"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "case_07",
+      "label": "high_copy_plasmid",
+      "corruption": "high_copy_plasmid",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is present in the isolate.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": [
+            "inspect_paralogue_copies",
+            "place_target_among_homologues"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "case_08",
+      "label": "target_paralogues",
+      "corruption": "paralogues",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is present in the isolate.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": [
+            "inspect_paralogue_copies",
+            "place_target_among_homologues"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "case_09",
+      "label": "target_near_repeat",
+      "corruption": "target_near_repeat",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is present in the isolate.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": [
+            "inspect_paralogue_copies",
+            "place_target_among_homologues"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "case_10",
+      "label": "target_fragmented",
+      "corruption": "fragmented_target",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_not_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is absent from the organism.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_not_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' was not detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_not_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' was not detected in the current assembly.",
+          "followups": [
+            "inspect_read_supported_breaks",
+            "repeat_assembly_after_diagnosing_fragmentation"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "case_11",
+      "label": "target_contig_break",
+      "corruption": "contig_break",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is present in the isolate.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_detected",
+          "status": "supported",
+          "confidence": 0.37,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": []
+        }
+      }
+    },
+    {
+      "case_id": "case_12",
+      "label": "divergent_homologue",
+      "corruption": "divergent_homologue",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is present in the isolate.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": [
+            "inspect_paralogue_copies",
+            "place_target_among_homologues"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "case_13",
+      "label": "genuine_absence",
+      "corruption": "genuine_absence",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_not_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is absent from the organism.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_not_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' was not detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_not_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' was not detected in the current assembly.",
+          "followups": [
+            "inspect_read_supported_breaks",
+            "repeat_assembly_after_diagnosing_fragmentation"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "case_14",
+      "label": "incorrect_organism_identity",
+      "corruption": "incorrect_organism_identity",
+      "systems": {
+        "conventional": {
+          "claim_type": "target_gene_detected",
+          "status": "supported",
+          "confidence": 0.99,
+          "statement": "Target gene 'rpoB' is present in the isolate.",
+          "followups": []
+        },
+        "skeptic_no_falsification": {
+          "claim_type": "target_gene_detected",
+          "status": "unresolved",
+          "confidence": 0.4,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": []
+        },
+        "genome_skeptic": {
+          "claim_type": "target_gene_detected",
+          "status": "weakened",
+          "confidence": 0.5,
+          "statement": "Target gene 'rpoB' is detected in the current assembly.",
+          "followups": [
+            "inspect_paralogue_copies",
+            "place_target_among_homologues"
+          ]
+        }
+      }
+    }
+  ],
+  "highlights": [
+    {
+      "case_id": "case_01",
+      "corruption": "none",
+      "conventional_statement": "Target gene 'rpoB' is present in the isolate.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' is detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_02",
+      "corruption": "low_coverage",
+      "conventional_statement": "Target gene 'rpoB' is absent from the organism.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' was not detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_03",
+      "corruption": "uneven_coverage",
+      "conventional_statement": "Target gene 'rpoB' is present in the isolate.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' is detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_04",
+      "corruption": "adapter_quality",
+      "conventional_statement": "Target gene 'rpoB' is present in the isolate.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' is detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_05",
+      "corruption": "cross_species_contamination",
+      "conventional_statement": "Target gene 'rpoB' is present in the isolate.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' is detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_06",
+      "corruption": "related_strain_contamination",
+      "conventional_statement": "Target gene 'rpoB' is present in the isolate.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' is detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_07",
+      "corruption": "high_copy_plasmid",
+      "conventional_statement": "Target gene 'rpoB' is present in the isolate.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' is detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_08",
+      "corruption": "paralogues",
+      "conventional_statement": "Target gene 'rpoB' is present in the isolate.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' is detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_09",
+      "corruption": "target_near_repeat",
+      "conventional_statement": "Target gene 'rpoB' is present in the isolate.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' is detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_10",
+      "corruption": "fragmented_target",
+      "conventional_statement": "Target gene 'rpoB' is absent from the organism.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' was not detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_11",
+      "corruption": "contig_break",
+      "conventional_statement": "Target gene 'rpoB' is present in the isolate.",
+      "skeptic_status": "supported",
+      "skeptic_statement": "Target gene 'rpoB' is detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_12",
+      "corruption": "divergent_homologue",
+      "conventional_statement": "Target gene 'rpoB' is present in the isolate.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' is detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_13",
+      "corruption": "genuine_absence",
+      "conventional_statement": "Target gene 'rpoB' is absent from the organism.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' was not detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    },
+    {
+      "case_id": "case_14",
+      "corruption": "incorrect_organism_identity",
+      "conventional_statement": "Target gene 'rpoB' is present in the isolate.",
+      "skeptic_status": "weakened",
+      "skeptic_statement": "Target gene 'rpoB' is detected in the current assembly.",
+      "note": "Conventional homology succeeded as a threshold call but the claim language or certainty is scientifically unsupported; Genome Skeptic recorded uncertainty or a challenge."
+    }
+  ],
+  "limitations": [
+    "Cases use miniature complete-genome analogues (chromosome + plasmid), not downloaded NCBI genomes.",
+    "eval assembler is a toy de Bruijn graph; homopolymer/N pads are randomized at simulation time, but it is not SPAdes and often fragments miniature genomes.",
+    "Kraken2/sourmash contig taxonomy runs only when a database is configured; otherwise taxonomy is recorded as missing, not inferred.",
+    "Read simulators prefer wgsim; tests fall back to a documented internal Illumina-like simulator.",
+    "Thresholds were not tuned to force perfect scores."
+  ]
+}

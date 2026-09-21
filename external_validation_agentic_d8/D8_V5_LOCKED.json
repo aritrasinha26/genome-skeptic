@@ -1,0 +1,186 @@
+{
+  "kind": "D8_V5_LOCKED",
+  "n_cases": 8,
+  "do_not_regenerate": true,
+  "external_labels_opened": false,
+  "predictions": [
+    {
+      "assembly_accession": "GCF_054792365.1",
+      "target": "rpoB_RNAP_beta",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 24.196302908000003,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 1,
+        "classification": "single_locus"
+      },
+      "n_hits": 3,
+      "m0_hash": "7f852a9f8acaab8fcc50badede30e0ad1605cc30bbb56861ac67ca5a1cc336f6",
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "homology_support": 0.62,
+      "orthology_class": "exact_strong_homolog,multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'rpoB_RNAP_beta' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_049373995.1",
+      "target": "rpoB_RNAP_beta",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 16.60877009699999,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 1,
+        "classification": "single_locus"
+      },
+      "n_hits": 3,
+      "m0_hash": "9940ee5a67966efb3a9bc1f3b71a00287a0d2a114c505b565a43df7e7a22d317",
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "homology_support": 0.62,
+      "orthology_class": "multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'rpoB_RNAP_beta' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_048851505.1",
+      "target": "tuf_EF_Tu",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 7.431424523000032,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 0,
+        "classification": "single_locus"
+      },
+      "n_hits": 1,
+      "m0_hash": "1f3d6c41e10303f7c5d8db3eeeafc961473485f7b7ecb9fb2bcb5d9638ca9426",
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.3869,
+      "homology_support": 0.2962,
+      "orthology_class": "multi_reference_protein_homolog",
+      "statement": "Target gene 'tuf_EF_Tu' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_056483745.1",
+      "target": "lacZ_beta_galactosidase",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 65.99523628999998,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 1,
+        "classification": "single_locus"
+      },
+      "n_hits": 20,
+      "m0_hash": "c80b796dc10cc51c5c59a47f7423067f0fb008cc071e7d6748413f30fcf89275",
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "homology_support": 0.62,
+      "orthology_class": "profile_hmm_family_match",
+      "statement": "Target gene 'lacZ_beta_galactosidase' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_046846385.1",
+      "target": "tuf_EF_Tu",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 19.542083387000048,
+      "reused": false,
+      "architecture": "true_no_candidate",
+      "multiplicity": {
+        "number_of_candidate_loci": 0,
+        "classification": "single_locus"
+      },
+      "n_hits": 20,
+      "m0_hash": "2cb9654239346a2579682dc25f936b78d7aa423ef37eeb979e6eaa03ca1b4a4a",
+      "final_result": "target_gene_not_detected",
+      "claim_class": "weakened",
+      "confidence": 0.5018,
+      "homology_support": 0.0235,
+      "orthology_class": "true_no_candidate",
+      "statement": "Target gene 'tuf_EF_Tu' was not detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_056267885.1",
+      "target": "lacZ_beta_galactosidase",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 250.15916663500002,
+      "reused": false,
+      "architecture": "divergent_full_length",
+      "multiplicity": {
+        "number_of_candidate_loci": 1,
+        "classification": "single_locus"
+      },
+      "n_hits": 20,
+      "m0_hash": "52964a5a6798df547c5bebfe4d509c56fa3c38fd75c074b7fc10c6107679ef3a",
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "homology_support": 0.62,
+      "orthology_class": "profile_hmm_family_match",
+      "statement": "Target gene 'lacZ_beta_galactosidase' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_053618555.1",
+      "target": "tetA_tetracycline_efflux",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 9.560353083000109,
+      "reused": false,
+      "architecture": "close_paralogue",
+      "multiplicity": {
+        "number_of_candidate_loci": 10,
+        "classification": "paralogous_copy"
+      },
+      "n_hits": 7,
+      "m0_hash": "17c2f6f643ee353c73105144860df32c1c92adf6fd7eb1c79f35a73accefd1fd",
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.4341,
+      "homology_support": 0.494,
+      "orthology_class": "profile_hmm_family_match",
+      "statement": "Target gene 'tetA_tetracycline_efflux' is detected in the current assembly.",
+      "external_labels_opened": false
+    },
+    {
+      "assembly_accession": "GCF_050310035.1",
+      "target": "tetA_tetracycline_efflux",
+      "system": "genome_skeptic_v5",
+      "ok": true,
+      "runtime_seconds": 16.506500554999775,
+      "reused": false,
+      "architecture": "close_paralogue",
+      "multiplicity": {
+        "number_of_candidate_loci": 7,
+        "classification": "paralogous_copy"
+      },
+      "n_hits": 3,
+      "m0_hash": "fbe461d74043bcf757d553bf6cbb9f3868caa3547e5ff6862502651fc4cfba5a",
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "homology_support": 0.5487,
+      "orthology_class": "exact_strong_homolog,multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'tetA_tetracycline_efflux' is detected in the current assembly.",
+      "external_labels_opened": false
+    }
+  ],
+  "created_utc": "2026-09-20T13:45:47.099067+00:00",
+  "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V2_D20"
+}

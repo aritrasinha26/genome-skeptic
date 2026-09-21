@@ -1,0 +1,20 @@
+{
+  "kind": "M60_POSITION_LOCK",
+  "position": 49,
+  "case_id": "M60_rpoB_RNAP_beta_GCF_047374315.1",
+  "accession": "GCF_047374315.1",
+  "target": "rpoB_RNAP_beta",
+  "stratum": "challenge",
+  "immutable": true,
+  "truth_opened": false,
+  "d20_touched": false,
+  "accuracy_scored": false,
+  "output_sha256": {
+    "CONVENTIONAL": "48417993a6b54889ae5ff95bfd3188a6e7eccd67407b1d6769f7ad54346eeb5c",
+    "NCBI_REFSEQ_PGAP": "25ce2dd23b45a1a571b5e2f7747ff82c4866ddb558dccb2520dc5ee30cc6fbe5",
+    "GS_DETERMINISTIC_V4_1": "b5b32bbcc0aa6187b99ad684fbfcd33ade5ff06ad0281aadf4fd2063f4290fab",
+    "GS_AGENTIC_V4_1": "6407c8fb46a942583182b80ece20746985be71d7634eb8369759d9fad350c287",
+    "GS_EXHAUSTIVE_V4_1": "3e3d9aa78cfc89672f6324b01343ee66167699afa3710b526b05af73079fcff0"
+  },
+  "locked_utc": "2026-09-21T06:51:37.595007+00:00"
+}

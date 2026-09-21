@@ -1,0 +1,283 @@
+{
+  "kind": "v5_reference_provenance_exclusions",
+  "genome_skeptic_v5_freeze_hash": "0e993125d2d620e54bbb42b3e420b4b9fda951c28b358ff8a2aed2d5b55a8f1b",
+  "target_inventory_sha256": "b82969ad6e4e3e5a134ea831a0370d32b19612f9440b71d6ad8fbd03a3467e85",
+  "external_reference_overlap_sha256": "1ce6e871e1bf20441e54c76bc6bbe90f7066201574ffcaaef6cde8095fbcbc59",
+  "created_utc": "2026-09-18T22:30:00+00:00",
+  "model": "qwen3:4b",
+  "scientific_logic_modified": false,
+  "isolates_selected": false,
+  "per_isolate_labels_inspected": false,
+  "genome_skeptic_executed": false,
+  "audit_only": true,
+  "candidate_external_genome_labels_inspected": false,
+  "purpose": "Exact genomes and sequences used to construct or tune frozen V5 target resources must not enter the external test cohort.",
+  "n_source_reference_genomes_excluded": 11,
+  "n_nucleotide_accessions_excluded": 13,
+  "n_sequence_protein_accessions_excluded": 39,
+  "excluded_source_reference_genomes": [
+    {
+      "genome_id": "ecoli_k12",
+      "accession": "NC_000913.3",
+      "role": "development_and_family_source",
+      "species": "Escherichia coli str. K-12 substr. MG1655",
+      "source": "src/genome_skeptic/eval/catalog.py"
+    },
+    {
+      "genome_id": "pao1",
+      "accession": "NC_002516.2",
+      "role": "development",
+      "species": "Pseudomonas aeruginosa PAO1",
+      "source": "src/genome_skeptic/eval/catalog.py"
+    },
+    {
+      "genome_id": "hpylori",
+      "accession": "NC_000915.1",
+      "role": "development",
+      "species": "Helicobacter pylori 26695",
+      "source": "src/genome_skeptic/eval/catalog.py"
+    },
+    {
+      "genome_id": "bsubtilis",
+      "accession": "NC_000964.3",
+      "role": "development",
+      "species": "Bacillus subtilis subsp. subtilis str. 168",
+      "source": "src/genome_skeptic/eval/catalog.py"
+    },
+    {
+      "genome_id": "pputida_kt2440",
+      "accession": "NC_002947.4",
+      "role": "held_out_internal",
+      "species": "Pseudomonas putida KT2440",
+      "source": "src/genome_skeptic/eval/catalog.py"
+    },
+    {
+      "genome_id": "staph_8325",
+      "accession": "NC_007795.1",
+      "role": "held_out_internal",
+      "species": "Staphylococcus aureus subsp. aureus NCTC 8325",
+      "source": "src/genome_skeptic/eval/catalog.py"
+    },
+    {
+      "genome_id": "salmonella_lt2",
+      "accession": "NC_003197.2",
+      "role": "held_out_internal",
+      "species": "Salmonella enterica subsp. enterica serovar Typhimurium str. LT2",
+      "source": "src/genome_skeptic/eval/catalog.py",
+      "extra_accessions": [
+        "NC_003277.2"
+      ]
+    },
+    {
+      "genome_id": "vcholerae_chr1",
+      "accession": "NC_002505.1",
+      "role": "held_out_internal",
+      "species": "Vibrio cholerae O1 biovar El Tor str. N16961 chromosome I",
+      "source": "src/genome_skeptic/eval/catalog.py"
+    },
+    {
+      "genome_id": "mtb_h37rv",
+      "accession": "NC_000962.3",
+      "role": "family_homolog_source",
+      "species": "Mycobacterium tuberculosis H37Rv",
+      "linked_proteins": [
+        "NP_214765.1",
+        "NP_216072.1",
+        "NP_215181.1",
+        "NP_215182.1"
+      ],
+      "note": "Inferred from frozen NP_ member records named H37Rv; candidate external labels were not inspected."
+    },
+    {
+      "genome_id": "tmaritima_msb8",
+      "accession": "NC_000853.1",
+      "role": "family_homolog_source",
+      "species": "Thermotoga maritima",
+      "linked_proteins": [
+        "NP_228245.1",
+        "NP_228108.1"
+      ],
+      "note": "Inferred from frozen NP_ member records named Thermotoga maritima; candidate external labels were not inspected."
+    },
+    {
+      "genome_id": "aaeolicus_vf5",
+      "accession": "NC_000918.1",
+      "role": "family_homolog_source",
+      "species": "Aquifex aeolicus",
+      "linked_proteins": [
+        "NP_213126.1",
+        "NP_213616.1"
+      ],
+      "note": "Inferred from frozen NP_ member records named Aquifex aeolicus; candidate external labels were not inspected."
+    }
+  ],
+  "excluded_nucleotide_accessions": [
+    "NC_000853.1",
+    "NC_000913.3",
+    "NC_000915.1",
+    "NC_000918.1",
+    "NC_000962.3",
+    "NC_000964.3",
+    "NC_002505.1",
+    "NC_002516.2",
+    "NC_002947.4",
+    "NC_003197.2",
+    "NC_003277.2",
+    "NC_007795.1",
+    "U00096.3"
+  ],
+  "excluded_protein_accessions": {
+    "frozen_family_members": [
+      "P02980",
+      "P02982",
+      "P0AEY8",
+      "P0AEJ0",
+      "P28246",
+      "P31224",
+      "P24177",
+      "NP_417179.1",
+      "NP_214765.1",
+      "NP_228245.1",
+      "NP_213126.1",
+      "NP_418240.1",
+      "NP_216072.1",
+      "NP_228108.1",
+      "NP_213616.1",
+      "NP_414878.1",
+      "WP_000241775.1",
+      "WP_004084538.1",
+      "NP_418414.1",
+      "NP_215181.1",
+      "WP_004081508.1",
+      "WP_010871995.1",
+      "WP_243759718.1",
+      "WP_506804874.1",
+      "WP_010881267.1",
+      "NP_418415.1",
+      "NP_215182.1"
+    ],
+    "forbidden_fast_pilot_hidden_genome_proteins": [
+      "NP_252960.1",
+      "WP_000037869.1",
+      "NP_463022.1",
+      "WP_003255495.1",
+      "YP_499096.2",
+      "NP_387988.1",
+      "NP_387989.1"
+    ],
+    "construction_attempt_not_frozen_members": [
+      "P0A334",
+      "P0AE06",
+      "AAA87452.1",
+      "WP_000048591.1",
+      "WP_001301208.1"
+    ],
+    "all": [
+      "AAA87452.1",
+      "NP_213126.1",
+      "NP_213616.1",
+      "NP_214765.1",
+      "NP_215181.1",
+      "NP_215182.1",
+      "NP_216072.1",
+      "NP_228108.1",
+      "NP_228245.1",
+      "NP_252960.1",
+      "NP_387988.1",
+      "NP_387989.1",
+      "NP_414878.1",
+      "NP_417179.1",
+      "NP_418240.1",
+      "NP_418414.1",
+      "NP_418415.1",
+      "NP_463022.1",
+      "P02980",
+      "P02982",
+      "P0A334",
+      "P0AE06",
+      "P0AEJ0",
+      "P0AEY8",
+      "P24177",
+      "P28246",
+      "P31224",
+      "WP_000037869.1",
+      "WP_000048591.1",
+      "WP_000241775.1",
+      "WP_001301208.1",
+      "WP_003255495.1",
+      "WP_004081508.1",
+      "WP_004084538.1",
+      "WP_010871995.1",
+      "WP_010881267.1",
+      "WP_243759718.1",
+      "WP_506804874.1",
+      "YP_499096.2"
+    ]
+  },
+  "named_source_strains_without_frozen_genome_accession": [
+    {
+      "species": "Synechocystis sp.",
+      "linked_proteins": [
+        "WP_010871995.1"
+      ],
+      "note": "WP accession is not genome-unique; exclude the protein, not all Synechocystis isolates."
+    },
+    {
+      "species": "Deinococcus radiodurans",
+      "linked_proteins": [
+        "WP_243759718.1"
+      ],
+      "note": "WP accession is not genome-unique; exclude the protein, not all D. radiodurans isolates."
+    },
+    {
+      "species": "Streptococcus pyogenes",
+      "linked_proteins": [
+        "WP_506804874.1"
+      ],
+      "note": "WP accession is not genome-unique; exclude the protein, not all S. pyogenes isolates."
+    },
+    {
+      "species": "Shigella flexneri",
+      "linked_proteins": [
+        "WP_000241775.1"
+      ],
+      "note": "WP accession is not genome-unique; exclude the protein."
+    },
+    {
+      "species": "Klebsiella pneumoniae",
+      "linked_proteins": [
+        "WP_004084538.1"
+      ],
+      "note": "WP accession is not genome-unique; exclude the protein."
+    }
+  ],
+  "synthetic_internal_benchmarks": {
+    "exclude_as_external_cohort": true,
+    "note": "V5/V4.1 synthetic calibration loci and controls are not external genomes.",
+    "paths": [
+      "benchmarks/v5/calibration_loci",
+      "benchmarks/v5/controls",
+      "benchmarks/v4_1/calibration_loci",
+      "src/genome_skeptic/eval/v5_controls.py",
+      "src/genome_skeptic/eval/calibration_v5.py",
+      "src/genome_skeptic/eval/calibration_v4.py"
+    ]
+  },
+  "divergence_and_calibration_resources": {
+    "note": "Divergence/LOGO calibration used development genomes and synthetic loci only. Held-out catalog genomes were not used to fit, but they remain excluded from the external cohort because they were internal evaluation genomes.",
+    "files": [
+      "src/genome_skeptic/validators/divergence.py",
+      "calibration_v5.json",
+      "src/genome_skeptic/eval/calibration_v5.py"
+    ]
+  },
+  "competitive_family_resources": [
+    "data/target_families/tetA_tetracycline_efflux",
+    "data/target_families/mfs_multidrug_efflux",
+    "data/target_families/rnd_efflux"
+  ],
+  "transposon_proteins_not_complete_genomes": [
+    "P02980",
+    "P02982"
+  ]
+}

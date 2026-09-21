@@ -1,0 +1,10 @@
+section,metric,value
+summary,accuracy_agent,0.8048780487804879
+summary,accuracy_exhaustive,0.8048780487804879
+summary,accuracy_difference_agent_minus_exhaustive,0.0
+summary,paired_bootstrap_ci_low,0.0
+summary,paired_bootstrap_ci_high,0.0
+summary,exhaustive_wrong_agent_correct,0
+summary,exhaustive_correct_agent_wrong,0
+summary,equivalence_claimed,False
+summary,wording,Agentic performance differed from Exhaustive by 0.0 percentage points.

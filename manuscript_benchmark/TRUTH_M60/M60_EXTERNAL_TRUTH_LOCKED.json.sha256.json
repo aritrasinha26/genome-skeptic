@@ -1,0 +1,8 @@
+{
+  "path": "manuscript_benchmark/TRUTH_M60/M60_EXTERNAL_TRUTH_LOCKED.json",
+  "sha256": "bb37539060efd3e89e0bd548fe1d0e573991dab0816bdead729286cbfcfedb38",
+  "hashed_utc": "2026-09-21T10:01:42.859491+00:00",
+  "accuracy_scored": false,
+  "prediction_payloads_opened": false,
+  "d20_touched": false
+}

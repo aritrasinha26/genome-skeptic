@@ -1,0 +1,125 @@
+{
+  "kind": "D12_ENDPOINT_AUDIT",
+  "created_utc": "2026-09-20T00:17:12.004418+00:00",
+  "lock_hashes_verified": {
+    "D12_MANIFEST.json": "54b477d3cf8197ffa73d7ffb2e94ffe4a993b861565a3266085d33ae68b0546f",
+    "D12_CONVENTIONAL_LOCKED.json": "9cd5657a0e24e877f20f3ad83ec34d495231c1d0f2897336861999d9f4082f57",
+    "D12_V5_LOCKED.json": "66652425bbdff574f91c9da19876c02f7a684653a9096f65bd44a95745dfead4",
+    "D12_AGENTIC_V3_LOCKED.json": "64a2dd3365805d68f431f487d9aebd7cb685466096d1710d67d962895c3cc25c"
+  },
+  "n_identical": 12,
+  "n_cases": 12,
+  "rows": [
+    {
+      "position": 1,
+      "assembly_accession": "GCF_060416925.1",
+      "target": "tetA_tetracycline_efflux",
+      "endpoint_kind": "FAMILY_PRESENCE_ABSENCE",
+      "v5_scored_endpoint": "DETECTED",
+      "agentic_scored_endpoint": "DETECTED",
+      "identical": true
+    },
+    {
+      "position": 2,
+      "assembly_accession": "GCF_057626335.1",
+      "target": "rpoB_RNAP_beta",
+      "endpoint_kind": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "v5_scored_endpoint": "DETECTED",
+      "agentic_scored_endpoint": "DETECTED",
+      "identical": true
+    },
+    {
+      "position": 3,
+      "assembly_accession": "GCF_053795755.1",
+      "target": "tetA_tetracycline_efflux",
+      "endpoint_kind": "FAMILY_PRESENCE_ABSENCE",
+      "v5_scored_endpoint": "DETECTED",
+      "agentic_scored_endpoint": "DETECTED",
+      "identical": true
+    },
+    {
+      "position": 4,
+      "assembly_accession": "GCF_047943045.1",
+      "target": "rpoB_RNAP_beta",
+      "endpoint_kind": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "v5_scored_endpoint": "DETECTED",
+      "agentic_scored_endpoint": "DETECTED",
+      "identical": true
+    },
+    {
+      "position": 5,
+      "assembly_accession": "GCF_058596135.1",
+      "target": "lacZ_beta_galactosidase",
+      "endpoint_kind": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "v5_scored_endpoint": "DETECTED",
+      "agentic_scored_endpoint": "DETECTED",
+      "identical": true
+    },
+    {
+      "position": 6,
+      "assembly_accession": "GCF_059683705.1",
+      "target": "tuf_EF_Tu",
+      "endpoint_kind": "EXACT_MULTIPLICITY",
+      "v5_scored_endpoint": "MULTIPLICITY=0",
+      "agentic_scored_endpoint": "MULTIPLICITY=0 (lock omitted multiplicity; inferred from polarity)",
+      "identical": true
+    },
+    {
+      "position": 7,
+      "assembly_accession": "GCF_048585425.2",
+      "target": "lacZ_beta_galactosidase",
+      "endpoint_kind": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "v5_scored_endpoint": "DETECTED",
+      "agentic_scored_endpoint": "DETECTED",
+      "identical": true
+    },
+    {
+      "position": 8,
+      "assembly_accession": "GCF_046562475.1",
+      "target": "lacZ_beta_galactosidase",
+      "endpoint_kind": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "v5_scored_endpoint": "DETECTED",
+      "agentic_scored_endpoint": "DETECTED",
+      "identical": true
+    },
+    {
+      "position": 9,
+      "assembly_accession": "GCF_052955985.1",
+      "target": "tuf_EF_Tu",
+      "endpoint_kind": "EXACT_MULTIPLICITY",
+      "v5_scored_endpoint": "MULTIPLICITY=0",
+      "agentic_scored_endpoint": "MULTIPLICITY=0 (lock omitted multiplicity; inferred from polarity)",
+      "identical": true
+    },
+    {
+      "position": 10,
+      "assembly_accession": "GCF_050871785.1",
+      "target": "rpoB_RNAP_beta",
+      "endpoint_kind": "ORTHOLOGOUS_GENE_PRESENCE_ABSENCE",
+      "v5_scored_endpoint": "DETECTED",
+      "agentic_scored_endpoint": "DETECTED",
+      "identical": true
+    },
+    {
+      "position": 11,
+      "assembly_accession": "GCF_054055795.1",
+      "target": "tetA_tetracycline_efflux",
+      "endpoint_kind": "FAMILY_PRESENCE_ABSENCE",
+      "v5_scored_endpoint": "DETECTED",
+      "agentic_scored_endpoint": "DETECTED",
+      "identical": true
+    },
+    {
+      "position": 12,
+      "assembly_accession": "GCF_049340285.1",
+      "target": "tuf_EF_Tu",
+      "endpoint_kind": "EXACT_MULTIPLICITY",
+      "v5_scored_endpoint": "MULTIPLICITY=0",
+      "agentic_scored_endpoint": "MULTIPLICITY=0 (lock omitted multiplicity; inferred from polarity)",
+      "identical": true
+    }
+  ],
+  "predictions_used_only_for_endpoint_comparison": true,
+  "predictions_not_used_for_truth": true,
+  "d20_touched": false
+}

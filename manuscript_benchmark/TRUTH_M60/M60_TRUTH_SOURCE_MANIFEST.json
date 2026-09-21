@@ -1,0 +1,1169 @@
+{
+  "kind": "M60_TRUTH_SOURCE_MANIFEST",
+  "created_utc": "2026-09-21T09:23:43.763717+00:00",
+  "freeze_id": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+  "git_commit": "8f66868850a98494778966bd729b88a6fc2952eb",
+  "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+  "predictions_locked_before_truth": true,
+  "prediction_payloads_opened": false,
+  "amrfinder_used_as_truth": false,
+  "pgap_used_as_truth": false,
+  "d20_touched": false,
+  "m60_cases_used_as_references": false,
+  "n_cases": 60,
+  "software_versions": {
+    "python": {
+      "path": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/python",
+      "exists": true,
+      "version_line": "Python 3.11.16"
+    },
+    "hmmbuild": {
+      "path": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/hmmbuild",
+      "exists": true,
+      "version_line": "# hmmbuild :: profile HMM construction from multiple sequence alignments"
+    },
+    "hmmsearch": {
+      "path": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/hmmsearch",
+      "exists": true,
+      "version_line": "# hmmsearch :: search profile(s) against a sequence database"
+    },
+    "diamond": {
+      "path": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/diamond",
+      "exists": true,
+      "version_line": "diamond version 2.2.6"
+    },
+    "tblastn": {
+      "path": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/tblastn",
+      "exists": true,
+      "version_line": "tblastn: 2.16.0+"
+    },
+    "blastp": {
+      "path": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/blastp",
+      "exists": true,
+      "version_line": "blastp: 2.16.0+"
+    },
+    "FastTree": {
+      "path": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/FastTree",
+      "exists": true,
+      "version_line": "FastTree Version 2.2.0 Double precision"
+    }
+  },
+  "packaged_families": [
+    {
+      "family_id": "tetA_tetracycline_efflux",
+      "copied": {
+        "members.faa": "cc4737c3ab9dc07178f655beb8c108565c44eb2541cce6144ec0e254a2807364",
+        "members.aln.faa": "6ace4d925b5f714c69b1ada52757ba0462f8bbc846a5d340fa3ef936f97c9995",
+        "family.yaml": "33120a6e214404dee8d4f4daff9d7dcfa5fd5acbe92747464d0b6a86e93b8379"
+      },
+      "dest": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/packaged_families/tetA_tetracycline_efflux",
+      "role": "target",
+      "endpoint": "tetA"
+    },
+    {
+      "family_id": "mfs_multidrug_efflux",
+      "copied": {
+        "members.faa": "09c34a3dde72ff127f396c5226a9b3c0887edc1cfd5c8726dff88c6555c8a880",
+        "members.aln.faa": "8a3d047d427a1f2e1d8ce3fa8607864ccb1d8704c6a544d90094f756dcbab143",
+        "family.yaml": "c0aad8115c7819772ca9e7ffeb24240541fbadd215daeb2315f1d7aef005fbd0"
+      },
+      "dest": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/packaged_families/mfs_multidrug_efflux",
+      "role": "competitor",
+      "endpoint": "tetA"
+    },
+    {
+      "family_id": "rnd_efflux",
+      "copied": {
+        "members.faa": "bc8a7c9f8d2d90dd0fb50ddadb32a6cd0b57679e2825b5b5e7bdb5ec39f3c56a",
+        "members.aln.faa": "887e5bd75a5904db8090449d46a2e271f282ef1b1752c9c24aa8a4fa616365af",
+        "family.yaml": "c14be4668c4e201aa7b764c26bcaf65f4289b7119fc43b4d6f856a62abed8e13"
+      },
+      "dest": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/packaged_families/rnd_efflux",
+      "role": "competitor",
+      "endpoint": "tetA"
+    },
+    {
+      "family_id": "rpoB_RNAP_beta",
+      "copied": {
+        "members.faa": "c284f245e24285d8633cc9fac4f63b1e18b94995ad721e3cc117724f61f68c42",
+        "members.aln.faa": "4f2d0f3bedef0f133400b048a2d0657da4bba651741944d81060f47b0712a02a",
+        "family.yaml": "8b118c3c27c4b9b9e8b99853e2e2158bceb2a425cefe67fb21606b4b084ceb89"
+      },
+      "dest": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/packaged_families/rpoB_RNAP_beta",
+      "role": "target",
+      "endpoint": "rpoB"
+    },
+    {
+      "family_id": "rpoC_RNAP_beta_prime",
+      "copied": {
+        "members.faa": "2b7609f19c0ce06c6224cf32023549df9a32bb67d4c1d4d422ce61ba4caa4840",
+        "members.aln.faa": "3b36b30abecaddbb2e18831d6d54725a73d843969f3d562a44dd3c87ec4e3c44",
+        "family.yaml": "7c9246799842e5140cd728ac6a44dfae191329ee1feffecaa1b4305442e59447"
+      },
+      "dest": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/packaged_families/rpoC_RNAP_beta_prime",
+      "role": "competitor",
+      "endpoint": "rpoB"
+    }
+  ],
+  "uniprot_records": [
+    {
+      "accession": "P02982",
+      "header": "sp|P02982|TCR1_ECOLX",
+      "sequence_sha256": "936de5c9eeb04d446b3d9e86c9044f6658e821928aa7cd43c9607906e8064003",
+      "length_aa": 399,
+      "organism": "Escherichia coli",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:06.934571+00:00",
+      "fasta_sha256": "79677047cfbc2e589d0e6716d796c994aaedeea42c6f9177992684f81028f9f4",
+      "gene": "tetA",
+      "role": "target",
+      "endpoint": "tetA",
+      "taxon": "Escherichia coli",
+      "target_or_competitor": "target",
+      "provenance_note": "Tn10/plasmid class A TetA tetracycline MFS efflux",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P02982.faa",
+      "file_sha256": "289d802cc30ff084a3d2b48ff274c109c656f5a2f1224d8afe7a35466b0681a6"
+    },
+    {
+      "accession": "P02980",
+      "header": "sp|P02980|TCR2_ECOLX",
+      "sequence_sha256": "fc93a9405a89b2e93fa6e5a349cf7964cc06920db9847eafccd4031a5050aa8e",
+      "length_aa": 401,
+      "organism": "Escherichia coli",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:07.637360+00:00",
+      "fasta_sha256": "0df082c4a064bc08978d137d190768ee116787cc89bb540e80dfae264f3fa1d2",
+      "gene": "tetB",
+      "role": "target",
+      "endpoint": "tetA",
+      "taxon": "Escherichia coli",
+      "target_or_competitor": "target",
+      "provenance_note": "Tn10 class B TetB tetracycline MFS efflux",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P02980.faa",
+      "file_sha256": "a78f93560bfa14ecd7027b65394d1092796038faccd08c9e378de3d89b56323f"
+    },
+    {
+      "accession": "P0AEY8",
+      "header": "sp|P0AEY8|MDFA_ECOLI",
+      "sequence_sha256": "38c7c59ff729d76b246cfec42713d448aadd50656f3a630c54827079e3e4bfc2",
+      "length_aa": 410,
+      "organism": "Escherichia coli (strain K12)",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:08.530492+00:00",
+      "fasta_sha256": "a7f983f553e2624c4b9ea40dbb82a5c24042f73c1d75622a83e1b7d20fcb091f",
+      "gene": "mdfA",
+      "role": "competitor",
+      "endpoint": "tetA",
+      "taxon": "Escherichia coli (strain K12)",
+      "target_or_competitor": "competitor",
+      "provenance_note": "E. coli MdfA MFS multidrug efflux",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P0AEY8.faa",
+      "file_sha256": "f486464313302697907468c765bcfffe783adea39c2a83c8cb9bcbf79c0c4b8f"
+    },
+    {
+      "accession": "P0AEJ0",
+      "header": "sp|P0AEJ0|EMRB_ECOLI",
+      "sequence_sha256": "fbbd6efdf02b8c44a8c34c3531b27e4610e8114d86b5ed0302ee735e1e8eb8cb",
+      "length_aa": 512,
+      "organism": "Escherichia coli (strain K12)",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:09.659780+00:00",
+      "fasta_sha256": "c373191f97f4a4f6dfa4fcaf4367c9cd0fd45af0b72ef70c1387f4c403d9fb22",
+      "gene": "emrB",
+      "role": "competitor",
+      "endpoint": "tetA",
+      "taxon": "Escherichia coli (strain K12)",
+      "target_or_competitor": "competitor",
+      "provenance_note": "E. coli EmrB MFS multidrug efflux",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P0AEJ0.faa",
+      "file_sha256": "9e743eb4e0dc8f3c52b80fdbf1887cb2118485c21cfb37fd2df4047e87914ae6"
+    },
+    {
+      "accession": "P28246",
+      "header": "sp|P28246|BCR_ECOLI",
+      "sequence_sha256": "894c5c4e875f5cc468d9acbd9d6cdf0c922e5621239be9ce1982e15b9a735592",
+      "length_aa": 396,
+      "organism": "Escherichia coli (strain K12)",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:10.557696+00:00",
+      "fasta_sha256": "68926032bbd8f7d4e82220df78892c3bb2487fd9f80d20914adefa35d35d7223",
+      "gene": "bcr",
+      "role": "competitor",
+      "endpoint": "tetA",
+      "taxon": "Escherichia coli (strain K12)",
+      "target_or_competitor": "competitor",
+      "provenance_note": "E. coli Bcr MFS bicyclomycin/transport competitor",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P28246.faa",
+      "file_sha256": "2cbb701b9d0fbbc7139d24f4ca4f4ebfa4bc3ff7fd10942c9ac550997608fcb8"
+    },
+    {
+      "accession": "P02983",
+      "header": "sp|P02983|TCR_STAAU",
+      "sequence_sha256": "42d6db5b4922d012709ac8fc07b018b3b0c93e98f1ba62f9ebe9d255249d8e62",
+      "length_aa": 459,
+      "organism": "Staphylococcus aureus",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:11.556543+00:00",
+      "fasta_sha256": "5f1b15cbc2c8f8cfc89aa71469b4feea8b7ddb6e6886b76c9497fe19b27df54c",
+      "gene": "tetC",
+      "role": "competitor",
+      "endpoint": "tetA",
+      "taxon": "Staphylococcus aureus",
+      "target_or_competitor": "competitor",
+      "provenance_note": "class C tetracycline MFS efflux; not tet(A)/tet(B)",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P02983.faa",
+      "file_sha256": "d6b9b86645e7ad1ae2a62f8e628796797fab5f36bf4b9cd6dc696a15e6862ea6"
+    },
+    {
+      "accession": "P0A0N4",
+      "header": "sp|P0A0N4|QACR_STAAU",
+      "sequence_sha256": "a0d3fa96153d03331cff2377220d9d53edb1bc12f3c38985c484f264a527e5fb",
+      "length_aa": 188,
+      "organism": "Staphylococcus aureus",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:12.591495+00:00",
+      "fasta_sha256": "6a2cec8dd253835f0ce51ae963093d4d642afeed58bbd5c63e2592f4136a8738",
+      "gene": "tetK",
+      "role": "competitor",
+      "endpoint": "tetA",
+      "taxon": "Staphylococcus aureus",
+      "target_or_competitor": "competitor",
+      "provenance_note": "TetK tetracycline MFS efflux; not tet(A)/tet(B)",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P0A0N4.faa",
+      "file_sha256": "e665772cad771fb535eaaea664787a2bf07f332ae54239eb3f5f32d3a4e8927d"
+    },
+    {
+      "accession": "P0A0N7",
+      "header": "sp|P0A0N7|RLMH_STAAN",
+      "sequence_sha256": "480f35c7db356765521495718684d651604d7006a17fc3286bb2638a306001dd",
+      "length_aa": 159,
+      "organism": "Staphylococcus aureus (strain N315)",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:13.602284+00:00",
+      "fasta_sha256": "978953a9aa57dac36e8588a8ed4cb2b08cceab76d5adc31c0b345ea887f792f4",
+      "gene": "tetL",
+      "role": "competitor",
+      "endpoint": "tetA",
+      "taxon": "Staphylococcus aureus (strain N315)",
+      "target_or_competitor": "competitor",
+      "provenance_note": "TetL tetracycline MFS efflux; not tet(A)/tet(B)",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P0A0N7.faa",
+      "file_sha256": "666c7faa8afe6dddfe8812b1fba7ef6a1737ff3dc7fcf79948ee387890f71579"
+    },
+    {
+      "accession": "P31224",
+      "header": "sp|P31224|ACRB_ECOLI",
+      "sequence_sha256": "935c1069c98bbba0ffeb89dab62db4398cde59c02f21cfb0943a5369f6f4a1bc",
+      "length_aa": 1049,
+      "organism": "Escherichia coli (strain K12)",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:14.595278+00:00",
+      "fasta_sha256": "c0db72f611d51d8c990b5a942f2fe0a136e3f0674696b1c68853d061c2ec64fe",
+      "gene": "acrB",
+      "role": "competitor",
+      "endpoint": "tetA",
+      "taxon": "Escherichia coli (strain K12)",
+      "target_or_competitor": "competitor",
+      "provenance_note": "E. coli AcrB RND efflux competitor",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P31224.faa",
+      "file_sha256": "33807a8e45c771f9da3e68a6dc42147c9a205303531818c8140f3a722d50b5d9"
+    },
+    {
+      "accession": "P24177",
+      "header": "sp|P24177|ACRD_ECOLI",
+      "sequence_sha256": "e09a3b1a698b84a03a7bfd11cf9badab17064b8118ac73cbdb554fd4b350e1a7",
+      "length_aa": 1037,
+      "organism": "Escherichia coli (strain K12)",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:15.536353+00:00",
+      "fasta_sha256": "7149d8a98d0d5b1fe30dcdfd4bfaea46fa1b1c71d6cc4c0f5f564e2de7707ca7",
+      "gene": "acrD",
+      "role": "competitor",
+      "endpoint": "tetA",
+      "taxon": "Escherichia coli (strain K12)",
+      "target_or_competitor": "competitor",
+      "provenance_note": "E. coli AcrD RND efflux competitor",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P24177.faa",
+      "file_sha256": "bc807a0390587afaa3d3c5b56d14687b3182899aeb5a8ca6f2f924b60945ca31"
+    },
+    {
+      "accession": "P0A8V2",
+      "header": "sp|P0A8V2|RPOB_ECOLI",
+      "sequence_sha256": "c33ef6acd9bbcfc005a1c510c5d60b886546d1c6f7ce155daf6989314c1f08af",
+      "length_aa": 1342,
+      "organism": "Escherichia coli (strain K12)",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:16.556572+00:00",
+      "fasta_sha256": "6d59908b8d59da666aa90ca78e8c57ff1bcf7e88a7a6f836ac54b1bff7289e56",
+      "gene": "rpoB",
+      "role": "target",
+      "endpoint": "rpoB",
+      "taxon": "Escherichia coli",
+      "target_or_competitor": "target",
+      "provenance_note": "reviewed E. coli RpoB",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P0A8V2.faa",
+      "file_sha256": "3e923e4165b63d67b8e4ff3354840f2f282ce722892fc075ed31bf8cdc00f441"
+    },
+    {
+      "accession": "P9WGY9",
+      "header": "sp|P9WGY9|RPOB_MYCTU",
+      "sequence_sha256": "26139441dc9c10f30ce88b0b2bf3ea8739227f6465f98a44a1d3527979264940",
+      "length_aa": 1178,
+      "organism": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:17.644454+00:00",
+      "fasta_sha256": "b6f42b867d12d13a1f7616d3f6a456c96fdf2c0c1d56af3729749afd4c3badcf",
+      "gene": "rpoB",
+      "role": "target",
+      "endpoint": "rpoB",
+      "taxon": "Mycobacterium tuberculosis",
+      "target_or_competitor": "target",
+      "provenance_note": "reviewed M. tuberculosis RpoB",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P9WGY9.faa",
+      "file_sha256": "cd7ca272407de7be57f44ad515f00d9c3c4ac5b3c580eecad2e5a86e68dc3480"
+    },
+    {
+      "accession": "P37870",
+      "header": "sp|P37870|RPOB_BACSU",
+      "sequence_sha256": "4f3dc47c469e2765eb87ca2441d794aa03ba1cb35a2126cbf88b447f492356fc",
+      "length_aa": 1193,
+      "organism": "Bacillus subtilis (strain 168)",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:18.654426+00:00",
+      "fasta_sha256": "18f097fd425032a2e45e743c0e653a6133f23c36e6c63dc0628d2531d8225948",
+      "gene": "rpoB",
+      "role": "target",
+      "endpoint": "rpoB",
+      "taxon": "Bacillus subtilis",
+      "target_or_competitor": "target",
+      "provenance_note": "reviewed B. subtilis RpoB",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P37870.faa",
+      "file_sha256": "b42b75ae8e5609b8899d73bb0eca92da0578ee0ff251c57f2bc6e4a40e6670b1"
+    },
+    {
+      "accession": "P21624",
+      "header": "sp|P21624|UTS1_PLAFE",
+      "sequence_sha256": "8f0f6b0173fac930e041f1f05ce1a137b1ebe1a9d5f110c4a98495e6c7ea345d",
+      "length_aa": 60,
+      "organism": "Platichthys flesus",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:19.575300+00:00",
+      "fasta_sha256": "7d9d29880a08ca3b44f6442764a54c2081e65ecd113278b7d75d03907c873a16",
+      "gene": "rpoB",
+      "role": "target",
+      "endpoint": "rpoB",
+      "taxon": "Thermus aquaticus",
+      "target_or_competitor": "target",
+      "provenance_note": "reviewed T. aquaticus RpoB",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P21624.faa",
+      "file_sha256": "3797df08b14aaa10189b19328750fd1625d791c0f10306236b74d6e6b3d22feb"
+    },
+    {
+      "accession": "P0A2Z6",
+      "header": "sp|P0A2Z6|ATPE_STRCO",
+      "sequence_sha256": "73ac9da9c32771c047c5d0da199bff6716f426cc4fb25438d032e075c3a4e108",
+      "length_aa": 124,
+      "organism": "Streptomyces coelicolor (strain ATCC BAA-471 / A3(2) / M145)",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:20.546634+00:00",
+      "fasta_sha256": "eed3095ed20fdee78a9edb7c21a76ff510209e7ab1f26ec8500445b866b8f4f3",
+      "gene": "rpoB",
+      "role": "target",
+      "endpoint": "rpoB",
+      "taxon": "Helicobacter pylori",
+      "target_or_competitor": "target",
+      "provenance_note": "reviewed H. pylori RpoB",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P0A2Z6.faa",
+      "file_sha256": "c9c826aeb304ee8fb1c388d26f162a7e7c4640f3a5ec9df9ff4efac2a537ac2b"
+    },
+    {
+      "accession": "Q9WYB5",
+      "header": "tr|Q9WYB5|Q9WYB5_THEMA",
+      "sequence_sha256": "a8c575ad4bc4511322f1165827479bf9f01db59a5410b930ebf1f84f00df01e5",
+      "length_aa": 281,
+      "organism": "Thermotoga maritima (strain ATCC 43589 / DSM 3109 / JCM 10099 / NBRC 100826 / MSB8)",
+      "entry_type": "UniProtKB unreviewed (TrEMBL)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:21.584516+00:00",
+      "fasta_sha256": "0954548a02ff1ede305f39ffe46dbb30620280a509c430e68f9f77256b85c891",
+      "gene": "rpoB",
+      "role": "target",
+      "endpoint": "rpoB",
+      "taxon": "Thermotoga maritima",
+      "target_or_competitor": "target",
+      "provenance_note": "reviewed T. maritima RpoB",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/Q9WYB5.faa",
+      "file_sha256": "86ce3fe0619d76a39c7e95e44a9d9c70a67b4ac620d583f353d0385c87686767"
+    },
+    {
+      "accession": "P73442",
+      "header": "tr|P73442|P73442_SYNY3",
+      "sequence_sha256": "7078d2e475dc9898e5536ecf84d3c8e01c17c90f549a85a0cdaf59574b6fdb86",
+      "length_aa": 65,
+      "organism": "Synechocystis sp. (strain ATCC 27184 / PCC 6803 / Kazusa)",
+      "entry_type": "UniProtKB unreviewed (TrEMBL)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:22.528653+00:00",
+      "fasta_sha256": "499063ee9ce7e8dc96210c9604970d1edfece9d44d387c22ba6e93eb967ec8f8",
+      "gene": "rpoB",
+      "role": "target",
+      "endpoint": "rpoB",
+      "taxon": "Synechocystis sp.",
+      "target_or_competitor": "target",
+      "provenance_note": "reviewed Synechocystis RpoB",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P73442.faa",
+      "file_sha256": "c70a25707aecd34a45b89c553d01192de27b7ec5bbafcae654f671a3463cfb0d"
+    },
+    {
+      "accession": "O67077",
+      "header": "sp|O67077|FTSH_AQUAE",
+      "sequence_sha256": "ba60cdc341a1497798f5712898203754a850e60a034b14e9ca8112c26c432ce6",
+      "length_aa": 634,
+      "organism": "Aquifex aeolicus (strain VF5)",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:23.666095+00:00",
+      "fasta_sha256": "d665b147bacc490943e5a4b03a91ba08555bd0192c320cf6b36d2c39f8febec7",
+      "gene": "rpoB",
+      "role": "target",
+      "endpoint": "rpoB",
+      "taxon": "Aquifex aeolicus",
+      "target_or_competitor": "target",
+      "provenance_note": "reviewed A. aeolicus RpoB",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/O67077.faa",
+      "file_sha256": "bafc1f81c2b5bc5aee2d6d7707127759eff0c0ea3c43260544baf7183d516621"
+    },
+    {
+      "accession": "P0A8T7",
+      "header": "sp|P0A8T7|RPOC_ECOLI",
+      "sequence_sha256": "724511fc297bfadc125a55cc504bd405988ae3fc47401a28747804c9f8952b35",
+      "length_aa": 1407,
+      "organism": "Escherichia coli (strain K12)",
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "source": "UniProt REST uniprotkb/{accession}.fasta",
+      "database": "UniProtKB",
+      "retrieval_utc": "2026-09-21T09:23:24.860921+00:00",
+      "fasta_sha256": "0b015b4080c872e627662c4fcdff722df6e642232790629821b3420b7176fc9d",
+      "gene": "rpoC",
+      "role": "competitor",
+      "endpoint": "rpoB",
+      "taxon": "Escherichia coli",
+      "target_or_competitor": "competitor",
+      "provenance_note": "reviewed E. coli RpoC partner-family competitor",
+      "m60_case_protein": false,
+      "status": "OK",
+      "file": "SOURCE_FREEZE/uniprot/P0A8T7.faa",
+      "file_sha256": "1f41c3834e03f38c8ae566613e4a497a12b518c92047b64968b32810caa04876"
+    }
+  ],
+  "panel_sha256": {
+    "tetA_target.faa": "1d3eaa80037e0255cb8ad1a3238f30d259a66e2a3c9ed011800b1848c07a2a29",
+    "tetA_competitors.faa": "bae86b86548a0728b60dddc0ba3e15b524d632a1eb1bf5487f1ea4aea817f3c7",
+    "rpoB_target.faa": "1072bbf093a5cb1ed243d2fd022c0a736c19b94dd2445c84de5c85a13c5e1f19",
+    "rpoB_competitors.faa": "d8858a9b5589fd683dc9acfe86b49526c4af7b89c2d9cd6078ea9d7d016adfbf"
+  },
+  "hmm": {
+    "tetA_tetracycline_efflux": {
+      "cmd": [
+        "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/hmmbuild",
+        "--amino",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/hmm/tetA_tetracycline_efflux.hmm",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/packaged_families/tetA_tetracycline_efflux/members.aln.faa"
+      ],
+      "returncode": 0,
+      "ok": true,
+      "hmm_sha256": "43905347fb66dda268b924a9dae010c64f50d52b41c0348ab29b4729ae2720f2"
+    },
+    "mfs_multidrug_efflux": {
+      "cmd": [
+        "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/hmmbuild",
+        "--amino",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/hmm/mfs_multidrug_efflux.hmm",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/packaged_families/mfs_multidrug_efflux/members.aln.faa"
+      ],
+      "returncode": 0,
+      "ok": true,
+      "hmm_sha256": "9c9cf5c06ec1b743f1fb0b6275d504089f30aedc4eaefa4f66cf13a316a9aef6"
+    },
+    "rnd_efflux": {
+      "cmd": [
+        "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/hmmbuild",
+        "--amino",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/hmm/rnd_efflux.hmm",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/packaged_families/rnd_efflux/members.aln.faa"
+      ],
+      "returncode": 0,
+      "ok": true,
+      "hmm_sha256": "31a0e14895a3b03b6d940dc836f098523cd728eea59c9ee28b91444144320e40"
+    },
+    "rpoB_RNAP_beta": {
+      "cmd": [
+        "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/hmmbuild",
+        "--amino",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/hmm/rpoB_RNAP_beta.hmm",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/packaged_families/rpoB_RNAP_beta/members.aln.faa"
+      ],
+      "returncode": 0,
+      "ok": true,
+      "hmm_sha256": "bde7b062cf19b1289bf15da9b8c00a0aaf801bea883cc111d512940345c0cd37"
+    },
+    "rpoC_RNAP_beta_prime": {
+      "cmd": [
+        "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/hmmbuild",
+        "--amino",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/hmm/rpoC_RNAP_beta_prime.hmm",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/packaged_families/rpoC_RNAP_beta_prime/members.aln.faa"
+      ],
+      "returncode": 0,
+      "ok": true,
+      "hmm_sha256": "c094aa7a4e82aab636e4d5ed2614803e8ae379cf0a627cc0b460c0b5408001d1"
+    }
+  },
+  "assemblies": [
+    {
+      "accession": "GCF_049943055.1",
+      "position": 1,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_049943055.1",
+      "sha256": "01274d9753b0d8a28f645bae0f9273d5abadf8f52488f11c0f968a01761b945f",
+      "bytes": 2882847,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_049943055.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_052786815.1",
+      "position": 2,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_052786815.1",
+      "sha256": "0baa4ff1fdfc2b3b9f6848b5e605168dbc8d7fbf557b5e70f35bba2951887062",
+      "bytes": 2942155,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_052786815.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_965253375.1",
+      "position": 3,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_965253375.1",
+      "sha256": "14240a0571aefd742eb337c41b96042098aad8f23cfff30c0c1348a0fbc75e26",
+      "bytes": 1327054,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_965253375.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_053348035.1",
+      "position": 4,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_053348035.1",
+      "sha256": "2c10c9afdc9aabe334f4fd6e098e7cc2e350eb69cfb776fe52a567f52d01a158",
+      "bytes": 6894962,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_053348035.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_054452975.1",
+      "position": 5,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_054452975.1",
+      "sha256": "a8ab156d0bc69d138d9642f228c341f95da79a97927551aa24a0ca77549238c9",
+      "bytes": 3664983,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_054452975.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_052658775.1",
+      "position": 6,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_052658775.1",
+      "sha256": "15e972a2c6115e91ea47ed50c7e49dee685cf69c841674241ed245f3074bbe1f",
+      "bytes": 3880404,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_052658775.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_052923225.1",
+      "position": 7,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_052923225.1",
+      "sha256": "a727b472809c27ec27132990f53c2fca7cb7788f8314552e0ad310a64a5b253f",
+      "bytes": 2154661,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_052923225.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_056173045.1",
+      "position": 8,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_056173045.1",
+      "sha256": "7a3a76ef2f6d617e462f52e60a2b9cc5c578c2e6d837121d977a5220afb31b81",
+      "bytes": 4655890,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_056173045.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_030436185.2",
+      "position": 9,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_030436185.2",
+      "sha256": "66b7dbb5abfba92cafe87b81e501959c644f0b632d58a53bede237b729cdd5c7",
+      "bytes": 1482774,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_030436185.2.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_058808595.1",
+      "position": 10,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_058808595.1",
+      "sha256": "d3f6bb90dca0fd34e2c866f64a9d97ed2d24813a5f64b39b50a5a8d89b86846f",
+      "bytes": 5134773,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_058808595.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_051167675.1",
+      "position": 11,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_051167675.1",
+      "sha256": "184f1385182436e77a05c8e72bd0233b9109f91a521ee4561c80493f561587c4",
+      "bytes": 7181764,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_051167675.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_048315775.1",
+      "position": 12,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_048315775.1",
+      "sha256": "d63cac2049ba04fc0492b1f5b430d8ade727811a2c81bf2f28ec97fbde4da7a9",
+      "bytes": 3306133,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_048315775.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_056269845.1",
+      "position": 13,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_056269845.1",
+      "sha256": "4a81becaf936b1e2092f60fe96d357e67cf031871a310cef694af32230e162e2",
+      "bytes": 4723859,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_056269845.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_060343445.1",
+      "position": 14,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_060343445.1",
+      "sha256": "6dd844c4083c17e196830cf59a69d09da3b682a73f9d2294daeca0b434bc7f70",
+      "bytes": 2346222,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_060343445.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_965236745.1",
+      "position": 15,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_965236745.1",
+      "sha256": "15cc97ab69f472b54d492fa7a53cb14e29373c33d3dc4f0d251fafc1ee5016be",
+      "bytes": 4743895,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_965236745.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_965275775.1",
+      "position": 16,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_965275775.1",
+      "sha256": "87b4ddc0d089a55d6c13aaf017cb628b62eedbd7dbfc484bec6c6330155599f9",
+      "bytes": 2499354,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_965275775.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_052262835.1",
+      "position": 17,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_052262835.1",
+      "sha256": "15d02afbbb4b3c739e7d2415d117e779b69045b322f1a7395e91e4a07ca866c7",
+      "bytes": 3450555,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_052262835.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_056155565.1",
+      "position": 18,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_056155565.1",
+      "sha256": "0ae2aedf6780c6f7e5f348c971cd765e885a45160a82daea20bc731440c3af2a",
+      "bytes": 4988028,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_056155565.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_054552735.1",
+      "position": 19,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_054552735.1",
+      "sha256": "f15b30c4d48e8dba043d186af82585e906fda1e61b973cc82421fe4912f7a6a3",
+      "bytes": 3840383,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_054552735.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_050847255.1",
+      "position": 20,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_050847255.1",
+      "sha256": "5bfcc27e2a7f00b48e36c4747c285b1e1b18cebc5a501abc64e27a4bf5798382",
+      "bytes": 6543424,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_050847255.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_057501835.1",
+      "position": 21,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_057501835.1",
+      "sha256": "f6f3bc3a549197d530d5588caf67fdfb89efdc499f038e7fdb3bfb38cbede586",
+      "bytes": 2478267,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_057501835.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_049810315.1",
+      "position": 22,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_049810315.1",
+      "sha256": "29b3af9349a1ce059bcfe4165e43dbc5dcf560304bdd45715866b0a12aa369f5",
+      "bytes": 3995515,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_049810315.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_052375315.1",
+      "position": 23,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_052375315.1",
+      "sha256": "5c7b75164547f3c5e57dc66b35a4231954941053c4075f8ccfab732ee76dc163",
+      "bytes": 4769930,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_052375315.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_050600735.1",
+      "position": 24,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_050600735.1",
+      "sha256": "2584bc9820cf9c8dfd58ff04d8c5ceff8b9f854025dbebec8ece176b0ae295c0",
+      "bytes": 5181751,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_050600735.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_053522785.1",
+      "position": 25,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_053522785.1",
+      "sha256": "58f28d5416c6e2a088149c7c2488020cd8ed1625e9beefc04a249a9bc6760a7f",
+      "bytes": 7438008,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_053522785.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_055502155.1",
+      "position": 26,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_055502155.1",
+      "sha256": "fead9de16de0cf7dfe1f0b085f2324fc1d1fe932ebe024635711ba61de6d1961",
+      "bytes": 7550530,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_055502155.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_051052775.1",
+      "position": 27,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_051052775.1",
+      "sha256": "63f9760ccea3ebfa9fdb8565ee506a81670e79a16fc9a2cf82c6afc04882b807",
+      "bytes": 1032009,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_051052775.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_052828745.1",
+      "position": 28,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_052828745.1",
+      "sha256": "3539f9341b0db467cfb199270bae48f6488fec571a1c40759192cefe2fdff0d1",
+      "bytes": 4177011,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_052828745.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_052030555.1",
+      "position": 29,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_052030555.1",
+      "sha256": "6ca33bae48c924c44eb1a9a5bb6a67287c1b883d7ca0c9999cf0bcb63c751541",
+      "bytes": 2786972,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_052030555.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_056892195.1",
+      "position": 30,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_056892195.1",
+      "sha256": "5a6a19b64f092864e63050928875af465208e28f3c51a87cc7b52aca223008b8",
+      "bytes": 4504990,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_056892195.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_987210895.1",
+      "position": 31,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_987210895.1",
+      "sha256": "f8106148a296258cbf58b2af8888bc448904a207f73de7e8dfa5c313bf67d2cb",
+      "bytes": 4091327,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_987210895.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_057525735.1",
+      "position": 32,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_057525735.1",
+      "sha256": "d22001da08fa29c746d5046a8edee26bb734328410778cf6c023155ce3b5702c",
+      "bytes": 2497792,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_057525735.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_046837775.1",
+      "position": 33,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_046837775.1",
+      "sha256": "e91ca13a7b615252642b09139b95ddecb614320051e84602338110f7133a0d23",
+      "bytes": 4958890,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_046837775.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_054953385.1",
+      "position": 34,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_054953385.1",
+      "sha256": "783f621af4a85c51956e4d3d3144eba4ffe1b5901b7a37e6a12da2e32d023366",
+      "bytes": 4198216,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_054953385.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_055562315.1",
+      "position": 35,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_055562315.1",
+      "sha256": "e92ad258d7cde5329459bc1ab5e7d01f67354af9a0c586508d44c64e60bd8252",
+      "bytes": 4123130,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_055562315.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_058409085.1",
+      "position": 36,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_058409085.1",
+      "sha256": "05b5553de6d1dcddc9214390b1a02e5c0281ada55304b037524c8bd7b738c8af",
+      "bytes": 5393557,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_058409085.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_059878295.1",
+      "position": 37,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_059878295.1",
+      "sha256": "d963d014449753174e404ebab88c55e4385a0d94c3153f3d9795620b90c45a8f",
+      "bytes": 3224307,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_059878295.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_050506825.1",
+      "position": 38,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_050506825.1",
+      "sha256": "3800fc6cbd7fa791b28b06e40a03a8f172ec7d3886dc3c4bdb50d4b63dfbf3cf",
+      "bytes": 3054888,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_050506825.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_056820395.1",
+      "position": 39,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_056820395.1",
+      "sha256": "29bc6ded0900260771bb291199ff23c6fa7ef52b36e188cbae98115d7515fe2b",
+      "bytes": 2351076,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_056820395.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_057808655.1",
+      "position": 40,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_057808655.1",
+      "sha256": "a1813136c7c990fc189510e1876557349a8e439aabcf96faa3280447df0c8e04",
+      "bytes": 6638661,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_057808655.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_056613625.1",
+      "position": 41,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_056613625.1",
+      "sha256": "0a91b9a8c5dccd537d9d30599a3db8f599d810e6c9b92c929cf9ee3d82524003",
+      "bytes": 2818502,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_056613625.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_056405795.1",
+      "position": 42,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_056405795.1",
+      "sha256": "324bbcbb9580d44c6ba42553db3eda8a1d2b614b6f00e47e09034f82c9bb26b0",
+      "bytes": 4959716,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_056405795.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_058705105.1",
+      "position": 43,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_058705105.1",
+      "sha256": "82b83e68968c77f244cc82275c43e44b6183321a78f9164e22835bab0bc27fed",
+      "bytes": 4440992,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_058705105.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_056539405.1",
+      "position": 44,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_056539405.1",
+      "sha256": "61ac505ce8f0ecf09f74426b6821bf468779ccb34f70435972909caadd9d6be6",
+      "bytes": 4407046,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_056539405.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_056857995.1",
+      "position": 45,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_056857995.1",
+      "sha256": "ceba61f798ebb49b410955473c52b285d420d01815caf967ebdd6e97ce51e2c6",
+      "bytes": 2782970,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_056857995.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_053612185.1",
+      "position": 46,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_053612185.1",
+      "sha256": "290be884dc19104583ed05454f427aaac5701df398943dcb9149f2aadde1fb2b",
+      "bytes": 8063098,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_053612185.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_058370595.1",
+      "position": 47,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_058370595.1",
+      "sha256": "27cafd6e33263374d439741b7b920d97f674eae42cd6e1b9f24ed7a407d514ec",
+      "bytes": 5138869,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_058370595.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_055389225.1",
+      "position": 48,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_055389225.1",
+      "sha256": "42df3dd5ab65f427a3f1756b3539a43402ed0fc9ab84233cbf87c86fc302a05b",
+      "bytes": 3263780,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_055389225.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_047374315.1",
+      "position": 49,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_047374315.1",
+      "sha256": "69a121f0fa2be719f501145756c5523497adeab2796ed929bdd15c35e1d0f5d7",
+      "bytes": 2143232,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_047374315.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_057162725.1",
+      "position": 50,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_057162725.1",
+      "sha256": "557b08e285dd8119d20a480cf459b4c60affdaad7696499ffddd642a50935d96",
+      "bytes": 3828576,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_057162725.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_058071205.1",
+      "position": 51,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_058071205.1",
+      "sha256": "1ff91f6de6c9ea293de260a002eb0ec13e90f1fd15be9025e17fdf82ee7019d1",
+      "bytes": 4309603,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_058071205.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_051042445.1",
+      "position": 52,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_051042445.1",
+      "sha256": "3edf58843c5fd02139394ead16921248f49fc8e95efbe3560cd132bec375fb2f",
+      "bytes": 7011689,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_051042445.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_054050515.1",
+      "position": 53,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_054050515.1",
+      "sha256": "e1bf3f0b29210234f3e6b63bba859f41c13545b9dd697d8aa041b7f02579ef72",
+      "bytes": 3969297,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_054050515.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_051384095.1",
+      "position": 54,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_051384095.1",
+      "sha256": "ed657a40b9bea2fe6223c304c4fe262b1ada4179254c1276b9167e673cbec902",
+      "bytes": 4940134,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_051384095.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_049993875.1",
+      "position": 55,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_049993875.1",
+      "sha256": "c7af23e4e769ed17a744de00fb164143a9ef22d1b316f0a023c318a5ed02af2b",
+      "bytes": 4884411,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_049993875.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_060694225.1",
+      "position": 56,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_060694225.1",
+      "sha256": "ecdefb04209c7648cfcf75fca33da85a2135cf4888c97526dbb006e8f73d5243",
+      "bytes": 2741820,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_060694225.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_054495665.1",
+      "position": 57,
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_054495665.1",
+      "sha256": "bd49501065a35ddfb3a969eeade4cc07ea7993cfc93814be112bcab1f5bb0c2a",
+      "bytes": 1783789,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_054495665.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_965183925.1",
+      "position": 58,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_965183925.1",
+      "sha256": "0d59c8e689e9867a2b7d42e904f1de12f58e8535a46f0b9f2cb8e930fa7c97f7",
+      "bytes": 1304348,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_965183925.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_053756975.1",
+      "position": 59,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_053756975.1",
+      "sha256": "fb918eb6e0d759180d2f7c5a20773270c415ba684109ad0a9b24453fae8f5218",
+      "bytes": 4321622,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_053756975.1.fna",
+      "m60_case_used_as_reference": false
+    },
+    {
+      "accession": "GCF_059424735.1",
+      "position": 60,
+      "case_id": "M60_rpoB_RNAP_beta_GCF_059424735.1",
+      "sha256": "df0ec8e12504a4019871f0a0b8fdb66444eccf3bb5ae7386b182610943ff659e",
+      "bytes": 7330190,
+      "source": "/home/aritr/m60_work/fasta/original/GCF_059424735.1.fna",
+      "m60_case_used_as_reference": false
+    }
+  ],
+  "decision_rules": {
+    "source": "manuscript_benchmark/M60_PROTOCOL_V1_1.md",
+    "tetA_endpoint": "presence of a genuine member of the frozen tet(A)/tet(B) target family",
+    "rpoB_endpoint": "presence of a genuine bacterial rpoB orthologue",
+    "truth_states": [
+      "POSITIVE",
+      "NEGATIVE",
+      "TRUTH_UNCERTAIN"
+    ],
+    "do_not_force_uncertain_to_negative": true,
+    "do_not_manufacture_negative_rpob_for_class_balance": true,
+    "amrfinder_is_not_truth": true,
+    "pgap_is_not_truth": true,
+    "gs_predictions_are_not_truth": true,
+    "gates": {
+      "gene_aa_min_identity": 0.6,
+      "gene_aa_min_query_coverage": 0.8,
+      "gene_length_ratio_min": 0.8,
+      "gene_length_ratio_max": 1.2,
+      "family_competitive_margin": 0.1,
+      "family_competitive_ambiguous_band": 0.05,
+      "hmm_min_gate_model_coverage": 0.2,
+      "hmm_domain_only_max_model_coverage": 0.45,
+      "sequence_decisive_identity_product": 0.7,
+      "sequence_decisive_delta": 0.2
+    },
+    "tetA_route_1": "target-vs-competitor sequence/reference comparison against frozen tet(A)/tet(B) and competing MFS/RND/tet-class panels",
+    "tetA_route_2": "independent HMM profile placement; FastTree family placement when borderline",
+    "rpoB_route_1": "full/near-full-length similarity to independently verified RpoB references",
+    "rpoB_route_2": "RpoB vs RpoC HMM/profile placement; FastTree when borderline",
+    "generic_MFS_insufficient": true,
+    "remote_HMM_alone_insufficient": true,
+    "two_independent_evidence_routes": true,
+    "not_two_independent_reviewers": true
+  },
+  "do_not_alter_after_this_point": true
+}

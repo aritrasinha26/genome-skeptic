@@ -1,0 +1,124 @@
+{
+  "kind": "M60_BLINDED_EFFICIENCY",
+  "truth_opened": false,
+  "accuracy_scored": false,
+  "d20_touched": false,
+  "created_utc": "2026-09-21T07:34:59.875125+00:00",
+  "strata": {
+    "all": {
+      "agentic": {
+        "n": 60,
+        "complete": 60,
+        "completion_rate": 1.0,
+        "total_followup_analyses": 61,
+        "median_followup_analyses_per_case": 1.0,
+        "mean_followup_analyses_per_case": 1.0166666666666666,
+        "total_runtime_seconds": 12090.835,
+        "median_runtime_seconds_per_case": 206.6875
+      },
+      "exhaustive": {
+        "n": 60,
+        "complete": 60,
+        "completion_rate": 1.0,
+        "total_followup_analyses": 189,
+        "median_followup_analyses_per_case": 3.0,
+        "mean_followup_analyses_per_case": 3.15,
+        "total_runtime_seconds": 1421.287,
+        "median_runtime_seconds_per_case": 19.4455
+      },
+      "followup_action_reduction_percent": 67.72486772486772
+    },
+    "tetA": {
+      "agentic": {
+        "n": 30,
+        "complete": 30,
+        "completion_rate": 1.0,
+        "total_followup_analyses": 31,
+        "median_followup_analyses_per_case": 1.0,
+        "mean_followup_analyses_per_case": 1.0333333333333334,
+        "total_runtime_seconds": 7209.47,
+        "median_runtime_seconds_per_case": 238.8745
+      },
+      "exhaustive": {
+        "n": 30,
+        "complete": 30,
+        "completion_rate": 1.0,
+        "total_followup_analyses": 144,
+        "median_followup_analyses_per_case": 5.0,
+        "mean_followup_analyses_per_case": 4.8,
+        "total_runtime_seconds": 897.7,
+        "median_runtime_seconds_per_case": 26.467
+      },
+      "followup_action_reduction_percent": 78.47222222222223
+    },
+    "rpoB": {
+      "agentic": {
+        "n": 30,
+        "complete": 30,
+        "completion_rate": 1.0,
+        "total_followup_analyses": 30,
+        "median_followup_analyses_per_case": 1.0,
+        "mean_followup_analyses_per_case": 1.0,
+        "total_runtime_seconds": 4881.365,
+        "median_runtime_seconds_per_case": 163.6655
+      },
+      "exhaustive": {
+        "n": 30,
+        "complete": 30,
+        "completion_rate": 1.0,
+        "total_followup_analyses": 45,
+        "median_followup_analyses_per_case": 1.5,
+        "mean_followup_analyses_per_case": 1.5,
+        "total_runtime_seconds": 523.587,
+        "median_runtime_seconds_per_case": 17.387
+      },
+      "followup_action_reduction_percent": 33.333333333333336
+    },
+    "routine": {
+      "agentic": {
+        "n": 30,
+        "complete": 30,
+        "completion_rate": 1.0,
+        "total_followup_analyses": 31,
+        "median_followup_analyses_per_case": 1.0,
+        "mean_followup_analyses_per_case": 1.0333333333333334,
+        "total_runtime_seconds": 6076.483,
+        "median_runtime_seconds_per_case": 201.77249999999998
+      },
+      "exhaustive": {
+        "n": 30,
+        "complete": 30,
+        "completion_rate": 1.0,
+        "total_followup_analyses": 92,
+        "median_followup_analyses_per_case": 3.0,
+        "mean_followup_analyses_per_case": 3.066666666666667,
+        "total_runtime_seconds": 748.033,
+        "median_runtime_seconds_per_case": 19.454
+      },
+      "followup_action_reduction_percent": 66.30434782608695
+    },
+    "challenge": {
+      "agentic": {
+        "n": 30,
+        "complete": 30,
+        "completion_rate": 1.0,
+        "total_followup_analyses": 30,
+        "median_followup_analyses_per_case": 1.0,
+        "mean_followup_analyses_per_case": 1.0,
+        "total_runtime_seconds": 6014.352,
+        "median_runtime_seconds_per_case": 206.6875
+      },
+      "exhaustive": {
+        "n": 30,
+        "complete": 30,
+        "completion_rate": 1.0,
+        "total_followup_analyses": 97,
+        "median_followup_analyses_per_case": 3.0,
+        "mean_followup_analyses_per_case": 3.2333333333333334,
+        "total_runtime_seconds": 673.254,
+        "median_runtime_seconds_per_case": 19.170499999999997
+      },
+      "followup_action_reduction_percent": 69.0721649484536
+    }
+  }
+}

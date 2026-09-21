@@ -1,0 +1,21 @@
+{
+  "execution_position": 1,
+  "assembly_accession": "GCF_060416925.1",
+  "target": "tetA_tetracycline_efflux",
+  "v3_freeze_verified": true,
+  "planner_executed": true,
+  "critic_executed_where_applicable": true,
+  "critic_applicable": true,
+  "registered_actions_only": true,
+  "unregistered_actions": [],
+  "deterministic_measurements_only": true,
+  "validator_consumed_correct_final_state": true,
+  "no_silent_fallback": true,
+  "execution_provenance_complete": true,
+  "conventional_ok": true,
+  "v5_ok": true,
+  "agentic_ok": true,
+  "agent_failure": null,
+  "current_lacz_limitation_recorded": true,
+  "infrastructure_pass": true
+}

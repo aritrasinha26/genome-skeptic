@@ -1,0 +1,5 @@
+{
+  "kind": "external_ablation_v5",
+  "runs": [],
+  "note": "No supported external task had local original inputs and scorer; ablations were not invented."
+}

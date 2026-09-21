@@ -1,0 +1,1503 @@
+{
+  "kind": "D12_AGENTIC_V3_LOCKED",
+  "n_cases": 12,
+  "do_not_regenerate": true,
+  "external_labels_opened": false,
+  "d20_touched": false,
+  "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+  "agentic_freeze_manifest_sha256": "4941a5197ea1a78a358070009e7df963fcdc67e651ba293015903ed6f5b76237",
+  "created_utc": "2026-09-19T23:49:16.853332+00:00",
+  "current_lacz_limitation": "No frozen deterministic instrument currently distinguishes true LacZ orthology from relevant competing beta-galactosidase families when reference/GFF/orthology resources are absent.",
+  "predictions": [
+    {
+      "assembly_accession": "GCF_060416925.1",
+      "target": "tetA_tetracycline_efflux",
+      "system": "genome_skeptic_agentic_v3",
+      "ok": true,
+      "runtime_seconds": 217.753,
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+      "external_labels_opened": false,
+      "planner_invoked": true,
+      "planner_decision": "continue",
+      "planner_action": "search_target_domains_hmmer",
+      "planner_control_decision": null,
+      "planner_grounding_status": "MISSING",
+      "planner_control_failure": null,
+      "critic_invoked": true,
+      "critic_verdict": "accept",
+      "critic_action": null,
+      "actions_executed": [
+        "search_target_domains_hmmer"
+      ],
+      "action_result_status": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        }
+      ],
+      "ranked_candidate_actions": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "FAMILY_IDENTITY_UNRESOLVED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        },
+        {
+          "action_id": "inspect_contig_edges_for_target",
+          "tests": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "updates": [
+            "hit_edge_flags"
+          ],
+          "relative_cost": 1,
+          "priority_score": 164
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "tests": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "updates": [
+            "contig_gc",
+            "genome_gc"
+          ],
+          "relative_cost": 1,
+          "priority_score": 124
+        }
+      ],
+      "diagnostic_needs_m0": [
+        {
+          "need": "COPY_NUMBER_UNRESOLVED",
+          "priority": 5
+        },
+        {
+          "need": "FRAGMENTATION_UNRESOLVED",
+          "priority": 3
+        },
+        {
+          "need": "CONTAMINATION_UNRESOLVED",
+          "priority": 1
+        }
+      ],
+      "m0_hash": "15d007c3b918bee7739f62d541dc24417fb21f28e7070197380f04893f0ec6ca",
+      "m_final_hash": "4f40d5a809cb5239d5729eb5fe6f99634da9310fea760e93516cd7bfe6ee18f7",
+      "measurements_changed_before_validation": true,
+      "validator_consumed_measurement_hash": "4f40d5a809cb5239d5729eb5fe6f99634da9310fea760e93516cd7bfe6ee18f7",
+      "validator_consumed_m0": false,
+      "validator_consumed_final_state": true,
+      "model_call_count": 2,
+      "planner_call_count": 1,
+      "critic_call_count": 1,
+      "repair_count": 0,
+      "agent_failure": null,
+      "final_validator_ran": true,
+      "call_graph": [
+        "run_skeptic_agentic_v3",
+        "collect_assembly_target_measurements",
+        "run_gene_search",
+        "build_locus_evidence",
+        "collect_family_evidence",
+        "measurements_to_evidence",
+        "OllamaJSONClient.ask_json:AgentDecision",
+        "execute_registered_action:search_target_domains_hmmer",
+        "OllamaJSONClient.ask_json:CriticReview",
+        "build_target_gene_claim"
+      ],
+      "silent_deterministic_fallback": false,
+      "llm_measurement_entered_claim": false,
+      "unregistered_actions": [],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.4316,
+      "architecture": "divergent_full_length",
+      "homology_support": 0.62,
+      "orthology_class": "divergent_full_length",
+      "statement": "Target gene 'tetA_tetracycline_efflux' is detected in the current assembly."
+    },
+    {
+      "assembly_accession": "GCF_057626335.1",
+      "target": "rpoB_RNAP_beta",
+      "system": "genome_skeptic_agentic_v3",
+      "ok": true,
+      "runtime_seconds": 255.145,
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+      "external_labels_opened": false,
+      "planner_invoked": true,
+      "planner_decision": "continue",
+      "planner_action": "search_target_domains_hmmer",
+      "planner_control_decision": null,
+      "planner_grounding_status": "MISSING",
+      "planner_control_failure": null,
+      "critic_invoked": true,
+      "critic_verdict": "accept",
+      "critic_action": null,
+      "actions_executed": [
+        "search_target_domains_hmmer"
+      ],
+      "action_result_status": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        }
+      ],
+      "ranked_candidate_actions": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "FAMILY_IDENTITY_UNRESOLVED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        },
+        {
+          "action_id": "inspect_contig_edges_for_target",
+          "tests": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "updates": [
+            "hit_edge_flags"
+          ],
+          "relative_cost": 1,
+          "priority_score": 164
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "tests": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "updates": [
+            "contig_gc",
+            "genome_gc"
+          ],
+          "relative_cost": 1,
+          "priority_score": 124
+        }
+      ],
+      "diagnostic_needs_m0": [
+        {
+          "need": "COPY_NUMBER_UNRESOLVED",
+          "priority": 5
+        },
+        {
+          "need": "FRAGMENTATION_UNRESOLVED",
+          "priority": 3
+        },
+        {
+          "need": "CONTAMINATION_UNRESOLVED",
+          "priority": 1
+        }
+      ],
+      "m0_hash": "2d6666dd4d8ffaed90dd1aaad88e2da600058a0f567629becb03a79d6d60cb02",
+      "m_final_hash": "6d5d1e55c8c60e2baccf383057151a15597bc41ba287f849557c6ba7eb2e7f2c",
+      "measurements_changed_before_validation": true,
+      "validator_consumed_measurement_hash": "6d5d1e55c8c60e2baccf383057151a15597bc41ba287f849557c6ba7eb2e7f2c",
+      "validator_consumed_m0": false,
+      "validator_consumed_final_state": true,
+      "model_call_count": 2,
+      "planner_call_count": 1,
+      "critic_call_count": 1,
+      "repair_count": 0,
+      "agent_failure": null,
+      "final_validator_ran": true,
+      "call_graph": [
+        "run_skeptic_agentic_v3",
+        "collect_assembly_target_measurements",
+        "run_gene_search",
+        "build_locus_evidence",
+        "collect_family_evidence",
+        "measurements_to_evidence",
+        "OllamaJSONClient.ask_json:AgentDecision",
+        "execute_registered_action:search_target_domains_hmmer",
+        "OllamaJSONClient.ask_json:CriticReview",
+        "build_target_gene_claim"
+      ],
+      "silent_deterministic_fallback": false,
+      "llm_measurement_entered_claim": false,
+      "unregistered_actions": [],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "architecture": "divergent_full_length",
+      "homology_support": 0.62,
+      "orthology_class": "exact_strong_homolog,multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'rpoB_RNAP_beta' is detected in the current assembly."
+    },
+    {
+      "assembly_accession": "GCF_053795755.1",
+      "target": "tetA_tetracycline_efflux",
+      "system": "genome_skeptic_agentic_v3",
+      "ok": true,
+      "runtime_seconds": 213.348,
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+      "external_labels_opened": false,
+      "planner_invoked": true,
+      "planner_decision": "continue",
+      "planner_action": "search_target_domains_hmmer",
+      "planner_control_decision": null,
+      "planner_grounding_status": "MISSING",
+      "planner_control_failure": null,
+      "critic_invoked": true,
+      "critic_verdict": "accept",
+      "critic_action": null,
+      "actions_executed": [
+        "search_target_domains_hmmer"
+      ],
+      "action_result_status": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        }
+      ],
+      "ranked_candidate_actions": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "FAMILY_IDENTITY_UNRESOLVED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        },
+        {
+          "action_id": "inspect_contig_edges_for_target",
+          "tests": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "updates": [
+            "hit_edge_flags"
+          ],
+          "relative_cost": 1,
+          "priority_score": 164
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "tests": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "updates": [
+            "contig_gc",
+            "genome_gc"
+          ],
+          "relative_cost": 1,
+          "priority_score": 124
+        }
+      ],
+      "diagnostic_needs_m0": [
+        {
+          "need": "COPY_NUMBER_UNRESOLVED",
+          "priority": 5
+        },
+        {
+          "need": "FRAGMENTATION_UNRESOLVED",
+          "priority": 3
+        },
+        {
+          "need": "CONTAMINATION_UNRESOLVED",
+          "priority": 1
+        }
+      ],
+      "m0_hash": "65b7e854a2cf46ef2b4c6a22f9d3336679b929255a23d2674d669a8d2d713bc4",
+      "m_final_hash": "6f0a821a85aba9e1b2816723e4423bfbe8b12e27db29ab5902a5219d9f995a73",
+      "measurements_changed_before_validation": true,
+      "validator_consumed_measurement_hash": "6f0a821a85aba9e1b2816723e4423bfbe8b12e27db29ab5902a5219d9f995a73",
+      "validator_consumed_m0": false,
+      "validator_consumed_final_state": true,
+      "model_call_count": 2,
+      "planner_call_count": 1,
+      "critic_call_count": 1,
+      "repair_count": 0,
+      "agent_failure": null,
+      "final_validator_ran": true,
+      "call_graph": [
+        "run_skeptic_agentic_v3",
+        "collect_assembly_target_measurements",
+        "run_gene_search",
+        "build_locus_evidence",
+        "collect_family_evidence",
+        "measurements_to_evidence",
+        "OllamaJSONClient.ask_json:AgentDecision",
+        "execute_registered_action:search_target_domains_hmmer",
+        "OllamaJSONClient.ask_json:CriticReview",
+        "build_target_gene_claim"
+      ],
+      "silent_deterministic_fallback": false,
+      "llm_measurement_entered_claim": false,
+      "unregistered_actions": [],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.5038,
+      "architecture": "divergent_full_length",
+      "homology_support": 0.62,
+      "orthology_class": "profile_hmm_family_match",
+      "statement": "Target gene 'tetA_tetracycline_efflux' is detected in the current assembly."
+    },
+    {
+      "assembly_accession": "GCF_047943045.1",
+      "target": "rpoB_RNAP_beta",
+      "system": "genome_skeptic_agentic_v3",
+      "ok": true,
+      "runtime_seconds": 205.444,
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+      "external_labels_opened": false,
+      "planner_invoked": true,
+      "planner_decision": "continue",
+      "planner_action": "search_target_domains_hmmer",
+      "planner_control_decision": null,
+      "planner_grounding_status": "MISSING",
+      "planner_control_failure": null,
+      "critic_invoked": true,
+      "critic_verdict": "accept",
+      "critic_action": null,
+      "actions_executed": [
+        "search_target_domains_hmmer"
+      ],
+      "action_result_status": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        }
+      ],
+      "ranked_candidate_actions": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "FAMILY_IDENTITY_UNRESOLVED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        },
+        {
+          "action_id": "inspect_contig_edges_for_target",
+          "tests": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "updates": [
+            "hit_edge_flags"
+          ],
+          "relative_cost": 1,
+          "priority_score": 164
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "tests": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "updates": [
+            "contig_gc",
+            "genome_gc"
+          ],
+          "relative_cost": 1,
+          "priority_score": 124
+        }
+      ],
+      "diagnostic_needs_m0": [
+        {
+          "need": "COPY_NUMBER_UNRESOLVED",
+          "priority": 5
+        },
+        {
+          "need": "FRAGMENTATION_UNRESOLVED",
+          "priority": 3
+        },
+        {
+          "need": "CONTAMINATION_UNRESOLVED",
+          "priority": 1
+        }
+      ],
+      "m0_hash": "f31a068639ed77cd088e03d8aff95b6015ce79162f84d0cfae47c4633876006e",
+      "m_final_hash": "eb4ffecee5126351308a686e7549c669241382eeb0417d8a0af023914183173b",
+      "measurements_changed_before_validation": true,
+      "validator_consumed_measurement_hash": "eb4ffecee5126351308a686e7549c669241382eeb0417d8a0af023914183173b",
+      "validator_consumed_m0": false,
+      "validator_consumed_final_state": true,
+      "model_call_count": 2,
+      "planner_call_count": 1,
+      "critic_call_count": 1,
+      "repair_count": 0,
+      "agent_failure": null,
+      "final_validator_ran": true,
+      "call_graph": [
+        "run_skeptic_agentic_v3",
+        "collect_assembly_target_measurements",
+        "run_gene_search",
+        "build_locus_evidence",
+        "collect_family_evidence",
+        "measurements_to_evidence",
+        "OllamaJSONClient.ask_json:AgentDecision",
+        "execute_registered_action:search_target_domains_hmmer",
+        "OllamaJSONClient.ask_json:CriticReview",
+        "build_target_gene_claim"
+      ],
+      "silent_deterministic_fallback": false,
+      "llm_measurement_entered_claim": false,
+      "unregistered_actions": [],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "architecture": "divergent_full_length",
+      "homology_support": 0.62,
+      "orthology_class": "exact_strong_homolog,multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'rpoB_RNAP_beta' is detected in the current assembly."
+    },
+    {
+      "assembly_accession": "GCF_058596135.1",
+      "target": "lacZ_beta_galactosidase",
+      "system": "genome_skeptic_agentic_v3",
+      "ok": true,
+      "runtime_seconds": 149.02,
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+      "external_labels_opened": false,
+      "planner_invoked": true,
+      "planner_decision": "continue",
+      "planner_action": "inspect_contig_edges_for_target",
+      "planner_control_decision": null,
+      "planner_grounding_status": "MISSING",
+      "planner_control_failure": null,
+      "critic_invoked": true,
+      "critic_verdict": "accept",
+      "critic_action": null,
+      "actions_executed": [
+        "inspect_contig_edges_for_target"
+      ],
+      "action_result_status": [
+        {
+          "action_id": "inspect_contig_edges_for_target",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        }
+      ],
+      "ranked_candidate_actions": [
+        {
+          "action_id": "inspect_contig_edges_for_target",
+          "tests": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "updates": [
+            "hit_edge_flags"
+          ],
+          "relative_cost": 1,
+          "priority_score": 164
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "tests": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "updates": [
+            "contig_gc",
+            "genome_gc"
+          ],
+          "relative_cost": 1,
+          "priority_score": 124
+        }
+      ],
+      "diagnostic_needs_m0": [
+        {
+          "need": "FRAGMENTATION_UNRESOLVED",
+          "priority": 3
+        },
+        {
+          "need": "CONTAMINATION_UNRESOLVED",
+          "priority": 1
+        }
+      ],
+      "m0_hash": "7502fd753edc1a47c54d061b398c6b491a62f64d8429f4c3829d109ccef2d5e0",
+      "m_final_hash": "743e5c08c5830eec8fbba71d616b7a61dbdd9ae613935985c25ed4717cbb71fc",
+      "measurements_changed_before_validation": true,
+      "validator_consumed_measurement_hash": "743e5c08c5830eec8fbba71d616b7a61dbdd9ae613935985c25ed4717cbb71fc",
+      "validator_consumed_m0": false,
+      "validator_consumed_final_state": true,
+      "model_call_count": 2,
+      "planner_call_count": 1,
+      "critic_call_count": 1,
+      "repair_count": 0,
+      "agent_failure": null,
+      "final_validator_ran": true,
+      "call_graph": [
+        "run_skeptic_agentic_v3",
+        "collect_assembly_target_measurements",
+        "run_gene_search",
+        "build_locus_evidence",
+        "collect_family_evidence",
+        "measurements_to_evidence",
+        "OllamaJSONClient.ask_json:AgentDecision",
+        "execute_registered_action:inspect_contig_edges_for_target",
+        "OllamaJSONClient.ask_json:CriticReview",
+        "build_target_gene_claim"
+      ],
+      "silent_deterministic_fallback": false,
+      "llm_measurement_entered_claim": false,
+      "unregistered_actions": [],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.481,
+      "architecture": "divergent_full_length",
+      "homology_support": 0.58,
+      "orthology_class": "profile_hmm_family_match",
+      "statement": "Target gene 'lacZ_beta_galactosidase' is detected in the current assembly."
+    },
+    {
+      "assembly_accession": "GCF_059683705.1",
+      "target": "tuf_EF_Tu",
+      "system": "genome_skeptic_agentic_v3",
+      "ok": true,
+      "runtime_seconds": 186.971,
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+      "external_labels_opened": false,
+      "planner_invoked": true,
+      "planner_decision": "continue",
+      "planner_action": "search_target_domains_hmmer",
+      "planner_control_decision": null,
+      "planner_grounding_status": "GROUNDED",
+      "planner_control_failure": null,
+      "critic_invoked": true,
+      "critic_verdict": "challenge",
+      "critic_action": "inspect_hit_contig_contamination",
+      "actions_executed": [
+        "search_target_domains_hmmer",
+        "inspect_hit_contig_contamination"
+      ],
+      "action_result_status": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "status": "NO_NEW_INFORMATION",
+          "requested_by": null
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        }
+      ],
+      "ranked_candidate_actions": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "FAMILY_IDENTITY_UNRESOLVED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "tests": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "updates": [
+            "contig_gc",
+            "genome_gc"
+          ],
+          "relative_cost": 1,
+          "priority_score": 124
+        },
+        {
+          "action_id": "search_target_proteins_diamond",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        }
+      ],
+      "diagnostic_needs_m0": [
+        {
+          "need": "COPY_NUMBER_UNRESOLVED",
+          "priority": 5
+        },
+        {
+          "need": "CONTAMINATION_UNRESOLVED",
+          "priority": 1
+        }
+      ],
+      "m0_hash": "33fb26b8be00d37561f6f785004a365f7b3ac2dbd62d19c00b34ac2c43f5ef8c",
+      "m_final_hash": "dbae853f551a46017b870a36eb0b36e2899a5b763aa8190fd33b6dd5c368fd16",
+      "measurements_changed_before_validation": true,
+      "validator_consumed_measurement_hash": "dbae853f551a46017b870a36eb0b36e2899a5b763aa8190fd33b6dd5c368fd16",
+      "validator_consumed_m0": false,
+      "validator_consumed_final_state": true,
+      "model_call_count": 2,
+      "planner_call_count": 1,
+      "critic_call_count": 1,
+      "repair_count": 0,
+      "agent_failure": null,
+      "final_validator_ran": true,
+      "call_graph": [
+        "run_skeptic_agentic_v3",
+        "collect_assembly_target_measurements",
+        "run_gene_search",
+        "build_locus_evidence",
+        "collect_family_evidence",
+        "measurements_to_evidence",
+        "OllamaJSONClient.ask_json:AgentDecision",
+        "execute_registered_action:search_target_domains_hmmer",
+        "OllamaJSONClient.ask_json:CriticReview",
+        "execute_registered_action:inspect_hit_contig_contamination",
+        "build_target_gene_claim"
+      ],
+      "silent_deterministic_fallback": false,
+      "llm_measurement_entered_claim": false,
+      "unregistered_actions": [],
+      "final_result": "target_gene_not_detected",
+      "claim_class": "weakened",
+      "confidence": 0.4633,
+      "architecture": "divergent_full_length",
+      "homology_support": 0.0199,
+      "orthology_class": "divergent_full_length",
+      "statement": "Target gene 'tuf_EF_Tu' was not detected in the current assembly."
+    },
+    {
+      "assembly_accession": "GCF_048585425.2",
+      "target": "lacZ_beta_galactosidase",
+      "system": "genome_skeptic_agentic_v3",
+      "ok": true,
+      "runtime_seconds": 180.752,
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+      "external_labels_opened": false,
+      "planner_invoked": true,
+      "planner_decision": "continue",
+      "planner_action": "search_target_domains_hmmer",
+      "planner_control_decision": null,
+      "planner_grounding_status": "MISSING",
+      "planner_control_failure": null,
+      "critic_invoked": true,
+      "critic_verdict": "accept",
+      "critic_action": null,
+      "actions_executed": [
+        "search_target_domains_hmmer"
+      ],
+      "action_result_status": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        }
+      ],
+      "ranked_candidate_actions": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "FAMILY_IDENTITY_UNRESOLVED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        },
+        {
+          "action_id": "inspect_contig_edges_for_target",
+          "tests": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "updates": [
+            "hit_edge_flags"
+          ],
+          "relative_cost": 1,
+          "priority_score": 164
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "tests": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "updates": [
+            "contig_gc",
+            "genome_gc"
+          ],
+          "relative_cost": 1,
+          "priority_score": 124
+        }
+      ],
+      "diagnostic_needs_m0": [
+        {
+          "need": "COPY_NUMBER_UNRESOLVED",
+          "priority": 5
+        },
+        {
+          "need": "FRAGMENTATION_UNRESOLVED",
+          "priority": 3
+        },
+        {
+          "need": "CONTAMINATION_UNRESOLVED",
+          "priority": 1
+        }
+      ],
+      "m0_hash": "b6457be72ffd8bdfcba9c2a42f69c050f31fdbe6b0b407ae7af4b2613abd333d",
+      "m_final_hash": "9e10614acf9a913229fbe91d57a0f2c3008c5aef3c146d8ab9d23718347a6965",
+      "measurements_changed_before_validation": true,
+      "validator_consumed_measurement_hash": "9e10614acf9a913229fbe91d57a0f2c3008c5aef3c146d8ab9d23718347a6965",
+      "validator_consumed_m0": false,
+      "validator_consumed_final_state": true,
+      "model_call_count": 2,
+      "planner_call_count": 1,
+      "critic_call_count": 1,
+      "repair_count": 0,
+      "agent_failure": null,
+      "final_validator_ran": true,
+      "call_graph": [
+        "run_skeptic_agentic_v3",
+        "collect_assembly_target_measurements",
+        "run_gene_search",
+        "build_locus_evidence",
+        "collect_family_evidence",
+        "measurements_to_evidence",
+        "OllamaJSONClient.ask_json:AgentDecision",
+        "execute_registered_action:search_target_domains_hmmer",
+        "OllamaJSONClient.ask_json:CriticReview",
+        "build_target_gene_claim"
+      ],
+      "silent_deterministic_fallback": false,
+      "llm_measurement_entered_claim": false,
+      "unregistered_actions": [],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "architecture": "divergent_full_length",
+      "homology_support": 0.62,
+      "orthology_class": "multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'lacZ_beta_galactosidase' is detected in the current assembly."
+    },
+    {
+      "assembly_accession": "GCF_046562475.1",
+      "target": "lacZ_beta_galactosidase",
+      "system": "genome_skeptic_agentic_v3",
+      "ok": true,
+      "runtime_seconds": 148.847,
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+      "external_labels_opened": false,
+      "planner_invoked": true,
+      "planner_decision": "continue",
+      "planner_action": "inspect_contig_edges_for_target",
+      "planner_control_decision": null,
+      "planner_grounding_status": "MISSING",
+      "planner_control_failure": null,
+      "critic_invoked": true,
+      "critic_verdict": "accept",
+      "critic_action": null,
+      "actions_executed": [
+        "inspect_contig_edges_for_target"
+      ],
+      "action_result_status": [
+        {
+          "action_id": "inspect_contig_edges_for_target",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        }
+      ],
+      "ranked_candidate_actions": [
+        {
+          "action_id": "inspect_contig_edges_for_target",
+          "tests": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "updates": [
+            "hit_edge_flags"
+          ],
+          "relative_cost": 1,
+          "priority_score": 164
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "tests": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "updates": [
+            "contig_gc",
+            "genome_gc"
+          ],
+          "relative_cost": 1,
+          "priority_score": 124
+        }
+      ],
+      "diagnostic_needs_m0": [
+        {
+          "need": "FRAGMENTATION_UNRESOLVED",
+          "priority": 3
+        },
+        {
+          "need": "CONTAMINATION_UNRESOLVED",
+          "priority": 1
+        }
+      ],
+      "m0_hash": "5aa35c86216ac27e56474fd1289b1bcbf5aa555f6edddb7bb58829e7974026d8",
+      "m_final_hash": "59f68097ff3488907340a7d641fe12447ae9997f3dfcb6fb3e674b14c1d12adc",
+      "measurements_changed_before_validation": true,
+      "validator_consumed_measurement_hash": "59f68097ff3488907340a7d641fe12447ae9997f3dfcb6fb3e674b14c1d12adc",
+      "validator_consumed_m0": false,
+      "validator_consumed_final_state": true,
+      "model_call_count": 2,
+      "planner_call_count": 1,
+      "critic_call_count": 1,
+      "repair_count": 0,
+      "agent_failure": null,
+      "final_validator_ran": true,
+      "call_graph": [
+        "run_skeptic_agentic_v3",
+        "collect_assembly_target_measurements",
+        "run_gene_search",
+        "build_locus_evidence",
+        "collect_family_evidence",
+        "measurements_to_evidence",
+        "OllamaJSONClient.ask_json:AgentDecision",
+        "execute_registered_action:inspect_contig_edges_for_target",
+        "OllamaJSONClient.ask_json:CriticReview",
+        "build_target_gene_claim"
+      ],
+      "silent_deterministic_fallback": false,
+      "llm_measurement_entered_claim": false,
+      "unregistered_actions": [],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.5143,
+      "architecture": "divergent_full_length",
+      "homology_support": 0.58,
+      "orthology_class": "multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'lacZ_beta_galactosidase' is detected in the current assembly."
+    },
+    {
+      "assembly_accession": "GCF_052955985.1",
+      "target": "tuf_EF_Tu",
+      "system": "genome_skeptic_agentic_v3",
+      "ok": true,
+      "runtime_seconds": 187.604,
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+      "external_labels_opened": false,
+      "planner_invoked": true,
+      "planner_decision": "continue",
+      "planner_action": "search_target_domains_hmmer",
+      "planner_control_decision": null,
+      "planner_grounding_status": "MISSING",
+      "planner_control_failure": null,
+      "critic_invoked": true,
+      "critic_verdict": "challenge",
+      "critic_action": "inspect_hit_contig_contamination",
+      "actions_executed": [
+        "search_target_domains_hmmer",
+        "inspect_hit_contig_contamination"
+      ],
+      "action_result_status": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "status": "NO_NEW_INFORMATION",
+          "requested_by": null
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        }
+      ],
+      "ranked_candidate_actions": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "FAMILY_IDENTITY_UNRESOLVED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "tests": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "updates": [
+            "contig_gc",
+            "genome_gc"
+          ],
+          "relative_cost": 1,
+          "priority_score": 124
+        },
+        {
+          "action_id": "search_target_proteins_diamond",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        }
+      ],
+      "diagnostic_needs_m0": [
+        {
+          "need": "COPY_NUMBER_UNRESOLVED",
+          "priority": 5
+        },
+        {
+          "need": "CONTAMINATION_UNRESOLVED",
+          "priority": 1
+        }
+      ],
+      "m0_hash": "45981acec92a5248c1004565925fc714e7bd5e234597568d0f1e393c0c84846b",
+      "m_final_hash": "56e4f5e922eef3f8386ef73c0cdbb03f9ece3bad1a00a8658656d61b1287528d",
+      "measurements_changed_before_validation": true,
+      "validator_consumed_measurement_hash": "56e4f5e922eef3f8386ef73c0cdbb03f9ece3bad1a00a8658656d61b1287528d",
+      "validator_consumed_m0": false,
+      "validator_consumed_final_state": true,
+      "model_call_count": 2,
+      "planner_call_count": 1,
+      "critic_call_count": 1,
+      "repair_count": 0,
+      "agent_failure": null,
+      "final_validator_ran": true,
+      "call_graph": [
+        "run_skeptic_agentic_v3",
+        "collect_assembly_target_measurements",
+        "run_gene_search",
+        "build_locus_evidence",
+        "collect_family_evidence",
+        "measurements_to_evidence",
+        "OllamaJSONClient.ask_json:AgentDecision",
+        "execute_registered_action:search_target_domains_hmmer",
+        "OllamaJSONClient.ask_json:CriticReview",
+        "execute_registered_action:inspect_hit_contig_contamination",
+        "build_target_gene_claim"
+      ],
+      "silent_deterministic_fallback": false,
+      "llm_measurement_entered_claim": false,
+      "unregistered_actions": [],
+      "final_result": "target_gene_not_detected",
+      "claim_class": "weakened",
+      "confidence": 0.4858,
+      "architecture": "divergent_full_length",
+      "homology_support": 0.0217,
+      "orthology_class": "divergent_full_length",
+      "statement": "Target gene 'tuf_EF_Tu' was not detected in the current assembly."
+    },
+    {
+      "assembly_accession": "GCF_050871785.1",
+      "target": "rpoB_RNAP_beta",
+      "system": "genome_skeptic_agentic_v3",
+      "ok": true,
+      "runtime_seconds": 203.277,
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+      "external_labels_opened": false,
+      "planner_invoked": true,
+      "planner_decision": "continue",
+      "planner_action": "search_target_domains_hmmer",
+      "planner_control_decision": null,
+      "planner_grounding_status": "MISSING",
+      "planner_control_failure": null,
+      "critic_invoked": true,
+      "critic_verdict": "accept",
+      "critic_action": null,
+      "actions_executed": [
+        "search_target_domains_hmmer"
+      ],
+      "action_result_status": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        }
+      ],
+      "ranked_candidate_actions": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "FAMILY_IDENTITY_UNRESOLVED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        },
+        {
+          "action_id": "inspect_contig_edges_for_target",
+          "tests": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "FRAGMENTATION_UNRESOLVED"
+          ],
+          "updates": [
+            "hit_edge_flags"
+          ],
+          "relative_cost": 1,
+          "priority_score": 164
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "tests": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "updates": [
+            "contig_gc",
+            "genome_gc"
+          ],
+          "relative_cost": 1,
+          "priority_score": 124
+        }
+      ],
+      "diagnostic_needs_m0": [
+        {
+          "need": "COPY_NUMBER_UNRESOLVED",
+          "priority": 5
+        },
+        {
+          "need": "FRAGMENTATION_UNRESOLVED",
+          "priority": 3
+        },
+        {
+          "need": "CONTAMINATION_UNRESOLVED",
+          "priority": 1
+        }
+      ],
+      "m0_hash": "f90d566715c6345e7b77ac4203a8a87b1b04fe34b58b245d80031505c552b458",
+      "m_final_hash": "ed1444e8f4cb503fd4db950511158c43c4355b47e78f98f303482539c9554c4d",
+      "measurements_changed_before_validation": true,
+      "validator_consumed_measurement_hash": "ed1444e8f4cb503fd4db950511158c43c4355b47e78f98f303482539c9554c4d",
+      "validator_consumed_m0": false,
+      "validator_consumed_final_state": true,
+      "model_call_count": 2,
+      "planner_call_count": 1,
+      "critic_call_count": 1,
+      "repair_count": 0,
+      "agent_failure": null,
+      "final_validator_ran": true,
+      "call_graph": [
+        "run_skeptic_agentic_v3",
+        "collect_assembly_target_measurements",
+        "run_gene_search",
+        "build_locus_evidence",
+        "collect_family_evidence",
+        "measurements_to_evidence",
+        "OllamaJSONClient.ask_json:AgentDecision",
+        "execute_registered_action:search_target_domains_hmmer",
+        "OllamaJSONClient.ask_json:CriticReview",
+        "build_target_gene_claim"
+      ],
+      "silent_deterministic_fallback": false,
+      "llm_measurement_entered_claim": false,
+      "unregistered_actions": [],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "architecture": "divergent_full_length",
+      "homology_support": 0.62,
+      "orthology_class": "exact_strong_homolog,multi_reference_protein_homolog,profile_hmm_family_match",
+      "statement": "Target gene 'rpoB_RNAP_beta' is detected in the current assembly."
+    },
+    {
+      "assembly_accession": "GCF_054055795.1",
+      "target": "tetA_tetracycline_efflux",
+      "system": "genome_skeptic_agentic_v3",
+      "ok": true,
+      "runtime_seconds": 277.373,
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+      "external_labels_opened": false,
+      "planner_invoked": true,
+      "planner_decision": "continue",
+      "planner_action": "search_target_domains_hmmer",
+      "planner_control_decision": null,
+      "planner_grounding_status": "MISSING",
+      "planner_control_failure": null,
+      "critic_invoked": true,
+      "critic_verdict": "challenge",
+      "critic_action": "inspect_hit_contig_contamination",
+      "actions_executed": [
+        "search_target_domains_hmmer",
+        "inspect_hit_contig_contamination"
+      ],
+      "action_result_status": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        }
+      ],
+      "ranked_candidate_actions": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "FAMILY_IDENTITY_UNRESOLVED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "tests": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "updates": [
+            "contig_gc",
+            "genome_gc"
+          ],
+          "relative_cost": 1,
+          "priority_score": 124
+        },
+        {
+          "action_id": "search_target_proteins_diamond",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        }
+      ],
+      "diagnostic_needs_m0": [
+        {
+          "need": "COPY_NUMBER_UNRESOLVED",
+          "priority": 5
+        },
+        {
+          "need": "CONTAMINATION_UNRESOLVED",
+          "priority": 1
+        }
+      ],
+      "m0_hash": "45d8e0af5a9f565696d8408223393eef7d5c7fbe76b02ad297b8ea66a7b5b5de",
+      "m_final_hash": "7d7a76f95720abc4e511192b9c94ef6df4ddee3a40f408f0faa723c91c151ce4",
+      "measurements_changed_before_validation": true,
+      "validator_consumed_measurement_hash": "7d7a76f95720abc4e511192b9c94ef6df4ddee3a40f408f0faa723c91c151ce4",
+      "validator_consumed_m0": false,
+      "validator_consumed_final_state": true,
+      "model_call_count": 2,
+      "planner_call_count": 1,
+      "critic_call_count": 1,
+      "repair_count": 0,
+      "agent_failure": null,
+      "final_validator_ran": true,
+      "call_graph": [
+        "run_skeptic_agentic_v3",
+        "collect_assembly_target_measurements",
+        "run_gene_search",
+        "build_locus_evidence",
+        "collect_family_evidence",
+        "measurements_to_evidence",
+        "OllamaJSONClient.ask_json:AgentDecision",
+        "execute_registered_action:search_target_domains_hmmer",
+        "OllamaJSONClient.ask_json:CriticReview",
+        "execute_registered_action:inspect_hit_contig_contamination",
+        "build_target_gene_claim"
+      ],
+      "silent_deterministic_fallback": false,
+      "llm_measurement_entered_claim": false,
+      "unregistered_actions": [],
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.4091,
+      "architecture": "close_paralogue",
+      "homology_support": 0.3102,
+      "orthology_class": "close_paralogue",
+      "statement": "Target gene 'tetA_tetracycline_efflux' is detected in the current assembly."
+    },
+    {
+      "assembly_accession": "GCF_049340285.1",
+      "target": "tuf_EF_Tu",
+      "system": "genome_skeptic_agentic_v3",
+      "ok": true,
+      "runtime_seconds": 185.089,
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+      "external_labels_opened": false,
+      "planner_invoked": true,
+      "planner_decision": "continue",
+      "planner_action": "search_target_domains_hmmer",
+      "planner_control_decision": null,
+      "planner_grounding_status": "MISSING",
+      "planner_control_failure": null,
+      "critic_invoked": true,
+      "critic_verdict": "challenge",
+      "critic_action": "inspect_hit_contig_contamination",
+      "actions_executed": [
+        "search_target_domains_hmmer",
+        "inspect_hit_contig_contamination"
+      ],
+      "action_result_status": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "status": "NO_NEW_INFORMATION",
+          "requested_by": null
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "status": "INFORMATIVE",
+          "requested_by": null
+        }
+      ],
+      "ranked_candidate_actions": [
+        {
+          "action_id": "search_target_domains_hmmer",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "FAMILY_IDENTITY_UNRESOLVED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        },
+        {
+          "action_id": "inspect_hit_contig_contamination",
+          "tests": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "CONTAMINATION_UNRESOLVED"
+          ],
+          "updates": [
+            "contig_gc",
+            "genome_gc"
+          ],
+          "relative_cost": 1,
+          "priority_score": 124
+        },
+        {
+          "action_id": "search_target_proteins_diamond",
+          "tests": [
+            "REMOTE_HOMOLOG_NOT_EXCLUDED",
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "matched_needs": [
+            "COPY_NUMBER_UNRESOLVED"
+          ],
+          "updates": [
+            "hits",
+            "tools_run"
+          ],
+          "relative_cost": 2,
+          "priority_score": 153
+        }
+      ],
+      "diagnostic_needs_m0": [
+        {
+          "need": "COPY_NUMBER_UNRESOLVED",
+          "priority": 5
+        },
+        {
+          "need": "CONTAMINATION_UNRESOLVED",
+          "priority": 1
+        }
+      ],
+      "m0_hash": "a08f2309553ebec56c24084a191913e0d7b28c54a455104ac1469fb1908fc70a",
+      "m_final_hash": "e4137c41217503007a8b753d8ea2a0cf97deddf6bbe057f3311ff79276130862",
+      "measurements_changed_before_validation": true,
+      "validator_consumed_measurement_hash": "e4137c41217503007a8b753d8ea2a0cf97deddf6bbe057f3311ff79276130862",
+      "validator_consumed_m0": false,
+      "validator_consumed_final_state": true,
+      "model_call_count": 2,
+      "planner_call_count": 1,
+      "critic_call_count": 1,
+      "repair_count": 0,
+      "agent_failure": null,
+      "final_validator_ran": true,
+      "call_graph": [
+        "run_skeptic_agentic_v3",
+        "collect_assembly_target_measurements",
+        "run_gene_search",
+        "build_locus_evidence",
+        "collect_family_evidence",
+        "measurements_to_evidence",
+        "OllamaJSONClient.ask_json:AgentDecision",
+        "execute_registered_action:search_target_domains_hmmer",
+        "OllamaJSONClient.ask_json:CriticReview",
+        "execute_registered_action:inspect_hit_contig_contamination",
+        "build_target_gene_claim"
+      ],
+      "silent_deterministic_fallback": false,
+      "llm_measurement_entered_claim": false,
+      "unregistered_actions": [],
+      "final_result": "target_gene_not_detected",
+      "claim_class": "weakened",
+      "confidence": 0.4793,
+      "architecture": "divergent_full_length",
+      "homology_support": 0.0253,
+      "orthology_class": "divergent_full_length",
+      "statement": "Target gene 'tuf_EF_Tu' was not detected in the current assembly."
+    }
+  ]
+}

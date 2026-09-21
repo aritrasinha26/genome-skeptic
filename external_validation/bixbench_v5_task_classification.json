@@ -1,0 +1,3086 @@
+{
+  "kind": "bixbench_v5_task_classification",
+  "created_utc": "2026-09-18T22:07:57.414805+00:00",
+  "answers_inspected": false,
+  "n_tasks": 205,
+  "n_supported": 0,
+  "n_partially_supported": 39,
+  "n_unsupported": 166,
+  "tasks": [
+    {
+      "question_id": "bix-1-q1",
+      "capsule_uuid": "33b801bb-9b47-4a0a-9314-05325c82fde7",
+      "short_id": "bix-1",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics,Network Biology"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-33b801bb-9b47-4a0a-9314-05325c82fde7.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-1-q2",
+      "capsule_uuid": "33b801bb-9b47-4a0a-9314-05325c82fde7",
+      "short_id": "bix-1",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics,Network Biology"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-33b801bb-9b47-4a0a-9314-05325c82fde7.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-10-q1",
+      "capsule_uuid": "fbe0e950-76f2-4eb7-a216-a2d377970922",
+      "short_id": "bix-10",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-10-q2",
+      "capsule_uuid": "fbe0e950-76f2-4eb7-a216-a2d377970922",
+      "short_id": "bix-10",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-10-q3",
+      "capsule_uuid": "fbe0e950-76f2-4eb7-a216-a2d377970922",
+      "short_id": "bix-10",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-10-q4",
+      "capsule_uuid": "fbe0e950-76f2-4eb7-a216-a2d377970922",
+      "short_id": "bix-10",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-10-q5",
+      "capsule_uuid": "fbe0e950-76f2-4eb7-a216-a2d377970922",
+      "short_id": "bix-10",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-10-q6",
+      "capsule_uuid": "fbe0e950-76f2-4eb7-a216-a2d377970922",
+      "short_id": "bix-10",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-10-q7",
+      "capsule_uuid": "fbe0e950-76f2-4eb7-a216-a2d377970922",
+      "short_id": "bix-10",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-fbe0e950-76f2-4eb7-a216-a2d377970922.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-11-q1",
+      "capsule_uuid": "cd811ead-7887-4369-b175-05aff4223765",
+      "short_id": "bix-11",
+      "categories": [
+        "['Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-cd811ead-7887-4369-b175-05aff4223765.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-11-q2",
+      "capsule_uuid": "cd811ead-7887-4369-b175-05aff4223765",
+      "short_id": "bix-11",
+      "categories": [
+        "['Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-cd811ead-7887-4369-b175-05aff4223765.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-11-q3",
+      "capsule_uuid": "cd811ead-7887-4369-b175-05aff4223765",
+      "short_id": "bix-11",
+      "categories": [
+        "['Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-cd811ead-7887-4369-b175-05aff4223765.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-11-q4",
+      "capsule_uuid": "cd811ead-7887-4369-b175-05aff4223765",
+      "short_id": "bix-11",
+      "categories": [
+        "['Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-cd811ead-7887-4369-b175-05aff4223765.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-11-q5",
+      "capsule_uuid": "cd811ead-7887-4369-b175-05aff4223765",
+      "short_id": "bix-11",
+      "categories": [
+        "['Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-cd811ead-7887-4369-b175-05aff4223765.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-11-q6",
+      "capsule_uuid": "cd811ead-7887-4369-b175-05aff4223765",
+      "short_id": "bix-11",
+      "categories": [
+        "['Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-cd811ead-7887-4369-b175-05aff4223765.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-12-q2",
+      "capsule_uuid": "d38392ec-84b8-485d-ab02-b8788e6f1f43",
+      "short_id": "bix-12",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-d38392ec-84b8-485d-ab02-b8788e6f1f43.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-12-q3",
+      "capsule_uuid": "d38392ec-84b8-485d-ab02-b8788e6f1f43",
+      "short_id": "bix-12",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-d38392ec-84b8-485d-ab02-b8788e6f1f43.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-12-q4",
+      "capsule_uuid": "d38392ec-84b8-485d-ab02-b8788e6f1f43",
+      "short_id": "bix-12",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-d38392ec-84b8-485d-ab02-b8788e6f1f43.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-12-q5",
+      "capsule_uuid": "d38392ec-84b8-485d-ab02-b8788e6f1f43",
+      "short_id": "bix-12",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-d38392ec-84b8-485d-ab02-b8788e6f1f43.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-12-q6",
+      "capsule_uuid": "d38392ec-84b8-485d-ab02-b8788e6f1f43",
+      "short_id": "bix-12",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-d38392ec-84b8-485d-ab02-b8788e6f1f43.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-13-q1",
+      "capsule_uuid": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c",
+      "short_id": "bix-13",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-1d54e4a7-8b0f-4224-bd31-efcfded0d46c.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-13-q2",
+      "capsule_uuid": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c",
+      "short_id": "bix-13",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-1d54e4a7-8b0f-4224-bd31-efcfded0d46c.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-13-q3",
+      "capsule_uuid": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c",
+      "short_id": "bix-13",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-1d54e4a7-8b0f-4224-bd31-efcfded0d46c.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-13-q4",
+      "capsule_uuid": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c",
+      "short_id": "bix-13",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-1d54e4a7-8b0f-4224-bd31-efcfded0d46c.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-13-q5",
+      "capsule_uuid": "1d54e4a7-8b0f-4224-bd31-efcfded0d46c",
+      "short_id": "bix-13",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-1d54e4a7-8b0f-4224-bd31-efcfded0d46c.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-14-q1",
+      "capsule_uuid": "7718a922-ce2c-4e59-900b-84fe06050ce6",
+      "short_id": "bix-14",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-7718a922-ce2c-4e59-900b-84fe06050ce6.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-14-q2",
+      "capsule_uuid": "7718a922-ce2c-4e59-900b-84fe06050ce6",
+      "short_id": "bix-14",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-7718a922-ce2c-4e59-900b-84fe06050ce6.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-14-q3",
+      "capsule_uuid": "7718a922-ce2c-4e59-900b-84fe06050ce6",
+      "short_id": "bix-14",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-7718a922-ce2c-4e59-900b-84fe06050ce6.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-16-q1",
+      "capsule_uuid": "bda54b38-9b49-4009-aad6-d5f52675438a",
+      "short_id": "bix-16",
+      "categories": [
+        "Transcriptomics,Functional Genomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-bda54b38-9b49-4009-aad6-d5f52675438a.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-16-q2",
+      "capsule_uuid": "bda54b38-9b49-4009-aad6-d5f52675438a",
+      "short_id": "bix-16",
+      "categories": [
+        "Transcriptomics,Functional Genomics"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-bda54b38-9b49-4009-aad6-d5f52675438a.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-16-q3",
+      "capsule_uuid": "bda54b38-9b49-4009-aad6-d5f52675438a",
+      "short_id": "bix-16",
+      "categories": [
+        "Transcriptomics,Functional Genomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-bda54b38-9b49-4009-aad6-d5f52675438a.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-16-q4",
+      "capsule_uuid": "bda54b38-9b49-4009-aad6-d5f52675438a",
+      "short_id": "bix-16",
+      "categories": [
+        "Transcriptomics,Functional Genomics"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-bda54b38-9b49-4009-aad6-d5f52675438a.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-17-q2",
+      "capsule_uuid": "1cf79c8c-fb8c-453c-8788-c8958ab6f152",
+      "short_id": "bix-17",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-1cf79c8c-fb8c-453c-8788-c8958ab6f152.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-18-q1",
+      "capsule_uuid": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8",
+      "short_id": "bix-18",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-d59734d2-a3e0-462a-a5fd-c8ddc11392b8.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-18-q2",
+      "capsule_uuid": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8",
+      "short_id": "bix-18",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-d59734d2-a3e0-462a-a5fd-c8ddc11392b8.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-18-q3",
+      "capsule_uuid": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8",
+      "short_id": "bix-18",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-d59734d2-a3e0-462a-a5fd-c8ddc11392b8.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-18-q4",
+      "capsule_uuid": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8",
+      "short_id": "bix-18",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-d59734d2-a3e0-462a-a5fd-c8ddc11392b8.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-18-q5",
+      "capsule_uuid": "d59734d2-a3e0-462a-a5fd-c8ddc11392b8",
+      "short_id": "bix-18",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-d59734d2-a3e0-462a-a5fd-c8ddc11392b8.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-19-q1",
+      "capsule_uuid": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1",
+      "short_id": "bix-19",
+      "categories": [
+        "Imaging,Other"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-19-q2",
+      "capsule_uuid": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1",
+      "short_id": "bix-19",
+      "categories": [
+        "Imaging,Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-19-q3",
+      "capsule_uuid": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1",
+      "short_id": "bix-19",
+      "categories": [
+        "Imaging,Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-19-q4",
+      "capsule_uuid": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1",
+      "short_id": "bix-19",
+      "categories": [
+        "Imaging,Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-19-q5",
+      "capsule_uuid": "8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1",
+      "short_id": "bix-19",
+      "categories": [
+        "Imaging,Other"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-8c64b1fa-fdcc-41e2-be8d-2f0c8d5faaa1.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-2-q1",
+      "capsule_uuid": "30b33e47-92d8-4372-a9f6-da32896493d0",
+      "short_id": "bix-2",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-30b33e47-92d8-4372-a9f6-da32896493d0.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-2-q2",
+      "capsule_uuid": "30b33e47-92d8-4372-a9f6-da32896493d0",
+      "short_id": "bix-2",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-30b33e47-92d8-4372-a9f6-da32896493d0.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-20-q1",
+      "capsule_uuid": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799",
+      "short_id": "bix-20",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-2ccdbe37-0a92-47b5-9bab-fa8a8c470799.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-20-q2",
+      "capsule_uuid": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799",
+      "short_id": "bix-20",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-2ccdbe37-0a92-47b5-9bab-fa8a8c470799.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-20-q3",
+      "capsule_uuid": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799",
+      "short_id": "bix-20",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-2ccdbe37-0a92-47b5-9bab-fa8a8c470799.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-20-q4",
+      "capsule_uuid": "2ccdbe37-0a92-47b5-9bab-fa8a8c470799",
+      "short_id": "bix-20",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-2ccdbe37-0a92-47b5-9bab-fa8a8c470799.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-21-q2",
+      "capsule_uuid": "e3bde22d-915c-409b-8646-039e0215b171",
+      "short_id": "bix-21",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-e3bde22d-915c-409b-8646-039e0215b171.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-22-q1",
+      "capsule_uuid": "34a4ea96-c800-4c11-959e-57cdc4932c52",
+      "short_id": "bix-22",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-34a4ea96-c800-4c11-959e-57cdc4932c52.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-22-q2",
+      "capsule_uuid": "34a4ea96-c800-4c11-959e-57cdc4932c52",
+      "short_id": "bix-22",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Transcriptomics"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-34a4ea96-c800-4c11-959e-57cdc4932c52.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-22-q3",
+      "capsule_uuid": "34a4ea96-c800-4c11-959e-57cdc4932c52",
+      "short_id": "bix-22",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Transcriptomics"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-34a4ea96-c800-4c11-959e-57cdc4932c52.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-22-q4",
+      "capsule_uuid": "34a4ea96-c800-4c11-959e-57cdc4932c52",
+      "short_id": "bix-22",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Transcriptomics"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-34a4ea96-c800-4c11-959e-57cdc4932c52.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-22-q6",
+      "capsule_uuid": "34a4ea96-c800-4c11-959e-57cdc4932c52",
+      "short_id": "bix-22",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Transcriptomics"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-34a4ea96-c800-4c11-959e-57cdc4932c52.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-24-q1",
+      "capsule_uuid": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5",
+      "short_id": "bix-24",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics,Sequence Analysis"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-b1b0ef00-cb15-4375-9aac-e1e53a7250c5.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-24-q2",
+      "capsule_uuid": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5",
+      "short_id": "bix-24",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics,Sequence Analysis"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-b1b0ef00-cb15-4375-9aac-e1e53a7250c5.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-24-q6",
+      "capsule_uuid": "b1b0ef00-cb15-4375-9aac-e1e53a7250c5",
+      "short_id": "bix-24",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics,Sequence Analysis"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-b1b0ef00-cb15-4375-9aac-e1e53a7250c5.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-25-q1",
+      "capsule_uuid": "964b67db-88d8-4286-9995-10ccc6ba4c39",
+      "short_id": "bix-25",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-964b67db-88d8-4286-9995-10ccc6ba4c39.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-25-q4",
+      "capsule_uuid": "964b67db-88d8-4286-9995-10ccc6ba4c39",
+      "short_id": "bix-25",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-964b67db-88d8-4286-9995-10ccc6ba4c39.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-26-q3",
+      "capsule_uuid": "0923d260-fe1b-4fb4-4398-79edf546e584",
+      "short_id": "bix-26",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Transcriptomics,Differential Expression Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-0923d260-fe1b-4fb4-4398-79edf546e584.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-26-q4",
+      "capsule_uuid": "0923d260-fe1b-4fb4-4398-79edf546e584",
+      "short_id": "bix-26",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Transcriptomics,Differential Expression Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-0923d260-fe1b-4fb4-4398-79edf546e584.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-26-q5",
+      "capsule_uuid": "0923d260-fe1b-4fb4-4398-79edf546e584",
+      "short_id": "bix-26",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Transcriptomics,Differential Expression Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-0923d260-fe1b-4fb4-4398-79edf546e584.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-27-q2",
+      "capsule_uuid": "0f14ffa7-f02a-4d20-8142-dfc404195e56",
+      "short_id": "bix-27",
+      "categories": [
+        "RNA-seq,Transcriptomics,Machine Learning and Artificial Intelligence"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-0f14ffa7-f02a-4d20-8142-dfc404195e56.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-27-q4",
+      "capsule_uuid": "0f14ffa7-f02a-4d20-8142-dfc404195e56",
+      "short_id": "bix-27",
+      "categories": [
+        "RNA-seq,Transcriptomics,Machine Learning and Artificial Intelligence"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-0f14ffa7-f02a-4d20-8142-dfc404195e56.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-27-q5",
+      "capsule_uuid": "0f14ffa7-f02a-4d20-8142-dfc404195e56",
+      "short_id": "bix-27",
+      "categories": [
+        "RNA-seq,Transcriptomics,Machine Learning and Artificial Intelligence"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-0f14ffa7-f02a-4d20-8142-dfc404195e56.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-28-q1",
+      "capsule_uuid": "c66d3ed9-0a95-46be-a237-ed68498ea7f6",
+      "short_id": "bix-28",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-c66d3ed9-0a95-46be-a237-ed68498ea7f6.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-28-q2",
+      "capsule_uuid": "c66d3ed9-0a95-46be-a237-ed68498ea7f6",
+      "short_id": "bix-28",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-c66d3ed9-0a95-46be-a237-ed68498ea7f6.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-28-q3",
+      "capsule_uuid": "c66d3ed9-0a95-46be-a237-ed68498ea7f6",
+      "short_id": "bix-28",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-c66d3ed9-0a95-46be-a237-ed68498ea7f6.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-28-q4",
+      "capsule_uuid": "c66d3ed9-0a95-46be-a237-ed68498ea7f6",
+      "short_id": "bix-28",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-c66d3ed9-0a95-46be-a237-ed68498ea7f6.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-28-q5",
+      "capsule_uuid": "c66d3ed9-0a95-46be-a237-ed68498ea7f6",
+      "short_id": "bix-28",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-c66d3ed9-0a95-46be-a237-ed68498ea7f6.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-28-q6",
+      "capsule_uuid": "c66d3ed9-0a95-46be-a237-ed68498ea7f6",
+      "short_id": "bix-28",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-c66d3ed9-0a95-46be-a237-ed68498ea7f6.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-29-q1",
+      "capsule_uuid": "b8c485ff-d146-4162-9403-9593c8847cfe",
+      "short_id": "bix-29",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-b8c485ff-d146-4162-9403-9593c8847cfe.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-29-q2",
+      "capsule_uuid": "b8c485ff-d146-4162-9403-9593c8847cfe",
+      "short_id": "bix-29",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-b8c485ff-d146-4162-9403-9593c8847cfe.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-29-q3",
+      "capsule_uuid": "b8c485ff-d146-4162-9403-9593c8847cfe",
+      "short_id": "bix-29",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-b8c485ff-d146-4162-9403-9593c8847cfe.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-29-q4",
+      "capsule_uuid": "b8c485ff-d146-4162-9403-9593c8847cfe",
+      "short_id": "bix-29",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-b8c485ff-d146-4162-9403-9593c8847cfe.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-3-q1",
+      "capsule_uuid": "94bcdbc9-c729-4661-9bc1-0057bbea39c4",
+      "short_id": "bix-3",
+      "categories": [
+        "Differential Expression Analysis,Transcriptomics,RNA-seq"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-94bcdbc9-c729-4661-9bc1-0057bbea39c4.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-3-q2",
+      "capsule_uuid": "94bcdbc9-c729-4661-9bc1-0057bbea39c4",
+      "short_id": "bix-3",
+      "categories": [
+        "Differential Expression Analysis,Transcriptomics,RNA-seq"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-94bcdbc9-c729-4661-9bc1-0057bbea39c4.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-3-q3",
+      "capsule_uuid": "94bcdbc9-c729-4661-9bc1-0057bbea39c4",
+      "short_id": "bix-3",
+      "categories": [
+        "Differential Expression Analysis,Transcriptomics,RNA-seq"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-94bcdbc9-c729-4661-9bc1-0057bbea39c4.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-3-q4",
+      "capsule_uuid": "94bcdbc9-c729-4661-9bc1-0057bbea39c4",
+      "short_id": "bix-3",
+      "categories": [
+        "Differential Expression Analysis,Transcriptomics,RNA-seq"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-94bcdbc9-c729-4661-9bc1-0057bbea39c4.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-3-q5",
+      "capsule_uuid": "94bcdbc9-c729-4661-9bc1-0057bbea39c4",
+      "short_id": "bix-3",
+      "categories": [
+        "Differential Expression Analysis,Transcriptomics,RNA-seq"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-94bcdbc9-c729-4661-9bc1-0057bbea39c4.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-30-q1",
+      "capsule_uuid": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc",
+      "short_id": "bix-30",
+      "categories": [
+        "Transcriptomics,Differential Expression Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-30-q3",
+      "capsule_uuid": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc",
+      "short_id": "bix-30",
+      "categories": [
+        "Transcriptomics,Differential Expression Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-30-q5",
+      "capsule_uuid": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc",
+      "short_id": "bix-30",
+      "categories": [
+        "Transcriptomics,Differential Expression Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-30-q6",
+      "capsule_uuid": "3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc",
+      "short_id": "bix-30",
+      "categories": [
+        "Transcriptomics,Differential Expression Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-3d4eb7bb-4fbc-4300-b79a-3eba7a6221bc.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-31-q1",
+      "capsule_uuid": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27",
+      "short_id": "bix-31",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-b1dbace7-f6e9-42ec-81e1-bcc24161cc27.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-31-q2",
+      "capsule_uuid": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27",
+      "short_id": "bix-31",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-b1dbace7-f6e9-42ec-81e1-bcc24161cc27.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-31-q3",
+      "capsule_uuid": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27",
+      "short_id": "bix-31",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-b1dbace7-f6e9-42ec-81e1-bcc24161cc27.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-31-q4",
+      "capsule_uuid": "b1dbace7-f6e9-42ec-81e1-bcc24161cc27",
+      "short_id": "bix-31",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-b1dbace7-f6e9-42ec-81e1-bcc24161cc27.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-32-q2",
+      "capsule_uuid": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5",
+      "short_id": "bix-32",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Transcriptomics,Differential Expression Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-a94b7008-bb9a-4a46-ebfb-4afdfdd299d5.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-32-q3",
+      "capsule_uuid": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5",
+      "short_id": "bix-32",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Transcriptomics,Differential Expression Analysis"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-a94b7008-bb9a-4a46-ebfb-4afdfdd299d5.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-32-q4",
+      "capsule_uuid": "a94b7008-bb9a-4a46-ebfb-4afdfdd299d5",
+      "short_id": "bix-32",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Transcriptomics,Differential Expression Analysis"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-a94b7008-bb9a-4a46-ebfb-4afdfdd299d5.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-33-q1",
+      "capsule_uuid": "a5fba1a0-ad42-41da-a299-201655a5ffe8",
+      "short_id": "bix-33",
+      "categories": [
+        "Single-Cell Analysis, Differential Expression Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-a5fba1a0-ad42-41da-a299-201655a5ffe8.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-33-q6",
+      "capsule_uuid": "a5fba1a0-ad42-41da-a299-201655a5ffe8",
+      "short_id": "bix-33",
+      "categories": [
+        "Single-Cell Analysis, Differential Expression Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-a5fba1a0-ad42-41da-a299-201655a5ffe8.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-34-q1",
+      "capsule_uuid": "17baa727-5eb7-4544-a466-3148a48b3cde",
+      "short_id": "bix-34",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-17baa727-5eb7-4544-a466-3148a48b3cde.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-34-q2",
+      "capsule_uuid": "17baa727-5eb7-4544-a466-3148a48b3cde",
+      "short_id": "bix-34",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-17baa727-5eb7-4544-a466-3148a48b3cde.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-34-q3",
+      "capsule_uuid": "17baa727-5eb7-4544-a466-3148a48b3cde",
+      "short_id": "bix-34",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-17baa727-5eb7-4544-a466-3148a48b3cde.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-34-q4",
+      "capsule_uuid": "17baa727-5eb7-4544-a466-3148a48b3cde",
+      "short_id": "bix-34",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-17baa727-5eb7-4544-a466-3148a48b3cde.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-34-q5",
+      "capsule_uuid": "17baa727-5eb7-4544-a466-3148a48b3cde",
+      "short_id": "bix-34",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-17baa727-5eb7-4544-a466-3148a48b3cde.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-34-q6",
+      "capsule_uuid": "17baa727-5eb7-4544-a466-3148a48b3cde",
+      "short_id": "bix-34",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-17baa727-5eb7-4544-a466-3148a48b3cde.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-35-q1",
+      "capsule_uuid": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73",
+      "short_id": "bix-35",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-4cb6f8ce-4d81-40b2-8d9c-85868796ee73.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-35-q2",
+      "capsule_uuid": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73",
+      "short_id": "bix-35",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-4cb6f8ce-4d81-40b2-8d9c-85868796ee73.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-35-q3",
+      "capsule_uuid": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73",
+      "short_id": "bix-35",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-4cb6f8ce-4d81-40b2-8d9c-85868796ee73.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-35-q4",
+      "capsule_uuid": "4cb6f8ce-4d81-40b2-8d9c-85868796ee73",
+      "short_id": "bix-35",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-4cb6f8ce-4d81-40b2-8d9c-85868796ee73.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-36-q1",
+      "capsule_uuid": "48181cce-3928-4491-94b4-c23504a6aaa1",
+      "short_id": "bix-36",
+      "categories": [
+        "Sequence Analysis,Differential Expression Analysis,Transcriptomics,RNA-seq"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-48181cce-3928-4491-94b4-c23504a6aaa1.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-36-q3",
+      "capsule_uuid": "48181cce-3928-4491-94b4-c23504a6aaa1",
+      "short_id": "bix-36",
+      "categories": [
+        "Sequence Analysis,Differential Expression Analysis,Transcriptomics,RNA-seq"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-48181cce-3928-4491-94b4-c23504a6aaa1.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-36-q4",
+      "capsule_uuid": "48181cce-3928-4491-94b4-c23504a6aaa1",
+      "short_id": "bix-36",
+      "categories": [
+        "Sequence Analysis,Differential Expression Analysis,Transcriptomics,RNA-seq"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-48181cce-3928-4491-94b4-c23504a6aaa1.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-36-q5",
+      "capsule_uuid": "48181cce-3928-4491-94b4-c23504a6aaa1",
+      "short_id": "bix-36",
+      "categories": [
+        "Sequence Analysis,Differential Expression Analysis,Transcriptomics,RNA-seq"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-48181cce-3928-4491-94b4-c23504a6aaa1.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-37-q1",
+      "capsule_uuid": "40cbef03-b5c3-4448-b00f-0ba2965dea9b",
+      "short_id": "bix-37",
+      "categories": [
+        "Differential Expression Analysis,RNA-seq,Proteomics"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-40cbef03-b5c3-4448-b00f-0ba2965dea9b.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-37-q2",
+      "capsule_uuid": "40cbef03-b5c3-4448-b00f-0ba2965dea9b",
+      "short_id": "bix-37",
+      "categories": [
+        "Differential Expression Analysis,RNA-seq,Proteomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-40cbef03-b5c3-4448-b00f-0ba2965dea9b.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-37-q3",
+      "capsule_uuid": "40cbef03-b5c3-4448-b00f-0ba2965dea9b",
+      "short_id": "bix-37",
+      "categories": [
+        "Differential Expression Analysis,RNA-seq,Proteomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-40cbef03-b5c3-4448-b00f-0ba2965dea9b.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-37-q4",
+      "capsule_uuid": "40cbef03-b5c3-4448-b00f-0ba2965dea9b",
+      "short_id": "bix-37",
+      "categories": [
+        "Differential Expression Analysis,RNA-seq,Proteomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-40cbef03-b5c3-4448-b00f-0ba2965dea9b.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-38-q1",
+      "capsule_uuid": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0",
+      "short_id": "bix-38",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-975f3e91-53b0-44b1-ac9f-20023d9c8cd0.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-38-q2",
+      "capsule_uuid": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0",
+      "short_id": "bix-38",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-975f3e91-53b0-44b1-ac9f-20023d9c8cd0.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-38-q3",
+      "capsule_uuid": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0",
+      "short_id": "bix-38",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-975f3e91-53b0-44b1-ac9f-20023d9c8cd0.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-38-q5",
+      "capsule_uuid": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0",
+      "short_id": "bix-38",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-975f3e91-53b0-44b1-ac9f-20023d9c8cd0.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-38-q6",
+      "capsule_uuid": "975f3e91-53b0-44b1-ac9f-20023d9c8cd0",
+      "short_id": "bix-38",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-975f3e91-53b0-44b1-ac9f-20023d9c8cd0.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-39-q2",
+      "capsule_uuid": "28a5984e-9061-4d6f-99a1-40f8753bc9f4",
+      "short_id": "bix-39",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-28a5984e-9061-4d6f-99a1-40f8753bc9f4.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-4-q1",
+      "capsule_uuid": "ec9eb551-feee-48f6-8494-fd85e1521881",
+      "short_id": "bix-4",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-ec9eb551-feee-48f6-8494-fd85e1521881.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-4-q2",
+      "capsule_uuid": "ec9eb551-feee-48f6-8494-fd85e1521881",
+      "short_id": "bix-4",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-ec9eb551-feee-48f6-8494-fd85e1521881.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-4-q3",
+      "capsule_uuid": "ec9eb551-feee-48f6-8494-fd85e1521881",
+      "short_id": "bix-4",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-ec9eb551-feee-48f6-8494-fd85e1521881.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-4-q4",
+      "capsule_uuid": "ec9eb551-feee-48f6-8494-fd85e1521881",
+      "short_id": "bix-4",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-ec9eb551-feee-48f6-8494-fd85e1521881.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-4-q5",
+      "capsule_uuid": "ec9eb551-feee-48f6-8494-fd85e1521881",
+      "short_id": "bix-4",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-ec9eb551-feee-48f6-8494-fd85e1521881.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-4-q6",
+      "capsule_uuid": "ec9eb551-feee-48f6-8494-fd85e1521881",
+      "short_id": "bix-4",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-ec9eb551-feee-48f6-8494-fd85e1521881.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-4-q7",
+      "capsule_uuid": "ec9eb551-feee-48f6-8494-fd85e1521881",
+      "short_id": "bix-4",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-ec9eb551-feee-48f6-8494-fd85e1521881.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-41-q1",
+      "capsule_uuid": "8b462015-86ab-434f-29e1-04dda1588031",
+      "short_id": "bix-41",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-8b462015-86ab-434f-29e1-04dda1588031.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-41-q3",
+      "capsule_uuid": "8b462015-86ab-434f-29e1-04dda1588031",
+      "short_id": "bix-41",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-8b462015-86ab-434f-29e1-04dda1588031.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-41-q4",
+      "capsule_uuid": "8b462015-86ab-434f-29e1-04dda1588031",
+      "short_id": "bix-41",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-8b462015-86ab-434f-29e1-04dda1588031.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-41-q5",
+      "capsule_uuid": "8b462015-86ab-434f-29e1-04dda1588031",
+      "short_id": "bix-41",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-8b462015-86ab-434f-29e1-04dda1588031.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-42-q1",
+      "capsule_uuid": "27821d45-94e6-4f4e-a914-e66ffaefdd3f",
+      "short_id": "bix-42",
+      "categories": [
+        "Machine Learning and Artificial Intelligence,Integrative Omics,Transcriptomics,Genomics,Other"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-27821d45-94e6-4f4e-a914-e66ffaefdd3f.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-42-q2",
+      "capsule_uuid": "27821d45-94e6-4f4e-a914-e66ffaefdd3f",
+      "short_id": "bix-42",
+      "categories": [
+        "Machine Learning and Artificial Intelligence,Integrative Omics,Transcriptomics,Genomics,Other"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-27821d45-94e6-4f4e-a914-e66ffaefdd3f.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-43-q1",
+      "capsule_uuid": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821",
+      "short_id": "bix-43",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-15ff11e5-2db1-45b6-b3a3-46bc2a74b821.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-43-q2",
+      "capsule_uuid": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821",
+      "short_id": "bix-43",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-15ff11e5-2db1-45b6-b3a3-46bc2a74b821.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-43-q3",
+      "capsule_uuid": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821",
+      "short_id": "bix-43",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-15ff11e5-2db1-45b6-b3a3-46bc2a74b821.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-43-q4",
+      "capsule_uuid": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821",
+      "short_id": "bix-43",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-15ff11e5-2db1-45b6-b3a3-46bc2a74b821.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-43-q5",
+      "capsule_uuid": "15ff11e5-2db1-45b6-b3a3-46bc2a74b821",
+      "short_id": "bix-43",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-15ff11e5-2db1-45b6-b3a3-46bc2a74b821.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-45-q1",
+      "capsule_uuid": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9",
+      "short_id": "bix-45",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-ebc7c8a6-ba34-46db-bf8c-b3e310434ba9.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-45-q2",
+      "capsule_uuid": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9",
+      "short_id": "bix-45",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-ebc7c8a6-ba34-46db-bf8c-b3e310434ba9.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-45-q5",
+      "capsule_uuid": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9",
+      "short_id": "bix-45",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-ebc7c8a6-ba34-46db-bf8c-b3e310434ba9.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-45-q6",
+      "capsule_uuid": "ebc7c8a6-ba34-46db-bf8c-b3e310434ba9",
+      "short_id": "bix-45",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-ebc7c8a6-ba34-46db-bf8c-b3e310434ba9.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-46-q1",
+      "capsule_uuid": "d37acffb-d802-4ce0-8caa-66f50667367a",
+      "short_id": "bix-46",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-d37acffb-d802-4ce0-8caa-66f50667367a.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-46-q4",
+      "capsule_uuid": "d37acffb-d802-4ce0-8caa-66f50667367a",
+      "short_id": "bix-46",
+      "categories": [
+        "Sequence Analysis,RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-d37acffb-d802-4ce0-8caa-66f50667367a.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-47-q2",
+      "capsule_uuid": "4a336d0c-3d6b-440a-bfb0-437b26a00af3",
+      "short_id": "bix-47",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-4a336d0c-3d6b-440a-bfb0-437b26a00af3.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-47-q3",
+      "capsule_uuid": "4a336d0c-3d6b-440a-bfb0-437b26a00af3",
+      "short_id": "bix-47",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-4a336d0c-3d6b-440a-bfb0-437b26a00af3.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-49-q1",
+      "capsule_uuid": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760",
+      "short_id": "bix-49",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-4ef3fcd8-1c35-466f-9d93-49b92f4ea760.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-49-q2",
+      "capsule_uuid": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760",
+      "short_id": "bix-49",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-4ef3fcd8-1c35-466f-9d93-49b92f4ea760.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-49-q3",
+      "capsule_uuid": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760",
+      "short_id": "bix-49",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-4ef3fcd8-1c35-466f-9d93-49b92f4ea760.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-49-q4",
+      "capsule_uuid": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760",
+      "short_id": "bix-49",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-4ef3fcd8-1c35-466f-9d93-49b92f4ea760.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-49-q5",
+      "capsule_uuid": "4ef3fcd8-1c35-466f-9d93-49b92f4ea760",
+      "short_id": "bix-49",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-4ef3fcd8-1c35-466f-9d93-49b92f4ea760.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-5-q1",
+      "capsule_uuid": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d",
+      "short_id": "bix-5",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics,Network Biology"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-5-q4",
+      "capsule_uuid": "2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d",
+      "short_id": "bix-5",
+      "categories": [
+        "RNA-seq,Differential Expression Analysis,Transcriptomics,Network Biology"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-2a8a40d4-05b0-4eec-8bd2-825f61fc9f5d.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-51-q1",
+      "capsule_uuid": "93f63fb8-b56c-4ad1-8d3b-d651e2107423",
+      "short_id": "bix-51",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-93f63fb8-b56c-4ad1-8d3b-d651e2107423.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-51-q2",
+      "capsule_uuid": "93f63fb8-b56c-4ad1-8d3b-d651e2107423",
+      "short_id": "bix-51",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-93f63fb8-b56c-4ad1-8d3b-d651e2107423.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-51-q3",
+      "capsule_uuid": "93f63fb8-b56c-4ad1-8d3b-d651e2107423",
+      "short_id": "bix-51",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-93f63fb8-b56c-4ad1-8d3b-d651e2107423.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-51-q4",
+      "capsule_uuid": "93f63fb8-b56c-4ad1-8d3b-d651e2107423",
+      "short_id": "bix-51",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-93f63fb8-b56c-4ad1-8d3b-d651e2107423.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-51-q5",
+      "capsule_uuid": "93f63fb8-b56c-4ad1-8d3b-d651e2107423",
+      "short_id": "bix-51",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-93f63fb8-b56c-4ad1-8d3b-d651e2107423.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-51-q6",
+      "capsule_uuid": "93f63fb8-b56c-4ad1-8d3b-d651e2107423",
+      "short_id": "bix-51",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-93f63fb8-b56c-4ad1-8d3b-d651e2107423.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-51-q8",
+      "capsule_uuid": "93f63fb8-b56c-4ad1-8d3b-d651e2107423",
+      "short_id": "bix-51",
+      "categories": [
+        "Other"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-93f63fb8-b56c-4ad1-8d3b-d651e2107423.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-52-q1",
+      "capsule_uuid": "4dceea58-7d66-4576-bfc6-88c026d5b7a9",
+      "short_id": "bix-52",
+      "categories": [
+        "Epigenomics"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-4dceea58-7d66-4576-bfc6-88c026d5b7a9.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Task cannot be mapped onto frozen Genome Skeptic V5 bacterial isolate / gene-orthologue capabilities without adding scientific functionality or rewriting the question.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-52-q2",
+      "capsule_uuid": "4dceea58-7d66-4576-bfc6-88c026d5b7a9",
+      "short_id": "bix-52",
+      "categories": [
+        "Epigenomics"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-4dceea58-7d66-4576-bfc6-88c026d5b7a9.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Task cannot be mapped onto frozen Genome Skeptic V5 bacterial isolate / gene-orthologue capabilities without adding scientific functionality or rewriting the question.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-52-q3",
+      "capsule_uuid": "4dceea58-7d66-4576-bfc6-88c026d5b7a9",
+      "short_id": "bix-52",
+      "categories": [
+        "Epigenomics"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-4dceea58-7d66-4576-bfc6-88c026d5b7a9.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-52-q5",
+      "capsule_uuid": "4dceea58-7d66-4576-bfc6-88c026d5b7a9",
+      "short_id": "bix-52",
+      "categories": [
+        "Epigenomics"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-4dceea58-7d66-4576-bfc6-88c026d5b7a9.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Task cannot be mapped onto frozen Genome Skeptic V5 bacterial isolate / gene-orthologue capabilities without adding scientific functionality or rewriting the question.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-52-q6",
+      "capsule_uuid": "4dceea58-7d66-4576-bfc6-88c026d5b7a9",
+      "short_id": "bix-52",
+      "categories": [
+        "Epigenomics"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-4dceea58-7d66-4576-bfc6-88c026d5b7a9.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Task cannot be mapped onto frozen Genome Skeptic V5 bacterial isolate / gene-orthologue capabilities without adding scientific functionality or rewriting the question.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-52-q7",
+      "capsule_uuid": "4dceea58-7d66-4576-bfc6-88c026d5b7a9",
+      "short_id": "bix-52",
+      "categories": [
+        "Epigenomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-4dceea58-7d66-4576-bfc6-88c026d5b7a9.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Task cannot be mapped onto frozen Genome Skeptic V5 bacterial isolate / gene-orthologue capabilities without adding scientific functionality or rewriting the question.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-53-q2",
+      "capsule_uuid": "308d53bf-1513-4a09-913b-3a1112f94e7b",
+      "short_id": "bix-53",
+      "categories": [
+        "Differential Expression Analysis,RNA-seq,Transcriptomics,Sequence Analysis"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-308d53bf-1513-4a09-913b-3a1112f94e7b.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-53-q3",
+      "capsule_uuid": "308d53bf-1513-4a09-913b-3a1112f94e7b",
+      "short_id": "bix-53",
+      "categories": [
+        "Differential Expression Analysis,RNA-seq,Transcriptomics,Sequence Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-308d53bf-1513-4a09-913b-3a1112f94e7b.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-53-q4",
+      "capsule_uuid": "308d53bf-1513-4a09-913b-3a1112f94e7b",
+      "short_id": "bix-53",
+      "categories": [
+        "Differential Expression Analysis,RNA-seq,Transcriptomics,Sequence Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-308d53bf-1513-4a09-913b-3a1112f94e7b.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-53-q5",
+      "capsule_uuid": "308d53bf-1513-4a09-913b-3a1112f94e7b",
+      "short_id": "bix-53",
+      "categories": [
+        "Differential Expression Analysis,RNA-seq,Transcriptomics,Sequence Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-308d53bf-1513-4a09-913b-3a1112f94e7b.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-53-q6",
+      "capsule_uuid": "308d53bf-1513-4a09-913b-3a1112f94e7b",
+      "short_id": "bix-53",
+      "categories": [
+        "Differential Expression Analysis,RNA-seq,Transcriptomics,Sequence Analysis"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-308d53bf-1513-4a09-913b-3a1112f94e7b.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-54-q1",
+      "capsule_uuid": "9e52daf6-ca58-43e8-e732-fbac3459d295",
+      "short_id": "bix-54",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-9e52daf6-ca58-43e8-e732-fbac3459d295.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-54-q2",
+      "capsule_uuid": "9e52daf6-ca58-43e8-e732-fbac3459d295",
+      "short_id": "bix-54",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-9e52daf6-ca58-43e8-e732-fbac3459d295.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-54-q3",
+      "capsule_uuid": "9e52daf6-ca58-43e8-e732-fbac3459d295",
+      "short_id": "bix-54",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-9e52daf6-ca58-43e8-e732-fbac3459d295.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-54-q4",
+      "capsule_uuid": "9e52daf6-ca58-43e8-e732-fbac3459d295",
+      "short_id": "bix-54",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-9e52daf6-ca58-43e8-e732-fbac3459d295.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-54-q5",
+      "capsule_uuid": "9e52daf6-ca58-43e8-e732-fbac3459d295",
+      "short_id": "bix-54",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-9e52daf6-ca58-43e8-e732-fbac3459d295.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-54-q6",
+      "capsule_uuid": "9e52daf6-ca58-43e8-e732-fbac3459d295",
+      "short_id": "bix-54",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-9e52daf6-ca58-43e8-e732-fbac3459d295.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-54-q7",
+      "capsule_uuid": "9e52daf6-ca58-43e8-e732-fbac3459d295",
+      "short_id": "bix-54",
+      "categories": [
+        "Imaging"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-9e52daf6-ca58-43e8-e732-fbac3459d295.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-55-q1",
+      "capsule_uuid": "451a5322-db12-4026-8d8d-24647a85c4b1",
+      "short_id": "bix-55",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-451a5322-db12-4026-8d8d-24647a85c4b1.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-56-q1",
+      "capsule_uuid": "302f0f4f-a9d7-460d-9488-d7cc7832bdf9",
+      "short_id": "bix-56",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'Genomics', 'Phylogenetics and Evolutionary Analysis']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-302f0f4f-a9d7-460d-9488-d7cc7832bdf9.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-57-q1",
+      "capsule_uuid": "ff43cd5b-6f9e-410b-8d53-a5bb11b5b531",
+      "short_id": "bix-57",
+      "categories": [
+        "['Phylogenetics and Evolutionary Analysis', 'Genomics']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-ff43cd5b-6f9e-410b-8d53-a5bb11b5b531.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-58-q1",
+      "capsule_uuid": "cdb0c58b-c9e1-47a7-9ad1-6abc48335c3f",
+      "short_id": "bix-58",
+      "categories": [
+        "['Phylogenetics and Evolutionary Analysis', 'Genomics']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-cdb0c58b-c9e1-47a7-9ad1-6abc48335c3f.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-6-q1",
+      "capsule_uuid": "f4dcda89-678d-403d-b155-1483d0071765",
+      "short_id": "bix-6",
+      "categories": [
+        "Functional Genomics"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-f4dcda89-678d-403d-b155-1483d0071765.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Task cannot be mapped onto frozen Genome Skeptic V5 bacterial isolate / gene-orthologue capabilities without adding scientific functionality or rewriting the question.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-6-q3",
+      "capsule_uuid": "f4dcda89-678d-403d-b155-1483d0071765",
+      "short_id": "bix-6",
+      "categories": [
+        "Functional Genomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-f4dcda89-678d-403d-b155-1483d0071765.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-6-q4",
+      "capsule_uuid": "f4dcda89-678d-403d-b155-1483d0071765",
+      "short_id": "bix-6",
+      "categories": [
+        "Functional Genomics"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-f4dcda89-678d-403d-b155-1483d0071765.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-6-q5",
+      "capsule_uuid": "f4dcda89-678d-403d-b155-1483d0071765",
+      "short_id": "bix-6",
+      "categories": [
+        "Functional Genomics"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-f4dcda89-678d-403d-b155-1483d0071765.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-6-q6",
+      "capsule_uuid": "f4dcda89-678d-403d-b155-1483d0071765",
+      "short_id": "bix-6",
+      "categories": [
+        "Functional Genomics"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-f4dcda89-678d-403d-b155-1483d0071765.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-6-q7",
+      "capsule_uuid": "f4dcda89-678d-403d-b155-1483d0071765",
+      "short_id": "bix-6",
+      "categories": [
+        "Functional Genomics"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-f4dcda89-678d-403d-b155-1483d0071765.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Task cannot be mapped onto frozen Genome Skeptic V5 bacterial isolate / gene-orthologue capabilities without adding scientific functionality or rewriting the question.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-60-q1",
+      "capsule_uuid": "1aea473d-db97-4c12-9a1e-6c850ddc9110",
+      "short_id": "bix-60",
+      "categories": [
+        "['Phylogenetics and Evolutionary Analysis', 'Genomics']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-1aea473d-db97-4c12-9a1e-6c850ddc9110.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-61-q1",
+      "capsule_uuid": "dcee15c0-5840-5f48-884f-6ca747506277",
+      "short_id": "bix-61",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'SNP Analysis', 'Genomics', 'Antimicrobial Resistance']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-dcee15c0-5840-5f48-884f-6ca747506277.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-61-q2",
+      "capsule_uuid": "37829656-f147-5fd2-8f10-40fa15cfdf03",
+      "short_id": "bix-61",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'SNP Analysis', 'Genomics', 'Antimicrobial Resistance']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-37829656-f147-5fd2-8f10-40fa15cfdf03.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-61-q3",
+      "capsule_uuid": "53a80e13-d0cc-5ece-a246-9832910842f5",
+      "short_id": "bix-61",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'SNP Analysis', 'Genomics', 'Antimicrobial Resistance']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-53a80e13-d0cc-5ece-a246-9832910842f5.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-61-q4",
+      "capsule_uuid": "fb42b6d8-8a62-538b-a647-d4b9b6f33abf",
+      "short_id": "bix-61",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'SNP Analysis', 'Genomics', 'Antimicrobial Resistance']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-fb42b6d8-8a62-538b-a647-d4b9b6f33abf.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-61-q5",
+      "capsule_uuid": "5ddf0a38-bc41-5ebb-93af-88c62ca29be7",
+      "short_id": "bix-61",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'SNP Analysis', 'Genomics', 'Antimicrobial Resistance']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-5ddf0a38-bc41-5ebb-93af-88c62ca29be7.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-61-q6",
+      "capsule_uuid": "2e6ab559-e6ef-5d65-8949-f9c23c8bc561",
+      "short_id": "bix-61",
+      "categories": [
+        "['Whole Genome Sequencing (WGS)', 'SNP Analysis', 'Genomics', 'Antimicrobial Resistance']"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-2e6ab559-e6ef-5d65-8949-f9c23c8bc561.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-7-q1",
+      "capsule_uuid": "a02b761a-02b6-46b5-9d5e-2964d5a74960",
+      "short_id": "bix-7",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-a02b761a-02b6-46b5-9d5e-2964d5a74960.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-7-q2",
+      "capsule_uuid": "a02b761a-02b6-46b5-9d5e-2964d5a74960",
+      "short_id": "bix-7",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-a02b761a-02b6-46b5-9d5e-2964d5a74960.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-7-q3",
+      "capsule_uuid": "a02b761a-02b6-46b5-9d5e-2964d5a74960",
+      "short_id": "bix-7",
+      "categories": [
+        "Genomics,Genomic Variant Analysis"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-a02b761a-02b6-46b5-9d5e-2964d5a74960.zip",
+      "compatibility": "PARTIALLY_SUPPORTED",
+      "compatibility_rationale": "Genomics-adjacent (WGS/mapping/AMR/phylogeny) but the original asked statistic is not an existing Genome Skeptic V5 output; supporting it would require adding tools or rewriting the task.",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-8-q1",
+      "capsule_uuid": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046",
+      "short_id": "bix-8",
+      "categories": [
+        "Epigenomics,Differential Expression Analysis,RNA-seq"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-48a6b469-9c9d-4bef-b5b4-f29b7d6fa046.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-8-q2",
+      "capsule_uuid": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046",
+      "short_id": "bix-8",
+      "categories": [
+        "Epigenomics,Differential Expression Analysis,RNA-seq"
+      ],
+      "evaluation_mode": "range_verifier",
+      "dataset_folder": "CapsuleFolder-48a6b469-9c9d-4bef-b5b4-f29b7d6fa046.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-8-q3",
+      "capsule_uuid": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046",
+      "short_id": "bix-8",
+      "categories": [
+        "Epigenomics,Differential Expression Analysis,RNA-seq"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-48a6b469-9c9d-4bef-b5b4-f29b7d6fa046.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-8-q5",
+      "capsule_uuid": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046",
+      "short_id": "bix-8",
+      "categories": [
+        "Epigenomics,Differential Expression Analysis,RNA-seq"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-48a6b469-9c9d-4bef-b5b4-f29b7d6fa046.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-8-q6",
+      "capsule_uuid": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046",
+      "short_id": "bix-8",
+      "categories": [
+        "Epigenomics,Differential Expression Analysis,RNA-seq"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-48a6b469-9c9d-4bef-b5b4-f29b7d6fa046.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-8-q7",
+      "capsule_uuid": "48a6b469-9c9d-4bef-b5b4-f29b7d6fa046",
+      "short_id": "bix-8",
+      "categories": [
+        "Epigenomics,Differential Expression Analysis,RNA-seq"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-48a6b469-9c9d-4bef-b5b4-f29b7d6fa046.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-9-q3",
+      "capsule_uuid": "873bada5-b1f3-423a-87dc-9ddd486c4843",
+      "short_id": "bix-9",
+      "categories": [
+        "Differential Expression Analysis,Transcriptomics,RNA-seq"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-873bada5-b1f3-423a-87dc-9ddd486c4843.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-9-q4",
+      "capsule_uuid": "873bada5-b1f3-423a-87dc-9ddd486c4843",
+      "short_id": "bix-9",
+      "categories": [
+        "Differential Expression Analysis,Transcriptomics,RNA-seq"
+      ],
+      "evaluation_mode": "str_verifier",
+      "dataset_folder": "CapsuleFolder-873bada5-b1f3-423a-87dc-9ddd486c4843.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": true,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    },
+    {
+      "question_id": "bix-9-q5",
+      "capsule_uuid": "873bada5-b1f3-423a-87dc-9ddd486c4843",
+      "short_id": "bix-9",
+      "categories": [
+        "Differential Expression Analysis,Transcriptomics,RNA-seq"
+      ],
+      "evaluation_mode": "llm_verifier",
+      "dataset_folder": "CapsuleFolder-873bada5-b1f3-423a-87dc-9ddd486c4843.zip",
+      "compatibility": "UNSUPPORTED",
+      "compatibility_rationale": "Original task requires methods or data types frozen Genome Skeptic V5 does not implement (notebook analysis, RNA-seq, phylogenetics stats, variant calling, imaging, clinical regression, or similar).",
+      "deterministic_verifier": false,
+      "prompt_rewritten": false,
+      "answers_inspected": false
+    }
+  ]
+}

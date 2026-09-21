@@ -1,0 +1,8 @@
+{
+  "path": "manuscript_benchmark/TRUTH_M60/M60_TRUTH_SOURCE_MANIFEST.json",
+  "sha256": "640138da0b28ede009ca4a7fae2edb0cb70e855178e82df25c94434993e18483",
+  "hashed_utc": "2026-09-21T09:23:45.957866+00:00",
+  "accuracy_scored": false,
+  "prediction_payloads_opened": false,
+  "d20_touched": false
+}

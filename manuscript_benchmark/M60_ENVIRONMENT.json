@@ -1,0 +1,411 @@
+{
+  "kind": "M60_ENVIRONMENT",
+  "created_utc": "2026-09-20T02:06:42.823411+00:00",
+  "intended_host": "WSL/Linux production environment for M60",
+  "python_executable": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/python",
+  "python_version": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "os_kernel": {
+    "system": "Linux",
+    "node": "Aritra",
+    "release": "6.18.33.2-microsoft-standard-WSL2",
+    "version": "#1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026",
+    "machine": "x86_64",
+    "processor": ""
+  },
+  "cpu": {
+    "nproc": 4,
+    "model": "AMD Ryzen 3 7320U with Radeon Graphics",
+    "lscpu": "Architecture:                            x86_64\nCPU op-mode(s):                          32-bit, 64-bit\nAddress sizes:                           48 bits physical, 48 bits virtual\nByte Order:                              Little Endian\nCPU(s):                                  4\nOn-line CPU(s) list:                     0-3\nVendor ID:                               AuthenticAMD\nModel name:                              AMD Ryzen 3 7320U with Radeon Graphics\nCPU family:                              23\nModel:                                   160\nThread(s) per core:                      2\nCore(s) per socket:                      2\nSocket(s):                               1\nStepping:                                0\nBogoMIPS:                                4790.64\nFlags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext perfctr_core ssbd ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 clzero xsaveerptr arat npt nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload umip rdpid\nVirtualization:                          AMD-V\nHypervisor vendor:                       Microsoft\nVirtualization type:                     full\nL1d cache:                               64 KiB (2 instances)\nL1i cache:                               64 KiB (2 instances)\nL2 cache:                                1 MiB (2 instances)\nL3 cache:                                4 MiB (1 instance)\nNUMA node(s):                            1\nNUMA node0 CPU(s):                       0-3\nVulnerability Gather data sampling:      Not affected\nVulnerability Ghostwrite:                Not affected\nVulnerability Indirect target selection: Not affected\nVulnerability Itlb multihit:             Not affected\nVulnerability L1tf:                      Not affected\nVulnerability Mds:                       Not affected\nVulnerability Meltdown:                  Not affected\nVulnerability Mmio stale data:           Not affected\nVulnerability Old microcode:             Not affected\nVulnerability Reg file data sampling:    Not affected\nVulnerability Retbleed:                  Mitigation; untrained return thunk; SMT enabled with STIBP protection\nVulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode\nVulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\nVulnerability Srbds:                     Not affected\nVulnerability Tsa:                       Not affected\nVulnerability Tsx async abort:           Not affected\nVulnerability Vmscape:                   Not affected"
+  },
+  "meminfo": {
+    "MemTotal": "5036652 kB",
+    "MemFree": "2726636 kB",
+    "MemAvailable": "4421936 kB",
+    "SwapTotal": "67108864 kB",
+    "SwapFree": "67108864 kB"
+  },
+  "swap": "NAME     TYPE      SIZE USED PRIO\n/dev/sdc partition  64G   0B   -2",
+  "blast": {
+    "name": "blastn",
+    "path": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/blastn",
+    "version": "blastn: 2.16.0+ | Package: blast 2.16.0, build Mar 28 2025 16:30:45",
+    "available": true
+  },
+  "hmmer": {
+    "name": "hmmsearch",
+    "path": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/hmmsearch",
+    "version": "HMMER 3.4 (Aug 2023); http://hmmer.org/",
+    "available": true
+  },
+  "mmseqs": {
+    "name": "mmseqs",
+    "path": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/mmseqs",
+    "version": "18.8cc5c",
+    "available": true
+  },
+  "diamond": {
+    "name": "diamond",
+    "path": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/diamond",
+    "version": "diamond version 2.2.6",
+    "available": true
+  },
+  "amrfinder": {
+    "name": "amrfinder",
+    "path": "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/amrfinder",
+    "version": "4.2.7",
+    "available": true
+  },
+  "amrfinder_databases": "Software version: 4.2.7; Database directory: /home/aritr/micromamba/envs/genome-skeptic-prod/share/amrfinderplus/data/2026-08-07.1; Database version: 2026-08-07.1",
+  "amrfinder_database_version": "2026-08-07.1",
+  "amrfinder_database_directory": "/home/aritr/micromamba/envs/genome-skeptic-prod/share/amrfinderplus/data/2026-08-07.1",
+  "amrfinder_database_freeze_path": "manuscript_benchmark/ENVIRONMENT/AMRFINDER_DATABASE_FREEZE.json",
+  "amrfinder_database_frozen_before_first_m60_run": true,
+  "amrfinder_database_do_not_update_during_m60": true,
+  "emapper": {
+    "name": "emapper.py",
+    "path": null,
+    "version": null,
+    "available": false
+  },
+  "pip_freeze": [
+    "about-time @ file:///home/conda/feedstock_root/build_artifacts/about-time_1734962883440/work",
+    "alive-progress @ file:///home/conda/feedstock_root/build_artifacts/alive-progress_1672622466496/work",
+    "annotated-doc==0.0.5",
+    "annotated-types==0.8.0",
+    "archspec @ file:///home/conda/feedstock_root/build_artifacts/archspec_1737352602016/work",
+    "backports.zstd @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_backports.zstd_1788491293/work",
+    "bakta @ file:///opt/conda/conda-bld/bakta_1756466454763/work",
+    "biopython @ file:///home/conda/feedstock_root/build_artifacts/biopython_1789126197615/work",
+    "bitarray @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_bitarray_1788522617/work",
+    "bitstring @ file:///home/conda/feedstock_root/build_artifacts/bitstring_1773484480820/work",
+    "Brotli @ file:///home/conda/feedstock_root/build_artifacts/brotli-split_1788480187707/work",
+    "cachetools @ file:///home/conda/feedstock_root/build_artifacts/cachetools_1740094013202/work",
+    "certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1784717589373/work/certifi",
+    "cffi @ file:///home/conda/feedstock_root/build_artifacts/cffi_1788485203316/work",
+    "charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1786835581063/work",
+    "cloudpickle @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_cloudpickle_1765303462/work",
+    "contourpy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_contourpy_1769155975/work",
+    "cycler @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_cycler_1764466758/work",
+    "deprecation @ file:///home/conda/feedstock_root/build_artifacts/deprecation_1589881437857/work",
+    "fonttools @ file:///home/conda/feedstock_root/build_artifacts/fonttools_1789076212595/work",
+    "# Editable Git install with no remote (genome-skeptic==0.1.0)",
+    "-e /mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor",
+    "grapheme @ file:///home/conda/feedstock_root/build_artifacts/grapheme_1734963324128/work",
+    "h2 @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_h2_1785796355/work",
+    "hpack @ file:///home/conda/feedstock_root/build_artifacts/hpack_1782283902770/work",
+    "hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1737618333194/work",
+    "idna @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_idna_1787059857/work",
+    "iniconfig==2.3.0",
+    "isal @ file:///home/conda/feedstock_root/build_artifacts/python-isal_1788945190563/work",
+    "joblib @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_joblib_1788177170/work",
+    "kiwisolver @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_kiwisolver_1788505647/work",
+    "markdown-it-py==4.2.0",
+    "matplotlib==3.11.2",
+    "mdurl==0.1.2",
+    "munkres==1.1.4",
+    "numpy @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_numpy_1779169198/work/dist/numpy-2.4.6-cp311-cp311-linux_x86_64.whl#sha256=9f5ed645865bdd41eb671568973753a710fda708ed74e7a0b4acf98e7a7a2970",
+    "packaging @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_packaging_1785888127/work",
+    "pandas @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pandas_1785276229/work",
+    "pillow @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pillow_1789122647/work",
+    "pluggy==1.6.0",
+    "psutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_psutil_1788189992/work",
+    "pyCirclize @ file:///home/conda/feedstock_root/build_artifacts/pycirclize_1759544000606/work",
+    "pycparser @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pycparser_1779293633/work",
+    "pydantic==2.13.5",
+    "pydantic_core==2.46.5",
+    "Pygments==2.21.0",
+    "pyhmmer @ file:///opt/conda/conda-bld/pyhmmer_1787164369246/work",
+    "pyparsing @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_pyparsing_1769003998/work",
+    "pyrodigal @ file:///opt/conda/conda-bld/pyrodigal_1773600407041/work",
+    "PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_1733217236728/work",
+    "pytest==9.1.1",
+    "python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work",
+    "PyYAML @ file:///home/conda/feedstock_root/build_artifacts/pyyaml_1770223234623/work",
+    "quast @ file:///opt/conda/conda-bld/quast_1734299705844/work",
+    "requests @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_requests_1778851103/work",
+    "rich==15.0.0",
+    "scipy @ file:///home/conda/feedstock_root/build_artifacts/scipy-split_1779873994451/work/dist/scipy-1.17.1-cp311-cp311-linux_x86_64.whl#sha256=fb9bc72e4de1a7def4fdab777e350fa5c075ed66f9ad0ac80fa09bd588a1a625",
+    "screed @ file:///home/conda/feedstock_root/build_artifacts/screed_1771332581158/work",
+    "shellingham==1.5.4",
+    "simplejson @ file:///home/conda/feedstock_root/build_artifacts/simplejson_1788525122446/work",
+    "six @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_six_1753199211/work",
+    "sourmash @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_sourmash-minimal_1781897338/work",
+    "tibs @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_tibs_1773604227/work",
+    "typer==0.27.2",
+    "typing-inspection==0.4.4",
+    "typing_extensions==4.16.0",
+    "unicodedata2 @ file:///home/conda/feedstock_root/build_artifacts/unicodedata2_1788554013416/work",
+    "urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1789566614899/work",
+    "xopen @ file:///home/conda/feedstock_root/build_artifacts/xopen_1780666063995/work",
+    "zlib-ng @ file:///home/conda/feedstock_root/build_artifacts/python-zlib-ng_1782464692074/work"
+  ],
+  "required_tools": {
+    "HMMER available": "YES",
+    "MMseqs available": "YES",
+    "DIAMOND available": "YES",
+    "BLAST+ available": "YES"
+  },
+  "freeze_verification": {
+    "manifest_sha256": "97a94dfefcecc855ebbba2010fd3f02f79ae84fbc61ca0f173e718d6bffd863b",
+    "manifest_sha256_ok": true,
+    "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+    "scientific_core_hash_ok": true,
+    "protocol_sha256": "30de5efc92d1b2b0db9de0db6f8f98b965397b6adac17052603b3ab44b74df4f",
+    "protocol_sha256_ok": true,
+    "exclusion_sha256": "7fe225d0bc779e8b887a3f7980141272f85f3cc8c58c309f99118ff91fe4ef55",
+    "exclusion_sha256_ok": true,
+    "n_file_mismatches": 0,
+    "file_mismatches": [],
+    "family_dir": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/src/genome_skeptic/data/target_families",
+    "ortholog_dir": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/data/orthology_references",
+    "reference_assets_hash": "9434a1902236ed7245361e47af1986357969a3bf8ec210062f889dc84580ff92",
+    "family_definitions_hash": "ed4210640e318b8ed94ebf6d72b9c37afa9039eed858fdd54c4165fbcce09605"
+  },
+  "hashed_assets": {
+    "src_target_families": {
+      "root": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/src/genome_skeptic/data/target_families",
+      "n_files": 25,
+      "sha256": "ed4210640e318b8ed94ebf6d72b9c37afa9039eed858fdd54c4165fbcce09605",
+      "files": [
+        {
+          "path": "index.yaml",
+          "sha256": "b7927c8f20123101c8af89165d5bc5973d35d927fc64a4e82398af36849d15a3"
+        },
+        {
+          "path": "lacZ_beta_galactosidase/family.yaml",
+          "sha256": "7e9eb83c8e18f6ae0ca0697b79ab08d7ff74720b0114f9621655842462ef9628"
+        },
+        {
+          "path": "lacZ_beta_galactosidase/members.aln.faa",
+          "sha256": "e202a40b072f2499fd31677ff44400c898452f59f01eb563332ce3c7efe201a9"
+        },
+        {
+          "path": "lacZ_beta_galactosidase/members.faa",
+          "sha256": "ede95cd092b622f37f39a45a07173c4d7a16f765a3a15f9967eb8a75010baaaa"
+        },
+        {
+          "path": "mfs_multidrug_efflux/family.yaml",
+          "sha256": "c0aad8115c7819772ca9e7ffeb24240541fbadd215daeb2315f1d7aef005fbd0"
+        },
+        {
+          "path": "mfs_multidrug_efflux/members.aln.faa",
+          "sha256": "8a3d047d427a1f2e1d8ce3fa8607864ccb1d8704c6a544d90094f756dcbab143"
+        },
+        {
+          "path": "mfs_multidrug_efflux/members.faa",
+          "sha256": "09c34a3dde72ff127f396c5226a9b3c0887edc1cfd5c8726dff88c6555c8a880"
+        },
+        {
+          "path": "recA_recombinase/family.yaml",
+          "sha256": "75e4b5cae339db74e8aa3245ffe0577a55ab4abb2b0db8e75800a43876d46f3f"
+        },
+        {
+          "path": "recA_recombinase/members.aln.faa",
+          "sha256": "49ab1020b9523728719118badbb5c01e209d2bd3643cc91b9e288838ebb02b7f"
+        },
+        {
+          "path": "recA_recombinase/members.faa",
+          "sha256": "22b3bd94d515ef761a4c5da81fc1d9d84ee2f14a10b25816a86b0d936bcf8f27"
+        },
+        {
+          "path": "rnd_efflux/family.yaml",
+          "sha256": "c14be4668c4e201aa7b764c26bcaf65f4289b7119fc43b4d6f856a62abed8e13"
+        },
+        {
+          "path": "rnd_efflux/members.aln.faa",
+          "sha256": "887e5bd75a5904db8090449d46a2e271f282ef1b1752c9c24aa8a4fa616365af"
+        },
+        {
+          "path": "rnd_efflux/members.faa",
+          "sha256": "bc8a7c9f8d2d90dd0fb50ddadb32a6cd0b57679e2825b5b5e7bdb5ec39f3c56a"
+        },
+        {
+          "path": "rpoB_RNAP_beta/family.yaml",
+          "sha256": "8b118c3c27c4b9b9e8b99853e2e2158bceb2a425cefe67fb21606b4b084ceb89"
+        },
+        {
+          "path": "rpoB_RNAP_beta/members.aln.faa",
+          "sha256": "4f2d0f3bedef0f133400b048a2d0657da4bba651741944d81060f47b0712a02a"
+        },
+        {
+          "path": "rpoB_RNAP_beta/members.faa",
+          "sha256": "c284f245e24285d8633cc9fac4f63b1e18b94995ad721e3cc117724f61f68c42"
+        },
+        {
+          "path": "rpoC_RNAP_beta_prime/family.yaml",
+          "sha256": "7c9246799842e5140cd728ac6a44dfae191329ee1feffecaa1b4305442e59447"
+        },
+        {
+          "path": "rpoC_RNAP_beta_prime/members.aln.faa",
+          "sha256": "3b36b30abecaddbb2e18831d6d54725a73d843969f3d562a44dd3c87ec4e3c44"
+        },
+        {
+          "path": "rpoC_RNAP_beta_prime/members.faa",
+          "sha256": "2b7609f19c0ce06c6224cf32023549df9a32bb67d4c1d4d422ce61ba4caa4840"
+        },
+        {
+          "path": "tetA_tetracycline_efflux/family.yaml",
+          "sha256": "33120a6e214404dee8d4f4daff9d7dcfa5fd5acbe92747464d0b6a86e93b8379"
+        },
+        {
+          "path": "tetA_tetracycline_efflux/members.aln.faa",
+          "sha256": "6ace4d925b5f714c69b1ada52757ba0462f8bbc846a5d340fa3ef936f97c9995"
+        },
+        {
+          "path": "tetA_tetracycline_efflux/members.faa",
+          "sha256": "cc4737c3ab9dc07178f655beb8c108565c44eb2541cce6144ec0e254a2807364"
+        },
+        {
+          "path": "tuf_EF_Tu/family.yaml",
+          "sha256": "bdcff374d7c3b56e38fb6f4371687759260fbc2ead2ba53abbe03e8f45b9bcff"
+        },
+        {
+          "path": "tuf_EF_Tu/members.aln.faa",
+          "sha256": "3a15ed2eafbb599f86d1d8a9b22ba4f2f37848f7b20d178aac1b7a97b112560f"
+        },
+        {
+          "path": "tuf_EF_Tu/members.faa",
+          "sha256": "6bf8a132bf954086733da3ec87b4c6726595c624e2e8aff08bfadce561001071"
+        }
+      ]
+    },
+    "data_target_families": {
+      "root": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/data/target_families",
+      "n_files": 25,
+      "sha256": "ed4210640e318b8ed94ebf6d72b9c37afa9039eed858fdd54c4165fbcce09605",
+      "files": [
+        {
+          "path": "index.yaml",
+          "sha256": "b7927c8f20123101c8af89165d5bc5973d35d927fc64a4e82398af36849d15a3"
+        },
+        {
+          "path": "lacZ_beta_galactosidase/family.yaml",
+          "sha256": "7e9eb83c8e18f6ae0ca0697b79ab08d7ff74720b0114f9621655842462ef9628"
+        },
+        {
+          "path": "lacZ_beta_galactosidase/members.aln.faa",
+          "sha256": "e202a40b072f2499fd31677ff44400c898452f59f01eb563332ce3c7efe201a9"
+        },
+        {
+          "path": "lacZ_beta_galactosidase/members.faa",
+          "sha256": "ede95cd092b622f37f39a45a07173c4d7a16f765a3a15f9967eb8a75010baaaa"
+        },
+        {
+          "path": "mfs_multidrug_efflux/family.yaml",
+          "sha256": "c0aad8115c7819772ca9e7ffeb24240541fbadd215daeb2315f1d7aef005fbd0"
+        },
+        {
+          "path": "mfs_multidrug_efflux/members.aln.faa",
+          "sha256": "8a3d047d427a1f2e1d8ce3fa8607864ccb1d8704c6a544d90094f756dcbab143"
+        },
+        {
+          "path": "mfs_multidrug_efflux/members.faa",
+          "sha256": "09c34a3dde72ff127f396c5226a9b3c0887edc1cfd5c8726dff88c6555c8a880"
+        },
+        {
+          "path": "recA_recombinase/family.yaml",
+          "sha256": "75e4b5cae339db74e8aa3245ffe0577a55ab4abb2b0db8e75800a43876d46f3f"
+        },
+        {
+          "path": "recA_recombinase/members.aln.faa",
+          "sha256": "49ab1020b9523728719118badbb5c01e209d2bd3643cc91b9e288838ebb02b7f"
+        },
+        {
+          "path": "recA_recombinase/members.faa",
+          "sha256": "22b3bd94d515ef761a4c5da81fc1d9d84ee2f14a10b25816a86b0d936bcf8f27"
+        },
+        {
+          "path": "rnd_efflux/family.yaml",
+          "sha256": "c14be4668c4e201aa7b764c26bcaf65f4289b7119fc43b4d6f856a62abed8e13"
+        },
+        {
+          "path": "rnd_efflux/members.aln.faa",
+          "sha256": "887e5bd75a5904db8090449d46a2e271f282ef1b1752c9c24aa8a4fa616365af"
+        },
+        {
+          "path": "rnd_efflux/members.faa",
+          "sha256": "bc8a7c9f8d2d90dd0fb50ddadb32a6cd0b57679e2825b5b5e7bdb5ec39f3c56a"
+        },
+        {
+          "path": "rpoB_RNAP_beta/family.yaml",
+          "sha256": "8b118c3c27c4b9b9e8b99853e2e2158bceb2a425cefe67fb21606b4b084ceb89"
+        },
+        {
+          "path": "rpoB_RNAP_beta/members.aln.faa",
+          "sha256": "4f2d0f3bedef0f133400b048a2d0657da4bba651741944d81060f47b0712a02a"
+        },
+        {
+          "path": "rpoB_RNAP_beta/members.faa",
+          "sha256": "c284f245e24285d8633cc9fac4f63b1e18b94995ad721e3cc117724f61f68c42"
+        },
+        {
+          "path": "rpoC_RNAP_beta_prime/family.yaml",
+          "sha256": "7c9246799842e5140cd728ac6a44dfae191329ee1feffecaa1b4305442e59447"
+        },
+        {
+          "path": "rpoC_RNAP_beta_prime/members.aln.faa",
+          "sha256": "3b36b30abecaddbb2e18831d6d54725a73d843969f3d562a44dd3c87ec4e3c44"
+        },
+        {
+          "path": "rpoC_RNAP_beta_prime/members.faa",
+          "sha256": "2b7609f19c0ce06c6224cf32023549df9a32bb67d4c1d4d422ce61ba4caa4840"
+        },
+        {
+          "path": "tetA_tetracycline_efflux/family.yaml",
+          "sha256": "33120a6e214404dee8d4f4daff9d7dcfa5fd5acbe92747464d0b6a86e93b8379"
+        },
+        {
+          "path": "tetA_tetracycline_efflux/members.aln.faa",
+          "sha256": "6ace4d925b5f714c69b1ada52757ba0462f8bbc846a5d340fa3ef936f97c9995"
+        },
+        {
+          "path": "tetA_tetracycline_efflux/members.faa",
+          "sha256": "cc4737c3ab9dc07178f655beb8c108565c44eb2541cce6144ec0e254a2807364"
+        },
+        {
+          "path": "tuf_EF_Tu/family.yaml",
+          "sha256": "bdcff374d7c3b56e38fb6f4371687759260fbc2ead2ba53abbe03e8f45b9bcff"
+        },
+        {
+          "path": "tuf_EF_Tu/members.aln.faa",
+          "sha256": "3a15ed2eafbb599f86d1d8a9b22ba4f2f37848f7b20d178aac1b7a97b112560f"
+        },
+        {
+          "path": "tuf_EF_Tu/members.faa",
+          "sha256": "6bf8a132bf954086733da3ec87b4c6726595c624e2e8aff08bfadce561001071"
+        }
+      ]
+    },
+    "orthology_references": {
+      "root": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/data/orthology_references",
+      "n_files": 4,
+      "sha256": "9434a1902236ed7245361e47af1986357969a3bf8ec210062f889dc84580ff92",
+      "files": [
+        {
+          "path": "lacZ_beta_galactosidase/P00722.faa",
+          "sha256": "da1b170328526de40cbe85b271a5ee1c1aa498d56fa08b0296a9357cc225615e"
+        },
+        {
+          "path": "lacZ_beta_galactosidase/P06864.faa",
+          "sha256": "29d8f3b9304168797294b863307060b903f9650262dac0e272b37891e079dcc5"
+        },
+        {
+          "path": "lacZ_beta_galactosidase/P19668.faa",
+          "sha256": "9d804039aaf6ae5a200211715505899d5993d716eccc202a8d5010796e0ba4d3"
+        },
+        {
+          "path": "lacZ_beta_galactosidase/index.yaml",
+          "sha256": "2494fa4f42b517ed5a9c790b975335adf536abaebb8f70b0f75d4308674b58a4"
+        }
+      ]
+    }
+  },
+  "manuscript_freeze_verified": true,
+  "production_environment_ready": true,
+  "d20_touched": false,
+  "truth_opened": false,
+  "predictions_run": false,
+  "m60_cases_selected": false,
+  "stop_if_not_ready": false
+}

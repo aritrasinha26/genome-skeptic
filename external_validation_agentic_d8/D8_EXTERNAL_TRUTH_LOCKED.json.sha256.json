@@ -1,0 +1,9 @@
+{
+  "file": "D8_EXTERNAL_TRUTH_LOCKED.json",
+  "sha256": "7742562f4dd4bf474998540dfa10ab4d7266994058b58faa658bdfe132b3c9eb",
+  "hashed_utc": "2026-09-20T14:09:37.974911+00:00",
+  "hashed_before_prediction_join": true,
+  "predictions_consulted": false,
+  "d20_touched": false,
+  "n_cases": 8
+}

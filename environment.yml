@@ -1,0 +1,31 @@
+# Production bioinformatics environment for Genome Skeptic.
+# Exact installed versions are recorded at build/doctor time.
+# CheckM2 is installed in a second step when the solver allows it.
+name: genome-skeptic-prod
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - pip
+  - openjdk
+  - fastp
+  - fastqc
+  - spades
+  - quast
+  - minimap2
+  - samtools
+  - mmseqs2
+  - diamond
+  - hmmer
+  - fasttree
+  - bakta
+  - kraken2
+  - sourmash
+  - prodigal
+  - wgsim
+  - pip:
+      - pydantic>=2.8
+      - typer>=0.12
+      - PyYAML>=6.0
+      - requests>=2.32

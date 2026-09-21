@@ -1,0 +1,59 @@
+{
+  "kind": "M60_POSITION_01_INTEGRITY_AUDIT",
+  "position": 1,
+  "case_id": "M60_rpoB_RNAP_beta_GCF_049943055.1",
+  "accession": "GCF_049943055.1",
+  "target": "rpoB_RNAP_beta",
+  "stratum": "challenge",
+  "truth_opened": false,
+  "d20_touched": false,
+  "accuracy_scored": false,
+  "specialist_comparator": "NCBI_REFSEQ_PGAP",
+  "amrfinder_run_on_this_genome": false,
+  "reason_amrfinder_not_run": "target is rpoB_RNAP_beta, not tetA_tetracycline_efflux",
+  "model": "qwen3:4b",
+  "model_config": "config/qwen_agentic_dev.yaml",
+  "model_digest_from_ollama_tags_at_run_start": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "model_digest_field_in_locked_row": "Qwen3",
+  "model_digest_note": "Ollama /api/show returned a short name in the parsed digest field. The live /api/tags digest at run start is recorded here and matches the previously frozen qwen3:4b digest. Ledger records were not rewritten.",
+  "agentic": {
+    "planner_ran": true,
+    "planner_calls": 1,
+    "critic_ran": true,
+    "critic_calls": 1,
+    "repair_calls": 0,
+    "only_registered_actions_executed": true,
+    "follow_up_actions": ["inspect_contig_edges_for_target"],
+    "n_follow_up_actions": 1,
+    "llm_wrote_no_biological_measurements": true,
+    "no_unknown_evidence_ids_accepted": true,
+    "m0_hash": "8f5d762e863a6de69298ced472fc831e9e70e56b968b043443d550bd6db9d2e4",
+    "m_final_hash": "f17d13a608dbacfd1a76ea6726bba3180ea60165904f276ec2633dfc4c1ff72f",
+    "m0_ne_m_final": true,
+    "validator_consumed_m_final": true,
+    "silent_fallback": false,
+    "agent_failure": null,
+    "integrity_pass": true
+  },
+  "exhaustive": {
+    "n_deterministic_follow_up_analyses": 2,
+    "follow_up_actions": [
+      "inspect_contig_edges_for_target",
+      "inspect_hit_contig_contamination"
+    ],
+    "ineligible_recorded_with_reason": true,
+    "n_ineligible_recorded": 4,
+    "same_scientific_core": true,
+    "same_validator": true,
+    "same_endpoint_contract": true,
+    "planner_invoked": false,
+    "critic_invoked": false
+  },
+  "locked_output_sha256": {
+    "CONVENTIONAL": "3bc7f8383f85fad00f003bb1eb3e3ee13eae6e663c4fe527310f825f8ec9e8b3",
+    "NCBI_REFSEQ_PGAP": "4d298df122769383b3ab59b6620cdd32cb925c6d4b2e739fe03bfc2ee62fc4c0",
+    "GS_DETERMINISTIC_V4_1": "9ddb0fdf7ed88a6bee642a23e54da136b7e812e62d83ccee3f460df189acad39",
+    "GS_AGENTIC_V4_1": "d31abfc984fe66b21ba9e663f26b9f8c0dd94f6228be13b345c17fd4cd734296",
+    "GS_EXHAUSTIVE_V4_1": "05a3e3c43a501a47c2590de51d264ef852d120196ad63e66e86033a401f2b3be"
+  }
+}

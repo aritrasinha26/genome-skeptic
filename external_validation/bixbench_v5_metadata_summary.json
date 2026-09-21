@@ -1,0 +1,26 @@
+{
+  "n_source_rows": 205,
+  "n_tasks": 205,
+  "source_keys": [
+    "answer",
+    "canary",
+    "capsule_uuid",
+    "categories",
+    "data_folder",
+    "distractors",
+    "eval_mode",
+    "hypothesis",
+    "id",
+    "ideal",
+    "paper",
+    "question",
+    "question_id",
+    "result",
+    "short_id",
+    "tag",
+    "version"
+  ],
+  "sanitized_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/external_validation/bixbench_v5_task_metadata_answerblind.jsonl",
+  "forbidden_fields_written": false,
+  "answers_inspected": false
+}

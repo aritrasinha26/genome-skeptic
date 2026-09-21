@@ -1,0 +1,9 @@
+cell,count,positions,accessions_targets
+A_both_correct,3,1;2;8,GCF_054792365.1/rpoB_RNAP_beta;GCF_049373995.1/rpoB_RNAP_beta;GCF_050310035.1/tetA_tetracycline_efflux
+B_v5_correct_agentic_incorrect,0,,
+C_v5_incorrect_agentic_correct,0,,
+D_both_incorrect,5,3;4;5;6;7,GCF_048851505.1/tuf_EF_Tu;GCF_056483745.1/lacZ_beta_galactosidase;GCF_046846385.1/tuf_EF_Tu;GCF_056267885.1/lacZ_beta_galactosidase;GCF_053618555.1/tetA_tetracycline_efflux
+V5_ERRORS_CORRECTED_BY_AGENTIC_C,0,,
+V5_CORRECT_CALLS_DEGRADED_BY_AGENTIC_B,0,,
+NET_CORRECTIONS_C_minus_B,0,,
+mcnemar_exact_p,NA,exact McNemar not applicable (0 discordant pairs); exploratory n=8,

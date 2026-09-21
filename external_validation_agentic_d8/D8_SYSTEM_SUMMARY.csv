@@ -1,0 +1,4 @@
+system,correct,externally_evaluable_n,accuracy,wilson_95_ci_low,wilson_95_ci_high,primary_metric,agentic_completion,truth_uncertain
+conventional,3,8,0.375,0.13684428582359737,0.6942576053973728,correct / externally evaluable N,,0
+deterministic_v5,3,8,0.375,0.13684428582359737,0.6942576053973728,correct / externally evaluable N,,0
+agentic_v2_end_to_end,3,8,0.375,0.13684428582359737,0.6942576053973728,end-to-end correct / externally evaluable N (failures counted incorrect),6/8,0

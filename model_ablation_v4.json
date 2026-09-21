@@ -1,0 +1,36 @@
+{
+  "kind": "model_ablation_v4",
+  "available_models": [],
+  "runs": [
+    {
+      "planner": "qwen",
+      "critic": "qwen",
+      "unavailable": true,
+      "reason": "hardware or local runtime did not expose the requested open-weight model; it was not silently substituted",
+      "available_models": [],
+      "resolved_planner": null,
+      "resolved_critic": null
+    },
+    {
+      "planner": "qwen",
+      "critic": "deepseek",
+      "unavailable": true,
+      "reason": "hardware or local runtime did not expose the requested open-weight model; it was not silently substituted",
+      "available_models": [],
+      "resolved_planner": null,
+      "resolved_critic": null
+    },
+    {
+      "planner": "deepseek",
+      "critic": "qwen",
+      "unavailable": true,
+      "reason": "hardware or local runtime did not expose the requested open-weight model; it was not silently substituted",
+      "available_models": [],
+      "resolved_planner": null,
+      "resolved_critic": null
+    }
+  ],
+  "deterministic_evidence_fixed": true,
+  "conclusions_agree_when_both_available": null,
+  "note": "Scientific polarity is produced by deterministic evidence. This ablation only measures planner/critic text given the same ledger."
+}

@@ -1,0 +1,423 @@
+{
+  "kind": "v5_external_scoring_contract",
+  "genome_skeptic_v5_freeze_hash": "0e993125d2d620e54bbb42b3e420b4b9fda951c28b358ff8a2aed2d5b55a8f1b",
+  "target_inventory_sha256": "b82969ad6e4e3e5a134ea831a0370d32b19612f9440b71d6ad8fbd03a3467e85",
+  "external_reference_overlap_sha256": "1ce6e871e1bf20441e54c76bc6bbe90f7066201574ffcaaef6cde8095fbcbc59",
+  "created_utc": "2026-09-18T22:30:00+00:00",
+  "model": "qwen3:4b",
+  "scientific_logic_modified": false,
+  "isolates_selected": false,
+  "per_isolate_labels_inspected": false,
+  "genome_skeptic_executed": false,
+  "anti_leakage": "AMBIGUOUS cases must not silently become positives or negatives. They are excluded from sensitivity/specificity/precision/F1/MCC/FPR/FNR denominators and reported in the ambiguous rate.",
+  "pgap_gene_name_equality_is_not_orthology": true,
+  "n_frozen_targets": 8,
+  "tetA_final_interpretation": "The frozen target is an explicitly defined two-member tetracycline MFS efflux family whose seeds are UniProt P02980 (Tn10 TetA class B) and P02982 (TetA/TCR1). It is not specifically tet(A). It is not the NCBI tet_A_B_C_D / Tet(A)/Tet(B)/Tet(C) superfamily, because Tet(C) is not a frozen member. tet(B) is a family member of this frozen target, not an exact-gene synonym of tet(A).",
+  "targets": [
+    {
+      "target": "tetA_tetracycline_efflux",
+      "frozen_interpretation": "Explicitly defined two-member tetracycline MFS efflux family (P02980 Tn10 TetA class B + P02982 TetA/TCR1). Not tet(A)-only. Not Tet(A)/Tet(B)/Tet(C).",
+      "tetA_resolution": "two_member_family_class_B_and_TetA_TCR1",
+      "evidence": {
+        "frozen_family_id": "tetA_tetracycline_efflux",
+        "index_alias": "tetA",
+        "display_name": "tetracycline efflux TetA (mobile/plasmid-associated)",
+        "family_class": "mfs_transporter",
+        "biological_property": "mobile_plasmid_associated",
+        "n_frozen_members": 2,
+        "frozen_members": [
+          {
+            "protein_id": "P02980",
+            "family_yaml_species_label": "Tn10 TetA class B",
+            "length_aa": 401,
+            "source": "data/target_families/tetA_tetracycline_efflux/family.yaml"
+          },
+          {
+            "protein_id": "P02982",
+            "family_yaml_species_label": "TetA/TCR1 tetracycline efflux",
+            "length_aa": 399,
+            "source": "data/target_families/tetA_tetracycline_efflux/family.yaml"
+          }
+        ],
+        "competing_families": [
+          "mfs_multidrug_efflux",
+          "rnd_efflux"
+        ],
+        "not_tetA_only": true,
+        "not_tetA_tetB_tetC_superfamily": true,
+        "tetC_not_a_frozen_member": true,
+        "fetch_script_listed_P0A334_TetA_class_C_but_absent_from_frozen_family_yaml": true,
+        "fetch_script_path": "scripts/fetch_v5_families.py",
+        "v5_target_type_used_in_controls": "gene_orthologue",
+        "calibration_also_has_protein_family_case": "cal5_cal_tetA_protein_family",
+        "models_TargetFamily_docstring": "Curated homolog set for gene_orthologue reasoning. Not a single reference protein.",
+        "conclusion": "The frozen target is an explicitly defined two-member tetracycline MFS efflux family whose seeds are UniProt P02980 (Tn10 TetA class B) and P02982 (TetA/TCR1). It is not specifically tet(A). It is not the NCBI tet_A_B_C_D / Tet(A)/Tet(B)/Tet(C) superfamily, because Tet(C) is not a frozen member. tet(B) is a family member of this frozen target, not an exact-gene synonym of tet(A)."
+      },
+      "primary_endpoint": "FAMILY",
+      "secondary_endpoints": [
+        "ORTHOLOGOUS_GENE"
+      ],
+      "v5_target_type": "gene_orthologue",
+      "pgap_insufficient_as_reference_standard": true,
+      "pgap_insufficiency_reason": "PGAP gene-name equality to tetA is an exact-symbol label, not the frozen two-member family. A tetB-only annotation would be missed or wrongly treated as non-target if tetA text equality were required. Generic tetracycline-resistance product names are not class-resolved. AMRFinderPlus tet(A) or tet(B) presence definitions are the FAMILY reference after predictions are frozen. tet(C) is RELATED_BUT_NON_TARGET.",
+      "proposed_external_label_source": "AMRFinderPlus presence genes tet(A) and tet(B) after freeze; PGAP tetA/tetB symbols only as a secondary symbol check, never as orthology",
+      "label_rules": {
+        "true_positive": "Independent post-hoc presence of NCBI tet(A) (matching frozen member P02982) OR tet(B) (matching frozen member P02980) as a complete non-pseudo gene. FAMILY TP if either member is present. tet(A) and tet(B) are not scored as the same EXACT_GENE.",
+        "true_negative": "Independent annotation has no tet(A), no tet(B), and no other complete frozen-member-equivalent tetracycline MFS efflux gene. Competing MFS/RND transporters without tet(A)/tet(B) are TN for this family (and RELATED_BUT_NON_TARGET for classification).",
+        "related_but_non_target": "tet(C), tet(D), tet_A_B_C_D parent-only, ABC tetA(*) subunits, MFS multidrug efflux (mdfA/emrB/bcr), RND (acrB/acrD), and other tetracycline MFS classes not among the two frozen members.",
+        "ambiguous": "Parent-only tet_A_B_C_D without a child gene; PGAP product 'tetracycline efflux MFS transporter' without tetA/tetB symbol; pseudogene; partial; unrejoined fragments; conflicting tet(A) vs tet(B) class assignment on one locus.",
+        "pseudogenes": "If the independent annotation marks a matching locus as a pseudogene (pseudo=true, /pseudo, or interrupted CDS), the case is AMBIGUOUS for presence/absence. It is not a true positive and not a true negative.",
+        "partial_genes": "A partial CDS (incomplete, partial=true, or coverage below a complete protein) matching the target is AMBIGUOUS for presence/absence. Do not count as TP or TN.",
+        "fragmented_loci": "Fragments on separate contigs that the independent annotation does not join into one complete gene are AMBIGUOUS. If the independent annotation reconstructs one complete gene from fragments, score presence as for a complete locus. Genome Skeptic locus reconstruction is evaluated under locus metrics, not by forcing fragments into TP/TN.",
+        "duplicate_loci": "Multiple complete matching loci: presence/absence remains TP if at least one complete target locus exists. Copy number is scored only on the multiplicity endpoint using distinct genomic intervals, not collapsed names.",
+        "broad_family_only_external_annotations": "A broad-family-only external annotation (superfamily, parent hierarchy node, or generic product name without a member-gene assignment) is RELATED_BUT_NON_TARGET when the parent is a known related family, else AMBIGUOUS. It is never a silent TP or TN.",
+        "ambiguous_must_not_become_positive_or_negative": true,
+        "tetB_vs_tetA": "tet(B) is a frozen family member (P02980) so it is FAMILY-TP. It is not treated as exact-gene equivalent to tet(A)."
+      }
+    },
+    {
+      "target": "mfs_multidrug_efflux",
+      "frozen_interpretation": "Competitor panel family of non-TetA MFS multidrug efflux proteins MdfA (P0AEY8), EmrB (P0AEJ0), and Bcr (P28246). Index alias mdfA does not reduce the family to MdfA alone.",
+      "evidence": {
+        "display_name": "MFS multidrug efflux (non-TetA competitors)",
+        "family_class": "mfs_transporter",
+        "biological_property": "membrane_transporter_competing_families",
+        "members": [
+          "P0AEY8",
+          "P0AEJ0",
+          "P28246"
+        ],
+        "competing_families": [
+          "tetA_tetracycline_efflux"
+        ],
+        "source": "data/target_families/mfs_multidrug_efflux/family.yaml"
+      },
+      "primary_endpoint": "FAMILY",
+      "secondary_endpoints": [
+        "ORTHOLOGOUS_GENE"
+      ],
+      "v5_target_type": "gene_orthologue",
+      "pgap_insufficient_as_reference_standard": true,
+      "pgap_insufficiency_reason": "No single PGAP gene symbol equals this three-member competitor panel. Textual mdfA equality is not family membership and is not orthology. A union of mdfA/emrB/bcr symbols may label family presence after freeze, with generic 'MFS transporter' product names AMBIGUOUS.",
+      "proposed_external_label_source": "RefSeq/PGAP member-gene symbols mdfA OR emrB OR bcr after freeze; AMRFinderPlus MFS_efflux/emrB only as related-family check",
+      "label_rules": {
+        "true_positive": "Complete non-pseudo PGAP/RefSeq gene symbol mdfA or emrB or bcr matching the frozen member set.",
+        "true_negative": "None of mdfA, emrB, or bcr as complete genes, and no frozen-member-equivalent MFS multidrug efflux.",
+        "related_but_non_target": "tet(A)/tet(B) tetracycline MFS, other MFS families, AMRFinderPlus MFS_efflux parent without a frozen member, E. coli-unrelated bcrA/B/C SMR/ABC proteins.",
+        "ambiguous": "Generic MFS/multidrug-efflux product without a member gene symbol; pseudogene; partial; unrejoined fragments.",
+        "pseudogenes": "If the independent annotation marks a matching locus as a pseudogene (pseudo=true, /pseudo, or interrupted CDS), the case is AMBIGUOUS for presence/absence. It is not a true positive and not a true negative.",
+        "partial_genes": "A partial CDS (incomplete, partial=true, or coverage below a complete protein) matching the target is AMBIGUOUS for presence/absence. Do not count as TP or TN.",
+        "fragmented_loci": "Fragments on separate contigs that the independent annotation does not join into one complete gene are AMBIGUOUS. If the independent annotation reconstructs one complete gene from fragments, score presence as for a complete locus. Genome Skeptic locus reconstruction is evaluated under locus metrics, not by forcing fragments into TP/TN.",
+        "duplicate_loci": "Multiple complete matching loci: presence/absence remains TP if at least one complete target locus exists. Copy number is scored only on the multiplicity endpoint using distinct genomic intervals, not collapsed names.",
+        "broad_family_only_external_annotations": "A broad-family-only external annotation (superfamily, parent hierarchy node, or generic product name without a member-gene assignment) is RELATED_BUT_NON_TARGET when the parent is a known related family, else AMBIGUOUS. It is never a silent TP or TN.",
+        "ambiguous_must_not_become_positive_or_negative": true
+      }
+    },
+    {
+      "target": "rnd_efflux",
+      "frozen_interpretation": "AcrB-like RND efflux family whose frozen members are E. coli AcrB (P31224) and AcrD (P24177). Not exact-gene acrB. MdtC (P0AE06) was listed in the fetch script but is not a frozen member.",
+      "evidence": {
+        "display_name": "RND family efflux (AcrB-like)",
+        "family_class": "rnd_transporter",
+        "members": [
+          "P31224",
+          "P24177"
+        ],
+        "competing_families": [
+          "tetA_tetracycline_efflux",
+          "mfs_multidrug_efflux"
+        ],
+        "source": "data/target_families/rnd_efflux/family.yaml"
+      },
+      "primary_endpoint": "FAMILY",
+      "secondary_endpoints": [
+        "ORTHOLOGOUS_GENE"
+      ],
+      "v5_target_type": "gene_orthologue",
+      "pgap_insufficient_as_reference_standard": true,
+      "pgap_insufficiency_reason": "PGAP acrB or acrD gene-name equality is member-level, not orthology, and not a named RND superfamily. AMRFinderPlus catalogs acrB POINT alleles, which are not presence labels.",
+      "proposed_external_label_source": "RefSeq/PGAP acrB OR acrD gene symbols after freeze. Do not use AMRFinderPlus POINT alleles.",
+      "label_rules": {
+        "true_positive": "Complete non-pseudo PGAP/RefSeq acrB or acrD.",
+        "true_negative": "No complete acrB or acrD.",
+        "related_but_non_target": "Other RND pumps (mdtC, acrF, mexB, etc.), MFS competitors, tetA family. AMRFinderPlus acrB POINT is not a presence TP.",
+        "ambiguous": "Generic RND/HAE1 product without acrB/acrD; pseudogene; partial; unrejoined fragments.",
+        "pseudogenes": "If the independent annotation marks a matching locus as a pseudogene (pseudo=true, /pseudo, or interrupted CDS), the case is AMBIGUOUS for presence/absence. It is not a true positive and not a true negative.",
+        "partial_genes": "A partial CDS (incomplete, partial=true, or coverage below a complete protein) matching the target is AMBIGUOUS for presence/absence. Do not count as TP or TN.",
+        "fragmented_loci": "Fragments on separate contigs that the independent annotation does not join into one complete gene are AMBIGUOUS. If the independent annotation reconstructs one complete gene from fragments, score presence as for a complete locus. Genome Skeptic locus reconstruction is evaluated under locus metrics, not by forcing fragments into TP/TN.",
+        "duplicate_loci": "Multiple complete matching loci: presence/absence remains TP if at least one complete target locus exists. Copy number is scored only on the multiplicity endpoint using distinct genomic intervals, not collapsed names.",
+        "broad_family_only_external_annotations": "A broad-family-only external annotation (superfamily, parent hierarchy node, or generic product name without a member-gene assignment) is RELATED_BUT_NON_TARGET when the parent is a known related family, else AMBIGUOUS. It is never a silent TP or TN.",
+        "ambiguous_must_not_become_positive_or_negative": true
+      }
+    },
+    {
+      "target": "recA_recombinase",
+      "frozen_interpretation": "RecA recombinase orthologue family (highly conserved, typically single-copy housekeeping), not an exact MG1655 allele. Frozen members are NP_417179.1, NP_214765.1, NP_228245.1, NP_213126.1.",
+      "evidence": {
+        "display_name": "RecA recombinase (single-copy housekeeping)",
+        "biological_property": "highly_conserved_single_copy_housekeeping",
+        "members": [
+          "NP_417179.1",
+          "NP_214765.1",
+          "NP_228245.1",
+          "NP_213126.1"
+        ],
+        "source": "data/target_families/recA_recombinase/family.yaml"
+      },
+      "primary_endpoint": "ORTHOLOGOUS_GENE",
+      "secondary_endpoints": [
+        "MULTIPLICITY"
+      ],
+      "v5_target_type": "gene_orthologue",
+      "pgap_insufficient_as_reference_standard": true,
+      "pgap_insufficiency_reason": "PGAP gene symbol recA is a name, not an orthology proof. Distant recA-like recombinases and radA must not be treated as RecA by text match.",
+      "proposed_external_label_source": "RefSeq/PGAP recA gene symbol as a presence-symbol label after freeze, with recA-like names RELATED/AMBIGUOUS; not an orthology standard",
+      "label_rules": {
+        "true_positive": "Complete non-pseudo RefSeq/PGAP gene symbol recA.",
+        "true_negative": "No recA gene symbol and no RecA product.",
+        "related_but_non_target": "radA, recA2, recN, other recombinases labeled recA-like.",
+        "ambiguous": "Product 'recombinase RecA family' without gene=recA; pseudogene; partial; unrejoined fragments.",
+        "pseudogenes": "If the independent annotation marks a matching locus as a pseudogene (pseudo=true, /pseudo, or interrupted CDS), the case is AMBIGUOUS for presence/absence. It is not a true positive and not a true negative.",
+        "partial_genes": "A partial CDS (incomplete, partial=true, or coverage below a complete protein) matching the target is AMBIGUOUS for presence/absence. Do not count as TP or TN.",
+        "fragmented_loci": "Fragments on separate contigs that the independent annotation does not join into one complete gene are AMBIGUOUS. If the independent annotation reconstructs one complete gene from fragments, score presence as for a complete locus. Genome Skeptic locus reconstruction is evaluated under locus metrics, not by forcing fragments into TP/TN.",
+        "duplicate_loci": "Multiple complete matching loci: presence/absence remains TP if at least one complete target locus exists. Copy number is scored only on the multiplicity endpoint using distinct genomic intervals, not collapsed names.",
+        "broad_family_only_external_annotations": "A broad-family-only external annotation (superfamily, parent hierarchy node, or generic product name without a member-gene assignment) is RELATED_BUT_NON_TARGET when the parent is a known related family, else AMBIGUOUS. It is never a silent TP or TN.",
+        "ambiguous_must_not_become_positive_or_negative": true
+      }
+    },
+    {
+      "target": "tuf_EF_Tu",
+      "frozen_interpretation": "Elongation factor Tu family, including multi-copy paralogues tufA/tufB. Frozen members start from MG1655 tufA (NP_418240.1) plus distant EF-Tu proteins. The family is EF-Tu, not exact-gene tufA. Distinctive frozen property is multiplicity of near-identical copies.",
+      "evidence": {
+        "display_name": "elongation factor Tu (multi-copy paralogues tufA/tufB)",
+        "biological_property": "multi_copy_genuine_paralogues",
+        "members": [
+          "NP_418240.1",
+          "NP_216072.1",
+          "NP_228108.1",
+          "NP_213616.1"
+        ],
+        "v5_control": "ctrl_multi_near_identical",
+        "source": "data/target_families/tuf_EF_Tu/family.yaml"
+      },
+      "primary_endpoint": "MULTIPLICITY",
+      "secondary_endpoints": [
+        "ORTHOLOGOUS_GENE"
+      ],
+      "v5_target_type": "gene_orthologue",
+      "pgap_insufficient_as_reference_standard": true,
+      "pgap_insufficiency_reason": "PGAP tuf/tufA/tufB symbols can count copies after freeze but do not establish orthology. Collapsed assemblies can undercount relative to PGAP.",
+      "proposed_external_label_source": "RefSeq/PGAP distinct tuf/tufA/tufB CDS intervals after freeze as copy-number labels, not as orthology",
+      "label_rules": {
+        "true_positive": "Presence secondary: at least one complete tuf/tufA/tufB. Multiplicity TP: predicted copy number equals the number of distinct complete PGAP tuf/tufA/tufB intervals.",
+        "true_negative": "Presence secondary: no tuf/tufA/tufB. Multiplicity TN is not used; undercall/overcall rates are used instead.",
+        "related_but_non_target": "tufS, tsf, other GTPase translation factors, fusA.",
+        "ambiguous": "Gene symbol tuf without interval count; pseudogene copies; partial copies; unrejoined fragments. Ambiguous copy counts are excluded from exact-agreement denominators.",
+        "pseudogenes": "If the independent annotation marks a matching locus as a pseudogene (pseudo=true, /pseudo, or interrupted CDS), the case is AMBIGUOUS for presence/absence. It is not a true positive and not a true negative.",
+        "partial_genes": "A partial CDS (incomplete, partial=true, or coverage below a complete protein) matching the target is AMBIGUOUS for presence/absence. Do not count as TP or TN.",
+        "fragmented_loci": "Fragments on separate contigs that the independent annotation does not join into one complete gene are AMBIGUOUS. If the independent annotation reconstructs one complete gene from fragments, score presence as for a complete locus. Genome Skeptic locus reconstruction is evaluated under locus metrics, not by forcing fragments into TP/TN.",
+        "duplicate_loci": "Multiple complete matching loci: presence/absence remains TP if at least one complete target locus exists. Copy number is scored only on the multiplicity endpoint using distinct genomic intervals, not collapsed names.",
+        "broad_family_only_external_annotations": "A broad-family-only external annotation (superfamily, parent hierarchy node, or generic product name without a member-gene assignment) is RELATED_BUT_NON_TARGET when the parent is a known related family, else AMBIGUOUS. It is never a silent TP or TN.",
+        "ambiguous_must_not_become_positive_or_negative": true
+      }
+    },
+    {
+      "target": "lacZ_beta_galactosidase",
+      "frozen_interpretation": "Accessory LacZ beta-galactosidase orthologue family, often absent. Frozen members NP_414878.1, WP_000241775.1, WP_004084538.1. Not every beta-galactosidase.",
+      "evidence": {
+        "display_name": "beta-galactosidase LacZ (accessory, absent from many strains)",
+        "biological_property": "accessory_absent_from_many_strains",
+        "members": [
+          "NP_414878.1",
+          "WP_000241775.1",
+          "WP_004084538.1"
+        ],
+        "source": "data/target_families/lacZ_beta_galactosidase/family.yaml"
+      },
+      "primary_endpoint": "ORTHOLOGOUS_GENE",
+      "secondary_endpoints": [
+        "FAMILY"
+      ],
+      "v5_target_type": "gene_orthologue",
+      "pgap_insufficient_as_reference_standard": true,
+      "pgap_insufficiency_reason": "PGAP gene=lacZ is a presence symbol, not orthology. Other beta-galactosidases (ebgA, bglX, lacZ-family products without lacZ) are not the frozen target.",
+      "proposed_external_label_source": "RefSeq/PGAP gene symbol lacZ after freeze as a presence-symbol label, not orthology",
+      "label_rules": {
+        "true_positive": "Complete non-pseudo gene symbol lacZ.",
+        "true_negative": "No lacZ gene symbol.",
+        "related_but_non_target": "ebgA, bglX, and other beta-galactosidases without gene=lacZ.",
+        "ambiguous": "Product 'beta-galactosidase' without gene=lacZ; pseudogene; partial; unrejoined fragments.",
+        "pseudogenes": "If the independent annotation marks a matching locus as a pseudogene (pseudo=true, /pseudo, or interrupted CDS), the case is AMBIGUOUS for presence/absence. It is not a true positive and not a true negative.",
+        "partial_genes": "A partial CDS (incomplete, partial=true, or coverage below a complete protein) matching the target is AMBIGUOUS for presence/absence. Do not count as TP or TN.",
+        "fragmented_loci": "Fragments on separate contigs that the independent annotation does not join into one complete gene are AMBIGUOUS. If the independent annotation reconstructs one complete gene from fragments, score presence as for a complete locus. Genome Skeptic locus reconstruction is evaluated under locus metrics, not by forcing fragments into TP/TN.",
+        "duplicate_loci": "Multiple complete matching loci: presence/absence remains TP if at least one complete target locus exists. Copy number is scored only on the multiplicity endpoint using distinct genomic intervals, not collapsed names.",
+        "broad_family_only_external_annotations": "A broad-family-only external annotation (superfamily, parent hierarchy node, or generic product name without a member-gene assignment) is RELATED_BUT_NON_TARGET when the parent is a known related family, else AMBIGUOUS. It is never a silent TP or TN.",
+        "ambiguous_must_not_become_positive_or_negative": true
+      }
+    },
+    {
+      "target": "rpoB_RNAP_beta",
+      "frozen_interpretation": "Bacterial RNA polymerase subunit beta (RpoB) orthologue family (seven frozen proteins), with documented fusion/split architecture involving partner rpoC. Not an exact MG1655 allele. Not AMRFinderPlus rifampin POINT alleles.",
+      "evidence": {
+        "display_name": "bacterial RNA polymerase subunit beta (RpoB)",
+        "n_members": 7,
+        "partner_families": [
+          "rpoC_RNAP_beta_prime"
+        ],
+        "known_fusion_or_split": true,
+        "source": "data/target_families/rpoB_RNAP_beta/family.yaml"
+      },
+      "primary_endpoint": "ORTHOLOGOUS_GENE",
+      "secondary_endpoints": [
+        "LOCUS_ARCHITECTURE"
+      ],
+      "v5_target_type": "gene_orthologue",
+      "pgap_insufficient_as_reference_standard": true,
+      "pgap_insufficiency_reason": "PGAP gene=rpoB is not orthology. Fused rpoBC products may lack a simple rpoB symbol. AMRFinderPlus rpoB POINT mutations are not presence.",
+      "proposed_external_label_source": "RefSeq/PGAP rpoB (and fused rpoBC products) after freeze as presence/architecture labels, not orthology; never AMRFinderPlus POINT",
+      "label_rules": {
+        "true_positive": "Complete non-pseudo rpoB, or a documented rpoB-rpoC fusion polypeptide annotated as such.",
+        "true_negative": "No rpoB and no rpoBC fusion.",
+        "related_but_non_target": "rpoA, rpoC as a substitute for rpoB, rpoD, AMRFinderPlus rpoB POINT-only records.",
+        "ambiguous": "Generic RNA polymerase beta product without rpoB; split adjacent ORFs without a complete annotation; pseudogene; partial; unrejoined fragments.",
+        "pseudogenes": "If the independent annotation marks a matching locus as a pseudogene (pseudo=true, /pseudo, or interrupted CDS), the case is AMBIGUOUS for presence/absence. It is not a true positive and not a true negative.",
+        "partial_genes": "A partial CDS (incomplete, partial=true, or coverage below a complete protein) matching the target is AMBIGUOUS for presence/absence. Do not count as TP or TN.",
+        "fragmented_loci": "Fragments on separate contigs that the independent annotation does not join into one complete gene are AMBIGUOUS. If the independent annotation reconstructs one complete gene from fragments, score presence as for a complete locus. Genome Skeptic locus reconstruction is evaluated under locus metrics, not by forcing fragments into TP/TN.",
+        "duplicate_loci": "Multiple complete matching loci: presence/absence remains TP if at least one complete target locus exists. Copy number is scored only on the multiplicity endpoint using distinct genomic intervals, not collapsed names.",
+        "broad_family_only_external_annotations": "A broad-family-only external annotation (superfamily, parent hierarchy node, or generic product name without a member-gene assignment) is RELATED_BUT_NON_TARGET when the parent is a known related family, else AMBIGUOUS. It is never a silent TP or TN.",
+        "ambiguous_must_not_become_positive_or_negative": true
+      }
+    },
+    {
+      "target": "rpoC_RNAP_beta_prime",
+      "frozen_interpretation": "Bacterial RNA polymerase subunit beta-prime (RpoC) partner family (NP_418415.1, NP_215182.1). Not a substitute rpoB definition.",
+      "evidence": {
+        "display_name": "bacterial RNA polymerase subunit beta-prime (RpoC)",
+        "role": "partner family for fusion tests; not a substitute rpoB definition",
+        "members": [
+          "NP_418415.1",
+          "NP_215182.1"
+        ],
+        "source": "data/target_families/rpoC_RNAP_beta_prime/family.yaml"
+      },
+      "primary_endpoint": "ORTHOLOGOUS_GENE",
+      "secondary_endpoints": [
+        "LOCUS_ARCHITECTURE"
+      ],
+      "v5_target_type": "gene_orthologue",
+      "pgap_insufficient_as_reference_standard": true,
+      "pgap_insufficiency_reason": "PGAP gene=rpoC is not orthology. Fused rpoBC may omit a separate rpoC. AMRFinderPlus rpoC POINT mutations are not presence.",
+      "proposed_external_label_source": "RefSeq/PGAP rpoC (and fused rpoBC products) after freeze; never AMRFinderPlus POINT",
+      "label_rules": {
+        "true_positive": "Complete non-pseudo rpoC, or a documented rpoB-rpoC fusion polypeptide.",
+        "true_negative": "No rpoC and no rpoBC fusion.",
+        "related_but_non_target": "rpoB as a substitute for rpoC, other RNAP subunits, AMRFinderPlus rpoC POINT-only records.",
+        "ambiguous": "Generic RNA polymerase beta-prime product without rpoC; pseudogene; partial; unrejoined fragments.",
+        "pseudogenes": "If the independent annotation marks a matching locus as a pseudogene (pseudo=true, /pseudo, or interrupted CDS), the case is AMBIGUOUS for presence/absence. It is not a true positive and not a true negative.",
+        "partial_genes": "A partial CDS (incomplete, partial=true, or coverage below a complete protein) matching the target is AMBIGUOUS for presence/absence. Do not count as TP or TN.",
+        "fragmented_loci": "Fragments on separate contigs that the independent annotation does not join into one complete gene are AMBIGUOUS. If the independent annotation reconstructs one complete gene from fragments, score presence as for a complete locus. Genome Skeptic locus reconstruction is evaluated under locus metrics, not by forcing fragments into TP/TN.",
+        "duplicate_loci": "Multiple complete matching loci: presence/absence remains TP if at least one complete target locus exists. Copy number is scored only on the multiplicity endpoint using distinct genomic intervals, not collapsed names.",
+        "broad_family_only_external_annotations": "A broad-family-only external annotation (superfamily, parent hierarchy node, or generic product name without a member-gene assignment) is RELATED_BUT_NON_TARGET when the parent is a known related family, else AMBIGUOUS. It is never a silent TP or TN.",
+        "ambiguous_must_not_become_positive_or_negative": true
+      }
+    }
+  ],
+  "metrics": {
+    "no_headline_accuracy_across_biologically_different_targets": true,
+    "report_per_target_before_any_pooled_result": true,
+    "ambiguous_excluded_from_presence_denominators": true,
+    "presence_absence_applicable_when_primary_or_secondary_is_presence": {
+      "applies_to_targets": [
+        "tetA_tetracycline_efflux",
+        "mfs_multidrug_efflux",
+        "rnd_efflux",
+        "recA_recombinase",
+        "tuf_EF_Tu",
+        "lacZ_beta_galactosidase",
+        "rpoB_RNAP_beta",
+        "rpoC_RNAP_beta_prime"
+      ],
+      "metrics": [
+        "sensitivity",
+        "specificity",
+        "precision",
+        "F1",
+        "MCC",
+        "false_positive_rate",
+        "false_negative_rate"
+      ],
+      "definitions": {
+        "sensitivity": "TP / (TP + FN)",
+        "specificity": "TN / (TN + FP)",
+        "precision": "TP / (TP + FP)",
+        "F1": "2 * precision * sensitivity / (precision + sensitivity)",
+        "MCC": "Matthews correlation coefficient on TP,TN,FP,FN",
+        "false_positive_rate": "FP / (FP + TN)",
+        "false_negative_rate": "FN / (FN + TP)"
+      },
+      "related_but_non_target_handling": "RELATED_BUT_NON_TARGET predicted as the target family/gene is FP for presence and also counted in related-but-nontarget FPR. RELATED_BUT_NON_TARGET correctly rejected is not TN of the target; it is a correct rejection under classification metrics."
+    },
+    "locus_family_classification": {
+      "applies_to_targets": [
+        "tetA_tetracycline_efflux",
+        "mfs_multidrug_efflux",
+        "rnd_efflux",
+        "rpoB_RNAP_beta",
+        "rpoC_RNAP_beta_prime"
+      ],
+      "metrics": [
+        "exact_classification_accuracy",
+        "related_but_nontarget_false_positive_rate",
+        "ambiguous_rate"
+      ],
+      "definitions": {
+        "exact_classification_accuracy": "Fraction of non-ambiguous cases whose predicted family/architecture matches the frozen target vs competitor vs absent vs related-non-target.",
+        "related_but_nontarget_false_positive_rate": "Fraction of RELATED_BUT_NON_TARGET reference cases predicted as the target.",
+        "ambiguous_rate": "n_ambiguous / n_cases"
+      }
+    },
+    "multiplicity": {
+      "applies_to_targets": [
+        "tuf_EF_Tu",
+        "recA_recombinase"
+      ],
+      "metrics": [
+        "exact_copy_number_agreement",
+        "undercall_rate",
+        "overcall_rate"
+      ],
+      "definitions": {
+        "exact_copy_number_agreement": "Fraction of non-ambiguous cases where predicted distinct-locus count equals the independent complete-CDS interval count.",
+        "undercall_rate": "predicted_n < reference_n",
+        "overcall_rate": "predicted_n > reference_n"
+      }
+    },
+    "confidence": {
+      "applies_to": "all_frozen_targets",
+      "metrics": [
+        "Brier_score",
+        "ECE",
+        "overconfidence_rate"
+      ],
+      "note": "Use Genome Skeptic numeric confidence vs binary non-ambiguous outcome. relative_support is not a calibrated probability."
+    },
+    "falsification": {
+      "applies_to": "all_frozen_targets",
+      "metrics": [
+        "n_initial_interpretations_changed_after_contradictory_evidence",
+        "correct_rejection_rate",
+        "unresolved_rate"
+      ]
+    }
+  },
+  "pgap_insufficient_as_reference_standard": [
+    "tetA_tetracycline_efflux",
+    "mfs_multidrug_efflux",
+    "rnd_efflux",
+    "recA_recombinase",
+    "tuf_EF_Tu",
+    "lacZ_beta_galactosidase",
+    "rpoB_RNAP_beta",
+    "rpoC_RNAP_beta_prime"
+  ]
+}

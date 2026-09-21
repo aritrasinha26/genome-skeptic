@@ -1,0 +1,125 @@
+{
+  "kind": "locus_reconstruction_v4",
+  "cases": [
+    {
+      "split": "development",
+      "case_id": "dev_01",
+      "target": "rpoB",
+      "architecture": "canonical_full_length",
+      "hmm_coverage": 0.9959,
+      "contig": "NODE_43_length_30843_cov_10.730025",
+      "contig_edge": false,
+      "family_gate_passed": true
+    },
+    {
+      "split": "development",
+      "case_id": "dev_02",
+      "target": "rpoB",
+      "architecture": "canonical_full_length",
+      "hmm_coverage": 0.9918,
+      "contig": "NODE_24_length_68527_cov_10.995224",
+      "contig_edge": false,
+      "family_gate_passed": true
+    },
+    {
+      "split": "development",
+      "case_id": "dev_03",
+      "target": "rpoB",
+      "architecture": "fusion",
+      "hmm_coverage": 0.9902,
+      "contig": "NODE_11_length_54165_cov_10.650804",
+      "contig_edge": false,
+      "family_gate_passed": true
+    },
+    {
+      "split": "held_out",
+      "case_id": "hel_03",
+      "target": "rpoB",
+      "architecture": "canonical_full_length",
+      "hmm_coverage": 0.8837,
+      "contig": "NODE_15_length_56641_cov_10.946948",
+      "contig_edge": false,
+      "family_gate_passed": true
+    },
+    {
+      "split": "controls",
+      "case_id": "ctrl_absence",
+      "target": "rpoB",
+      "architecture": "true_no_candidate",
+      "hmm_coverage": 0.0,
+      "contig": null,
+      "contig_edge": false,
+      "family_gate_passed": false
+    },
+    {
+      "split": "controls",
+      "case_id": "ctrl_divergent",
+      "target": "rpoB",
+      "architecture": "canonical_full_length",
+      "hmm_coverage": 0.9918,
+      "contig": "c1",
+      "contig_edge": true,
+      "family_gate_passed": true
+    },
+    {
+      "split": "controls",
+      "case_id": "ctrl_domain_only",
+      "target": "rpoB",
+      "architecture": "true_no_candidate",
+      "hmm_coverage": 0.1949,
+      "contig": "c1",
+      "contig_edge": true,
+      "family_gate_passed": false
+    },
+    {
+      "split": "controls",
+      "case_id": "ctrl_fragmented",
+      "target": "rpoB",
+      "architecture": "assembly_fragmented",
+      "hmm_coverage": 0.5258,
+      "contig": "c1",
+      "contig_edge": true,
+      "family_gate_passed": true
+    },
+    {
+      "split": "controls",
+      "case_id": "ctrl_full_length",
+      "target": "rpoB",
+      "architecture": "canonical_full_length",
+      "hmm_coverage": 0.9959,
+      "contig": "c1",
+      "contig_edge": true,
+      "family_gate_passed": true
+    },
+    {
+      "split": "controls",
+      "case_id": "ctrl_fusion",
+      "target": "rpoB",
+      "architecture": "fusion",
+      "hmm_coverage": 0.9959,
+      "contig": "c1",
+      "contig_edge": true,
+      "family_gate_passed": true
+    },
+    {
+      "split": "controls",
+      "case_id": "ctrl_paralogue",
+      "target": "rpoB",
+      "architecture": "canonical_full_length",
+      "hmm_coverage": 0.9959,
+      "contig": "c1",
+      "contig_edge": true,
+      "family_gate_passed": true
+    },
+    {
+      "split": "controls",
+      "case_id": "ctrl_split",
+      "target": "rpoB",
+      "architecture": "biological_split",
+      "hmm_coverage": 0.9959,
+      "contig": "c1",
+      "contig_edge": true,
+      "family_gate_passed": true
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "M60_PREDICTION_LOCK_MANIFEST",
+  "immutable": true,
+  "n_cases": 60,
+  "truth_opened": false,
+  "accuracy_scored": false,
+  "d20_touched": false,
+  "created_utc": "2026-09-21T07:34:59.875125+00:00",
+  "file_sha256": {
+    "M60_CONVENTIONAL_LOCKED.json": "1e17be189ea5a14137aa1b91b922f147a8a2c31ba9ff7ffbb5b88aeaebdaf4df",
+    "M60_SPECIALIST_COMPARATORS_LOCKED.json": "3b9000d33bde64dd14a0d71bf5a0dd922a286dfc08397e65f1b2389793cbacf8",
+    "M60_GS_DETERMINISTIC_LOCKED.json": "6dd0a08b5e95932580ec2301145264324c9a4134c2fcb0c2391fbaec4218ee3b",
+    "M60_GS_AGENTIC_LOCKED.json": "3c2f753c3100a09a4cad3b4ee92247cdd313166923f8d815ed9b7a1a47508689",
+    "M60_GS_EXHAUSTIVE_LOCKED.json": "84398767648e85b0ca7188d2923ca31615f97c36c77570e16cebd7a68170208a",
+    "M60_BLINDED_EFFICIENCY.json": "857b79799d76afee2142553904ce092a8e6834327a2d4206fd8c08620b93367d"
+  },
+  "counts": {
+    "conventional": 60,
+    "specialist": 60,
+    "gs_deterministic": 60,
+    "gs_agentic": 60,
+    "gs_exhaustive": 60
+  },
+  "agent_failures": 0,
+  "exhaustive_failures": 0,
+  "comparator_failures": 0,
+  "conventional_failures": 0
+}

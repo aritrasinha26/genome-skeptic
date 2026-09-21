@@ -1,0 +1,42 @@
+{
+  "kind": "MANUSCRIPT_PROVENANCE",
+  "freeze_id": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+  "recorded_utc": "2026-09-20T20:40:00+00:00",
+  "note": "Git commit SHA recorded externally. Freeze-manifest contents were not altered to insert this SHA.",
+  "freeze_manifest_path": "manuscript_benchmark/GENOME_SKEPTIC_V4_1_MANUSCRIPT_manifest.json",
+  "freeze_manifest_sha256_expected": "97a94dfefcecc855ebbba2010fd3f02f79ae84fbc61ca0f173e718d6bffd863b",
+  "scientific_core_hash_expected": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+  "m60_protocol_sha256_expected": "30de5efc92d1b2b0db9de0db6f8f98b965397b6adac17052603b3ab44b74df4f",
+  "exclusion_manifest_sha256_expected": "7fe225d0bc779e8b887a3f7980141272f85f3cc8c58c309f99118ff91fe4ef55",
+  "git": {
+    "initialized": true,
+    "commit_sha": "8f66868850a98494778966bd729b88a6fc2952eb",
+    "commit_message": "Freeze Genome Skeptic V4.1 manuscript system",
+    "annotated_tag": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+    "tag_object_sha": "d63b225537b6e686c9188198940d54b67705200d",
+    "branch": "master",
+    "tracked_tree_clean_at_tag": true,
+    "untracked_non_freeze_files_present": true,
+    "remote_configured": false,
+    "remote_push": "NO_REMOTE_AVAILABLE",
+    "push_performed": false
+  },
+  "d8_rerun": false,
+  "d12_rerun": false,
+  "d20_touched": false,
+  "truth_opened": false,
+  "predictions_run": false,
+  "phase_0_1": {
+    "completed_utc": "2026-09-20T03:08:45Z",
+    "protocol_v1_1_sha256": "73aebeba60e7c03390920c866541a977f86776a2711f804e0b960c08a3aa8660",
+    "original_protocol_unchanged": true,
+    "eligible_pool_sha256": "3d1f95e3c8613a5c7848758d02433518b319b9096103fbfde1a9fcfcd3600d02",
+    "m60_cohort_manifest_sha256": "014950b8af086c1148b68292276cdcc50f22844e14e1836381072dd936d51655",
+    "m60_cohort_csv_sha256": "8756823e9ec214f2c14bbeb1a8e916f312db4acd6c8d2d7d3b1d78601d199d02",
+    "m60_selection_audit_sha256": "a09283e15cc00b6e2dc366b5f3f8661c7ff617abc33517b052991e160aee1573",
+    "m60_cases_selected": true,
+    "exclusion_overlap": 0,
+    "manuscript_arms_run": false,
+    "comparators_run": false
+  }
+}

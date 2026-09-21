@@ -1,0 +1,18 @@
+GENOME SKEPTIC AGENT - CURSOR PROJECT
+
+Windows:
+1. Unzip this folder anywhere you want to work.
+2. Double-click OPEN_IN_CURSOR.bat.
+3. Cursor should open the entire project as a workspace.
+
+Alternative:
+Double-click GenomeSkeptic.code-workspace if .code-workspace files are associated with Cursor.
+
+Mac/Linux:
+Run ./open_in_cursor.sh from this folder.
+
+The Cursor-specific project instructions are already in:
+.cursor/rules/genome-agent.mdc
+
+Start by asking Cursor:
+"Read README.md, DESIGN.md, and .cursor/rules/genome-agent.mdc. Explain the current architecture, then continue implementation without weakening the evidence-ledger, deterministic-validator, or falsification requirements."

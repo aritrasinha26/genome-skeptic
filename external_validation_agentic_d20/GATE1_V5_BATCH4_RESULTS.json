@@ -1,0 +1,390 @@
+{
+  "kind": "GATE1_V5_BATCH4_RESULTS",
+  "created_utc": "2026-09-20T12:34:41.330777+00:00",
+  "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V2_D20",
+  "agentic_freeze_manifest_sha256": "736bd2bdc34b1967a429602903f26ebfa5cdb031c6787a7f0ebf77926517c696",
+  "candidate_pool_manifest_sha256": "61a3e03bde2341d1bccd7a065cc53411ad10ad61ffc0410295a55ce9f8009f4c",
+  "scientific_code_changed": false,
+  "external_labels_opened": false,
+  "agentic_v2_executed": false,
+  "planner_called": false,
+  "critic_called": false,
+  "preflight_reference_not_rerun": {
+    "assembly_accession": "GCF_048282645.1",
+    "target": "lacZ_beta_galactosidase",
+    "status": "COMPLETE",
+    "rerun": false,
+    "m0_sha256": "ae9f161ccfedad485178c7eaea2da771f0c2c0babfe3af54d827acfece8581b8",
+    "v5_result": "target_gene_detected / weakened / confidence 0.55"
+  },
+  "selection_rule": "first four remaining candidate_pool_manifest.json records after excluding GCF_048282645.1 / lacZ_beta_galactosidase",
+  "n_new_attempted": 4,
+  "n_new_completed": 4,
+  "n_frozen_v5_complete_including_preflight": 5,
+  "n_required": 40,
+  "cases": [
+    {
+      "assembly_accession": "GCF_059508655.1",
+      "organism": "Pantoea agglomerans",
+      "genus": "Pantoea",
+      "target": "lacZ_beta_galactosidase",
+      "assembly_level": "Contig",
+      "fasta_sha256": "2c18a75530cd67b8200b9c714e66fafdc4fd3721ea017ffff94ff93c8f3c459f",
+      "blast_returned_hits": true,
+      "tblastn_n_hit_rows": 1,
+      "internal_fallback_executed": false,
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "architecture": "close_paralogue",
+      "homology_support": 0.5,
+      "n_hits": 1,
+      "hit_tools": [
+        "blast+"
+      ],
+      "falsification_summary": [
+        {
+          "test_id": "wrong_paralogue:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "short_conserved_domain:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "low_alignment_coverage:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "locus_multiplicity:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "contamination:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "orthology_versus_paralogy:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "reciprocal_best_hit:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "protein_identity_and_coverage:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "local_gene_order:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "phylogenetic_placement:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "m0_sha256": "4ae245148080922412a056b8220d0e07409723f7a5f9c5f9fc42b5a69f050000",
+      "runtime_seconds": 8.496740718999998,
+      "v5_seconds_reported": 8.495996007999999,
+      "peak_memory": {
+        "peak_rss_kb": 64684,
+        "peak_swap_kb": 0,
+        "peak_vm_kb": 182288,
+        "rusage_maxrss_kb": 64120
+      },
+      "exit_status": 0,
+      "error": null,
+      "external_labels_opened": false,
+      "agentic_v2_executed": false,
+      "planner_called": false,
+      "critic_called": false
+    },
+    {
+      "assembly_accession": "GCF_052402035.1",
+      "organism": "Ornithobacterium rhinotracheale",
+      "genus": "Ornithobacterium",
+      "target": "lacZ_beta_galactosidase",
+      "assembly_level": "Contig",
+      "fasta_sha256": "d4e62d80921c1284b353246e00d2edcc2808df4c152de2c1d88cd4b91873ce05",
+      "blast_returned_hits": true,
+      "tblastn_n_hit_rows": 3,
+      "internal_fallback_executed": false,
+      "final_result": "target_gene_not_detected",
+      "claim_class": "weakened",
+      "confidence": 0.4881,
+      "architecture": "true_no_candidate",
+      "homology_support": 0.2001,
+      "n_hits": 3,
+      "hit_tools": [
+        "blast+"
+      ],
+      "falsification_summary": [
+        {
+          "test_id": "nucleotide_homology:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "translated_homology:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "contig_edge_truncation:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "divergent_homologues:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "locus_multiplicity:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "fusion_orf:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "read_supported_break:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "m0_sha256": "0f9caf9cd79ea0e7ef1fe86e295738118eac4375be1b167634c1af39fdcf128d",
+      "runtime_seconds": 4.2708719919999965,
+      "v5_seconds_reported": 4.270521256999999,
+      "peak_memory": {
+        "peak_rss_kb": 65228,
+        "peak_swap_kb": 0,
+        "peak_vm_kb": 182288,
+        "rusage_maxrss_kb": 64916
+      },
+      "exit_status": 0,
+      "error": null,
+      "external_labels_opened": false,
+      "agentic_v2_executed": false,
+      "planner_called": false,
+      "critic_called": false
+    },
+    {
+      "assembly_accession": "GCF_054061855.1",
+      "organism": "Bradyrhizobium sp. USDA 4512",
+      "genus": "Bradyrhizobium",
+      "target": "lacZ_beta_galactosidase",
+      "assembly_level": "Contig",
+      "fasta_sha256": "b6d917615d4d1d30cad3404279890a83d58fcdbdbd30ea4fb80f68fc47eb5bf2",
+      "blast_returned_hits": false,
+      "tblastn_n_hit_rows": 0,
+      "internal_fallback_executed": true,
+      "final_result": "target_gene_detected",
+      "claim_class": "weakened",
+      "confidence": 0.55,
+      "architecture": "divergent_full_length",
+      "homology_support": 0.62,
+      "n_hits": 20,
+      "hit_tools": [
+        "internal_gene_search"
+      ],
+      "falsification_summary": [
+        {
+          "test_id": "wrong_paralogue:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "short_conserved_domain:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "low_alignment_coverage:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "contamination:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "orthology_versus_paralogy:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "reciprocal_best_hit:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "protein_identity_and_coverage:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "local_gene_order:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        },
+        {
+          "test_id": "phylogenetic_placement:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "m0_sha256": "87ba871ba6f8fa7dd113ee2bb80193d2caa8b4b43d8ac3ed84503bdf76d0d66d",
+      "runtime_seconds": 642.102470638,
+      "v5_seconds_reported": 642.099269236,
+      "peak_memory": {
+        "peak_rss_kb": 5515420,
+        "peak_swap_kb": 190604,
+        "peak_vm_kb": 5776996,
+        "rusage_maxrss_kb": 5517020
+      },
+      "exit_status": 0,
+      "error": null,
+      "external_labels_opened": false,
+      "agentic_v2_executed": false,
+      "planner_called": false,
+      "critic_called": false
+    },
+    {
+      "assembly_accession": "GCF_057180445.1",
+      "organism": "Chryseobacterium sp. HNCC26DJ239",
+      "genus": "Chryseobacterium",
+      "target": "lacZ_beta_galactosidase",
+      "assembly_level": "Contig",
+      "fasta_sha256": "6671a567e0e4dd8c14ad30086def97d3e3319332adee00ab44c300ed961202f9",
+      "blast_returned_hits": true,
+      "tblastn_n_hit_rows": 1,
+      "internal_fallback_executed": false,
+      "final_result": "target_gene_not_detected",
+      "claim_class": "weakened",
+      "confidence": 0.3802,
+      "architecture": "domain_only",
+      "homology_support": 0.0704,
+      "n_hits": 1,
+      "hit_tools": [
+        "blast+"
+      ],
+      "falsification_summary": [
+        {
+          "test_id": "nucleotide_homology:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "translated_homology:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "contig_edge_truncation:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "assembly_fragmentation:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "divergent_homologues:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "weakens_claim"
+        },
+        {
+          "test_id": "family_profile_hmm:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "competitive_family:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "fusion_orf:lacZ_beta_galactosidase",
+          "status": "completed",
+          "result": "supports_claim"
+        },
+        {
+          "test_id": "read_supported_break:lacZ_beta_galactosidase",
+          "status": "skipped",
+          "result": "not_run"
+        }
+      ],
+      "m0_sha256": "79d064c2e6c521894513c78de13fc6a35e47c24573c47e748a957f6d2287ffb5",
+      "runtime_seconds": 5.749291512000013,
+      "v5_seconds_reported": 5.740100573000063,
+      "peak_memory": {
+        "peak_rss_kb": 1288012,
+        "peak_swap_kb": 28656,
+        "peak_vm_kb": 5776996,
+        "rusage_maxrss_kb": 5517020
+      },
+      "exit_status": 0,
+      "error": null,
+      "external_labels_opened": false,
+      "agentic_v2_executed": false,
+      "planner_called": false,
+      "critic_called": false
+    }
+  ]
+}

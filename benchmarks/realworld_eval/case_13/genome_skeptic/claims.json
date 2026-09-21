@@ -1,0 +1,212 @@
+[
+  {
+    "claim_id": "C_target_rpoB",
+    "claim_type": "target_gene_not_detected",
+    "statement": "Target gene 'rpoB' was not detected in the current assembly.",
+    "supporting_evidence_ids": [],
+    "contradicting_evidence_ids": [],
+    "alternative_explanations": [
+      "the gene may be too diverged for nucleotide search",
+      "the gene may be truncated at a contig edge",
+      "the gene may be fragmented across contigs",
+      "non-detection in this assembly is not organism-level absence"
+    ],
+    "falsification_tests": [
+      {
+        "test_id": "nucleotide_homology:rpoB",
+        "name": "nucleotide homology",
+        "hypothesis": "A nucleotide homolog is present and would disprove non-detection.",
+        "blocking": true,
+        "status": "completed",
+        "result": "supports_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "n_hits": 6,
+          "evalues": []
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "translated_homology:rpoB",
+        "name": "translated homology",
+        "hypothesis": "A translated homolog is present and would disprove non-detection.",
+        "blocking": true,
+        "status": "completed",
+        "result": "supports_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "n_hits": 14,
+          "evalues": []
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "predicted_protein_homology:rpoB",
+        "name": "predicted protein homology",
+        "hypothesis": "A predicted protein homolog is present and would disprove non-detection.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "predicted proteins were unavailable"
+      },
+      {
+        "test_id": "partial_domain_hits:rpoB",
+        "name": "partial-domain hits",
+        "hypothesis": "A partial domain hit is present and would disprove clean non-detection.",
+        "blocking": true,
+        "status": "completed",
+        "result": "supports_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "n_domain_hits": 0,
+          "n_partial_hits": 0
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "contig_edge_truncation:rpoB",
+        "name": "contig-edge truncation",
+        "hypothesis": "The gene is truncated at a contig edge rather than missing.",
+        "blocking": true,
+        "status": "completed",
+        "result": "weakens_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "n_edge_hits": 20,
+          "fallback": "geometric_truncation"
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "assembly_fragmentation:rpoB",
+        "name": "assembly fragmentation",
+        "hypothesis": "The gene is split across contigs rather than missing.",
+        "blocking": true,
+        "status": "completed",
+        "result": "supports_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "fragmented": false,
+          "combined_query_span": 0.26515151515151514
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "local_read_coverage:rpoB",
+        "name": "local read coverage",
+        "hypothesis": "Coverage suggests an unassembled, collapsed, or hidden locus.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "read-back depth was unavailable"
+      },
+      {
+        "test_id": "expected_neighboring_genes:rpoB",
+        "name": "expected neighboring genes",
+        "hypothesis": "Expected neighbors are present in a configuration that could hide or replace the target.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "neighborhood could not be measured"
+      },
+      {
+        "test_id": "divergent_homologues:rpoB",
+        "name": "divergent homologues",
+        "hypothesis": "A diverged homolog is visible only to protein or domain search.",
+        "blocking": true,
+        "status": "completed",
+        "result": "supports_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "n_protein_or_domain_hits": 14
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "reference_neighbor_presence:rpoB",
+        "name": "reference neighbor presence",
+        "hypothesis": "Expected neighboring genes from the reference are present, which can localize a missing target.",
+        "blocking": false,
+        "status": "unresolved",
+        "result": "inconclusive",
+        "evidence_ids": [],
+        "metrics": {
+          "expected": [
+            "dnaA",
+            "gyrA",
+            "rpoC",
+            "rplK"
+          ],
+          "present": []
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "missing_in_fragmented_region:rpoB",
+        "name": "missing in fragmented region",
+        "hypothesis": "The missing target lies in a region likely affected by assembly fragmentation.",
+        "blocking": false,
+        "status": "completed",
+        "result": "weakens_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "conflicts": [
+            "no_strong_reference_hit",
+            "phylogenetic_paralog",
+            "query_annotation_missing",
+            "contig_edge"
+          ],
+          "break": {}
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "read_supported_break:rpoB",
+        "name": "read-supported contig break",
+        "hypothesis": "Paired-end mapping supports truncation of a missing target at a contig break.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "paired-end mapping was unavailable; read support was not invented"
+      }
+    ],
+    "completed_tests": [
+      "nucleotide_homology:rpoB",
+      "translated_homology:rpoB",
+      "partial_domain_hits:rpoB",
+      "contig_edge_truncation:rpoB",
+      "assembly_fragmentation:rpoB",
+      "divergent_homologues:rpoB",
+      "missing_in_fragmented_region:rpoB"
+    ],
+    "unresolved_tests": [
+      "predicted_protein_homology:rpoB",
+      "local_read_coverage:rpoB",
+      "expected_neighboring_genes:rpoB",
+      "reference_neighbor_presence:rpoB",
+      "read_supported_break:rpoB"
+    ],
+    "status": "weakened",
+    "confidence": 0.5,
+    "provenance": {
+      "created_by": "deterministic_validator",
+      "stage": "target_gene",
+      "tool_names": [
+        "internal_gene_search"
+      ],
+      "evidence_ledger_ids": [],
+      "attack_plan_id": "AP_target_gene_not_detected_rpoB",
+      "notes": "LLM did not supply identity, coverage, E-values, domain hits, catalytic residues, orthologues, gene order, or reciprocal hits."
+    },
+    "rationale": "Adversarial attack plan AP_target_gene_not_detected_rpoB was executed with deterministic measurements. Status 'weakened' is a claim-state, not certainty. The statement is limited to non-detection in the current assembly; it is not a claim that the gene is missing from the organism. Unfinished tests: predicted_protein_homology:rpoB, local_read_coverage:rpoB, expected_neighboring_genes:rpoB, reference_neighbor_presence:rpoB, read_supported_break:rpoB. Unavailable instruments: contig_taxonomy.",
+    "id": "C_target_rpoB"
+  }
+]

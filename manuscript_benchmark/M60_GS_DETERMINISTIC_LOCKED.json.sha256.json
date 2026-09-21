@@ -1,0 +1,8 @@
+{
+  "path": "manuscript_benchmark/M60_GS_DETERMINISTIC_LOCKED.json",
+  "sha256": "6dd0a08b5e95932580ec2301145264324c9a4134c2fcb0c2391fbaec4218ee3b",
+  "hashed_utc": "2026-09-21T07:35:00.204047+00:00",
+  "truth_opened": false,
+  "accuracy_scored": false,
+  "d20_touched": false
+}

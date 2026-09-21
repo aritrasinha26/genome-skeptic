@@ -1,0 +1,19 @@
+{
+  "kind": "external_benchmark_applicability_result",
+  "not_an_accuracy_score": true,
+  "benchmark": "BixBench",
+  "source_manifest": "external_validation/bixbench_v5_task_manifest.json",
+  "source_manifest_sha256": "18fe4112f9a31aff6db8955cf44b6e97c2060008ce5d623d355df963913c02a3",
+  "genome_skeptic_v5_freeze_hash": "0e993125d2d620e54bbb42b3e420b4b9fda951c28b358ff8a2aed2d5b55a8f1b",
+  "model": "qwen3:4b",
+  "n_official_tasks": 205,
+  "n_supported": 0,
+  "n_partially_supported": 39,
+  "n_unsupported": 166,
+  "selected_for_execution": [],
+  "partial_tasks_executed": false,
+  "genome_skeptic_modified_for_compatibility": false,
+  "classification_changed": false,
+  "accuracy_score": null,
+  "note": "This is a prospective applicability screen. Zero SUPPORTED tasks means Genome Skeptic V5 was not scored on BixBench. PARTIALLY_SUPPORTED tasks were not executed."
+}

@@ -1,0 +1,164 @@
+{
+  "case_id": "M60_rpoB_RNAP_beta_GCF_056857995.1",
+  "position": 45,
+  "accession": "GCF_056857995.1",
+  "target": "rpoB_RNAP_beta",
+  "stratum": "challenge",
+  "system": "GS_AGENTIC_V4_1",
+  "system_version": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+  "git_commit": "8f66868850a98494778966bd729b88a6fc2952eb",
+  "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+  "input_assembly_hash": "c5d5270ab9a279c467165bf6bf8006d0622105c70fbdff3a68a629b4b3321839",
+  "start_time": "2026-09-20T07:55:09.462597+00:00",
+  "end_time": "2026-09-20T07:57:53.166473+00:00",
+  "runtime_seconds": 163.693,
+  "peak_memory": 393547776,
+  "tool_versions": {
+    "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+    "blastn": "USAGE",
+    "hmmsearch": "HMMER 3.4 (Aug 2023); http://hmmer.org/",
+    "mmseqs": "18.8cc5c",
+    "diamond": "diamond version 2.2.6",
+    "amrfinder": "4.2.7"
+  },
+  "database_versions": {
+    "amrfinder_database_version": "2026-08-07.1",
+    "amrfinder_database_directory": "/home/aritr/micromamba/envs/genome-skeptic-prod/share/amrfinderplus/data/2026-08-07.1",
+    "amrfinder_database_freeze_sha256": "d7ae98063c3b7795fa443f90f51a267e5b28002e1e5d59f364f403dde8a188be",
+    "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+    "family_definitions_hash": "ed4210640e318b8ed94ebf6d72b9c37afa9039eed858fdd54c4165fbcce09605"
+  },
+  "completion_status": "complete",
+  "failure_reason": null,
+  "output_file": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/RUNS/position_45/GCF_056857995.1/rpoB_RNAP_beta/GS_AGENTIC_V4_1/case_locked.json",
+  "truth_opened": false,
+  "d20_touched": false,
+  "accuracy_scored": false,
+  "ok": true,
+  "model": "qwen3:4b",
+  "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+  "planner_invoked": true,
+  "planner_decision": "continue",
+  "planner_actions": [
+    "inspect_contig_edges_for_target"
+  ],
+  "planner_control_decision": null,
+  "planner_grounding_status": "MISSING",
+  "critic_invoked": true,
+  "critic_verdict": "accept",
+  "critic_actions": null,
+  "actions_executed": [
+    "inspect_contig_edges_for_target"
+  ],
+  "action_results": [
+    {
+      "action_id": "inspect_contig_edges_for_target",
+      "status": "INFORMATIVE"
+    }
+  ],
+  "m0_hash": "262d6bb219867a782945a399d907157be289e8d309414d2d3875a6830d1866e9",
+  "m_final_hash": "3a9608ed531033924a9cf4a05c6279f3e148a71ebe62c3e7452b45e6745446a9",
+  "measurements_changed_before_validation": true,
+  "validator_consumed_measurement_hash": "3a9608ed531033924a9cf4a05c6279f3e148a71ebe62c3e7452b45e6745446a9",
+  "validator_consumed_m0": false,
+  "validator_consumed_final_state": true,
+  "model_call_count": 2,
+  "planner_call_count": 1,
+  "critic_call_count": 1,
+  "repair_count": 0,
+  "agent_failure": null,
+  "final_validator_ran": true,
+  "silent_deterministic_fallback": false,
+  "llm_measurement_entered_claim": false,
+  "unregistered_actions": [],
+  "unknown_evidence_ids": [],
+  "diagnostic_needs_m0": [
+    {
+      "need": "FRAGMENTATION_UNRESOLVED",
+      "priority": 3
+    },
+    {
+      "need": "CONTAMINATION_UNRESOLVED",
+      "priority": 1
+    }
+  ],
+  "actions_offered": [
+    "inspect_contig_edges_for_target",
+    "inspect_hit_contig_contamination"
+  ],
+  "ranked_candidate_actions": [
+    {
+      "action_id": "inspect_contig_edges_for_target",
+      "tests": [
+        "FRAGMENTATION_UNRESOLVED"
+      ],
+      "matched_needs": [
+        "FRAGMENTATION_UNRESOLVED"
+      ],
+      "updates": [
+        "hit_edge_flags"
+      ],
+      "relative_cost": 1,
+      "endpoint_relevance": [
+        "FRAGMENTATION_UNRESOLVED"
+      ],
+      "expected_novelty": "discriminating",
+      "decision_relevance": {
+        "FRAGMENTATION_UNRESOLVED": "discriminating"
+      },
+      "priority_score": 464
+    },
+    {
+      "action_id": "inspect_hit_contig_contamination",
+      "tests": [
+        "CONTAMINATION_UNRESOLVED"
+      ],
+      "matched_needs": [
+        "CONTAMINATION_UNRESOLVED"
+      ],
+      "updates": [
+        "contig_gc",
+        "genome_gc"
+      ],
+      "relative_cost": 1,
+      "endpoint_relevance": [
+        "CONTAMINATION_UNRESOLVED"
+      ],
+      "expected_novelty": "discriminating",
+      "decision_relevance": {
+        "CONTAMINATION_UNRESOLVED": "discriminating"
+      },
+      "priority_score": 204
+    }
+  ],
+  "final_result": "target_gene_detected",
+  "claim_class": "supported",
+  "confidence": 0.55,
+  "architecture": "divergent_full_length",
+  "homology_support": 0.8965,
+  "orthology_class": "exact_strong_homolog,multi_reference_protein_homolog,profile_hmm_family_match",
+  "statement": "Target gene 'rpoB_RNAP_beta' is detected in the current assembly.",
+  "integrity": {
+    "planner_ran": true,
+    "critic_ran_according_to_frozen_control_flow": true,
+    "only_registered_actions_executed": true,
+    "llm_wrote_no_biological_measurements": true,
+    "no_unknown_evidence_ids_accepted": true,
+    "targetmeasurements_changes_from_deterministic_tools_only": true,
+    "m0_recorded": true,
+    "m_final_recorded": true,
+    "deterministic_validator_consumed_m_final": true,
+    "no_silent_fallback": true,
+    "no_scientific_exception_hidden_by_controller": true,
+    "exact_frozen_model_config_used": true,
+    "unregistered_actions": [],
+    "model": "qwen3:4b",
+    "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "config": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/config/qwen_agentic_dev.yaml",
+    "integrity_pass": true
+  },
+  "planner_calls": 1,
+  "critic_calls": 1,
+  "repair_calls": 0,
+  "output_sha256": "0bdc65f453121c839b91ff3a7a956503c0d156a37fc39e18edf9b6a532b21cb3"
+}

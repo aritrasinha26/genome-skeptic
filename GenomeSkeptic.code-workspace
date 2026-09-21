@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "name": "Genome Skeptic Agent",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestArgs": ["tests"],
+    "files.exclude": {
+      "**/__pycache__": true,
+      "**/.pytest_cache": true
+    },
+    "search.exclude": {
+      "**/__pycache__": true,
+      "**/.pytest_cache": true,
+      "**/.venv": true
+    }
+  }
+}

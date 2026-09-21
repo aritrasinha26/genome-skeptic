@@ -1,0 +1,8 @@
+{
+  "path": "manuscript_benchmark/TRUTH_M60/M60_TRUTH_EVIDENCE_MANIFEST.json",
+  "sha256": "770422b1ca287f05b9997f779402a0e18c43dbad80f1e4c9062f6b98ef66af81",
+  "hashed_utc": "2026-09-21T10:01:42.975208+00:00",
+  "accuracy_scored": false,
+  "prediction_payloads_opened": false,
+  "d20_touched": false
+}

@@ -1,0 +1,333 @@
+{
+  "kind": "v3_vs_v4",
+  "did_not_rerun_spades": true,
+  "did_not_modify_v3_reports": true,
+  "v3_held_out": {
+    "held_out_conventional_overall": 0.8703703703703703,
+    "held_out_genome_skeptic_raw_overall": 0.8518518518518519,
+    "held_out_genome_skeptic_calibrated_overall": 0.8518518518518519,
+    "conventional_still_outperforms_genome_skeptic_on_held_out_aggregate": true,
+    "success_criterion": "biological discrimination and confidence calibration, not a higher aggregate score"
+  },
+  "v4_development_overall": {
+    "overall": 0.9629629629629629,
+    "conventional": 0.8518518518518519,
+    "dummy_cautious": 0.6666666666666666,
+    "naive_confident": 0.4444444444444444,
+    "groups": {
+      "detection_correctness": {
+        "n": 12,
+        "correct": 12,
+        "rate": 1.0
+      },
+      "claim_scope_correctness": {
+        "n": 12,
+        "correct": 12,
+        "rate": 1.0
+      },
+      "status_appropriateness": {
+        "n": 7,
+        "correct": 5,
+        "rate": 0.7142857142857143
+      },
+      "confidence_calibration": {
+        "n": 7,
+        "correct": 5,
+        "rate": 0.7142857142857143
+      },
+      "evidence_completeness_consistency": {
+        "n": 6,
+        "correct": 6,
+        "rate": 1.0
+      },
+      "overclaiming": {
+        "n": 6,
+        "correct": 6,
+        "rate": 1.0
+      },
+      "underclaiming": {
+        "n": 11,
+        "correct": 11,
+        "rate": 1.0
+      },
+      "appropriate_abstention": {
+        "n": 1,
+        "correct": 1,
+        "rate": 1.0
+      },
+      "next_action_usefulness": {
+        "n": 12,
+        "correct": 8,
+        "rate": 0.6666666666666666
+      }
+    }
+  },
+  "v4_held_staph_only": {
+    "overall": 0.9444444444444444,
+    "conventional": 0.7222222222222222,
+    "dummy_cautious": 0.6666666666666666,
+    "naive_confident": 0.2222222222222222,
+    "groups": {
+      "detection_correctness": {
+        "n": 4,
+        "correct": 4,
+        "rate": 1.0
+      },
+      "claim_scope_correctness": {
+        "n": 4,
+        "correct": 4,
+        "rate": 1.0
+      },
+      "status_appropriateness": {
+        "n": 2,
+        "correct": 1,
+        "rate": 0.5
+      },
+      "confidence_calibration": {
+        "n": 2,
+        "correct": 0,
+        "rate": 0.0
+      },
+      "evidence_completeness_consistency": {
+        "n": 2,
+        "correct": 2,
+        "rate": 1.0
+      },
+      "overclaiming": {
+        "n": 2,
+        "correct": 2,
+        "rate": 1.0
+      },
+      "underclaiming": {
+        "n": 4,
+        "correct": 4,
+        "rate": 1.0
+      },
+      "appropriate_abstention": {
+        "n": 0,
+        "correct": 0,
+        "rate": null
+      },
+      "next_action_usefulness": {
+        "n": 4,
+        "correct": 2,
+        "rate": 0.5
+      }
+    }
+  },
+  "v4_controls": {
+    "overall": 0.9577464788732394,
+    "conventional": 0.6619718309859155,
+    "dummy_cautious": 0.8591549295774648,
+    "naive_confident": 0.323943661971831,
+    "groups": {
+      "detection_correctness": {
+        "n": 15,
+        "correct": 15,
+        "rate": 1.0
+      },
+      "claim_scope_correctness": {
+        "n": 16,
+        "correct": 16,
+        "rate": 1.0
+      },
+      "status_appropriateness": {
+        "n": 14,
+        "correct": 12,
+        "rate": 0.8571428571428571
+      },
+      "confidence_calibration": {
+        "n": 14,
+        "correct": 11,
+        "rate": 0.7857142857142857
+      },
+      "evidence_completeness_consistency": {
+        "n": 8,
+        "correct": 8,
+        "rate": 1.0
+      },
+      "overclaiming": {
+        "n": 8,
+        "correct": 7,
+        "rate": 0.875
+      },
+      "underclaiming": {
+        "n": 10,
+        "correct": 10,
+        "rate": 1.0
+      },
+      "appropriate_abstention": {
+        "n": 6,
+        "correct": 5,
+        "rate": 0.8333333333333334
+      },
+      "next_action_usefulness": {
+        "n": 32,
+        "correct": 24,
+        "rate": 0.75
+      }
+    }
+  },
+  "key_case_rows": [
+    {
+      "case_id": "dev_01",
+      "target": "rpoB_MG1655_allele",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "supported",
+      "gs_confidence": 0.55,
+      "gs_architecture": null,
+      "conv_claim": "target_gene_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "dev_01",
+      "target": "rpoB",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "supported",
+      "gs_confidence": 0.55,
+      "gs_architecture": "canonical_full_length",
+      "conv_claim": "target_gene_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "dev_02",
+      "target": "rpoB_MG1655_allele",
+      "gs_claim": "target_gene_not_detected",
+      "gs_status": "weakened",
+      "gs_confidence": 0.3981,
+      "gs_architecture": null,
+      "conv_claim": "target_gene_not_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "dev_02",
+      "target": "rpoB",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "supported",
+      "gs_confidence": 0.55,
+      "gs_architecture": "canonical_full_length",
+      "conv_claim": "target_gene_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "dev_03",
+      "target": "rpoB_MG1655_allele",
+      "gs_claim": "target_gene_not_detected",
+      "gs_status": "weakened",
+      "gs_confidence": 0.4296,
+      "gs_architecture": null,
+      "conv_claim": "target_gene_not_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "dev_03",
+      "target": "rpoB",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "weakened",
+      "gs_confidence": 0.55,
+      "gs_architecture": "fusion",
+      "conv_claim": "target_gene_not_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "hel_03",
+      "target": "rpoB_MG1655_allele",
+      "gs_claim": "target_gene_not_detected",
+      "gs_status": "weakened",
+      "gs_confidence": 0.468,
+      "gs_architecture": null,
+      "conv_claim": "target_gene_not_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "hel_03",
+      "target": "rpoB",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "weakened",
+      "gs_confidence": 0.4761,
+      "gs_architecture": "canonical_full_length",
+      "conv_claim": "target_gene_not_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "ctrl_absence",
+      "target": "rpoB",
+      "gs_claim": "target_gene_not_detected",
+      "gs_status": "weakened",
+      "gs_confidence": 0.5532,
+      "gs_architecture": "true_no_candidate",
+      "conv_claim": "target_gene_not_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "ctrl_divergent",
+      "target": "rpoB",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "weakened",
+      "gs_confidence": 0.55,
+      "gs_architecture": "canonical_full_length",
+      "conv_claim": "target_gene_not_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "ctrl_domain_only",
+      "target": "rpoB",
+      "gs_claim": "target_gene_not_detected",
+      "gs_status": "weakened",
+      "gs_confidence": 0.536,
+      "gs_architecture": "true_no_candidate",
+      "conv_claim": "target_gene_not_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "ctrl_fragmented",
+      "target": "rpoB",
+      "gs_claim": "target_gene_not_detected",
+      "gs_status": "weakened",
+      "gs_confidence": 0.4506,
+      "gs_architecture": "assembly_fragmented",
+      "conv_claim": "target_gene_not_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "ctrl_full_length",
+      "target": "rpoB",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "supported",
+      "gs_confidence": 0.55,
+      "gs_architecture": "canonical_full_length",
+      "conv_claim": "target_gene_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "ctrl_fusion",
+      "target": "rpoB",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "weakened",
+      "gs_confidence": 0.55,
+      "gs_architecture": "fusion",
+      "conv_claim": "target_gene_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "ctrl_paralogue",
+      "target": "rpoB",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "weakened",
+      "gs_confidence": 0.55,
+      "gs_architecture": "canonical_full_length",
+      "conv_claim": "target_gene_detected",
+      "conv_status": "supported"
+    },
+    {
+      "case_id": "ctrl_split",
+      "target": "rpoB",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "supported",
+      "gs_confidence": 0.55,
+      "gs_architecture": "biological_split",
+      "conv_claim": "target_gene_detected",
+      "conv_status": "supported"
+    }
+  ]
+}

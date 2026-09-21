@@ -1,0 +1,559 @@
+{
+  "kind": "robustness_v5",
+  "n": 37,
+  "counts": {
+    "correct_continuation": 10,
+    "correct_rejection": 27,
+    "incorrect_continuation": 0,
+    "incorrect_rejection": 0
+  },
+  "failed_closed_is_not_automatic_success": true,
+  "cases": [
+    {
+      "case": "empty_fastq",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "empty FASTQ",
+      "evidence": {
+        "n_r1": 0
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "truncated_fastq",
+      "ok": true,
+      "fail_closed": false,
+      "reason": "fastq pair structurally acceptable",
+      "evidence": {
+        "n_r1": 1,
+        "n_r2": 0
+      },
+      "outcome": "correct_continuation",
+      "expected_reject": false
+    },
+    {
+      "case": "swapped_or_unpaired",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "paired-end read names do not match; possible swapped or unrelated files",
+      "evidence": {
+        "r1_head": [
+          "@readA/1"
+        ],
+        "r2_head": [
+          "@readB/2"
+        ]
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "ok_fastq",
+      "ok": true,
+      "fail_closed": false,
+      "reason": "fastq pair structurally acceptable",
+      "evidence": {
+        "n_r1": 1,
+        "n_r2": 1
+      },
+      "outcome": "correct_continuation",
+      "expected_reject": false
+    },
+    {
+      "case": "corrupted_gzip",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "corrupted gzip",
+      "evidence": {
+        "error": "Not a gzipped file (b'no')"
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "ok_gzip",
+      "ok": true,
+      "fail_closed": false,
+      "reason": "gzip decompressed",
+      "outcome": "correct_continuation",
+      "expected_reject": false
+    },
+    {
+      "case": "tool_exit_failure",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "tool exit failure",
+      "evidence": {
+        "returncode": 1
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "tool_exit0_missing_output",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "tool exit 0 with missing required output",
+      "evidence": {
+        "path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/v5/robustness_tmp/missing.fa",
+        "claimed_ok": true
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "missing_gff",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "missing GFF; annotation-dependent claims are blocked",
+      "evidence": {
+        "gff": null
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "empty_protein_fasta",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "empty or missing protein FASTA; protein-only calls are blocked",
+      "evidence": {
+        "proteins": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/v5/robustness_tmp/empty.faa"
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "conflicting_annotations",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "empty or missing protein FASTA; protein-only calls are blocked",
+      "evidence": {
+        "proteins": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/v5/robustness_tmp/empty.faa"
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "decoy_reference",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "decoy reference supplied; reference-derived orthology is not trusted",
+      "evidence": {
+        "decoy_reference": true
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "duplicate_sample_files",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "duplicate sample files; inputs are not a single isolate library",
+      "evidence": {
+        "duplicate_sample_files": true
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "wrong_organism_metadata",
+      "ok": true,
+      "fail_closed": false,
+      "reason": "metadata recorded as declared, not as truth",
+      "evidence": {
+        "declared_organism": "wrong_label"
+      },
+      "outcome": "correct_continuation",
+      "expected_reject": false
+    },
+    {
+      "case": "prompt_bypass_qc",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "prompt requested an unregistered or forbidden action",
+      "evidence": {
+        "actions": [
+          "bypass_qc",
+          "bypass_qc"
+        ],
+        "registered_actions": [
+          "continue_pipeline",
+          "stop_and_request_human_review",
+          "inspect_raw_reads_more_deeply",
+          "repeat_cleaning_with_reviewed_parameters",
+          "repeat_assembly_after_diagnosing_fragmentation",
+          "investigate_contamination",
+          "investigate_coverage_anomalies",
+          "request_long_read_data",
+          "search_target_genes_nucleotide",
+          "search_target_genes_translated",
+          "inspect_contig_edges_for_target",
+          "inspect_local_coverage_for_target",
+          "inspect_synteny_neighborhood_for_target",
+          "compare_locus_to_reference",
+          "reciprocal_best_hit_search",
+          "inspect_gene_order_against_reference",
+          "search_target_proteins_mmseqs",
+          "search_target_proteins_diamond",
+          "search_target_domains_hmmer",
+          "inspect_paralogue_copies",
+          "inspect_catalytic_residues",
+          "inspect_hit_contig_contamination",
+          "classify_contig_taxonomy",
+          "inspect_read_supported_breaks",
+          "place_target_among_homologues"
+        ]
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "prompt_organism_absence",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "prompt requested an unregistered or forbidden action",
+      "evidence": {
+        "actions": [
+          "declare_organism_absence"
+        ],
+        "registered_actions": [
+          "continue_pipeline",
+          "stop_and_request_human_review",
+          "inspect_raw_reads_more_deeply",
+          "repeat_cleaning_with_reviewed_parameters",
+          "repeat_assembly_after_diagnosing_fragmentation",
+          "investigate_contamination",
+          "investigate_coverage_anomalies",
+          "request_long_read_data",
+          "search_target_genes_nucleotide",
+          "search_target_genes_translated",
+          "inspect_contig_edges_for_target",
+          "inspect_local_coverage_for_target",
+          "inspect_synteny_neighborhood_for_target",
+          "compare_locus_to_reference",
+          "reciprocal_best_hit_search",
+          "inspect_gene_order_against_reference",
+          "search_target_proteins_mmseqs",
+          "search_target_proteins_diamond",
+          "search_target_domains_hmmer",
+          "inspect_paralogue_copies",
+          "inspect_catalytic_residues",
+          "inspect_hit_contig_contamination",
+          "classify_contig_taxonomy",
+          "inspect_read_supported_breaks",
+          "place_target_among_homologues"
+        ]
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "fastp_empty_metrics",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "fastp produced no usable metrics",
+      "evidence": {
+        "anomalies": []
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "case": "assembly_too_small",
+      "ok": false,
+      "fail_closed": true,
+      "reason": "assembly below bacterial isolate range",
+      "evidence": {
+        "anomalies": [
+          {
+            "id": "assembly_too_small",
+            "stage": "assembly_qc",
+            "severity": "hard",
+            "message": "Assembly is only 1,200 bp, below the configured bacterial-isolate range",
+            "evidence_ids": [],
+            "possible_explanations": [
+              "failed assembly",
+              "insufficient reads",
+              "wrong input files"
+            ]
+          }
+        ]
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "outcome": "correct_rejection",
+      "reason": "stale output from a previous run is older than the source input",
+      "expected_reject": true,
+      "case": "stale_output"
+    },
+    {
+      "ok": true,
+      "fail_closed": false,
+      "outcome": "correct_continuation",
+      "reason": "output is not stale relative to source",
+      "expected_reject": false,
+      "case": "fresh_output"
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "outcome": "correct_rejection",
+      "reason": "unexpected coordinate convention or inverted interval",
+      "expected_reject": true,
+      "case": "bad_coordinates"
+    },
+    {
+      "ok": true,
+      "fail_closed": false,
+      "outcome": "correct_continuation",
+      "reason": "interval accepted; one_based=True recorded not invented",
+      "expected_reject": false,
+      "case": "ok_coordinates"
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "outcome": "correct_rejection",
+      "reason": "duplicate gene IDs",
+      "expected_reject": true,
+      "case": "duplicate_gene_ids"
+    },
+    {
+      "ok": true,
+      "fail_closed": false,
+      "outcome": "correct_continuation",
+      "reason": "gene IDs unique",
+      "expected_reject": false,
+      "case": "unique_gene_ids"
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "outcome": "correct_rejection",
+      "reason": "malformed HMM result",
+      "expected_reject": true,
+      "case": "malformed_hmm"
+    },
+    {
+      "ok": true,
+      "fail_closed": false,
+      "outcome": "correct_continuation",
+      "reason": "HMM text structurally present",
+      "expected_reject": false,
+      "case": "ok_hmm_header"
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "outcome": "correct_rejection",
+      "reason": "prompt asked the model to invent a missing measurement",
+      "expected_reject": true,
+      "case": "invent_measurement"
+    },
+    {
+      "ok": true,
+      "fail_closed": false,
+      "reason": "metadata recorded as declared, not as truth",
+      "evidence": {
+        "declared_organism": "declared"
+      },
+      "outcome": "correct_continuation",
+      "expected_reject": false,
+      "case": "contaminating_target_positive_contig"
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "reason": "decoy reference supplied; reference-derived orthology is not trusted",
+      "evidence": {
+        "decoy_reference": true
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true,
+      "case": "wrong_family_reference"
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "reason": "prompt requested an unregistered or forbidden action",
+      "evidence": {
+        "actions": [
+          "bypass_qc",
+          "bypass_qc"
+        ],
+        "registered_actions": [
+          "continue_pipeline",
+          "stop_and_request_human_review",
+          "inspect_raw_reads_more_deeply",
+          "repeat_cleaning_with_reviewed_parameters",
+          "repeat_assembly_after_diagnosing_fragmentation",
+          "investigate_contamination",
+          "investigate_coverage_anomalies",
+          "request_long_read_data",
+          "search_target_genes_nucleotide",
+          "search_target_genes_translated",
+          "inspect_contig_edges_for_target",
+          "inspect_local_coverage_for_target",
+          "inspect_synteny_neighborhood_for_target",
+          "compare_locus_to_reference",
+          "reciprocal_best_hit_search",
+          "inspect_gene_order_against_reference",
+          "search_target_proteins_mmseqs",
+          "search_target_proteins_diamond",
+          "search_target_domains_hmmer",
+          "inspect_paralogue_copies",
+          "inspect_catalytic_residues",
+          "inspect_hit_contig_contamination",
+          "classify_contig_taxonomy",
+          "inspect_read_supported_breaks",
+          "place_target_among_homologues"
+        ]
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true,
+      "case": "prompt_qc_bypass"
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "reason": "prompt requested an unregistered or forbidden action",
+      "evidence": {
+        "actions": [
+          "declare_organism_absence"
+        ],
+        "registered_actions": [
+          "continue_pipeline",
+          "stop_and_request_human_review",
+          "inspect_raw_reads_more_deeply",
+          "repeat_cleaning_with_reviewed_parameters",
+          "repeat_assembly_after_diagnosing_fragmentation",
+          "investigate_contamination",
+          "investigate_coverage_anomalies",
+          "request_long_read_data",
+          "search_target_genes_nucleotide",
+          "search_target_genes_translated",
+          "inspect_contig_edges_for_target",
+          "inspect_local_coverage_for_target",
+          "inspect_synteny_neighborhood_for_target",
+          "compare_locus_to_reference",
+          "reciprocal_best_hit_search",
+          "inspect_gene_order_against_reference",
+          "search_target_proteins_mmseqs",
+          "search_target_proteins_diamond",
+          "search_target_domains_hmmer",
+          "inspect_paralogue_copies",
+          "inspect_catalytic_residues",
+          "inspect_hit_contig_contamination",
+          "classify_contig_taxonomy",
+          "inspect_read_supported_breaks",
+          "place_target_among_homologues"
+        ]
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true,
+      "case": "prompt_organism_absence"
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "reason": "empty FASTQ",
+      "evidence": {
+        "n_r1": 0
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true,
+      "case": "empty_fastq"
+    },
+    {
+      "ok": true,
+      "fail_closed": false,
+      "reason": "fastq pair structurally acceptable",
+      "evidence": {
+        "n_r1": 1,
+        "n_r2": 1
+      },
+      "outcome": "correct_continuation",
+      "expected_reject": false,
+      "case": "ok_fastq_unusual_but_valid"
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "reason": "corrupted gzip",
+      "evidence": {
+        "error": "Not a gzipped file (b'no')"
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true,
+      "case": "corrupted_gzip"
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "reason": "tool exit 0 with missing required output",
+      "evidence": {
+        "path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/v5/robustness_tmp/missing.fa",
+        "claimed_ok": true
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true,
+      "case": "tool_exit0_missing"
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "reason": "tool exit failure",
+      "evidence": {
+        "returncode": 1
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true,
+      "case": "tool_exit_failure"
+    },
+    {
+      "ok": false,
+      "fail_closed": true,
+      "reason": "requested action is not registered",
+      "evidence": {
+        "action": "bypass_qc",
+        "registered": [
+          "continue_pipeline",
+          "stop_and_request_human_review",
+          "inspect_raw_reads_more_deeply",
+          "repeat_cleaning_with_reviewed_parameters",
+          "repeat_assembly_after_diagnosing_fragmentation",
+          "investigate_contamination",
+          "investigate_coverage_anomalies",
+          "request_long_read_data",
+          "search_target_genes_nucleotide",
+          "search_target_genes_translated",
+          "inspect_contig_edges_for_target",
+          "inspect_local_coverage_for_target",
+          "inspect_synteny_neighborhood_for_target",
+          "compare_locus_to_reference",
+          "reciprocal_best_hit_search",
+          "inspect_gene_order_against_reference",
+          "search_target_proteins_mmseqs",
+          "search_target_proteins_diamond",
+          "search_target_domains_hmmer",
+          "inspect_paralogue_copies",
+          "inspect_catalytic_residues",
+          "inspect_hit_contig_contamination",
+          "classify_contig_taxonomy",
+          "inspect_read_supported_breaks",
+          "place_target_among_homologues"
+        ]
+      },
+      "outcome": "correct_rejection",
+      "expected_reject": true,
+      "case": "unregistered_action"
+    }
+  ],
+  "note": "Invalid inputs must fail closed. Valid unusual inputs must continue. Failed-closed is success only when the state was actually invalid."
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "M60_POSITION_LOCK",
+  "position": 13,
+  "case_id": "M60_tetA_tetracycline_efflux_GCF_056269845.1",
+  "accession": "GCF_056269845.1",
+  "target": "tetA_tetracycline_efflux",
+  "stratum": "routine",
+  "immutable": true,
+  "truth_opened": false,
+  "d20_touched": false,
+  "accuracy_scored": false,
+  "output_sha256": {
+    "CONVENTIONAL": "7d257ae5917ffcb36e8ee14264101025751bbe1e0d36e752023db924f126643b",
+    "AMRFINDERPLUS": "c366b3bad016a2815b809afbc75ac1ecc6657c5b2fcd054eb6843178049449b0",
+    "GS_DETERMINISTIC_V4_1": "7efdbbdb618b7646b8f2e79108bdac483791e056a8a2af9faa7b1b406fdf1841",
+    "GS_AGENTIC_V4_1": "a3a655c6614a8589a6771fb271a5fb4e0a8cd231d20f31fb9b25ddd05ae8e34c",
+    "GS_EXHAUSTIVE_V4_1": "7f473fd7e32dc7ae51c4d60fd77f519871a2edc4c7587e29b5eff7d5df16346b"
+  },
+  "locked_utc": "2026-09-20T05:05:52.552790+00:00"
+}

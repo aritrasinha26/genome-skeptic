@@ -1,0 +1,17 @@
+section,metric,value
+summary,A_both_correct,33
+summary,B_det_correct_agent_wrong,0
+summary,C_det_wrong_agent_correct,0
+summary,D_both_wrong,8
+summary,DET_ERRORS_CORRECTED_BY_AGENT,0
+summary,DET_CORRECT_CALLS_DEGRADED_BY_AGENT,0
+summary,NET_CORRECTIONS,0
+summary,accuracy_agent,0.8048780487804879
+summary,accuracy_det,0.8048780487804879
+summary,accuracy_difference_agent_minus_det,0.0
+summary,paired_bootstrap_ci_low,0.0
+summary,paired_bootstrap_ci_high,0.0
+summary,mcnemar_exact_p,NA
+summary,mcnemar_note,McNemar not applicable (B+C = 0)
+summary,bootstrap_seed,20260920
+summary,bootstrap_resamples,10000

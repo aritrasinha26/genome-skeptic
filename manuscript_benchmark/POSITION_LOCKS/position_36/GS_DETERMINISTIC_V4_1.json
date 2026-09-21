@@ -1,0 +1,174 @@
+{
+  "case_id": "M60_tetA_tetracycline_efflux_GCF_058409085.1",
+  "position": 36,
+  "accession": "GCF_058409085.1",
+  "target": "tetA_tetracycline_efflux",
+  "stratum": "routine",
+  "system": "GS_DETERMINISTIC_V4_1",
+  "system_version": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+  "git_commit": "8f66868850a98494778966bd729b88a6fc2952eb",
+  "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+  "input_assembly_hash": "a498d647688debbc7f80479dd9198598766b4127f64b5c9ed8507a027769d913",
+  "start_time": "2026-09-20T07:11:42.929493+00:00",
+  "end_time": "2026-09-20T07:12:01.083481+00:00",
+  "runtime_seconds": 18.153,
+  "peak_memory": 403578880,
+  "tool_versions": {
+    "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+    "blastn": "USAGE",
+    "hmmsearch": "HMMER 3.4 (Aug 2023); http://hmmer.org/",
+    "mmseqs": "18.8cc5c",
+    "diamond": "diamond version 2.2.6",
+    "amrfinder": "4.2.7"
+  },
+  "database_versions": {
+    "amrfinder_database_version": "2026-08-07.1",
+    "amrfinder_database_directory": "/home/aritr/micromamba/envs/genome-skeptic-prod/share/amrfinderplus/data/2026-08-07.1",
+    "amrfinder_database_freeze_sha256": "d7ae98063c3b7795fa443f90f51a267e5b28002e1e5d59f364f403dde8a188be",
+    "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+    "family_definitions_hash": "ed4210640e318b8ed94ebf6d72b9c37afa9039eed858fdd54c4165fbcce09605"
+  },
+  "completion_status": "complete",
+  "failure_reason": null,
+  "output_file": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/RUNS/position_36/GCF_058409085.1/tetA_tetracycline_efflux/GS_DETERMINISTIC_V4_1/case_locked.json",
+  "truth_opened": false,
+  "d20_touched": false,
+  "accuracy_scored": false,
+  "ok": true,
+  "planner_invoked": false,
+  "planner_decision": null,
+  "planner_actions": "competitive_family",
+  "planner_control_decision": null,
+  "planner_grounding_status": null,
+  "critic_invoked": false,
+  "critic_verdict": null,
+  "critic_actions": null,
+  "actions_executed": [
+    "competitive_family",
+    "inspect_contig_edges_for_target",
+    "inspect_hit_contig_contamination"
+  ],
+  "action_results": [
+    {
+      "action_id": "competitive_family",
+      "status": "NO_NEW_INFORMATION"
+    },
+    {
+      "action_id": "inspect_contig_edges_for_target",
+      "status": "INFORMATIVE"
+    },
+    {
+      "action_id": "inspect_hit_contig_contamination",
+      "status": "INFORMATIVE"
+    }
+  ],
+  "m0_hash": "0d23e676e4e89eb759d3187231bd238ce40aacdc4a3adb7692598e4a83baa2a0",
+  "m_final_hash": "daee889457b0bab1508f1e18873c3e2a4fe6ceaf2b9f90994ac363ffa109d1a6",
+  "measurements_changed_before_validation": true,
+  "validator_consumed_measurement_hash": "daee889457b0bab1508f1e18873c3e2a4fe6ceaf2b9f90994ac363ffa109d1a6",
+  "validator_consumed_m0": false,
+  "validator_consumed_final_state": true,
+  "model_call_count": 0,
+  "planner_call_count": 0,
+  "critic_call_count": 0,
+  "repair_count": 0,
+  "agent_failure": null,
+  "final_validator_ran": true,
+  "silent_deterministic_fallback": false,
+  "llm_measurement_entered_claim": false,
+  "unregistered_actions": [],
+  "unknown_evidence_ids": [],
+  "diagnostic_needs_m0": [
+    {
+      "need": "FAMILY_IDENTITY_UNRESOLVED",
+      "priority": 5
+    },
+    {
+      "need": "FRAGMENTATION_UNRESOLVED",
+      "priority": 3
+    },
+    {
+      "need": "CONTAMINATION_UNRESOLVED",
+      "priority": 1
+    }
+  ],
+  "actions_offered": [
+    "competitive_family",
+    "inspect_contig_edges_for_target",
+    "inspect_hit_contig_contamination"
+  ],
+  "ranked_candidate_actions": [
+    {
+      "action_id": "competitive_family",
+      "tests": [
+        "FAMILY_IDENTITY_UNRESOLVED"
+      ],
+      "matched_needs": [
+        "FAMILY_IDENTITY_UNRESOLVED"
+      ],
+      "updates": [
+        "family_evidence"
+      ],
+      "relative_cost": 1,
+      "endpoint_relevance": [
+        "FAMILY_IDENTITY_UNRESOLVED"
+      ],
+      "expected_novelty": "discriminating",
+      "decision_relevance": {
+        "FAMILY_IDENTITY_UNRESOLVED": "discriminating"
+      },
+      "priority_score": 454
+    },
+    {
+      "action_id": "inspect_contig_edges_for_target",
+      "tests": [
+        "FRAGMENTATION_UNRESOLVED"
+      ],
+      "matched_needs": [
+        "FRAGMENTATION_UNRESOLVED"
+      ],
+      "updates": [
+        "hit_edge_flags"
+      ],
+      "relative_cost": 1,
+      "endpoint_relevance": [
+        "FRAGMENTATION_UNRESOLVED"
+      ],
+      "expected_novelty": "discriminating",
+      "decision_relevance": {
+        "FRAGMENTATION_UNRESOLVED": "discriminating"
+      },
+      "priority_score": 244
+    },
+    {
+      "action_id": "inspect_hit_contig_contamination",
+      "tests": [
+        "CONTAMINATION_UNRESOLVED"
+      ],
+      "matched_needs": [
+        "CONTAMINATION_UNRESOLVED"
+      ],
+      "updates": [
+        "contig_gc",
+        "genome_gc"
+      ],
+      "relative_cost": 1,
+      "endpoint_relevance": [
+        "CONTAMINATION_UNRESOLVED"
+      ],
+      "expected_novelty": "discriminating",
+      "decision_relevance": {
+        "CONTAMINATION_UNRESOLVED": "discriminating"
+      },
+      "priority_score": 204
+    }
+  ],
+  "final_result": "target_gene_not_detected",
+  "claim_class": "rejected",
+  "confidence": 0.1278,
+  "architecture": "close_paralogue",
+  "homology_support": 0.9298,
+  "orthology_class": "exact_strong_homolog,multi_reference_protein_homolog,profile_hmm_family_match",
+  "statement": "Target gene 'tetA_tetracycline_efflux' was not detected in the current assembly.",
+  "output_sha256": "f5438a65a4f02b5aa527642126a44cda02d87ef2718cf53efcebbafa86f40b16"
+}

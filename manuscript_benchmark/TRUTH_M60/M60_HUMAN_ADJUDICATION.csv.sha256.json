@@ -1,0 +1,8 @@
+{
+  "path": "manuscript_benchmark/TRUTH_M60/M60_HUMAN_ADJUDICATION.csv",
+  "sha256": "20b1e78657e24ab31ccc4f9b6801c24149e545a4c7fc9c84e0438ceecf885bd2",
+  "hashed_utc": "2026-09-21T10:10:55.813845+00:00",
+  "accuracy_scored": false,
+  "prediction_payloads_opened": false,
+  "d20_touched": false
+}

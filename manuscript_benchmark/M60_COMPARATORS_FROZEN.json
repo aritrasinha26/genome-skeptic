@@ -1,0 +1,83 @@
+{
+  "kind": "M60_COMPARATORS_FROZEN",
+  "created_utc": "2026-09-20T20:50:00+00:00",
+  "frozen_before_cohort_selection": true,
+  "do_not_change_after_seeing_results": true,
+  "tetA_tetracycline_efflux": [
+    {
+      "name": "AMRFinderPlus",
+      "software": "AMRFinderPlus",
+      "software_version": "4.2.7",
+      "database_version": "RECORD_IN_M60_ENVIRONMENT_BEFORE_FIRST_RUN",
+      "binary_endpoint": "POSITIVE iff a reported gene symbol normalizes to teta, tet(a), tetb, or tet(b). Other tet classes are NEGATIVE for this exact endpoint. Failed runs are comparator failures, not truth."
+    },
+    {
+      "name": "Conventional",
+      "software": "genome_skeptic.eval.evaluate_real._run_system(name=conventional)",
+      "software_version": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+      "database_version": "frozen tetA family member sequences packaged with the freeze",
+      "binary_endpoint": "POSITIVE if conventional homology call detects the target; otherwise NEGATIVE; unresolved is COMPARATOR_UNRESOLVED"
+    },
+    {
+      "name": "GS-Deterministic V4.1",
+      "software": "run_gs_deterministic_v4_1",
+      "software_version": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+      "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+      "binary_endpoint": "POSITIVE if validator claim_type is target_gene_detected; NEGATIVE if target_gene_not_detected; else unresolved/failed-closed"
+    },
+    {
+      "name": "GS-Agentic V4.1",
+      "software": "run_gs_agentic_v4_1",
+      "software_version": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+      "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+      "binary_endpoint": "POSITIVE if validator claim_type is target_gene_detected; NEGATIVE if target_gene_not_detected; else unresolved/failed-closed"
+    },
+    {
+      "name": "GS-Exhaustive V4.1",
+      "software": "run_gs_exhaustive_v4_1",
+      "software_version": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+      "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+      "binary_endpoint": "POSITIVE if validator claim_type is target_gene_detected; NEGATIVE if target_gene_not_detected; else unresolved/failed-closed"
+    }
+  ],
+  "rpoB_RNAP_beta": [
+    {
+      "name": "NCBI RefSeq PGAP CDS annotation",
+      "software": "NCBI RefSeq annotated assembly distribution (no local PGAP re-run; no eggNOG-mapper)",
+      "software_version": "annotation files shipped with the selected GCF assembly version",
+      "database_version": "GCF assembly version; *_genomic.gff.gz from the same ftp_path, fallback *_feature_table.txt.gz",
+      "binary_endpoint": "POSITIVE if any CDS has gene=rpoB or a product naming RNA polymerase subunit beta that is not beta-prime/rpoC. NEGATIVE if annotation is present and has zero rpoB hits. UNCERTAIN if annotation missing/unreadable/no CDS."
+    },
+    {
+      "name": "Conventional",
+      "software": "genome_skeptic.eval.evaluate_real._run_system(name=conventional)",
+      "software_version": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+      "database_version": "frozen rpoB family member sequences packaged with the freeze",
+      "binary_endpoint": "POSITIVE if conventional homology call detects the target; otherwise NEGATIVE; unresolved is COMPARATOR_UNRESOLVED"
+    },
+    {
+      "name": "GS-Deterministic V4.1",
+      "software": "run_gs_deterministic_v4_1",
+      "software_version": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+      "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+      "binary_endpoint": "POSITIVE if validator claim_type is target_gene_detected; NEGATIVE if target_gene_not_detected; else unresolved/failed-closed"
+    },
+    {
+      "name": "GS-Agentic V4.1",
+      "software": "run_gs_agentic_v4_1",
+      "software_version": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+      "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+      "binary_endpoint": "POSITIVE if validator claim_type is target_gene_detected; NEGATIVE if target_gene_not_detected; else unresolved/failed-closed"
+    },
+    {
+      "name": "GS-Exhaustive V4.1",
+      "software": "run_gs_exhaustive_v4_1",
+      "software_version": "GENOME_SKEPTIC_V4_1_MANUSCRIPT",
+      "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+      "binary_endpoint": "POSITIVE if validator claim_type is target_gene_detected; NEGATIVE if target_gene_not_detected; else unresolved/failed-closed"
+    }
+  ],
+  "not_comparators": ["eggNOG-mapper"],
+  "amrfinderplus_defines_teta_truth": false,
+  "pgap_defines_rpob_truth": false
+}

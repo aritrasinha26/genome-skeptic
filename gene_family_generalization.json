@@ -1,0 +1,71 @@
+{
+  "kind": "gene_family_generalization",
+  "families": [
+    {
+      "family_id": "recA_recombinase",
+      "query_id": "recA",
+      "loaded": true,
+      "n_members": 4,
+      "property": "RecA recombinase (single-copy housekeeping)"
+    },
+    {
+      "family_id": "tuf_EF_Tu",
+      "query_id": "tuf",
+      "loaded": true,
+      "n_members": 4,
+      "property": "elongation factor Tu (multi-copy paralogues tufA/tufB)"
+    },
+    {
+      "family_id": "lacZ_beta_galactosidase",
+      "query_id": "lacZ",
+      "loaded": true,
+      "n_members": 3,
+      "property": "beta-galactosidase LacZ (accessory, absent from many strains)"
+    },
+    {
+      "family_id": "tetA_tetracycline_efflux",
+      "query_id": "tetA",
+      "loaded": true,
+      "n_members": 3,
+      "property": "tetracycline efflux TetA (mobile/plasmid-associated)"
+    }
+  ],
+  "eval": {
+    "overall": 0.9166666666666666,
+    "conventional": 0.9166666666666666,
+    "rows": [
+      {
+        "case_id": "dev_01_lacZ",
+        "target": "lacZ",
+        "gs_claim": "target_gene_detected",
+        "gs_status": "supported",
+        "gs_architecture": "close_paralogue",
+        "conv_claim": "target_gene_detected"
+      },
+      {
+        "case_id": "dev_01_recA",
+        "target": "recA",
+        "gs_claim": "target_gene_detected",
+        "gs_status": "supported",
+        "gs_architecture": "canonical_full_length",
+        "conv_claim": "target_gene_detected"
+      },
+      {
+        "case_id": "dev_01_tetA",
+        "target": "tetA",
+        "gs_claim": "target_gene_detected",
+        "gs_status": "weakened",
+        "gs_architecture": "divergent_full_length",
+        "conv_claim": "target_gene_not_detected"
+      },
+      {
+        "case_id": "dev_01_tuf",
+        "target": "tuf",
+        "gs_claim": "target_gene_detected",
+        "gs_status": "supported",
+        "gs_architecture": "canonical_full_length",
+        "conv_claim": "target_gene_detected"
+      }
+    ]
+  }
+}

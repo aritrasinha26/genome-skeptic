@@ -1,0 +1,17 @@
+{
+  "kind": "D12_INFRASTRUCTURE_RETRY",
+  "created_utc": "2026-09-20T17:42:00+00:00",
+  "reason": "host session interrupted Stage 2 after conventional+V5 completed for position 2 and Agentic V3 had written planner_decision.json plus a partial action_hmmer result, but no critic_review.json, claims.json, agentic_provenance.json, or case_locked.json",
+  "scientific_inputs_changed": false,
+  "code_changed": false,
+  "prompts_changed": false,
+  "parameters_changed": false,
+  "cleared_incomplete_workdir": "/home/aritr/d12_work/runs/GCF_057626335.1/rpoB_RNAP_beta/genome_skeptic_agentic_v3",
+  "reused_completed": [
+    "position 1 conventional/V5/agentic",
+    "position 2 conventional",
+    "position 2 V5"
+  ],
+  "external_labels_opened": false,
+  "d20_touched": false
+}

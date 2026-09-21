@@ -1,0 +1,83 @@
+[
+  {
+    "target": "rpoB",
+    "candidate_locus": {
+      "contig": "c4",
+      "start": 0,
+      "end": 55,
+      "strand": "+"
+    },
+    "reference_genome": "trusted_reference",
+    "orthologues": [],
+    "gene_order": [],
+    "orientation": "+",
+    "distance": {
+      "query": {
+        "upstream_bp": null,
+        "downstream_bp": null
+      },
+      "reference": {
+        "upstream_bp": 30,
+        "downstream_bp": 30
+      },
+      "query_upstream": [],
+      "query_downstream": [],
+      "reference_upstream": [
+        "dnaA",
+        "gyrA"
+      ],
+      "reference_downstream": [
+        "rpoC",
+        "rplK"
+      ],
+      "assembly_neighbor_products": [],
+      "reference_neighbor_products": [
+        "dnaA",
+        "gyrA",
+        "rpoC",
+        "rplK"
+      ]
+    },
+    "sequence_similarity": {
+      "identity": null,
+      "query_coverage": null,
+      "subject_coverage": null,
+      "evalue": null,
+      "orthology_class": "paralog",
+      "length_ratio": null,
+      "placement": {
+        "status": "completed",
+        "clade": "paralog",
+        "sisters": [
+          "rpoB_paralog"
+        ],
+        "sister_clades": [
+          "paralog"
+        ],
+        "n_homologues": 2,
+        "n_identities_measured": 3,
+        "provenance": {
+          "created_by": "deterministic_phylogenetic_placement",
+          "notes": "LLM did not invent tree placement, identities, or clades.",
+          "method": "identity_neighbor_joining"
+        }
+      }
+    },
+    "coverage": {},
+    "conflicts": [
+      "no_strong_reference_hit",
+      "phylogenetic_paralog",
+      "query_annotation_missing",
+      "contig_edge"
+    ],
+    "provenance": {
+      "created_by": "deterministic_locus_validator",
+      "reference_id": "trusted_reference",
+      "reference_gff": "C:\\Users\\aritr\\Downloads\\GenomeSkeptic_Cursor\\GenomeSkeptic_Cursor\\benchmarks\\realworld\\agent_visible\\case_02\\ref.gff",
+      "tools": [
+        "internal_gene_search"
+      ],
+      "notes": "LLM did not invent orthologues, identities, gene order, or reciprocal hits."
+    }
+  }
+]

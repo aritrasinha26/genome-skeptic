@@ -1,0 +1,190 @@
+{
+  "kind": "bioagent_v5_compatibility_manifest",
+  "created_utc": "2026-09-18T22:13:43.951973+00:00",
+  "benchmark": "BioAgent Bench",
+  "benchmark_repository": "https://github.com/bioagent-bench/bioagent-bench.git",
+  "benchmark_commit": "6d098b602b8a8fdc33a9d25e410a502be7ed9ce0",
+  "benchmark_git_status_clean": true,
+  "genome_skeptic_v5_freeze_hash": "0e993125d2d620e54bbb42b3e420b4b9fda951c28b358ff8a2aed2d5b55a8f1b",
+  "model": "qwen3:4b",
+  "selection_before_answer_reference_inspection": true,
+  "answers_inspected": false,
+  "expected_outputs_inspected": false,
+  "judge_outputs_inspected": false,
+  "solution_scripts_inspected": false,
+  "historical_trajectories_inspected": false,
+  "result_scores_inspected": false,
+  "tasks_executed": false,
+  "tasks_scored": false,
+  "internal_benchmark_run": false,
+  "genome_skeptic_modified_for_compatibility": false,
+  "tool_availability_alone_not_sufficient": true,
+  "not_an_accuracy_score": true,
+  "n_tasks_examined": 10,
+  "n_supported": 0,
+  "n_partially_supported": 3,
+  "n_unsupported": 7,
+  "supported_task_ids": [],
+  "tasks": [
+    {
+      "task_id": "alzheimer-mouse",
+      "name": "Alzheimer Mouse Models: Comparative Pathway Analysis",
+      "category": "Alzheimer Mouse Models: Comparative Pathway Analysis",
+      "original_prompt": "Perform a comparative differential expression analysis of three different Alzheimer's Disease mouse models (5xFAD, 3xTG-AD, and PS3O1S) to identify shared molecular KEGG pathways. The output should be a CSV file with the following columns: 'pathway','5xFAD_pvalue','3xTG_AD_pvalue','PS3O1S_pvalue'. Example csv <example>Pathway,5xFAD_pvalue,3xTG_AD_pvalue,PS3O1S_pvalue\nPhagosome Homo sapiens hsa04145,1.5045916403148935e-09,0.3102788532065793,0.4443015705596512\n</example> ",
+      "description": "Analyze 5xFAD, 3xTG-AD, and PS301S mouse models: normalize counts, perform differential expression, run KEGG pathway enrichment, and compare shared pathways across models.",
+      "input_artifact_filenames": [
+        "data.tar.gz"
+      ],
+      "reference_artifact_filenames": [],
+      "required_deliverable": "Perform a comparative differential expression analysis of three different Alzheimer's Disease mouse models (5xFAD, 3xTG-AD, and PS3O1S) to identify shared molecular KEGG pathways. The output should be a CSV file with the following columns: 'pathway','5xFAD_pvalue','3xTG_AD_pvalue','PS3O1S_pvalue'. Example csv <example>Pathway,5xFAD_pvalue,3xTG_AD_pvalue,PS3O1S_pvalue\nPhagosome Homo sapiens hsa04145,1.5045916403148935e-09,0.3102788532065793,0.4443015705596512\n</example> ",
+      "classification": "UNSUPPORTED",
+      "capability_rationale": "Requires mouse bulk-RNA differential expression and KEGG pathway comparison. Frozen V5 has no DE/pathway registered analysis."
+    },
+    {
+      "task_id": "comparative-genomics",
+      "name": "Comparative Genomics: Co-evolving Gene Clusters",
+      "category": "Comparative Genomics: Co-evolving Gene Clusters",
+      "original_prompt": "Reconstruct phylogeny and identify COGs across four Micrococcus genomes; filter clusters present in all genomes, coding-only, with high-confidence annotations. The output should be a CSV file with the following columns: 'cluster_number, 'consensus_annotation'.<example>cluster_number,consensus_annotation\n1,K07222  K07222, putative flavoprotein involved in K+ transport\n2,K01069  gloB, gloC, HAGH, hydroxyacylglutathione hydrolase [EC:3.1.2.6]\n</example>",
+      "description": "The datasets consists FASTA sequences and GFF annotations of a microbial genome for Micrococcus. The goal of is to do phylogenetic reconstruction of clusters of orthologous co-evolving genes; identify functionally conserved gene clusters across the genomes and group them into co-evolving functional modules.",
+      "input_artifact_filenames": [
+        "data.tar.gz"
+      ],
+      "reference_artifact_filenames": [
+        "actinobacteria.tar.gz"
+      ],
+      "required_deliverable": "Reconstruct phylogeny and identify COGs across four Micrococcus genomes; filter clusters present in all genomes, coding-only, with high-confidence annotations. The output should be a CSV file with the following columns: 'cluster_number, 'consensus_annotation'.<example>cluster_number,consensus_annotation\n1,K07222  K07222, putative flavoprotein involved in K+ transport\n2,K01069  gloB, gloC, HAGH, hydroxyacylglutathione hydrolase [EC:3.1.2.6]\n</example>",
+      "classification": "PARTIALLY_SUPPORTED",
+      "capability_rationale": "Bacterial FASTA/GFF and gene-family/orthology are in V5 scope, but the required COG co-evolution clustering with KEGG-KO consensus CSV is not a V5 action or claim."
+    },
+    {
+      "task_id": "cystic-fibrosis",
+      "name": "Cystic Fibrosis Mendelian Variant Identification",
+      "category": "Cystic Fibrosis Mendelian Variant Identification",
+      "original_prompt": "Find the genetic cause of Cystic fibrosis; identify the causal recessive variant consistent with affected siblings NA12885, NA12886, and NA12879. The output should be a CSV file with the following columns: chromosome,position,variant_id,reference,alternate,gene_name,gene_id,annotation,impact,transcript_id,hgvs_c,hgvs_p,clinical_significance,diseases,review_status,rs_id. <example>chromosome,position,variant_id,reference,alternate,gene_name,gene_id,annotation,impact,transcript_id,hgvs_c,hgvs_p,clinical_significance,diseases,review_status,rs_id\nX,123456789,VAR123,A,G,GENE1,ENSG00000000001,missense_variant,MODERATE,ENST00000000001,c.123A>G,p.Lys41Arg,Likely_pathogenic,Disease_A; Disease_B; not_provided,reviewed_by_expert_panel,rs0000001</example>",
+      "description": "The sample dataset is a simulated dataset for finding the genetic cause of Cystic fibrosis. The dataset is real sequencing data from CEPH_1463 dataset provided by the Complete Genomics Diversity Panel. It consists of sequencing of a family: 4 grandparents, 2 parents and 11 siblings. A known Mandelian disease mutation has been added on three siblings, taking care to be consistent with the underlying heplotype structure. The goal is to find the mutation causing the mendalian recessive trait - Cystic Fibrosis.",
+      "input_artifact_filenames": [
+        "data.tar.gz"
+      ],
+      "reference_artifact_filenames": [
+        "clinvar_20250521.vcf.gz"
+      ],
+      "required_deliverable": "Find the genetic cause of Cystic fibrosis; identify the causal recessive variant consistent with affected siblings NA12885, NA12886, and NA12879. The output should be a CSV file with the following columns: chromosome,position,variant_id,reference,alternate,gene_name,gene_id,annotation,impact,transcript_id,hgvs_c,hgvs_p,clinical_significance,diseases,review_status,rs_id. <example>chromosome,position,variant_id,reference,alternate,gene_name,gene_id,annotation,impact,transcript_id,hgvs_c,hgvs_p,clinical_significance,diseases,review_status,rs_id\nX,123456789,VAR123,A,G,GENE1,ENSG00000000001,missense_variant,MODERATE,ENST00000000001,c.123A>G,p.Lys41Arg,Likely_pathogenic,Disease_A; Disease_B; not_provided,reviewed_by_expert_panel,rs0000001</example>",
+      "classification": "UNSUPPORTED",
+      "capability_rationale": "Human Mendelian variant identification with ClinVar annotation. Frozen V5 does not call or interpret human germline variants."
+    },
+    {
+      "task_id": "deseq",
+      "name": "RNA-Seq Differential Expression (DESeq2)",
+      "category": "RNA-Seq Differential Expression (DESeq2)",
+      "original_prompt": "Identify differentialy expressed genes between planktonic and biofilm conditions of Candida parapsilosis. The output should be a CSV file with the following columns: gene_id,log2FoldChange,pvalue,padj\nCPAR2_00000,1.0, 2.0, 1e-44",
+      "description": "The dataset consists of RNA-Seq samples from Candida parapsilosis wild-type (WT) strains grown in planktonic and biofilm conditions, generated as part of a study on gene expression and biofilm formation. The samples were sequenced on the Illumina HiSeq 2000 platform. The goal of this analysis is to perform differential expression analysis using DESeq2 to identify genes that are significantly up- or down-regulated between planktonic and biofilm conditions, providing insights into biofilm-associated transcriptional changes.",
+      "input_artifact_filenames": [
+        "SRR1278968.tar.gz",
+        "SRR1278969.tar.gz",
+        "SRR1278970.tar.gz",
+        "SRR1278971.tar.gz",
+        "SRR1278972.tar.gz",
+        "SRR1278973.tar.gz"
+      ],
+      "reference_artifact_filenames": [
+        "reference.tar.gz"
+      ],
+      "required_deliverable": "Identify differentialy expressed genes between planktonic and biofilm conditions of Candida parapsilosis. The output should be a CSV file with the following columns: gene_id,log2FoldChange,pvalue,padj\nCPAR2_00000,1.0, 2.0, 1e-44",
+      "classification": "UNSUPPORTED",
+      "capability_rationale": "RNA-seq differential expression (DESeq2) with log2FoldChange/pvalue/padj. Expression analysis is absent from frozen V5."
+    },
+    {
+      "task_id": "evolution",
+      "name": "Experimental Evolution Variant Calling (E. coli)",
+      "category": "Experimental Evolution Variant Calling (E. coli)",
+      "original_prompt": "Identify and annotate genome variants in two evolved lines relative to an ancestor lines of E. coli; report only variants shared by both evolved lines of moderate or higher predicted severity. The output should be a CSV file with the following columns: 'chrom','pos','ref','alt','gene','impact','effect',status'.<example>CHROM,POS,REF,ALT,GENE,IMPACT,EFFECT,STATUS\nNODE_4_length_102007_cov_6.351643,6352,T,C,ICCIAKIK_00327,MODERATE,missense_variant,shared</example>",
+      "description": "The experiment follows a similar strategy as in what is called an experimental evolution experiment. The final aim is to identify the genome variations in evolved lines of E. coli. The data is composed of a single ancestor line and two evolved lines. The data is from a paired-end sequencing run data from an Illumina HiSeq. This data has been post-processed in two ways already. All sequences that were identified as belonging to the PhiX genome have been removed. Illumina adapters have been removed as well already.",
+      "input_artifact_filenames": [
+        "data.tar.gz"
+      ],
+      "reference_artifact_filenames": [],
+      "required_deliverable": "Identify and annotate genome variants in two evolved lines relative to an ancestor lines of E. coli; report only variants shared by both evolved lines of moderate or higher predicted severity. The output should be a CSV file with the following columns: 'chrom','pos','ref','alt','gene','impact','effect',status'.<example>CHROM,POS,REF,ALT,GENE,IMPACT,EFFECT,STATUS\nNODE_4_length_102007_cov_6.351643,6352,T,C,ICCIAKIK_00327,MODERATE,missense_variant,shared</example>",
+      "classification": "PARTIALLY_SUPPORTED",
+      "capability_rationale": "E. coli WGS/mapping/annotation overlap V5, but the required shared-line SNP/impact table is not produced by any registered V5 action."
+    },
+    {
+      "task_id": "giab",
+      "name": "GIAB Variant Calling",
+      "category": "GIAB Variant Calling",
+      "original_prompt": "Use the sequencing data from NA12878 (Agilent SureSelect v7, ~75M reads) to perform germline variant calling. The output should be a .vcf.gz variant call file.",
+      "description": "The GIAB dataset consists of Agilent SureSelect v7 exome sequencing (~75M reads) from the NA12878 reference sample, providing high-confidence benchmark variants on GRCh38. The task is to perform germline variant calling on NA12878.",
+      "input_artifact_filenames": [
+        "data.tar.gz"
+      ],
+      "reference_artifact_filenames": [
+        "reference.tar.gz"
+      ],
+      "required_deliverable": "Use the sequencing data from NA12878 (Agilent SureSelect v7, ~75M reads) to perform germline variant calling. The output should be a .vcf.gz variant call file.",
+      "classification": "UNSUPPORTED",
+      "capability_rationale": "Human exome germline variant calling vs GIAB. Human variant calling is absent from frozen V5."
+    },
+    {
+      "task_id": "metagenomics",
+      "name": "Metagenomics: Community Comparison (Cuatro Ci\u00e9negas)",
+      "category": "Metagenomics: Community Comparison (Cuatro Ci\u00e9negas)",
+      "original_prompt": "Perform metagenomic analysis of control (JC1A) and fertilized (JP4D) samples to classify microbial taxa and estimate relative abundances. The output should be a CSV file with the following columns: 'OTU','Kingdom','Phylum','JP4D','JC1A'.<example>OTU,Kingdom,Phylum,JP4D,JC1A\n2771361,Bacteria,Pseudomonadota,84.8612882653061,66.4367816091954</example>",
+      "description": "The metagenomics dataset consists of sequencing reads from the Cuatro Ci\u00e9negas Basin, comparing microbial communities under control (JC1A) and nutrient-enriched (JP4D) conditions. The task is to profile taxonomic composition and report relative abundances of bacterial taxa.",
+      "input_artifact_filenames": [
+        "data.tar.gz"
+      ],
+      "reference_artifact_filenames": [
+        "k2_standard_16gb_20241228.tar.gz"
+      ],
+      "required_deliverable": "Perform metagenomic analysis of control (JC1A) and fertilized (JP4D) samples to classify microbial taxa and estimate relative abundances. The output should be a CSV file with the following columns: 'OTU','Kingdom','Phylum','JP4D','JC1A'.<example>OTU,Kingdom,Phylum,JP4D,JC1A\n2771361,Bacteria,Pseudomonadota,84.8612882653061,66.4367816091954</example>",
+      "classification": "PARTIALLY_SUPPORTED",
+      "capability_rationale": "Bacterial taxonomic reasoning exists for isolate contig contamination, but V5 cannot emit the required two-sample OTU relative-abundance table."
+    },
+    {
+      "task_id": "single-cell",
+      "name": "Single-cell RNA-seq: Skeletal Muscle Exercise Response",
+      "category": "Single-cell RNA-seq: Skeletal Muscle Exercise Response",
+      "original_prompt": "Analyze single-cell RNA-seq data from pre- and post-exercise skeletal muscle samples. Perform clustering, cell type identification, and differential expression analysis within each cell type between conditions. The output should be a CSV file with the following columns: 'cluster_id','predicted_cell_type','gene_name','logfoldchanges','pvals','pvals_adj','direction','abs_logfc'.<example>cluster_id,predicted_cell_type,gene_name,logfoldchanges,pvals,pvals_adj,direction,abs_logfc\n0,Perivascular cell,RNASE1,-6.658449,3.443035537523368e-15,6.886071075046736e-12,down,6.658449</example>",
+      "description": "The single-cell RNA-seq dataset consists of human skeletal muscle samples collected before and after acute exercise, sequenced with 10X Genomics. The task is to identify cell types and determine their transcriptional responses to exercise.",
+      "input_artifact_filenames": [
+        "data.tar.gz"
+      ],
+      "reference_artifact_filenames": [
+        "reference.tar.gz"
+      ],
+      "required_deliverable": "Analyze single-cell RNA-seq data from pre- and post-exercise skeletal muscle samples. Perform clustering, cell type identification, and differential expression analysis within each cell type between conditions. The output should be a CSV file with the following columns: 'cluster_id','predicted_cell_type','gene_name','logfoldchanges','pvals','pvals_adj','direction','abs_logfc'.<example>cluster_id,predicted_cell_type,gene_name,logfoldchanges,pvals,pvals_adj,direction,abs_logfc\n0,Perivascular cell,RNASE1,-6.658449,3.443035537523368e-15,6.886071075046736e-12,down,6.658449</example>",
+      "classification": "UNSUPPORTED",
+      "capability_rationale": "Human scRNA-seq clustering, cell-type ID, and within-cluster DE. Single-cell analysis is absent from frozen V5."
+    },
+    {
+      "task_id": "transcript-quant",
+      "name": "Transcript Quantification (Simulated RNA-Seq)",
+      "category": "Transcript Quantification (Simulated RNA-Seq)",
+      "original_prompt": "Perform transcript quantification on the provided paired-end RNA-Seq reads using the transcriptome reference. The output should be a .tsv file with the following columns:'transcript_id'\t'count'.<example>transcript_id\tcount\nENST000000001\t523</example>",
+      "description": "The goal is to quantify transcript expression levels from paired-end RNA-Seq reads (reads_1.fq.gz, reads_2.fq.gz) using the provided reference transcriptome (transcriptome.fa). Because the data is simulated, the quantification should exactly reproduce the underlying counts. The results represent a mapping from transcript IDs \u2192 read counts.",
+      "input_artifact_filenames": [
+        "data.tar.gz"
+      ],
+      "reference_artifact_filenames": [],
+      "required_deliverable": "Perform transcript quantification on the provided paired-end RNA-Seq reads using the transcriptome reference. The output should be a .tsv file with the following columns:'transcript_id'\t'count'.<example>transcript_id\tcount\nENST000000001\t523</example>",
+      "classification": "UNSUPPORTED",
+      "capability_rationale": "RNA-seq transcript quantification to exact simulated counts. Transcript expression is absent from frozen V5."
+    },
+    {
+      "task_id": "viral-metagenomics",
+      "name": "Viral Metagenomics: Species Identification (Dolphin)",
+      "category": "Viral Metagenomics: Species Identification (Dolphin)",
+      "original_prompt": "Analyze paired-end metagenomic sequencing data from a dolphin fecal sample to identify potential viral agents. Assemble and classify contigs, then summarize results by taxonomic domain and species. The output should be a CSV file with the following columns: 'contig_count','domain','species'.<example>contig_count,domain,species\n2,Viruses,H1N1 5\n68,Unclassified,</example>",
+      "description": "The viral metagenomics dataset consists of paired-end sequencing reads from a dolphin with gastroenteritis of suspected viral origin. The task is to identify viral species present in the fecal sample by assembling and classifying contigs.",
+      "input_artifact_filenames": [
+        "data.tar.gz"
+      ],
+      "reference_artifact_filenames": [
+        "reference-data.tar.gz",
+        "kaiju_db_viruses_2024-08-15.tgz"
+      ],
+      "required_deliverable": "Analyze paired-end metagenomic sequencing data from a dolphin fecal sample to identify potential viral agents. Assemble and classify contigs, then summarize results by taxonomic domain and species. The output should be a CSV file with the following columns: 'contig_count','domain','species'.<example>contig_count,domain,species\n2,Viruses,H1N1 5\n68,Unclassified,</example>",
+      "classification": "UNSUPPORTED",
+      "capability_rationale": "Fecal viral contig assembly and viral species table. Frozen V5 does not perform or interpret viral metagenome species identification."
+    }
+  ]
+}

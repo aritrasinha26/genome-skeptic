@@ -1,0 +1,120 @@
+{
+  "kind": "external_benchmark_results",
+  "scored_tasks": [],
+  "unscored": [
+    {
+      "benchmark": "bioagent_bench",
+      "task": "comparative_genomics",
+      "compatibility": "supported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "rna_seq",
+      "compatibility": "unsupported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "single_cell",
+      "compatibility": "unsupported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "giab_variant_calling",
+      "compatibility": "partially_supported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "metagenomics",
+      "compatibility": "partially_supported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "viral_metagenomics",
+      "compatibility": "partially_supported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "transcript_quantification",
+      "compatibility": "unsupported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "experimental_evolution",
+      "compatibility": "supported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "promptbio_bench",
+      "task": "trackA_blast_homology",
+      "compatibility": "supported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "promptbio_bench",
+      "task": "trackA_amr_gene",
+      "compatibility": "supported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "promptbio_bench",
+      "task": "trackA_deseq2",
+      "compatibility": "unsupported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "promptbio_bench",
+      "task": "trackA_seurat",
+      "compatibility": "unsupported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "promptbio_bench",
+      "task": "trackA_gatk",
+      "compatibility": "partially_supported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "promptbio_bench",
+      "task": "trackB_ml",
+      "compatibility": "unsupported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "bixbench",
+      "task": "bacterial_comparative",
+      "compatibility": "supported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "bixbench",
+      "task": "rnaseq_notebook",
+      "compatibility": "unsupported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "bixbench",
+      "task": "scrna_notebook",
+      "compatibility": "unsupported",
+      "inputs_present": false
+    },
+    {
+      "benchmark": "bixbench",
+      "task": "phylogeny_notebook",
+      "compatibility": "partially_supported",
+      "inputs_present": false
+    }
+  ],
+  "baselines_note": "Only supported tasks with local inputs are scored. Missing datasets are not treated as Genome Skeptic failures.",
+  "published_agent_comparisons": [],
+  "biomaster": {
+    "executed_locally": false,
+    "reason": "BioMaster was not available in the original benchmark environment here; published numbers are not treated as head-to-head."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "external_benchmark_sources",
+  "benchmarks": {
+    "bioagent_bench": {
+      "benchmark": "bioagent_bench",
+      "repository": "https://github.com/bioagent-bench/bioagent-bench.git",
+      "license": "see upstream repository",
+      "download_date": "2026-09-18",
+      "data_hint": null,
+      "fabricated": false,
+      "ok": true,
+      "path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bioagent_bench",
+      "commit": "6d098b602b8a8fdc33a9d25e410a502be7ed9ce0",
+      "cloned": false,
+      "n_local_files_matched": 11
+    },
+    "promptbio_bench": {
+      "benchmark": "promptbio_bench",
+      "repository": "https://github.com/PromptBio/promptbio-bench.git",
+      "license": "see upstream repository",
+      "download_date": "2026-09-18",
+      "data_hint": "https://huggingface.co/datasets/promptbio-ai/promptbio-bench-data",
+      "fabricated": false,
+      "ok": true,
+      "path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/promptbio_bench",
+      "commit": "e2a1947894eac530900247f00c0b726363b540ed",
+      "cloned": false,
+      "n_local_files_matched": 0
+    },
+    "bixbench": {
+      "benchmark": "bixbench",
+      "repository": "https://github.com/Future-House/BixBench.git",
+      "license": "Apache-2.0",
+      "download_date": "2026-09-18",
+      "data_hint": "https://huggingface.co/datasets/futurehouse/BixBench",
+      "fabricated": false,
+      "ok": true,
+      "path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/external/bixbench",
+      "commit": "49311180bdacb324c596f2e07596c126f2004008",
+      "cloned": false,
+      "n_local_files_matched": 0
+    }
+  },
+  "note": "Only official repositories were contacted. Missing authentication or network access is reported, not filled with invented tasks."
+}

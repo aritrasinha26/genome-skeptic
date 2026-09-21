@@ -1,0 +1,341 @@
+[
+  {
+    "claim_id": "C_target_rpoB",
+    "claim_type": "target_gene_detected",
+    "statement": "Target gene 'rpoB' is detected in the current assembly.",
+    "supporting_evidence_ids": [],
+    "contradicting_evidence_ids": [],
+    "alternative_explanations": [
+      "the hit may be a paralogue",
+      "the hit may be a conserved domain fragment",
+      "the hit may lie on a contaminant contig",
+      "detection in this assembly is not proof of function",
+      "inconsistent synteny can indicate paralogy, rearrangement, or a wrong locus"
+    ],
+    "falsification_tests": [
+      {
+        "test_id": "wrong_paralogue:rpoB",
+        "name": "wrong paralogue",
+        "hypothesis": "The hit is a paralogue rather than the intended gene.",
+        "blocking": true,
+        "status": "completed",
+        "result": "weakens_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "n_loci": 2,
+          "loci": [
+            "c1",
+            "c2"
+          ]
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "short_conserved_domain:rpoB",
+        "name": "short conserved-domain match",
+        "hypothesis": "The hit is only a short conserved domain, not the full gene.",
+        "blocking": true,
+        "status": "completed",
+        "result": "supports_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "query_coverage": 1.0
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "low_alignment_coverage:rpoB",
+        "name": "low alignment coverage",
+        "hypothesis": "Alignment covers too little of the query to support full-gene detection.",
+        "blocking": true,
+        "status": "completed",
+        "result": "supports_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "query_coverage": 1.0,
+          "threshold": 0.9
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "abnormal_protein_length:rpoB",
+        "name": "abnormal protein length",
+        "hypothesis": "Predicted protein length is inconsistent with the target.",
+        "blocking": true,
+        "status": "completed",
+        "result": "supports_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "expected_aa": 43,
+          "observed_aa": 44,
+          "ratio": 1.0232558139534884
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "missing_catalytic_residues:rpoB",
+        "name": "missing expected catalytic residues",
+        "hypothesis": "Expected catalytic residues are missing or substituted.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "no catalytic residue pattern was provided; residues were not invented"
+      },
+      {
+        "test_id": "contamination:rpoB",
+        "name": "contamination",
+        "hypothesis": "The hit lies on a likely contaminant contig.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "no contamination, depth, contig-GC, or contig-taxonomy measurement was available"
+      },
+      {
+        "test_id": "abnormal_contig_coverage:rpoB",
+        "name": "abnormal contig coverage",
+        "hypothesis": "Local coverage is inconsistent with a single-copy chromosomal gene.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "read-back depth was unavailable for the candidate locus"
+      },
+      {
+        "test_id": "taxonomic_inconsistency:rpoB",
+        "name": "taxonomic inconsistency",
+        "hypothesis": "Hit taxonomy disagrees with the isolate.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "no measured contig taxonomy was available; taxonomy was not invented from reference metadata"
+      },
+      {
+        "test_id": "inconsistent_genomic_neighborhood:rpoB",
+        "name": "inconsistent genomic neighborhood",
+        "hypothesis": "Flanking genes disagree with the expected neighborhood.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "annotation neighborhood could not be measured"
+      },
+      {
+        "test_id": "orthology_versus_paralogy:rpoB",
+        "name": "orthology versus paralogy",
+        "hypothesis": "Reference comparison shows a paralogue rather than an orthologue.",
+        "blocking": true,
+        "status": "completed",
+        "result": "weakens_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "class": "paralog",
+          "conflicts": [
+            "paralogous_copies",
+            "phylogenetic_paralog",
+            "query_annotation_missing"
+          ]
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "reciprocal_best_hit:rpoB",
+        "name": "reciprocal best hit",
+        "hypothesis": "The candidate is not a reciprocal-best-hit orthologue of the reference gene.",
+        "blocking": true,
+        "status": "completed",
+        "result": "supports_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "rbh": true
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "gene_length_conservation:rpoB",
+        "name": "gene length conservation",
+        "hypothesis": "Candidate length is not conserved relative to the reference orthologue.",
+        "blocking": false,
+        "status": "completed",
+        "result": "supports_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "length_ratio": 1.0
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "protein_identity_and_coverage:rpoB",
+        "name": "protein identity and coverage",
+        "hypothesis": "Protein identity or coverage versus the reference orthologue is too weak.",
+        "blocking": false,
+        "status": "completed",
+        "result": "supports_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "identity": 1.0,
+          "coverage": 1.0
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "gene_orientation:rpoB",
+        "name": "gene orientation",
+        "hypothesis": "Candidate orientation disagrees with the reference locus.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "orientation could not be compared because a locus annotation was missing"
+      },
+      {
+        "test_id": "upstream_downstream_orthologues:rpoB",
+        "name": "upstream and downstream orthologues",
+        "hypothesis": "Expected flanking orthologues are missing or rearranged.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "flanking orthologues could not be compared because a locus annotation was missing"
+      },
+      {
+        "test_id": "local_gene_order:rpoB",
+        "name": "local gene order",
+        "hypothesis": "Local gene order is inconsistent with the trusted reference locus.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "gene order could not be compared because a locus annotation was missing"
+      },
+      {
+        "test_id": "intergenic_spacing:rpoB",
+        "name": "intergenic spacing",
+        "hypothesis": "Intergenic spacing around the candidate is inconsistent with the reference.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "intergenic spacing could not be compared because a locus annotation was missing"
+      },
+      {
+        "test_id": "contig_edge_effects:rpoB",
+        "name": "contig-edge effects",
+        "hypothesis": "The candidate locus is truncated or distorted by a contig edge.",
+        "blocking": false,
+        "status": "completed",
+        "result": "supports_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "locus": {
+            "contig": "c1",
+            "start": 678,
+            "end": 810,
+            "strand": "-"
+          }
+        },
+        "limitation": null
+      },
+      {
+        "test_id": "taxonomic_consistency_of_locus:rpoB",
+        "name": "taxonomic consistency of the locus",
+        "hypothesis": "Measured contig taxonomy is inconsistent with the declared isolate.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "no measured contig taxonomy was available; taxonomy was not invented from reference metadata"
+      },
+      {
+        "test_id": "read_supported_break:rpoB",
+        "name": "read-supported contig break",
+        "hypothesis": "Paired-end mapping supports a truncated locus at a contig break.",
+        "blocking": false,
+        "status": "skipped",
+        "result": "not_run",
+        "evidence_ids": [],
+        "metrics": {},
+        "limitation": "paired-end mapping was unavailable; read support was not invented"
+      },
+      {
+        "test_id": "phylogenetic_placement:rpoB",
+        "name": "phylogenetic placement",
+        "hypothesis": "Placement among labeled homologues disagrees with a single-copy orthologue.",
+        "blocking": false,
+        "status": "completed",
+        "result": "weakens_claim",
+        "evidence_ids": [],
+        "metrics": {
+          "status": "completed",
+          "clade": "paralog",
+          "sisters": [
+            "rpoB_paralog"
+          ],
+          "sister_clades": [
+            "paralog"
+          ],
+          "n_homologues": 2,
+          "n_identities_measured": 3,
+          "provenance": {
+            "created_by": "deterministic_phylogenetic_placement",
+            "notes": "LLM did not invent tree placement, identities, or clades.",
+            "method": "identity_neighbor_joining"
+          }
+        },
+        "limitation": null
+      }
+    ],
+    "completed_tests": [
+      "low_alignment_coverage:rpoB",
+      "short_conserved_domain:rpoB",
+      "abnormal_protein_length:rpoB",
+      "wrong_paralogue:rpoB",
+      "contig_edge_effects:rpoB",
+      "orthology_versus_paralogy:rpoB",
+      "reciprocal_best_hit:rpoB",
+      "protein_identity_and_coverage:rpoB",
+      "phylogenetic_placement:rpoB"
+    ],
+    "unresolved_tests": [],
+    "unavailable_tests": [
+      "contamination:rpoB",
+      "read_supported_break:rpoB",
+      "taxonomic_consistency_of_locus:rpoB",
+      "local_gene_order:rpoB",
+      "missing_catalytic_residues:rpoB",
+      "abnormal_contig_coverage:rpoB",
+      "gene_orientation:rpoB"
+    ],
+    "recommended_next_actions": [
+      "inspect_paralogue_copies",
+      "place_target_among_homologues"
+    ],
+    "status": "weakened",
+    "confidence": 0.44,
+    "evidence_completeness": 0.5276,
+    "provenance": {
+      "created_by": "deterministic_validator",
+      "stage": "target_gene",
+      "tool_names": [
+        "internal_gene_search"
+      ],
+      "evidence_ledger_ids": [],
+      "attack_plan_id": "AP_target_gene_detected_rpoB",
+      "notes": "LLM did not supply identity, coverage, E-values, domain hits, catalytic residues, orthologues, gene order, or reciprocal hits. LLM did not assign evidence_completeness. Unavailable instruments: contig_taxonomy."
+    },
+    "rationale": "Adversarial attack plan AP_target_gene_detected_rpoB was executed with deterministic measurements. Status 'weakened' is a claim-state, not certainty. Detection means homology survived the attack plan in this assembly; it is not a functional or organism-level proof. Unfinished tests: missing_catalytic_residues:rpoB, contamination:rpoB, abnormal_contig_coverage:rpoB, taxonomic_inconsistency:rpoB, inconsistent_genomic_neighborhood:rpoB, gene_orientation:rpoB, upstream_downstream_orthologues:rpoB, local_gene_order:rpoB, intergenic_spacing:rpoB, taxonomic_consistency_of_locus:rpoB, read_supported_break:rpoB. Unavailable instruments: contig_taxonomy.",
+    "id": "C_target_rpoB"
+  }
+]

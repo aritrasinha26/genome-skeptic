@@ -1,0 +1,86 @@
+{
+  "kind": "M60_POSITIONS_1_5_LOCK",
+  "immutable": true,
+  "n_positions": 5,
+  "positions_complete": "5 / 60",
+  "truth_opened": false,
+  "d20_touched": false,
+  "accuracy_scored": false,
+  "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+  "m60_manifest_sha256": "014950b8af086c1148b68292276cdcc50f22844e14e1836381072dd936d51655",
+  "amrfinder_database_freeze_sha256": "d7ae98063c3b7795fa443f90f51a267e5b28002e1e5d59f364f403dde8a188be",
+  "efficiency_table_sha256": "f236624186a2d76ee2244af7112f07e176693fa62f284f0cdfaa6f8f6e9c0ea1",
+  "created_utc": "2026-09-20T04:22:34.326632+00:00",
+  "positions": {
+    "1": {
+      "position_lock_sha256": "547127e7f04137187a886808bf0d15105348dd33d5ffd18f0aca48d6e1dbe1f5",
+      "outputs": {
+        "CONVENTIONAL": "3bc7f8383f85fad00f003bb1eb3e3ee13eae6e663c4fe527310f825f8ec9e8b3",
+        "NCBI_REFSEQ_PGAP": "4d298df122769383b3ab59b6620cdd32cb925c6d4b2e739fe03bfc2ee62fc4c0",
+        "GS_DETERMINISTIC_V4_1": "9ddb0fdf7ed88a6bee642a23e54da136b7e812e62d83ccee3f460df189acad39",
+        "GS_AGENTIC_V4_1": "d31abfc984fe66b21ba9e663f26b9f8c0dd94f6228be13b345c17fd4cd734296",
+        "GS_EXHAUSTIVE_V4_1": "05a3e3c43a501a47c2590de51d264ef852d120196ad63e66e86033a401f2b3be"
+      },
+      "case_id": "M60_rpoB_RNAP_beta_GCF_049943055.1",
+      "accession": "GCF_049943055.1",
+      "target": "rpoB_RNAP_beta",
+      "stratum": "challenge"
+    },
+    "2": {
+      "position_lock_sha256": "921e5575acd44e1ad069cb23600741baa1a270a904b418866b06bde4682f014d",
+      "outputs": {
+        "CONVENTIONAL": "0efc75d388c44df112b717a420d3802aec78de2af461ab6e7f625147b25bba01",
+        "NCBI_REFSEQ_PGAP": "69566d84b11871752badfb67cab76f25215ca4e900801a412fb67eac73ab4eb6",
+        "GS_DETERMINISTIC_V4_1": "ba9aad3f5d4e5cad1d6804d042297dc0d58b2928e5b6fa7917bb2786751fe90d",
+        "GS_AGENTIC_V4_1": "aa390377262e74ceafb506b37979090e5377aa32ef1068604e36ed35653d48b7",
+        "GS_EXHAUSTIVE_V4_1": "1de15bb9327be83f1e6078a35b79294595d6c049391bd044785e680012ecb5ef"
+      },
+      "case_id": "M60_rpoB_RNAP_beta_GCF_052786815.1",
+      "accession": "GCF_052786815.1",
+      "target": "rpoB_RNAP_beta",
+      "stratum": "routine"
+    },
+    "3": {
+      "position_lock_sha256": "330d7bf8a7b8d15b02652f4747e5dd2332fb8a331027c203a6ef860fb166706e",
+      "outputs": {
+        "CONVENTIONAL": "e984f8647d0bcae2520ddd79ecfc0901d333974253a71618e65f6563a1621d8b",
+        "NCBI_REFSEQ_PGAP": "58b89c6f135bc9f1ab867b6fd12f9d1212deef9114cd9bf8169e7a19e500e353",
+        "GS_DETERMINISTIC_V4_1": "cc5ffcecef3d75440263472463099f87f581eab408f56e91ded9094c57340a9c",
+        "GS_AGENTIC_V4_1": "720f76b7d210cbf10bc16b2d0a61c26562411ab409522c74d0254564ed6f3bd6",
+        "GS_EXHAUSTIVE_V4_1": "c5849f92ae81afd7acf66e9686dacde50cb0348e4030cf587ff892a59f278762"
+      },
+      "case_id": "M60_rpoB_RNAP_beta_GCF_965253375.1",
+      "accession": "GCF_965253375.1",
+      "target": "rpoB_RNAP_beta",
+      "stratum": "challenge"
+    },
+    "4": {
+      "position_lock_sha256": "ae42b6a7a694ee2169017b7c090c01b06c5f2d70b6dbfc7e239ce8634d51b6c2",
+      "outputs": {
+        "CONVENTIONAL": "4254b7e19dd449629247dcdc57dc0041f18f1bf3227fa0bb2e81f23ce5f19f61",
+        "NCBI_REFSEQ_PGAP": "76c0f92ea9f364bc85d8e3d5f46b7b5167f273e32ac052be2b2a2eeff5d59583",
+        "GS_DETERMINISTIC_V4_1": "3828de62da5c246c938502e737d1a38a2cc643446d318a595245d8f9509ca010",
+        "GS_AGENTIC_V4_1": "4bd0df5e2fdaae49ea01dbe864fde5215b2ffcf8b3e0b4aff60945ab4344220f",
+        "GS_EXHAUSTIVE_V4_1": "1e95e708629007c53c24171044849af0dbea41ce621902fe62a7ca232b6ca9b3"
+      },
+      "case_id": "M60_rpoB_RNAP_beta_GCF_053348035.1",
+      "accession": "GCF_053348035.1",
+      "target": "rpoB_RNAP_beta",
+      "stratum": "routine"
+    },
+    "5": {
+      "position_lock_sha256": "b14cf523ca70c70a636489c59fb92184e13b7df9a4c6d1703601b8b875528e4e",
+      "outputs": {
+        "CONVENTIONAL": "0b137baac8d0ad2cac7c01c313f1211e6482698f5cde3265edb1d15b454d1874",
+        "AMRFINDERPLUS": "020582713119e4033db464229b414dab1eb211462cf416ede34e9efadf11b725",
+        "GS_DETERMINISTIC_V4_1": "4eb66a28e507630e738c2434d3202dee8376aca8716083f81f3c67d0b25de8ef",
+        "GS_AGENTIC_V4_1": "6896c1ee12d1198447884978a51b3dd1b3ff95849f01392ffbe156e2efe15ed5",
+        "GS_EXHAUSTIVE_V4_1": "742db33ed5509bf4b7e3a290dd18748ced8e0f63cf6d9859c2c84f33fa8cb3fc"
+      },
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_054452975.1",
+      "accession": "GCF_054452975.1",
+      "target": "tetA_tetracycline_efflux",
+      "stratum": "challenge"
+    }
+  }
+}

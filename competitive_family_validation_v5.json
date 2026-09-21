@@ -1,0 +1,1030 @@
+{
+  "kind": "competitive_family_validation_v5",
+  "cases": [
+    {
+      "case_id": "ctrl_comp_broad_membrane",
+      "architecture": "true_no_candidate",
+      "competitive": {
+        "target_family": "tetA_tetracycline_efflux",
+        "candidate_locus": {},
+        "target_family_score": null,
+        "target_family_HMM_score": null,
+        "target_family_model_coverage": null,
+        "target_family_sequence_coverage": null,
+        "best_competing_family": null,
+        "competing_family_score": null,
+        "competing_family_HMM_score": null,
+        "competing_family_model_coverage": null,
+        "score_margin": null,
+        "domain_architecture": [],
+        "protein_length": null,
+        "transmembrane_topology": null,
+        "conserved_motif_evidence": null,
+        "reciprocal_family_assignment": null,
+        "reference_family_placement": null,
+        "conflicting_evidence": [
+          "candidate protein could not be translated from the reconstructed locus"
+        ],
+        "classification": "unresolved_candidate",
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_competitive_family"
+        ],
+        "provenance": {
+          "created_by": "deterministic_competitive_family",
+          "llm_invented_scores": false,
+          "gene_specific_rules": false
+        },
+        "competitors_scored": []
+      },
+      "multiplicity": {
+        "family": "tetA_tetracycline_efflux",
+        "number_of_candidate_loci": 0,
+        "coordinates": [],
+        "contigs": [],
+        "strand": [],
+        "sequence_identity_between_copies": null,
+        "family_evidence_per_locus": [],
+        "read_depth_per_locus": [],
+        "upstream_context": [],
+        "downstream_context": [],
+        "assembly_fragment_relationship": false,
+        "plasmid_chromosome_context": null,
+        "contamination_evidence": false,
+        "classification": "single_locus",
+        "loci": [],
+        "provenance": {
+          "created_by": "deterministic_locus_multiplicity",
+          "llm_invented_scores": false,
+          "collapsed_near_identical_copies": false
+        },
+        "evidence_ids": [
+          "E_locus_reconstruction",
+          "E_paralogy",
+          "E_multiplicity"
+        ]
+      },
+      "query_identity": null
+    },
+    {
+      "case_id": "ctrl_comp_divergent_genuine",
+      "architecture": "close_paralogue",
+      "competitive": {
+        "target_family": "tetA_tetracycline_efflux",
+        "candidate_locus": {
+          "contig": "c1",
+          "genomic_start": 0,
+          "genomic_end": 3003,
+          "strand": "+",
+          "protein_length": 1001
+        },
+        "target_family_score": 0.863,
+        "target_family_HMM_score": 690.8,
+        "target_family_model_coverage": 0.9882,
+        "target_family_sequence_coverage": 0.4005994005994006,
+        "best_competing_family": null,
+        "competing_family_score": null,
+        "competing_family_HMM_score": null,
+        "competing_family_model_coverage": 0.0,
+        "score_margin": 0.863,
+        "domain_architecture": [],
+        "protein_length": 1001,
+        "transmembrane_topology": {
+          "hydrophobic_windows_19aa": 12,
+          "measured": true
+        },
+        "conserved_motif_evidence": null,
+        "reciprocal_family_assignment": "tetA_tetracycline_efflux",
+        "reference_family_placement": {
+          "winner": "tetA_tetracycline_efflux",
+          "margin": 0.8612
+        },
+        "conflicting_evidence": [
+          "best competing family did not pass the family gate and is not treated as an alternative identity"
+        ],
+        "classification": "target_family_supported",
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_competitive_family"
+        ],
+        "provenance": {
+          "created_by": "deterministic_competitive_family",
+          "llm_invented_scores": false,
+          "gene_specific_rules": false
+        },
+        "competitors_scored": [
+          {
+            "family_id": "mfs_multidrug_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.4166666666666667,
+            "sequence_coverage": 0.016983016983016984,
+            "combined_score": 0.0014
+          },
+          {
+            "family_id": "rnd_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.4166666666666667,
+            "sequence_coverage": 0.02197802197802198,
+            "combined_score": 0.0018
+          }
+        ]
+      },
+      "multiplicity": {
+        "family": "tetA_tetracycline_efflux",
+        "number_of_candidate_loci": 2,
+        "coordinates": [
+          {
+            "contig": "c1",
+            "start": 903,
+            "end": 2103,
+            "strand": "+"
+          },
+          {
+            "contig": "c1",
+            "start": 0,
+            "end": 3003,
+            "strand": "+"
+          }
+        ],
+        "contigs": [
+          "c1"
+        ],
+        "strand": [
+          "+",
+          "+"
+        ],
+        "sequence_identity_between_copies": 0,
+        "family_evidence_per_locus": [
+          {
+            "contig": "c1",
+            "identity": 0.87,
+            "coverage": 0.9975062344139651,
+            "hmm_coverage": 0.9975062344139651,
+            "family_gate_passed": true
+          },
+          {
+            "contig": "c1",
+            "identity": 0.0,
+            "coverage": 0.9882,
+            "hmm_coverage": 0.9882,
+            "family_gate_passed": true
+          }
+        ],
+        "read_depth_per_locus": [
+          null,
+          null
+        ],
+        "upstream_context": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          ""
+        ],
+        "downstream_context": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          ""
+        ],
+        "assembly_fragment_relationship": false,
+        "plasmid_chromosome_context": null,
+        "contamination_evidence": false,
+        "classification": "paralogous_copy",
+        "loci": [
+          {
+            "contig": "c1",
+            "strand": "+",
+            "genomic_start": 903,
+            "genomic_end": 2103,
+            "identity": 0.87,
+            "coverage": 0.9975062344139651,
+            "query_identity": 0.87,
+            "query_coverage": 0.9975062344139651,
+            "hmm_from": 1,
+            "hmm_to": 401,
+            "hmm_coverage": 0.9975062344139651,
+            "contig_length": 3003,
+            "contig_edge": true,
+            "gc": null,
+            "orf_ids": [
+              "c1:903-2103:+"
+            ],
+            "upstream_context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "downstream_context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "family_gate_passed": true
+          },
+          {
+            "contig": "c1",
+            "strand": "+",
+            "genomic_start": 0,
+            "genomic_end": 3003,
+            "identity": 0.0,
+            "coverage": 0.9882,
+            "query_identity": null,
+            "hmm_from": 2,
+            "hmm_to": 418,
+            "hmm_coverage": 0.9882,
+            "contig_length": 3003,
+            "contig_edge": true,
+            "gc": 0.1209,
+            "contig_gc": 0.1209,
+            "orf_ids": [
+              "c1:0-3003:+"
+            ],
+            "upstream_context": "",
+            "downstream_context": "",
+            "family_gate_passed": true
+          }
+        ],
+        "provenance": {
+          "created_by": "deterministic_locus_multiplicity",
+          "llm_invented_scores": false,
+          "collapsed_near_identical_copies": false
+        },
+        "evidence_ids": [
+          "E_locus_reconstruction",
+          "E_paralogy",
+          "E_multiplicity"
+        ]
+      },
+      "query_identity": 0.87
+    },
+    {
+      "case_id": "ctrl_comp_paralogous_member",
+      "architecture": "close_paralogue",
+      "competitive": {
+        "target_family": "tetA_tetracycline_efflux",
+        "candidate_locus": {
+          "contig": "chr",
+          "genomic_start": 0,
+          "genomic_end": 3003,
+          "strand": "+",
+          "protein_length": 1001
+        },
+        "target_family_score": 0.8775,
+        "target_family_HMM_score": 767.0,
+        "target_family_model_coverage": 0.9953,
+        "target_family_sequence_coverage": 0.4005994005994006,
+        "best_competing_family": null,
+        "competing_family_score": null,
+        "competing_family_HMM_score": null,
+        "competing_family_model_coverage": 0.0,
+        "score_margin": 0.8775,
+        "domain_architecture": [],
+        "protein_length": 1001,
+        "transmembrane_topology": {
+          "hydrophobic_windows_19aa": 11,
+          "measured": true
+        },
+        "conserved_motif_evidence": null,
+        "reciprocal_family_assignment": "tetA_tetracycline_efflux",
+        "reference_family_placement": {
+          "winner": "tetA_tetracycline_efflux",
+          "margin": 0.8753
+        },
+        "conflicting_evidence": [
+          "best competing family did not pass the family gate and is not treated as an alternative identity"
+        ],
+        "classification": "target_family_supported",
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_competitive_family"
+        ],
+        "provenance": {
+          "created_by": "deterministic_competitive_family",
+          "llm_invented_scores": false,
+          "gene_specific_rules": false
+        },
+        "competitors_scored": [
+          {
+            "family_id": "mfs_multidrug_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.4166666666666667,
+            "sequence_coverage": 0.026973026973026972,
+            "combined_score": 0.0022
+          },
+          {
+            "family_id": "rnd_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.4166666666666667,
+            "sequence_coverage": 0.01998001998001998,
+            "combined_score": 0.0017
+          }
+        ]
+      },
+      "multiplicity": {
+        "family": "tetA_tetracycline_efflux",
+        "number_of_candidate_loci": 3,
+        "coordinates": [
+          {
+            "contig": "chr",
+            "start": 900,
+            "end": 2103,
+            "strand": "+"
+          },
+          {
+            "contig": "chr",
+            "start": 0,
+            "end": 3003,
+            "strand": "+"
+          },
+          {
+            "contig": "c2",
+            "start": 0,
+            "end": 3003,
+            "strand": "+"
+          }
+        ],
+        "contigs": [
+          "c2",
+          "chr"
+        ],
+        "strand": [
+          "+",
+          "+",
+          "+"
+        ],
+        "sequence_identity_between_copies": 0,
+        "family_evidence_per_locus": [
+          {
+            "contig": "chr",
+            "identity": 1.0,
+            "coverage": 1.0,
+            "hmm_coverage": 1.0,
+            "family_gate_passed": true
+          },
+          {
+            "contig": "chr",
+            "identity": 0.0,
+            "coverage": 0.9953,
+            "hmm_coverage": 0.9953,
+            "family_gate_passed": true
+          },
+          {
+            "contig": "c2",
+            "identity": 0.0,
+            "coverage": 0.8531,
+            "hmm_coverage": 0.8531,
+            "family_gate_passed": true
+          }
+        ],
+        "read_depth_per_locus": [
+          null,
+          null,
+          null
+        ],
+        "upstream_context": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "",
+          ""
+        ],
+        "downstream_context": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "",
+          ""
+        ],
+        "assembly_fragment_relationship": false,
+        "plasmid_chromosome_context": null,
+        "contamination_evidence": false,
+        "classification": "paralogous_copy",
+        "loci": [
+          {
+            "contig": "chr",
+            "strand": "+",
+            "genomic_start": 900,
+            "genomic_end": 2103,
+            "identity": 1.0,
+            "coverage": 1.0,
+            "query_identity": 1.0,
+            "query_coverage": 1.0,
+            "hmm_from": 1,
+            "hmm_to": 401,
+            "hmm_coverage": 1.0,
+            "contig_length": 3003,
+            "contig_edge": true,
+            "gc": null,
+            "orf_ids": [
+              "chr:900-2103:+"
+            ],
+            "upstream_context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "downstream_context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "family_gate_passed": true
+          },
+          {
+            "contig": "chr",
+            "strand": "+",
+            "genomic_start": 0,
+            "genomic_end": 3003,
+            "identity": 0.0,
+            "coverage": 0.9953,
+            "query_identity": null,
+            "hmm_from": 2,
+            "hmm_to": 421,
+            "hmm_coverage": 0.9953,
+            "contig_length": 3003,
+            "contig_edge": true,
+            "gc": 0.1219,
+            "contig_gc": 0.1219,
+            "orf_ids": [
+              "chr:0-3003:+"
+            ],
+            "upstream_context": "",
+            "downstream_context": "",
+            "family_gate_passed": true
+          },
+          {
+            "contig": "c2",
+            "strand": "+",
+            "genomic_start": 0,
+            "genomic_end": 3003,
+            "identity": 0.0,
+            "coverage": 0.8531,
+            "query_identity": null,
+            "hmm_from": 2,
+            "hmm_to": 409,
+            "hmm_coverage": 0.8531,
+            "contig_length": 3003,
+            "contig_edge": true,
+            "gc": 0.1195,
+            "contig_gc": 0.1195,
+            "orf_ids": [
+              "c2:0-1008:+",
+              "c2:1011-1359:+",
+              "c2:1488-1719:+",
+              "c2:1722-3003:+"
+            ],
+            "upstream_context": "",
+            "downstream_context": "",
+            "family_gate_passed": true
+          }
+        ],
+        "provenance": {
+          "created_by": "deterministic_locus_multiplicity",
+          "llm_invented_scores": false,
+          "collapsed_near_identical_copies": false
+        },
+        "evidence_ids": [
+          "E_locus_reconstruction",
+          "E_paralogy",
+          "E_multiplicity"
+        ]
+      },
+      "query_identity": 1.0
+    },
+    {
+      "case_id": "ctrl_comp_related_transporter",
+      "architecture": "true_no_candidate",
+      "competitive": {
+        "target_family": "tetA_tetracycline_efflux",
+        "candidate_locus": {},
+        "target_family_score": null,
+        "target_family_HMM_score": null,
+        "target_family_model_coverage": null,
+        "target_family_sequence_coverage": null,
+        "best_competing_family": null,
+        "competing_family_score": null,
+        "competing_family_HMM_score": null,
+        "competing_family_model_coverage": null,
+        "score_margin": null,
+        "domain_architecture": [],
+        "protein_length": null,
+        "transmembrane_topology": null,
+        "conserved_motif_evidence": null,
+        "reciprocal_family_assignment": null,
+        "reference_family_placement": null,
+        "conflicting_evidence": [
+          "candidate protein could not be translated from the reconstructed locus"
+        ],
+        "classification": "unresolved_candidate",
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_competitive_family"
+        ],
+        "provenance": {
+          "created_by": "deterministic_competitive_family",
+          "llm_invented_scores": false,
+          "gene_specific_rules": false
+        },
+        "competitors_scored": []
+      },
+      "multiplicity": {
+        "family": "tetA_tetracycline_efflux",
+        "number_of_candidate_loci": 0,
+        "coordinates": [],
+        "contigs": [],
+        "strand": [],
+        "sequence_identity_between_copies": null,
+        "family_evidence_per_locus": [],
+        "read_depth_per_locus": [],
+        "upstream_context": [],
+        "downstream_context": [],
+        "assembly_fragment_relationship": false,
+        "plasmid_chromosome_context": null,
+        "contamination_evidence": false,
+        "classification": "single_locus",
+        "loci": [],
+        "provenance": {
+          "created_by": "deterministic_locus_multiplicity",
+          "llm_invented_scores": false,
+          "collapsed_near_identical_copies": false
+        },
+        "evidence_ids": [
+          "E_locus_reconstruction",
+          "E_paralogy",
+          "E_multiplicity"
+        ]
+      },
+      "query_identity": null
+    },
+    {
+      "case_id": "ctrl_comp_shared_domain",
+      "architecture": "true_no_candidate",
+      "competitive": {
+        "target_family": "tetA_tetracycline_efflux",
+        "candidate_locus": {
+          "contig": "c1",
+          "genomic_start": 0,
+          "genomic_end": 1950,
+          "strand": "+",
+          "protein_length": 650
+        },
+        "target_family_score": 0.201,
+        "target_family_HMM_score": 92.9,
+        "target_family_model_coverage": 0.1232,
+        "target_family_sequence_coverage": 0.2,
+        "best_competing_family": "mfs_multidrug_efflux",
+        "competing_family_score": 0.0036,
+        "competing_family_HMM_score": null,
+        "competing_family_model_coverage": 0.0,
+        "score_margin": 0.1974,
+        "domain_architecture": [],
+        "protein_length": 650,
+        "transmembrane_topology": {
+          "hydrophobic_windows_19aa": 2,
+          "measured": true
+        },
+        "conserved_motif_evidence": null,
+        "reciprocal_family_assignment": "tetA_tetracycline_efflux",
+        "reference_family_placement": {
+          "winner": "tetA_tetracycline_efflux",
+          "margin": 0.1974
+        },
+        "conflicting_evidence": [],
+        "classification": "domain_only",
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_competitive_family"
+        ],
+        "provenance": {
+          "created_by": "deterministic_competitive_family",
+          "llm_invented_scores": false,
+          "gene_specific_rules": false
+        },
+        "competitors_scored": [
+          {
+            "family_id": "mfs_multidrug_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.42857142857142855,
+            "sequence_coverage": 0.04153846153846154,
+            "combined_score": 0.0036
+          },
+          {
+            "family_id": "rnd_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.42857142857142855,
+            "sequence_coverage": 0.018461538461538463,
+            "combined_score": 0.0016
+          }
+        ]
+      },
+      "multiplicity": {
+        "family": "tetA_tetracycline_efflux",
+        "number_of_candidate_loci": 0,
+        "coordinates": [],
+        "contigs": [],
+        "strand": [],
+        "sequence_identity_between_copies": null,
+        "family_evidence_per_locus": [],
+        "read_depth_per_locus": [],
+        "upstream_context": [],
+        "downstream_context": [],
+        "assembly_fragment_relationship": false,
+        "plasmid_chromosome_context": null,
+        "contamination_evidence": false,
+        "classification": "single_locus",
+        "loci": [],
+        "provenance": {
+          "created_by": "deterministic_locus_multiplicity",
+          "llm_invented_scores": false,
+          "collapsed_near_identical_copies": false
+        },
+        "evidence_ids": [
+          "E_locus_reconstruction",
+          "E_paralogy",
+          "E_multiplicity"
+        ]
+      },
+      "query_identity": 1.0
+    },
+    {
+      "case_id": "ctrl_comp_true_target",
+      "architecture": "close_paralogue",
+      "competitive": {
+        "target_family": "tetA_tetracycline_efflux",
+        "candidate_locus": {
+          "contig": "c1",
+          "genomic_start": 0,
+          "genomic_end": 3003,
+          "strand": "+",
+          "protein_length": 1001
+        },
+        "target_family_score": 0.8775,
+        "target_family_HMM_score": 767.0,
+        "target_family_model_coverage": 0.9953,
+        "target_family_sequence_coverage": 0.4005994005994006,
+        "best_competing_family": null,
+        "competing_family_score": null,
+        "competing_family_HMM_score": null,
+        "competing_family_model_coverage": 0.0,
+        "score_margin": 0.8775,
+        "domain_architecture": [],
+        "protein_length": 1001,
+        "transmembrane_topology": {
+          "hydrophobic_windows_19aa": 11,
+          "measured": true
+        },
+        "conserved_motif_evidence": null,
+        "reciprocal_family_assignment": "tetA_tetracycline_efflux",
+        "reference_family_placement": {
+          "winner": "tetA_tetracycline_efflux",
+          "margin": 0.8753
+        },
+        "conflicting_evidence": [
+          "best competing family did not pass the family gate and is not treated as an alternative identity"
+        ],
+        "classification": "target_family_supported",
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_competitive_family"
+        ],
+        "provenance": {
+          "created_by": "deterministic_competitive_family",
+          "llm_invented_scores": false,
+          "gene_specific_rules": false
+        },
+        "competitors_scored": [
+          {
+            "family_id": "mfs_multidrug_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.4166666666666667,
+            "sequence_coverage": 0.026973026973026972,
+            "combined_score": 0.0022
+          },
+          {
+            "family_id": "rnd_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.4166666666666667,
+            "sequence_coverage": 0.01998001998001998,
+            "combined_score": 0.0017
+          }
+        ]
+      },
+      "multiplicity": {
+        "family": "tetA_tetracycline_efflux",
+        "number_of_candidate_loci": 2,
+        "coordinates": [
+          {
+            "contig": "c1",
+            "start": 900,
+            "end": 2103,
+            "strand": "+"
+          },
+          {
+            "contig": "c1",
+            "start": 0,
+            "end": 3003,
+            "strand": "+"
+          }
+        ],
+        "contigs": [
+          "c1"
+        ],
+        "strand": [
+          "+",
+          "+"
+        ],
+        "sequence_identity_between_copies": 0,
+        "family_evidence_per_locus": [
+          {
+            "contig": "c1",
+            "identity": 1.0,
+            "coverage": 1.0,
+            "hmm_coverage": 1.0,
+            "family_gate_passed": true
+          },
+          {
+            "contig": "c1",
+            "identity": 0.0,
+            "coverage": 0.9953,
+            "hmm_coverage": 0.9953,
+            "family_gate_passed": true
+          }
+        ],
+        "read_depth_per_locus": [
+          null,
+          null
+        ],
+        "upstream_context": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          ""
+        ],
+        "downstream_context": [
+          "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          ""
+        ],
+        "assembly_fragment_relationship": false,
+        "plasmid_chromosome_context": null,
+        "contamination_evidence": false,
+        "classification": "recent_duplication",
+        "loci": [
+          {
+            "contig": "c1",
+            "strand": "+",
+            "genomic_start": 900,
+            "genomic_end": 2103,
+            "identity": 1.0,
+            "coverage": 1.0,
+            "query_identity": 1.0,
+            "query_coverage": 1.0,
+            "hmm_from": 1,
+            "hmm_to": 401,
+            "hmm_coverage": 1.0,
+            "contig_length": 3003,
+            "contig_edge": true,
+            "gc": null,
+            "orf_ids": [
+              "c1:900-2103:+"
+            ],
+            "upstream_context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "downstream_context": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "family_gate_passed": true
+          },
+          {
+            "contig": "c1",
+            "strand": "+",
+            "genomic_start": 0,
+            "genomic_end": 3003,
+            "identity": 0.0,
+            "coverage": 0.9953,
+            "query_identity": null,
+            "hmm_from": 2,
+            "hmm_to": 421,
+            "hmm_coverage": 0.9953,
+            "contig_length": 3003,
+            "contig_edge": true,
+            "gc": 0.1219,
+            "contig_gc": 0.1219,
+            "orf_ids": [
+              "c1:0-3003:+"
+            ],
+            "upstream_context": "",
+            "downstream_context": "",
+            "family_gate_passed": true
+          }
+        ],
+        "provenance": {
+          "created_by": "deterministic_locus_multiplicity",
+          "llm_invented_scores": false,
+          "collapsed_near_identical_copies": false
+        },
+        "evidence_ids": [
+          "E_locus_reconstruction",
+          "E_paralogy",
+          "E_multiplicity"
+        ]
+      },
+      "query_identity": 1.0
+    },
+    {
+      "case_id": "dev_01_tetA",
+      "architecture": "domain_only",
+      "competitive": {
+        "target_family": "tetA_tetracycline_efflux",
+        "candidate_locus": {
+          "contig": "NODE_12_length_132884_cov_10.556768",
+          "genomic_start": 53197,
+          "genomic_end": 53965,
+          "strand": "-",
+          "protein_length": 256
+        },
+        "target_family_score": 0.2445,
+        "target_family_HMM_score": 49.6,
+        "target_family_model_coverage": 0.3128,
+        "target_family_sequence_coverage": 0.125,
+        "best_competing_family": null,
+        "competing_family_score": null,
+        "competing_family_HMM_score": null,
+        "competing_family_model_coverage": 0.0,
+        "score_margin": 0.2445,
+        "domain_architecture": [],
+        "protein_length": 256,
+        "transmembrane_topology": {
+          "hydrophobic_windows_19aa": 5,
+          "measured": true
+        },
+        "conserved_motif_evidence": null,
+        "reciprocal_family_assignment": "tetA_tetracycline_efflux",
+        "reference_family_placement": {
+          "winner": "tetA_tetracycline_efflux",
+          "margin": 0.2266
+        },
+        "conflicting_evidence": [
+          "best competing family did not pass the family gate and is not treated as an alternative identity"
+        ],
+        "classification": "target_family_supported",
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_competitive_family"
+        ],
+        "provenance": {
+          "created_by": "deterministic_competitive_family",
+          "llm_invented_scores": false,
+          "gene_specific_rules": false
+        },
+        "competitors_scored": [
+          {
+            "family_id": "mfs_multidrug_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.4166666666666667,
+            "sequence_coverage": 0.21484375,
+            "combined_score": 0.0179
+          },
+          {
+            "family_id": "rnd_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.4166666666666667,
+            "sequence_coverage": 0.05859375,
+            "combined_score": 0.0049
+          }
+        ]
+      },
+      "multiplicity": {
+        "family": "tetA_tetracycline_efflux",
+        "number_of_candidate_loci": 1,
+        "coordinates": [
+          {
+            "contig": "NODE_12_length_132884_cov_10.556768",
+            "start": 53197,
+            "end": 53965,
+            "strand": "-"
+          }
+        ],
+        "contigs": [
+          "NODE_12_length_132884_cov_10.556768"
+        ],
+        "strand": [
+          "-"
+        ],
+        "sequence_identity_between_copies": null,
+        "family_evidence_per_locus": [
+          {
+            "contig": "NODE_12_length_132884_cov_10.556768",
+            "identity": 0.0,
+            "coverage": 0.3128,
+            "hmm_coverage": 0.3128,
+            "family_gate_passed": true
+          }
+        ],
+        "read_depth_per_locus": [
+          null
+        ],
+        "upstream_context": [
+          "TCAGCAAAATATGCAGACACATAATGCCCAAAGTTGAGTTTCAGCAGCCGCGGTTCCGCCTGCACTTTACTGAAACTGCC"
+        ],
+        "downstream_context": [
+          "TCATCACCGAGAGGGCAGTGATGGCGATGATAGAGAAGCCGAACAGCTTGCGCGCCCAGATTCTGTCATCAGCAACTTTA"
+        ],
+        "assembly_fragment_relationship": false,
+        "plasmid_chromosome_context": null,
+        "contamination_evidence": false,
+        "classification": "single_locus",
+        "loci": [
+          {
+            "contig": "NODE_12_length_132884_cov_10.556768",
+            "strand": "-",
+            "genomic_start": 53197,
+            "genomic_end": 53965,
+            "identity": 0.0,
+            "coverage": 0.3128,
+            "query_identity": null,
+            "hmm_from": 18,
+            "hmm_to": 149,
+            "hmm_coverage": 0.3128,
+            "contig_length": 132884,
+            "contig_edge": false,
+            "gc": 0.513,
+            "contig_gc": 0.5206,
+            "orf_ids": [
+              "NODE_12_length_132884_cov_10.556768:53197-53965:-"
+            ],
+            "upstream_context": "TCAGCAAAATATGCAGACACATAATGCCCAAAGTTGAGTTTCAGCAGCCGCGGTTCCGCCTGCACTTTACTGAAACTGCC",
+            "downstream_context": "TCATCACCGAGAGGGCAGTGATGGCGATGATAGAGAAGCCGAACAGCTTGCGCGCCCAGATTCTGTCATCAGCAACTTTA",
+            "family_gate_passed": true
+          }
+        ],
+        "provenance": {
+          "created_by": "deterministic_locus_multiplicity",
+          "llm_invented_scores": false,
+          "collapsed_near_identical_copies": false
+        },
+        "evidence_ids": [
+          "E_locus_reconstruction",
+          "E_paralogy",
+          "E_multiplicity"
+        ]
+      }
+    }
+  ],
+  "control_report": [
+    {
+      "case_id": "ctrl_comp_broad_membrane",
+      "target": "tetA",
+      "gs_claim": "target_gene_not_detected",
+      "gs_status": "weakened",
+      "gs_architecture": "true_no_candidate",
+      "conv_claim": "target_gene_not_detected"
+    },
+    {
+      "case_id": "ctrl_comp_divergent_genuine",
+      "target": "tetA",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "weakened",
+      "gs_architecture": "close_paralogue",
+      "conv_claim": "target_gene_detected"
+    },
+    {
+      "case_id": "ctrl_comp_paralogous_member",
+      "target": "tetA",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "weakened",
+      "gs_architecture": "close_paralogue",
+      "conv_claim": "target_gene_detected"
+    },
+    {
+      "case_id": "ctrl_comp_related_transporter",
+      "target": "tetA",
+      "gs_claim": "target_gene_not_detected",
+      "gs_status": "weakened",
+      "gs_architecture": "true_no_candidate",
+      "conv_claim": "target_gene_not_detected"
+    },
+    {
+      "case_id": "ctrl_comp_shared_domain",
+      "target": "tetA",
+      "gs_claim": "target_gene_not_detected",
+      "gs_status": "weakened",
+      "gs_architecture": "true_no_candidate",
+      "conv_claim": "target_gene_not_detected"
+    },
+    {
+      "case_id": "ctrl_comp_true_target",
+      "target": "tetA",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "weakened",
+      "gs_architecture": "close_paralogue",
+      "conv_claim": "target_gene_detected"
+    },
+    {
+      "case_id": "ctrl_multi_near_identical",
+      "target": "tuf",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "weakened",
+      "gs_architecture": "close_paralogue",
+      "conv_claim": "target_gene_detected"
+    },
+    {
+      "case_id": "ctrl_multi_single",
+      "target": "recA",
+      "gs_claim": "target_gene_detected",
+      "gs_status": "weakened",
+      "gs_architecture": "canonical_full_length",
+      "conv_claim": "target_gene_detected"
+    }
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "kind": "amrfinderplus_definition_level_screen",
+  "hierarchy_url": "https://ftp.ncbi.nlm.nih.gov/pathogen/Antimicrobial_resistance/AMRFinderPlus/database/latest/ReferenceGeneHierarchy.txt",
+  "catalog_url": "https://ftp.ncbi.nlm.nih.gov/pathogen/Antimicrobial_resistance/AMRFinderPlus/database/latest/ReferenceGeneCatalog.txt",
+  "n_hierarchy_nodes": 8697,
+  "n_catalog_rows": 11456,
+  "hmm_profiles_downloaded": false,
+  "reference_sequences_downloaded": false,
+  "isolate_calls_inspected": false,
+  "microbigge_inspected": false,
+  "matches_by_v5_target": {
+    "tetA_tetracycline_efflux": {
+      "query_terms": [
+        "teta",
+        "tet(a)",
+        "tet(b)",
+        "tetb"
+      ],
+      "hierarchy_matches": [
+        {
+          "node_id": "tet(A)",
+          "parent_node_id": "tet_A_B_C_D",
+          "symbol": "tet(A)",
+          "name": "tetracycline efflux MFS transporter Tet(A)",
+          "synonyms": "tetA",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "tet(B)",
+          "parent_node_id": "tet_A_B_C_D",
+          "symbol": "tet(B)",
+          "name": "tetracycline efflux MFS transporter Tet(B)",
+          "synonyms": "tetB",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "tetA(46)",
+          "parent_node_id": "tet",
+          "symbol": "tetA(46)",
+          "name": "tetracycline efflux ABC transporter Tet(46) subunit A",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "tetA(58)",
+          "parent_node_id": "tet",
+          "symbol": "tetA(58)",
+          "name": "tetracycline efflux ABC transporter Tet(58) subunit A",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "tetA(60)",
+          "parent_node_id": "tet",
+          "symbol": "tetA(60)",
+          "name": "tetracycline efflux ABC transporter Tet(60) subunit A",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "tetA(P)",
+          "parent_node_id": "tet_MFS_efflux",
+          "symbol": "tetA(P)",
+          "name": "tetracycline efflux MFS transporter TetA(P)",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "tetAB",
+          "parent_node_id": "tet",
+          "symbol": "tetAB",
+          "name": "tetracycline efflux ABC transporter TetAB",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "tetAB_A",
+          "parent_node_id": "tetAB",
+          "symbol": "tetA",
+          "name": "tetracycline efflux ABC transporter TetAB subunit A",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "tetAB_B",
+          "parent_node_id": "tetAB",
+          "symbol": "tetB",
+          "name": "tetracycline efflux ABC transporter TetAB subunit B",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "tetB(46)",
+          "parent_node_id": "tet",
+          "symbol": "tetB(46)",
+          "name": "tetracycline efflux ABC transporter Tet(46) subunit B",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "tetB(58)",
+          "parent_node_id": "tet",
+          "symbol": "tetB(58)",
+          "name": "tetracycline efflux ABC transporter Tet(58) subunit B",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "tetB(60)",
+          "parent_node_id": "tet",
+          "symbol": "tetB(60)",
+          "name": "tetracycline efflux ABC transporter Tet(60) subunit B",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "tetB(P)",
+          "parent_node_id": "tet_rib_protect",
+          "symbol": "tetB(P)",
+          "name": "tetracycline resistance ribosomal protection protein TetB(P)",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "allele": "0"
+        }
+      ],
+      "catalog_matches": [
+        {
+          "synonyms": "tetA",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "gene_family": "tet(A)",
+          "product_name": "tetracycline efflux MFS transporter Tet(A)",
+          "hierarchy_node": "tet(A)"
+        },
+        {
+          "synonyms": "tetB",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "TETRACYCLINE",
+          "subclass": "TETRACYCLINE",
+          "scope": "core",
+          "gene_family": "tet(B)",
+          "product_name": "tetracycline efflux MFS transporter Tet(B)",
+          "hierarchy_node": "tet(B)"
+        }
+      ]
+    },
+    "mfs_multidrug_efflux": {
+      "query_terms": [
+        "mdfa",
+        "emrb",
+        "bcr"
+      ],
+      "hierarchy_matches": [
+        {
+          "node_id": "SMR_efflux_bcrB",
+          "parent_node_id": "SMR_efflux",
+          "symbol": "bcrB",
+          "name": "quaternary ammonium compound efflux SMR transporter BcrB",
+          "type": "STRESS",
+          "subtype": "BIOCIDE",
+          "class": "BACITRACIN",
+          "subclass": "BACITRACIN",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "SMR_efflux_bcrC",
+          "parent_node_id": "SMR_efflux",
+          "symbol": "bcrC",
+          "name": "quaternary ammonium compound efflux SMR transporter BcrC",
+          "type": "STRESS",
+          "subtype": "BIOCIDE",
+          "class": "BACITRACIN",
+          "subclass": "BACITRACIN",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "bcrA_Lm",
+          "parent_node_id": "AMR",
+          "symbol": "bcrA",
+          "name": "bacitracin resistance ABC transporter ATP-binding subunit BcrA",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "BACITRACIN",
+          "subclass": "BACITRACIN",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "emrB-sm",
+          "parent_node_id": "MFS_efflux",
+          "symbol": "emrB",
+          "name": "multidrug efflux MFS transporter permease subunit EmrB",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "EFFLUX",
+          "subclass": "EFFLUX",
+          "scope": "plus",
+          "allele": "0"
+        }
+      ],
+      "catalog_matches": [
+        {
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "EFFLUX",
+          "subclass": "EFFLUX",
+          "scope": "plus",
+          "gene_family": "emrB",
+          "product_name": "multidrug efflux MFS transporter permease subunit EmrB",
+          "hierarchy_node": "emrB-sm"
+        }
+      ]
+    },
+    "rnd_efflux": {
+      "query_terms": [
+        "acrb",
+        "acrd"
+      ],
+      "hierarchy_matches": [
+        {
+          "node_id": "blaCRD3",
+          "parent_node_id": "bla-B3",
+          "symbol": "blaCRD3",
+          "name": "CRD3 family subclass B3 metallo-beta-lactamase",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "BETA-LACTAM",
+          "subclass": "CARBAPENEM",
+          "scope": "core",
+          "allele": "0"
+        },
+        {
+          "node_id": "blaCRD3-1",
+          "parent_node_id": "blaCRD3",
+          "symbol": "blaCRD3-1",
+          "name": "subclass B3 metallo-beta-lactamase CRD3-1",
+          "type": "AMR",
+          "subtype": "AMR",
+          "class": "BETA-LACTAM",
+          "subclass": "CARBAPENEM",
+          "scope": "core",
+          "allele": "1"
+        }
+      ],
+      "catalog_matches": [
+        {
+          "type": "AMR",
+          "subtype": "POINT",
+          "class": "BETA-LACTAM",
+          "subclass": "CEFTIBUTEN-AVIBACTAM",
+          "scope": "core",
+          "allele": "acrB_E672L",
+          "gene_family": "acrB",
+          "product_name": "multidrug efflux RND transporter permease subunit AcrB"
+        }
+      ]
+    },
+    "recA_recombinase": {
+      "query_terms": [
+        "reca"
+      ],
+      "hierarchy_matches": [],
+      "catalog_matches": []
+    },
+    "tuf_EF_Tu": {
+      "query_terms": [
+        "tuf",
+        "tufa",
+        "tufb"
+      ],
+      "hierarchy_matches": [],
+      "catalog_matches": []
+    },
+    "lacZ_beta_galactosidase": {
+      "query_terms": [
+        "lacz"
+      ],
+      "hierarchy_matches": [],
+      "catalog_matches": []
+    },
+    "rpoB_RNAP_beta": {
+      "query_terms": [
+        "rpob"
+      ],
+      "hierarchy_matches": [],
+      "catalog_matches": [
+        {
+          "type": "AMR",
+          "subtype": "POINT",
+          "class": "RIFAMYCIN",
+          "subclass": "RIFAMPIN",
+          "scope": "core",
+          "allele": "rpoB_S583L",
+          "gene_family": "rpoB",
+          "product_name": "DNA-directed RNA polymerase subunit beta RpoB"
+        }
+      ]
+    },
+    "rpoC_RNAP_beta_prime": {
+      "query_terms": [
+        "rpoc"
+      ],
+      "hierarchy_matches": [],
+      "catalog_matches": [
+        {
+          "type": "AMR",
+          "subtype": "POINT",
+          "class": "MACROLIDE",
+          "subclass": "FIDAXOMICIN",
+          "scope": "core",
+          "allele": "rpoC_R89G",
+          "gene_family": "rpoC",
+          "product_name": "DNA-directed RNA polymerase subunit beta RpoC"
+        }
+      ]
+    }
+  }
+}

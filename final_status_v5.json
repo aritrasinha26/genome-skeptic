@@ -1,0 +1,13 @@
+{
+  "label": "internally validated agent",
+  "remaining": [
+    "tuf on the reused SPAdes assembly has a single reconstructed locus; near-identical second copy was not present as a distinct BLAST interval",
+    "Qwen3 / DeepSeek-R1-Distill were unavailable locally and were not substituted",
+    "no original external benchmark task was scored; Genome Skeptic is not credited on rewritten proxies"
+  ],
+  "gs_controls": 0.9583333333333334,
+  "conventional_controls": 0.8055555555555556,
+  "external_scored": false,
+  "models_available": false,
+  "post_hoc_tuning": false
+}

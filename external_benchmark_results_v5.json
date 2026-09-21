@@ -1,0 +1,82 @@
+{
+  "kind": "external_benchmark_results_v5",
+  "frozen_aggregate_sha256": "0e993125d2d620e54bbb42b3e420b4b9fda951c28b358ff8a2aed2d5b55a8f1b",
+  "scored_tasks": [],
+  "unscored": [
+    {
+      "benchmark": "bioagent_bench",
+      "task": "alzheimer-mouse",
+      "compatibility": "unsupported",
+      "inputs_present": true,
+      "reason": "task domain could not be mapped onto Genome Skeptic without rewriting the prompt"
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "comparative-genomics",
+      "compatibility": "unsupported",
+      "inputs_present": true,
+      "reason": "task domain could not be mapped onto Genome Skeptic without rewriting the prompt"
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "cystic-fibrosis",
+      "compatibility": "unsupported",
+      "inputs_present": true,
+      "reason": "task domain could not be mapped onto Genome Skeptic without rewriting the prompt"
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "deseq",
+      "compatibility": "unsupported",
+      "inputs_present": true,
+      "reason": "outside Genome Skeptic bacterial isolate / gene-orthologue scope"
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "evolution",
+      "compatibility": "unsupported",
+      "inputs_present": true,
+      "reason": "task domain could not be mapped onto Genome Skeptic without rewriting the prompt"
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "giab",
+      "compatibility": "partially_supported",
+      "inputs_present": true,
+      "reason": "genomics-adjacent but not Genome Skeptic's gene-orthologue claim engine"
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "metagenomics",
+      "compatibility": "partially_supported",
+      "inputs_present": true,
+      "reason": "genomics-adjacent but not Genome Skeptic's gene-orthologue claim engine"
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "single-cell",
+      "compatibility": "unsupported",
+      "inputs_present": true,
+      "reason": "outside Genome Skeptic bacterial isolate / gene-orthologue scope"
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "transcript-quant",
+      "compatibility": "unsupported",
+      "inputs_present": true,
+      "reason": "task domain could not be mapped onto Genome Skeptic without rewriting the prompt"
+    },
+    {
+      "benchmark": "bioagent_bench",
+      "task": "viral-metagenomics",
+      "compatibility": "partially_supported",
+      "inputs_present": true,
+      "reason": "genomics-adjacent but not Genome Skeptic's gene-orthologue claim engine"
+    }
+  ],
+  "post_hoc_tuning": false,
+  "biomaster": {
+    "executed_locally": false,
+    "reason": "BioMaster was not available in the original benchmark environment here; published numbers are not treated as head-to-head."
+  }
+}

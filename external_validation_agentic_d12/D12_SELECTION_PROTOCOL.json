@@ -1,0 +1,59 @@
+{
+  "kind": "D12_SELECTION_PROTOCOL",
+  "created_utc": "2026-09-20T16:58:41.209872+00:00",
+  "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+  "agentic_freeze_manifest_sha256": "4941a5197ea1a78a358070009e7df963fcdc67e651ba293015903ed6f5b76237",
+  "candidate_pool_sha256": "ae71569c554bf1d675e7de5091f29bb9bb09a6aae66a3c262f786ea8c5396d21",
+  "seed": "20260920",
+  "ambiguity_score_preregistered": true,
+  "score_source": "scripts/lock_cohort_d20_final.py:score_case",
+  "thresholds_modified": false,
+  "ambiguity_rules": [
+    {
+      "points": 2,
+      "rule": "candidate hit exists but no hit satisfies the frozen strong-hit gate"
+    },
+    {
+      "points": 2,
+      "rule": "best relevant identity within \u00b10.10 of frozen orthologue identity threshold"
+    },
+    {
+      "points": 2,
+      "rule": "best relevant query coverage within \u00b10.15 of frozen coverage threshold"
+    },
+    {
+      "points": 2,
+      "rule": "architecture in close_paralogue/divergent_full_length/domain_only/fusion/biological_split/assembly_fragmented"
+    },
+    {
+      "points": 2,
+      "rule": "candidate vs family/orthology disagreement or competing-family interpretation"
+    },
+    {
+      "points": 1,
+      "rule": "more than one candidate locus or multiplicity/copy-number ambiguous"
+    },
+    {
+      "points": 1,
+      "rule": "relevant hit near contig edge or possible_edge_truncation"
+    },
+    {
+      "points": "+1 per missing/incomplete falsification category, max +2"
+    },
+    {
+      "points": 1,
+      "rule": "V5 final claim class weakened or unresolved"
+    }
+  ],
+  "identity_threshold": 0.6,
+  "coverage_threshold": 0.8,
+  "final_n_per_target": 3,
+  "tie_break": "SHA256(\"V3_D12_EXTERNAL|20260920|<target>|<assembly_accession>\") ascending after higher ambiguity",
+  "execution_order": "SHA256(\"V3_D12_EXECUTION|20260920|<target>|<assembly_accession>\") ascending",
+  "lacz_not_downweighted_for_missing_competing_family_instrument": true,
+  "current_lacz_limitation": "No frozen deterministic instrument currently distinguishes true LacZ orthology from relevant competing beta-galactosidase families when reference/GFF/orthology resources are absent.",
+  "score_modified_after_inspection": false,
+  "external_labels_opened": false,
+  "d20_touched": false,
+  "d20_candidate_pool_sha256": "61a3e03bde2341d1bccd7a065cc53411ad10ad61ffc0410295a55ce9f8009f4c"
+}

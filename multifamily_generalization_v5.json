@@ -1,0 +1,101 @@
+{
+  "kind": "multifamily_generalization_v5",
+  "families": [
+    {
+      "family_id": "recA_recombinase",
+      "query_id": "recA",
+      "loaded": true,
+      "n_members": 4,
+      "property": "highly_conserved_single_copy_housekeeping"
+    },
+    {
+      "family_id": "tuf_EF_Tu",
+      "query_id": "tuf",
+      "loaded": true,
+      "n_members": 4,
+      "property": "multi_copy_near_identical"
+    },
+    {
+      "family_id": "lacZ_beta_galactosidase",
+      "query_id": "lacZ",
+      "loaded": true,
+      "n_members": 3,
+      "property": "accessory_metabolic"
+    },
+    {
+      "family_id": "tetA_tetracycline_efflux",
+      "query_id": "tetA",
+      "loaded": true,
+      "n_members": 2,
+      "property": "mobile_resistance_transporter"
+    },
+    {
+      "family_id": "mfs_multidrug_efflux",
+      "query_id": "mdfA",
+      "loaded": true,
+      "n_members": 3,
+      "property": "membrane_transporter_with_competitors"
+    },
+    {
+      "family_id": "rpoB_RNAP_beta",
+      "query_id": "rpoB",
+      "loaded": true,
+      "n_members": 7,
+      "property": "fusion_split_prone_housekeeping"
+    }
+  ],
+  "eval": {
+    "overall": 0.9814814814814815,
+    "conventional": 0.8333333333333334,
+    "rows": [
+      {
+        "case_id": "dev_01_lacZ",
+        "target": "lacZ",
+        "gs_claim": "target_gene_detected",
+        "gs_status": "weakened",
+        "gs_architecture": "close_paralogue",
+        "conv_claim": "target_gene_detected"
+      },
+      {
+        "case_id": "dev_01_mdfA",
+        "target": "mdfA",
+        "gs_claim": "target_gene_detected",
+        "gs_status": "weakened",
+        "gs_architecture": "close_paralogue",
+        "conv_claim": "target_gene_detected"
+      },
+      {
+        "case_id": "dev_01_recA",
+        "target": "recA",
+        "gs_claim": "target_gene_detected",
+        "gs_status": "supported",
+        "gs_architecture": "canonical_full_length",
+        "conv_claim": "target_gene_detected"
+      },
+      {
+        "case_id": "dev_01_rpoB",
+        "target": "rpoB",
+        "gs_claim": "target_gene_detected",
+        "gs_status": "supported",
+        "gs_architecture": "divergent_full_length",
+        "conv_claim": "target_gene_not_detected"
+      },
+      {
+        "case_id": "dev_01_tetA",
+        "target": "tetA",
+        "gs_claim": "target_gene_not_detected",
+        "gs_status": "weakened",
+        "gs_architecture": "domain_only",
+        "conv_claim": "target_gene_not_detected"
+      },
+      {
+        "case_id": "dev_01_tuf",
+        "target": "tuf",
+        "gs_claim": "target_gene_detected",
+        "gs_status": "supported",
+        "gs_architecture": "canonical_full_length",
+        "conv_claim": "target_gene_detected"
+      }
+    ]
+  }
+}

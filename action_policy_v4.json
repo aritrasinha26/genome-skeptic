@@ -1,0 +1,384 @@
+{
+  "kind": "action_policy_v4",
+  "catalog": [
+    {
+      "action_id": "nucleotide_homology",
+      "required_inputs": [
+        "assembly",
+        "targets"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_nt_hit"
+      ],
+      "supports_hypotheses": [
+        "true_presence"
+      ],
+      "rejects_hypotheses": [
+        "true_absence"
+      ],
+      "informative_when": "presence vs absence is open"
+    },
+    {
+      "action_id": "translated_homology",
+      "required_inputs": [
+        "assembly",
+        "targets"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_aa_hit"
+      ],
+      "supports_hypotheses": [
+        "true_presence",
+        "divergent_orthologue"
+      ],
+      "rejects_hypotheses": [
+        "true_absence"
+      ],
+      "informative_when": "nucleotide search is weak"
+    },
+    {
+      "action_id": "family_profile_hmm",
+      "required_inputs": [
+        "assembly",
+        "family_hmm"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_family_hmm"
+      ],
+      "supports_hypotheses": [
+        "true_presence",
+        "divergent_orthologue",
+        "fusion",
+        "biological_split"
+      ],
+      "rejects_hypotheses": [
+        "true_absence"
+      ],
+      "informative_when": "pairwise identity is weak or architecture is open"
+    },
+    {
+      "action_id": "fusion_orf",
+      "required_inputs": [
+        "locus_reconstruction",
+        "partner_family"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_fusion"
+      ],
+      "supports_hypotheses": [
+        "fusion",
+        "annotation_failure"
+      ],
+      "rejects_hypotheses": [
+        "true_absence"
+      ],
+      "informative_when": "locus is longer than the family or partner evidence exists"
+    },
+    {
+      "action_id": "split_gene",
+      "required_inputs": [
+        "locus_reconstruction"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_split"
+      ],
+      "supports_hypotheses": [
+        "biological_split",
+        "annotation_failure"
+      ],
+      "rejects_hypotheses": [
+        "assembly_fragmentation"
+      ],
+      "informative_when": "multiple same-contig segments cover the family"
+    },
+    {
+      "action_id": "assembly_fragmentation",
+      "required_inputs": [
+        "assembly",
+        "mapping"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_fragment"
+      ],
+      "supports_hypotheses": [
+        "assembly_fragmentation",
+        "insufficient_data"
+      ],
+      "rejects_hypotheses": [
+        "biological_split"
+      ],
+      "informative_when": "coverage is incomplete or a contig edge is involved"
+    },
+    {
+      "action_id": "contig_edge_effects",
+      "required_inputs": [
+        "assembly"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_edge"
+      ],
+      "supports_hypotheses": [
+        "assembly_fragmentation"
+      ],
+      "rejects_hypotheses": [],
+      "informative_when": "candidate is near a contig boundary"
+    },
+    {
+      "action_id": "contig_edge_truncation",
+      "required_inputs": [
+        "assembly"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_edge"
+      ],
+      "supports_hypotheses": [
+        "assembly_fragmentation"
+      ],
+      "rejects_hypotheses": [
+        "true_absence"
+      ],
+      "informative_when": "non-detection with edge-proximal hits"
+    },
+    {
+      "action_id": "read_supported_break",
+      "required_inputs": [
+        "mapping_sam"
+      ],
+      "cost_class": "moderate",
+      "evidence_produced": [
+        "E_break"
+      ],
+      "supports_hypotheses": [
+        "assembly_fragmentation",
+        "insufficient_data"
+      ],
+      "rejects_hypotheses": [
+        "true_absence"
+      ],
+      "informative_when": "fragmentation vs missing gene is open and mapping exists"
+    },
+    {
+      "action_id": "wrong_paralogue",
+      "required_inputs": [
+        "hits"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_loci"
+      ],
+      "supports_hypotheses": [
+        "paralogue"
+      ],
+      "rejects_hypotheses": [
+        "true_presence"
+      ],
+      "informative_when": "multiple loci exist"
+    },
+    {
+      "action_id": "orthology_versus_paralogy",
+      "required_inputs": [
+        "references"
+      ],
+      "cost_class": "moderate",
+      "evidence_produced": [
+        "E_orthology"
+      ],
+      "supports_hypotheses": [
+        "paralogue",
+        "true_presence"
+      ],
+      "rejects_hypotheses": [],
+      "informative_when": "paralogy vs orthology is open"
+    },
+    {
+      "action_id": "reciprocal_best_hit",
+      "required_inputs": [
+        "references"
+      ],
+      "cost_class": "moderate",
+      "evidence_produced": [
+        "E_rbh"
+      ],
+      "supports_hypotheses": [
+        "true_presence"
+      ],
+      "rejects_hypotheses": [
+        "paralogue"
+      ],
+      "informative_when": "family identity is ambiguous"
+    },
+    {
+      "action_id": "phylogenetic_placement",
+      "required_inputs": [
+        "homolog_alignment",
+        "fasttree"
+      ],
+      "cost_class": "expensive",
+      "evidence_produced": [
+        "E_phylo"
+      ],
+      "supports_hypotheses": [
+        "paralogue",
+        "divergent_orthologue",
+        "true_presence"
+      ],
+      "rejects_hypotheses": [],
+      "informative_when": "cheaper evidence leaves paralogy or family identity ambiguous"
+    },
+    {
+      "action_id": "local_read_coverage",
+      "required_inputs": [
+        "depth_tsv"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_depth"
+      ],
+      "supports_hypotheses": [
+        "insufficient_data",
+        "assembly_fragmentation"
+      ],
+      "rejects_hypotheses": [],
+      "informative_when": "depth file exists and coverage is untested"
+    },
+    {
+      "action_id": "contamination",
+      "required_inputs": [
+        "taxonomy_db"
+      ],
+      "cost_class": "moderate",
+      "evidence_produced": [
+        "E_tax"
+      ],
+      "supports_hypotheses": [
+        "contamination"
+      ],
+      "rejects_hypotheses": [
+        "true_presence"
+      ],
+      "informative_when": "taxonomy disagrees or contamination metrics exist"
+    },
+    {
+      "action_id": "taxonomic_inconsistency",
+      "required_inputs": [
+        "taxonomy"
+      ],
+      "cost_class": "moderate",
+      "evidence_produced": [
+        "E_tax"
+      ],
+      "supports_hypotheses": [
+        "contamination"
+      ],
+      "rejects_hypotheses": [],
+      "informative_when": "declared organism and contig taxonomy may disagree"
+    },
+    {
+      "action_id": "divergent_homologues",
+      "required_inputs": [
+        "family_hmm"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_divergent"
+      ],
+      "supports_hypotheses": [
+        "divergent_orthologue"
+      ],
+      "rejects_hypotheses": [
+        "true_absence"
+      ],
+      "informative_when": "nucleotide search is negative"
+    },
+    {
+      "action_id": "abnormal_protein_length",
+      "required_inputs": [
+        "locus_reconstruction"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_length"
+      ],
+      "supports_hypotheses": [
+        "fusion",
+        "annotation_failure"
+      ],
+      "rejects_hypotheses": [],
+      "informative_when": "length is off relative to the family"
+    },
+    {
+      "action_id": "local_gene_order",
+      "required_inputs": [
+        "gff",
+        "references"
+      ],
+      "cost_class": "moderate",
+      "evidence_produced": [
+        "E_synteny"
+      ],
+      "supports_hypotheses": [
+        "true_presence",
+        "annotation_failure"
+      ],
+      "rejects_hypotheses": [],
+      "informative_when": "architecture is canonical and synteny is still untested"
+    },
+    {
+      "action_id": "protein_identity_and_coverage",
+      "required_inputs": [
+        "hits"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_identity"
+      ],
+      "supports_hypotheses": [
+        "true_presence",
+        "divergent_orthologue"
+      ],
+      "rejects_hypotheses": [],
+      "informative_when": "always informative for homology claims"
+    },
+    {
+      "action_id": "short_conserved_domain",
+      "required_inputs": [
+        "hits"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_domain"
+      ],
+      "supports_hypotheses": [
+        "true_absence"
+      ],
+      "rejects_hypotheses": [
+        "true_presence"
+      ],
+      "informative_when": "coverage is partial"
+    },
+    {
+      "action_id": "low_alignment_coverage",
+      "required_inputs": [
+        "hits"
+      ],
+      "cost_class": "cheap",
+      "evidence_produced": [
+        "E_coverage"
+      ],
+      "supports_hypotheses": [
+        "assembly_fragmentation",
+        "domain_only"
+      ],
+      "rejects_hypotheses": [],
+      "informative_when": "coverage is untested"
+    }
+  ]
+}

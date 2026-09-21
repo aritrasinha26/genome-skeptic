@@ -1,0 +1,9 @@
+{
+  "file": "cohort_C_pilot5_external_labels_locked.jsonl",
+  "sha256": "8ba687f0b976c54e7de28a5d8eb26b76467445888ffb977607076e816ef4ec7a",
+  "hashed_utc": "2026-09-19T16:53:46.467207+00:00",
+  "hashed_before_prediction_comparison": true,
+  "n_cases": 5,
+  "other_cohort_C_cases_inspected": false,
+  "prediction_files_not_used_to_assign_labels": true
+}

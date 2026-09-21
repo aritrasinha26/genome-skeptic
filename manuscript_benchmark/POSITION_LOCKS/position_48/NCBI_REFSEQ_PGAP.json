@@ -1,0 +1,70 @@
+{
+  "case_id": "M60_rpoB_RNAP_beta_GCF_055389225.1",
+  "position": 48,
+  "accession": "GCF_055389225.1",
+  "target": "rpoB_RNAP_beta",
+  "stratum": "routine",
+  "system": "NCBI_REFSEQ_PGAP",
+  "system_version": "annotation files shipped with the selected GCF assembly version",
+  "git_commit": "8f66868850a98494778966bd729b88a6fc2952eb",
+  "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+  "input_assembly_hash": "06b216c701b022d576b9f25fac64e34129ff955360714bf489549f26a8c91c50",
+  "start_time": "2026-09-21T06:45:05.120315+00:00",
+  "end_time": "2026-09-21T06:45:06.133742+00:00",
+  "runtime_seconds": 1.013,
+  "peak_memory": 161656832,
+  "tool_versions": {
+    "python": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+    "blastn": "USAGE",
+    "hmmsearch": "HMMER 3.4 (Aug 2023); http://hmmer.org/",
+    "mmseqs": "18.8cc5c",
+    "diamond": "diamond version 2.2.6",
+    "amrfinder": "4.2.7"
+  },
+  "database_versions": {
+    "amrfinder_database_version": "2026-08-07.1",
+    "amrfinder_database_directory": "/home/aritr/micromamba/envs/genome-skeptic-prod/share/amrfinderplus/data/2026-08-07.1",
+    "amrfinder_database_freeze_sha256": "d7ae98063c3b7795fa443f90f51a267e5b28002e1e5d59f364f403dde8a188be",
+    "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+    "family_definitions_hash": "ed4210640e318b8ed94ebf6d72b9c37afa9039eed858fdd54c4165fbcce09605"
+  },
+  "completion_status": "complete",
+  "failure_reason": null,
+  "output_file": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/RUNS/position_48/GCF_055389225.1/rpoB_RNAP_beta/NCBI_REFSEQ_PGAP/case_locked.json",
+  "truth_opened": false,
+  "d20_touched": false,
+  "accuracy_scored": false,
+  "ok": true,
+  "binary_call": "POSITIVE",
+  "n_cds": 3162,
+  "n_rpob_hits": 2,
+  "n_rpoc_hits": 1,
+  "rpob_hits": [
+    {
+      "seqid": "NZ_AP044037.1",
+      "start": "1556741",
+      "end": "1557100",
+      "strand": "-",
+      "gene": "",
+      "product": "DNA-directed RNA polymerase subunit beta"
+    },
+    {
+      "seqid": "NZ_AP044037.1",
+      "start": "2259341",
+      "end": "2262883",
+      "strand": "+",
+      "gene": "rpoB",
+      "product": "DNA-directed RNA polymerase subunit beta"
+    }
+  ],
+  "gff_source": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/055/389/225/GCF_055389225.1_ASM5538922v1/GCF_055389225.1_ASM5538922v1_genomic.gff.gz",
+  "retrieval_method": "HTTPS GET of *_genomic.gff.gz from the case ftp_path; fallback *_feature_table.txt.gz",
+  "assembly_accession_matching_rule": "GCF accession in ftp_path, filename prefix, and case accession must be identical including version",
+  "parser_version": "m60_pgap_gff_v1_frozen_protocol_v1_1",
+  "binary_conversion_rule": "POSITIVE if any CDS has gene=rpoB or a product naming RNA polymerase subunit beta that is not beta-prime/rpoC. NEGATIVE if annotation is present and has zero rpoB hits. UNCERTAIN if annotation missing/unreadable/no CDS.",
+  "manual_interpretation": false,
+  "pgap_defines_rpob_truth": false,
+  "annotation_file": "/home/aritr/m60_work/comparators/pgap/GCF_055389225.1/GCF_055389225.1_ASM5538922v1_genomic.gff.gz",
+  "annotation_sha256": "6aced831c1b4ebc3dc9daab16f0b1552df5c9c612da19e882a0c8a12dc3a65fa",
+  "output_sha256": "8d1f5c78e34003be0eba1bcfd898ee2857b923780c46ad4950c25de001b927e8"
+}

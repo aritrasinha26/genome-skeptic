@@ -1,0 +1,11 @@
+stratum,system,evaluable_n,correct,accuracy,wilson_ci,agent_vs_det_corrections,agent_vs_det_degradations,agent_vs_det_net,analysis_class
+routine,Conventional,21,8,0.38095238095238093,0.208–0.591,,,,secondary
+routine,Specialist comparator,21,16,0.7619047619047619,0.549–0.894,,,,secondary
+routine,GS-Deterministic V4.1,21,15,0.7142857142857143,0.500–0.862,,,,secondary
+routine,GS-Agentic V4.1,21,15,0.7142857142857143,0.500–0.862,0,0,0,secondary
+routine,GS-Exhaustive V4.1,21,15,0.7142857142857143,0.500–0.862,,,,secondary
+challenge,Conventional,20,12,0.6,0.387–0.781,,,,secondary
+challenge,Specialist comparator,20,18,0.9,0.699–0.972,,,,secondary
+challenge,GS-Deterministic V4.1,20,18,0.9,0.699–0.972,,,,secondary
+challenge,GS-Agentic V4.1,20,18,0.9,0.699–0.972,0,0,0,secondary
+challenge,GS-Exhaustive V4.1,20,18,0.9,0.699–0.972,,,,secondary

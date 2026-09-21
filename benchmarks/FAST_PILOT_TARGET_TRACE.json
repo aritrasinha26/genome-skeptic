@@ -1,0 +1,2949 @@
+{
+  "banner": "FAST PILOT - NOT FINAL BENCHMARK. Diagnostic only. Scoring was not modified.",
+  "assembly_commands": {
+    "spades_command_line": "Command line: /home/aritr/micromamba/envs/genome-skeptic-prod/bin/spades.py\t-1\t/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev_eval/dev_01/production/fastp/clean_R1.fastq.gz\t-2\t/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev_eval/dev_01/production/fastp/clean_R2.fastq.gz\t-o\t/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev_eval/dev_01/production/spades\t-t\t4\t-m\t3\t--only-assembler\t-k\t21,33,55\t",
+    "mapping_command": "[M::main] CMD: minimap2 -ax sr -t 4 /mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev_eval/dev_01/production/spades/contigs.fasta /mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev_eval/dev_01/production/fastp/clean_R1.fastq.gz /mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev_eval/dev_01/production/fastp/clean_R2.fastq.gz"
+  },
+  "target": {
+    "fasta_identifier": "rpoB",
+    "nucleotide_length": 122,
+    "nucleotide_sequence": "GTGCAGATCCCGCGTGAAGGTCTGATCGCGCGTACCGGTGAAACCGTAGCTGAAGCTCTGAAAGGTCTGCGTGAACTGCCGGGTATCAACCTGCCGGAAGGTGTTGAAGTTGAAACCGAAGT",
+    "sha256": "2713eb80b5e6a38e58d316616b67014dcf6373a297008caf91881cec67eafc0a",
+    "is_nucleotide": true,
+    "translated_frames": {
+      "0": {
+        "aa": "VQIPREGLIARTGETVAEALKGLRELPGINLPEGVEVETE",
+        "ungapped_prefix": "VQIPREGLIARTGETVAEALKGLRELPGINLPEGVEVETE",
+        "length_aa": 40
+      },
+      "1": {
+        "aa": "CRSRVKV*SRVPVKP*LKL*KVCVNCRVSTCRKVLKLKPK",
+        "ungapped_prefix": "CRSRVKV",
+        "length_aa": 7
+      },
+      "2": {
+        "aa": "ADPA*RSDRAYR*NRS*SSERSA*TAGYQPAGRC*S*NRS",
+        "ungapped_prefix": "ADPA",
+        "length_aa": 4
+      }
+    },
+    "chosen_protein": "VQIPREGLIARTGETVAEALKGLRELPGINLPEGVEVETE",
+    "chosen_protein_length": 40,
+    "protein_sha256": "8e996def7688509f188d1091f1ce3a6ee79c175e0105b43b03a034c72a8aeafc",
+    "representation": "122-nt public E. coli rpoB fragment (PUBLIC_RPOB_SEED), not a full-length gene"
+  },
+  "hidden_source": {
+    "note": "scorer-side only; coordinates from exact string search and BLAST, not LLM inference",
+    "fasta": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev/hidden/genomes/ecoli_k12/sim_source.fa",
+    "sha256": "635d5790b0a3a2fe838ce3ea76369444676842a8393701eac312f94346400679",
+    "exact_matches": [],
+    "target_present_in_hidden_source": false,
+    "locate_target": {
+      "contig": "replicon_1",
+      "start": 124319,
+      "end": 124371,
+      "identity": 0.6538461538461539,
+      "coverage": 0.4262295081967213
+    }
+  },
+  "source_homology_all_fast_pilot_genomes": {
+    "ecoli_k12": {
+      "path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev/hidden/genomes/ecoli_k12/sim_source.fa",
+      "exact_nt_present": false,
+      "exact_matches": [],
+      "locate_target_identity_ge_0.5_rule": {
+        "contig": "replicon_1",
+        "start": 124319,
+        "end": 124371,
+        "identity": 0.6538461538461539,
+        "coverage": 0.4262295081967213
+      },
+      "truth_present_if_locate_ge_0.5": true,
+      "blastn_available": true,
+      "blastn_top": [
+        {
+          "sseqid": "replicon_1",
+          "pident": 77.778,
+          "length": 36,
+          "qlen": 122,
+          "slen": 4641652,
+          "qstart": 74,
+          "qend": 109,
+          "sstart": 124323,
+          "send": 124358,
+          "qcovs": 84.0,
+          "evalue": 0.39,
+          "bitscore": 30.1,
+          "identity_frac": 0.77778,
+          "query_coverage": 0.29508196721311475,
+          "subject_coverage": 7.755859336288029e-06
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 80.0,
+          "length": 35,
+          "qlen": 122,
+          "slen": 4641652,
+          "qstart": 11,
+          "qend": 43,
+          "sstart": 3879176,
+          "send": 3879142,
+          "qcovs": 84.0,
+          "evalue": 0.39,
+          "bitscore": 30.1,
+          "identity_frac": 0.8,
+          "query_coverage": 0.27049180327868855,
+          "subject_coverage": 7.540418799168917e-06
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 85.714,
+          "length": 28,
+          "qlen": 122,
+          "slen": 4641652,
+          "qstart": 21,
+          "qend": 47,
+          "sstart": 1389326,
+          "send": 1389299,
+          "qcovs": 84.0,
+          "evalue": 0.39,
+          "bitscore": 30.1,
+          "identity_frac": 0.85714,
+          "query_coverage": 0.22131147540983606,
+          "subject_coverage": 6.032335039335133e-06
+        }
+      ],
+      "tblastn_top": [
+        {
+          "sseqid": "replicon_1",
+          "pident": 41.379,
+          "length": 29,
+          "qlen": 40,
+          "slen": 4641652,
+          "qstart": 8,
+          "qend": 35,
+          "sstart": 472051,
+          "send": 471965,
+          "qcovs": 100.0,
+          "evalue": 3.6,
+          "bitscore": 21.6,
+          "identity_frac": 0.41379,
+          "query_coverage": 0.7
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 50.0,
+          "length": 24,
+          "qlen": 40,
+          "slen": 4641652,
+          "qstart": 12,
+          "qend": 34,
+          "sstart": 839718,
+          "send": 839647,
+          "qcovs": 100.0,
+          "evalue": 5.0,
+          "bitscore": 21.2,
+          "identity_frac": 0.5,
+          "query_coverage": 0.575
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 42.857,
+          "length": 28,
+          "qlen": 40,
+          "slen": 4641652,
+          "qstart": 13,
+          "qend": 38,
+          "sstart": 2045124,
+          "send": 2045041,
+          "qcovs": 100.0,
+          "evalue": 2.1,
+          "bitscore": 21.9,
+          "identity_frac": 0.42857,
+          "query_coverage": 0.65
+        }
+      ],
+      "meets_nt_80_80": false,
+      "meets_aa_60_80": false
+    },
+    "pao1": {
+      "path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev/hidden/genomes/pao1/sim_source.fa",
+      "exact_nt_present": false,
+      "exact_matches": [],
+      "locate_target_identity_ge_0.5_rule": {
+        "contig": "replicon_1",
+        "start": 3420674,
+        "end": 3420755,
+        "identity": 0.4074074074074074,
+        "coverage": 0.675
+      },
+      "truth_present_if_locate_ge_0.5": false,
+      "blastn_available": true,
+      "blastn_top": [
+        {
+          "sseqid": "replicon_1",
+          "pident": 84.615,
+          "length": 26,
+          "qlen": 122,
+          "slen": 6264404,
+          "qstart": 44,
+          "qend": 69,
+          "sstart": 1853467,
+          "send": 1853442,
+          "qcovs": 91.0,
+          "evalue": 0.53,
+          "bitscore": 30.1,
+          "identity_frac": 0.84615,
+          "query_coverage": 0.21311475409836064,
+          "subject_coverage": 4.150434742076022e-06
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 81.481,
+          "length": 27,
+          "qlen": 122,
+          "slen": 6264404,
+          "qstart": 12,
+          "qend": 38,
+          "sstart": 3290707,
+          "send": 3290681,
+          "qcovs": 91.0,
+          "evalue": 6.4,
+          "bitscore": 27.4,
+          "identity_frac": 0.8148099999999999,
+          "query_coverage": 0.22131147540983606,
+          "subject_coverage": 4.310066847540484e-06
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 91.667,
+          "length": 24,
+          "qlen": 122,
+          "slen": 6264404,
+          "qstart": 97,
+          "qend": 119,
+          "sstart": 5873863,
+          "send": 5873886,
+          "qcovs": 91.0,
+          "evalue": 0.15,
+          "bitscore": 31.9,
+          "identity_frac": 0.91667,
+          "query_coverage": 0.1885245901639344,
+          "subject_coverage": 3.831170531147097e-06
+        }
+      ],
+      "tblastn_top": [
+        {
+          "sseqid": "replicon_1",
+          "pident": 36.842,
+          "length": 38,
+          "qlen": 40,
+          "slen": 6264404,
+          "qstart": 3,
+          "qend": 40,
+          "sstart": 6006468,
+          "send": 6006581,
+          "qcovs": 100.0,
+          "evalue": 0.009,
+          "bitscore": 28.9,
+          "identity_frac": 0.36841999999999997,
+          "query_coverage": 0.95
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 53.846,
+          "length": 26,
+          "qlen": 40,
+          "slen": 6264404,
+          "qstart": 12,
+          "qend": 37,
+          "sstart": 5333459,
+          "send": 5333391,
+          "qcovs": 100.0,
+          "evalue": 0.11,
+          "bitscore": 25.8,
+          "identity_frac": 0.5384599999999999,
+          "query_coverage": 0.65
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 45.714,
+          "length": 35,
+          "qlen": 40,
+          "slen": 6264404,
+          "qstart": 3,
+          "qend": 32,
+          "sstart": 3111098,
+          "send": 3111000,
+          "qcovs": 100.0,
+          "evalue": 5.5,
+          "bitscore": 21.2,
+          "identity_frac": 0.45714,
+          "query_coverage": 0.75
+        }
+      ],
+      "meets_nt_80_80": false,
+      "meets_aa_60_80": false
+    },
+    "hpylori": {
+      "path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev/hidden/genomes/hpylori/sim_source.fa",
+      "exact_nt_present": false,
+      "exact_matches": [],
+      "locate_target_identity_ge_0.5_rule": {
+        "contig": "replicon_1",
+        "start": 604326,
+        "end": 604407,
+        "identity": 0.4074074074074074,
+        "coverage": 0.675
+      },
+      "truth_present_if_locate_ge_0.5": false,
+      "blastn_available": true,
+      "blastn_top": [
+        {
+          "sseqid": "replicon_1",
+          "pident": 90.0,
+          "length": 20,
+          "qlen": 122,
+          "slen": 1667867,
+          "qstart": 96,
+          "qend": 115,
+          "sstart": 473360,
+          "send": 473379,
+          "qcovs": 40.0,
+          "evalue": 0.5,
+          "bitscore": 28.3,
+          "identity_frac": 0.9,
+          "query_coverage": 0.16393442622950818,
+          "subject_coverage": 1.1991363819776996e-05
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 88.889,
+          "length": 18,
+          "qlen": 122,
+          "slen": 1667867,
+          "qstart": 46,
+          "qend": 63,
+          "sstart": 1200778,
+          "send": 1200795,
+          "qcovs": 40.0,
+          "evalue": 6.1,
+          "bitscore": 24.7,
+          "identity_frac": 0.88889,
+          "query_coverage": 0.14754098360655737,
+          "subject_coverage": 1.0792227437799298e-05
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 100.0,
+          "length": 13,
+          "qlen": 122,
+          "slen": 1667867,
+          "qstart": 62,
+          "qend": 74,
+          "sstart": 1004829,
+          "send": 1004817,
+          "qcovs": 40.0,
+          "evalue": 6.1,
+          "bitscore": 24.7,
+          "identity_frac": 1.0,
+          "query_coverage": 0.10655737704918032,
+          "subject_coverage": 7.794386482855048e-06
+        }
+      ],
+      "tblastn_top": [
+        {
+          "sseqid": "replicon_1",
+          "pident": 35.484,
+          "length": 31,
+          "qlen": 40,
+          "slen": 1667867,
+          "qstart": 6,
+          "qend": 36,
+          "sstart": 711358,
+          "send": 711450,
+          "qcovs": 93.0,
+          "evalue": 0.08,
+          "bitscore": 24.6,
+          "identity_frac": 0.35484000000000004,
+          "query_coverage": 0.775
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 64.706,
+          "length": 17,
+          "qlen": 40,
+          "slen": 1667867,
+          "qstart": 17,
+          "qend": 33,
+          "sstart": 604398,
+          "send": 604348,
+          "qcovs": 93.0,
+          "evalue": 0.82,
+          "bitscore": 21.9,
+          "identity_frac": 0.6470600000000001,
+          "query_coverage": 0.425
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 55.556,
+          "length": 18,
+          "qlen": 40,
+          "slen": 1667867,
+          "qstart": 9,
+          "qend": 26,
+          "sstart": 1546873,
+          "send": 1546820,
+          "qcovs": 93.0,
+          "evalue": 2.2,
+          "bitscore": 20.8,
+          "identity_frac": 0.5555599999999999,
+          "query_coverage": 0.45
+        }
+      ],
+      "meets_nt_80_80": false,
+      "meets_aa_60_80": false
+    },
+    "salmonella_lt2": {
+      "path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_held/hidden/genomes/salmonella_lt2/sim_source.fa",
+      "exact_nt_present": false,
+      "exact_matches": [],
+      "locate_target_identity_ge_0.5_rule": {
+        "contig": "replicon_1",
+        "start": 4811997,
+        "end": 4812075,
+        "identity": 0.4230769230769231,
+        "coverage": 0.65
+      },
+      "truth_present_if_locate_ge_0.5": false,
+      "blastn_available": true,
+      "blastn_top": [
+        {
+          "sseqid": "replicon_1",
+          "pident": 83.871,
+          "length": 31,
+          "qlen": 122,
+          "slen": 4857450,
+          "qstart": 25,
+          "qend": 55,
+          "sstart": 3759302,
+          "send": 3759272,
+          "qcovs": 92.0,
+          "evalue": 0.034,
+          "bitscore": 34.6,
+          "identity_frac": 0.83871,
+          "query_coverage": 0.2540983606557377,
+          "subject_coverage": 6.381949376730589e-06
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 86.667,
+          "length": 30,
+          "qlen": 122,
+          "slen": 4857450,
+          "qstart": 72,
+          "qend": 100,
+          "sstart": 1934885,
+          "send": 1934856,
+          "qcovs": 92.0,
+          "evalue": 0.034,
+          "bitscore": 33.7,
+          "identity_frac": 0.86667,
+          "query_coverage": 0.23770491803278687,
+          "subject_coverage": 6.176080041997344e-06
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 91.667,
+          "length": 24,
+          "qlen": 122,
+          "slen": 4857450,
+          "qstart": 77,
+          "qend": 100,
+          "sstart": 4453674,
+          "send": 4453697,
+          "qcovs": 92.0,
+          "evalue": 0.01,
+          "bitscore": 35.6,
+          "identity_frac": 0.91667,
+          "query_coverage": 0.19672131147540983,
+          "subject_coverage": 4.9408640335978755e-06
+        }
+      ],
+      "tblastn_top": [
+        {
+          "sseqid": "replicon_1",
+          "pident": 56.522,
+          "length": 23,
+          "qlen": 40,
+          "slen": 4857450,
+          "qstart": 12,
+          "qend": 34,
+          "sstart": 3089453,
+          "send": 3089391,
+          "qcovs": 98.0,
+          "evalue": 1.8,
+          "bitscore": 22.3,
+          "identity_frac": 0.56522,
+          "query_coverage": 0.575
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 40.625,
+          "length": 32,
+          "qlen": 40,
+          "slen": 4857450,
+          "qstart": 7,
+          "qend": 37,
+          "sstart": 2154594,
+          "send": 2154689,
+          "qcovs": 98.0,
+          "evalue": 4.1,
+          "bitscore": 21.2,
+          "identity_frac": 0.40625,
+          "query_coverage": 0.775
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 52.174,
+          "length": 23,
+          "qlen": 40,
+          "slen": 4857450,
+          "qstart": 4,
+          "qend": 26,
+          "sstart": 4812007,
+          "send": 4812072,
+          "qcovs": 98.0,
+          "evalue": 2.8,
+          "bitscore": 21.9,
+          "identity_frac": 0.52174,
+          "query_coverage": 0.575
+        }
+      ],
+      "meets_nt_80_80": false,
+      "meets_aa_60_80": false
+    },
+    "pputida_kt2440": {
+      "path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_held/hidden/genomes/pputida_kt2440/sim_source.fa",
+      "exact_nt_present": false,
+      "exact_matches": [],
+      "locate_target_identity_ge_0.5_rule": {
+        "contig": "replicon_1",
+        "start": 236829,
+        "end": 236910,
+        "identity": 0.4074074074074074,
+        "coverage": 0.675
+      },
+      "truth_present_if_locate_ge_0.5": false,
+      "blastn_available": true,
+      "blastn_top": [
+        {
+          "sseqid": "replicon_1",
+          "pident": 78.049,
+          "length": 41,
+          "qlen": 122,
+          "slen": 6181873,
+          "qstart": 15,
+          "qend": 55,
+          "sstart": 5162343,
+          "send": 5162303,
+          "qcovs": 98.0,
+          "evalue": 0.043,
+          "bitscore": 34.6,
+          "identity_frac": 0.78049,
+          "query_coverage": 0.3360655737704918,
+          "subject_coverage": 6.63229412833295e-06
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 79.412,
+          "length": 34,
+          "qlen": 122,
+          "slen": 6181873,
+          "qstart": 68,
+          "qend": 98,
+          "sstart": 1829083,
+          "send": 1829050,
+          "qcovs": 98.0,
+          "evalue": 1.8,
+          "bitscore": 29.2,
+          "identity_frac": 0.79412,
+          "query_coverage": 0.2540983606557377,
+          "subject_coverage": 5.4999512283736664e-06
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 82.759,
+          "length": 29,
+          "qlen": 122,
+          "slen": 6181873,
+          "qstart": 53,
+          "qend": 81,
+          "sstart": 2663061,
+          "send": 2663087,
+          "qcovs": 98.0,
+          "evalue": 1.8,
+          "bitscore": 28.3,
+          "identity_frac": 0.82759,
+          "query_coverage": 0.23770491803278687,
+          "subject_coverage": 4.6911348712598916e-06
+        }
+      ],
+      "tblastn_top": [
+        {
+          "sseqid": "replicon_1",
+          "pident": 43.75,
+          "length": 32,
+          "qlen": 40,
+          "slen": 6181873,
+          "qstart": 8,
+          "qend": 39,
+          "sstart": 1537048,
+          "send": 1537137,
+          "qcovs": 100.0,
+          "evalue": 3.4,
+          "bitscore": 21.9,
+          "identity_frac": 0.4375,
+          "query_coverage": 0.8
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 36.842,
+          "length": 38,
+          "qlen": 40,
+          "slen": 6181873,
+          "qstart": 3,
+          "qend": 40,
+          "sstart": 6049376,
+          "send": 6049489,
+          "qcovs": 100.0,
+          "evalue": 0.031,
+          "bitscore": 27.3,
+          "identity_frac": 0.36841999999999997,
+          "query_coverage": 0.95
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 40.625,
+          "length": 32,
+          "qlen": 40,
+          "slen": 6181873,
+          "qstart": 2,
+          "qend": 33,
+          "sstart": 5089224,
+          "send": 5089319,
+          "qcovs": 100.0,
+          "evalue": 2.8,
+          "bitscore": 21.9,
+          "identity_frac": 0.40625,
+          "query_coverage": 0.8
+        }
+      ],
+      "meets_nt_80_80": false,
+      "meets_aa_60_80": false
+    },
+    "staph_8325": {
+      "path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_held/hidden/genomes/staph_8325/sim_source.fa",
+      "exact_nt_present": false,
+      "exact_matches": [],
+      "locate_target_identity_ge_0.5_rule": {
+        "contig": "replicon_1",
+        "start": 1213669,
+        "end": 1213759,
+        "identity": 0.4,
+        "coverage": 0.75
+      },
+      "truth_present_if_locate_ge_0.5": false,
+      "blastn_available": true,
+      "blastn_top": [
+        {
+          "sseqid": "replicon_1",
+          "pident": 86.364,
+          "length": 22,
+          "qlen": 122,
+          "slen": 2821361,
+          "qstart": 39,
+          "qend": 60,
+          "sstart": 761125,
+          "send": 761104,
+          "qcovs": 44.0,
+          "evalue": 2.9,
+          "bitscore": 27.4,
+          "identity_frac": 0.8636400000000001,
+          "query_coverage": 0.18032786885245902,
+          "subject_coverage": 7.79765510333488e-06
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 89.474,
+          "length": 19,
+          "qlen": 122,
+          "slen": 2821361,
+          "qstart": 36,
+          "qend": 54,
+          "sstart": 1140152,
+          "send": 1140170,
+          "qcovs": 44.0,
+          "evalue": 2.9,
+          "bitscore": 26.5,
+          "identity_frac": 0.8947400000000001,
+          "query_coverage": 0.1557377049180328,
+          "subject_coverage": 6.734338498334669e-06
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 89.474,
+          "length": 19,
+          "qlen": 122,
+          "slen": 2821361,
+          "qstart": 37,
+          "qend": 55,
+          "sstart": 1774205,
+          "send": 1774187,
+          "qcovs": 44.0,
+          "evalue": 2.9,
+          "bitscore": 26.5,
+          "identity_frac": 0.8947400000000001,
+          "query_coverage": 0.1557377049180328,
+          "subject_coverage": 6.734338498334669e-06
+        }
+      ],
+      "tblastn_top": [
+        {
+          "sseqid": "replicon_1",
+          "pident": 60.0,
+          "length": 20,
+          "qlen": 40,
+          "slen": 2821361,
+          "qstart": 14,
+          "qend": 33,
+          "sstart": 1213679,
+          "send": 1213738,
+          "qcovs": 88.0,
+          "evalue": 0.36,
+          "bitscore": 23.5,
+          "identity_frac": 0.6,
+          "query_coverage": 0.5
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 34.286,
+          "length": 35,
+          "qlen": 40,
+          "slen": 2821361,
+          "qstart": 6,
+          "qend": 38,
+          "sstart": 1491813,
+          "send": 1491709,
+          "qcovs": 88.0,
+          "evalue": 5.3,
+          "bitscore": 20.4,
+          "identity_frac": 0.34286,
+          "query_coverage": 0.825
+        },
+        {
+          "sseqid": "replicon_1",
+          "pident": 47.826,
+          "length": 23,
+          "qlen": 40,
+          "slen": 2821361,
+          "qstart": 4,
+          "qend": 26,
+          "sstart": 415102,
+          "send": 415170,
+          "qcovs": 88.0,
+          "evalue": 0.89,
+          "bitscore": 22.3,
+          "identity_frac": 0.47826,
+          "query_coverage": 0.575
+        }
+      ],
+      "meets_nt_80_80": false,
+      "meets_aa_60_80": false
+    }
+  },
+  "assembly": {
+    "path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev_eval/dev_01/production/spades/contigs.fasta",
+    "sha256": "5006cf1945e78747c9f60e201e25a61965e364703ad7b2220e52b82d3e69a83f",
+    "n_contigs": 208,
+    "total_bp": 4575432,
+    "exact_complete_target_present": false,
+    "exact_matches": []
+  },
+  "independent_alignment": {
+    "blastn": {
+      "available": true,
+      "ok": true,
+      "command": [
+        "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/blastn",
+        "-query",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/fast_pilot_target_diagnostics/query_rpoB.fa",
+        "-subject",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev_eval/dev_01/production/spades/contigs.fasta",
+        "-task",
+        "blastn",
+        "-evalue",
+        "10",
+        "-word_size",
+        "7",
+        "-outfmt",
+        "6 qseqid sseqid pident length qlen slen qstart qend sstart send qcovs evalue bitscore",
+        "-max_hsps",
+        "20",
+        "-max_target_seqs",
+        "20"
+      ],
+      "n_hits": 41,
+      "stderr": "",
+      "top": [
+        {
+          "sseqid": "NODE_5_length_203134_cov_10.871784",
+          "pident": 77.778,
+          "length": 36,
+          "qlen": 122,
+          "slen": 203134,
+          "qstart": 74,
+          "qend": 109,
+          "sstart": 103775,
+          "send": 103810,
+          "qcovs": 72.0,
+          "evalue": 0.39,
+          "bitscore": 30.1,
+          "identity_frac": 0.77778,
+          "query_coverage": 0.29508196721311475,
+          "subject_coverage": 0.0001772229168922977
+        },
+        {
+          "sseqid": "NODE_8_length_174202_cov_10.736200",
+          "pident": 80.0,
+          "length": 35,
+          "qlen": 122,
+          "slen": 174202,
+          "qstart": 11,
+          "qend": 43,
+          "sstart": 62539,
+          "send": 62573,
+          "qcovs": 64.0,
+          "evalue": 0.39,
+          "bitscore": 30.1,
+          "identity_frac": 0.8,
+          "query_coverage": 0.27049180327868855,
+          "subject_coverage": 0.00020091617777063408
+        },
+        {
+          "sseqid": "NODE_4_length_209738_cov_10.647215",
+          "pident": 76.471,
+          "length": 34,
+          "qlen": 122,
+          "slen": 209738,
+          "qstart": 6,
+          "qend": 39,
+          "sstart": 100161,
+          "send": 100128,
+          "qcovs": 48.0,
+          "evalue": 4.7,
+          "bitscore": 26.5,
+          "identity_frac": 0.76471,
+          "query_coverage": 0.2786885245901639,
+          "subject_coverage": 0.00016210700969781347
+        },
+        {
+          "sseqid": "NODE_16_length_95454_cov_10.618770",
+          "pident": 85.714,
+          "length": 28,
+          "qlen": 122,
+          "slen": 95454,
+          "qstart": 21,
+          "qend": 47,
+          "sstart": 6766,
+          "send": 6793,
+          "qcovs": 29.0,
+          "evalue": 0.39,
+          "bitscore": 30.1,
+          "identity_frac": 0.85714,
+          "query_coverage": 0.22131147540983606,
+          "subject_coverage": 0.0002933350095333878
+        },
+        {
+          "sseqid": "NODE_42_length_31580_cov_10.902427",
+          "pident": 82.143,
+          "length": 28,
+          "qlen": 122,
+          "slen": 31580,
+          "qstart": 83,
+          "qend": 110,
+          "sstart": 28423,
+          "send": 28399,
+          "qcovs": 23.0,
+          "evalue": 4.7,
+          "bitscore": 27.4,
+          "identity_frac": 0.82143,
+          "query_coverage": 0.22950819672131148,
+          "subject_coverage": 0.0008866371120962635
+        }
+      ]
+    },
+    "tblastn": {
+      "available": true,
+      "ok": true,
+      "command": [
+        "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/tblastn",
+        "-query",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/fast_pilot_target_diagnostics/query_rpoB.faa",
+        "-subject",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev_eval/dev_01/production/spades/contigs.fasta",
+        "-evalue",
+        "10",
+        "-word_size",
+        "2",
+        "-outfmt",
+        "6 qseqid sseqid pident length qlen slen qstart qend sstart send qcovs evalue bitscore",
+        "-max_hsps",
+        "20",
+        "-max_target_seqs",
+        "20"
+      ],
+      "n_hits": 26,
+      "stderr": "",
+      "top": [
+        {
+          "sseqid": "NODE_12_length_132884_cov_10.556768",
+          "pident": 41.379,
+          "length": 29,
+          "qlen": 40,
+          "slen": 132884,
+          "qstart": 8,
+          "qend": 35,
+          "sstart": 79146,
+          "send": 79060,
+          "qcovs": 70.0,
+          "evalue": 3.6,
+          "bitscore": 21.6,
+          "identity_frac": 0.41379,
+          "query_coverage": 0.7
+        },
+        {
+          "sseqid": "NODE_2_length_268099_cov_10.821809",
+          "pident": 50.0,
+          "length": 24,
+          "qlen": 40,
+          "slen": 268099,
+          "qstart": 12,
+          "qend": 34,
+          "sstart": 57940,
+          "send": 57869,
+          "qcovs": 73.0,
+          "evalue": 5.0,
+          "bitscore": 21.2,
+          "identity_frac": 0.5,
+          "query_coverage": 0.575
+        },
+        {
+          "sseqid": "NODE_19_length_87014_cov_10.647110",
+          "pident": 42.857,
+          "length": 28,
+          "qlen": 40,
+          "slen": 87014,
+          "qstart": 13,
+          "qend": 38,
+          "sstart": 65911,
+          "send": 65828,
+          "qcovs": 65.0,
+          "evalue": 2.0,
+          "bitscore": 21.9,
+          "identity_frac": 0.42857,
+          "query_coverage": 0.65
+        },
+        {
+          "sseqid": "NODE_10_length_133235_cov_11.098198",
+          "pident": 31.429,
+          "length": 35,
+          "qlen": 40,
+          "slen": 133235,
+          "qstart": 3,
+          "qend": 37,
+          "sstart": 2751,
+          "send": 2647,
+          "qcovs": 88.0,
+          "evalue": 3.9,
+          "bitscore": 21.2,
+          "identity_frac": 0.31428999999999996,
+          "query_coverage": 0.875
+        },
+        {
+          "sseqid": "NODE_15_length_105636_cov_10.789650",
+          "pident": 39.286,
+          "length": 28,
+          "qlen": 40,
+          "slen": 105636,
+          "qstart": 13,
+          "qend": 40,
+          "sstart": 63843,
+          "send": 63760,
+          "qcovs": 70.0,
+          "evalue": 2.8,
+          "bitscore": 21.6,
+          "identity_frac": 0.39286,
+          "query_coverage": 0.7
+        }
+      ]
+    },
+    "minimap2": {
+      "available": true,
+      "ok": true,
+      "command": [
+        "/home/aritr/micromamba/envs/genome-skeptic-prod/bin/minimap2",
+        "-c",
+        "-x",
+        "sr",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev_eval/dev_01/production/spades/contigs.fasta",
+        "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/fast_pilot_target_diagnostics/query_rpoB.fa"
+      ],
+      "n_hits": 0,
+      "stderr": "[M::mm_idx_gen::1.314*0.95] collected minimizers\n[M::mm_idx_gen::1.389*1.05] sorted minimizers\n[M::main::1.389*1.05] loaded/built the index for 208 target sequence(s)\n[M::mm_mapopt_update::1.389*1.05] mid_occ = 1000\n[M::mm_idx_stat] kmer size: 21; skip: 11; is_hpc: 0; #seq: 208\n[M::mm_idx_stat::1.402*1.05] distinct minimizers: 757268 (99.68% are singletons); average occurrences: 1.005; average spacing: 6.009; total length: 4575432\n[M::worker_pipeline::1.411*1.04] mapped 1 sequences\n[M::main] Version: 2.31-r1302\n[M::main] CMD: /home/aritr/micromamba/envs/genome-skeptic-prod/bin/minimap2 -c -x sr /mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev_eval/dev_01/production/spades/contigs.fasta /mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/fast_pilot_target_diagnostics/query_rpoB.fa\n[M::main] Real time: 1.426 sec; CPU: 1.485 sec; Peak RSS: 0.048 GB\n",
+      "top": []
+    },
+    "internal_gene_search_label": "existing deterministic ungapped k-mer search (not BLAST)",
+    "best_nucleotide_internal": {
+      "query_id": "rpoB",
+      "contig_id": "NODE_5_length_203134_cov_10.871784",
+      "search_kind": "nucleotide",
+      "qstart": 70,
+      "qend": 122,
+      "tstart": 103771,
+      "tend": 103823,
+      "strand": "+",
+      "identity": 0.6538461538461539,
+      "query_coverage": 0.4262295081967213,
+      "alignment_length": 52,
+      "query_length": 122,
+      "contig_length": 203134,
+      "near_contig_edge": false,
+      "possible_edge_truncation": false,
+      "edge_distance_bp": 99311,
+      "evalue": null,
+      "tool": "internal_gene_search",
+      "domain_name": null,
+      "passes_80_80_nt": false,
+      "passes_aa_threshold": false,
+      "is_partial": false,
+      "subject_coverage": 0.0002559886577333189
+    },
+    "best_translated_internal": {
+      "query_id": "rpoB",
+      "contig_id": "NODE_1_length_269802_cov_10.770971",
+      "search_kind": "translated",
+      "qstart": 1,
+      "qend": 28,
+      "tstart": 205864,
+      "tend": 205945,
+      "strand": "+",
+      "identity": 0.4074074074074074,
+      "query_coverage": 0.675,
+      "alignment_length": 81,
+      "query_length": 40,
+      "contig_length": 269802,
+      "near_contig_edge": false,
+      "possible_edge_truncation": false,
+      "edge_distance_bp": 63857,
+      "evalue": null,
+      "tool": "internal_gene_search",
+      "domain_name": null,
+      "passes_80_80_nt": false,
+      "passes_aa_threshold": false,
+      "is_partial": true,
+      "subject_coverage": 0.0003002201614517313
+    },
+    "best_predicted_protein": null,
+    "predicted_proteins_exist": false,
+    "n_internal_nt": 3,
+    "n_internal_translated": 17,
+    "n_internal_partial": 17,
+    "n_internal_strong": 0,
+    "split_across_contigs": false,
+    "split_across_contigs_note": "BLASTN reported short HSPs on many contigs (best query coverage 0.295). These are scattered low-quality matches, not complementary fragments of one split gene."
+  },
+  "mapping": {
+    "depth_tsv_exists": true,
+    "mapped_sam_exists": true,
+    "eval_pipeline_sets_depth_available": false,
+    "local_read_coverage_limitation_in_claims": "read-back depth was unavailable",
+    "depth_at_best_locus": {
+      "local_mean_depth": 24.055555555555557,
+      "genome_mean_depth": 25.404068786887212,
+      "relative_depth": 0.9469174311152978,
+      "positions_counted": 36,
+      "zero_positions": 0
+    },
+    "locus_used_for_depth": {
+      "contig": "NODE_5_length_203134_cov_10.871784",
+      "start": 103774,
+      "end": 103810
+    }
+  },
+  "thresholds_used": {
+    "gene_nt_min_identity": 0.8,
+    "gene_nt_min_query_coverage": 0.8,
+    "gene_aa_min_identity": 0.6,
+    "gene_aa_min_query_coverage": 0.8,
+    "gene_search_kmer_nt": 8,
+    "gene_search_kmer_aa": 3,
+    "max_mismatch_rate_nt": 0.35,
+    "max_mismatch_rate_aa": 0.6000000000000001,
+    "gene_partial_min_nt_bp": 60,
+    "gene_partial_min_aa": 20,
+    "internal_search_command": [
+      "internal_gene_search",
+      "--targets",
+      "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev/agent_visible/dev_01/targets.fa",
+      "--contigs",
+      "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/real_genomes_fast_pilot_dev_eval/dev_01/production/spades/contigs.fasta"
+    ]
+  },
+  "where_lost": [
+    "Target nucleotide string is ABSENT from the hidden source genome.",
+    "Complete exact target string is ABSENT from the SPAdes assembly.",
+    "Independent BLASTN best HSP: identity=0.778 query_coverage=0.295 on NODE_5_length_203134_cov_10.871784 103775-103810.",
+    "BLASTN does not meet the unchanged 80/80 nucleotide rule, so polarity not_detected is consistent with that rule even if a homolog exists.",
+    "Internal nucleotide best hit identity=0.654 query_coverage=0.426 (fails 80/80)."
+  ],
+  "cases_completeness": [
+    {
+      "case_id": "dev_01",
+      "split": "development",
+      "genome_id": "ecoli_k12",
+      "present": true,
+      "completeness": {
+        "recorded_completeness": 0.63,
+        "recomputed_completeness": 0.63,
+        "completed": [
+          "nucleotide_homology:rpoB",
+          "translated_homology:rpoB",
+          "partial_domain_hits:rpoB",
+          "contig_edge_truncation:rpoB",
+          "assembly_fragmentation:rpoB",
+          "divergent_homologues:rpoB",
+          "read_supported_break:rpoB"
+        ],
+        "unresolved": [],
+        "unavailable": [
+          "predicted_protein_homology:rpoB",
+          "local_read_coverage:rpoB",
+          "reference_neighbor_presence:rpoB",
+          "expected_neighboring_genes:rpoB"
+        ],
+        "missing_essential": [],
+        "missing_high_value": [
+          "predicted_protein_homology",
+          "local_read_coverage"
+        ],
+        "validators": [
+          {
+            "prefix": "nucleotide_homology",
+            "importance": "essential",
+            "weight": 4.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 4.0
+          },
+          {
+            "prefix": "translated_homology",
+            "importance": "essential",
+            "weight": 4.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 4.0
+          },
+          {
+            "prefix": "predicted_protein_homology",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "skipped",
+            "limitation": "predicted proteins were unavailable",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "partial_domain_hits",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "contig_edge_truncation",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "assembly_fragmentation",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "local_read_coverage",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "skipped",
+            "limitation": "read-back depth was unavailable",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "divergent_homologues",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "read_supported_break",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "reference_neighbor_presence",
+            "importance": "supporting",
+            "weight": 1.0,
+            "status": "skipped",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "expected_neighboring_genes",
+            "importance": "supporting",
+            "weight": 1.0,
+            "status": "skipped",
+            "limitation": "no expected neighboring genes were specified",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          }
+        ],
+        "weighted_done": 18.0,
+        "weighted_total": 24.0,
+        "confidence_before_completeness": 0.5,
+        "confidence_after_completeness": 0.46,
+        "recorded_confidence": 0.46,
+        "base_for_polarity": 0.55,
+        "status": "weakened"
+      },
+      "claim_type": "target_gene_not_detected",
+      "status": "weakened",
+      "confidence": 0.46,
+      "evidence_completeness": 0.63
+    },
+    {
+      "case_id": "dev_02",
+      "split": "development",
+      "genome_id": "pao1",
+      "present": false,
+      "completeness": {
+        "recorded_completeness": 0.63,
+        "recomputed_completeness": 0.63,
+        "completed": [
+          "nucleotide_homology:rpoB",
+          "translated_homology:rpoB",
+          "partial_domain_hits:rpoB",
+          "contig_edge_truncation:rpoB",
+          "assembly_fragmentation:rpoB",
+          "divergent_homologues:rpoB",
+          "read_supported_break:rpoB"
+        ],
+        "unresolved": [],
+        "unavailable": [
+          "predicted_protein_homology:rpoB",
+          "local_read_coverage:rpoB",
+          "reference_neighbor_presence:rpoB",
+          "expected_neighboring_genes:rpoB"
+        ],
+        "missing_essential": [],
+        "missing_high_value": [
+          "predicted_protein_homology",
+          "local_read_coverage"
+        ],
+        "validators": [
+          {
+            "prefix": "nucleotide_homology",
+            "importance": "essential",
+            "weight": 4.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 4.0
+          },
+          {
+            "prefix": "translated_homology",
+            "importance": "essential",
+            "weight": 4.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 4.0
+          },
+          {
+            "prefix": "predicted_protein_homology",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "skipped",
+            "limitation": "predicted proteins were unavailable",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "partial_domain_hits",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "contig_edge_truncation",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "assembly_fragmentation",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "local_read_coverage",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "skipped",
+            "limitation": "read-back depth was unavailable",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "divergent_homologues",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "read_supported_break",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "reference_neighbor_presence",
+            "importance": "supporting",
+            "weight": 1.0,
+            "status": "skipped",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "expected_neighboring_genes",
+            "importance": "supporting",
+            "weight": 1.0,
+            "status": "skipped",
+            "limitation": "no expected neighboring genes were specified",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          }
+        ],
+        "weighted_done": 18.0,
+        "weighted_total": 24.0,
+        "confidence_before_completeness": 0.5,
+        "confidence_after_completeness": 0.46,
+        "recorded_confidence": 0.46,
+        "base_for_polarity": 0.55,
+        "status": "weakened"
+      },
+      "claim_type": "target_gene_not_detected",
+      "status": "weakened",
+      "confidence": 0.46,
+      "evidence_completeness": 0.63
+    },
+    {
+      "case_id": "dev_03",
+      "split": "development",
+      "genome_id": "hpylori",
+      "present": false,
+      "completeness": {
+        "recorded_completeness": 0.63,
+        "recomputed_completeness": 0.63,
+        "completed": [
+          "nucleotide_homology:rpoB",
+          "translated_homology:rpoB",
+          "partial_domain_hits:rpoB",
+          "contig_edge_truncation:rpoB",
+          "assembly_fragmentation:rpoB",
+          "divergent_homologues:rpoB",
+          "read_supported_break:rpoB"
+        ],
+        "unresolved": [],
+        "unavailable": [
+          "predicted_protein_homology:rpoB",
+          "local_read_coverage:rpoB",
+          "reference_neighbor_presence:rpoB",
+          "expected_neighboring_genes:rpoB"
+        ],
+        "missing_essential": [],
+        "missing_high_value": [
+          "predicted_protein_homology",
+          "local_read_coverage"
+        ],
+        "validators": [
+          {
+            "prefix": "nucleotide_homology",
+            "importance": "essential",
+            "weight": 4.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 4.0
+          },
+          {
+            "prefix": "translated_homology",
+            "importance": "essential",
+            "weight": 4.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 4.0
+          },
+          {
+            "prefix": "predicted_protein_homology",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "skipped",
+            "limitation": "predicted proteins were unavailable",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "partial_domain_hits",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "contig_edge_truncation",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "assembly_fragmentation",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "local_read_coverage",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "skipped",
+            "limitation": "read-back depth was unavailable",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "divergent_homologues",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "read_supported_break",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "reference_neighbor_presence",
+            "importance": "supporting",
+            "weight": 1.0,
+            "status": "skipped",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "expected_neighboring_genes",
+            "importance": "supporting",
+            "weight": 1.0,
+            "status": "skipped",
+            "limitation": "no expected neighboring genes were specified",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          }
+        ],
+        "weighted_done": 18.0,
+        "weighted_total": 24.0,
+        "confidence_before_completeness": 0.5,
+        "confidence_after_completeness": 0.46,
+        "recorded_confidence": 0.46,
+        "base_for_polarity": 0.55,
+        "status": "weakened"
+      },
+      "claim_type": "target_gene_not_detected",
+      "status": "weakened",
+      "confidence": 0.46,
+      "evidence_completeness": 0.63
+    },
+    {
+      "case_id": "hel_01",
+      "split": "held_out",
+      "genome_id": "salmonella_lt2",
+      "present": false,
+      "completeness": {
+        "recorded_completeness": 0.63,
+        "recomputed_completeness": 0.63,
+        "completed": [
+          "nucleotide_homology:rpoB",
+          "translated_homology:rpoB",
+          "partial_domain_hits:rpoB",
+          "contig_edge_truncation:rpoB",
+          "assembly_fragmentation:rpoB",
+          "divergent_homologues:rpoB",
+          "read_supported_break:rpoB"
+        ],
+        "unresolved": [],
+        "unavailable": [
+          "predicted_protein_homology:rpoB",
+          "local_read_coverage:rpoB",
+          "reference_neighbor_presence:rpoB",
+          "expected_neighboring_genes:rpoB"
+        ],
+        "missing_essential": [],
+        "missing_high_value": [
+          "predicted_protein_homology",
+          "local_read_coverage"
+        ],
+        "validators": [
+          {
+            "prefix": "nucleotide_homology",
+            "importance": "essential",
+            "weight": 4.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 4.0
+          },
+          {
+            "prefix": "translated_homology",
+            "importance": "essential",
+            "weight": 4.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 4.0
+          },
+          {
+            "prefix": "predicted_protein_homology",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "skipped",
+            "limitation": "predicted proteins were unavailable",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "partial_domain_hits",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "contig_edge_truncation",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "assembly_fragmentation",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "local_read_coverage",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "skipped",
+            "limitation": "read-back depth was unavailable",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "divergent_homologues",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "read_supported_break",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "reference_neighbor_presence",
+            "importance": "supporting",
+            "weight": 1.0,
+            "status": "skipped",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "expected_neighboring_genes",
+            "importance": "supporting",
+            "weight": 1.0,
+            "status": "skipped",
+            "limitation": "no expected neighboring genes were specified",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          }
+        ],
+        "weighted_done": 18.0,
+        "weighted_total": 24.0,
+        "confidence_before_completeness": 0.5,
+        "confidence_after_completeness": 0.46,
+        "recorded_confidence": 0.46,
+        "base_for_polarity": 0.55,
+        "status": "weakened"
+      },
+      "claim_type": "target_gene_not_detected",
+      "status": "weakened",
+      "confidence": 0.46,
+      "evidence_completeness": 0.63
+    },
+    {
+      "case_id": "hel_02",
+      "split": "held_out",
+      "genome_id": "pputida_kt2440",
+      "present": false,
+      "completeness": {
+        "recorded_completeness": 0.63,
+        "recomputed_completeness": 0.63,
+        "completed": [
+          "nucleotide_homology:rpoB",
+          "translated_homology:rpoB",
+          "partial_domain_hits:rpoB",
+          "contig_edge_truncation:rpoB",
+          "assembly_fragmentation:rpoB",
+          "divergent_homologues:rpoB",
+          "read_supported_break:rpoB"
+        ],
+        "unresolved": [],
+        "unavailable": [
+          "predicted_protein_homology:rpoB",
+          "local_read_coverage:rpoB",
+          "reference_neighbor_presence:rpoB",
+          "expected_neighboring_genes:rpoB"
+        ],
+        "missing_essential": [],
+        "missing_high_value": [
+          "predicted_protein_homology",
+          "local_read_coverage"
+        ],
+        "validators": [
+          {
+            "prefix": "nucleotide_homology",
+            "importance": "essential",
+            "weight": 4.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 4.0
+          },
+          {
+            "prefix": "translated_homology",
+            "importance": "essential",
+            "weight": 4.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 4.0
+          },
+          {
+            "prefix": "predicted_protein_homology",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "skipped",
+            "limitation": "predicted proteins were unavailable",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "partial_domain_hits",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "contig_edge_truncation",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "assembly_fragmentation",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "local_read_coverage",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "skipped",
+            "limitation": "read-back depth was unavailable",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "divergent_homologues",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "read_supported_break",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "reference_neighbor_presence",
+            "importance": "supporting",
+            "weight": 1.0,
+            "status": "skipped",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "expected_neighboring_genes",
+            "importance": "supporting",
+            "weight": 1.0,
+            "status": "skipped",
+            "limitation": "no expected neighboring genes were specified",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          }
+        ],
+        "weighted_done": 18.0,
+        "weighted_total": 24.0,
+        "confidence_before_completeness": 0.5,
+        "confidence_after_completeness": 0.46,
+        "recorded_confidence": 0.46,
+        "base_for_polarity": 0.55,
+        "status": "weakened"
+      },
+      "claim_type": "target_gene_not_detected",
+      "status": "weakened",
+      "confidence": 0.46,
+      "evidence_completeness": 0.63
+    },
+    {
+      "case_id": "hel_03",
+      "split": "held_out",
+      "genome_id": "staph_8325",
+      "present": false,
+      "completeness": {
+        "recorded_completeness": 0.63,
+        "recomputed_completeness": 0.63,
+        "completed": [
+          "nucleotide_homology:rpoB",
+          "translated_homology:rpoB",
+          "partial_domain_hits:rpoB",
+          "contig_edge_truncation:rpoB",
+          "assembly_fragmentation:rpoB",
+          "divergent_homologues:rpoB",
+          "read_supported_break:rpoB"
+        ],
+        "unresolved": [],
+        "unavailable": [
+          "predicted_protein_homology:rpoB",
+          "local_read_coverage:rpoB",
+          "reference_neighbor_presence:rpoB",
+          "expected_neighboring_genes:rpoB"
+        ],
+        "missing_essential": [],
+        "missing_high_value": [
+          "predicted_protein_homology",
+          "local_read_coverage"
+        ],
+        "validators": [
+          {
+            "prefix": "nucleotide_homology",
+            "importance": "essential",
+            "weight": 4.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 4.0
+          },
+          {
+            "prefix": "translated_homology",
+            "importance": "essential",
+            "weight": 4.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 4.0
+          },
+          {
+            "prefix": "predicted_protein_homology",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "skipped",
+            "limitation": "predicted proteins were unavailable",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "partial_domain_hits",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "weakens_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "contig_edge_truncation",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "assembly_fragmentation",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "local_read_coverage",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "skipped",
+            "limitation": "read-back depth was unavailable",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "divergent_homologues",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "read_supported_break",
+            "importance": "high_value",
+            "weight": 2.0,
+            "status": "completed",
+            "limitation": null,
+            "result": "supports_claim",
+            "counted_in_denominator": true,
+            "weighted_done": 2.0
+          },
+          {
+            "prefix": "reference_neighbor_presence",
+            "importance": "supporting",
+            "weight": 1.0,
+            "status": "skipped",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          },
+          {
+            "prefix": "expected_neighboring_genes",
+            "importance": "supporting",
+            "weight": 1.0,
+            "status": "skipped",
+            "limitation": "no expected neighboring genes were specified",
+            "result": "not_run",
+            "counted_in_denominator": true,
+            "weighted_done": 0.0
+          }
+        ],
+        "weighted_done": 18.0,
+        "weighted_total": 24.0,
+        "confidence_before_completeness": 0.5,
+        "confidence_after_completeness": 0.46,
+        "recorded_confidence": 0.46,
+        "base_for_polarity": 0.55,
+        "status": "weakened"
+      },
+      "claim_type": "target_gene_not_detected",
+      "status": "weakened",
+      "confidence": 0.46,
+      "evidence_completeness": 0.63
+    }
+  ],
+  "dummy_cautious_baseline": {
+    "strategy": "always target_gene_not_detected, weakened, confidence 0.46, completeness 0.63; no homology",
+    "overall": 0.967741935483871,
+    "by_split": {
+      "development": {
+        "overall": 0.9375,
+        "totals": {
+          "correct_detection": {
+            "n": 1,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "false_detection": {
+            "n": 2,
+            "correct": 2,
+            "rate": 1.0
+          },
+          "correct_non_detection": {
+            "n": 2,
+            "correct": 2,
+            "rate": 1.0
+          },
+          "false_absence": {
+            "n": 1,
+            "correct": 1,
+            "rate": 1.0
+          },
+          "unsupported_overclaiming": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "underconfidence_on_clean": {
+            "n": 1,
+            "correct": 1,
+            "rate": 1.0
+          },
+          "calibration_error": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "unsupported_organism_level_claims": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "completeness_confidence_consistency": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          }
+        }
+      },
+      "held_out": {
+        "overall": 1.0,
+        "totals": {
+          "false_detection": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "correct_non_detection": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "unsupported_overclaiming": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "calibration_error": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "unsupported_organism_level_claims": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "completeness_confidence_consistency": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          }
+        }
+      }
+    },
+    "totals": {
+      "correct_detection": {
+        "n": 1,
+        "correct": 0,
+        "rate": 0.0
+      },
+      "false_detection": {
+        "n": 5,
+        "correct": 5,
+        "rate": 1.0
+      },
+      "correct_non_detection": {
+        "n": 5,
+        "correct": 5,
+        "rate": 1.0
+      },
+      "false_absence": {
+        "n": 1,
+        "correct": 1,
+        "rate": 1.0
+      },
+      "unsupported_overclaiming": {
+        "n": 6,
+        "correct": 6,
+        "rate": 1.0
+      },
+      "underconfidence_on_clean": {
+        "n": 1,
+        "correct": 1,
+        "rate": 1.0
+      },
+      "calibration_error": {
+        "n": 6,
+        "correct": 0,
+        "rate": 0.0
+      },
+      "unsupported_organism_level_claims": {
+        "n": 6,
+        "correct": 6,
+        "rate": 1.0
+      },
+      "completeness_confidence_consistency": {
+        "n": 6,
+        "correct": 6,
+        "rate": 1.0
+      }
+    },
+    "rows": [
+      {
+        "split": "development",
+        "case_id": "dev_01",
+        "present": true,
+        "scientifically_correct": false,
+        "hits": {
+          "false_absence": true,
+          "unsupported_overclaiming": true,
+          "underconfidence_on_clean": true,
+          "calibration_error": false,
+          "unsupported_organism_level_claims": true,
+          "completeness_confidence_consistency": true
+        }
+      },
+      {
+        "split": "development",
+        "case_id": "dev_02",
+        "present": false,
+        "scientifically_correct": true,
+        "hits": {
+          "false_detection": true,
+          "correct_non_detection": true,
+          "unsupported_overclaiming": true,
+          "calibration_error": false,
+          "unsupported_organism_level_claims": true,
+          "completeness_confidence_consistency": true
+        }
+      },
+      {
+        "split": "development",
+        "case_id": "dev_03",
+        "present": false,
+        "scientifically_correct": true,
+        "hits": {
+          "false_detection": true,
+          "correct_non_detection": true,
+          "unsupported_overclaiming": true,
+          "calibration_error": false,
+          "unsupported_organism_level_claims": true,
+          "completeness_confidence_consistency": true
+        }
+      },
+      {
+        "split": "held_out",
+        "case_id": "hel_01",
+        "present": false,
+        "scientifically_correct": true,
+        "hits": {
+          "false_detection": true,
+          "correct_non_detection": true,
+          "unsupported_overclaiming": true,
+          "calibration_error": false,
+          "unsupported_organism_level_claims": true,
+          "completeness_confidence_consistency": true
+        }
+      },
+      {
+        "split": "held_out",
+        "case_id": "hel_02",
+        "present": false,
+        "scientifically_correct": true,
+        "hits": {
+          "false_detection": true,
+          "correct_non_detection": true,
+          "unsupported_overclaiming": true,
+          "calibration_error": false,
+          "unsupported_organism_level_claims": true,
+          "completeness_confidence_consistency": true
+        }
+      },
+      {
+        "split": "held_out",
+        "case_id": "hel_03",
+        "present": false,
+        "scientifically_correct": true,
+        "hits": {
+          "false_detection": true,
+          "correct_non_detection": true,
+          "unsupported_overclaiming": true,
+          "calibration_error": false,
+          "unsupported_organism_level_claims": true,
+          "completeness_confidence_consistency": true
+        }
+      }
+    ],
+    "genome_skeptic_development_overall": 0.9375,
+    "genome_skeptic_held_out_overall": 1.0,
+    "held_out_achievable_by_dummy": true,
+    "development_matches_genome_skeptic": true
+  },
+  "diagnostic_controls": {
+    "pos1_exact_nt": {
+      "note": "exact nucleotide target inserted in a synthetic contig",
+      "assembly_bp": 762,
+      "internal_hits": [
+        {
+          "query_id": "rpoB",
+          "contig_id": "ctrl",
+          "search_kind": "nucleotide",
+          "qstart": 0,
+          "qend": 122,
+          "tstart": 320,
+          "tend": 442,
+          "strand": "+",
+          "identity": 1.0,
+          "query_coverage": 1.0,
+          "alignment_length": 122,
+          "query_length": 122,
+          "contig_length": 762,
+          "near_contig_edge": false,
+          "possible_edge_truncation": false,
+          "edge_distance_bp": 320,
+          "evalue": null,
+          "tool": "internal_gene_search",
+          "domain_name": null,
+          "passes_80_80_nt": true,
+          "passes_aa_threshold": false,
+          "is_partial": false,
+          "subject_coverage": 0.16010498687664043
+        },
+        {
+          "query_id": "rpoB",
+          "contig_id": "ctrl",
+          "search_kind": "translated",
+          "qstart": 0,
+          "qend": 40,
+          "tstart": 320,
+          "tend": 440,
+          "strand": "+",
+          "identity": 1.0,
+          "query_coverage": 1.0,
+          "alignment_length": 120,
+          "query_length": 40,
+          "contig_length": 762,
+          "near_contig_edge": false,
+          "possible_edge_truncation": false,
+          "edge_distance_bp": 320,
+          "evalue": null,
+          "tool": "internal_gene_search",
+          "domain_name": null,
+          "passes_80_80_nt": false,
+          "passes_aa_threshold": true,
+          "is_partial": false,
+          "subject_coverage": 0.15748031496062992
+        }
+      ],
+      "n_strong": 2,
+      "n_partial": 0,
+      "genome_skeptic": {
+        "claim_type": "target_gene_detected",
+        "status": "supported",
+        "confidence": 0.1326,
+        "evidence_completeness": 0.2182,
+        "statement": "Target gene 'rpoB' is detected in the current assembly.",
+        "tests": [
+          {
+            "id": "wrong_paralogue:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "short_conserved_domain:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "low_alignment_coverage:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "abnormal_protein_length:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "missing_catalytic_residues:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no catalytic residue pattern was provided; residues were not invented"
+          },
+          {
+            "id": "contamination:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no contamination, depth, contig-GC, or contig-taxonomy measurement was available"
+          },
+          {
+            "id": "abnormal_contig_coverage:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "read-back depth was unavailable for the candidate locus"
+          },
+          {
+            "id": "taxonomic_inconsistency:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no measured contig taxonomy was available; taxonomy was not invented from reference metadata"
+          },
+          {
+            "id": "inconsistent_genomic_neighborhood:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no expected neighboring genes were specified"
+          },
+          {
+            "id": "orthology_versus_paralogy:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "reciprocal_best_hit:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "gene_length_conservation:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "protein_identity_and_coverage:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "gene_orientation:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "upstream_downstream_orthologues:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "local_gene_order:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "intergenic_spacing:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "contig_edge_effects:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "taxonomic_consistency_of_locus:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "read_supported_break:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "paired-end mapping was unavailable; read support was not invented"
+          },
+          {
+            "id": "phylogenetic_placement:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          }
+        ],
+        "completed": [
+          "low_alignment_coverage:rpoB",
+          "short_conserved_domain:rpoB",
+          "abnormal_protein_length:rpoB",
+          "wrong_paralogue:rpoB"
+        ],
+        "unavailable": [
+          "contamination:rpoB",
+          "contig_edge_effects:rpoB",
+          "read_supported_break:rpoB",
+          "orthology_versus_paralogy:rpoB",
+          "reciprocal_best_hit:rpoB",
+          "protein_identity_and_coverage:rpoB",
+          "taxonomic_consistency_of_locus:rpoB",
+          "local_gene_order:rpoB",
+          "phylogenetic_placement:rpoB",
+          "missing_catalytic_residues:rpoB",
+          "abnormal_contig_coverage:rpoB",
+          "gene_orientation:rpoB"
+        ]
+      }
+    },
+    "pos2_protein_orthologue": {
+      "note": "divergent amino-acid orthologue reverse-translated into a contig",
+      "assembly_bp": 760,
+      "internal_hits": [
+        {
+          "query_id": "rpoB",
+          "contig_id": "ctrl",
+          "search_kind": "translated",
+          "qstart": 0,
+          "qend": 40,
+          "tstart": 320,
+          "tend": 440,
+          "strand": "+",
+          "identity": 0.7,
+          "query_coverage": 1.0,
+          "alignment_length": 120,
+          "query_length": 40,
+          "contig_length": 760,
+          "near_contig_edge": false,
+          "possible_edge_truncation": false,
+          "edge_distance_bp": 320,
+          "evalue": null,
+          "tool": "internal_gene_search",
+          "domain_name": null,
+          "passes_80_80_nt": false,
+          "passes_aa_threshold": true,
+          "is_partial": false,
+          "subject_coverage": 0.15789473684210525
+        },
+        {
+          "query_id": "rpoB",
+          "contig_id": "ctrl",
+          "search_kind": "nucleotide",
+          "qstart": 26,
+          "qend": 122,
+          "tstart": 346,
+          "tend": 442,
+          "strand": "+",
+          "identity": 0.65625,
+          "query_coverage": 0.7868852459016393,
+          "alignment_length": 96,
+          "query_length": 122,
+          "contig_length": 760,
+          "near_contig_edge": false,
+          "possible_edge_truncation": false,
+          "edge_distance_bp": 318,
+          "evalue": null,
+          "tool": "internal_gene_search",
+          "domain_name": null,
+          "passes_80_80_nt": false,
+          "passes_aa_threshold": false,
+          "is_partial": true,
+          "subject_coverage": 0.12631578947368421
+        }
+      ],
+      "n_strong": 1,
+      "n_partial": 1,
+      "genome_skeptic": {
+        "claim_type": "target_gene_detected",
+        "status": "supported",
+        "confidence": 0.1326,
+        "evidence_completeness": 0.2182,
+        "statement": "Target gene 'rpoB' is detected in the current assembly.",
+        "tests": [
+          {
+            "id": "wrong_paralogue:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "short_conserved_domain:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "low_alignment_coverage:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "abnormal_protein_length:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "missing_catalytic_residues:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no catalytic residue pattern was provided; residues were not invented"
+          },
+          {
+            "id": "contamination:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no contamination, depth, contig-GC, or contig-taxonomy measurement was available"
+          },
+          {
+            "id": "abnormal_contig_coverage:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "read-back depth was unavailable for the candidate locus"
+          },
+          {
+            "id": "taxonomic_inconsistency:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no measured contig taxonomy was available; taxonomy was not invented from reference metadata"
+          },
+          {
+            "id": "inconsistent_genomic_neighborhood:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no expected neighboring genes were specified"
+          },
+          {
+            "id": "orthology_versus_paralogy:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "reciprocal_best_hit:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "gene_length_conservation:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "protein_identity_and_coverage:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "gene_orientation:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "upstream_downstream_orthologues:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "local_gene_order:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "intergenic_spacing:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "contig_edge_effects:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "taxonomic_consistency_of_locus:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "read_supported_break:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "paired-end mapping was unavailable; read support was not invented"
+          },
+          {
+            "id": "phylogenetic_placement:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          }
+        ],
+        "completed": [
+          "low_alignment_coverage:rpoB",
+          "short_conserved_domain:rpoB",
+          "abnormal_protein_length:rpoB",
+          "wrong_paralogue:rpoB"
+        ],
+        "unavailable": [
+          "contamination:rpoB",
+          "contig_edge_effects:rpoB",
+          "read_supported_break:rpoB",
+          "orthology_versus_paralogy:rpoB",
+          "reciprocal_best_hit:rpoB",
+          "protein_identity_and_coverage:rpoB",
+          "taxonomic_consistency_of_locus:rpoB",
+          "local_gene_order:rpoB",
+          "phylogenetic_placement:rpoB",
+          "missing_catalytic_residues:rpoB",
+          "abnormal_contig_coverage:rpoB",
+          "gene_orientation:rpoB"
+        ]
+      }
+    },
+    "neg1_no_family": {
+      "note": "synthetic sequence with no planted rpoB family",
+      "assembly_bp": 2368,
+      "internal_hits": [],
+      "n_strong": 0,
+      "n_partial": 0,
+      "genome_skeptic": {
+        "claim_type": "target_gene_not_detected",
+        "status": "supported",
+        "confidence": 0.484,
+        "evidence_completeness": 0.5067,
+        "statement": "Target gene 'rpoB' was not detected in the current assembly.",
+        "tests": [
+          {
+            "id": "nucleotide_homology:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "translated_homology:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "predicted_protein_homology:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "predicted proteins were unavailable"
+          },
+          {
+            "id": "partial_domain_hits:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "contig_edge_truncation:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "assembly_fragmentation:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "local_read_coverage:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "read-back depth was unavailable"
+          },
+          {
+            "id": "expected_neighboring_genes:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no expected neighboring genes were specified"
+          },
+          {
+            "id": "divergent_homologues:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "reference_neighbor_presence:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "missing_in_fragmented_region:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "read_supported_break:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "paired-end mapping was unavailable; read support was not invented"
+          }
+        ],
+        "completed": [
+          "nucleotide_homology:rpoB",
+          "translated_homology:rpoB",
+          "partial_domain_hits:rpoB",
+          "contig_edge_truncation:rpoB",
+          "assembly_fragmentation:rpoB",
+          "divergent_homologues:rpoB"
+        ],
+        "unavailable": [
+          "predicted_protein_homology:rpoB",
+          "local_read_coverage:rpoB",
+          "read_supported_break:rpoB",
+          "reference_neighbor_presence:rpoB",
+          "expected_neighboring_genes:rpoB"
+        ]
+      }
+    },
+    "neg2_domain_paralogue": {
+      "note": "chimeric protein sharing only a short conserved stretch",
+      "assembly_bp": 760,
+      "internal_hits": [
+        {
+          "query_id": "rpoB",
+          "contig_id": "ctrl",
+          "search_kind": "translated",
+          "qstart": 8,
+          "qend": 40,
+          "tstart": 344,
+          "tend": 440,
+          "strand": "+",
+          "identity": 0.40625,
+          "query_coverage": 0.8,
+          "alignment_length": 96,
+          "query_length": 40,
+          "contig_length": 760,
+          "near_contig_edge": false,
+          "possible_edge_truncation": false,
+          "edge_distance_bp": 320,
+          "evalue": null,
+          "tool": "internal_gene_search",
+          "domain_name": null,
+          "passes_80_80_nt": false,
+          "passes_aa_threshold": false,
+          "is_partial": true,
+          "subject_coverage": 0.12631578947368421
+        },
+        {
+          "query_id": "rpoB",
+          "contig_id": "ctrl",
+          "search_kind": "nucleotide",
+          "qstart": 22,
+          "qend": 82,
+          "tstart": 342,
+          "tend": 402,
+          "strand": "+",
+          "identity": 0.65,
+          "query_coverage": 0.4918032786885246,
+          "alignment_length": 60,
+          "query_length": 122,
+          "contig_length": 760,
+          "near_contig_edge": false,
+          "possible_edge_truncation": false,
+          "edge_distance_bp": 342,
+          "evalue": null,
+          "tool": "internal_gene_search",
+          "domain_name": null,
+          "passes_80_80_nt": false,
+          "passes_aa_threshold": false,
+          "is_partial": true,
+          "subject_coverage": 0.07894736842105263
+        }
+      ],
+      "n_strong": 0,
+      "n_partial": 2,
+      "genome_skeptic": {
+        "claim_type": "target_gene_not_detected",
+        "status": "weakened",
+        "confidence": 0.44,
+        "evidence_completeness": 0.5067,
+        "statement": "Target gene 'rpoB' was not detected in the current assembly.",
+        "tests": [
+          {
+            "id": "nucleotide_homology:rpoB",
+            "status": "completed",
+            "result": "weakens_claim",
+            "limitation": null
+          },
+          {
+            "id": "translated_homology:rpoB",
+            "status": "completed",
+            "result": "weakens_claim",
+            "limitation": null
+          },
+          {
+            "id": "predicted_protein_homology:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "predicted proteins were unavailable"
+          },
+          {
+            "id": "partial_domain_hits:rpoB",
+            "status": "completed",
+            "result": "weakens_claim",
+            "limitation": null
+          },
+          {
+            "id": "contig_edge_truncation:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "assembly_fragmentation:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "local_read_coverage:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "read-back depth was unavailable"
+          },
+          {
+            "id": "expected_neighboring_genes:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no expected neighboring genes were specified"
+          },
+          {
+            "id": "divergent_homologues:rpoB",
+            "status": "completed",
+            "result": "supports_claim",
+            "limitation": null
+          },
+          {
+            "id": "reference_neighbor_presence:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "missing_in_fragmented_region:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "no trusted reference genome was configured; orthologues and gene order were not invented"
+          },
+          {
+            "id": "read_supported_break:rpoB",
+            "status": "skipped",
+            "result": "not_run",
+            "limitation": "paired-end mapping was unavailable; read support was not invented"
+          }
+        ],
+        "completed": [
+          "nucleotide_homology:rpoB",
+          "translated_homology:rpoB",
+          "partial_domain_hits:rpoB",
+          "contig_edge_truncation:rpoB",
+          "assembly_fragmentation:rpoB",
+          "divergent_homologues:rpoB"
+        ],
+        "unavailable": [
+          "predicted_protein_homology:rpoB",
+          "local_read_coverage:rpoB",
+          "read_supported_break:rpoB",
+          "reference_neighbor_presence:rpoB",
+          "expected_neighboring_genes:rpoB"
+        ]
+      }
+    }
+  }
+}

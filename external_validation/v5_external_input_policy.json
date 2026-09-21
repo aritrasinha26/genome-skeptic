@@ -1,0 +1,42 @@
+{
+  "kind": "v5_external_input_policy",
+  "genome_skeptic_v5_freeze_hash": "0e993125d2d620e54bbb42b3e420b4b9fda951c28b358ff8a2aed2d5b55a8f1b",
+  "target_inventory_sha256": "b82969ad6e4e3e5a134ea831a0370d32b19612f9440b71d6ad8fbd03a3467e85",
+  "external_reference_overlap_sha256": "1ce6e871e1bf20441e54c76bc6bbe90f7066201574ffcaaef6cde8095fbcbc59",
+  "created_utc": "2026-09-18T22:30:00+00:00",
+  "model": "qwen3:4b",
+  "scientific_logic_modified": false,
+  "isolates_selected": false,
+  "per_isolate_labels_inspected": false,
+  "genome_skeptic_executed": false,
+  "policy": "Genome Skeptic may receive only solver-appropriate sequence inputs required by frozen V5.",
+  "permitted_inference_inputs": [
+    "nucleotide assembly FASTA with sanitized headers",
+    "optional paired FASTQ if a future run uses the frozen V5 isolate stack (not required for STEP 3B)",
+    "frozen V5 target family identifiers (tetA_tetracycline_efflux and the other seven)",
+    "frozen internal family members, MSAs, and hmmbuild profiles already inside V5",
+    "declared organism string only if stripped of gene names and external labels"
+  ],
+  "forbidden_inference_inputs": [
+    "PGAP GFF/GTF annotations",
+    "GenBank feature annotations",
+    "AMRFinderPlus output",
+    "AMRFinderPlus HMM profiles",
+    "AMRFinderPlus reference sequences",
+    "AMRFinderPlus curated thresholds",
+    "AMRFinderPlus gene hierarchy rules",
+    "MicroBIGG-E calls",
+    "external gene names embedded in sidecar metadata",
+    "external reference labels",
+    "scorer-only truth manifests",
+    "hidden source genomes",
+    "unsanitized FASTA headers that contain functional annotations"
+  ],
+  "fasta_header_sanitization": {
+    "required": true,
+    "rule": "Replace headers with opaque replicon/contig identifiers (e.g. contig_1). Strip product, gene, protein, AMR, and organism-function text.",
+    "existing_internal_precedent": "src/genome_skeptic/eval/real_genomes.py::_anonymize_fasta"
+  },
+  "when_external_labels_may_be_used": "Only after Genome Skeptic predictions are frozen, as post-hoc reference labels.",
+  "amrfinderplus_and_pgap_are_not_solver_inputs": true
+}

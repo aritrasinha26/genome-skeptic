@@ -1,0 +1,8 @@
+{
+  "path": "manuscript_benchmark/TRUTH_M60/M60_TRUTH_CASE_LEVEL.csv",
+  "sha256": "a4cde48a45bd6055cf80f716a7b339ead923dd2633bb309dac33174e1efaee69",
+  "hashed_utc": "2026-09-21T10:01:42.922869+00:00",
+  "accuracy_scored": false,
+  "prediction_payloads_opened": false,
+  "d20_touched": false
+}

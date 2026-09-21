@@ -1,0 +1,206 @@
+{
+  "kind": "d12_v5_prescreen_summary",
+  "created_utc": "2026-09-20T16:58:17.810789+00:00",
+  "n_cases": 24,
+  "candidate_pool_sha256": "ae71569c554bf1d675e7de5091f29bb9bb09a6aae66a3c262f786ea8c5396d21",
+  "frozen_agentic_version": "GENOME_SKEPTIC_AGENTIC_V3_EXTERNAL",
+  "agentic_v3_executed": false,
+  "planner_called": false,
+  "critic_called": false,
+  "external_labels_opened": false,
+  "d20_touched": false,
+  "cases": [
+    {
+      "assembly_accession": "GCF_052114445.1",
+      "target": "lacZ_beta_galactosidase",
+      "claim_class": "weakened",
+      "final_result": "target_gene_detected",
+      "m0_hash": "145bcf5f47e3e0c66d7adbc262e803e3004ba9846033f76bb252ad78dd60ffc1",
+      "runtime_seconds": 1050.202495395
+    },
+    {
+      "assembly_accession": "GCF_046562475.1",
+      "target": "lacZ_beta_galactosidase",
+      "claim_class": "weakened",
+      "final_result": "target_gene_detected",
+      "m0_hash": "e12867db3f89c4c0b7069d493551ab8b3084d173b4b6fac0e1bf3cddf7013a82",
+      "runtime_seconds": 9.01208914300014
+    },
+    {
+      "assembly_accession": "GCF_977971445.1",
+      "target": "lacZ_beta_galactosidase",
+      "claim_class": "weakened",
+      "final_result": "target_gene_detected",
+      "m0_hash": "5d2a0d052ba98c1568073ae03420cb9ca5a59a1eb06482320eb6713eae85b7bf",
+      "runtime_seconds": 21.492932801999814
+    },
+    {
+      "assembly_accession": "GCF_058596135.1",
+      "target": "lacZ_beta_galactosidase",
+      "claim_class": "weakened",
+      "final_result": "target_gene_detected",
+      "m0_hash": "b93f57780449c11d31331dc0d7d3821dd4c11b0014804bcc0cf21275bbb8b385",
+      "runtime_seconds": 11.234044136999955
+    },
+    {
+      "assembly_accession": "GCF_048585425.2",
+      "target": "lacZ_beta_galactosidase",
+      "claim_class": "weakened",
+      "final_result": "target_gene_detected",
+      "m0_hash": "0819e09ec3c7917bfd0ab09c1dc26956464077d077e3b1a1b332a1222d38a230",
+      "runtime_seconds": 11.243638562999877
+    },
+    {
+      "assembly_accession": "GCF_055388155.1",
+      "target": "lacZ_beta_galactosidase",
+      "claim_class": "weakened",
+      "final_result": "target_gene_not_detected",
+      "m0_hash": "0df0014049ebb63f808f719fd08a2c71e8ab1d5779e8da9eadb37861696c82d4",
+      "runtime_seconds": 43.74550078099992
+    },
+    {
+      "assembly_accession": "GCF_050871785.1",
+      "target": "rpoB_RNAP_beta",
+      "claim_class": "weakened",
+      "final_result": "target_gene_detected",
+      "m0_hash": "5964b8a47bf4422910f581cb9280cb18d0f262f666d860cfaa77058fa9f5fc22",
+      "runtime_seconds": 21.448922461999928
+    },
+    {
+      "assembly_accession": "GCF_049727805.1",
+      "target": "rpoB_RNAP_beta",
+      "claim_class": "supported",
+      "final_result": "target_gene_detected",
+      "m0_hash": "0217f6cd8f7d2afbba42682a956c6f0254f142c441e012ee1a78e0adcf02b62f",
+      "runtime_seconds": 24.69606490199999
+    },
+    {
+      "assembly_accession": "GCF_050749805.1",
+      "target": "rpoB_RNAP_beta",
+      "claim_class": "supported",
+      "final_result": "target_gene_detected",
+      "m0_hash": "c88accd7db7cc947dc1bef271c1961f3baadfc18373c70551da564186d7a764e",
+      "runtime_seconds": 22.43589112299992
+    },
+    {
+      "assembly_accession": "GCF_057626335.1",
+      "target": "rpoB_RNAP_beta",
+      "claim_class": "weakened",
+      "final_result": "target_gene_detected",
+      "m0_hash": "1758ec9dc27ec7a2c26eedec8043a549eaf0f39872960039376c265a0cc56340",
+      "runtime_seconds": 12.813377202000083
+    },
+    {
+      "assembly_accession": "GCF_047943045.1",
+      "target": "rpoB_RNAP_beta",
+      "claim_class": "weakened",
+      "final_result": "target_gene_detected",
+      "m0_hash": "89eed6e779a3e793bcc11175bca0f8a74dc6b32b18b932684ed764b75e73c88a",
+      "runtime_seconds": 16.84801275199993
+    },
+    {
+      "assembly_accession": "GCF_052946635.1",
+      "target": "rpoB_RNAP_beta",
+      "claim_class": "supported",
+      "final_result": "target_gene_detected",
+      "m0_hash": "c1f4a9516df3fa0b5c6b507ac27088086aae9799886bd1a83804c84b11d8747e",
+      "runtime_seconds": 32.61966106099999
+    },
+    {
+      "assembly_accession": "GCF_054055795.1",
+      "target": "tetA_tetracycline_efflux",
+      "claim_class": "weakened",
+      "final_result": "target_gene_detected",
+      "m0_hash": "7dd87eb6af98ecc5b38ab7b279f9922c47b6a6954206a6df1cbbfffda0de81bb",
+      "runtime_seconds": 109.364124447
+    },
+    {
+      "assembly_accession": "GCF_060416925.1",
+      "target": "tetA_tetracycline_efflux",
+      "claim_class": "weakened",
+      "final_result": "target_gene_detected",
+      "m0_hash": "d1e0aaf04911cada8675ee4edceda86cc09e4dff7314cc44b73b0174120c0f37",
+      "runtime_seconds": 9.190226695999996
+    },
+    {
+      "assembly_accession": "GCF_032595855.2",
+      "target": "tetA_tetracycline_efflux",
+      "claim_class": "weakened",
+      "final_result": "target_gene_not_detected",
+      "m0_hash": "0f4d7cca4c015a691962919ba955cae1dfb5d46d2cdfa73c45d9d7802995e618",
+      "runtime_seconds": 18.758439968000005
+    },
+    {
+      "assembly_accession": "GCF_060026665.1",
+      "target": "tetA_tetracycline_efflux",
+      "claim_class": "weakened",
+      "final_result": "target_gene_not_detected",
+      "m0_hash": "1a795cfbd721af297e0d49dc6f07c5e3576b4c357baa43f46fee196f6de25f43",
+      "runtime_seconds": 1773.941504544
+    },
+    {
+      "assembly_accession": "GCF_053795755.1",
+      "target": "tetA_tetracycline_efflux",
+      "claim_class": "weakened",
+      "final_result": "target_gene_detected",
+      "m0_hash": "dffc8a4ceda5c8e5850bfca86aeed6c1410779a0a9ca8cf8f9836a765f08ed3b",
+      "runtime_seconds": 13.40601910700002
+    },
+    {
+      "assembly_accession": "GCF_051937875.1",
+      "target": "tetA_tetracycline_efflux",
+      "claim_class": "weakened",
+      "final_result": "target_gene_not_detected",
+      "m0_hash": "6d1ac1b0097fd3eb706c24e433d95fbd8127a32f0b597e7f068822a678f6eb34",
+      "runtime_seconds": 53.32005962199992
+    },
+    {
+      "assembly_accession": "GCF_054475615.1",
+      "target": "tuf_EF_Tu",
+      "claim_class": "weakened",
+      "final_result": "target_gene_not_detected",
+      "m0_hash": "f7a8857e8d996f263ae80259215ddf2107c619b1d41b28f4e3cc721537e32782",
+      "runtime_seconds": 10.112444331000006
+    },
+    {
+      "assembly_accession": "GCF_052955985.1",
+      "target": "tuf_EF_Tu",
+      "claim_class": "weakened",
+      "final_result": "target_gene_not_detected",
+      "m0_hash": "8fa51b4e8c884b6a37a7c55069ca7e678893741ef9c7db15e1166ffdc4f8d70a",
+      "runtime_seconds": 26.715396279999823
+    },
+    {
+      "assembly_accession": "GCF_060276355.1",
+      "target": "tuf_EF_Tu",
+      "claim_class": "weakened",
+      "final_result": "target_gene_not_detected",
+      "m0_hash": "aa207c78cf030311aecf82bd6b17ca37b1256feb3758d903cc5b953c6608a934",
+      "runtime_seconds": 17.239557243000036
+    },
+    {
+      "assembly_accession": "GCF_059683705.1",
+      "target": "tuf_EF_Tu",
+      "claim_class": "weakened",
+      "final_result": "target_gene_not_detected",
+      "m0_hash": "0bb91871f061ec468af94f6ea47878fd17da2663ebf740f4e9f6e13aa229626f",
+      "runtime_seconds": 14.63691340699961
+    },
+    {
+      "assembly_accession": "GCF_049340285.1",
+      "target": "tuf_EF_Tu",
+      "claim_class": "weakened",
+      "final_result": "target_gene_not_detected",
+      "m0_hash": "931d8292c08d421aebbc30e84fca154c0adbe0694c232b0155d5a0ec9dc0ef06",
+      "runtime_seconds": 26.002315063000424
+    },
+    {
+      "assembly_accession": "GCF_060938735.1",
+      "target": "tuf_EF_Tu",
+      "claim_class": "weakened",
+      "final_result": "target_gene_not_detected",
+      "m0_hash": "a6497961ef829d62481c45b617d3e1c9ce4153ac1d29c8e475fdb1483340aadc",
+      "runtime_seconds": 64.909934109
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "kind": "model_independence_v5",
+  "available_models": [],
+  "hardware": {
+    "nvidia_smi": null,
+    "ollama": null,
+    "notes": [
+      "nvidia-smi not on PATH; VRAM estimate unavailable",
+      "Ollama /api/ps not reachable"
+    ],
+    "expected_vram_gb": {
+      "qwen3:8b": "~8\u201312 GB",
+      "qwen3:14b": "~12\u201318 GB",
+      "deepseek-r1:8b": "~8\u201312 GB",
+      "deepseek-r1-distill-qwen-7b": "~8\u201312 GB"
+    }
+  },
+  "setup": {
+    "openai_compatible": "Serve an OpenAI-compatible /v1/chat/completions endpoint (vLLM, llama.cpp server, Ollama with OpenAI API).",
+    "ollama": "Install Ollama and pull models, e.g. `ollama pull qwen3:8b` and `ollama pull deepseek-r1:8b`.",
+    "gpt": "Set OPENAI_API_KEY. GPT is optional and is never used as a substitute for missing Qwen/DeepSeek weights.",
+    "expected_model_names": {
+      "qwen3": [
+        "qwen3:8b",
+        "qwen3:14b",
+        "qwen3:32b",
+        "qwen2.5:7b",
+        "qwen2.5:14b"
+      ],
+      "deepseek-r1-distill": [
+        "deepseek-r1:8b",
+        "deepseek-r1:7b",
+        "deepseek-r1-distill-qwen-7b",
+        "deepseek-r1-distill-llama-8b",
+        "deepseek-r1-distill-qwen-14b"
+      ],
+      "gpt": [
+        "gpt-4o",
+        "gpt-4.1",
+        "gpt-4o-mini",
+        "gpt-5"
+      ],
+      "local": []
+    },
+    "available_now": [],
+    "no_silent_substitution": true
+  },
+  "dry_runs": [
+    {
+      "kind": "qwen3",
+      "resolved_model": null,
+      "available_models": [],
+      "endpoint_reachable": false,
+      "would_call": false,
+      "invented_output": false,
+      "hardware": {
+        "nvidia_smi": null,
+        "ollama": null,
+        "notes": [
+          "nvidia-smi not on PATH; VRAM estimate unavailable",
+          "Ollama /api/ps not reachable"
+        ],
+        "expected_vram_gb": {
+          "qwen3:8b": "~8\u201312 GB",
+          "qwen3:14b": "~12\u201318 GB",
+          "deepseek-r1:8b": "~8\u201312 GB",
+          "deepseek-r1-distill-qwen-7b": "~8\u201312 GB"
+        }
+      },
+      "setup": {
+        "openai_compatible": "Serve an OpenAI-compatible /v1/chat/completions endpoint (vLLM, llama.cpp server, Ollama with OpenAI API).",
+        "ollama": "Install Ollama and pull models, e.g. `ollama pull qwen3:8b` and `ollama pull deepseek-r1:8b`.",
+        "gpt": "Set OPENAI_API_KEY. GPT is optional and is never used as a substitute for missing Qwen/DeepSeek weights.",
+        "expected_model_names": {
+          "qwen3": [
+            "qwen3:8b",
+            "qwen3:14b",
+            "qwen3:32b",
+            "qwen2.5:7b",
+            "qwen2.5:14b"
+          ],
+          "deepseek-r1-distill": [
+            "deepseek-r1:8b",
+            "deepseek-r1:7b",
+            "deepseek-r1-distill-qwen-7b",
+            "deepseek-r1-distill-llama-8b",
+            "deepseek-r1-distill-qwen-14b"
+          ],
+          "gpt": [
+            "gpt-4o",
+            "gpt-4.1",
+            "gpt-4o-mini",
+            "gpt-5"
+          ],
+          "local": []
+        },
+        "available_now": [],
+        "no_silent_substitution": true
+      },
+      "note": "Dry-run does not call the model and does not invent planner/critic JSON."
+    },
+    {
+      "kind": "deepseek-r1-distill",
+      "resolved_model": null,
+      "available_models": [],
+      "endpoint_reachable": false,
+      "would_call": false,
+      "invented_output": false,
+      "hardware": {
+        "nvidia_smi": null,
+        "ollama": null,
+        "notes": [
+          "nvidia-smi not on PATH; VRAM estimate unavailable",
+          "Ollama /api/ps not reachable"
+        ],
+        "expected_vram_gb": {
+          "qwen3:8b": "~8\u201312 GB",
+          "qwen3:14b": "~12\u201318 GB",
+          "deepseek-r1:8b": "~8\u201312 GB",
+          "deepseek-r1-distill-qwen-7b": "~8\u201312 GB"
+        }
+      },
+      "setup": {
+        "openai_compatible": "Serve an OpenAI-compatible /v1/chat/completions endpoint (vLLM, llama.cpp server, Ollama with OpenAI API).",
+        "ollama": "Install Ollama and pull models, e.g. `ollama pull qwen3:8b` and `ollama pull deepseek-r1:8b`.",
+        "gpt": "Set OPENAI_API_KEY. GPT is optional and is never used as a substitute for missing Qwen/DeepSeek weights.",
+        "expected_model_names": {
+          "qwen3": [
+            "qwen3:8b",
+            "qwen3:14b",
+            "qwen3:32b",
+            "qwen2.5:7b",
+            "qwen2.5:14b"
+          ],
+          "deepseek-r1-distill": [
+            "deepseek-r1:8b",
+            "deepseek-r1:7b",
+            "deepseek-r1-distill-qwen-7b",
+            "deepseek-r1-distill-llama-8b",
+            "deepseek-r1-distill-qwen-14b"
+          ],
+          "gpt": [
+            "gpt-4o",
+            "gpt-4.1",
+            "gpt-4o-mini",
+            "gpt-5"
+          ],
+          "local": []
+        },
+        "available_now": [],
+        "no_silent_substitution": true
+      },
+      "note": "Dry-run does not call the model and does not invent planner/critic JSON."
+    },
+    {
+      "kind": "gpt",
+      "resolved_model": null,
+      "available_models": [],
+      "endpoint_reachable": false,
+      "would_call": false,
+      "invented_output": false,
+      "hardware": {
+        "nvidia_smi": null,
+        "ollama": null,
+        "notes": [
+          "nvidia-smi not on PATH; VRAM estimate unavailable",
+          "Ollama /api/ps not reachable"
+        ],
+        "expected_vram_gb": {
+          "qwen3:8b": "~8\u201312 GB",
+          "qwen3:14b": "~12\u201318 GB",
+          "deepseek-r1:8b": "~8\u201312 GB",
+          "deepseek-r1-distill-qwen-7b": "~8\u201312 GB"
+        }
+      },
+      "setup": {
+        "openai_compatible": "Serve an OpenAI-compatible /v1/chat/completions endpoint (vLLM, llama.cpp server, Ollama with OpenAI API).",
+        "ollama": "Install Ollama and pull models, e.g. `ollama pull qwen3:8b` and `ollama pull deepseek-r1:8b`.",
+        "gpt": "Set OPENAI_API_KEY. GPT is optional and is never used as a substitute for missing Qwen/DeepSeek weights.",
+        "expected_model_names": {
+          "qwen3": [
+            "qwen3:8b",
+            "qwen3:14b",
+            "qwen3:32b",
+            "qwen2.5:7b",
+            "qwen2.5:14b"
+          ],
+          "deepseek-r1-distill": [
+            "deepseek-r1:8b",
+            "deepseek-r1:7b",
+            "deepseek-r1-distill-qwen-7b",
+            "deepseek-r1-distill-llama-8b",
+            "deepseek-r1-distill-qwen-14b"
+          ],
+          "gpt": [
+            "gpt-4o",
+            "gpt-4.1",
+            "gpt-4o-mini",
+            "gpt-5"
+          ],
+          "local": []
+        },
+        "available_now": [],
+        "no_silent_substitution": true
+      },
+      "note": "Dry-run does not call the model and does not invent planner/critic JSON."
+    },
+    {
+      "kind": "local",
+      "resolved_model": null,
+      "available_models": [],
+      "endpoint_reachable": false,
+      "would_call": false,
+      "invented_output": false,
+      "hardware": {
+        "nvidia_smi": null,
+        "ollama": null,
+        "notes": [
+          "nvidia-smi not on PATH; VRAM estimate unavailable",
+          "Ollama /api/ps not reachable"
+        ],
+        "expected_vram_gb": {
+          "qwen3:8b": "~8\u201312 GB",
+          "qwen3:14b": "~12\u201318 GB",
+          "deepseek-r1:8b": "~8\u201312 GB",
+          "deepseek-r1-distill-qwen-7b": "~8\u201312 GB"
+        }
+      },
+      "setup": {
+        "openai_compatible": "Serve an OpenAI-compatible /v1/chat/completions endpoint (vLLM, llama.cpp server, Ollama with OpenAI API).",
+        "ollama": "Install Ollama and pull models, e.g. `ollama pull qwen3:8b` and `ollama pull deepseek-r1:8b`.",
+        "gpt": "Set OPENAI_API_KEY. GPT is optional and is never used as a substitute for missing Qwen/DeepSeek weights.",
+        "expected_model_names": {
+          "qwen3": [
+            "qwen3:8b",
+            "qwen3:14b",
+            "qwen3:32b",
+            "qwen2.5:7b",
+            "qwen2.5:14b"
+          ],
+          "deepseek-r1-distill": [
+            "deepseek-r1:8b",
+            "deepseek-r1:7b",
+            "deepseek-r1-distill-qwen-7b",
+            "deepseek-r1-distill-llama-8b",
+            "deepseek-r1-distill-qwen-14b"
+          ],
+          "gpt": [
+            "gpt-4o",
+            "gpt-4.1",
+            "gpt-4o-mini",
+            "gpt-5"
+          ],
+          "local": []
+        },
+        "available_now": [],
+        "no_silent_substitution": true
+      },
+      "note": "Dry-run does not call the model and does not invent planner/critic JSON."
+    }
+  ],
+  "comparisons": [
+    {
+      "planner": "qwen3",
+      "critic": "qwen3",
+      "unavailable": true,
+      "reason": "requested model was not exposed locally/configured and was not substituted"
+    },
+    {
+      "planner": "deepseek-r1-distill",
+      "critic": "deepseek-r1-distill",
+      "unavailable": true,
+      "reason": "requested model was not exposed locally/configured and was not substituted"
+    },
+    {
+      "planner": "qwen3",
+      "critic": "deepseek-r1-distill",
+      "unavailable": true,
+      "reason": "requested model was not exposed locally/configured and was not substituted"
+    },
+    {
+      "planner": "deepseek-r1-distill",
+      "critic": "qwen3",
+      "unavailable": true,
+      "reason": "requested model was not exposed locally/configured and was not substituted"
+    },
+    {
+      "planner": "gpt",
+      "critic": "qwen3",
+      "unavailable": true,
+      "reason": "requested model was not exposed locally/configured and was not substituted"
+    },
+    {
+      "planner": "gpt",
+      "critic": "deepseek-r1-distill",
+      "unavailable": true,
+      "reason": "requested model was not exposed locally/configured and was not substituted"
+    }
+  ],
+  "silent_substitution": false,
+  "deterministic_engine_unchanged": true,
+  "same_evidence_package": true
+}

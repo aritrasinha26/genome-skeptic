@@ -1,0 +1,35 @@
+{
+  "verified_utc": "2026-09-21T09:23:04.544958+00:00",
+  "files": {
+    "GENOME_SKEPTIC_V4_1_MANUSCRIPT_manifest.json": {
+      "raw": "97a94dfefcecc855ebbba2010fd3f02f79ae84fbc61ca0f173e718d6bffd863b",
+      "lf": "46cf897d69b5f182f24059a3e21f865202aafd0ed65d531ec94cc11e381a1442",
+      "expected": "97a94dfefcecc855ebbba2010fd3f02f79ae84fbc61ca0f173e718d6bffd863b",
+      "ok": true
+    },
+    "M60_PROTOCOL_V1_1.md": {
+      "raw": "4f07f33f80733cc30869f46cbf96bcc1b7b7aa537cfbf52215ce7a0cfa401c20",
+      "lf": "73aebeba60e7c03390920c866541a977f86776a2711f804e0b960c08a3aa8660",
+      "expected": "73aebeba60e7c03390920c866541a977f86776a2711f804e0b960c08a3aa8660",
+      "ok": true
+    },
+    "M60_COHORT_MANIFEST.json": {
+      "raw": "014950b8af086c1148b68292276cdcc50f22844e14e1836381072dd936d51655",
+      "lf": "014950b8af086c1148b68292276cdcc50f22844e14e1836381072dd936d51655",
+      "expected": "014950b8af086c1148b68292276cdcc50f22844e14e1836381072dd936d51655",
+      "ok": true
+    },
+    "M60_PREDICTION_LOCK_MANIFEST.json": {
+      "raw": "5317b33fa554f81855fa6c68854ad732c5f5127fc0ad41f224fede9159a90791",
+      "lf": "5317b33fa554f81855fa6c68854ad732c5f5127fc0ad41f224fede9159a90791",
+      "expected": "5317b33fa554f81855fa6c68854ad732c5f5127fc0ad41f224fede9159a90791",
+      "ok": true
+    }
+  },
+  "scientific_core_hash": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+  "n_position_locks": 60,
+  "truth_opened": false,
+  "accuracy_scored": false,
+  "PREDICTIONS_LOCKED_BEFORE_TRUTH": "YES",
+  "prediction_payloads_opened": false
+}

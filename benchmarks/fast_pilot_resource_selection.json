@@ -1,0 +1,21 @@
+{
+  "memory_gb": 2,
+  "threads": 4,
+  "profile": "fast_pilot",
+  "nproc": 8,
+  "banner": "FAST PILOT - NOT FINAL BENCHMARK",
+  "mem_total_kb": 5035648,
+  "mem_available_kb": 4190784,
+  "mem_total_gb": 4.802,
+  "mem_available_gb": 3.997,
+  "highest_safe_memory_gb": 2,
+  "min_memory_gb_requested": 6,
+  "preferred_memory_gb": 8,
+  "preferred_if_wsl_ram_gb": 12.0,
+  "twelve_gb_available": false,
+  "six_gb_safe": false,
+  "used_preferred_t4_m8": false,
+  "selected_memory_gb": 2,
+  "selected_threads": 4,
+  "note": "FAST_PILOT selected -t 4 -m 2. 12 GB was not safely available to WSL (MemTotal=4.80 GB, MemAvailable=4.00 GB); 6 GB minimum was not safe; using highest safe -m 2."
+}

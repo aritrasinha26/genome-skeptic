@@ -1,0 +1,3869 @@
+{
+  "kind": "orthology_v3",
+  "did_not_rerun_spades_fastp_simulation_or_mapping": true,
+  "did_not_modify_previous_benchmark_reports": true,
+  "did_not_change_truth_labels_to_improve_scores": true,
+  "did_not_special_case_helicobacter_pylori": true,
+  "did_not_tune_calibration_on_held_out": true,
+  "baselines_retained": [
+    "naive_confident",
+    "dummy_cautious",
+    "conventional",
+    "skeptic_no_falsification",
+    "genome_skeptic"
+  ],
+  "development": {
+    "systems": {
+      "dummy_cautious": {
+        "overall": 0.6666666666666666,
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 5,
+            "rate": 0.4166666666666667
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 7,
+            "correct": 2,
+            "rate": 0.2857142857142857
+          },
+          "confidence_calibration": {
+            "n": 7,
+            "correct": 1,
+            "rate": 0.14285714285714285
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 11,
+            "correct": 5,
+            "rate": 0.45454545454545453
+          },
+          "appropriate_abstention": {
+            "n": 1,
+            "correct": 1,
+            "rate": 1.0
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        }
+      },
+      "naive_confident": {
+        "overall": 0.4444444444444444,
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "status_appropriateness": {
+            "n": 7,
+            "correct": 3,
+            "rate": 0.42857142857142855
+          },
+          "confidence_calibration": {
+            "n": 7,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "underclaiming": {
+            "n": 11,
+            "correct": 11,
+            "rate": 1.0
+          },
+          "appropriate_abstention": {
+            "n": 1,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        }
+      },
+      "conventional": {
+        "overall": 0.8518518518518519,
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 7,
+            "correct": 5,
+            "rate": 0.7142857142857143
+          },
+          "confidence_calibration": {
+            "n": 7,
+            "correct": 5,
+            "rate": 0.7142857142857143
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 3,
+            "rate": 0.5
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "underclaiming": {
+            "n": 11,
+            "correct": 11,
+            "rate": 1.0
+          },
+          "appropriate_abstention": {
+            "n": 1,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        }
+      },
+      "skeptic_no_falsification": {
+        "overall": 0.8518518518518519,
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 7,
+            "correct": 2,
+            "rate": 0.2857142857142857
+          },
+          "confidence_calibration": {
+            "n": 7,
+            "correct": 3,
+            "rate": 0.42857142857142855
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 11,
+            "correct": 8,
+            "rate": 0.7272727272727273
+          },
+          "appropriate_abstention": {
+            "n": 1,
+            "correct": 1,
+            "rate": 1.0
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        }
+      },
+      "genome_skeptic": {
+        "overall": 0.9444444444444444,
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 7,
+            "correct": 5,
+            "rate": 0.7142857142857143
+          },
+          "confidence_calibration": {
+            "n": 7,
+            "correct": 5,
+            "rate": 0.7142857142857143
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 11,
+            "correct": 11,
+            "rate": 1.0
+          },
+          "appropriate_abstention": {
+            "n": 1,
+            "correct": 1,
+            "rate": 1.0
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 8,
+            "rate": 0.6666666666666666
+          }
+        }
+      }
+    },
+    "full_vs_baselines": {
+      "genome_skeptic_overall": 0.9444444444444444,
+      "dummy_cautious_overall": 0.6666666666666666,
+      "naive_confident_overall": 0.4444444444444444,
+      "no_falsification_overall": 0.8518518518518519,
+      "full_beats_dummy": true,
+      "full_beats_naive": true,
+      "full_beats_both_trivial_baselines": true,
+      "groups": {
+        "genome_skeptic": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 7,
+            "correct": 5,
+            "rate": 0.7142857142857143
+          },
+          "confidence_calibration": {
+            "n": 7,
+            "correct": 5,
+            "rate": 0.7142857142857143
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 11,
+            "correct": 11,
+            "rate": 1.0
+          },
+          "appropriate_abstention": {
+            "n": 1,
+            "correct": 1,
+            "rate": 1.0
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 8,
+            "rate": 0.6666666666666666
+          }
+        },
+        "dummy_cautious": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 5,
+            "rate": 0.4166666666666667
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 7,
+            "correct": 2,
+            "rate": 0.2857142857142857
+          },
+          "confidence_calibration": {
+            "n": 7,
+            "correct": 1,
+            "rate": 0.14285714285714285
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 11,
+            "correct": 5,
+            "rate": 0.45454545454545453
+          },
+          "appropriate_abstention": {
+            "n": 1,
+            "correct": 1,
+            "rate": 1.0
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        },
+        "naive_confident": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "status_appropriateness": {
+            "n": 7,
+            "correct": 3,
+            "rate": 0.42857142857142855
+          },
+          "confidence_calibration": {
+            "n": 7,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "underclaiming": {
+            "n": 11,
+            "correct": 11,
+            "rate": 1.0
+          },
+          "appropriate_abstention": {
+            "n": 1,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        },
+        "skeptic_no_falsification": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 7,
+            "correct": 2,
+            "rate": 0.2857142857142857
+          },
+          "confidence_calibration": {
+            "n": 7,
+            "correct": 3,
+            "rate": 0.42857142857142855
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 11,
+            "correct": 8,
+            "rate": 0.7272727272727273
+          },
+          "appropriate_abstention": {
+            "n": 1,
+            "correct": 1,
+            "rate": 1.0
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        }
+      }
+    }
+  },
+  "held_out": {
+    "systems": {
+      "dummy_cautious": {
+        "overall": 0.6666666666666666,
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        }
+      },
+      "naive_confident": {
+        "overall": 0.4074074074074074,
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        }
+      },
+      "conventional": {
+        "overall": 0.8703703703703703,
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 4,
+            "rate": 0.6666666666666666
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        }
+      },
+      "skeptic_no_falsification": {
+        "overall": 0.7777777777777778,
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 8,
+            "rate": 0.6666666666666666
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        }
+      },
+      "genome_skeptic": {
+        "overall": 0.8518518518518519,
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          }
+        }
+      }
+    },
+    "full_vs_baselines": {
+      "genome_skeptic_overall": 0.8518518518518519,
+      "dummy_cautious_overall": 0.6666666666666666,
+      "naive_confident_overall": 0.4074074074074074,
+      "no_falsification_overall": 0.7777777777777778,
+      "full_beats_dummy": true,
+      "full_beats_naive": true,
+      "full_beats_both_trivial_baselines": true,
+      "groups": {
+        "genome_skeptic": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          }
+        },
+        "dummy_cautious": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        },
+        "naive_confident": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        },
+        "skeptic_no_falsification": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 8,
+            "rate": 0.6666666666666666
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        }
+      }
+    },
+    "original_v2_snapshot": {
+      "source": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/benchmarks/semantics_v2/benchmark_semantics_v2.json",
+      "unchanged": true,
+      "held_out": {
+        "systems": {
+          "dummy_cautious": {
+            "overall": 0.6666666666666666,
+            "groups": {
+              "detection_correctness": {
+                "n": 12,
+                "correct": 6,
+                "rate": 0.5
+              },
+              "claim_scope_correctness": {
+                "n": 12,
+                "correct": 12,
+                "rate": 1.0
+              },
+              "status_appropriateness": {
+                "n": 6,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "confidence_calibration": {
+                "n": 6,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "evidence_completeness_consistency": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "overclaiming": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "underclaiming": {
+                "n": 12,
+                "correct": 6,
+                "rate": 0.5
+              },
+              "appropriate_abstention": {
+                "n": 0,
+                "correct": 0,
+                "rate": null
+              },
+              "next_action_usefulness": {
+                "n": 12,
+                "correct": 6,
+                "rate": 0.5
+              }
+            }
+          },
+          "naive_confident": {
+            "overall": 0.4074074074074074,
+            "groups": {
+              "detection_correctness": {
+                "n": 12,
+                "correct": 10,
+                "rate": 0.8333333333333334
+              },
+              "claim_scope_correctness": {
+                "n": 12,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "status_appropriateness": {
+                "n": 6,
+                "correct": 2,
+                "rate": 0.3333333333333333
+              },
+              "confidence_calibration": {
+                "n": 6,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "evidence_completeness_consistency": {
+                "n": 6,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "overclaiming": {
+                "n": 6,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "underclaiming": {
+                "n": 12,
+                "correct": 10,
+                "rate": 0.8333333333333334
+              },
+              "appropriate_abstention": {
+                "n": 0,
+                "correct": 0,
+                "rate": null
+              },
+              "next_action_usefulness": {
+                "n": 12,
+                "correct": 6,
+                "rate": 0.5
+              }
+            }
+          },
+          "conventional": {
+            "overall": 0.8703703703703703,
+            "groups": {
+              "detection_correctness": {
+                "n": 12,
+                "correct": 10,
+                "rate": 0.8333333333333334
+              },
+              "claim_scope_correctness": {
+                "n": 12,
+                "correct": 12,
+                "rate": 1.0
+              },
+              "status_appropriateness": {
+                "n": 6,
+                "correct": 5,
+                "rate": 0.8333333333333334
+              },
+              "confidence_calibration": {
+                "n": 6,
+                "correct": 5,
+                "rate": 0.8333333333333334
+              },
+              "evidence_completeness_consistency": {
+                "n": 6,
+                "correct": 4,
+                "rate": 0.6666666666666666
+              },
+              "overclaiming": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "underclaiming": {
+                "n": 12,
+                "correct": 10,
+                "rate": 0.8333333333333334
+              },
+              "appropriate_abstention": {
+                "n": 0,
+                "correct": 0,
+                "rate": null
+              },
+              "next_action_usefulness": {
+                "n": 12,
+                "correct": 6,
+                "rate": 0.5
+              }
+            }
+          },
+          "skeptic_no_falsification": {
+            "overall": 0.7777777777777778,
+            "groups": {
+              "detection_correctness": {
+                "n": 12,
+                "correct": 10,
+                "rate": 0.8333333333333334
+              },
+              "claim_scope_correctness": {
+                "n": 12,
+                "correct": 12,
+                "rate": 1.0
+              },
+              "status_appropriateness": {
+                "n": 6,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "confidence_calibration": {
+                "n": 6,
+                "correct": 1,
+                "rate": 0.16666666666666666
+              },
+              "evidence_completeness_consistency": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "overclaiming": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "underclaiming": {
+                "n": 12,
+                "correct": 8,
+                "rate": 0.6666666666666666
+              },
+              "appropriate_abstention": {
+                "n": 0,
+                "correct": 0,
+                "rate": null
+              },
+              "next_action_usefulness": {
+                "n": 12,
+                "correct": 6,
+                "rate": 0.5
+              }
+            }
+          },
+          "genome_skeptic": {
+            "overall": 0.8518518518518519,
+            "groups": {
+              "detection_correctness": {
+                "n": 12,
+                "correct": 10,
+                "rate": 0.8333333333333334
+              },
+              "claim_scope_correctness": {
+                "n": 12,
+                "correct": 12,
+                "rate": 1.0
+              },
+              "status_appropriateness": {
+                "n": 6,
+                "correct": 2,
+                "rate": 0.3333333333333333
+              },
+              "confidence_calibration": {
+                "n": 6,
+                "correct": 1,
+                "rate": 0.16666666666666666
+              },
+              "evidence_completeness_consistency": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "overclaiming": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "underclaiming": {
+                "n": 12,
+                "correct": 10,
+                "rate": 0.8333333333333334
+              },
+              "appropriate_abstention": {
+                "n": 0,
+                "correct": 0,
+                "rate": null
+              },
+              "next_action_usefulness": {
+                "n": 12,
+                "correct": 12,
+                "rate": 1.0
+              }
+            }
+          }
+        },
+        "full_vs_baselines": {
+          "genome_skeptic_overall": 0.8518518518518519,
+          "dummy_cautious_overall": 0.6666666666666666,
+          "naive_confident_overall": 0.4074074074074074,
+          "no_falsification_overall": 0.7777777777777778,
+          "full_beats_dummy": true,
+          "full_beats_naive": true,
+          "full_beats_both_trivial_baselines": true,
+          "groups": {
+            "genome_skeptic": {
+              "detection_correctness": {
+                "n": 12,
+                "correct": 10,
+                "rate": 0.8333333333333334
+              },
+              "claim_scope_correctness": {
+                "n": 12,
+                "correct": 12,
+                "rate": 1.0
+              },
+              "status_appropriateness": {
+                "n": 6,
+                "correct": 2,
+                "rate": 0.3333333333333333
+              },
+              "confidence_calibration": {
+                "n": 6,
+                "correct": 1,
+                "rate": 0.16666666666666666
+              },
+              "evidence_completeness_consistency": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "overclaiming": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "underclaiming": {
+                "n": 12,
+                "correct": 10,
+                "rate": 0.8333333333333334
+              },
+              "appropriate_abstention": {
+                "n": 0,
+                "correct": 0,
+                "rate": null
+              },
+              "next_action_usefulness": {
+                "n": 12,
+                "correct": 12,
+                "rate": 1.0
+              }
+            },
+            "dummy_cautious": {
+              "detection_correctness": {
+                "n": 12,
+                "correct": 6,
+                "rate": 0.5
+              },
+              "claim_scope_correctness": {
+                "n": 12,
+                "correct": 12,
+                "rate": 1.0
+              },
+              "status_appropriateness": {
+                "n": 6,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "confidence_calibration": {
+                "n": 6,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "evidence_completeness_consistency": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "overclaiming": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "underclaiming": {
+                "n": 12,
+                "correct": 6,
+                "rate": 0.5
+              },
+              "appropriate_abstention": {
+                "n": 0,
+                "correct": 0,
+                "rate": null
+              },
+              "next_action_usefulness": {
+                "n": 12,
+                "correct": 6,
+                "rate": 0.5
+              }
+            },
+            "naive_confident": {
+              "detection_correctness": {
+                "n": 12,
+                "correct": 10,
+                "rate": 0.8333333333333334
+              },
+              "claim_scope_correctness": {
+                "n": 12,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "status_appropriateness": {
+                "n": 6,
+                "correct": 2,
+                "rate": 0.3333333333333333
+              },
+              "confidence_calibration": {
+                "n": 6,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "evidence_completeness_consistency": {
+                "n": 6,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "overclaiming": {
+                "n": 6,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "underclaiming": {
+                "n": 12,
+                "correct": 10,
+                "rate": 0.8333333333333334
+              },
+              "appropriate_abstention": {
+                "n": 0,
+                "correct": 0,
+                "rate": null
+              },
+              "next_action_usefulness": {
+                "n": 12,
+                "correct": 6,
+                "rate": 0.5
+              }
+            },
+            "skeptic_no_falsification": {
+              "detection_correctness": {
+                "n": 12,
+                "correct": 10,
+                "rate": 0.8333333333333334
+              },
+              "claim_scope_correctness": {
+                "n": 12,
+                "correct": 12,
+                "rate": 1.0
+              },
+              "status_appropriateness": {
+                "n": 6,
+                "correct": 0,
+                "rate": 0.0
+              },
+              "confidence_calibration": {
+                "n": 6,
+                "correct": 1,
+                "rate": 0.16666666666666666
+              },
+              "evidence_completeness_consistency": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "overclaiming": {
+                "n": 6,
+                "correct": 6,
+                "rate": 1.0
+              },
+              "underclaiming": {
+                "n": 12,
+                "correct": 8,
+                "rate": 0.6666666666666666
+              },
+              "appropriate_abstention": {
+                "n": 0,
+                "correct": 0,
+                "rate": null
+              },
+              "next_action_usefulness": {
+                "n": 12,
+                "correct": 6,
+                "rate": 0.5
+              }
+            }
+          }
+        },
+        "prescore_table": [
+          {
+            "case_id": "hel_01",
+            "system": "dummy_cautious",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": null,
+            "best_protein_coverage": null,
+            "coverage": null,
+            "claim": "target_gene_not_detected",
+            "status": "weakened",
+            "confidence": 0.46,
+            "evidence_completeness": 0.63,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_01",
+            "system": "dummy_cautious",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "salmonella_lt2",
+              "accession": "NC_003197.2",
+              "gene": "rpoB",
+              "locus_tag": "STM4153",
+              "gene_id": "1255679",
+              "protein_id": "NP_463022.1",
+              "product": "RNA polymerase, beta subunit",
+              "coordinates": [
+                4365921,
+                4369949
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "protein_length": 1342,
+              "protein_sha256": "0d8ac94114a66a837421b6939b9cce12ae121da47ddcb2e2b026724bdcb3fdbb",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": null,
+            "best_protein_coverage": null,
+            "coverage": null,
+            "claim": "target_gene_not_detected",
+            "status": "weakened",
+            "confidence": 0.46,
+            "evidence_completeness": 0.63,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_01",
+            "system": "naive_confident",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": 0.93596,
+            "best_nucleotide_coverage": 1.0,
+            "best_protein_identity": 0.9843500000000001,
+            "best_protein_coverage": 1.0,
+            "coverage": 1.0,
+            "claim": "target_gene_not_detected",
+            "status": "supported",
+            "confidence": 0.99,
+            "evidence_completeness": 0.15,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_01",
+            "system": "naive_confident",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "salmonella_lt2",
+              "accession": "NC_003197.2",
+              "gene": "rpoB",
+              "locus_tag": "STM4153",
+              "gene_id": "1255679",
+              "protein_id": "NP_463022.1",
+              "product": "RNA polymerase, beta subunit",
+              "coordinates": [
+                4365921,
+                4369949
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "protein_length": 1342,
+              "protein_sha256": "0d8ac94114a66a837421b6939b9cce12ae121da47ddcb2e2b026724bdcb3fdbb",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": 0.9843500000000001,
+            "best_protein_coverage": 1.0,
+            "coverage": 1.0,
+            "claim": "target_gene_detected",
+            "status": "supported",
+            "confidence": 0.99,
+            "evidence_completeness": 0.15,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_01",
+            "system": "conventional",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": 0.93596,
+            "best_nucleotide_coverage": 1.0,
+            "best_protein_identity": 0.9843500000000001,
+            "best_protein_coverage": 1.0,
+            "coverage": 1.0,
+            "claim": "target_gene_not_detected",
+            "status": "supported",
+            "confidence": 0.7,
+            "evidence_completeness": 0.15,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_01",
+            "system": "conventional",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "salmonella_lt2",
+              "accession": "NC_003197.2",
+              "gene": "rpoB",
+              "locus_tag": "STM4153",
+              "gene_id": "1255679",
+              "protein_id": "NP_463022.1",
+              "product": "RNA polymerase, beta subunit",
+              "coordinates": [
+                4365921,
+                4369949
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "protein_length": 1342,
+              "protein_sha256": "0d8ac94114a66a837421b6939b9cce12ae121da47ddcb2e2b026724bdcb3fdbb",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": 0.9843500000000001,
+            "best_protein_coverage": 1.0,
+            "coverage": 1.0,
+            "claim": "target_gene_detected",
+            "status": "supported",
+            "confidence": 0.9,
+            "evidence_completeness": 0.15,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_01",
+            "system": "skeptic_no_falsification",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": 0.93596,
+            "best_nucleotide_coverage": 1.0,
+            "best_protein_identity": 0.9843500000000001,
+            "best_protein_coverage": 1.0,
+            "coverage": 1.0,
+            "claim": "target_gene_not_detected",
+            "status": "unresolved",
+            "confidence": 0.2684,
+            "evidence_completeness": 0.0,
+            "homology_support": 0.53
+          },
+          {
+            "case_id": "hel_01",
+            "system": "skeptic_no_falsification",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "salmonella_lt2",
+              "accession": "NC_003197.2",
+              "gene": "rpoB",
+              "locus_tag": "STM4153",
+              "gene_id": "1255679",
+              "protein_id": "NP_463022.1",
+              "product": "RNA polymerase, beta subunit",
+              "coordinates": [
+                4365921,
+                4369949
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "protein_length": 1342,
+              "protein_sha256": "0d8ac94114a66a837421b6939b9cce12ae121da47ddcb2e2b026724bdcb3fdbb",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": 0.9843500000000001,
+            "best_protein_coverage": 1.0,
+            "coverage": 1.0,
+            "claim": "target_gene_detected",
+            "status": "unresolved",
+            "confidence": 0.2684,
+            "evidence_completeness": 0.0,
+            "homology_support": 0.53
+          },
+          {
+            "case_id": "hel_01",
+            "system": "genome_skeptic",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": 0.93596,
+            "best_nucleotide_coverage": 1.0,
+            "best_protein_identity": 0.9843500000000001,
+            "best_protein_coverage": 1.0,
+            "coverage": 1.0,
+            "claim": "target_gene_not_detected",
+            "status": "weakened",
+            "confidence": 0.3272,
+            "evidence_completeness": 0.7667,
+            "homology_support": 0.53
+          },
+          {
+            "case_id": "hel_01",
+            "system": "genome_skeptic",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "salmonella_lt2",
+              "accession": "NC_003197.2",
+              "gene": "rpoB",
+              "locus_tag": "STM4153",
+              "gene_id": "1255679",
+              "protein_id": "NP_463022.1",
+              "product": "RNA polymerase, beta subunit",
+              "coordinates": [
+                4365921,
+                4369949
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "protein_length": 1342,
+              "protein_sha256": "0d8ac94114a66a837421b6939b9cce12ae121da47ddcb2e2b026724bdcb3fdbb",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": 0.9843500000000001,
+            "best_protein_coverage": 1.0,
+            "coverage": 1.0,
+            "claim": "target_gene_detected",
+            "status": "supported",
+            "confidence": 0.319,
+            "evidence_completeness": 0.3372,
+            "homology_support": 0.53
+          },
+          {
+            "case_id": "hel_02",
+            "system": "dummy_cautious",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": null,
+            "best_protein_coverage": null,
+            "coverage": null,
+            "claim": "target_gene_not_detected",
+            "status": "weakened",
+            "confidence": 0.46,
+            "evidence_completeness": 0.63,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_02",
+            "system": "dummy_cautious",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "pputida_kt2440",
+              "accession": "NC_002947.4",
+              "gene": "rpoB",
+              "locus_tag": "PP_RS02380",
+              "gene_id": null,
+              "protein_id": "WP_003255495.1",
+              "product": "DNA-directed RNA polymerase subunit beta",
+              "coordinates": [
+                537623,
+                541696
+              ],
+              "strand": "+",
+              "nucleotide_length": 4074,
+              "protein_length": 1357,
+              "protein_sha256": "da8b7f3d41d5c124301f1cb64958998dd989aff4ebd7e82d181ddfaeb00c901d",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": null,
+            "best_protein_coverage": null,
+            "coverage": null,
+            "claim": "target_gene_not_detected",
+            "status": "weakened",
+            "confidence": 0.46,
+            "evidence_completeness": 0.63,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_02",
+            "system": "naive_confident",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": 0.73721,
+            "best_nucleotide_coverage": 0.7096053611317945,
+            "best_protein_identity": 0.68452,
+            "best_protein_coverage": 1.0,
+            "coverage": 0.7096053611317945,
+            "claim": "target_gene_not_detected",
+            "status": "supported",
+            "confidence": 0.99,
+            "evidence_completeness": 0.15,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_02",
+            "system": "naive_confident",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "pputida_kt2440",
+              "accession": "NC_002947.4",
+              "gene": "rpoB",
+              "locus_tag": "PP_RS02380",
+              "gene_id": null,
+              "protein_id": "WP_003255495.1",
+              "product": "DNA-directed RNA polymerase subunit beta",
+              "coordinates": [
+                537623,
+                541696
+              ],
+              "strand": "+",
+              "nucleotide_length": 4074,
+              "protein_length": 1357,
+              "protein_sha256": "da8b7f3d41d5c124301f1cb64958998dd989aff4ebd7e82d181ddfaeb00c901d",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": 0.68452,
+            "best_protein_coverage": 1.0,
+            "coverage": 1.0,
+            "claim": "target_gene_detected",
+            "status": "supported",
+            "confidence": 0.99,
+            "evidence_completeness": 0.15,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_02",
+            "system": "conventional",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": 0.73721,
+            "best_nucleotide_coverage": 0.7096053611317945,
+            "best_protein_identity": 0.68452,
+            "best_protein_coverage": 1.0,
+            "coverage": 0.7096053611317945,
+            "claim": "target_gene_not_detected",
+            "status": "supported",
+            "confidence": 0.7,
+            "evidence_completeness": 0.15,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_02",
+            "system": "conventional",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "pputida_kt2440",
+              "accession": "NC_002947.4",
+              "gene": "rpoB",
+              "locus_tag": "PP_RS02380",
+              "gene_id": null,
+              "protein_id": "WP_003255495.1",
+              "product": "DNA-directed RNA polymerase subunit beta",
+              "coordinates": [
+                537623,
+                541696
+              ],
+              "strand": "+",
+              "nucleotide_length": 4074,
+              "protein_length": 1357,
+              "protein_sha256": "da8b7f3d41d5c124301f1cb64958998dd989aff4ebd7e82d181ddfaeb00c901d",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": 0.68452,
+            "best_protein_coverage": 1.0,
+            "coverage": 1.0,
+            "claim": "target_gene_detected",
+            "status": "supported",
+            "confidence": 0.9,
+            "evidence_completeness": 0.15,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_02",
+            "system": "skeptic_no_falsification",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": 0.73721,
+            "best_nucleotide_coverage": 0.7096053611317945,
+            "best_protein_identity": 0.68452,
+            "best_protein_coverage": 1.0,
+            "coverage": 0.7096053611317945,
+            "claim": "target_gene_not_detected",
+            "status": "unresolved",
+            "confidence": 0.253,
+            "evidence_completeness": 0.0,
+            "homology_support": 0.4749
+          },
+          {
+            "case_id": "hel_02",
+            "system": "skeptic_no_falsification",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "pputida_kt2440",
+              "accession": "NC_002947.4",
+              "gene": "rpoB",
+              "locus_tag": "PP_RS02380",
+              "gene_id": null,
+              "protein_id": "WP_003255495.1",
+              "product": "DNA-directed RNA polymerase subunit beta",
+              "coordinates": [
+                537623,
+                541696
+              ],
+              "strand": "+",
+              "nucleotide_length": 4074,
+              "protein_length": 1357,
+              "protein_sha256": "da8b7f3d41d5c124301f1cb64958998dd989aff4ebd7e82d181ddfaeb00c901d",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": 0.68452,
+            "best_protein_coverage": 1.0,
+            "coverage": 1.0,
+            "claim": "target_gene_detected",
+            "status": "unresolved",
+            "confidence": 0.2684,
+            "evidence_completeness": 0.0,
+            "homology_support": 0.53
+          },
+          {
+            "case_id": "hel_02",
+            "system": "genome_skeptic",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": 0.73721,
+            "best_nucleotide_coverage": 0.7096053611317945,
+            "best_protein_identity": 0.68452,
+            "best_protein_coverage": 1.0,
+            "coverage": 0.7096053611317945,
+            "claim": "target_gene_not_detected",
+            "status": "weakened",
+            "confidence": 0.2992,
+            "evidence_completeness": 0.7667,
+            "homology_support": 0.4749
+          },
+          {
+            "case_id": "hel_02",
+            "system": "genome_skeptic",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "pputida_kt2440",
+              "accession": "NC_002947.4",
+              "gene": "rpoB",
+              "locus_tag": "PP_RS02380",
+              "gene_id": null,
+              "protein_id": "WP_003255495.1",
+              "product": "DNA-directed RNA polymerase subunit beta",
+              "coordinates": [
+                537623,
+                541696
+              ],
+              "strand": "+",
+              "nucleotide_length": 4074,
+              "protein_length": 1357,
+              "protein_sha256": "da8b7f3d41d5c124301f1cb64958998dd989aff4ebd7e82d181ddfaeb00c901d",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": 0.68452,
+            "best_protein_coverage": 1.0,
+            "coverage": 1.0,
+            "claim": "target_gene_detected",
+            "status": "supported",
+            "confidence": 0.319,
+            "evidence_completeness": 0.3372,
+            "homology_support": 0.53
+          },
+          {
+            "case_id": "hel_03",
+            "system": "dummy_cautious",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": null,
+            "best_protein_coverage": null,
+            "coverage": null,
+            "claim": "target_gene_not_detected",
+            "status": "weakened",
+            "confidence": 0.46,
+            "evidence_completeness": 0.63,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_03",
+            "system": "dummy_cautious",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "staph_8325",
+              "accession": "NC_007795.1",
+              "gene": "rpoB",
+              "locus_tag": "SAOUHSC_00524",
+              "gene_id": "3920377",
+              "protein_id": "YP_499096.2",
+              "product": "DNA-directed RNA polymerase subunit beta",
+              "coordinates": [
+                522160,
+                525711
+              ],
+              "strand": "+",
+              "nucleotide_length": 3552,
+              "protein_length": 1183,
+              "protein_sha256": "e1bf5de0062bdf029093ed6c6e320fbeda3ed9be9ced9d72c0a2523803140d6f",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": null,
+            "best_protein_coverage": null,
+            "coverage": null,
+            "claim": "target_gene_not_detected",
+            "status": "weakened",
+            "confidence": 0.46,
+            "evidence_completeness": 0.63,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_03",
+            "system": "naive_confident",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": 0.6695399999999999,
+            "best_nucleotide_coverage": 0.14048150905931994,
+            "best_protein_identity": 0.61042,
+            "best_protein_coverage": 0.3554396423248882,
+            "coverage": 0.14048150905931994,
+            "claim": "target_gene_not_detected",
+            "status": "supported",
+            "confidence": 0.99,
+            "evidence_completeness": 0.15,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_03",
+            "system": "naive_confident",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "staph_8325",
+              "accession": "NC_007795.1",
+              "gene": "rpoB",
+              "locus_tag": "SAOUHSC_00524",
+              "gene_id": "3920377",
+              "protein_id": "YP_499096.2",
+              "product": "DNA-directed RNA polymerase subunit beta",
+              "coordinates": [
+                522160,
+                525711
+              ],
+              "strand": "+",
+              "nucleotide_length": 3552,
+              "protein_length": 1183,
+              "protein_sha256": "e1bf5de0062bdf029093ed6c6e320fbeda3ed9be9ced9d72c0a2523803140d6f",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": 0.61042,
+            "best_protein_coverage": 0.3554396423248882,
+            "coverage": 0.3554396423248882,
+            "claim": "target_gene_not_detected",
+            "status": "supported",
+            "confidence": 0.99,
+            "evidence_completeness": 0.15,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_03",
+            "system": "conventional",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": 0.6695399999999999,
+            "best_nucleotide_coverage": 0.14048150905931994,
+            "best_protein_identity": 0.61042,
+            "best_protein_coverage": 0.3554396423248882,
+            "coverage": 0.14048150905931994,
+            "claim": "target_gene_not_detected",
+            "status": "supported",
+            "confidence": 0.7,
+            "evidence_completeness": 0.15,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_03",
+            "system": "conventional",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "staph_8325",
+              "accession": "NC_007795.1",
+              "gene": "rpoB",
+              "locus_tag": "SAOUHSC_00524",
+              "gene_id": "3920377",
+              "protein_id": "YP_499096.2",
+              "product": "DNA-directed RNA polymerase subunit beta",
+              "coordinates": [
+                522160,
+                525711
+              ],
+              "strand": "+",
+              "nucleotide_length": 3552,
+              "protein_length": 1183,
+              "protein_sha256": "e1bf5de0062bdf029093ed6c6e320fbeda3ed9be9ced9d72c0a2523803140d6f",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": 0.61042,
+            "best_protein_coverage": 0.3554396423248882,
+            "coverage": 0.3554396423248882,
+            "claim": "target_gene_not_detected",
+            "status": "supported",
+            "confidence": 0.7,
+            "evidence_completeness": 0.15,
+            "homology_support": null
+          },
+          {
+            "case_id": "hel_03",
+            "system": "skeptic_no_falsification",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": 0.6695399999999999,
+            "best_nucleotide_coverage": 0.14048150905931994,
+            "best_protein_identity": 0.61042,
+            "best_protein_coverage": 0.3554396423248882,
+            "coverage": 0.14048150905931994,
+            "claim": "target_gene_not_detected",
+            "status": "unresolved",
+            "confidence": 0.1519,
+            "evidence_completeness": 0.0,
+            "homology_support": 0.1139
+          },
+          {
+            "case_id": "hel_03",
+            "system": "skeptic_no_falsification",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "staph_8325",
+              "accession": "NC_007795.1",
+              "gene": "rpoB",
+              "locus_tag": "SAOUHSC_00524",
+              "gene_id": "3920377",
+              "protein_id": "YP_499096.2",
+              "product": "DNA-directed RNA polymerase subunit beta",
+              "coordinates": [
+                522160,
+                525711
+              ],
+              "strand": "+",
+              "nucleotide_length": 3552,
+              "protein_length": 1183,
+              "protein_sha256": "e1bf5de0062bdf029093ed6c6e320fbeda3ed9be9ced9d72c0a2523803140d6f",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": 0.61042,
+            "best_protein_coverage": 0.3554396423248882,
+            "coverage": 0.3554396423248882,
+            "claim": "target_gene_not_detected",
+            "status": "unresolved",
+            "confidence": 0.1519,
+            "evidence_completeness": 0.0,
+            "homology_support": 0.1139
+          },
+          {
+            "case_id": "hel_03",
+            "system": "genome_skeptic",
+            "target": "rpoB_MG1655_allele",
+            "target_type": "exact_allele",
+            "hidden_true_state": "absent",
+            "target_provenance": {
+              "rule": "exact_MG1655_rpoB_CDS_from_source_annotation",
+              "source_genome": "ecoli_k12",
+              "accession": "NC_000913.3",
+              "gene": "rpoB",
+              "locus_tag": "b3987",
+              "gene_id": null,
+              "coordinates": [
+                4181245,
+                4185273
+              ],
+              "strand": "+",
+              "nucleotide_length": 4029,
+              "nucleotide_sha256": "12c5d038046237f76f5d0777bd0d9c2debde53af75cf40c52e32311f1642f2f3",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": 0.6695399999999999,
+            "best_nucleotide_coverage": 0.14048150905931994,
+            "best_protein_identity": 0.61042,
+            "best_protein_coverage": 0.3554396423248882,
+            "coverage": 0.14048150905931994,
+            "claim": "target_gene_not_detected",
+            "status": "weakened",
+            "confidence": 0.1462,
+            "evidence_completeness": 0.7667,
+            "homology_support": 0.1139
+          },
+          {
+            "case_id": "hel_03",
+            "system": "genome_skeptic",
+            "target": "rpoB",
+            "target_type": "gene_orthologue",
+            "hidden_true_state": "present",
+            "target_provenance": {
+              "rule": "independent_source_annotation_orthology",
+              "genome_id": "staph_8325",
+              "accession": "NC_007795.1",
+              "gene": "rpoB",
+              "locus_tag": "SAOUHSC_00524",
+              "gene_id": "3920377",
+              "protein_id": "YP_499096.2",
+              "product": "DNA-directed RNA polymerase subunit beta",
+              "coordinates": [
+                522160,
+                525711
+              ],
+              "strand": "+",
+              "nucleotide_length": 3552,
+              "protein_length": 1183,
+              "protein_sha256": "e1bf5de0062bdf029093ed6c6e320fbeda3ed9be9ced9d72c0a2523803140d6f",
+              "assignment": "source_annotation_rpoB",
+              "independent_of_locate_target": true
+            },
+            "best_nucleotide_identity": null,
+            "best_nucleotide_coverage": null,
+            "best_protein_identity": 0.61042,
+            "best_protein_coverage": 0.3554396423248882,
+            "coverage": 0.3554396423248882,
+            "claim": "target_gene_not_detected",
+            "status": "weakened",
+            "confidence": 0.1462,
+            "evidence_completeness": 0.7667,
+            "homology_support": 0.1139
+          }
+        ]
+      },
+      "note": "Original V2 held-out results are retained for comparison and were not modified."
+    }
+  },
+  "held_out_calibrated": {
+    "systems": {
+      "dummy_cautious": {
+        "totals": {
+          "correct_detection": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "false_detection": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "correct_non_detection": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "false_absence": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "contamination_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "paralogue_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "fragmentation_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "appropriate_uncertainty": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "unsupported_overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "useful_follow_up_analyses": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "unnecessary_analyses": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "correct_next_action": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "overconfidence_on_ambiguous": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "underconfidence_on_clean": {
+            "n": 6,
+            "correct": 3,
+            "rate": 0.5
+          },
+          "calibration_error": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "appropriate_escalation": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "unsupported_organism_level_claims": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "completeness_confidence_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "redundant_analyses": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "irrelevant_analyses": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "harmful_next_actions": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "claim_scope_correctness": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 6,
+            "correct": 3,
+            "rate": 0.5
+          }
+        },
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        },
+        "overall": 0.6666666666666666,
+        "mean_seconds": 0.06128518633333613
+      },
+      "naive_confident": {
+        "totals": {
+          "correct_detection": {
+            "n": 3,
+            "correct": 2,
+            "rate": 0.6666666666666666
+          },
+          "false_detection": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "correct_non_detection": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "false_absence": {
+            "n": 3,
+            "correct": 2,
+            "rate": 0.6666666666666666
+          },
+          "contamination_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "paralogue_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "fragmentation_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "appropriate_uncertainty": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "unsupported_overclaiming": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "useful_follow_up_analyses": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "unnecessary_analyses": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "correct_next_action": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "overconfidence_on_ambiguous": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "underconfidence_on_clean": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "calibration_error": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "appropriate_escalation": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "unsupported_organism_level_claims": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "completeness_confidence_consistency": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "redundant_analyses": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "irrelevant_analyses": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "harmful_next_actions": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "claim_scope_correctness": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "underclaiming": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          }
+        },
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        },
+        "overall": 0.4074074074074074,
+        "mean_seconds": 5.078313097000013
+      },
+      "conventional": {
+        "totals": {
+          "correct_detection": {
+            "n": 3,
+            "correct": 2,
+            "rate": 0.6666666666666666
+          },
+          "false_detection": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "correct_non_detection": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "false_absence": {
+            "n": 3,
+            "correct": 2,
+            "rate": 0.6666666666666666
+          },
+          "contamination_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "paralogue_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "fragmentation_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "appropriate_uncertainty": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "unsupported_overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "useful_follow_up_analyses": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "unnecessary_analyses": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "correct_next_action": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "overconfidence_on_ambiguous": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "underconfidence_on_clean": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "calibration_error": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "appropriate_escalation": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "unsupported_organism_level_claims": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "completeness_confidence_consistency": {
+            "n": 6,
+            "correct": 4,
+            "rate": 0.6666666666666666
+          },
+          "redundant_analyses": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "irrelevant_analyses": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "harmful_next_actions": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          }
+        },
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 4,
+            "rate": 0.6666666666666666
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        },
+        "overall": 0.8703703703703703,
+        "mean_seconds": 3.135132785333326
+      },
+      "skeptic_no_falsification": {
+        "totals": {
+          "correct_detection": {
+            "n": 3,
+            "correct": 2,
+            "rate": 0.6666666666666666
+          },
+          "false_detection": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "correct_non_detection": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "false_absence": {
+            "n": 3,
+            "correct": 2,
+            "rate": 0.6666666666666666
+          },
+          "contamination_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "paralogue_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "fragmentation_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "appropriate_uncertainty": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "unsupported_overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "useful_follow_up_analyses": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "unnecessary_analyses": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "correct_next_action": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "overconfidence_on_ambiguous": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "underconfidence_on_clean": {
+            "n": 6,
+            "correct": 3,
+            "rate": 0.5
+          },
+          "calibration_error": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "appropriate_escalation": {
+            "n": 3,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "unsupported_organism_level_claims": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "completeness_confidence_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "redundant_analyses": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "irrelevant_analyses": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "harmful_next_actions": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "claim_scope_correctness": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          }
+        },
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 8,
+            "rate": 0.6666666666666666
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 12,
+            "correct": 6,
+            "rate": 0.5
+          }
+        },
+        "overall": 0.7777777777777778,
+        "mean_seconds": 77.60673476233337
+      },
+      "genome_skeptic": {
+        "overall": 0.8518518518518519,
+        "groups": {
+          "detection_correctness": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "claim_scope_correctness": {
+            "n": 12,
+            "correct": 12,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "confidence_calibration": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "evidence_completeness_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 12,
+            "correct": 10,
+            "rate": 0.8333333333333334
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "next_action_usefulness": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          }
+        },
+        "totals": {
+          "correct_detection": {
+            "n": 3,
+            "correct": 2,
+            "rate": 0.6666666666666666
+          },
+          "false_detection": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "correct_non_detection": {
+            "n": 3,
+            "correct": 3,
+            "rate": 1.0
+          },
+          "false_absence": {
+            "n": 3,
+            "correct": 2,
+            "rate": 0.6666666666666666
+          },
+          "contamination_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "paralogue_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "fragmentation_recognition": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "appropriate_uncertainty": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "unsupported_overclaiming": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "useful_follow_up_analyses": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "unnecessary_analyses": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "correct_next_action": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "overconfidence_on_ambiguous": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "underconfidence_on_clean": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "calibration_error": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "appropriate_abstention": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "appropriate_escalation": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "unsupported_organism_level_claims": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "completeness_confidence_consistency": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "redundant_analyses": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "irrelevant_analyses": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "harmful_next_actions": {
+            "n": 0,
+            "correct": 0,
+            "rate": null
+          },
+          "status_appropriateness": {
+            "n": 6,
+            "correct": 2,
+            "rate": 0.3333333333333333
+          },
+          "claim_scope_correctness": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          }
+        }
+      }
+    },
+    "note": "Calibration map frozen on development, applied once."
+  },
+  "controls": {
+    "systems": {
+      "dummy_cautious": {
+        "overall": 0.8591549295774648,
+        "groups": {
+          "detection_correctness": {
+            "n": 15,
+            "correct": 9,
+            "rate": 0.6
+          },
+          "claim_scope_correctness": {
+            "n": 16,
+            "correct": 16,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 14,
+            "correct": 12,
+            "rate": 0.8571428571428571
+          },
+          "confidence_calibration": {
+            "n": 14,
+            "correct": 6,
+            "rate": 0.42857142857142855
+          },
+          "evidence_completeness_consistency": {
+            "n": 8,
+            "correct": 8,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 8,
+            "correct": 8,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 10,
+            "correct": 8,
+            "rate": 0.8
+          },
+          "appropriate_abstention": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "next_action_usefulness": {
+            "n": 32,
+            "correct": 16,
+            "rate": 0.5
+          }
+        }
+      },
+      "naive_confident": {
+        "overall": 0.323943661971831,
+        "groups": {
+          "detection_correctness": {
+            "n": 15,
+            "correct": 12,
+            "rate": 0.8
+          },
+          "claim_scope_correctness": {
+            "n": 16,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "status_appropriateness": {
+            "n": 14,
+            "correct": 1,
+            "rate": 0.07142857142857142
+          },
+          "confidence_calibration": {
+            "n": 14,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "evidence_completeness_consistency": {
+            "n": 8,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "overclaiming": {
+            "n": 8,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "underclaiming": {
+            "n": 10,
+            "correct": 10,
+            "rate": 1.0
+          },
+          "appropriate_abstention": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "next_action_usefulness": {
+            "n": 32,
+            "correct": 16,
+            "rate": 0.5
+          }
+        }
+      },
+      "conventional": {
+        "overall": 0.6619718309859155,
+        "groups": {
+          "detection_correctness": {
+            "n": 15,
+            "correct": 12,
+            "rate": 0.8
+          },
+          "claim_scope_correctness": {
+            "n": 16,
+            "correct": 16,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 14,
+            "correct": 3,
+            "rate": 0.21428571428571427
+          },
+          "confidence_calibration": {
+            "n": 14,
+            "correct": 7,
+            "rate": 0.5
+          },
+          "evidence_completeness_consistency": {
+            "n": 8,
+            "correct": 4,
+            "rate": 0.5
+          },
+          "overclaiming": {
+            "n": 8,
+            "correct": 2,
+            "rate": 0.25
+          },
+          "underclaiming": {
+            "n": 10,
+            "correct": 10,
+            "rate": 1.0
+          },
+          "appropriate_abstention": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "next_action_usefulness": {
+            "n": 32,
+            "correct": 16,
+            "rate": 0.5
+          }
+        }
+      },
+      "skeptic_no_falsification": {
+        "overall": 0.9577464788732394,
+        "groups": {
+          "detection_correctness": {
+            "n": 15,
+            "correct": 15,
+            "rate": 1.0
+          },
+          "claim_scope_correctness": {
+            "n": 16,
+            "correct": 16,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 14,
+            "correct": 12,
+            "rate": 0.8571428571428571
+          },
+          "confidence_calibration": {
+            "n": 14,
+            "correct": 8,
+            "rate": 0.5714285714285714
+          },
+          "evidence_completeness_consistency": {
+            "n": 8,
+            "correct": 8,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 8,
+            "correct": 8,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 10,
+            "correct": 9,
+            "rate": 0.9
+          },
+          "appropriate_abstention": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "next_action_usefulness": {
+            "n": 32,
+            "correct": 16,
+            "rate": 0.5
+          }
+        }
+      },
+      "genome_skeptic": {
+        "overall": 0.9577464788732394,
+        "groups": {
+          "detection_correctness": {
+            "n": 15,
+            "correct": 15,
+            "rate": 1.0
+          },
+          "claim_scope_correctness": {
+            "n": 16,
+            "correct": 16,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 14,
+            "correct": 12,
+            "rate": 0.8571428571428571
+          },
+          "confidence_calibration": {
+            "n": 14,
+            "correct": 11,
+            "rate": 0.7857142857142857
+          },
+          "evidence_completeness_consistency": {
+            "n": 8,
+            "correct": 8,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 8,
+            "correct": 7,
+            "rate": 0.875
+          },
+          "underclaiming": {
+            "n": 10,
+            "correct": 10,
+            "rate": 1.0
+          },
+          "appropriate_abstention": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "next_action_usefulness": {
+            "n": 32,
+            "correct": 24,
+            "rate": 0.75
+          }
+        }
+      }
+    },
+    "full_vs_baselines": {
+      "genome_skeptic_overall": 0.9577464788732394,
+      "dummy_cautious_overall": 0.8591549295774648,
+      "naive_confident_overall": 0.323943661971831,
+      "no_falsification_overall": 0.9577464788732394,
+      "full_beats_dummy": true,
+      "full_beats_naive": true,
+      "full_beats_both_trivial_baselines": true,
+      "groups": {
+        "genome_skeptic": {
+          "detection_correctness": {
+            "n": 15,
+            "correct": 15,
+            "rate": 1.0
+          },
+          "claim_scope_correctness": {
+            "n": 16,
+            "correct": 16,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 14,
+            "correct": 12,
+            "rate": 0.8571428571428571
+          },
+          "confidence_calibration": {
+            "n": 14,
+            "correct": 11,
+            "rate": 0.7857142857142857
+          },
+          "evidence_completeness_consistency": {
+            "n": 8,
+            "correct": 8,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 8,
+            "correct": 7,
+            "rate": 0.875
+          },
+          "underclaiming": {
+            "n": 10,
+            "correct": 10,
+            "rate": 1.0
+          },
+          "appropriate_abstention": {
+            "n": 6,
+            "correct": 5,
+            "rate": 0.8333333333333334
+          },
+          "next_action_usefulness": {
+            "n": 32,
+            "correct": 24,
+            "rate": 0.75
+          }
+        },
+        "dummy_cautious": {
+          "detection_correctness": {
+            "n": 15,
+            "correct": 9,
+            "rate": 0.6
+          },
+          "claim_scope_correctness": {
+            "n": 16,
+            "correct": 16,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 14,
+            "correct": 12,
+            "rate": 0.8571428571428571
+          },
+          "confidence_calibration": {
+            "n": 14,
+            "correct": 6,
+            "rate": 0.42857142857142855
+          },
+          "evidence_completeness_consistency": {
+            "n": 8,
+            "correct": 8,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 8,
+            "correct": 8,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 10,
+            "correct": 8,
+            "rate": 0.8
+          },
+          "appropriate_abstention": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "next_action_usefulness": {
+            "n": 32,
+            "correct": 16,
+            "rate": 0.5
+          }
+        },
+        "naive_confident": {
+          "detection_correctness": {
+            "n": 15,
+            "correct": 12,
+            "rate": 0.8
+          },
+          "claim_scope_correctness": {
+            "n": 16,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "status_appropriateness": {
+            "n": 14,
+            "correct": 1,
+            "rate": 0.07142857142857142
+          },
+          "confidence_calibration": {
+            "n": 14,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "evidence_completeness_consistency": {
+            "n": 8,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "overclaiming": {
+            "n": 8,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "underclaiming": {
+            "n": 10,
+            "correct": 10,
+            "rate": 1.0
+          },
+          "appropriate_abstention": {
+            "n": 6,
+            "correct": 0,
+            "rate": 0.0
+          },
+          "next_action_usefulness": {
+            "n": 32,
+            "correct": 16,
+            "rate": 0.5
+          }
+        },
+        "skeptic_no_falsification": {
+          "detection_correctness": {
+            "n": 15,
+            "correct": 15,
+            "rate": 1.0
+          },
+          "claim_scope_correctness": {
+            "n": 16,
+            "correct": 16,
+            "rate": 1.0
+          },
+          "status_appropriateness": {
+            "n": 14,
+            "correct": 12,
+            "rate": 0.8571428571428571
+          },
+          "confidence_calibration": {
+            "n": 14,
+            "correct": 8,
+            "rate": 0.5714285714285714
+          },
+          "evidence_completeness_consistency": {
+            "n": 8,
+            "correct": 8,
+            "rate": 1.0
+          },
+          "overclaiming": {
+            "n": 8,
+            "correct": 8,
+            "rate": 1.0
+          },
+          "underclaiming": {
+            "n": 10,
+            "correct": 9,
+            "rate": 0.9
+          },
+          "appropriate_abstention": {
+            "n": 6,
+            "correct": 6,
+            "rate": 1.0
+          },
+          "next_action_usefulness": {
+            "n": 32,
+            "correct": 16,
+            "rate": 0.5
+          }
+        }
+      }
+    }
+  },
+  "honest_held_out_comparison": {
+    "held_out_conventional_overall": 0.8703703703703703,
+    "held_out_genome_skeptic_raw_overall": 0.8518518518518519,
+    "held_out_genome_skeptic_calibrated_overall": 0.8518518518518519,
+    "conventional_still_outperforms_genome_skeptic_on_held_out_aggregate": true,
+    "success_criterion": "biological discrimination and confidence calibration, not a higher aggregate score"
+  },
+  "when_does_genome_skeptic_add_information_beyond_ordinary_homology": [
+    {
+      "split": "development",
+      "case_id": "dev_03",
+      "target": "rpoB",
+      "conventional_claim": "target_gene_not_detected",
+      "conventional_status": "supported",
+      "conventional_confidence": 0.7,
+      "genome_skeptic_claim": "target_gene_detected",
+      "genome_skeptic_status": "weakened",
+      "genome_skeptic_confidence": 0.5937,
+      "genome_skeptic_architecture": "fusion",
+      "genome_skeptic_orthology_class": "multi_reference_protein_homolog,profile_hmm_family_match",
+      "no_falsification_claim": "target_gene_detected",
+      "who_was_correct": "genome_skeptic_correct",
+      "conventional_correct": false,
+      "genome_skeptic_correct": true,
+      "falsification_changed_polarity": false,
+      "falsification_gained_information": false,
+      "genome_skeptic_unnecessarily_cautious": false,
+      "conventional_overclaimed": true,
+      "family_aware_reasoning_changed_result": true,
+      "evidence_that_differed": [
+        "family_profile_hmm",
+        "architecture",
+        "confidence_model"
+      ]
+    },
+    {
+      "split": "controls",
+      "case_id": "ctrl_divergent",
+      "target": "rpoB",
+      "conventional_claim": "target_gene_not_detected",
+      "conventional_status": "supported",
+      "conventional_confidence": 0.7,
+      "genome_skeptic_claim": "target_gene_detected",
+      "genome_skeptic_status": "weakened",
+      "genome_skeptic_confidence": 0.55,
+      "genome_skeptic_architecture": "canonical_full_length",
+      "genome_skeptic_orthology_class": "exact_strong_homolog,multi_reference_protein_homolog,profile_hmm_family_match",
+      "no_falsification_claim": "target_gene_detected",
+      "who_was_correct": "genome_skeptic_correct",
+      "conventional_correct": false,
+      "genome_skeptic_correct": true,
+      "falsification_changed_polarity": false,
+      "falsification_gained_information": false,
+      "genome_skeptic_unnecessarily_cautious": false,
+      "conventional_overclaimed": true,
+      "family_aware_reasoning_changed_result": true,
+      "evidence_that_differed": [
+        "family_profile_hmm",
+        "confidence_model"
+      ]
+    }
+  ],
+  "conventional_still_ahead_on_held_out": [],
+  "both_incorrect": [
+    {
+      "split": "held_out",
+      "case_id": "hel_03",
+      "target": "rpoB",
+      "conventional_claim": "target_gene_not_detected",
+      "conventional_status": "supported",
+      "conventional_confidence": 0.7,
+      "genome_skeptic_claim": "target_gene_not_detected",
+      "genome_skeptic_status": "weakened",
+      "genome_skeptic_confidence": 0.4974,
+      "genome_skeptic_architecture": "close_paralogue",
+      "genome_skeptic_orthology_class": "close_paralogue",
+      "no_falsification_claim": "target_gene_not_detected",
+      "who_was_correct": "both_incorrect",
+      "conventional_correct": false,
+      "genome_skeptic_correct": false,
+      "falsification_changed_polarity": false,
+      "falsification_gained_information": false,
+      "genome_skeptic_unnecessarily_cautious": false,
+      "conventional_overclaimed": false,
+      "family_aware_reasoning_changed_result": false,
+      "evidence_that_differed": [
+        "architecture",
+        "confidence_model"
+      ]
+    }
+  ]
+}

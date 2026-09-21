@@ -1,0 +1,11 @@
+COHORT_C_PILOT5_PREDICTIONS_LOCKED
+timestamp_utc: 2026-09-19T16:37:16.227526+00:00
+cohort_C_pilot5_predictions_locked.jsonl sha256: aac2a69ec747474c33d1d710e4d9a9389f8f5809832a3fb2cf33e97572869648
+cohort_C_pilot5_manifest.json sha256: 9107b54b5afdba8dd77088a07206fcc566f0632e2d97b88d8ac891f3943ae7ee
+cohort_C_pilot5_execution_manifest.json sha256: 1eeac77d7247c5cf32b144762f9b64219cb814d1bb45b6a6e8174398b9e84a80
+external_labels_opened: false
+do_not_unblind
+do_not_score
+do_not_adjudicate
+do_not_modify_predictions
+do_not_modify_agent
