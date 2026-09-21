@@ -1,0 +1,25 @@
+==================================================
+V3_D12_EXTERNAL STAGE 1 READINESS
+==================================================
+V3 FREEZE VERIFIED: YES
+V3 FREEZE SHA256: 4941a5197ea1a78a358070009e7df963fcdc67e651ba293015903ed6f5b76237
+D12 MANIFEST SHA256: 54b477d3cf8197ffa73d7ffb2e94ffe4a993b861565a3266085d33ae68b0546f
+POSITION: 1
+ACCESSION: GCF_060416925.1
+TARGET: tetA_tetracycline_efflux
+PLANNER EXECUTED: YES
+CRITIC EXECUTED WHERE APPLICABLE: YES
+REGISTERED ACTIONS ONLY: YES
+DETERMINISTIC MEASUREMENTS ONLY: YES
+VALIDATOR CONSUMED CORRECT FINAL STATE: YES
+NO SILENT FALLBACK: YES
+EXECUTION PROVENANCE COMPLETE: YES
+CONVENTIONAL OK: YES
+V5 OK: YES
+AGENTIC OK: YES
+AGENT FAILURE: none
+INFRASTRUCTURE PASS: YES
+CURRENT_LACZ_LIMITATION: No frozen deterministic instrument currently distinguishes true LacZ orthology from relevant competing beta-galactosidase families when reference/GFF/orthology resources are absent.
+D20 TOUCHED: NO
+UNBLIND: NO
+==================================================
