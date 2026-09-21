@@ -1,0 +1,7 @@
+{
+  "path": "manuscript_benchmark/SOL56_FULL_ABLATION/SOL56_M60_MANIFEST.json",
+  "sha256": "2a9f86956ca12026b4ff39fc7bcaf297db992ba4db53421a9482683ae1885a39",
+  "hashed_utc": "2026-09-21T11:39:59.008499+00:00",
+  "POST_HOC_MODEL_ABLATION": true,
+  "MANUSCRIPT_PRIMARY_VALIDATION": false
+}

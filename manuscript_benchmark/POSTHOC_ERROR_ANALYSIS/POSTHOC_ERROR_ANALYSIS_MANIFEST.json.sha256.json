@@ -1,0 +1,11 @@
+{
+  "path": "manuscript_benchmark/POSTHOC_ERROR_ANALYSIS/POSTHOC_ERROR_ANALYSIS_MANIFEST.json",
+  "sha256": "64fb30b57d3eab09da4f7cc50d42e8469b522f4055e49eb2b0309c37ecc51509",
+  "hashed_utc": "2026-09-21T12:18:50.828494+00:00",
+  "truth_opened": true,
+  "d20_touched": false,
+  "accuracy_scored": false,
+  "scientific_code_modified": false,
+  "predictions_rerun": false,
+  "note": "Post-hoc forensic analysis of locked M60 errors. Truth was opened because the benchmark is unblinded. Predictions were not regenerated."
+}

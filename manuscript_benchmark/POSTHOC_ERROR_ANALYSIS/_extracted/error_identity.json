@@ -1,0 +1,104 @@
+{
+  "n_det_errors_evaluable": 8,
+  "n_shared": 8,
+  "shared": [
+    {
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_056269845.1",
+      "position": 13,
+      "target": "tetA_tetracycline_efflux",
+      "stratum": "routine",
+      "truth": "POSITIVE",
+      "gs_det_pred": "NEGATIVE",
+      "gs_agent_pred": "NEGATIVE",
+      "gs_exh_pred": "NEGATIVE",
+      "sol_pred": "NEGATIVE",
+      "same_wrong_across_all_gs_arms": true
+    },
+    {
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_060343445.1",
+      "position": 14,
+      "target": "tetA_tetracycline_efflux",
+      "stratum": "routine",
+      "truth": "POSITIVE",
+      "gs_det_pred": "NEGATIVE",
+      "gs_agent_pred": "NEGATIVE",
+      "gs_exh_pred": "NEGATIVE",
+      "sol_pred": "NEGATIVE",
+      "same_wrong_across_all_gs_arms": true
+    },
+    {
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_054552735.1",
+      "position": 19,
+      "target": "tetA_tetracycline_efflux",
+      "stratum": "routine",
+      "truth": "POSITIVE",
+      "gs_det_pred": "NEGATIVE",
+      "gs_agent_pred": "NEGATIVE",
+      "gs_exh_pred": "NEGATIVE",
+      "sol_pred": "NEGATIVE",
+      "same_wrong_across_all_gs_arms": true
+    },
+    {
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_058409085.1",
+      "position": 36,
+      "target": "tetA_tetracycline_efflux",
+      "stratum": "routine",
+      "truth": "POSITIVE",
+      "gs_det_pred": "NEGATIVE",
+      "gs_agent_pred": "NEGATIVE",
+      "gs_exh_pred": "NEGATIVE",
+      "sol_pred": "NEGATIVE",
+      "same_wrong_across_all_gs_arms": true
+    },
+    {
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_059878295.1",
+      "position": 37,
+      "target": "tetA_tetracycline_efflux",
+      "stratum": "routine",
+      "truth": "POSITIVE",
+      "gs_det_pred": "NEGATIVE",
+      "gs_agent_pred": "NEGATIVE",
+      "gs_exh_pred": "NEGATIVE",
+      "sol_pred": "NEGATIVE",
+      "same_wrong_across_all_gs_arms": true
+    },
+    {
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_056613625.1",
+      "position": 41,
+      "target": "tetA_tetracycline_efflux",
+      "stratum": "challenge",
+      "truth": "POSITIVE",
+      "gs_det_pred": "NEGATIVE",
+      "gs_agent_pred": "NEGATIVE",
+      "gs_exh_pred": "NEGATIVE",
+      "sol_pred": "NEGATIVE",
+      "same_wrong_across_all_gs_arms": true
+    },
+    {
+      "case_id": "M60_tetA_tetracycline_efflux_GCF_056539405.1",
+      "position": 44,
+      "target": "tetA_tetracycline_efflux",
+      "stratum": "challenge",
+      "truth": "POSITIVE",
+      "gs_det_pred": "NEGATIVE",
+      "gs_agent_pred": "NEGATIVE",
+      "gs_exh_pred": "NEGATIVE",
+      "sol_pred": "NEGATIVE",
+      "same_wrong_across_all_gs_arms": true
+    },
+    {
+      "case_id": "M60_rpoB_RNAP_beta_GCF_055389225.1",
+      "position": 48,
+      "target": "rpoB_RNAP_beta",
+      "stratum": "routine",
+      "truth": "POSITIVE",
+      "gs_det_pred": "NEGATIVE",
+      "gs_agent_pred": "NEGATIVE",
+      "gs_exh_pred": "NEGATIVE",
+      "sol_pred": "NEGATIVE",
+      "same_wrong_across_all_gs_arms": true
+    }
+  ],
+  "discrepancy": [],
+  "stop": false
+}

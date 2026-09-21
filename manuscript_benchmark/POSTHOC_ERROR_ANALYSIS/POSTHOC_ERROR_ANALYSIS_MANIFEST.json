@@ -1,0 +1,54 @@
+{
+  "kind": "POSTHOC_ERROR_ANALYSIS_MANIFEST",
+  "created_utc": "2026-09-21T12:18:50.807284+00:00",
+  "phase": "posthoc_mechanistic_error_analysis",
+  "POST_HOC_ONLY": true,
+  "SCIENTIFIC_CODE_MODIFIED": "NO",
+  "THRESHOLDS_MODIFIED": "NO",
+  "PREDICTIONS_RERUN": "NO",
+  "D20_TOUCHED": "NO",
+  "CASES_REPLACED": "NO",
+  "V42_CREATED": "NO",
+  "TRUTH_UNCERTAIN_REINTERPRETED": "NO",
+  "n_shared_errors": 8,
+  "teta_errors": 7,
+  "rpob_errors": 1,
+  "primary_root_causes": {
+    "INSTRUMENTATION_FAILURE": 0,
+    "ACTION_REGISTRY_OR_ELIGIBILITY_LIMIT": 0,
+    "EVIDENCE_REPRESENTATION_FAILURE": 0,
+    "VALIDATOR_DECISION_LIMIT": 8,
+    "BIOLOGICAL_NONDISCRIMINATION": 0,
+    "ASSEMBLY_INFORMATION_LIMIT": 0,
+    "OTHER": 0
+  },
+  "correct_evidence_recovered_by_any_frozen_action": "8 / 8",
+  "correct_evidence_reached_targetmeasurements": "8 / 8",
+  "errors_fixable_by_different_llm_action_alone": "0 / 8",
+  "errors_requiring_new_or_better_scientific_evidence": "0 / 8",
+  "errors_requiring_validator_or_representation_change": "8 / 8",
+  "qwen_sol_different_investigation_path_among_errors": "8 / 8",
+  "different_final_endpoint": "0 / 8",
+  "source_sha256": {
+    "M60_EXTERNAL_TRUTH_FINAL_LOCKED.json": "a64dea4fd429ede5ea543404fba71e49280495efbbf6d68dc6de324eec35a4a9",
+    "SOL56_M60_MANIFEST.json_file": "2a9f86956ca12026b4ff39fc7bcaf297db992ba4db53421a9482683ae1885a39"
+  },
+  "source_identity_check": {
+    "det_evaluable_errors": 8,
+    "same_eight_wrong_for_qwen_exhaustive_sol": true,
+    "discrepancy": false
+  },
+  "file_sha256": {
+    "POSTHOC_ERROR_CASES.csv": "890cc293750d3d96df2d057787e047389b9dc288b49a81ef525f3e7b7d86b222",
+    "POSTHOC_ERROR_DETAILED.md": "41528399c3bb64f7068342ab322c819580d77bc39734150079b653de1de7b64d",
+    "POSTHOC_ROOT_CAUSE_SUMMARY.csv": "1f4f132d16a9b0ea24ff6086383e2a843809b9d6bbba5d275e93f8265368ea5a",
+    "POSTHOC_MODEL_INVARIANCE.md": "849a38d972ee2dcd51915c34a10c97ff57a13b469217932971caecfa879004bf",
+    "POSTHOC_MANUSCRIPT_INTERPRETATION.md": "27589eed5189104d6681b8c28ce23e4d8134832b1c8ab6900af3f3841a3f3dc5"
+  },
+  "supporting_extracts_not_prediction_locks": [
+    "_extracted/verification.json",
+    "_extracted/error_identity.json",
+    "_extracted/compact_forensics.json",
+    "_extracted/forensic_print.txt"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "SOL56_M60_MANIFEST",
+  "ablation_config": "GS_AGENTIC_V4_1_SOL56_HIGH_POSTHOC",
+  "POST_HOC_MODEL_ABLATION": true,
+  "MANUSCRIPT_PRIMARY_VALIDATION": false,
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "created_utc": "2026-09-21T11:39:58.977832+00:00",
+  "n_cases": 60,
+  "reused_positions": [
+    1,
+    2,
+    5,
+    6,
+    8
+  ],
+  "small_preflight_manifest_sha256": "7b8ef9e24a5a6a395b6a685ef035f2671fff84bc75b7c3d9ab88553ef0bebc27",
+  "truth_sha256": "a64dea4fd429ede5ea543404fba71e49280495efbbf6d68dc6de324eec35a4a9",
+  "prediction_lock_sha256": "08e8a200b0186f5e71b69bf5b274b21f47416303d9ea6f00dafd8f3fc3ee6e21",
+  "scientific_invariant_hashes": {
+    "target_measurements_schema_hash": "ef902b8b968fb5b78f183d2ffe8b1681f98e9799645fb0e598225bbdd6f62487",
+    "biological_thresholds_hash": "c4ef9a307df7e5493eddfa308ce1d497636ddadb2e4b4604061ea68979d97df4",
+    "action_registry_hash": "185390460dd990516b89eab036b5c5da11e2d28ef3371c5e4917a4e2fd6ac899",
+    "endpoint_contracts_hash": "00d5d9618414e16ca69a1d9ec1ff3178c6a980c76e5d8dab455e78064c98aa44",
+    "planner_prompt_hash": "fcffbc11cf6afbe84731c15854d37e85d929b966318acc45567f5332819d0f63",
+    "critic_prompt_hash": "8b04802de10aea03d24b26633a17d68415db74db3ba82034b6b8d1cf75f2b60e"
+  },
+  "PROMPTS_MODIFIED": "NO",
+  "SCIENTIFIC_CORE_MODIFIED": "NO",
+  "VALIDATOR_MODIFIED": "NO",
+  "files": {
+    "SOL56_M60_CASE_LEVEL.csv": "7d4854d5cef5a6b762d5a71c8e9074bfe11d0f51293731ff55b8a6bcd82bafcf",
+    "SOL56_M60_MODEL_BEHAVIOUR.csv": "73d20fabbdd88d958174391362aeb4b99bc11949c1c3d2adb06357f91f3fd58c",
+    "SOL56_M60_SCORING.csv": "0b1ab72977070195fe26b977be1712ee8219d145df5981f7b0fe555a18a6181f",
+    "SOL56_M60_CALL_LOG.jsonl": "761d501c070bf5a643e5f6d50ea34bf4cd01748c6eb11d9dc4ef524325900e56",
+    "SOL56_M60_SUMMARY.json": "ac747e8dfb36aac4b0aabea14c6ad9584aa4840c040085447ae52444122b3cbe",
+    "SOL56_M60_RESULTS.md": "27b183d8c264256fb894d383ad6cdec2d42c393dfb6901eab729c579ebfe8d70",
+    "SOL56_M60_PREDICTION_LOCK.json": "08e8a200b0186f5e71b69bf5b274b21f47416303d9ea6f00dafd8f3fc3ee6e21"
+  },
+  "manifest_sha256": "6dd6a1859dd5a5be13e573369f289f4d489551a0d52c5af9cd0550eb90d967b5"
+}

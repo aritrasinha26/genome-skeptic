@@ -1,0 +1,199 @@
+{
+  "kind": "SOL56_M60_SUMMARY",
+  "ablation_config": "GS_AGENTIC_V4_1_SOL56_HIGH_POSTHOC",
+  "POST_HOC_MODEL_ABLATION": true,
+  "MANUSCRIPT_PRIMARY_VALIDATION": false,
+  "PROMPTS_MODIFIED": "NO",
+  "SCIENTIFIC_CORE_MODIFIED": "NO",
+  "VALIDATOR_MODIFIED": "NO",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "n_cases": 60,
+  "truth_evaluable": 41,
+  "truth_uncertain": 19,
+  "truth_sha256": "a64dea4fd429ede5ea543404fba71e49280495efbbf6d68dc6de324eec35a4a9",
+  "small_preflight_manifest_sha256": "7b8ef9e24a5a6a395b6a685ef035f2671fff84bc75b7c3d9ab88553ef0bebc27",
+  "prediction_lock_sha256": "08e8a200b0186f5e71b69bf5b274b21f47416303d9ea6f00dafd8f3fc3ee6e21",
+  "scientific_invariant_hashes": {
+    "target_measurements_schema_hash": "ef902b8b968fb5b78f183d2ffe8b1681f98e9799645fb0e598225bbdd6f62487",
+    "biological_thresholds_hash": "c4ef9a307df7e5493eddfa308ce1d497636ddadb2e4b4604061ea68979d97df4",
+    "action_registry_hash": "185390460dd990516b89eab036b5c5da11e2d28ef3371c5e4917a4e2fd6ac899",
+    "endpoint_contracts_hash": "00d5d9618414e16ca69a1d9ec1ff3178c6a980c76e5d8dab455e78064c98aa44",
+    "planner_prompt_hash": "fcffbc11cf6afbe84731c15854d37e85d929b966318acc45567f5332819d0f63",
+    "critic_prompt_hash": "8b04802de10aea03d24b26633a17d68415db74db3ba82034b6b8d1cf75f2b60e"
+  },
+  "scientific_core_hash_manuscript": "22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0",
+  "sol": {
+    "system": "GS_AGENTIC_V4_1_SOL56_HIGH_POSTHOC",
+    "correct": 33,
+    "evaluable_n": 41,
+    "accuracy": 0.8048780487804879,
+    "wilson_ci_low": 0.6598641481293658,
+    "wilson_ci_high": 0.8976556261484198,
+    "wilson_ci": "0.660\u20130.898",
+    "correct_over_n": "33 / 41",
+    "pred_key": "sol_pred"
+  },
+  "qwen_agentic": {
+    "system": "GS_AGENTIC_V4_1_QWEN",
+    "correct": 33,
+    "evaluable_n": 41,
+    "accuracy": 0.8048780487804879,
+    "wilson_ci_low": 0.6598641481293658,
+    "wilson_ci_high": 0.8976556261484198,
+    "wilson_ci": "0.660\u20130.898",
+    "correct_over_n": "33 / 41",
+    "pred_key": "qwen_pred"
+  },
+  "gs_deterministic": {
+    "system": "GS_DETERMINISTIC_V4_1",
+    "correct": 33,
+    "evaluable_n": 41,
+    "accuracy": 0.8048780487804879,
+    "wilson_ci_low": 0.6598641481293658,
+    "wilson_ci_high": 0.8976556261484198,
+    "wilson_ci": "0.660\u20130.898",
+    "correct_over_n": "33 / 41",
+    "pred_key": "gs_det_pred"
+  },
+  "gs_exhaustive": {
+    "system": "GS_EXHAUSTIVE_V4_1",
+    "correct": 33,
+    "evaluable_n": 41,
+    "accuracy": 0.8048780487804879,
+    "wilson_ci_low": 0.6598641481293658,
+    "wilson_ci_high": 0.8976556261484198,
+    "wilson_ci": "0.660\u20130.898",
+    "correct_over_n": "33 / 41",
+    "pred_key": "gs_exh_pred"
+  },
+  "sol_vs_qwen": {
+    "corrections": 0,
+    "degradations": 0,
+    "net": 0,
+    "accuracy_difference": 0.0,
+    "paired_bootstrap_95_ci": [
+      0.0,
+      0.0
+    ],
+    "paired_bootstrap_95_ci_text": "0.000\u20130.000",
+    "mcnemar_p": null,
+    "correction_case_ids": [],
+    "degradation_case_ids": []
+  },
+  "sol_vs_det": {
+    "corrections": 0,
+    "degradations": 0,
+    "net": 0,
+    "accuracy_difference": 0.0,
+    "paired_bootstrap_95_ci": [
+      0.0,
+      0.0
+    ],
+    "paired_bootstrap_95_ci_text": "0.000\u20130.000",
+    "mcnemar_p": null,
+    "correction_case_ids": [],
+    "degradation_case_ids": []
+  },
+  "sol_vs_exhaustive": {
+    "corrections": 0,
+    "degradations": 0,
+    "net": 0,
+    "accuracy_difference": 0.0,
+    "paired_bootstrap_95_ci": [
+      0.0,
+      0.0
+    ],
+    "paired_bootstrap_95_ci_text": "0.000\u20130.000",
+    "mcnemar_p": null,
+    "correction_case_ids": [],
+    "degradation_case_ids": []
+  },
+  "subsets": {
+    "tetA_sol": {
+      "system": "sol",
+      "correct": 19,
+      "evaluable_n": 26,
+      "accuracy": 0.7307692307692307,
+      "wilson_ci_low": 0.5391695962082381,
+      "wilson_ci_high": 0.8629555167798162,
+      "wilson_ci": "0.539\u20130.863",
+      "correct_over_n": "19 / 26",
+      "pred_key": "sol_pred"
+    },
+    "rpoB_sol": {
+      "system": "sol",
+      "correct": 14,
+      "evaluable_n": 15,
+      "accuracy": 0.9333333333333333,
+      "wilson_ci_low": 0.7018347012621998,
+      "wilson_ci_high": 0.9881331045067315,
+      "wilson_ci": "0.702\u20130.988",
+      "correct_over_n": "14 / 15",
+      "pred_key": "sol_pred"
+    },
+    "routine_sol": {
+      "system": "sol",
+      "correct": 15,
+      "evaluable_n": 21,
+      "accuracy": 0.7142857142857143,
+      "wilson_ci_low": 0.5004361928391441,
+      "wilson_ci_high": 0.8618613704787788,
+      "wilson_ci": "0.500\u20130.862",
+      "correct_over_n": "15 / 21",
+      "pred_key": "sol_pred"
+    },
+    "challenge_sol": {
+      "system": "sol",
+      "correct": 18,
+      "evaluable_n": 20,
+      "accuracy": 0.9,
+      "wilson_ci_low": 0.6989663547715128,
+      "wilson_ci_high": 0.9721335187862319,
+      "wilson_ci": "0.699\u20130.972",
+      "correct_over_n": "18 / 20",
+      "pred_key": "sol_pred"
+    }
+  },
+  "model_behaviour": {
+    "planner_action_changed_vs_qwen": 54,
+    "critic_behaviour_changed_vs_qwen": 60,
+    "final_endpoint_changed_vs_qwen": 0,
+    "follow_up_action_count_changed": 59,
+    "endpoint_changed_vs_gs_deterministic": 0,
+    "endpoint_different_from_gs_exhaustive": 0,
+    "qwen_follow_up_actions_mean": 1.016667,
+    "qwen_follow_up_actions_median": 1.0,
+    "qwen_follow_up_actions_total": 61,
+    "sol_follow_up_actions_mean": 2.0,
+    "sol_follow_up_actions_median": 2.0,
+    "sol_follow_up_actions_total": 120,
+    "exhaustive_follow_up_actions_mean": 3.15,
+    "exhaustive_follow_up_actions_median": 3.0,
+    "exhaustive_follow_up_actions_total": 189,
+    "qwen_critic_challenge_rate": 0.016666666666666666,
+    "sol_critic_challenge_rate": 1.0,
+    "qwen_critic_challenges": 1,
+    "sol_critic_challenges": 60,
+    "extra_sol_actions_DECISION_CHANGE": 0,
+    "extra_sol_actions_NO_DECISION_CHANGE": 59,
+    "endpoint_change_cases": []
+  },
+  "cost_latency": {
+    "total_input_tokens": 178526,
+    "total_output_tokens": 21855,
+    "total_reasoning_tokens": 11504,
+    "total_api_cost_usd": 1.151204,
+    "median_planner_latency": 5.209,
+    "median_critic_latency": 5.577,
+    "median_sol_case_runtime": 32.559,
+    "median_qwen_case_runtime": 206.6875,
+    "median_exhaustive_case_runtime": 19.4455,
+    "sol_deterministic_analysis_count": 120,
+    "qwen_deterministic_analysis_count": 61,
+    "exhaustive_deterministic_analysis_count": 189
+  },
+  "parse_failures": 0,
+  "adapter_retries": 0,
+  "created_utc": "2026-09-21T11:39:58.912676+00:00"
+}

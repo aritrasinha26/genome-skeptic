@@ -1,0 +1,20 @@
+category,n_errors,positions,notes
+INSTRUMENTATION_FAILURE,0,,Correct biological candidates were recovered by the frozen initial scientific core in all eight errors.
+ACTION_REGISTRY_OR_ELIGIBILITY_LIMIT,0,,"Exhaustive ran every eligible follow-up; rpoB competitive_family is ineligible because rpoB declares no competing families, but the rpoB veto was domain_only architecture, not missing competitive_family."
+EVIDENCE_REPRESENTATION_FAILURE,0,48_contributing_only,"rpoB stores reconstruction.hmm_coverage=0.4038 and best_hmm.model_coverage=0.8845 on the same ORF. Primary cause is still the domain_only validator short-circuit, so this is recorded as contributing representation mismatch rather than a separate primary count."
+VALIDATOR_DECISION_LIMIT,8,"13,14,19,36,37,41,44,48",All eight: family-state semantics produced NEGATIVE after informative family measurements had already entered TargetMeasurements.
+BIOLOGICAL_NONDISCRIMINATION,0,,tetA competitive scores separated target from MFS/RND by large margins; rpoB had no packaged competitor and HMM/member support favoured rpoB.
+ASSEMBLY_INFORMATION_LIMIT,0,,Independent truth recovered full-length or near-full-length candidates from the same locked assemblies.
+OTHER,0,,
+correct_evidence_recovered_by_any_frozen_action,8,"13,14,19,36,37,41,44,48",Initial family core plus discriminate_family / HMM.
+correct_evidence_reached_targetmeasurements,8,"13,14,19,36,37,41,44,48","Locus coordinates, HMM scores, member hits, and competitive blobs are present in frozen family_evidence.json."
+validator_received_sufficient_evidence_but_wrong_call,8,"13,14,19,36,37,41,44,48",tetA: target_family_supported plus HMM/member support. rpoB: exact_strong_homolog plus HMM 1610.5.
+theoretically_fixable_by_better_llm_action_alone,0,,Exhaustive and Sol acquired the relevant instruments and still matched the wrong endpoint.
+requiring_new_deterministic_scientific_capability,0,,No missing registered instrument was required to recover the truth locus or family scores.
+requiring_validator_or_representation_change,8,"13,14,19,36,37,41,44,48",tetA refine_weak/ambiguous_family veto; rpoB domain_only short-circuit.
+qwen_sol_different_investigation_path,8,"13,14,19,36,37,41,44,48",All eight: planner_action_changed_vs_qwen=True and critic_behaviour_changed_vs_qwen=True.
+different_final_endpoint,0,,Expected 0; observed 0.
+teta_mechanism_A_never_distinguished,0,,
+teta_mechanism_B_distinguished_but_validator_ignored,7,"13,14,19,36,37,41,44",All tetA errors.
+teta_mechanism_C_other,0,,
+root_cause_subtype_FAMILY_STATE_SEMANTICS,8,"13,14,19,36,37,41,44,48",
