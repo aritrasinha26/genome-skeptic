@@ -3,7 +3,7 @@
   "kind": "v5_scientific_freeze",
   "immutable_after_tag": true,
   "created_utc": "2026-09-21T20:48:52.149867+00:00",
-  "git_commit": "6559fed9ac8431a9f13d22dba15b1e31b9a55994",
+  "git_commit": "ca621b1132a22e890fc82c2704963db4f18ab8e2",
   "git_branch": "claude-pre-manuscript-audit",
   "git_tag": "GENOME_SKEPTIC_V5_VALIDATOR_REPAIR",
   "further_m60_tuning_after_repair": false,
@@ -178,5 +178,6 @@
     "platform": "Windows-11-10.0.26200-SP0"
   },
   "test_report_present": true,
-  "freeze_manifest_sha256": "36a7468e63bd7360f48bbfee8f0a60c4380c6df768d90e2fd8b72a8eded3e868"
+  "scientific_freeze_commit": "ca621b1132a22e890fc82c2704963db4f18ab8e2",
+  "freeze_manifest_sha256": "2bb8a62e5ea159621f028074cc55ae42d67e43930fe24cb2e77aa56f94cbe6ad"
 }
