@@ -1,0 +1,738 @@
+{
+  "cases": [
+    {
+      "accession": "GCF_047713185.1",
+      "assembly_sha256": "045a917d3d94117139e2465a467ba468a8c65ce0a9310efe5fed470d00445584",
+      "best_orf_metrics": {
+        "aa_length": 401,
+        "candidate_faa_sha256": "5978851c514d83bfc3684d6d8a382308dcd5b7d1246e3a0587b519eed7d44c68",
+        "competitor_hmm": {
+          "family": null,
+          "full_evalue": null,
+          "full_score": null,
+          "model_coverage": 0.0
+        },
+        "competitor_seq": null,
+        "coordinates": {
+          "contig": "NZ_JBLFBS010000070.1",
+          "end": 2458,
+          "start": 456,
+          "strand": "-"
+        },
+        "orf_index": 6,
+        "route1_reason": "target_family_supported",
+        "route1_value": "POSITIVE",
+        "route2_reason": "hmm_prefers_target cov=0.991 score=765.6",
+        "route2_value": "POSITIVE",
+        "target_hmm": {
+          "full_evalue": 7.5e-235,
+          "full_score": 765.6,
+          "model_coverage": 0.990521327014218,
+          "n_domains": 1,
+          "ok": true,
+          "query_name": "members.aln"
+        },
+        "target_seq": {
+          "accession": "P02980",
+          "bitscore": 769.0,
+          "coverage": 1.0,
+          "evalue": 5.02e-288,
+          "identity": 0.998,
+          "identity_product": 0.998,
+          "length_ratio": 1.0,
+          "qlen": 401,
+          "slen": 401
+        }
+      },
+      "case_id": "RS01",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_POS_GCF_047713185.1_GCF_047713185.1",
+      "genus": "Escherichia",
+      "reason": "route1=POSITIVE (target_family_supported); route2=POSITIVE (hmm_prefers_target cov=0.991 score=765.6)",
+      "route1": "POSITIVE",
+      "route1_reason": "target_family_supported",
+      "route2": "POSITIVE",
+      "route2_reason": "hmm_prefers_target cov=0.991 score=765.6",
+      "species": "Escherichia coli",
+      "truth": "POSITIVE",
+      "truth_status": "POSITIVE"
+    },
+    {
+      "accession": "GCF_054185995.1",
+      "assembly_sha256": "84a322981afa43434aaa0af460fa6281af0205d55098afa7e20d3739bc507347",
+      "best_orf_metrics": {
+        "aa_length": 424,
+        "candidate_faa_sha256": "d38e76dbe9dada9a18e5fa0a10dbaa72088b053315a90bf1eee38bdd445e42fb",
+        "competitor_hmm": {
+          "family": null,
+          "full_evalue": null,
+          "full_score": null,
+          "model_coverage": 0.0
+        },
+        "competitor_seq": null,
+        "coordinates": {
+          "contig": "NZ_JBQHOH010000017.1",
+          "end": 11400,
+          "start": 9404,
+          "strand": "-"
+        },
+        "orf_index": 6,
+        "route1_reason": "target_family_supported",
+        "route1_value": "POSITIVE",
+        "route2_reason": "hmm_prefers_target cov=0.998 score=752.3",
+        "route2_value": "POSITIVE",
+        "target_hmm": {
+          "full_evalue": 8.1e-231,
+          "full_score": 752.3,
+          "model_coverage": 0.9976303317535545,
+          "n_domains": 1,
+          "ok": true,
+          "query_name": "members.aln"
+        },
+        "target_seq": {
+          "accession": "P02982",
+          "bitscore": 770.0,
+          "coverage": 0.941,
+          "evalue": 4.09e-288,
+          "identity": 0.997,
+          "identity_product": 0.9381769999999999,
+          "length_ratio": 1.06265664160401,
+          "qlen": 424,
+          "slen": 399
+        }
+      },
+      "case_id": "RS02",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_POS_GCF_054185995.1_GCF_054185995.1",
+      "genus": "Citrobacter",
+      "reason": "route1=POSITIVE (target_family_supported); route2=POSITIVE (hmm_prefers_target cov=0.998 score=752.3)",
+      "route1": "POSITIVE",
+      "route1_reason": "target_family_supported",
+      "route2": "POSITIVE",
+      "route2_reason": "hmm_prefers_target cov=0.998 score=752.3",
+      "species": "Citrobacter braakii",
+      "truth": "POSITIVE",
+      "truth_status": "POSITIVE"
+    },
+    {
+      "accession": "GCF_055768945.1",
+      "assembly_sha256": "666e1f92496dc724b1595c5b217675ca4c053fa5b4a475740b3039eeb7cedc59",
+      "best_orf_metrics": {
+        "aa_length": 401,
+        "candidate_faa_sha256": "2394af122927afa7528596b3aaa707143ecf479bcaf57bbe9713fe20cfcda5a9",
+        "competitor_hmm": {
+          "family": null,
+          "full_evalue": null,
+          "full_score": null,
+          "model_coverage": 0.0
+        },
+        "competitor_seq": null,
+        "coordinates": {
+          "contig": "NZ_JBTVYY010000029.1",
+          "end": 1733,
+          "start": 1,
+          "strand": "-"
+        },
+        "orf_index": 0,
+        "route1_reason": "target_family_supported",
+        "route1_value": "POSITIVE",
+        "route2_reason": "hmm_prefers_target cov=0.991 score=767.1",
+        "route2_value": "POSITIVE",
+        "target_hmm": {
+          "full_evalue": 2.7e-235,
+          "full_score": 767.1,
+          "model_coverage": 0.990521327014218,
+          "n_domains": 1,
+          "ok": true,
+          "query_name": "members.aln"
+        },
+        "target_seq": {
+          "accession": "P02980",
+          "bitscore": 770.0,
+          "coverage": 1.0,
+          "evalue": 1.23e-288,
+          "identity": 1.0,
+          "identity_product": 1.0,
+          "length_ratio": 1.0,
+          "qlen": 401,
+          "slen": 401
+        }
+      },
+      "case_id": "RS03",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_POS_GCF_055768945.1_GCF_055768945.1",
+      "genus": "Actinobacillus",
+      "reason": "route1=POSITIVE (target_family_supported); route2=POSITIVE (hmm_prefers_target cov=0.991 score=767.1)",
+      "route1": "POSITIVE",
+      "route1_reason": "target_family_supported",
+      "route2": "POSITIVE",
+      "route2_reason": "hmm_prefers_target cov=0.991 score=767.1",
+      "species": "Actinobacillus pleuropneumoniae",
+      "truth": "POSITIVE",
+      "truth_status": "POSITIVE"
+    },
+    {
+      "accession": "GCF_058245975.1",
+      "assembly_sha256": "0ff455c9dda7642c535448db145660b02466fa5f9a14ad1c2918edefdfd927c6",
+      "best_orf_metrics": {
+        "aa_length": 391,
+        "candidate_faa_sha256": "06d0193dfa1e69a77bbf3ab6beedbeb4a3ad96b55d3bcfd1b9cd4643f54bb65e",
+        "competitor_hmm": {
+          "family": null,
+          "full_evalue": null,
+          "full_score": null,
+          "model_coverage": 0.0
+        },
+        "competitor_seq": null,
+        "coordinates": {
+          "contig": "NZ_JBSBEI010000002.1",
+          "end": 43043,
+          "start": 41070,
+          "strand": "+"
+        },
+        "orf_index": 3,
+        "route1_reason": "target_family_supported",
+        "route1_value": "POSITIVE",
+        "route2_reason": "hmm_prefers_target cov=0.953 score=638.4",
+        "route2_value": "POSITIVE",
+        "target_hmm": {
+          "full_evalue": 2.9e-196,
+          "full_score": 638.4,
+          "model_coverage": 0.95260663507109,
+          "n_domains": 1,
+          "ok": true,
+          "query_name": "members.aln"
+        },
+        "target_seq": {
+          "accession": "P02980",
+          "bitscore": 619.0,
+          "coverage": 1.0,
+          "evalue": 4.29e-229,
+          "identity": 0.8290000000000001,
+          "identity_product": 0.8290000000000001,
+          "length_ratio": 0.9750623441396509,
+          "qlen": 391,
+          "slen": 401
+        }
+      },
+      "case_id": "RS04",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_058245975.1_GCF_058245975.1",
+      "genus": "Providencia",
+      "reason": "route1=POSITIVE (target_family_supported); route2=POSITIVE (hmm_prefers_target cov=0.953 score=638.4)",
+      "route1": "POSITIVE",
+      "route1_reason": "target_family_supported",
+      "route2": "POSITIVE",
+      "route2_reason": "hmm_prefers_target cov=0.953 score=638.4",
+      "species": "Providencia manganoxydans",
+      "truth": "POSITIVE",
+      "truth_status": "POSITIVE"
+    },
+    {
+      "accession": "GCF_047914675.1",
+      "assembly_sha256": "b68c8de2815b2c6dccd4f0c24eae5de0cd7e72c1ebf190c3a188c75a0005fb6c",
+      "best_orf_metrics": {
+        "aa_length": 399,
+        "candidate_faa_sha256": "57c43f7e06b59484925ea5af801ae13d20e1a19a5cf8f8133a2fb6ded24f4720",
+        "competitor_hmm": {
+          "family": null,
+          "full_evalue": null,
+          "full_score": null,
+          "model_coverage": 0.0
+        },
+        "competitor_seq": null,
+        "coordinates": {
+          "contig": "NZ_JBLRFQ010000083.1",
+          "end": 2577,
+          "start": 580,
+          "strand": "+"
+        },
+        "orf_index": 6,
+        "route1_reason": "target_family_supported",
+        "route1_value": "POSITIVE",
+        "route2_reason": "hmm_prefers_target cov=0.998 score=752.6",
+        "route2_value": "POSITIVE",
+        "target_hmm": {
+          "full_evalue": 6.5e-231,
+          "full_score": 752.6,
+          "model_coverage": 0.9976303317535545,
+          "n_domains": 1,
+          "ok": true,
+          "query_name": "members.aln"
+        },
+        "target_seq": {
+          "accession": "P02982",
+          "bitscore": 769.0,
+          "coverage": 0.997,
+          "evalue": 2.13e-288,
+          "identity": 1.0,
+          "identity_product": 0.997,
+          "length_ratio": 1.0,
+          "qlen": 399,
+          "slen": 399
+        }
+      },
+      "case_id": "RS05",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_POS_GCF_047914675.1_GCF_047914675.1",
+      "genus": "Klebsiella",
+      "reason": "route1=POSITIVE (target_family_supported); route2=POSITIVE (hmm_prefers_target cov=0.998 score=752.6)",
+      "route1": "POSITIVE",
+      "route1_reason": "target_family_supported",
+      "route2": "POSITIVE",
+      "route2_reason": "hmm_prefers_target cov=0.998 score=752.6",
+      "species": "Klebsiella pneumoniae",
+      "truth": "POSITIVE",
+      "truth_status": "POSITIVE"
+    },
+    {
+      "accession": "GCF_053605175.1",
+      "assembly_sha256": "057d09806bb0ee625d83516eb062d88aad80aa6c0ea2edd94d1e2aed14b00030",
+      "best_orf_metrics": {
+        "aa_length": 368,
+        "candidate_faa_sha256": "714d3d6ac17a595827cde67e37817b6c829b1e6ddc621c2f6ec3dbaa46d8b429",
+        "competitor_hmm": {
+          "family": null,
+          "full_evalue": null,
+          "full_score": null,
+          "model_coverage": 0.0
+        },
+        "competitor_seq": null,
+        "coordinates": {
+          "contig": "NZ_JBSGIS010000020.1",
+          "end": 106002,
+          "start": 104098,
+          "strand": "+"
+        },
+        "orf_index": 5,
+        "route1_reason": "target_family_supported",
+        "route1_value": "POSITIVE",
+        "route2_reason": "hmm_prefers_target cov=0.855 score=169.5",
+        "route2_value": "POSITIVE",
+        "target_hmm": {
+          "full_evalue": 6.3e-54,
+          "full_score": 169.5,
+          "model_coverage": 0.8554502369668247,
+          "n_domains": 1,
+          "ok": true,
+          "query_name": "members.aln"
+        },
+        "target_seq": {
+          "accession": "P02982",
+          "bitscore": 163.0,
+          "coverage": 0.997,
+          "evalue": 9.44e-51,
+          "identity": 0.33,
+          "identity_product": 0.32901,
+          "length_ratio": 0.9223057644110275,
+          "qlen": 368,
+          "slen": 399
+        }
+      },
+      "case_id": "RS06",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_053605175.1_GCF_053605175.1",
+      "genus": "Streptomyces",
+      "reason": "route1=POSITIVE (target_family_supported); route2=POSITIVE (hmm_prefers_target cov=0.855 score=169.5)",
+      "route1": "POSITIVE",
+      "route1_reason": "target_family_supported",
+      "route2": "POSITIVE",
+      "route2_reason": "hmm_prefers_target cov=0.855 score=169.5",
+      "species": "Streptomyces sp.",
+      "truth": "POSITIVE",
+      "truth_status": "POSITIVE"
+    },
+    {
+      "accession": "GCF_050030575.1",
+      "assembly_sha256": "5734bc3899daa8d188c7ac9283990baff749a92be41ea6c447d9d01f085b6476",
+      "best_orf_metrics": {
+        "aa_length": 399,
+        "candidate_faa_sha256": "d934c0132a2b2993c7e3c53e2d2f5650c77dfcceab760325f80235dfc3af8af2",
+        "competitor_hmm": {
+          "family": null,
+          "full_evalue": null,
+          "full_score": null,
+          "model_coverage": 0.0
+        },
+        "competitor_seq": null,
+        "coordinates": {
+          "contig": "NZ_JBLGUO010000001.1",
+          "end": 1412595,
+          "start": 1410598,
+          "strand": "+"
+        },
+        "orf_index": 9,
+        "route1_reason": "target_family_supported",
+        "route1_value": "POSITIVE",
+        "route2_reason": "hmm_prefers_target cov=0.998 score=722.3",
+        "route2_value": "POSITIVE",
+        "target_hmm": {
+          "full_evalue": 1e-221,
+          "full_score": 722.3,
+          "model_coverage": 0.9976303317535545,
+          "n_domains": 1,
+          "ok": true,
+          "query_name": "members.aln"
+        },
+        "target_seq": {
+          "accession": "P02982",
+          "bitscore": 736.0,
+          "coverage": 0.997,
+          "evalue": 5.48e-275,
+          "identity": 0.945,
+          "identity_product": 0.9421649999999999,
+          "length_ratio": 1.0,
+          "qlen": 399,
+          "slen": 399
+        }
+      },
+      "case_id": "RS07",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_050030575.1_GCF_050030575.1",
+      "genus": "Enterobacter",
+      "reason": "route1=POSITIVE (target_family_supported); route2=POSITIVE (hmm_prefers_target cov=0.998 score=722.3)",
+      "route1": "POSITIVE",
+      "route1_reason": "target_family_supported",
+      "route2": "POSITIVE",
+      "route2_reason": "hmm_prefers_target cov=0.998 score=722.3",
+      "species": "Enterobacter cloacae",
+      "truth": "POSITIVE",
+      "truth_status": "POSITIVE"
+    },
+    {
+      "accession": "GCF_056665275.1",
+      "assembly_sha256": "e2b319c4c75d1373f54f3ee9da7e61a9e16bcc62211795a0be89a85ee9c93aa0",
+      "best_orf_metrics": {
+        "aa_length": 401,
+        "candidate_faa_sha256": "2394af122927afa7528596b3aaa707143ecf479bcaf57bbe9713fe20cfcda5a9",
+        "competitor_hmm": {
+          "family": null,
+          "full_evalue": null,
+          "full_score": null,
+          "model_coverage": 0.0
+        },
+        "competitor_seq": null,
+        "coordinates": {
+          "contig": "NZ_JBUZIZ010000016.1",
+          "end": 3175,
+          "start": 1173,
+          "strand": "-"
+        },
+        "orf_index": 4,
+        "route1_reason": "target_family_supported",
+        "route1_value": "POSITIVE",
+        "route2_reason": "hmm_prefers_target cov=0.991 score=767.1",
+        "route2_value": "POSITIVE",
+        "target_hmm": {
+          "full_evalue": 2.7e-235,
+          "full_score": 767.1,
+          "model_coverage": 0.990521327014218,
+          "n_domains": 1,
+          "ok": true,
+          "query_name": "members.aln"
+        },
+        "target_seq": {
+          "accession": "P02980",
+          "bitscore": 770.0,
+          "coverage": 1.0,
+          "evalue": 1.23e-288,
+          "identity": 1.0,
+          "identity_product": 1.0,
+          "length_ratio": 1.0,
+          "qlen": 401,
+          "slen": 401
+        }
+      },
+      "case_id": "RS08",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_POS_GCF_056665275.1_GCF_056665275.1",
+      "genus": "Acinetobacter",
+      "reason": "route1=POSITIVE (target_family_supported); route2=POSITIVE (hmm_prefers_target cov=0.991 score=767.1)",
+      "route1": "POSITIVE",
+      "route1_reason": "target_family_supported",
+      "route2": "POSITIVE",
+      "route2_reason": "hmm_prefers_target cov=0.991 score=767.1",
+      "species": "Acinetobacter baumannii",
+      "truth": "POSITIVE",
+      "truth_status": "POSITIVE"
+    },
+    {
+      "accession": "GCF_058093475.1",
+      "assembly_sha256": "41a8cead0534c39a6f7f3d0945a46a7b824c1f6134bf67ad2774b9678208396d",
+      "best_orf_metrics": {
+        "aa_length": 403,
+        "candidate_faa_sha256": "0bb7470a686dc568c54ce5d305dd26c66f74fadd61d82a4032e1168f1468b70b",
+        "competitor_hmm": {
+          "family": null,
+          "full_evalue": null,
+          "full_score": null,
+          "model_coverage": 0.0
+        },
+        "competitor_seq": null,
+        "coordinates": {
+          "contig": "NZ_CM176567.1",
+          "end": 872197,
+          "start": 870309,
+          "strand": "-"
+        },
+        "orf_index": 4,
+        "route1_reason": "target_family_supported",
+        "route1_value": "POSITIVE",
+        "route2_reason": "hmm_prefers_target cov=0.891 score=200.0",
+        "route2_value": "POSITIVE",
+        "target_hmm": {
+          "full_evalue": 3.5e-63,
+          "full_score": 200.0,
+          "model_coverage": 0.8909952606635071,
+          "n_domains": 1,
+          "ok": true,
+          "query_name": "members.aln"
+        },
+        "target_seq": {
+          "accession": "P02982",
+          "bitscore": 178.0,
+          "coverage": 0.878,
+          "evalue": 4.77e-56,
+          "identity": 0.365,
+          "identity_product": 0.32047,
+          "length_ratio": 1.0100250626566416,
+          "qlen": 403,
+          "slen": 399
+        }
+      },
+      "case_id": "RS09",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_058093475.1_GCF_058093475.1",
+      "genus": "Listeria",
+      "reason": "route1=POSITIVE (target_family_supported); route2=POSITIVE (hmm_prefers_target cov=0.891 score=200.0)",
+      "route1": "POSITIVE",
+      "route1_reason": "target_family_supported",
+      "route2": "POSITIVE",
+      "route2_reason": "hmm_prefers_target cov=0.891 score=200.0",
+      "species": "Listeria monocytogenes",
+      "truth": "POSITIVE",
+      "truth_status": "POSITIVE"
+    },
+    {
+      "accession": "GCF_046552895.1",
+      "assembly_sha256": "68a00e935be50f3d853821f340beb145bc0e4917c378bfc5042b38ceb4d274ad",
+      "best_orf_metrics": {
+        "aa_length": 399,
+        "candidate_faa_sha256": "57c43f7e06b59484925ea5af801ae13d20e1a19a5cf8f8133a2fb6ded24f4720",
+        "competitor_hmm": {
+          "family": null,
+          "full_evalue": null,
+          "full_score": null,
+          "model_coverage": 0.0
+        },
+        "competitor_seq": null,
+        "coordinates": {
+          "contig": "NZ_JBGDTI010000014.1",
+          "end": 21737,
+          "start": 19740,
+          "strand": "+"
+        },
+        "orf_index": 5,
+        "route1_reason": "target_family_supported",
+        "route1_value": "POSITIVE",
+        "route2_reason": "hmm_prefers_target cov=0.998 score=752.6",
+        "route2_value": "POSITIVE",
+        "target_hmm": {
+          "full_evalue": 6.5e-231,
+          "full_score": 752.6,
+          "model_coverage": 0.9976303317535545,
+          "n_domains": 1,
+          "ok": true,
+          "query_name": "members.aln"
+        },
+        "target_seq": {
+          "accession": "P02982",
+          "bitscore": 769.0,
+          "coverage": 0.997,
+          "evalue": 2.13e-288,
+          "identity": 1.0,
+          "identity_product": 0.997,
+          "length_ratio": 1.0,
+          "qlen": 399,
+          "slen": 399
+        }
+      },
+      "case_id": "RS10",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_POS_GCF_046552895.1_GCF_046552895.1",
+      "genus": "Salmonella",
+      "reason": "route1=POSITIVE (target_family_supported); route2=POSITIVE (hmm_prefers_target cov=0.998 score=752.6)",
+      "route1": "POSITIVE",
+      "route1_reason": "target_family_supported",
+      "route2": "POSITIVE",
+      "route2_reason": "hmm_prefers_target cov=0.998 score=752.6",
+      "species": "Salmonella sp.",
+      "truth": "POSITIVE",
+      "truth_status": "POSITIVE"
+    },
+    {
+      "accession": "GCF_053903025.1",
+      "assembly_sha256": "fbdb3d6d31d41ebb559160d8a2700d340f256daf20657b96f9a84cd0a5c97262",
+      "best_orf_metrics": {},
+      "case_id": "RS11",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_053903025.1_GCF_053903025.1",
+      "genus": "Escherichia",
+      "reason": "route1=NEGATIVE (no_candidate_orf_recovered); route2=NEGATIVE (no_profile_query)",
+      "route1": "NEGATIVE",
+      "route1_reason": "no_candidate_orf_recovered",
+      "route2": "NEGATIVE",
+      "route2_reason": "no_profile_query",
+      "species": "Escherichia coli",
+      "truth": "NEGATIVE",
+      "truth_status": "NEGATIVE"
+    },
+    {
+      "accession": "GCF_057669585.1",
+      "assembly_sha256": "7c7359fb38f88e8394aaf0b3f2e78a1bd1be2909dec734f6169b7d3d55aeb5bd",
+      "best_orf_metrics": {},
+      "case_id": "RS12",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_057669585.1_GCF_057669585.1",
+      "genus": "Leifsonia",
+      "reason": "route1=NEGATIVE (no_candidate_orf_recovered); route2=NEGATIVE (no_profile_query)",
+      "route1": "NEGATIVE",
+      "route1_reason": "no_candidate_orf_recovered",
+      "route2": "NEGATIVE",
+      "route2_reason": "no_profile_query",
+      "species": "Leifsonia sp.",
+      "truth": "NEGATIVE",
+      "truth_status": "NEGATIVE"
+    },
+    {
+      "accession": "GCF_047313245.1",
+      "assembly_sha256": "56c46182d7a67e38d6eb70f5b58f8da7e4b6dc44ec5d7fcbfbd110fcb6f219bb",
+      "best_orf_metrics": {},
+      "case_id": "RS13",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_047313245.1_GCF_047313245.1",
+      "genus": "Citrobacter",
+      "reason": "route1=NEGATIVE (no_candidate_orf_recovered); route2=NEGATIVE (no_profile_query)",
+      "route1": "NEGATIVE",
+      "route1_reason": "no_candidate_orf_recovered",
+      "route2": "NEGATIVE",
+      "route2_reason": "no_profile_query",
+      "species": "Citrobacter braakii",
+      "truth": "NEGATIVE",
+      "truth_status": "NEGATIVE"
+    },
+    {
+      "accession": "GCF_057572365.1",
+      "assembly_sha256": "ff93d848a81465386fd0b923384d5107c3c6e8d8df45970dc763c84c5d173bf1",
+      "best_orf_metrics": {},
+      "case_id": "RS14",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_057572365.1_GCF_057572365.1",
+      "genus": "Klebsiella",
+      "reason": "route1=NEGATIVE (no_candidate_orf_recovered); route2=NEGATIVE (no_profile_query)",
+      "route1": "NEGATIVE",
+      "route1_reason": "no_candidate_orf_recovered",
+      "route2": "NEGATIVE",
+      "route2_reason": "no_profile_query",
+      "species": "Klebsiella pneumoniae",
+      "truth": "NEGATIVE",
+      "truth_status": "NEGATIVE"
+    },
+    {
+      "accession": "GCF_059400085.1",
+      "assembly_sha256": "08466db58e56d73bdb8ea2ccd91ad3ca3b73e0de8cf45a6b18268b09e12b8f0c",
+      "best_orf_metrics": {},
+      "case_id": "RS15",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_059400085.1_GCF_059400085.1",
+      "genus": "Brucella",
+      "reason": "route1=NEGATIVE (no_candidate_orf_recovered); route2=NEGATIVE (no_profile_query)",
+      "route1": "NEGATIVE",
+      "route1_reason": "no_candidate_orf_recovered",
+      "route2": "NEGATIVE",
+      "route2_reason": "no_profile_query",
+      "species": "Brucella melitensis",
+      "truth": "NEGATIVE",
+      "truth_status": "NEGATIVE"
+    },
+    {
+      "accession": "GCF_051069775.1",
+      "assembly_sha256": "8d36360858bf40ca0decaaf1adba71af0b675f7d42f5771cc5bbc5c144cdbbb9",
+      "best_orf_metrics": {},
+      "case_id": "RS16",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_051069775.1_GCF_051069775.1",
+      "genus": "Ralstonia",
+      "reason": "route1=NEGATIVE (no_candidate_orf_recovered); route2=NEGATIVE (no_profile_query)",
+      "route1": "NEGATIVE",
+      "route1_reason": "no_candidate_orf_recovered",
+      "route2": "NEGATIVE",
+      "route2_reason": "no_profile_query",
+      "species": "Ralstonia solanacearum",
+      "truth": "NEGATIVE",
+      "truth_status": "NEGATIVE"
+    },
+    {
+      "accession": "GCF_057808735.1",
+      "assembly_sha256": "4f8717ec435a9bf9fcc08ba40d76c695ed768ddc1088335a8910b0eeaec4fcb2",
+      "best_orf_metrics": {},
+      "case_id": "RS17",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_057808735.1_GCF_057808735.1",
+      "genus": "Chromobacterium",
+      "reason": "route1=NEGATIVE (no_candidate_orf_recovered); route2=NEGATIVE (no_profile_query)",
+      "route1": "NEGATIVE",
+      "route1_reason": "no_candidate_orf_recovered",
+      "route2": "NEGATIVE",
+      "route2_reason": "no_profile_query",
+      "species": "Chromobacterium sp.",
+      "truth": "NEGATIVE",
+      "truth_status": "NEGATIVE"
+    },
+    {
+      "accession": "GCF_056521545.1",
+      "assembly_sha256": "ef257fcd9a3e73dfde5df7b0e6f2e0aa4e4bc079d7a787d2bec2291a12078711",
+      "best_orf_metrics": {},
+      "case_id": "RS18",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_056521545.1_GCF_056521545.1",
+      "genus": "Enterobacter",
+      "reason": "route1=NEGATIVE (no_candidate_orf_recovered); route2=NEGATIVE (no_profile_query)",
+      "route1": "NEGATIVE",
+      "route1_reason": "no_candidate_orf_recovered",
+      "route2": "NEGATIVE",
+      "route2_reason": "no_profile_query",
+      "species": "Enterobacter cloacae",
+      "truth": "NEGATIVE",
+      "truth_status": "NEGATIVE"
+    },
+    {
+      "accession": "GCF_053233725.1",
+      "assembly_sha256": "3465d37ff0b9283c09ce42af1db210d6e79be773b6689779b2df4cbb580ed056",
+      "best_orf_metrics": {},
+      "case_id": "RS19",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_053233725.1_GCF_053233725.1",
+      "genus": "Clostridioides",
+      "reason": "route1=NEGATIVE (no_candidate_orf_recovered); route2=NEGATIVE (no_profile_query)",
+      "route1": "NEGATIVE",
+      "route1_reason": "no_candidate_orf_recovered",
+      "route2": "NEGATIVE",
+      "route2_reason": "no_profile_query",
+      "species": "Clostridioides difficile",
+      "truth": "NEGATIVE",
+      "truth_status": "NEGATIVE"
+    },
+    {
+      "accession": "GCF_052065715.1",
+      "assembly_sha256": "213106fd964ee3e5d6f40ee270a826253e42d0614dfc2b049425670eac78d71f",
+      "best_orf_metrics": {},
+      "case_id": "RS20",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_052065715.1_GCF_052065715.1",
+      "genus": "Ligilactobacillus",
+      "reason": "route1=NEGATIVE (no_candidate_orf_recovered); route2=NEGATIVE (no_profile_query)",
+      "route1": "NEGATIVE",
+      "route1_reason": "no_candidate_orf_recovered",
+      "route2": "NEGATIVE",
+      "route2_reason": "no_profile_query",
+      "species": "Ligilactobacillus salivarius",
+      "truth": "NEGATIVE",
+      "truth_status": "NEGATIVE"
+    }
+  ],
+  "created_utc": "2026-09-22T17:43:46.169176+00:00",
+  "flags": {
+    "amrfinder_used_as_truth": false,
+    "deterministic_validator_used_as_truth": false,
+    "gs_predictions_used_as_truth": false,
+    "jev_used_as_truth": false,
+    "pgap_used_as_truth": false,
+    "sol_used_as_truth": false
+  },
+  "kind": "ROLE_SWAP_TRUTH",
+  "n_cases": 20,
+  "n_negative": 10,
+  "n_positive": 10,
+  "n_uncertain": 0
+}

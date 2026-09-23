@@ -1,0 +1,6 @@
+arm,followups_total,followups_median,model_requests,unique_first_actions,critic_challenge_rate,median_planner_latency,median_critic_latency,median_model_latency,median_deterministic_runtime,median_total_runtime,total_api_cost,endpoint_present,endpoint_absent,endpoint_unresolved
+A,57,3.0,0,3,,0.0,0.0,0.0,31.5575,31.5575,0.0,8,12,0
+B,39,2.0,40,3,0.95,4.765,4.375,10.2845,25.2155,39.2215,0.374832,8,12,0
+C,74,4.0,0,3,,0.0,0.0,0.0,27.304,27.304,0.0,8,12,0
+D,0,0.0,20,0,,,,7.4205,0.0,7.4205,0.525328,8,3,9
+F,39,2.0,59,2,0.974359,0.7865,1.461,2.2165,19.248,21.4635,0.0033142,8,12,0

@@ -1,0 +1,36 @@
+family_id: rnd_efflux
+display_name: RND family efflux (AcrB-like)
+biological_property: membrane_transporter_competing_families
+family_class: rnd_transporter
+competing_families:
+- tetA_tetracycline_efflux
+- mfs_multidrug_efflux
+partner_families: []
+members:
+- protein_id: P31224
+  species: Escherichia coli AcrB
+  length_aa: 1049
+  fusion_or_split: canonical
+  source: uniprot FASTA
+  retrieved: '2026-09-18'
+- protein_id: P24177
+  species: Escherichia coli AcrD
+  length_aa: 1037
+  fusion_or_split: canonical
+  source: uniprot FASTA
+  retrieved: '2026-09-18'
+forbidden_protein_ids:
+- NP_252960.1
+- NP_387988.1
+- NP_387989.1
+- NP_463022.1
+- WP_000037869.1
+- WP_003255495.1
+- YP_499096.2
+forbidden_reason: FAST_PILOT hidden genomes are not family members.
+msa_provenance:
+  method: star multiple alignment seeded on the first member (Needleman-Wunsch)
+  aligner: genome_skeptic.families.build_star_msa
+hmm_provenance:
+  method: hmmbuild from members.aln.faa at first use
+  not_invented_by_llm: true

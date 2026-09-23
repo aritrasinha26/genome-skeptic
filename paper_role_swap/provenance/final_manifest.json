@@ -1,0 +1,91 @@
+{
+  "kind": "ROLE_SWAP_FINAL_MANIFEST",
+  "created_utc": "2026-09-22T19:10:11.506273+00:00",
+  "study": "ROLE_SWAP_TETA_V5_WITHIN_TASK",
+  "claim_scope": "within_task_tetA_only",
+  "locks": {
+    "prediction_lock": "1e8c3cb7ce29faea9506093cf0efffbf441155329e45291ecebdb2677ea64459",
+    "execution_manifest": "b8a2313bad1409c228c742f758b723b7030603476e6c361dc4699f5c0ebade7f",
+    "truth_lock": "a1f3a9c2239f04517b04e615ef0ca8705d6e07518fb0000ce20449ec91a0490f",
+    "caseset_lock": "dbc06649ddc8d405200ec854f0e3dfe1ccbbbedf2d813b6a3d58808b869de449",
+    "scientific_core": "86af163a1e427c83ed0010fbca69ba6a9f81b7a97ae1eda2f1be35179a8ea463",
+    "validator": "cf6d6c5b26d74de9f475ba6d4d7de3ddef9b95d222c08efbbc202a2164d38672"
+  },
+  "answers": {
+    "A_did_sol_controller_improve_accuracy_over_det": "NO",
+    "B_did_sol_controller_alter_final_biological_decisions": "NO (0/20 endpoint differences vs A/C/F)",
+    "C_did_sol_controller_reduce_followups": "YES",
+    "D_did_jev_reproduce_sol_controller_endpoints": "YES (20/20)",
+    "E_did_transferring_final_authority_to_sol_improve_accuracy": "NO",
+    "F_sol_judge_corrections": 0,
+    "G_sol_judge_degradations": 7,
+    "H_sol_judge_mainly": "INCREASE_UNCERTAINTY",
+    "supports_within_task_hypothesis": "YES"
+  },
+  "arm_scores": {
+    "A": {
+      "correct": 18,
+      "balanced_accuracy": 0.9,
+      "unresolved": 0
+    },
+    "B": {
+      "correct": 18,
+      "balanced_accuracy": 0.9,
+      "unresolved": 0
+    },
+    "C": {
+      "correct": 18,
+      "balanced_accuracy": 0.9,
+      "unresolved": 0
+    },
+    "D": {
+      "correct": 11,
+      "balanced_accuracy": 0.55,
+      "unresolved": 9
+    },
+    "F": {
+      "correct": 18,
+      "balanced_accuracy": 0.9,
+      "unresolved": 0
+    }
+  },
+  "b_vs_d": {
+    "endpoint_differences": 9,
+    "both_correct": 11,
+    "both_wrong": 2,
+    "b_correct_d_wrong": 7,
+    "b_wrong_d_correct": 0,
+    "sol_corrections": 0,
+    "sol_degradations": 7,
+    "net_sol_judge_effect": -7,
+    "mcnemar": {
+      "b_correct_d_wrong": 7,
+      "b_wrong_d_correct": 0,
+      "mcnemar_p": 0.015625,
+      "mcnemar_note": "exact two-sided McNemar / binomial P=0.015625 on B+C=7"
+    },
+    "paired_bootstrap_D_minus_B": {
+      "diff_b_minus_a": -0.35,
+      "ci_low": -0.55,
+      "ci_high": -0.15000000000000002,
+      "n_bootstrap": 10000,
+      "seed": 20260920
+    },
+    "transitions": {
+      "ABSENT->UNRESOLVED": 9
+    }
+  },
+  "output_sha256": {
+    "10_RESULTS/ROLE_SWAP_FINAL_CASE_LEVEL.csv": "96387f52ef3b19d940c2ee0932b2b5c92cec2928832bd88f803398833bd91f31",
+    "10_RESULTS/ROLE_SWAP_FINAL_HEADLINE.csv": "5c0bc2b065303e7819272badee4f34117a6d275f203bd0f0e519bef432cefeff",
+    "10_RESULTS/ROLE_SWAP_B_VS_D_DISCORDANCES.csv": "2b0f23a0384200edddc05e5d4cc4f359ad5daf707b0616c08ae2e22abdc74d59",
+    "10_RESULTS/ROLE_SWAP_CONTROLLER_EFFICIENCY.csv": "ee176fb88d240f72c7a9bbf217da3b3c6a3474df2e85a200bf9cea4b044858e2",
+    "10_RESULTS/ROLE_SWAP_FINAL_STATS.json": "07261db3f9119aaa961c11f8c68e9e5f98b82ae862679e0788fd08a554208619",
+    "10_RESULTS/ROLE_SWAP_FINAL_RESULTS.md": "4560ecd1a8d249bf339df5ead0cd5c91e5adc5e3062f983ed1744b117f2eceff",
+    "12_PROVENANCE/ROLE_SWAP_UNBLIND_AUDIT.md": "3505c5753e4e4f8e3170d92846d3aca913b3da1906a5917237201bbf8eb3cf46",
+    "11_FIGURES/FIGURE1_architecture.png": "0dc2acaa63768a75ef0e098d0501bde39236f4b0064c157ee23b4929a2c4e74d",
+    "11_FIGURES/FIGURE2_balanced_accuracy.png": "25f1eb8b7fb086a615d5e44d6c513a52886eaa6ff337670f30eae9a920f09f1e",
+    "11_FIGURES/FIGURE3_sol_authority_effect.png": "48330f3a1f164f30bad560450dba51d5014877af2a2b035c60a4c2da1c6447dc",
+    "11_FIGURES/FIGURE4_controller_efficiency.png": "7d6c567e682af2ac9c09aa203a77739df3adad6c0441f428c4e22ad8b0ee872e"
+  }
+}

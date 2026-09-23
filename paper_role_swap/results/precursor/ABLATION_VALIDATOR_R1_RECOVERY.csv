@@ -1,0 +1,10 @@
+# POST_HOC_DIAGNOSTIC = TRUE ; NOT PROSPECTIVE PERFORMANCE
+POST_HOC_DIAGNOSTIC,set,position,case_id,target,truth,frozen_pred,patched_pred,recovered,defect_accounted,identity_coverage_product,patch_a_kept_target_family_supported,patch_b_applied
+TRUE ; NOT PROSPECTIVE PERFORMANCE,shared_error,13,M60_tetA_tetracycline_efflux_GCF_056269845.1,tetA_tetracycline_efflux,POSITIVE,NEGATIVE,POSITIVE,True,a_family_identity_is_decisive,0.9389706807511737,True,False
+TRUE ; NOT PROSPECTIVE PERFORMANCE,shared_error,14,M60_tetA_tetracycline_efflux_GCF_060343445.1,tetA_tetracycline_efflux,POSITIVE,NEGATIVE,NEGATIVE,False,,0.02459144893111639,False,False
+TRUE ; NOT PROSPECTIVE PERFORMANCE,shared_error,19,M60_tetA_tetracycline_efflux_GCF_054552735.1,tetA_tetracycline_efflux,POSITIVE,NEGATIVE,NEGATIVE,False,,0.1842231934731935,False,False
+TRUE ; NOT PROSPECTIVE PERFORMANCE,shared_error,36,M60_tetA_tetracycline_efflux_GCF_058409085.1,tetA_tetracycline_efflux,POSITIVE,NEGATIVE,POSITIVE,True,a_family_identity_is_decisive,0.8888927659574469,True,False
+TRUE ; NOT PROSPECTIVE PERFORMANCE,shared_error,37,M60_tetA_tetracycline_efflux_GCF_059878295.1,tetA_tetracycline_efflux,POSITIVE,NEGATIVE,NEGATIVE,False,,0.048125,False,False
+TRUE ; NOT PROSPECTIVE PERFORMANCE,shared_error,41,M60_tetA_tetracycline_efflux_GCF_056613625.1,tetA_tetracycline_efflux,POSITIVE,NEGATIVE,NEGATIVE,False,,0.03442916666666667,False,False
+TRUE ; NOT PROSPECTIVE PERFORMANCE,shared_error,44,M60_tetA_tetracycline_efflux_GCF_056539405.1,tetA_tetracycline_efflux,POSITIVE,NEGATIVE,NEGATIVE,False,,0.17767220902612826,False,False
+TRUE ; NOT PROSPECTIVE PERFORMANCE,shared_error,48,M60_rpoB_RNAP_beta_GCF_055389225.1,rpoB_RNAP_beta,POSITIVE,NEGATIVE,POSITIVE,True,b_classify_architecture,0.547785266723116,False,True

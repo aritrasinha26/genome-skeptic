@@ -1,0 +1,43 @@
+{
+  "case_id": "RS02",
+  "accession": "GCF_054185995.1",
+  "target": "tetA_tetracycline_efflux",
+  "arm": "C",
+  "policy": "exhaustive",
+  "initial_state_hash": "aa3bca253f73711fd0b6cd86842fab7a8ba446cac5c51539ff9b40c95006f13e",
+  "planner_decision": "EXHAUSTIVE",
+  "planner_action": "inspect_contig_edges_for_target",
+  "critic_decision": null,
+  "critic_action": null,
+  "followup_actions": [
+    "inspect_contig_edges_for_target",
+    "inspect_hit_contig_contamination"
+  ],
+  "followup_count": 2,
+  "final_state_hash": "02f89a2207d681ed2c30f7dbbb4e4002466720eb64af18fa482bd0de7abbe54d",
+  "endpoint": "PRESENT",
+  "planner_requests": 0,
+  "critic_requests": 0,
+  "total_model_requests": 0,
+  "planner_latency_s": 0,
+  "critic_latency_s": 0,
+  "model_latency_s": 0,
+  "deterministic_runtime_s": 19.511,
+  "total_runtime_s": 19.511,
+  "input_tokens": null,
+  "output_tokens": null,
+  "reasoning_tokens": null,
+  "retries": 0,
+  "errors": 0,
+  "cost_usd": 0.0,
+  "agent_failure": null,
+  "start_utc": "2026-09-22T18:04:56.528844+00:00",
+  "end_utc": "2026-09-22T18:05:16.040150+00:00",
+  "eligible_actions_m0": [
+    "inspect_contig_edges_for_target",
+    "inspect_hit_contig_contamination"
+  ],
+  "run_dir": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/role_swap_cross_task/07_EXHAUSTIVE/RS02/GS_RUN",
+  "call_log": [],
+  "provenance_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/role_swap_cross_task/07_EXHAUSTIVE/RS02/GS_RUN/agentic_provenance.json"
+}

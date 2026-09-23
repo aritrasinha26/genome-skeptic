@@ -1,0 +1,35 @@
+{
+  "checked_utc": "2026-09-22T18:54:36.067384+00:00",
+  "all_match": true,
+  "rows": {
+    "scientific_core": {
+      "expected": "86af163a1e427c83ed0010fbca69ba6a9f81b7a97ae1eda2f1be35179a8ea463",
+      "observed": "86af163a1e427c83ed0010fbca69ba6a9f81b7a97ae1eda2f1be35179a8ea463",
+      "match": true
+    },
+    "validator": {
+      "expected": "cf6d6c5b26d74de9f475ba6d4d7de3ddef9b95d222c08efbbc202a2164d38672",
+      "observed": "cf6d6c5b26d74de9f475ba6d4d7de3ddef9b95d222c08efbbc202a2164d38672",
+      "match": true
+    },
+    "planner_prompt": {
+      "expected": "fcffbc11cf6afbe84731c15854d37e85d929b966318acc45567f5332819d0f63",
+      "observed": "fcffbc11cf6afbe84731c15854d37e85d929b966318acc45567f5332819d0f63",
+      "match": true
+    },
+    "critic_prompt": {
+      "expected": "8b04802de10aea03d24b26633a17d68415db74db3ba82034b6b8d1cf75f2b60e",
+      "observed": "8b04802de10aea03d24b26633a17d68415db74db3ba82034b6b8d1cf75f2b60e",
+      "match": true
+    },
+    "action_registry": {
+      "expected": "185390460dd990516b89eab036b5c5da11e2d28ef3371c5e4917a4e2fd6ac899",
+      "observed": "185390460dd990516b89eab036b5c5da11e2d28ef3371c5e4917a4e2fd6ac899",
+      "match": true
+    }
+  },
+  "family": "ed4210640e318b8ed94ebf6d72b9c37afa9039eed858fdd54c4165fbcce09605",
+  "ortholog": "9434a1902236ed7245361e47af1986357969a3bf8ec210062f889dc84580ff92",
+  "caseset_lock": "dbc06649ddc8d405200ec854f0e3dfe1ccbbbedf2d813b6a3d58808b869de449",
+  "result": "PASS"
+}

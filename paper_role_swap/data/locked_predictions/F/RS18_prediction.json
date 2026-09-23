@@ -1,0 +1,274 @@
+{
+  "case_id": "RS18",
+  "accession": "GCF_056521545.1",
+  "target": "tetA_tetracycline_efflux",
+  "arm": "F",
+  "policy": "jev",
+  "initial_state_hash": "e9f6e87c639d3f26a631e29a70dbb7e4038f46bff3d4baf434d9b6294267ad3c",
+  "planner_decision": "INVESTIGATE",
+  "planner_action": "competitive_family",
+  "critic_decision": "challenge",
+  "critic_action": "search_target_proteins_mmseqs",
+  "followup_actions": [
+    "competitive_family",
+    "search_target_proteins_mmseqs"
+  ],
+  "followup_count": 2,
+  "final_state_hash": "f6c38471adbf9bd6f72e96cfc37b654b6d36e1a4656a4643b88925ebe3b529ad",
+  "endpoint": "ABSENT",
+  "planner_requests": 1,
+  "critic_requests": 2,
+  "total_model_requests": 3,
+  "planner_latency_s": 0.783,
+  "critic_latency_s": 1.435,
+  "model_latency_s": 2.218,
+  "deterministic_runtime_s": 32.782,
+  "total_runtime_s": 35.0,
+  "input_tokens": 4648,
+  "output_tokens": 206,
+  "reasoning_tokens": null,
+  "retries": 0,
+  "errors": 0,
+  "cost_usd": 0.00019522,
+  "agent_failure": null,
+  "start_utc": "2026-09-22T18:42:02.124307+00:00",
+  "end_utc": "2026-09-22T18:42:37.123962+00:00",
+  "eligible_actions_m0": [
+    "competitive_family",
+    "inspect_contig_edges_for_target",
+    "inspect_hit_contig_contamination",
+    "search_target_domains_hmmer",
+    "search_target_proteins_diamond",
+    "search_target_proteins_mmseqs"
+  ],
+  "run_dir": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/role_swap_cross_task/09_JEV_CONTROLLER/RS18/GS_RUN",
+  "call_log": [
+    {
+      "request_number": 1,
+      "request_type": "PlannerDecision",
+      "role": "planner",
+      "provider": "typesafe_systemone",
+      "model_alias": "jev-latest",
+      "model": "jev-1.13.0",
+      "start_time": "2026-09-22T18:42:14.663819+00:00",
+      "url": "https://api.typesafe.ai/v1/systemone",
+      "retry_count": 0,
+      "first_attempt": true,
+      "n_questions": 2,
+      "schema": "typesafe_choice_noul",
+      "prompt_chars": 0,
+      "estimated_tokens": 0,
+      "max_output_tokens": null,
+      "thinking": null,
+      "elapsed_seconds": 0.783,
+      "http_status": 200,
+      "http_latency_s": 0.783,
+      "x_envoy_upstream_service_time": "107",
+      "request_id": "req_01a0ca6cfabe79c1aff997bd54cf6413",
+      "response_headers": {
+        "x-typesafe-request-id": "req_01a0ca6cfabe79c1aff997bd54cf6413",
+        "x-envoy-upstream-service-time": "107"
+      },
+      "concrete_model": "jev-1.13.0",
+      "response_id": "req_01a0ca6cfabe79c1aff997bd54cf6413",
+      "input_tokens": 2106,
+      "output_tokens": 114,
+      "reasoning_tokens": null,
+      "cached_tokens": null,
+      "estimated_api_cost_usd": 8.8452e-05,
+      "pricing_source": "https://docs.typesafe.ai/models",
+      "pricing_date": "2026-09-22",
+      "answers": {
+        "planner_control": {
+          "type": "choice",
+          "choice": "INVESTIGATE",
+          "confidence": 0.91,
+          "probabilities": {
+            "FINALIZE": 0.0,
+            "INVESTIGATE": 0.94,
+            "ABSTAIN": 0.06
+          }
+        },
+        "requested_action": {
+          "type": "choice",
+          "choice": "competitive_family",
+          "confidence": 0.86,
+          "probabilities": {
+            "inspect_hit_contig_contamination": 0.05,
+            "search_target_proteins_mmseqs": 0.05,
+            "inspect_contig_edges_for_target": 0.01,
+            "competitive_family": 0.89
+          }
+        }
+      },
+      "schema_valid": true,
+      "jev_planner": {
+        "control": "INVESTIGATE",
+        "requested_action": "competitive_family",
+        "control_confidence": 0.91,
+        "action_confidence": 0.86,
+        "control_probabilities": {
+          "FINALIZE": 0.0,
+          "INVESTIGATE": 0.94,
+          "ABSTAIN": 0.06
+        },
+        "action_probabilities": {
+          "inspect_hit_contig_contamination": 0.05,
+          "search_target_proteins_mmseqs": 0.05,
+          "inspect_contig_edges_for_target": 0.01,
+          "competitive_family": 0.89
+        },
+        "control_top_probability": 0.94,
+        "control_second_probability": 0.06,
+        "control_probability_margin": 0.88,
+        "control_entropy": 0.327445,
+        "action_top_probability": 0.89,
+        "action_second_probability": 0.05,
+        "action_probability_margin": 0.84,
+        "action_entropy": 0.648261,
+        "low_confidence": false,
+        "concrete_model": "jev-1.13.0",
+        "n_decisions": 2
+      }
+    },
+    {
+      "request_number": 2,
+      "request_type": "CriticDecision",
+      "role": "critic",
+      "provider": "typesafe_systemone",
+      "model_alias": "jev-latest",
+      "model": "jev-1.13.0",
+      "start_time": "2026-09-22T18:42:22.302561+00:00",
+      "url": "https://api.typesafe.ai/v1/systemone",
+      "retry_count": 0,
+      "first_attempt": true,
+      "n_questions": 1,
+      "schema": "typesafe_choice_noul",
+      "prompt_chars": 0,
+      "estimated_tokens": 0,
+      "max_output_tokens": null,
+      "thinking": null,
+      "elapsed_seconds": 0.67,
+      "http_status": 200,
+      "http_latency_s": 0.67,
+      "x_envoy_upstream_service_time": "65",
+      "request_id": "req_01a0ca6d186279539e7903efb1ef1534",
+      "response_headers": {
+        "x-typesafe-request-id": "req_01a0ca6d186279539e7903efb1ef1534",
+        "x-envoy-upstream-service-time": "65"
+      },
+      "concrete_model": "jev-1.13.0",
+      "response_id": "req_01a0ca6d186279539e7903efb1ef1534",
+      "input_tokens": 1195,
+      "output_tokens": 28,
+      "reasoning_tokens": null,
+      "cached_tokens": null,
+      "estimated_api_cost_usd": 5.019e-05,
+      "pricing_source": "https://docs.typesafe.ai/models",
+      "pricing_date": "2026-09-22",
+      "answers": {
+        "critic_unresolved_alternative": {
+          "type": "noul",
+          "noul": 0.85
+        }
+      },
+      "schema_valid": true,
+      "jev_noul": 0.85,
+      "jev_noul_threshold": 0.5
+    },
+    {
+      "request_number": 3,
+      "request_type": "CriticDecision",
+      "role": "critic",
+      "provider": "typesafe_systemone",
+      "model_alias": "jev-latest",
+      "model": "jev-1.13.0",
+      "start_time": "2026-09-22T18:42:22.976627+00:00",
+      "url": "https://api.typesafe.ai/v1/systemone",
+      "retry_count": 0,
+      "first_attempt": true,
+      "n_questions": 1,
+      "schema": "typesafe_choice_noul",
+      "prompt_chars": 0,
+      "estimated_tokens": 0,
+      "max_output_tokens": null,
+      "thinking": null,
+      "elapsed_seconds": 0.765,
+      "http_status": 200,
+      "http_latency_s": 0.765,
+      "x_envoy_upstream_service_time": "58",
+      "request_id": "req_01a0ca6d1b71701989b69b7ccbe4b22f",
+      "response_headers": {
+        "x-typesafe-request-id": "req_01a0ca6d1b71701989b69b7ccbe4b22f",
+        "x-envoy-upstream-service-time": "58"
+      },
+      "concrete_model": "jev-1.13.0",
+      "response_id": "req_01a0ca6d1b71701989b69b7ccbe4b22f",
+      "input_tokens": 1347,
+      "output_tokens": 64,
+      "reasoning_tokens": null,
+      "cached_tokens": null,
+      "estimated_api_cost_usd": 5.6574e-05,
+      "pricing_source": "https://docs.typesafe.ai/models",
+      "pricing_date": "2026-09-22",
+      "answers": {
+        "requested_action": {
+          "type": "choice",
+          "choice": "search_target_proteins_mmseqs",
+          "confidence": 0.38,
+          "probabilities": {
+            "inspect_hit_contig_contamination": 0.35,
+            "search_target_proteins_mmseqs": 0.58,
+            "inspect_contig_edges_for_target": 0.07
+          }
+        }
+      },
+      "schema_valid": true,
+      "jev_critic": {
+        "noul": 0.85,
+        "threshold": 0.5,
+        "decision": "CHALLENGE",
+        "raw_noul_even_if_no_eligible_action": 0.85,
+        "remaining_eligible": [
+          "search_target_proteins_mmseqs",
+          "inspect_contig_edges_for_target",
+          "inspect_hit_contig_contamination"
+        ],
+        "requested_action": "search_target_proteins_mmseqs",
+        "second_action_probabilities": {
+          "inspect_hit_contig_contamination": 0.35,
+          "search_target_proteins_mmseqs": 0.58,
+          "inspect_contig_edges_for_target": 0.07
+        },
+        "second_action_confidence": 0.38,
+        "second_action_top_probability": 0.58,
+        "second_action_second_probability": 0.35,
+        "second_action_probability_margin": 0.23,
+        "second_action_entropy": 1.254463,
+        "concrete_model": "jev-1.13.0",
+        "n_decisions": 2
+      }
+    }
+  ],
+  "provenance_path": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/role_swap_cross_task/09_JEV_CONTROLLER/RS18/GS_RUN/agentic_provenance.json",
+  "jev_model_alias": "jev-latest",
+  "jev_concrete_model": "jev-1.13.0",
+  "planner_confidence": 0.86,
+  "planner_probabilities": {
+    "inspect_hit_contig_contamination": 0.05,
+    "search_target_proteins_mmseqs": 0.05,
+    "inspect_contig_edges_for_target": 0.01,
+    "competitive_family": 0.89
+  },
+  "critic_noul": 0.85,
+  "request_ids": [
+    "req_01a0ca6cfabe79c1aff997bd54cf6413",
+    "req_01a0ca6d186279539e7903efb1ef1534",
+    "req_01a0ca6d1b71701989b69b7ccbe4b22f"
+  ],
+  "provider_service_time": [
+    0.107,
+    0.065,
+    0.058
+  ]
+}

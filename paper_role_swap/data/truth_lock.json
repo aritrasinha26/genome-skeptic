@@ -1,0 +1,18 @@
+{
+  "flags": {
+    "amrfinder_used_as_truth": false,
+    "deterministic_validator_used_as_truth": false,
+    "gs_predictions_used_as_truth": false,
+    "jev_used_as_truth": false,
+    "pgap_used_as_truth": false,
+    "sol_used_as_truth": false
+  },
+  "immutable": true,
+  "locked_at_utc": "2026-09-22T17:43:46.378562+00:00",
+  "n_negative": 10,
+  "n_positive": 10,
+  "n_uncertain": 0,
+  "truth_csv_sha256": "217f2853459cd08b2432cbfe0d7a79c1fbd1a6ec9740eecd80a911d6338add94",
+  "truth_json_sha256": "b67ededddbeae5a8c5a482f2e15ac630d2a53e38d56b2d3fa3d9fcd506d722db",
+  "truth_locked": true
+}

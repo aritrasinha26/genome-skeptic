@@ -1,0 +1,37 @@
+{
+  "all_match": true,
+  "checked_utc": "2026-09-22T17:43:46.699515+00:00",
+  "family_definitions_hash": "ed4210640e318b8ed94ebf6d72b9c37afa9039eed858fdd54c4165fbcce09605",
+  "reference_assets_hash": "9434a1902236ed7245361e47af1986357969a3bf8ec210062f889dc84580ff92",
+  "result": "PASS",
+  "scientific_core_or_validator_mismatch": false,
+  "stop2_manifest_sha256_expected": "482c209915440ac1b4e614738ac631ed0e98909eec5abec842a13e965efda0bf",
+  "stop2_manifest_sha256_observed": "482c209915440ac1b4e614738ac631ed0e98909eec5abec842a13e965efda0bf",
+  "v5": {
+    "action_registry": {
+      "expected": "185390460dd990516b89eab036b5c5da11e2d28ef3371c5e4917a4e2fd6ac899",
+      "match": true,
+      "observed": "185390460dd990516b89eab036b5c5da11e2d28ef3371c5e4917a4e2fd6ac899"
+    },
+    "critic_prompt": {
+      "expected": "8b04802de10aea03d24b26633a17d68415db74db3ba82034b6b8d1cf75f2b60e",
+      "match": true,
+      "observed": "8b04802de10aea03d24b26633a17d68415db74db3ba82034b6b8d1cf75f2b60e"
+    },
+    "planner_prompt": {
+      "expected": "fcffbc11cf6afbe84731c15854d37e85d929b966318acc45567f5332819d0f63",
+      "match": true,
+      "observed": "fcffbc11cf6afbe84731c15854d37e85d929b966318acc45567f5332819d0f63"
+    },
+    "scientific_core": {
+      "expected": "86af163a1e427c83ed0010fbca69ba6a9f81b7a97ae1eda2f1be35179a8ea463",
+      "match": true,
+      "observed": "86af163a1e427c83ed0010fbca69ba6a9f81b7a97ae1eda2f1be35179a8ea463"
+    },
+    "validator": {
+      "expected": "cf6d6c5b26d74de9f475ba6d4d7de3ddef9b95d222c08efbbc202a2164d38672",
+      "match": true,
+      "observed": "cf6d6c5b26d74de9f475ba6d4d7de3ddef9b95d222c08efbbc202a2164d38672"
+    }
+  }
+}

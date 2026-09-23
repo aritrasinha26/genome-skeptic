@@ -1,0 +1,36 @@
+family_id: tetA_tetracycline_efflux
+display_name: tetracycline efflux TetA (mobile/plasmid-associated)
+biological_property: mobile_plasmid_associated
+family_class: mfs_transporter
+competing_families:
+- mfs_multidrug_efflux
+- rnd_efflux
+partner_families: []
+members:
+- protein_id: P02980
+  species: Tn10 TetA class B
+  length_aa: 401
+  fusion_or_split: canonical
+  source: uniprot FASTA
+  retrieved: '2026-09-18'
+- protein_id: P02982
+  species: TetA/TCR1 tetracycline efflux
+  length_aa: 399
+  fusion_or_split: canonical
+  source: uniprot FASTA
+  retrieved: '2026-09-18'
+forbidden_protein_ids:
+- NP_252960.1
+- NP_387988.1
+- NP_387989.1
+- NP_463022.1
+- WP_000037869.1
+- WP_003255495.1
+- YP_499096.2
+forbidden_reason: FAST_PILOT hidden genomes are not family members.
+msa_provenance:
+  method: star multiple alignment seeded on the first member (Needleman-Wunsch)
+  aligner: genome_skeptic.families.build_star_msa
+hmm_provenance:
+  method: hmmbuild from members.aln.faa at first use
+  not_invented_by_llm: true

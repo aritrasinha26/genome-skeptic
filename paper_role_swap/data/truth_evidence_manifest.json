@@ -1,0 +1,126 @@
+{
+  "cases": [
+    {
+      "accession": "GCF_047713185.1",
+      "case_id": "RS01",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_POS_GCF_047713185.1_GCF_047713185.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_054185995.1",
+      "case_id": "RS02",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_POS_GCF_054185995.1_GCF_054185995.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_055768945.1",
+      "case_id": "RS03",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_POS_GCF_055768945.1_GCF_055768945.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_058245975.1",
+      "case_id": "RS04",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_058245975.1_GCF_058245975.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_047914675.1",
+      "case_id": "RS05",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_POS_GCF_047914675.1_GCF_047914675.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_053605175.1",
+      "case_id": "RS06",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_053605175.1_GCF_053605175.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_050030575.1",
+      "case_id": "RS07",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_050030575.1_GCF_050030575.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_056665275.1",
+      "case_id": "RS08",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_POS_GCF_056665275.1_GCF_056665275.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_058093475.1",
+      "case_id": "RS09",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_058093475.1_GCF_058093475.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_046552895.1",
+      "case_id": "RS10",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_POS_GCF_046552895.1_GCF_046552895.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_053903025.1",
+      "case_id": "RS11",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_053903025.1_GCF_053903025.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_057669585.1",
+      "case_id": "RS12",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_057669585.1_GCF_057669585.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_047313245.1",
+      "case_id": "RS13",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_047313245.1_GCF_047313245.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_057572365.1",
+      "case_id": "RS14",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_057572365.1_GCF_057572365.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_059400085.1",
+      "case_id": "RS15",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_059400085.1_GCF_059400085.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_051069775.1",
+      "case_id": "RS16",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_051069775.1_GCF_051069775.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_057808735.1",
+      "case_id": "RS17",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_057808735.1_GCF_057808735.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_056521545.1",
+      "case_id": "RS18",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_056521545.1_GCF_056521545.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_053233725.1",
+      "case_id": "RS19",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_053233725.1_GCF_053233725.1",
+      "evidence_dir_exists": true
+    },
+    {
+      "accession": "GCF_052065715.1",
+      "case_id": "RS20",
+      "evidence_dir": "role_swap_cross_task/_work/truth_evidence/CAND_NEG_GCF_052065715.1_GCF_052065715.1",
+      "evidence_dir_exists": true
+    }
+  ],
+  "created_utc": "2026-09-22T17:43:46.216397+00:00",
+  "kind": "ROLE_SWAP_TRUTH_EVIDENCE_MANIFEST"
+}

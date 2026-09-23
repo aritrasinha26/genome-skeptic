@@ -1,0 +1,1303 @@
+{
+  "case_id": "RS06",
+  "accession": "GCF_053605175.1",
+  "target": "tetA_tetracycline_efflux",
+  "locked_at_utc": "2026-09-22T18:11:24.252000+00:00",
+  "initial_state_hash": "07e854644b167df1b1e606067b7be991a2ecaf210fed243089439622d1728f3a",
+  "final_state_hash": "77d0635df4c813c358ceee517d825af49d6e7a7d4e712c17f141b348182e9613",
+  "planner_decision": "INVESTIGATE",
+  "planner_action": "competitive_family",
+  "critic_decision": "challenge",
+  "critic_action": "search_target_domains_hmmer",
+  "followup_actions": [
+    "competitive_family",
+    "search_target_domains_hmmer"
+  ],
+  "packet": {
+    "target": "tetA_tetracycline_efflux",
+    "biological_endpoint_options": [
+      "PRESENT",
+      "ABSENT",
+      "UNRESOLVED"
+    ],
+    "structured_biological_measurements": {
+      "n_hits": 6,
+      "n_loci": 1,
+      "architecture": "close_paralogue",
+      "supports_orthologue": false,
+      "best_hit": {
+        "identity": 0.37634,
+        "coverage": 0.912718204488778,
+        "hmm_score": 168.7,
+        "hmm_model_coverage": 0.9005
+      }
+    },
+    "candidate_loci": [
+      {
+        "contig_id": null,
+        "start": null,
+        "end": null,
+        "strand": null,
+        "architecture_state": null,
+        "evidence_ids": []
+      }
+    ],
+    "sequence_evidence": {
+      "n_evidence_items": 8,
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "E005",
+        "E006",
+        "E007",
+        "E008"
+      ]
+    },
+    "family_competitor_profile_architecture_evidence": {
+      "family_id": "tetA_tetracycline_efflux",
+      "architecture": "close_paralogue",
+      "supports_orthologue": false,
+      "domain_only": false,
+      "n_member_hits": 6,
+      "metrics": {
+        "best_member_identity": 0.37634,
+        "best_member_coverage": 0.912718204488778,
+        "hmm_model_coverage": 0.9005,
+        "hmm_query_coverage": 0.8617,
+        "hmm_full_score": 168.7,
+        "hmm_full_evalue": 1.6e-50,
+        "reference_set_agreement": 0.0
+      },
+      "hmm_profile": {
+        "full_score": 168.7,
+        "full_evalue": 1.6e-50,
+        "model_coverage": 0.9005,
+        "query_coverage": 0.8617,
+        "n_domains": 1
+      },
+      "competitive_family": {
+        "classification": "ambiguous_family",
+        "target_family_score": 0.7354,
+        "target_family_HMM_score": 168.7,
+        "target_family_model_coverage": 0.9005,
+        "best_competitor": null,
+        "score_margin": 0.7354,
+        "competitors_scored": [
+          {
+            "family_id": "mfs_multidrug_efflux",
+            "combined_score": 0.006,
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0
+          },
+          {
+            "family_id": "rnd_efflux",
+            "combined_score": 0.0038,
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0
+          }
+        ]
+      },
+      "reconstruction": {
+        "architecture": "close_paralogue",
+        "sequence_identity": 0.32976,
+        "protein_coverage": 0.912718204488778,
+        "hmm_coverage": 0.9005,
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_locus_reconstruction"
+        ]
+      },
+      "paralogue": {
+        "state": "single_locus",
+        "n_loci": 1,
+        "supported": false
+      },
+      "tools_run": [
+        "family_member_search",
+        "hmmsearch"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "E001",
+        "summary": "Homology hits for tetA_tetracycline_efflux",
+        "values": {
+          "n_hits": 4,
+          "n_strong": 0,
+          "hits": [
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBSGIS010000020.1",
+              "search_kind": "translated",
+              "identity": 0.30343,
+              "query_coverage": 0.912718204488778,
+              "evalue": 1.87e-27,
+              "near_contig_edge": true,
+              "possible_edge_truncation": true,
+              "edge_distance_bp": 0,
+              "tstart": 104525,
+              "tend": 105653,
+              "strand": "+",
+              "contig_length": 168931,
+              "tool": "blast+",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBSGIS010000063.1",
+              "search_kind": "translated",
+              "identity": 0.31495999999999996,
+              "query_coverage": 0.30423940149625933,
+              "evalue": 0.000271,
+              "near_contig_edge": true,
+              "possible_edge_truncation": true,
+              "edge_distance_bp": 0,
+              "tstart": 8857,
+              "tend": 9223,
+              "strand": "+",
+              "contig_length": 34479,
+              "tool": "blast+",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBSGIS010000050.1",
+              "search_kind": "translated",
+              "identity": 0.32773,
+              "query_coverage": 0.2793017456359102,
+              "evalue": 0.000429,
+              "near_contig_edge": true,
+              "possible_edge_truncation": true,
+              "edge_distance_bp": 0,
+              "tstart": 43968,
+              "tend": 44298,
+              "strand": "+",
+              "contig_length": 52198,
+              "tool": "blast+",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBSGIS010000020.1",
+              "search_kind": "translated",
+              "identity": 0.32976,
+              "query_coverage": 0.912718204488778,
+              "evalue": null,
+              "near_contig_edge": false,
+              "possible_edge_truncation": false,
+              "edge_distance_bp": 0,
+              "tstart": 104384,
+              "tend": 105707,
+              "strand": "+",
+              "contig_length": 168931,
+              "tool": "family_member_search",
+              "domain_name": null
+            }
+          ],
+          "tools_run": [
+            "internal_gene_search",
+            "mmseqs",
+            "diamond",
+            "family_member_search",
+            "hmmsearch"
+          ],
+          "tools_unavailable": [
+            "contig_taxonomy",
+            "local_read_depth"
+          ]
+        }
+      },
+      {
+        "id": "E002",
+        "summary": "Family orthology measurements for tetA_tetracycline_efflux",
+        "values": {
+          "family_id": "tetA_tetracycline_efflux",
+          "n_member_hits": 6,
+          "architecture": "close_paralogue",
+          "hierarchy": [
+            "profile_hmm_family_match"
+          ],
+          "supports_orthologue": true,
+          "domain_only": false,
+          "fusion": {
+            "state": "not_fusion",
+            "supported": false
+          },
+          "split": {
+            "state": "not_split",
+            "supported": false
+          },
+          "fragmented": {
+            "state": "not_fragmented",
+            "supported": false
+          },
+          "paralogue": {
+            "state": "single_locus",
+            "n_loci": 1,
+            "supported": false
+          },
+          "best_hmm": {
+            "target_id": "NZ_JBSGIS010000020.1:104384-105707:+",
+            "full_evalue": 1.6e-50,
+            "full_score": 168.7,
+            "best_domain_evalue": 2e-50,
+            "best_domain_score": 168.4
+          },
+          "metrics": {
+            "n_supporting_members": 0,
+            "n_family_members": 2,
+            "reference_set_agreement": 0.0,
+            "hmm_model_coverage": 0.9005,
+            "hmm_query_coverage": 0.8617,
+            "hmm_full_evalue": 1.6e-50,
+            "hmm_full_score": 168.7,
+            "best_member_identity": 0.37634,
+            "best_member_coverage": 0.912718204488778,
+            "competitive_family_classification": "target_family_supported",
+            "multiplicity_classification": "single_locus",
+            "domain_only": false
+          },
+          "limitations": [],
+          "tools_run": [
+            "family_member_search",
+            "hmmsearch"
+          ],
+          "member_hit_summaries": [
+            {
+              "query_id": "P02982",
+              "contig_id": "NZ_JBSGIS010000020.1",
+              "identity": 0.32976,
+              "query_coverage": 0.9047619047619048,
+              "search_kind": "translated",
+              "evalue": 1.02e-37,
+              "near_contig_edge": true,
+              "tstart": 104498,
+              "tend": 105602,
+              "strand": "+"
+            },
+            {
+              "query_id": "P02980",
+              "contig_id": "NZ_JBSGIS010000020.1",
+              "identity": 0.30343,
+              "query_coverage": 0.912718204488778,
+              "search_kind": "translated",
+              "evalue": 1.87e-27,
+              "near_contig_edge": true,
+              "tstart": 104525,
+              "tend": 105653,
+              "strand": "+"
+            },
+            {
+              "query_id": "P02980",
+              "contig_id": "NZ_JBSGIS010000063.1",
+              "identity": 0.31495999999999996,
+              "query_coverage": 0.30423940149625933,
+              "search_kind": "translated",
+              "evalue": 0.000271,
+              "near_contig_edge": true,
+              "tstart": 8857,
+              "tend": 9223,
+              "strand": "+"
+            }
+          ]
+        }
+      },
+      {
+        "id": "E003",
+        "summary": "Contig-edge status for tetA_tetracycline_efflux",
+        "values": {
+          "n_edge_hits": 3,
+          "hits": [
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBSGIS010000020.1",
+              "search_kind": "translated",
+              "identity": 0.30343,
+              "query_coverage": 0.912718204488778,
+              "evalue": 1.87e-27,
+              "near_contig_edge": true,
+              "possible_edge_truncation": true,
+              "edge_distance_bp": 0,
+              "tstart": 104525,
+              "tend": 105653,
+              "strand": "+",
+              "contig_length": 168931,
+              "tool": "blast+",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBSGIS010000063.1",
+              "search_kind": "translated",
+              "identity": 0.31495999999999996,
+              "query_coverage": 0.30423940149625933,
+              "evalue": 0.000271,
+              "near_contig_edge": true,
+              "possible_edge_truncation": true,
+              "edge_distance_bp": 0,
+              "tstart": 8857,
+              "tend": 9223,
+              "strand": "+",
+              "contig_length": 34479,
+              "tool": "blast+",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBSGIS010000050.1",
+              "search_kind": "translated",
+              "identity": 0.32773,
+              "query_coverage": 0.2793017456359102,
+              "evalue": 0.000429,
+              "near_contig_edge": true,
+              "possible_edge_truncation": true,
+              "edge_distance_bp": 0,
+              "tstart": 43968,
+              "tend": 44298,
+              "strand": "+",
+              "contig_length": 52198,
+              "tool": "blast+",
+              "domain_name": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "E004",
+        "summary": "Locus evidence for tetA_tetracycline_efflux",
+        "values": {
+          "n_loci": 1,
+          "conflicts": [
+            "no_reference_genome"
+          ],
+          "orthologues": [],
+          "placement": {}
+        }
+      },
+      {
+        "id": "E005",
+        "summary": "Competitive family discrimination for tetA_tetracycline_efflux: target_family_supported",
+        "values": {
+          "action": "competitive_family",
+          "requested_by": "planner",
+          "status": "NO_NEW_INFORMATION",
+          "status_reason": "the action executed but every value it produced was already present in TargetMeasurements",
+          "limitation": null,
+          "classification": "target_family_supported",
+          "target_family": "tetA_tetracycline_efflux",
+          "best_competing_family": null,
+          "score_margin": 0.7354,
+          "reciprocal_family_assignment": "tetA_tetracycline_efflux",
+          "supports_orthologue": true,
+          "competitors_scored": [
+            "mfs_multidrug_efflux",
+            "rnd_efflux"
+          ]
+        }
+      },
+      {
+        "id": "E006",
+        "summary": "Measurement state m0 -> m1 after competitive_family: no measured value changed",
+        "values": {
+          "action": "competitive_family",
+          "requested_by": "planner",
+          "status": "NO_NEW_INFORMATION",
+          "from_state": "m0",
+          "to_state": "m1",
+          "measurement_state_changed": false,
+          "measurement_hash_before": "07e854644b167df1b1e606067b7be991a2ecaf210fed243089439622d1728f3a",
+          "measurement_hash_after": "07e854644b167df1b1e606067b7be991a2ecaf210fed243089439622d1728f3a",
+          "applied_updates": [
+            {
+              "field": "family_evidence",
+              "op": "replace_family_evidence",
+              "origin": "deterministic_competitive_family",
+              "n_new": 0,
+              "detail": {
+                "before_hash": "ed291d0fc3f4d0f2c32723e2548550150b800807f78ea521bda6a4a6f09f2e86",
+                "after_hash": "ed291d0fc3f4d0f2c32723e2548550150b800807f78ea521bda6a4a6f09f2e86"
+              }
+            }
+          ],
+          "n_hits_before": 4,
+          "n_hits_after": 4,
+          "source_evidence_id": "E005"
+        }
+      },
+      {
+        "id": "E007",
+        "summary": "Profile-nominated ORF alignments for tetA_tetracycline_efflux",
+        "values": {
+          "action": "search_target_domains_hmmer",
+          "requested_by": "critic",
+          "status": "INFORMATIVE",
+          "status_reason": "updated measurement fields: hits, tools_run",
+          "limitation": "HMM was built from the query sequence, not a curated family model",
+          "n_sequence_hits": 17,
+          "hmm_hits": [
+            {
+              "target_id": "NZ_JBSGIS010000020.1:104384-105707:+",
+              "full_evalue": 7.1e-38,
+              "full_score": 132.2,
+              "best_domain_evalue": 1.1e-37,
+              "best_domain_score": 131.5
+            },
+            {
+              "target_id": "NZ_JBSGIS010000022.1:22256-25022:-",
+              "full_evalue": 1.6e-09,
+              "full_score": 38.9,
+              "best_domain_evalue": 1.6e-09,
+              "best_domain_score": 38.9
+            },
+            {
+              "target_id": "NZ_JBSGIS010000016.1:6286-8404:+",
+              "full_evalue": 2.3e-08,
+              "full_score": 35.0,
+              "best_domain_evalue": 2.3e-08,
+              "best_domain_score": 35.0
+            },
+            {
+              "target_id": "NZ_JBSGIS010000011.1:120791-122345:-",
+              "full_evalue": 1.1e-07,
+              "full_score": 32.8,
+              "best_domain_evalue": 1.1e-07,
+              "best_domain_score": 32.8
+            },
+            {
+              "target_id": "NZ_JBSGIS010000005.1:18250-20059:+",
+              "full_evalue": 1.1e-07,
+              "full_score": 32.8,
+              "best_domain_evalue": 1.1e-07,
+              "best_domain_score": 32.8
+            },
+            {
+              "target_id": "NZ_JBSGIS010000036.1:18806-20162:+",
+              "full_evalue": 1.2e-06,
+              "full_score": 29.4,
+              "best_domain_evalue": 4.6e-06,
+              "best_domain_score": 27.5
+            },
+            {
+              "target_id": "NZ_JBSGIS010000025.1:51634-53191:-",
+              "full_evalue": 6.6e-06,
+              "full_score": 26.9,
+              "best_domain_evalue": 6.6e-06,
+              "best_domain_score": 26.9
+            },
+            {
+              "target_id": "NZ_JBSGIS010000015.1:105382-108001:+",
+              "full_evalue": 1.1e-05,
+              "full_score": 26.2,
+              "best_domain_evalue": 1.1e-05,
+              "best_domain_score": 26.2
+            }
+          ],
+          "n_nominated_orfs": 17,
+          "n_placed_hits": 20
+        }
+      },
+      {
+        "id": "E008",
+        "summary": "Measurement state m1 -> m2 after search_target_domains_hmmer: updated hits, tools_run",
+        "values": {
+          "action": "search_target_domains_hmmer",
+          "requested_by": "critic",
+          "status": "INFORMATIVE",
+          "from_state": "m1",
+          "to_state": "m2",
+          "measurement_state_changed": true,
+          "measurement_hash_before": "0860125deb373ca7d64df068af5e6fed5e0672760d2ccaea54586d9e429a7b40",
+          "measurement_hash_after": "77d0635df4c813c358ceee517d825af49d6e7a7d4e712c17f141b348182e9613",
+          "applied_updates": [
+            {
+              "field": "hits",
+              "op": "append_hits",
+              "origin": "hmm_orf_search",
+              "n_new": 20,
+              "detail": {
+                "n_offered": 20,
+                "n_duplicate": 0,
+                "added": [
+                  {
+                    "contig_id": "NZ_JBSGIS010000020.1",
+                    "search_kind": "translated",
+                    "identity": 0.4035,
+                    "query_coverage": 0.1421,
+                    "tstart": 104603,
+                    "tend": 104774,
+                    "tool": "hmmer_nominated_alignment"
+                  },
+                  {
+                    "contig_id": "NZ_JBSGIS010000020.1",
+                    "search_kind": "translated",
+                    "identity": 0.4048,
+                    "query_coverage": 0.1047,
+                    "tstart": 104900,
+                    "tend": 105026,
+                    "tool": "hmmer_nominated_alignment"
+                  },
+                  {
+                    "contig_id": "NZ_JBSGIS010000037.1",
+                    "search_kind": "translated",
+                    "identity": 0.4054,
+                    "query_coverage": 0.0923,
+                    "tstart": 32702,
+                    "tend": 32813,
+                    "tool": "hmmer_nominated_alignment"
+                  },
+                  {
+                    "contig_id": "NZ_JBSGIS010000053.1",
+                    "search_kind": "translated",
+                    "identity": 0.4062,
+                    "query_coverage": 0.0798,
+                    "tstart": 33010,
+                    "tend": 33106,
+                    "tool": "hmmer_nominated_alignment"
+                  },
+                  {
+                    "contig_id": "NZ_JBSGIS010000063.1",
+                    "search_kind": "translated",
+                    "identity": 0.4074,
+                    "query_coverage": 0.0673,
+                    "tstart": 8989,
+                    "tend": 9070,
+                    "tool": "hmmer_nominated_alignment"
+                  },
+                  {
+                    "contig_id": "NZ_JBSGIS010000006.1",
+                    "search_kind": "translated",
+                    "identity": 0.4074,
+                    "query_coverage": 0.0673,
+                    "tstart": 242144,
+                    "tend": 242225,
+                    "tool": "hmmer_nominated_alignment"
+                  },
+                  {
+                    "contig_id": "NZ_JBSGIS010000020.1",
+                    "search_kind": "translated",
+                    "identity": 0.4,
+                    "query_coverage": 0.0623,
+                    "tstart": 104714,
+                    "tend": 104789,
+                    "tool": "hmmer_nominated_alignment"
+                  },
+                  {
+                    "contig_id": "NZ_JBSGIS010000025.1",
+                    "search_kind": "translated",
+                    "identity": 0.4,
+                    "query_coverage": 0.0623,
+                    "tstart": 52597,
+                    "tend": 52672,
+                    "tool": "hmmer_nominated_alignment"
+                  }
+                ]
+              }
+            },
+            {
+              "field": "tools_run",
+              "op": "extend_unique",
+              "origin": "hmm_orf_search",
+              "n_new": 1,
+              "detail": {
+                "added": [
+                  "hmmbuild_hmmsearch"
+                ]
+              }
+            }
+          ],
+          "n_hits_before": 4,
+          "n_hits_after": 24,
+          "source_evidence_id": "E007"
+        }
+      }
+    ],
+    "valid_evidence_ids": [
+      "E001",
+      "E002",
+      "E003",
+      "E004",
+      "E005",
+      "E006",
+      "E007",
+      "E008"
+    ],
+    "executed_analyses": [
+      "competitive_family",
+      "search_target_domains_hmmer"
+    ],
+    "initial_measurement_hash": "07e854644b167df1b1e606067b7be991a2ecaf210fed243089439622d1728f3a",
+    "final_evidence_state_hash": "77d0635df4c813c358ceee517d825af49d6e7a7d4e712c17f141b348182e9613",
+    "constraints": [
+      "Answer only from the supplied biological evidence.",
+      "Do not request additional analyses, tools, BLAST, HMM, or follow-ups.",
+      "Do not invent measurements or evidence IDs.",
+      "Cite at most 3 evidence IDs, copied verbatim from valid_evidence_ids."
+    ]
+  },
+  "family_evidence": {
+    "family_id": "tetA_tetracycline_efflux",
+    "n_member_hits": 6,
+    "architecture": "close_paralogue",
+    "hierarchy": [
+      "profile_hmm_family_match"
+    ],
+    "supports_orthologue": false,
+    "domain_only": false,
+    "fusion": {
+      "state": "not_fusion",
+      "supported": false,
+      "hmm_coverage": 0.9005,
+      "contig": "NZ_JBSGIS010000020.1",
+      "genomic_start": 104384,
+      "genomic_end": 105707
+    },
+    "split": {
+      "state": "not_split",
+      "supported": false,
+      "gaps": []
+    },
+    "fragmented": {
+      "state": "not_fragmented",
+      "supported": false,
+      "contig_edge": false,
+      "combined_query_span": 0.9005,
+      "not_biological_split": false
+    },
+    "paralogue": {
+      "state": "single_locus",
+      "n_loci": 1,
+      "supported": false
+    },
+    "reconstruction": {
+      "contig": "NZ_JBSGIS010000020.1",
+      "strand": "+",
+      "genomic_start": 104384,
+      "genomic_end": 105707,
+      "candidate_segments": [
+        {
+          "contig": "NZ_JBSGIS010000020.1",
+          "strand": "+",
+          "genomic_start": 104516,
+          "genomic_end": 105656,
+          "frame": 2,
+          "orf_id": "NZ_JBSGIS010000020.1:104384-105707:+",
+          "hmm_from": 11,
+          "hmm_to": 390,
+          "evalue": 2e-50,
+          "score": 168.4,
+          "identity": null,
+          "query_coverage": null,
+          "near_contig_edge": false
+        }
+      ],
+      "frame": 2,
+      "profile_hmm_from": 11,
+      "profile_hmm_to": 390,
+      "sequence_identity": 0.32976,
+      "protein_coverage": 0.912718204488778,
+      "hmm_coverage": 0.9005,
+      "domain_order": [
+        1
+      ],
+      "inter_segment_gaps": [],
+      "stop_codons": [],
+      "frameshifts": [],
+      "contig_edge": false,
+      "local_depth": null,
+      "annotation_agreement": null,
+      "evidence_ids": [
+        "E_family_hmm",
+        "E_locus_reconstruction"
+      ],
+      "architecture": "close_paralogue",
+      "family_gate_passed": true,
+      "provenance": {
+        "created_by": "deterministic_locus_reconstruction",
+        "operates_on": "assembly_sequence",
+        "llm_invented_scores": false,
+        "species_specific_rules": false
+      },
+      "query_identity": 0.30343,
+      "divergence": {
+        "n_members_scored": 2,
+        "identities_vs_query": {
+          "P02980": 1.0,
+          "P02982": 0.4534005037783375
+        },
+        "median_close": 1.0,
+        "median_other": 0.4534005037783375,
+        "split": 0.7267,
+        "min_other": 0.4534005037783375,
+        "max_other": 0.4534005037783375,
+        "candidate_query_identity": 0.30343,
+        "divergent": true
+      },
+      "paralogue_record": {
+        "kind": "true_duplicated_paralogue",
+        "classify_as": "close_paralogue",
+        "primary_locus": {
+          "contig": "NZ_JBSGIS010000020.1",
+          "strand": "+",
+          "genomic_start": 104384,
+          "genomic_end": 105707,
+          "hmm_from": 11,
+          "hmm_to": 390,
+          "hmm_coverage": 0.9005,
+          "orf_ids": [
+            "NZ_JBSGIS010000020.1:104384-105707:+"
+          ],
+          "contig_length": 168931,
+          "contig_edge": false,
+          "gc": 0.6977,
+          "contig_gc": 0.7271,
+          "local_depth": null,
+          "identity": 0.32976,
+          "coverage": 0.912718204488778,
+          "query_identity": 0.30343,
+          "query_coverage": 0.912718204488778,
+          "family_gate_passed": true,
+          "orthologue_flags": {
+            "rbh": null,
+            "synteny": null,
+            "phylo": null
+          }
+        },
+        "secondary_locus": {
+          "contig": "NZ_JBSGIS010000050.1",
+          "strand": "+",
+          "genomic_start": 43839,
+          "genomic_end": 45144,
+          "hmm_from": 16,
+          "hmm_to": 360,
+          "hmm_coverage": 0.8175,
+          "orf_ids": [
+            "NZ_JBSGIS010000050.1:43839-45144:+"
+          ],
+          "contig_length": 52198,
+          "contig_edge": false,
+          "gc": 0.7249,
+          "contig_gc": 0.7145,
+          "local_depth": null,
+          "identity": 0.32773,
+          "coverage": 0.2793017456359102,
+          "query_identity": 0.32773,
+          "query_coverage": 0.2793017456359102,
+          "family_gate_passed": true,
+          "orthologue_flags": {
+            "rbh": null,
+            "synteny": null,
+            "phylo": null
+          }
+        },
+        "identity": 0.32773,
+        "coverage": 0.2793017456359102,
+        "hmm_support": 0.8175,
+        "rbh_status": null,
+        "synteny_status": null,
+        "phylogenetic_evidence": null,
+        "hmm_iou": 0.9079,
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_locus_reconstruction",
+          "E_paralogy"
+        ],
+        "provenance": {
+          "created_by": "deterministic_paralogy",
+          "species_specific_rules": false,
+          "llm_invented_scores": false
+        }
+      },
+      "secondary_loci": [],
+      "competitive_family": {
+        "target_family": "tetA_tetracycline_efflux",
+        "candidate_locus": {
+          "contig": "NZ_JBSGIS010000020.1",
+          "genomic_start": 104384,
+          "genomic_end": 105707,
+          "strand": "+",
+          "protein_length": 441
+        },
+        "target_family_score": 0.7354,
+        "target_family_HMM_score": 168.7,
+        "target_family_model_coverage": 0.9005,
+        "target_family_sequence_coverage": 0.35147392290249435,
+        "best_competing_family": null,
+        "competing_family_score": null,
+        "competing_family_HMM_score": null,
+        "competing_family_model_coverage": 0.0,
+        "score_margin": 0.7354,
+        "domain_architecture": [],
+        "protein_length": 441,
+        "transmembrane_topology": {
+          "hydrophobic_windows_19aa": 10,
+          "measured": true
+        },
+        "conserved_motif_evidence": null,
+        "reciprocal_family_assignment": "tetA_tetracycline_efflux",
+        "reference_family_placement": {
+          "winner": "tetA_tetracycline_efflux",
+          "margin": 0.7294
+        },
+        "conflicting_evidence": [
+          "best competing family did not pass the family gate and is not treated as an alternative identity",
+          "target family support is not sequence-decisive; competing-family comparison did not settle identity"
+        ],
+        "classification": "ambiguous_family",
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_competitive_family"
+        ],
+        "provenance": {
+          "created_by": "deterministic_competitive_family",
+          "llm_invented_scores": false,
+          "gene_specific_rules": false
+        },
+        "competitors_scored": [
+          {
+            "family_id": "mfs_multidrug_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.4166666666666667,
+            "sequence_coverage": 0.07256235827664399,
+            "combined_score": 0.006
+          },
+          {
+            "family_id": "rnd_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.4166666666666667,
+            "sequence_coverage": 0.045351473922902494,
+            "combined_score": 0.0038
+          }
+        ]
+      },
+      "multiplicity": {
+        "family": "tetA_tetracycline_efflux",
+        "number_of_candidate_loci": 1,
+        "coordinates": [
+          {
+            "contig": "NZ_JBSGIS010000020.1",
+            "start": 104384,
+            "end": 105707,
+            "strand": "+"
+          }
+        ],
+        "contigs": [
+          "NZ_JBSGIS010000020.1"
+        ],
+        "strand": [
+          "+"
+        ],
+        "sequence_identity_between_copies": null,
+        "family_evidence_per_locus": [
+          {
+            "contig": "NZ_JBSGIS010000020.1",
+            "identity": 0.32976,
+            "coverage": 0.912718204488778,
+            "hmm_coverage": 0.912718204488778,
+            "family_gate_passed": true
+          }
+        ],
+        "read_depth_per_locus": [
+          null
+        ],
+        "upstream_context": [
+          "AGAGCCGTGTCGGCGATCAGCTTCCGGGTCTGTGCCTTCTTGCGTTCGCGGCGGCCGAGCTGCTGGTTTGTCCCCATGAG"
+        ],
+        "downstream_context": [
+          "TAAGGGATCCGCGGAGACCGGCCCGGGCGGACGCGGGGGCCTCGTACCCGGGTCGGGGACTGGATCGCGGAGTCCCGTCG"
+        ],
+        "assembly_fragment_relationship": false,
+        "plasmid_chromosome_context": null,
+        "contamination_evidence": false,
+        "classification": "single_locus",
+        "loci": [
+          {
+            "contig": "NZ_JBSGIS010000020.1",
+            "strand": "+",
+            "genomic_start": 104384,
+            "genomic_end": 105707,
+            "identity": 0.32976,
+            "coverage": 0.912718204488778,
+            "query_identity": 0.32976,
+            "hmm_from": 1,
+            "hmm_to": 1,
+            "hmm_coverage": 0.912718204488778,
+            "contig_length": 168931,
+            "contig_edge": null,
+            "gc": null,
+            "contig_gc": null,
+            "orf_ids": [],
+            "upstream_context": "AGAGCCGTGTCGGCGATCAGCTTCCGGGTCTGTGCCTTCTTGCGTTCGCGGCGGCCGAGCTGCTGGTTTGTCCCCATGAG",
+            "downstream_context": "TAAGGGATCCGCGGAGACCGGCCCGGGCGGACGCGGGGGCCTCGTACCCGGGTCGGGGACTGGATCGCGGAGTCCCGTCG",
+            "family_gate_passed": true
+          }
+        ],
+        "provenance": {
+          "created_by": "deterministic_locus_multiplicity",
+          "llm_invented_scores": false,
+          "collapsed_near_identical_copies": false
+        },
+        "evidence_ids": [
+          "E_locus_reconstruction",
+          "E_paralogy",
+          "E_multiplicity"
+        ]
+      },
+      "accepted_candidate_count": 3
+    },
+    "competitive_family": {
+      "target_family": "tetA_tetracycline_efflux",
+      "candidate_locus": {
+        "contig": "NZ_JBSGIS010000020.1",
+        "genomic_start": 104384,
+        "genomic_end": 105707,
+        "strand": "+",
+        "protein_length": 441
+      },
+      "target_family_score": 0.7354,
+      "target_family_HMM_score": 168.7,
+      "target_family_model_coverage": 0.9005,
+      "target_family_sequence_coverage": 0.35147392290249435,
+      "best_competing_family": null,
+      "competing_family_score": null,
+      "competing_family_HMM_score": null,
+      "competing_family_model_coverage": 0.0,
+      "score_margin": 0.7354,
+      "domain_architecture": [],
+      "protein_length": 441,
+      "transmembrane_topology": {
+        "hydrophobic_windows_19aa": 10,
+        "measured": true
+      },
+      "conserved_motif_evidence": null,
+      "reciprocal_family_assignment": "tetA_tetracycline_efflux",
+      "reference_family_placement": {
+        "winner": "tetA_tetracycline_efflux",
+        "margin": 0.7294
+      },
+      "conflicting_evidence": [
+        "best competing family did not pass the family gate and is not treated as an alternative identity",
+        "target family support is not sequence-decisive; competing-family comparison did not settle identity"
+      ],
+      "classification": "ambiguous_family",
+      "evidence_ids": [
+        "E_family_hmm",
+        "E_competitive_family"
+      ],
+      "provenance": {
+        "created_by": "deterministic_competitive_family",
+        "llm_invented_scores": false,
+        "gene_specific_rules": false
+      },
+      "competitors_scored": [
+        {
+          "family_id": "mfs_multidrug_efflux",
+          "hmm_score": null,
+          "hmm_model_coverage": 0.0,
+          "hmm_evalue": null,
+          "sequence_identity": 0.4166666666666667,
+          "sequence_coverage": 0.07256235827664399,
+          "combined_score": 0.006
+        },
+        {
+          "family_id": "rnd_efflux",
+          "hmm_score": null,
+          "hmm_model_coverage": 0.0,
+          "hmm_evalue": null,
+          "sequence_identity": 0.4166666666666667,
+          "sequence_coverage": 0.045351473922902494,
+          "combined_score": 0.0038
+        }
+      ]
+    },
+    "multiplicity": {
+      "family": "tetA_tetracycline_efflux",
+      "number_of_candidate_loci": 1,
+      "coordinates": [
+        {
+          "contig": "NZ_JBSGIS010000020.1",
+          "start": 104384,
+          "end": 105707,
+          "strand": "+"
+        }
+      ],
+      "contigs": [
+        "NZ_JBSGIS010000020.1"
+      ],
+      "strand": [
+        "+"
+      ],
+      "sequence_identity_between_copies": null,
+      "family_evidence_per_locus": [
+        {
+          "contig": "NZ_JBSGIS010000020.1",
+          "identity": 0.32976,
+          "coverage": 0.912718204488778,
+          "hmm_coverage": 0.912718204488778,
+          "family_gate_passed": true
+        }
+      ],
+      "read_depth_per_locus": [
+        null
+      ],
+      "upstream_context": [
+        "AGAGCCGTGTCGGCGATCAGCTTCCGGGTCTGTGCCTTCTTGCGTTCGCGGCGGCCGAGCTGCTGGTTTGTCCCCATGAG"
+      ],
+      "downstream_context": [
+        "TAAGGGATCCGCGGAGACCGGCCCGGGCGGACGCGGGGGCCTCGTACCCGGGTCGGGGACTGGATCGCGGAGTCCCGTCG"
+      ],
+      "assembly_fragment_relationship": false,
+      "plasmid_chromosome_context": null,
+      "contamination_evidence": false,
+      "classification": "single_locus",
+      "loci": [
+        {
+          "contig": "NZ_JBSGIS010000020.1",
+          "strand": "+",
+          "genomic_start": 104384,
+          "genomic_end": 105707,
+          "identity": 0.32976,
+          "coverage": 0.912718204488778,
+          "query_identity": 0.32976,
+          "hmm_from": 1,
+          "hmm_to": 1,
+          "hmm_coverage": 0.912718204488778,
+          "contig_length": 168931,
+          "contig_edge": null,
+          "gc": null,
+          "contig_gc": null,
+          "orf_ids": [],
+          "upstream_context": "AGAGCCGTGTCGGCGATCAGCTTCCGGGTCTGTGCCTTCTTGCGTTCGCGGCGGCCGAGCTGCTGGTTTGTCCCCATGAG",
+          "downstream_context": "TAAGGGATCCGCGGAGACCGGCCCGGGCGGACGCGGGGGCCTCGTACCCGGGTCGGGGACTGGATCGCGGAGTCCCGTCG",
+          "family_gate_passed": true
+        }
+      ],
+      "provenance": {
+        "created_by": "deterministic_locus_multiplicity",
+        "llm_invented_scores": false,
+        "collapsed_near_identical_copies": false
+      },
+      "evidence_ids": [
+        "E_locus_reconstruction",
+        "E_paralogy",
+        "E_multiplicity"
+      ]
+    },
+    "best_hmm": {
+      "target_id": "NZ_JBSGIS010000020.1:104384-105707:+",
+      "full_evalue": 1.6e-50,
+      "full_score": 168.7,
+      "best_domain_evalue": 2e-50,
+      "best_domain_score": 168.4,
+      "model_length": 422,
+      "query_length": 441,
+      "model_coverage": 0.9005,
+      "query_coverage": 0.8617,
+      "n_domains": 1,
+      "domain_order": [
+        1
+      ],
+      "domain_completeness": [
+        {
+          "domain_index": 1,
+          "hmm_from": 11,
+          "hmm_to": 390,
+          "domain_score": 168.4,
+          "domain_i_evalue": 2e-50,
+          "complete": true
+        }
+      ],
+      "domains": [
+        {
+          "target_id": "NZ_JBSGIS010000020.1:104384-105707:+",
+          "tlen": 441,
+          "query_name": "members.aln",
+          "qlen": 422,
+          "full_evalue": 1.6e-50,
+          "full_score": 168.7,
+          "domain_index": 1,
+          "n_domains": 1,
+          "domain_c_evalue": 5.5e-53,
+          "domain_i_evalue": 2e-50,
+          "domain_score": 168.4,
+          "hmm_from": 11,
+          "hmm_to": 390,
+          "ali_from": 45,
+          "ali_to": 424,
+          "env_from": 36,
+          "env_to": 434,
+          "model_span": 380,
+          "query_span": 380,
+          "model_coverage": 0.9004739336492891,
+          "query_coverage": 0.8616780045351474,
+          "accuracy": 0.85,
+          "search_kind": "hmm_domain",
+          "tool": "hmmsearch"
+        }
+      ],
+      "tool": "hmmsearch",
+      "invented": false
+    },
+    "metrics": {
+      "n_supporting_members": 0,
+      "supporting_members": [],
+      "n_family_members": 2,
+      "reference_set_agreement": 0.0,
+      "hmm_model_coverage": 0.9005,
+      "hmm_query_coverage": 0.8617,
+      "hmm_full_evalue": 1.6e-50,
+      "hmm_full_score": 168.7,
+      "hmm_n_domains": 1,
+      "hmm_domain_order": [
+        1
+      ],
+      "domain_completeness": [
+        {
+          "domain_index": 1,
+          "hmm_from": 11,
+          "hmm_to": 390,
+          "domain_score": 168.4,
+          "domain_i_evalue": 2e-50,
+          "complete": true
+        }
+      ],
+      "best_member_identity": 0.37634,
+      "best_member_coverage": 0.912718204488778,
+      "domain_only": false,
+      "pairwise_identity_not_used_as_sole_reject": true,
+      "competitive_family_classification": "ambiguous_family",
+      "multiplicity_classification": "single_locus",
+      "n_loci": 1
+    },
+    "limitations": [],
+    "tools_run": [
+      "family_member_search",
+      "hmmsearch"
+    ],
+    "provenance": {
+      "created_by": "deterministic_family_orthology",
+      "llm_invented_scores": false,
+      "family_id": "tetA_tetracycline_efflux",
+      "msa_provenance": {
+        "method": "star multiple alignment seeded on the first member (Needleman-Wunsch)",
+        "aligner": "genome_skeptic.families.build_star_msa"
+      },
+      "hmm_provenance": {
+        "method": "hmmbuild from members.aln.faa at first use",
+        "not_invented_by_llm": true
+      },
+      "phylo_provenance": {},
+      "n_reference_proteins": 2,
+      "reference_species": [
+        "Tn10 TetA class B",
+        "TetA/TCR1 tetracycline efflux"
+      ],
+      "reference_protein_ids": [
+        "P02980",
+        "P02982"
+      ],
+      "reference_gene_ids": [
+        null,
+        null
+      ],
+      "protein_lengths": [
+        401,
+        399
+      ],
+      "domain_architecture": [],
+      "known_fusion_or_split": []
+    },
+    "member_hit_summaries": [
+      {
+        "query_id": "P02982",
+        "contig_id": "NZ_JBSGIS010000020.1",
+        "identity": 0.32976,
+        "query_coverage": 0.9047619047619048,
+        "search_kind": "translated",
+        "evalue": 1.02e-37,
+        "near_contig_edge": true,
+        "tstart": 104498,
+        "tend": 105602,
+        "strand": "+"
+      },
+      {
+        "query_id": "P02980",
+        "contig_id": "NZ_JBSGIS010000020.1",
+        "identity": 0.30343,
+        "query_coverage": 0.912718204488778,
+        "search_kind": "translated",
+        "evalue": 1.87e-27,
+        "near_contig_edge": true,
+        "tstart": 104525,
+        "tend": 105653,
+        "strand": "+"
+      },
+      {
+        "query_id": "P02980",
+        "contig_id": "NZ_JBSGIS010000063.1",
+        "identity": 0.31495999999999996,
+        "query_coverage": 0.30423940149625933,
+        "search_kind": "translated",
+        "evalue": 0.000271,
+        "near_contig_edge": true,
+        "tstart": 8857,
+        "tend": 9223,
+        "strand": "+"
+      },
+      {
+        "query_id": "P02980",
+        "contig_id": "NZ_JBSGIS010000050.1",
+        "identity": 0.32773,
+        "query_coverage": 0.2793017456359102,
+        "search_kind": "translated",
+        "evalue": 0.000429,
+        "near_contig_edge": true,
+        "tstart": 43968,
+        "tend": 44298,
+        "strand": "+"
+      },
+      {
+        "query_id": "P02982",
+        "contig_id": "NZ_JBSGIS010000063.1",
+        "identity": 0.36841999999999997,
+        "query_coverage": 0.23558897243107768,
+        "search_kind": "translated",
+        "evalue": 0.000283,
+        "near_contig_edge": true,
+        "tstart": 8995,
+        "tend": 9268,
+        "strand": "+"
+      },
+      {
+        "query_id": "P02982",
+        "contig_id": "NZ_JBSGIS010000006.1",
+        "identity": 0.37634,
+        "query_coverage": 0.22807017543859648,
+        "search_kind": "translated",
+        "evalue": 0.000317,
+        "near_contig_edge": true,
+        "tstart": 241958,
+        "tend": 242237,
+        "strand": "-"
+      }
+    ]
+  },
+  "evidence_ids": [
+    "E001",
+    "E002",
+    "E003",
+    "E004",
+    "E005",
+    "E006",
+    "E007",
+    "E008"
+  ],
+  "arm_b_det_endpoint_omitted_from_judge_packet": true,
+  "arm_b_det_endpoint_for_record_only": "ABSENT",
+  "run_dir": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/role_swap_cross_task/06_SOL_CONTROLLER/RS06/GS_RUN"
+}

@@ -1,0 +1,16 @@
+{
+  "sol": {
+    "ok": true,
+    "error": null,
+    "latency_s": 8.019,
+    "cost_usd": 0.004284,
+    "non_study": true
+  },
+  "jev": {
+    "ok": true,
+    "error": null,
+    "latency_s": 0.871,
+    "cost_usd": 3.024e-05,
+    "non_study": true
+  }
+}

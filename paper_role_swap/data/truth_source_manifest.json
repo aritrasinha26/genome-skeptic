@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-09-22T17:27:20.723292+00:00",
+  "files": {
+    "hmm/mfs_multidrug_efflux.hmm": {
+      "copied_from": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/hmm/mfs_multidrug_efflux.hmm",
+      "path": "role_swap_cross_task/03_TRUTH/SOURCE_FREEZE/hmm/mfs_multidrug_efflux.hmm",
+      "sha256": "9c9cf5c06ec1b743f1fb0b6275d504089f30aedc4eaefa4f66cf13a316a9aef6"
+    },
+    "hmm/rnd_efflux.hmm": {
+      "copied_from": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/hmm/rnd_efflux.hmm",
+      "path": "role_swap_cross_task/03_TRUTH/SOURCE_FREEZE/hmm/rnd_efflux.hmm",
+      "sha256": "31a0e14895a3b03b6d940dc836f098523cd728eea59c9ee28b91444144320e40"
+    },
+    "hmm/tetA_tetracycline_efflux.hmm": {
+      "copied_from": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/hmm/tetA_tetracycline_efflux.hmm",
+      "path": "role_swap_cross_task/03_TRUTH/SOURCE_FREEZE/hmm/tetA_tetracycline_efflux.hmm",
+      "sha256": "43905347fb66dda268b924a9dae010c64f50d52b41c0348ab29b4729ae2720f2"
+    },
+    "panels/tetA_competitors.faa": {
+      "copied_from": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/panels/tetA_competitors.faa",
+      "path": "role_swap_cross_task/03_TRUTH/SOURCE_FREEZE/panels/tetA_competitors.faa",
+      "sha256": "bae86b86548a0728b60dddc0ba3e15b524d632a1eb1bf5487f1ea4aea817f3c7"
+    },
+    "panels/tetA_target.faa": {
+      "copied_from": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/manuscript_benchmark/TRUTH_M60/SOURCE_FREEZE/panels/tetA_target.faa",
+      "path": "role_swap_cross_task/03_TRUTH/SOURCE_FREEZE/panels/tetA_target.faa",
+      "sha256": "1d3eaa80037e0255cb8ad1a3238f30d259a66e2a3c9ed011800b1848c07a2a29"
+    }
+  },
+  "kind": "ROLE_SWAP_TRUTH_SOURCE_FREEZE",
+  "note": "Panels/HMMs copied from M60 independent truth SOURCE_FREEZE; adjudication does not call GS validator polarity."
+}

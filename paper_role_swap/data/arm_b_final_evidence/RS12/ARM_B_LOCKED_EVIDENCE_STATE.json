@@ -1,0 +1,9333 @@
+{
+  "case_id": "RS12",
+  "accession": "GCF_057669585.1",
+  "target": "tetA_tetracycline_efflux",
+  "locked_at_utc": "2026-09-22T18:24:21.785096+00:00",
+  "initial_state_hash": "3699fc1ce53d91427599e2cd0372540b38e77148d463f2e1f9be9672c640305c",
+  "final_state_hash": "37a08bc93aef9a6543941965aad234b8e950bb50c3e2038fd81ca386e5ccb48c",
+  "planner_decision": "INVESTIGATE",
+  "planner_action": "competitive_family",
+  "critic_decision": "challenge",
+  "critic_action": "search_target_proteins_mmseqs",
+  "followup_actions": [
+    "competitive_family",
+    "search_target_proteins_mmseqs"
+  ],
+  "packet": {
+    "target": "tetA_tetracycline_efflux",
+    "biological_endpoint_options": [
+      "PRESENT",
+      "ABSENT",
+      "UNRESOLVED"
+    ],
+    "structured_biological_measurements": {
+      "n_hits": 6,
+      "n_loci": 1,
+      "architecture": "close_paralogue",
+      "supports_orthologue": false,
+      "best_hit": {
+        "identity": 0.31469,
+        "coverage": 0.46633416458852867,
+        "hmm_score": 72.0,
+        "hmm_model_coverage": 0.4384
+      }
+    },
+    "candidate_loci": [
+      {
+        "contig_id": null,
+        "start": null,
+        "end": null,
+        "strand": null,
+        "architecture_state": null,
+        "evidence_ids": []
+      }
+    ],
+    "sequence_evidence": {
+      "n_evidence_items": 8,
+      "evidence_ids": [
+        "E001",
+        "E002",
+        "E003",
+        "E004",
+        "E005",
+        "E006",
+        "E007",
+        "E008"
+      ]
+    },
+    "family_competitor_profile_architecture_evidence": {
+      "family_id": "tetA_tetracycline_efflux",
+      "architecture": "close_paralogue",
+      "supports_orthologue": false,
+      "domain_only": true,
+      "n_member_hits": 6,
+      "metrics": {
+        "best_member_identity": 0.31469,
+        "best_member_coverage": 0.46633416458852867,
+        "hmm_model_coverage": 0.4384,
+        "hmm_query_coverage": 0.5751,
+        "hmm_full_score": 72.0,
+        "hmm_full_evalue": 9.7e-20,
+        "reference_set_agreement": 0.0
+      },
+      "hmm_profile": {
+        "full_score": 72.0,
+        "full_evalue": 9.7e-20,
+        "model_coverage": 0.4384,
+        "query_coverage": 0.5751,
+        "n_domains": 2
+      },
+      "competitive_family": {
+        "classification": "unresolved_candidate",
+        "target_family_score": 0.0,
+        "target_family_HMM_score": null,
+        "target_family_model_coverage": 0.0,
+        "best_competitor": null,
+        "score_margin": 0.0,
+        "competitors_scored": [
+          {
+            "family_id": "mfs_multidrug_efflux",
+            "combined_score": 0.0,
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0
+          },
+          {
+            "family_id": "rnd_efflux",
+            "combined_score": 0.0,
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0
+          }
+        ]
+      },
+      "reconstruction": {
+        "architecture": "close_paralogue",
+        "sequence_identity": 0.30233,
+        "protein_coverage": 0.46633416458852867,
+        "hmm_coverage": 0.6327,
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_locus_reconstruction"
+        ]
+      },
+      "paralogue": {
+        "state": "single_locus",
+        "n_loci": 0,
+        "supported": false
+      },
+      "tools_run": [
+        "family_member_search",
+        "hmmsearch"
+      ]
+    },
+    "evidence": [
+      {
+        "id": "E001",
+        "summary": "Homology hits for tetA_tetracycline_efflux",
+        "values": {
+          "n_hits": 3,
+          "n_strong": 0,
+          "hits": [
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBYHFR010000003.1",
+              "search_kind": "translated",
+              "identity": 0.27895,
+              "query_coverage": 0.46633416458852867,
+              "evalue": 8.84e-07,
+              "near_contig_edge": true,
+              "possible_edge_truncation": true,
+              "edge_distance_bp": 0,
+              "tstart": 380659,
+              "tend": 381220,
+              "strand": "+",
+              "contig_length": 555083,
+              "tool": "blast+",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBYHFR010000001.1",
+              "search_kind": "translated",
+              "identity": 0.272,
+              "query_coverage": 0.3092269326683292,
+              "evalue": 0.000858,
+              "near_contig_edge": true,
+              "possible_edge_truncation": true,
+              "edge_distance_bp": 0,
+              "tstart": 25415,
+              "tend": 25778,
+              "strand": "+",
+              "contig_length": 2152187,
+              "tool": "blast+",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBYHFR010000003.1",
+              "search_kind": "translated",
+              "identity": 0.30233,
+              "query_coverage": 0.20947630922693267,
+              "evalue": 4.75e-05,
+              "near_contig_edge": true,
+              "possible_edge_truncation": true,
+              "edge_distance_bp": 0,
+              "tstart": 76238,
+              "tend": 76493,
+              "strand": "+",
+              "contig_length": 555083,
+              "tool": "blast+",
+              "domain_name": null
+            }
+          ],
+          "tools_run": [
+            "internal_gene_search",
+            "mmseqs",
+            "diamond",
+            "family_member_search",
+            "hmmsearch"
+          ],
+          "tools_unavailable": [
+            "contig_taxonomy",
+            "local_read_depth"
+          ]
+        }
+      },
+      {
+        "id": "E002",
+        "summary": "Family orthology measurements for tetA_tetracycline_efflux",
+        "values": {
+          "family_id": "tetA_tetracycline_efflux",
+          "n_member_hits": 6,
+          "architecture": "close_paralogue",
+          "hierarchy": [],
+          "supports_orthologue": false,
+          "domain_only": false,
+          "fusion": {
+            "state": "not_fusion",
+            "supported": false
+          },
+          "split": {
+            "state": "not_split",
+            "supported": false
+          },
+          "fragmented": {
+            "state": "not_fragmented",
+            "supported": false
+          },
+          "paralogue": {
+            "state": "single_locus",
+            "n_loci": 0,
+            "supported": false
+          },
+          "best_hmm": {
+            "target_id": "NZ_JBYHFR010000001.1:1782538-1784176:-",
+            "full_evalue": 9.7e-20,
+            "full_score": 72.0,
+            "best_domain_evalue": 3.9e-16,
+            "best_domain_score": 60.1
+          },
+          "metrics": {
+            "n_supporting_members": 0,
+            "n_family_members": 2,
+            "reference_set_agreement": 0.0,
+            "hmm_model_coverage": 0.4384,
+            "hmm_query_coverage": 0.5751,
+            "hmm_full_evalue": 9.7e-20,
+            "hmm_full_score": 72.0,
+            "best_member_identity": 0.31469,
+            "best_member_coverage": 0.46633416458852867,
+            "competitive_family_classification": "unresolved_candidate",
+            "multiplicity_classification": "no_candidate_loci",
+            "domain_only": true
+          },
+          "limitations": [],
+          "tools_run": [
+            "family_member_search",
+            "hmmsearch"
+          ],
+          "member_hit_summaries": [
+            {
+              "query_id": "P02980",
+              "contig_id": "NZ_JBYHFR010000003.1",
+              "identity": 0.27895,
+              "query_coverage": 0.46633416458852867,
+              "search_kind": "translated",
+              "evalue": 8.84e-07,
+              "near_contig_edge": true,
+              "tstart": 380659,
+              "tend": 381220,
+              "strand": "+"
+            },
+            {
+              "query_id": "P02982",
+              "contig_id": "NZ_JBYHFR010000001.1",
+              "identity": 0.31469,
+              "query_coverage": 0.3508771929824561,
+              "search_kind": "translated",
+              "evalue": 5e-06,
+              "near_contig_edge": true,
+              "tstart": 1783255,
+              "tend": 1783669,
+              "strand": "-"
+            },
+            {
+              "query_id": "P02982",
+              "contig_id": "NZ_JBYHFR010000001.1",
+              "identity": 0.30713999999999997,
+              "query_coverage": 0.3483709273182957,
+              "search_kind": "translated",
+              "evalue": 8.91e-05,
+              "near_contig_edge": true,
+              "tstart": 25424,
+              "tend": 25823,
+              "strand": "+"
+            }
+          ]
+        }
+      },
+      {
+        "id": "E003",
+        "summary": "Contig-edge status for tetA_tetracycline_efflux",
+        "values": {
+          "n_edge_hits": 3,
+          "hits": [
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBYHFR010000003.1",
+              "search_kind": "translated",
+              "identity": 0.27895,
+              "query_coverage": 0.46633416458852867,
+              "evalue": 8.84e-07,
+              "near_contig_edge": true,
+              "possible_edge_truncation": true,
+              "edge_distance_bp": 0,
+              "tstart": 380659,
+              "tend": 381220,
+              "strand": "+",
+              "contig_length": 555083,
+              "tool": "blast+",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBYHFR010000001.1",
+              "search_kind": "translated",
+              "identity": 0.272,
+              "query_coverage": 0.3092269326683292,
+              "evalue": 0.000858,
+              "near_contig_edge": true,
+              "possible_edge_truncation": true,
+              "edge_distance_bp": 0,
+              "tstart": 25415,
+              "tend": 25778,
+              "strand": "+",
+              "contig_length": 2152187,
+              "tool": "blast+",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBYHFR010000003.1",
+              "search_kind": "translated",
+              "identity": 0.30233,
+              "query_coverage": 0.20947630922693267,
+              "evalue": 4.75e-05,
+              "near_contig_edge": true,
+              "possible_edge_truncation": true,
+              "edge_distance_bp": 0,
+              "tstart": 76238,
+              "tend": 76493,
+              "strand": "+",
+              "contig_length": 555083,
+              "tool": "blast+",
+              "domain_name": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "E004",
+        "summary": "Locus evidence for tetA_tetracycline_efflux",
+        "values": {
+          "n_loci": 1,
+          "conflicts": [
+            "no_reference_genome"
+          ],
+          "orthologues": [],
+          "placement": {}
+        }
+      },
+      {
+        "id": "E005",
+        "summary": "Competitive family discrimination for tetA_tetracycline_efflux: unresolved_candidate",
+        "values": {
+          "action": "competitive_family",
+          "requested_by": "planner",
+          "status": "INFORMATIVE",
+          "status_reason": "updated measurement fields: family_evidence",
+          "limitation": null,
+          "classification": "unresolved_candidate",
+          "target_family": "tetA_tetracycline_efflux",
+          "best_competing_family": "mfs_multidrug_efflux",
+          "score_margin": 0.0,
+          "reciprocal_family_assignment": "mfs_multidrug_efflux",
+          "supports_orthologue": false,
+          "competitors_scored": [
+            "mfs_multidrug_efflux",
+            "rnd_efflux"
+          ]
+        }
+      },
+      {
+        "id": "E006",
+        "summary": "Measurement state m0 -> m1 after competitive_family: updated family_evidence",
+        "values": {
+          "action": "competitive_family",
+          "requested_by": "planner",
+          "status": "INFORMATIVE",
+          "from_state": "m0",
+          "to_state": "m1",
+          "measurement_state_changed": true,
+          "measurement_hash_before": "3699fc1ce53d91427599e2cd0372540b38e77148d463f2e1f9be9672c640305c",
+          "measurement_hash_after": "46cf5411988e2a0fc1774278f4e530cff3b2a4dee17295cf7740a2c4b93ac174",
+          "applied_updates": [
+            {
+              "field": "family_evidence",
+              "op": "replace_family_evidence",
+              "origin": "deterministic_competitive_family",
+              "n_new": 1,
+              "detail": {
+                "before_hash": "ec186defe11b7dddc09bd409ab2e992b2b0d2f7b90da8a9131b37d98e5f9deac",
+                "after_hash": "0b468ac8a0a2363b8b9f3c3b3a9b50d9d060dd071000315afdd272b9fc2a673e"
+              }
+            }
+          ],
+          "n_hits_before": 3,
+          "n_hits_after": 3,
+          "source_evidence_id": "E005"
+        }
+      },
+      {
+        "id": "E007",
+        "summary": "Protein similarity search over assembly ORFs for tetA_tetracycline_efflux",
+        "values": {
+          "action": "search_target_proteins_mmseqs",
+          "requested_by": "critic",
+          "status": "INFORMATIVE",
+          "status_reason": "updated measurement fields: family_evidence, hits",
+          "limitation": null,
+          "n_orfs": 24847,
+          "tool": "mmseqs",
+          "n_alignments": 5,
+          "n_placed_hits": 5,
+          "hits": [
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBYHFR010000001.1",
+              "search_kind": "translated",
+              "identity": 0.244,
+              "query_coverage": 0.599,
+              "evalue": 5.318e-06,
+              "near_contig_edge": false,
+              "possible_edge_truncation": false,
+              "edge_distance_bp": 547831,
+              "tstart": 547831,
+              "tend": 548476,
+              "strand": "-",
+              "contig_length": 2152187,
+              "tool": "mmseqs",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBYHFR010000001.1",
+              "search_kind": "translated",
+              "identity": 0.287,
+              "query_coverage": 0.411,
+              "evalue": 1.699e-11,
+              "near_contig_edge": false,
+              "possible_edge_truncation": false,
+              "edge_distance_bp": 25415,
+              "tstart": 25415,
+              "tend": 25904,
+              "strand": "+",
+              "contig_length": 2152187,
+              "tool": "mmseqs",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBYHFR010000003.1",
+              "search_kind": "translated",
+              "identity": 0.32,
+              "query_coverage": 0.259,
+              "evalue": 4.774e-09,
+              "near_contig_edge": false,
+              "possible_edge_truncation": false,
+              "edge_distance_bp": 76238,
+              "tstart": 76238,
+              "tend": 76556,
+              "strand": "+",
+              "contig_length": 555083,
+              "tool": "mmseqs",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBYHFR010000003.1",
+              "search_kind": "translated",
+              "identity": 0.261,
+              "query_coverage": 0.299,
+              "evalue": 2.852e-05,
+              "near_contig_edge": false,
+              "possible_edge_truncation": false,
+              "edge_distance_bp": 94878,
+              "tstart": 94878,
+              "tend": 95268,
+              "strand": "+",
+              "contig_length": 555083,
+              "tool": "mmseqs",
+              "domain_name": null
+            },
+            {
+              "query_id": "tetA_tetracycline_efflux",
+              "contig_id": "NZ_JBYHFR010000001.1",
+              "search_kind": "translated",
+              "identity": 0.326,
+              "query_coverage": 0.224,
+              "evalue": 0.000202,
+              "near_contig_edge": false,
+              "possible_edge_truncation": false,
+              "edge_distance_bp": 606112,
+              "tstart": 606112,
+              "tend": 606388,
+              "strand": "+",
+              "contig_length": 2152187,
+              "tool": "mmseqs",
+              "domain_name": null
+            }
+          ]
+        }
+      },
+      {
+        "id": "E008",
+        "summary": "Measurement state m1 -> m2 after search_target_proteins_mmseqs: updated family_evidence, hits",
+        "values": {
+          "action": "search_target_proteins_mmseqs",
+          "requested_by": "critic",
+          "status": "INFORMATIVE",
+          "from_state": "m1",
+          "to_state": "m2",
+          "measurement_state_changed": true,
+          "measurement_hash_before": "46cf5411988e2a0fc1774278f4e530cff3b2a4dee17295cf7740a2c4b93ac174",
+          "measurement_hash_after": "a2276d88b36776b00fa64ac3aec0569dae3935d1ce87adaa39085a8e46120ad5",
+          "applied_updates": [
+            {
+              "field": "hits",
+              "op": "append_hits",
+              "origin": "orf_protein_similarity_search",
+              "n_new": 5,
+              "detail": {
+                "n_offered": 5,
+                "n_duplicate": 0,
+                "added": [
+                  {
+                    "contig_id": "NZ_JBYHFR010000001.1",
+                    "search_kind": "translated",
+                    "identity": 0.244,
+                    "query_coverage": 0.599,
+                    "tstart": 547831,
+                    "tend": 548476,
+                    "tool": "mmseqs"
+                  },
+                  {
+                    "contig_id": "NZ_JBYHFR010000001.1",
+                    "search_kind": "translated",
+                    "identity": 0.287,
+                    "query_coverage": 0.411,
+                    "tstart": 25415,
+                    "tend": 25904,
+                    "tool": "mmseqs"
+                  },
+                  {
+                    "contig_id": "NZ_JBYHFR010000003.1",
+                    "search_kind": "translated",
+                    "identity": 0.32,
+                    "query_coverage": 0.259,
+                    "tstart": 76238,
+                    "tend": 76556,
+                    "tool": "mmseqs"
+                  },
+                  {
+                    "contig_id": "NZ_JBYHFR010000003.1",
+                    "search_kind": "translated",
+                    "identity": 0.261,
+                    "query_coverage": 0.299,
+                    "tstart": 94878,
+                    "tend": 95268,
+                    "tool": "mmseqs"
+                  },
+                  {
+                    "contig_id": "NZ_JBYHFR010000001.1",
+                    "search_kind": "translated",
+                    "identity": 0.326,
+                    "query_coverage": 0.224,
+                    "tstart": 606112,
+                    "tend": 606388,
+                    "tool": "mmseqs"
+                  }
+                ]
+              }
+            },
+            {
+              "field": "tools_run",
+              "op": "extend_unique",
+              "origin": "orf_protein_similarity_search",
+              "n_new": 0,
+              "detail": {
+                "added": []
+              }
+            },
+            {
+              "field": "family_evidence",
+              "op": "replace_family_evidence",
+              "origin": "locus_multiplicity_clustering",
+              "n_new": 1,
+              "detail": {
+                "reason": "recomputed hit-dependent derived fields after hits changed",
+                "n_loci": 1,
+                "multiplicity": "single_locus"
+              }
+            }
+          ],
+          "n_hits_before": 3,
+          "n_hits_after": 8,
+          "source_evidence_id": "E007"
+        }
+      }
+    ],
+    "valid_evidence_ids": [
+      "E001",
+      "E002",
+      "E003",
+      "E004",
+      "E005",
+      "E006",
+      "E007",
+      "E008"
+    ],
+    "executed_analyses": [
+      "competitive_family",
+      "search_target_proteins_mmseqs"
+    ],
+    "initial_measurement_hash": "3699fc1ce53d91427599e2cd0372540b38e77148d463f2e1f9be9672c640305c",
+    "final_evidence_state_hash": "37a08bc93aef9a6543941965aad234b8e950bb50c3e2038fd81ca386e5ccb48c",
+    "constraints": [
+      "Answer only from the supplied biological evidence.",
+      "Do not request additional analyses, tools, BLAST, HMM, or follow-ups.",
+      "Do not invent measurements or evidence IDs.",
+      "Cite at most 3 evidence IDs, copied verbatim from valid_evidence_ids."
+    ]
+  },
+  "family_evidence": {
+    "family_id": "tetA_tetracycline_efflux",
+    "n_member_hits": 6,
+    "architecture": "close_paralogue",
+    "hierarchy": [],
+    "supports_orthologue": false,
+    "domain_only": true,
+    "fusion": {
+      "state": "not_fusion",
+      "supported": false,
+      "hmm_coverage": 0.6327,
+      "contig": "NZ_JBYHFR010000003.1",
+      "genomic_start": 75680,
+      "genomic_end": 381823
+    },
+    "split": {
+      "state": "not_split",
+      "supported": false,
+      "gaps": [
+        303386
+      ]
+    },
+    "fragmented": {
+      "state": "not_fragmented",
+      "supported": false,
+      "contig_edge": false,
+      "combined_query_span": 0.6327,
+      "not_biological_split": false
+    },
+    "paralogue": {
+      "state": "single_locus",
+      "n_loci": 0,
+      "supported": false
+    },
+    "reconstruction": {
+      "contig": "NZ_JBYHFR010000003.1",
+      "strand": "+",
+      "genomic_start": 75680,
+      "genomic_end": 381823,
+      "candidate_segments": [
+        {
+          "contig": "NZ_JBYHFR010000003.1",
+          "strand": "+",
+          "genomic_start": 380644,
+          "genomic_end": 381196,
+          "frame": 1,
+          "orf_id": "NZ_JBYHFR010000003.1:380341-381823:+",
+          "hmm_from": 12,
+          "hmm_to": 198,
+          "evalue": 1e-12,
+          "score": 48.8,
+          "identity": null,
+          "query_coverage": null,
+          "near_contig_edge": false
+        },
+        {
+          "contig": "NZ_JBYHFR010000003.1",
+          "strand": "+",
+          "genomic_start": 77024,
+          "genomic_end": 77258,
+          "frame": 2,
+          "orf_id": "NZ_JBYHFR010000003.1:75680-78065:+",
+          "hmm_from": 265,
+          "hmm_to": 344,
+          "evalue": 1300.0,
+          "score": -1.0,
+          "identity": null,
+          "query_coverage": null,
+          "near_contig_edge": false
+        }
+      ],
+      "frame": 1,
+      "profile_hmm_from": 12,
+      "profile_hmm_to": 344,
+      "sequence_identity": 0.30233,
+      "protein_coverage": 0.46633416458852867,
+      "hmm_coverage": 0.6327,
+      "domain_order": [
+        1,
+        2
+      ],
+      "inter_segment_gaps": [
+        303386
+      ],
+      "stop_codons": [
+        {
+          "offset": 807,
+          "codon": "TGA"
+        },
+        {
+          "offset": 873,
+          "codon": "TGA"
+        },
+        {
+          "offset": 2307,
+          "codon": "TAG"
+        },
+        {
+          "offset": 2430,
+          "codon": "TGA"
+        },
+        {
+          "offset": 2664,
+          "codon": "TGA"
+        },
+        {
+          "offset": 2802,
+          "codon": "TGA"
+        },
+        {
+          "offset": 2883,
+          "codon": "TGA"
+        },
+        {
+          "offset": 2973,
+          "codon": "TGA"
+        },
+        {
+          "offset": 3096,
+          "codon": "TGA"
+        },
+        {
+          "offset": 3123,
+          "codon": "TGA"
+        },
+        {
+          "offset": 3195,
+          "codon": "TGA"
+        },
+        {
+          "offset": 3333,
+          "codon": "TGA"
+        },
+        {
+          "offset": 3342,
+          "codon": "TGA"
+        },
+        {
+          "offset": 3378,
+          "codon": "TGA"
+        },
+        {
+          "offset": 3441,
+          "codon": "TAG"
+        },
+        {
+          "offset": 3831,
+          "codon": "TGA"
+        },
+        {
+          "offset": 4152,
+          "codon": "TGA"
+        },
+        {
+          "offset": 4176,
+          "codon": "TGA"
+        },
+        {
+          "offset": 4365,
+          "codon": "TGA"
+        },
+        {
+          "offset": 5913,
+          "codon": "TGA"
+        },
+        {
+          "offset": 6990,
+          "codon": "TAA"
+        },
+        {
+          "offset": 7059,
+          "codon": "TAG"
+        },
+        {
+          "offset": 7134,
+          "codon": "TAG"
+        },
+        {
+          "offset": 7305,
+          "codon": "TAG"
+        },
+        {
+          "offset": 7521,
+          "codon": "TAG"
+        },
+        {
+          "offset": 7542,
+          "codon": "TAG"
+        },
+        {
+          "offset": 7635,
+          "codon": "TAG"
+        },
+        {
+          "offset": 7746,
+          "codon": "TAG"
+        },
+        {
+          "offset": 7839,
+          "codon": "TAG"
+        },
+        {
+          "offset": 7863,
+          "codon": "TAG"
+        },
+        {
+          "offset": 7866,
+          "codon": "TGA"
+        },
+        {
+          "offset": 7926,
+          "codon": "TGA"
+        },
+        {
+          "offset": 8115,
+          "codon": "TGA"
+        },
+        {
+          "offset": 8217,
+          "codon": "TGA"
+        },
+        {
+          "offset": 8415,
+          "codon": "TGA"
+        },
+        {
+          "offset": 8490,
+          "codon": "TGA"
+        },
+        {
+          "offset": 8499,
+          "codon": "TGA"
+        },
+        {
+          "offset": 8682,
+          "codon": "TGA"
+        },
+        {
+          "offset": 8706,
+          "codon": "TGA"
+        },
+        {
+          "offset": 8715,
+          "codon": "TGA"
+        },
+        {
+          "offset": 8799,
+          "codon": "TGA"
+        },
+        {
+          "offset": 8826,
+          "codon": "TGA"
+        },
+        {
+          "offset": 8877,
+          "codon": "TGA"
+        },
+        {
+          "offset": 8952,
+          "codon": "TGA"
+        },
+        {
+          "offset": 9141,
+          "codon": "TGA"
+        },
+        {
+          "offset": 9330,
+          "codon": "TGA"
+        },
+        {
+          "offset": 10440,
+          "codon": "TGA"
+        },
+        {
+          "offset": 10830,
+          "codon": "TAG"
+        },
+        {
+          "offset": 11202,
+          "codon": "TGA"
+        },
+        {
+          "offset": 11829,
+          "codon": "TAG"
+        },
+        {
+          "offset": 12015,
+          "codon": "TGA"
+        },
+        {
+          "offset": 12033,
+          "codon": "TAG"
+        },
+        {
+          "offset": 12177,
+          "codon": "TAG"
+        },
+        {
+          "offset": 12264,
+          "codon": "TAG"
+        },
+        {
+          "offset": 12447,
+          "codon": "TAG"
+        },
+        {
+          "offset": 12975,
+          "codon": "TGA"
+        },
+        {
+          "offset": 13203,
+          "codon": "TGA"
+        },
+        {
+          "offset": 13275,
+          "codon": "TGA"
+        },
+        {
+          "offset": 13320,
+          "codon": "TGA"
+        },
+        {
+          "offset": 13476,
+          "codon": "TGA"
+        },
+        {
+          "offset": 13497,
+          "codon": "TGA"
+        },
+        {
+          "offset": 13533,
+          "codon": "TGA"
+        },
+        {
+          "offset": 13542,
+          "codon": "TAG"
+        },
+        {
+          "offset": 13554,
+          "codon": "TGA"
+        },
+        {
+          "offset": 13656,
+          "codon": "TGA"
+        },
+        {
+          "offset": 13737,
+          "codon": "TGA"
+        },
+        {
+          "offset": 13770,
+          "codon": "TGA"
+        },
+        {
+          "offset": 13797,
+          "codon": "TGA"
+        },
+        {
+          "offset": 13917,
+          "codon": "TGA"
+        },
+        {
+          "offset": 14121,
+          "codon": "TAA"
+        },
+        {
+          "offset": 14271,
+          "codon": "TAA"
+        },
+        {
+          "offset": 14487,
+          "codon": "TGA"
+        },
+        {
+          "offset": 14772,
+          "codon": "TGA"
+        },
+        {
+          "offset": 15120,
+          "codon": "TGA"
+        },
+        {
+          "offset": 15432,
+          "codon": "TGA"
+        },
+        {
+          "offset": 15468,
+          "codon": "TGA"
+        },
+        {
+          "offset": 15495,
+          "codon": "TGA"
+        },
+        {
+          "offset": 15717,
+          "codon": "TGA"
+        },
+        {
+          "offset": 15921,
+          "codon": "TAA"
+        },
+        {
+          "offset": 15945,
+          "codon": "TGA"
+        },
+        {
+          "offset": 16248,
+          "codon": "TAG"
+        },
+        {
+          "offset": 16374,
+          "codon": "TAG"
+        },
+        {
+          "offset": 16386,
+          "codon": "TGA"
+        },
+        {
+          "offset": 16509,
+          "codon": "TGA"
+        },
+        {
+          "offset": 17121,
+          "codon": "TGA"
+        },
+        {
+          "offset": 17193,
+          "codon": "TGA"
+        },
+        {
+          "offset": 17244,
+          "codon": "TGA"
+        },
+        {
+          "offset": 17277,
+          "codon": "TGA"
+        },
+        {
+          "offset": 17292,
+          "codon": "TGA"
+        },
+        {
+          "offset": 17304,
+          "codon": "TGA"
+        },
+        {
+          "offset": 17451,
+          "codon": "TGA"
+        },
+        {
+          "offset": 17502,
+          "codon": "TGA"
+        },
+        {
+          "offset": 17745,
+          "codon": "TGA"
+        },
+        {
+          "offset": 18135,
+          "codon": "TGA"
+        },
+        {
+          "offset": 18873,
+          "codon": "TGA"
+        },
+        {
+          "offset": 19056,
+          "codon": "TGA"
+        },
+        {
+          "offset": 19713,
+          "codon": "TGA"
+        },
+        {
+          "offset": 19821,
+          "codon": "TAG"
+        },
+        {
+          "offset": 19836,
+          "codon": "TAG"
+        },
+        {
+          "offset": 19839,
+          "codon": "TGA"
+        },
+        {
+          "offset": 19914,
+          "codon": "TGA"
+        },
+        {
+          "offset": 19923,
+          "codon": "TGA"
+        },
+        {
+          "offset": 19992,
+          "codon": "TGA"
+        },
+        {
+          "offset": 20127,
+          "codon": "TGA"
+        },
+        {
+          "offset": 20139,
+          "codon": "TGA"
+        },
+        {
+          "offset": 20298,
+          "codon": "TGA"
+        },
+        {
+          "offset": 20325,
+          "codon": "TGA"
+        },
+        {
+          "offset": 20496,
+          "codon": "TGA"
+        },
+        {
+          "offset": 20547,
+          "codon": "TAA"
+        },
+        {
+          "offset": 20673,
+          "codon": "TAG"
+        },
+        {
+          "offset": 21204,
+          "codon": "TAG"
+        },
+        {
+          "offset": 21231,
+          "codon": "TGA"
+        },
+        {
+          "offset": 21234,
+          "codon": "TAG"
+        },
+        {
+          "offset": 21282,
+          "codon": "TAG"
+        },
+        {
+          "offset": 21585,
+          "codon": "TAG"
+        },
+        {
+          "offset": 21660,
+          "codon": "TAG"
+        },
+        {
+          "offset": 21705,
+          "codon": "TAG"
+        },
+        {
+          "offset": 21849,
+          "codon": "TAG"
+        },
+        {
+          "offset": 21990,
+          "codon": "TAG"
+        },
+        {
+          "offset": 21999,
+          "codon": "TAG"
+        },
+        {
+          "offset": 22026,
+          "codon": "TAG"
+        },
+        {
+          "offset": 22269,
+          "codon": "TGA"
+        },
+        {
+          "offset": 22302,
+          "codon": "TGA"
+        },
+        {
+          "offset": 22332,
+          "codon": "TGA"
+        },
+        {
+          "offset": 22404,
+          "codon": "TGA"
+        },
+        {
+          "offset": 22443,
+          "codon": "TGA"
+        },
+        {
+          "offset": 22446,
+          "codon": "TGA"
+        },
+        {
+          "offset": 22482,
+          "codon": "TGA"
+        },
+        {
+          "offset": 22689,
+          "codon": "TGA"
+        },
+        {
+          "offset": 22857,
+          "codon": "TGA"
+        },
+        {
+          "offset": 22926,
+          "codon": "TGA"
+        },
+        {
+          "offset": 22980,
+          "codon": "TGA"
+        },
+        {
+          "offset": 23121,
+          "codon": "TGA"
+        },
+        {
+          "offset": 23208,
+          "codon": "TGA"
+        },
+        {
+          "offset": 23403,
+          "codon": "TGA"
+        },
+        {
+          "offset": 23418,
+          "codon": "TGA"
+        },
+        {
+          "offset": 23559,
+          "codon": "TGA"
+        },
+        {
+          "offset": 23604,
+          "codon": "TAG"
+        },
+        {
+          "offset": 23640,
+          "codon": "TGA"
+        },
+        {
+          "offset": 24222,
+          "codon": "TAG"
+        },
+        {
+          "offset": 24228,
+          "codon": "TGA"
+        },
+        {
+          "offset": 24324,
+          "codon": "TAG"
+        },
+        {
+          "offset": 24504,
+          "codon": "TGA"
+        },
+        {
+          "offset": 24831,
+          "codon": "TGA"
+        },
+        {
+          "offset": 24894,
+          "codon": "TGA"
+        },
+        {
+          "offset": 24912,
+          "codon": "TAG"
+        },
+        {
+          "offset": 24927,
+          "codon": "TGA"
+        },
+        {
+          "offset": 24957,
+          "codon": "TGA"
+        },
+        {
+          "offset": 25005,
+          "codon": "TGA"
+        },
+        {
+          "offset": 25101,
+          "codon": "TGA"
+        },
+        {
+          "offset": 25116,
+          "codon": "TGA"
+        },
+        {
+          "offset": 25173,
+          "codon": "TGA"
+        },
+        {
+          "offset": 25275,
+          "codon": "TGA"
+        },
+        {
+          "offset": 25335,
+          "codon": "TGA"
+        },
+        {
+          "offset": 25365,
+          "codon": "TAA"
+        },
+        {
+          "offset": 25437,
+          "codon": "TGA"
+        },
+        {
+          "offset": 25620,
+          "codon": "TGA"
+        },
+        {
+          "offset": 25704,
+          "codon": "TGA"
+        },
+        {
+          "offset": 25734,
+          "codon": "TGA"
+        },
+        {
+          "offset": 25824,
+          "codon": "TGA"
+        },
+        {
+          "offset": 25923,
+          "codon": "TGA"
+        },
+        {
+          "offset": 26022,
+          "codon": "TGA"
+        },
+        {
+          "offset": 26094,
+          "codon": "TGA"
+        },
+        {
+          "offset": 26109,
+          "codon": "TGA"
+        },
+        {
+          "offset": 26115,
+          "codon": "TGA"
+        },
+        {
+          "offset": 26145,
+          "codon": "TGA"
+        },
+        {
+          "offset": 26241,
+          "codon": "TGA"
+        },
+        {
+          "offset": 26277,
+          "codon": "TAG"
+        },
+        {
+          "offset": 26334,
+          "codon": "TGA"
+        },
+        {
+          "offset": 26394,
+          "codon": "TAA"
+        },
+        {
+          "offset": 26409,
+          "codon": "TGA"
+        },
+        {
+          "offset": 26466,
+          "codon": "TAG"
+        },
+        {
+          "offset": 26478,
+          "codon": "TGA"
+        },
+        {
+          "offset": 26790,
+          "codon": "TGA"
+        },
+        {
+          "offset": 27486,
+          "codon": "TGA"
+        },
+        {
+          "offset": 27513,
+          "codon": "TGA"
+        },
+        {
+          "offset": 27783,
+          "codon": "TGA"
+        },
+        {
+          "offset": 27921,
+          "codon": "TAA"
+        },
+        {
+          "offset": 28233,
+          "codon": "TAG"
+        },
+        {
+          "offset": 28461,
+          "codon": "TGA"
+        },
+        {
+          "offset": 28566,
+          "codon": "TAG"
+        },
+        {
+          "offset": 28779,
+          "codon": "TAG"
+        },
+        {
+          "offset": 28953,
+          "codon": "TAG"
+        },
+        {
+          "offset": 28956,
+          "codon": "TAG"
+        },
+        {
+          "offset": 29121,
+          "codon": "TAG"
+        },
+        {
+          "offset": 29367,
+          "codon": "TAG"
+        },
+        {
+          "offset": 29526,
+          "codon": "TGA"
+        },
+        {
+          "offset": 29721,
+          "codon": "TGA"
+        },
+        {
+          "offset": 29751,
+          "codon": "TGA"
+        },
+        {
+          "offset": 29754,
+          "codon": "TAG"
+        },
+        {
+          "offset": 29817,
+          "codon": "TAG"
+        },
+        {
+          "offset": 30396,
+          "codon": "TGA"
+        },
+        {
+          "offset": 30408,
+          "codon": "TGA"
+        },
+        {
+          "offset": 30543,
+          "codon": "TGA"
+        },
+        {
+          "offset": 30552,
+          "codon": "TGA"
+        },
+        {
+          "offset": 30708,
+          "codon": "TGA"
+        },
+        {
+          "offset": 30735,
+          "codon": "TGA"
+        },
+        {
+          "offset": 30789,
+          "codon": "TGA"
+        },
+        {
+          "offset": 31044,
+          "codon": "TAA"
+        },
+        {
+          "offset": 31161,
+          "codon": "TGA"
+        },
+        {
+          "offset": 31185,
+          "codon": "TAG"
+        },
+        {
+          "offset": 31230,
+          "codon": "TGA"
+        },
+        {
+          "offset": 31464,
+          "codon": "TGA"
+        },
+        {
+          "offset": 31542,
+          "codon": "TGA"
+        },
+        {
+          "offset": 31566,
+          "codon": "TGA"
+        },
+        {
+          "offset": 31770,
+          "codon": "TGA"
+        },
+        {
+          "offset": 32094,
+          "codon": "TGA"
+        },
+        {
+          "offset": 32169,
+          "codon": "TGA"
+        },
+        {
+          "offset": 32361,
+          "codon": "TAG"
+        },
+        {
+          "offset": 32502,
+          "codon": "TGA"
+        },
+        {
+          "offset": 32550,
+          "codon": "TGA"
+        },
+        {
+          "offset": 32601,
+          "codon": "TGA"
+        },
+        {
+          "offset": 32670,
+          "codon": "TGA"
+        },
+        {
+          "offset": 32748,
+          "codon": "TGA"
+        },
+        {
+          "offset": 32784,
+          "codon": "TGA"
+        },
+        {
+          "offset": 32805,
+          "codon": "TGA"
+        },
+        {
+          "offset": 32913,
+          "codon": "TGA"
+        },
+        {
+          "offset": 33138,
+          "codon": "TGA"
+        },
+        {
+          "offset": 33420,
+          "codon": "TGA"
+        },
+        {
+          "offset": 33591,
+          "codon": "TGA"
+        },
+        {
+          "offset": 34065,
+          "codon": "TAA"
+        },
+        {
+          "offset": 34290,
+          "codon": "TGA"
+        },
+        {
+          "offset": 34368,
+          "codon": "TGA"
+        },
+        {
+          "offset": 34740,
+          "codon": "TGA"
+        },
+        {
+          "offset": 35214,
+          "codon": "TGA"
+        },
+        {
+          "offset": 35241,
+          "codon": "TGA"
+        },
+        {
+          "offset": 35334,
+          "codon": "TGA"
+        },
+        {
+          "offset": 35355,
+          "codon": "TGA"
+        },
+        {
+          "offset": 35445,
+          "codon": "TGA"
+        },
+        {
+          "offset": 36345,
+          "codon": "TGA"
+        },
+        {
+          "offset": 36714,
+          "codon": "TGA"
+        },
+        {
+          "offset": 36789,
+          "codon": "TGA"
+        },
+        {
+          "offset": 36987,
+          "codon": "TGA"
+        },
+        {
+          "offset": 37125,
+          "codon": "TGA"
+        },
+        {
+          "offset": 37347,
+          "codon": "TGA"
+        },
+        {
+          "offset": 37488,
+          "codon": "TGA"
+        },
+        {
+          "offset": 37557,
+          "codon": "TGA"
+        },
+        {
+          "offset": 37593,
+          "codon": "TGA"
+        },
+        {
+          "offset": 37869,
+          "codon": "TAG"
+        },
+        {
+          "offset": 38070,
+          "codon": "TGA"
+        },
+        {
+          "offset": 38292,
+          "codon": "TGA"
+        },
+        {
+          "offset": 38403,
+          "codon": "TGA"
+        },
+        {
+          "offset": 38448,
+          "codon": "TGA"
+        },
+        {
+          "offset": 38583,
+          "codon": "TAA"
+        },
+        {
+          "offset": 38664,
+          "codon": "TGA"
+        },
+        {
+          "offset": 38697,
+          "codon": "TGA"
+        },
+        {
+          "offset": 38721,
+          "codon": "TAG"
+        },
+        {
+          "offset": 38817,
+          "codon": "TAG"
+        },
+        {
+          "offset": 38880,
+          "codon": "TAG"
+        },
+        {
+          "offset": 38973,
+          "codon": "TAA"
+        },
+        {
+          "offset": 38985,
+          "codon": "TAG"
+        },
+        {
+          "offset": 39408,
+          "codon": "TAG"
+        },
+        {
+          "offset": 39417,
+          "codon": "TAG"
+        },
+        {
+          "offset": 39534,
+          "codon": "TAG"
+        },
+        {
+          "offset": 39975,
+          "codon": "TGA"
+        },
+        {
+          "offset": 40038,
+          "codon": "TGA"
+        },
+        {
+          "offset": 40314,
+          "codon": "TGA"
+        },
+        {
+          "offset": 41307,
+          "codon": "TGA"
+        },
+        {
+          "offset": 42195,
+          "codon": "TGA"
+        },
+        {
+          "offset": 42891,
+          "codon": "TAG"
+        },
+        {
+          "offset": 42897,
+          "codon": "TGA"
+        },
+        {
+          "offset": 42921,
+          "codon": "TAG"
+        },
+        {
+          "offset": 42954,
+          "codon": "TAG"
+        },
+        {
+          "offset": 43113,
+          "codon": "TAG"
+        },
+        {
+          "offset": 43521,
+          "codon": "TGA"
+        },
+        {
+          "offset": 44220,
+          "codon": "TGA"
+        },
+        {
+          "offset": 44268,
+          "codon": "TGA"
+        },
+        {
+          "offset": 44682,
+          "codon": "TGA"
+        },
+        {
+          "offset": 44967,
+          "codon": "TGA"
+        },
+        {
+          "offset": 45237,
+          "codon": "TGA"
+        },
+        {
+          "offset": 45495,
+          "codon": "TGA"
+        },
+        {
+          "offset": 45543,
+          "codon": "TGA"
+        },
+        {
+          "offset": 45903,
+          "codon": "TGA"
+        },
+        {
+          "offset": 45981,
+          "codon": "TAA"
+        },
+        {
+          "offset": 46050,
+          "codon": "TGA"
+        },
+        {
+          "offset": 46083,
+          "codon": "TGA"
+        },
+        {
+          "offset": 46116,
+          "codon": "TGA"
+        },
+        {
+          "offset": 46137,
+          "codon": "TAG"
+        },
+        {
+          "offset": 46500,
+          "codon": "TGA"
+        },
+        {
+          "offset": 46563,
+          "codon": "TGA"
+        },
+        {
+          "offset": 46602,
+          "codon": "TGA"
+        },
+        {
+          "offset": 46620,
+          "codon": "TGA"
+        },
+        {
+          "offset": 46662,
+          "codon": "TGA"
+        },
+        {
+          "offset": 46857,
+          "codon": "TGA"
+        },
+        {
+          "offset": 46884,
+          "codon": "TGA"
+        },
+        {
+          "offset": 46893,
+          "codon": "TGA"
+        },
+        {
+          "offset": 46950,
+          "codon": "TGA"
+        },
+        {
+          "offset": 47040,
+          "codon": "TGA"
+        },
+        {
+          "offset": 47124,
+          "codon": "TGA"
+        },
+        {
+          "offset": 47262,
+          "codon": "TGA"
+        },
+        {
+          "offset": 47943,
+          "codon": "TGA"
+        },
+        {
+          "offset": 48624,
+          "codon": "TGA"
+        },
+        {
+          "offset": 48654,
+          "codon": "TGA"
+        },
+        {
+          "offset": 48690,
+          "codon": "TGA"
+        },
+        {
+          "offset": 48825,
+          "codon": "TGA"
+        },
+        {
+          "offset": 48831,
+          "codon": "TGA"
+        },
+        {
+          "offset": 48834,
+          "codon": "TGA"
+        },
+        {
+          "offset": 48909,
+          "codon": "TGA"
+        },
+        {
+          "offset": 48948,
+          "codon": "TGA"
+        },
+        {
+          "offset": 49035,
+          "codon": "TGA"
+        },
+        {
+          "offset": 49065,
+          "codon": "TGA"
+        },
+        {
+          "offset": 49227,
+          "codon": "TGA"
+        },
+        {
+          "offset": 49245,
+          "codon": "TGA"
+        },
+        {
+          "offset": 49266,
+          "codon": "TGA"
+        },
+        {
+          "offset": 49281,
+          "codon": "TGA"
+        },
+        {
+          "offset": 49401,
+          "codon": "TGA"
+        },
+        {
+          "offset": 49860,
+          "codon": "TGA"
+        },
+        {
+          "offset": 50139,
+          "codon": "TGA"
+        },
+        {
+          "offset": 50223,
+          "codon": "TGA"
+        },
+        {
+          "offset": 50511,
+          "codon": "TGA"
+        },
+        {
+          "offset": 50799,
+          "codon": "TGA"
+        },
+        {
+          "offset": 50844,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51021,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51222,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51291,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51321,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51384,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51450,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51561,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51573,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51711,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51741,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51819,
+          "codon": "TAG"
+        },
+        {
+          "offset": 51858,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51894,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51912,
+          "codon": "TGA"
+        },
+        {
+          "offset": 51972,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52059,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52062,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52101,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52107,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52194,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52200,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52314,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52350,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52353,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52356,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52431,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52440,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52530,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52578,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52587,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52686,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52698,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52884,
+          "codon": "TGA"
+        },
+        {
+          "offset": 52905,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53046,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53154,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53193,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53202,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53229,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53427,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53547,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53562,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53607,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53718,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53754,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53757,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53805,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53880,
+          "codon": "TGA"
+        },
+        {
+          "offset": 53883,
+          "codon": "TAG"
+        },
+        {
+          "offset": 53982,
+          "codon": "TGA"
+        },
+        {
+          "offset": 54021,
+          "codon": "TGA"
+        },
+        {
+          "offset": 54102,
+          "codon": "TGA"
+        },
+        {
+          "offset": 54222,
+          "codon": "TGA"
+        },
+        {
+          "offset": 54240,
+          "codon": "TGA"
+        },
+        {
+          "offset": 54264,
+          "codon": "TGA"
+        },
+        {
+          "offset": 54345,
+          "codon": "TGA"
+        },
+        {
+          "offset": 54381,
+          "codon": "TGA"
+        },
+        {
+          "offset": 54438,
+          "codon": "TAG"
+        },
+        {
+          "offset": 54450,
+          "codon": "TAG"
+        },
+        {
+          "offset": 54522,
+          "codon": "TAA"
+        },
+        {
+          "offset": 54531,
+          "codon": "TGA"
+        },
+        {
+          "offset": 55284,
+          "codon": "TGA"
+        },
+        {
+          "offset": 55518,
+          "codon": "TAA"
+        },
+        {
+          "offset": 57213,
+          "codon": "TGA"
+        },
+        {
+          "offset": 57246,
+          "codon": "TAG"
+        },
+        {
+          "offset": 57549,
+          "codon": "TAG"
+        },
+        {
+          "offset": 57684,
+          "codon": "TAG"
+        },
+        {
+          "offset": 57774,
+          "codon": "TAG"
+        },
+        {
+          "offset": 57903,
+          "codon": "TAG"
+        },
+        {
+          "offset": 57957,
+          "codon": "TGA"
+        },
+        {
+          "offset": 58047,
+          "codon": "TAG"
+        },
+        {
+          "offset": 58269,
+          "codon": "TGA"
+        },
+        {
+          "offset": 58389,
+          "codon": "TAA"
+        },
+        {
+          "offset": 58488,
+          "codon": "TGA"
+        },
+        {
+          "offset": 58515,
+          "codon": "TGA"
+        },
+        {
+          "offset": 58545,
+          "codon": "TGA"
+        },
+        {
+          "offset": 58785,
+          "codon": "TGA"
+        },
+        {
+          "offset": 58824,
+          "codon": "TGA"
+        },
+        {
+          "offset": 58950,
+          "codon": "TGA"
+        },
+        {
+          "offset": 59118,
+          "codon": "TGA"
+        },
+        {
+          "offset": 59157,
+          "codon": "TGA"
+        },
+        {
+          "offset": 59301,
+          "codon": "TGA"
+        },
+        {
+          "offset": 59343,
+          "codon": "TGA"
+        },
+        {
+          "offset": 59397,
+          "codon": "TGA"
+        },
+        {
+          "offset": 59457,
+          "codon": "TGA"
+        },
+        {
+          "offset": 59460,
+          "codon": "TGA"
+        },
+        {
+          "offset": 59535,
+          "codon": "TGA"
+        },
+        {
+          "offset": 59595,
+          "codon": "TAG"
+        },
+        {
+          "offset": 60165,
+          "codon": "TGA"
+        },
+        {
+          "offset": 60921,
+          "codon": "TGA"
+        },
+        {
+          "offset": 62031,
+          "codon": "TAG"
+        },
+        {
+          "offset": 62250,
+          "codon": "TAG"
+        },
+        {
+          "offset": 62388,
+          "codon": "TAG"
+        },
+        {
+          "offset": 62442,
+          "codon": "TAG"
+        },
+        {
+          "offset": 62496,
+          "codon": "TAG"
+        },
+        {
+          "offset": 62922,
+          "codon": "TAG"
+        },
+        {
+          "offset": 63228,
+          "codon": "TGA"
+        },
+        {
+          "offset": 63243,
+          "codon": "TGA"
+        },
+        {
+          "offset": 63363,
+          "codon": "TGA"
+        },
+        {
+          "offset": 63441,
+          "codon": "TAA"
+        },
+        {
+          "offset": 63570,
+          "codon": "TGA"
+        },
+        {
+          "offset": 63594,
+          "codon": "TGA"
+        },
+        {
+          "offset": 64065,
+          "codon": "TGA"
+        },
+        {
+          "offset": 64206,
+          "codon": "TGA"
+        },
+        {
+          "offset": 64314,
+          "codon": "TAA"
+        },
+        {
+          "offset": 64335,
+          "codon": "TGA"
+        },
+        {
+          "offset": 64482,
+          "codon": "TAG"
+        },
+        {
+          "offset": 64710,
+          "codon": "TGA"
+        },
+        {
+          "offset": 64713,
+          "codon": "TGA"
+        },
+        {
+          "offset": 64716,
+          "codon": "TGA"
+        },
+        {
+          "offset": 64827,
+          "codon": "TAA"
+        },
+        {
+          "offset": 65112,
+          "codon": "TGA"
+        },
+        {
+          "offset": 65268,
+          "codon": "TAG"
+        },
+        {
+          "offset": 65280,
+          "codon": "TAG"
+        },
+        {
+          "offset": 65409,
+          "codon": "TGA"
+        },
+        {
+          "offset": 65421,
+          "codon": "TGA"
+        },
+        {
+          "offset": 65460,
+          "codon": "TGA"
+        },
+        {
+          "offset": 65760,
+          "codon": "TGA"
+        },
+        {
+          "offset": 65793,
+          "codon": "TGA"
+        },
+        {
+          "offset": 66177,
+          "codon": "TGA"
+        },
+        {
+          "offset": 66189,
+          "codon": "TGA"
+        },
+        {
+          "offset": 66438,
+          "codon": "TGA"
+        },
+        {
+          "offset": 66582,
+          "codon": "TGA"
+        },
+        {
+          "offset": 67077,
+          "codon": "TGA"
+        },
+        {
+          "offset": 67707,
+          "codon": "TGA"
+        },
+        {
+          "offset": 68211,
+          "codon": "TGA"
+        },
+        {
+          "offset": 68256,
+          "codon": "TGA"
+        },
+        {
+          "offset": 68463,
+          "codon": "TAA"
+        },
+        {
+          "offset": 68895,
+          "codon": "TGA"
+        },
+        {
+          "offset": 69816,
+          "codon": "TAA"
+        },
+        {
+          "offset": 70056,
+          "codon": "TGA"
+        },
+        {
+          "offset": 70128,
+          "codon": "TGA"
+        },
+        {
+          "offset": 70158,
+          "codon": "TGA"
+        },
+        {
+          "offset": 70206,
+          "codon": "TGA"
+        },
+        {
+          "offset": 70299,
+          "codon": "TAA"
+        },
+        {
+          "offset": 70374,
+          "codon": "TGA"
+        },
+        {
+          "offset": 70503,
+          "codon": "TGA"
+        },
+        {
+          "offset": 70803,
+          "codon": "TGA"
+        },
+        {
+          "offset": 70956,
+          "codon": "TGA"
+        },
+        {
+          "offset": 71022,
+          "codon": "TGA"
+        },
+        {
+          "offset": 71280,
+          "codon": "TGA"
+        },
+        {
+          "offset": 71283,
+          "codon": "TGA"
+        },
+        {
+          "offset": 71430,
+          "codon": "TGA"
+        },
+        {
+          "offset": 71508,
+          "codon": "TAG"
+        },
+        {
+          "offset": 71634,
+          "codon": "TAG"
+        },
+        {
+          "offset": 71748,
+          "codon": "TGA"
+        },
+        {
+          "offset": 71769,
+          "codon": "TGA"
+        },
+        {
+          "offset": 71817,
+          "codon": "TGA"
+        },
+        {
+          "offset": 71871,
+          "codon": "TGA"
+        },
+        {
+          "offset": 71982,
+          "codon": "TGA"
+        },
+        {
+          "offset": 72033,
+          "codon": "TGA"
+        },
+        {
+          "offset": 72039,
+          "codon": "TGA"
+        },
+        {
+          "offset": 72069,
+          "codon": "TGA"
+        },
+        {
+          "offset": 72162,
+          "codon": "TGA"
+        },
+        {
+          "offset": 72171,
+          "codon": "TGA"
+        },
+        {
+          "offset": 72339,
+          "codon": "TGA"
+        },
+        {
+          "offset": 72351,
+          "codon": "TGA"
+        },
+        {
+          "offset": 72684,
+          "codon": "TGA"
+        },
+        {
+          "offset": 72756,
+          "codon": "TGA"
+        },
+        {
+          "offset": 72810,
+          "codon": "TGA"
+        },
+        {
+          "offset": 72927,
+          "codon": "TGA"
+        },
+        {
+          "offset": 73017,
+          "codon": "TGA"
+        },
+        {
+          "offset": 74295,
+          "codon": "TAG"
+        },
+        {
+          "offset": 74343,
+          "codon": "TAA"
+        },
+        {
+          "offset": 74427,
+          "codon": "TGA"
+        },
+        {
+          "offset": 74493,
+          "codon": "TGA"
+        },
+        {
+          "offset": 74886,
+          "codon": "TGA"
+        },
+        {
+          "offset": 75006,
+          "codon": "TAA"
+        },
+        {
+          "offset": 75048,
+          "codon": "TGA"
+        },
+        {
+          "offset": 75153,
+          "codon": "TGA"
+        },
+        {
+          "offset": 75372,
+          "codon": "TGA"
+        },
+        {
+          "offset": 75417,
+          "codon": "TGA"
+        },
+        {
+          "offset": 76101,
+          "codon": "TGA"
+        },
+        {
+          "offset": 76410,
+          "codon": "TGA"
+        },
+        {
+          "offset": 76941,
+          "codon": "TGA"
+        },
+        {
+          "offset": 77016,
+          "codon": "TGA"
+        },
+        {
+          "offset": 77070,
+          "codon": "TGA"
+        },
+        {
+          "offset": 77304,
+          "codon": "TGA"
+        },
+        {
+          "offset": 77676,
+          "codon": "TGA"
+        },
+        {
+          "offset": 77694,
+          "codon": "TGA"
+        },
+        {
+          "offset": 77970,
+          "codon": "TGA"
+        },
+        {
+          "offset": 78219,
+          "codon": "TGA"
+        },
+        {
+          "offset": 78228,
+          "codon": "TGA"
+        },
+        {
+          "offset": 78282,
+          "codon": "TGA"
+        },
+        {
+          "offset": 78807,
+          "codon": "TGA"
+        },
+        {
+          "offset": 78819,
+          "codon": "TGA"
+        },
+        {
+          "offset": 78915,
+          "codon": "TGA"
+        },
+        {
+          "offset": 79110,
+          "codon": "TGA"
+        },
+        {
+          "offset": 79179,
+          "codon": "TGA"
+        },
+        {
+          "offset": 79296,
+          "codon": "TGA"
+        },
+        {
+          "offset": 79560,
+          "codon": "TGA"
+        },
+        {
+          "offset": 79986,
+          "codon": "TGA"
+        },
+        {
+          "offset": 80061,
+          "codon": "TGA"
+        },
+        {
+          "offset": 80202,
+          "codon": "TGA"
+        },
+        {
+          "offset": 80250,
+          "codon": "TGA"
+        },
+        {
+          "offset": 80265,
+          "codon": "TGA"
+        },
+        {
+          "offset": 80361,
+          "codon": "TGA"
+        },
+        {
+          "offset": 80406,
+          "codon": "TGA"
+        },
+        {
+          "offset": 80439,
+          "codon": "TAG"
+        },
+        {
+          "offset": 80457,
+          "codon": "TGA"
+        },
+        {
+          "offset": 80559,
+          "codon": "TGA"
+        },
+        {
+          "offset": 80766,
+          "codon": "TGA"
+        },
+        {
+          "offset": 80931,
+          "codon": "TGA"
+        },
+        {
+          "offset": 81903,
+          "codon": "TGA"
+        },
+        {
+          "offset": 81999,
+          "codon": "TAG"
+        },
+        {
+          "offset": 82119,
+          "codon": "TGA"
+        },
+        {
+          "offset": 82149,
+          "codon": "TGA"
+        },
+        {
+          "offset": 82275,
+          "codon": "TGA"
+        },
+        {
+          "offset": 82401,
+          "codon": "TGA"
+        },
+        {
+          "offset": 82443,
+          "codon": "TGA"
+        },
+        {
+          "offset": 82452,
+          "codon": "TGA"
+        },
+        {
+          "offset": 82599,
+          "codon": "TGA"
+        },
+        {
+          "offset": 82644,
+          "codon": "TGA"
+        },
+        {
+          "offset": 82650,
+          "codon": "TGA"
+        },
+        {
+          "offset": 82728,
+          "codon": "TGA"
+        },
+        {
+          "offset": 83394,
+          "codon": "TAG"
+        },
+        {
+          "offset": 83676,
+          "codon": "TGA"
+        },
+        {
+          "offset": 84210,
+          "codon": "TAG"
+        },
+        {
+          "offset": 84483,
+          "codon": "TGA"
+        },
+        {
+          "offset": 84666,
+          "codon": "TAG"
+        },
+        {
+          "offset": 84795,
+          "codon": "TAG"
+        },
+        {
+          "offset": 84879,
+          "codon": "TGA"
+        },
+        {
+          "offset": 84963,
+          "codon": "TAA"
+        },
+        {
+          "offset": 85038,
+          "codon": "TGA"
+        },
+        {
+          "offset": 85056,
+          "codon": "TGA"
+        },
+        {
+          "offset": 85236,
+          "codon": "TGA"
+        },
+        {
+          "offset": 85290,
+          "codon": "TGA"
+        },
+        {
+          "offset": 85344,
+          "codon": "TGA"
+        },
+        {
+          "offset": 85419,
+          "codon": "TGA"
+        },
+        {
+          "offset": 85437,
+          "codon": "TGA"
+        },
+        {
+          "offset": 85515,
+          "codon": "TGA"
+        },
+        {
+          "offset": 85557,
+          "codon": "TAG"
+        },
+        {
+          "offset": 85590,
+          "codon": "TGA"
+        },
+        {
+          "offset": 85695,
+          "codon": "TAG"
+        },
+        {
+          "offset": 86082,
+          "codon": "TGA"
+        },
+        {
+          "offset": 86094,
+          "codon": "TGA"
+        },
+        {
+          "offset": 86109,
+          "codon": "TGA"
+        },
+        {
+          "offset": 86274,
+          "codon": "TGA"
+        },
+        {
+          "offset": 86349,
+          "codon": "TGA"
+        },
+        {
+          "offset": 86358,
+          "codon": "TGA"
+        },
+        {
+          "offset": 86403,
+          "codon": "TGA"
+        },
+        {
+          "offset": 86445,
+          "codon": "TGA"
+        },
+        {
+          "offset": 86460,
+          "codon": "TGA"
+        },
+        {
+          "offset": 86556,
+          "codon": "TGA"
+        },
+        {
+          "offset": 86589,
+          "codon": "TGA"
+        },
+        {
+          "offset": 86619,
+          "codon": "TGA"
+        },
+        {
+          "offset": 86646,
+          "codon": "TGA"
+        },
+        {
+          "offset": 87183,
+          "codon": "TAA"
+        },
+        {
+          "offset": 87207,
+          "codon": "TGA"
+        },
+        {
+          "offset": 87336,
+          "codon": "TGA"
+        },
+        {
+          "offset": 87369,
+          "codon": "TGA"
+        },
+        {
+          "offset": 87555,
+          "codon": "TGA"
+        },
+        {
+          "offset": 87600,
+          "codon": "TGA"
+        },
+        {
+          "offset": 87612,
+          "codon": "TGA"
+        },
+        {
+          "offset": 87651,
+          "codon": "TGA"
+        },
+        {
+          "offset": 87711,
+          "codon": "TGA"
+        },
+        {
+          "offset": 87726,
+          "codon": "TGA"
+        },
+        {
+          "offset": 87870,
+          "codon": "TGA"
+        },
+        {
+          "offset": 87918,
+          "codon": "TGA"
+        },
+        {
+          "offset": 88047,
+          "codon": "TAA"
+        },
+        {
+          "offset": 88056,
+          "codon": "TGA"
+        },
+        {
+          "offset": 88080,
+          "codon": "TGA"
+        },
+        {
+          "offset": 88218,
+          "codon": "TGA"
+        },
+        {
+          "offset": 88389,
+          "codon": "TGA"
+        },
+        {
+          "offset": 88524,
+          "codon": "TGA"
+        },
+        {
+          "offset": 88599,
+          "codon": "TGA"
+        },
+        {
+          "offset": 88656,
+          "codon": "TGA"
+        },
+        {
+          "offset": 88719,
+          "codon": "TGA"
+        },
+        {
+          "offset": 88788,
+          "codon": "TGA"
+        },
+        {
+          "offset": 89391,
+          "codon": "TGA"
+        },
+        {
+          "offset": 89967,
+          "codon": "TGA"
+        },
+        {
+          "offset": 90057,
+          "codon": "TGA"
+        },
+        {
+          "offset": 90165,
+          "codon": "TGA"
+        },
+        {
+          "offset": 90276,
+          "codon": "TGA"
+        },
+        {
+          "offset": 90366,
+          "codon": "TGA"
+        },
+        {
+          "offset": 90618,
+          "codon": "TGA"
+        },
+        {
+          "offset": 90684,
+          "codon": "TGA"
+        },
+        {
+          "offset": 90789,
+          "codon": "TGA"
+        },
+        {
+          "offset": 90822,
+          "codon": "TGA"
+        },
+        {
+          "offset": 91041,
+          "codon": "TGA"
+        },
+        {
+          "offset": 91068,
+          "codon": "TGA"
+        },
+        {
+          "offset": 91152,
+          "codon": "TGA"
+        },
+        {
+          "offset": 91173,
+          "codon": "TAG"
+        },
+        {
+          "offset": 91317,
+          "codon": "TGA"
+        },
+        {
+          "offset": 91347,
+          "codon": "TGA"
+        },
+        {
+          "offset": 91596,
+          "codon": "TGA"
+        },
+        {
+          "offset": 91776,
+          "codon": "TGA"
+        },
+        {
+          "offset": 91800,
+          "codon": "TGA"
+        },
+        {
+          "offset": 92307,
+          "codon": "TAG"
+        },
+        {
+          "offset": 92355,
+          "codon": "TGA"
+        },
+        {
+          "offset": 92508,
+          "codon": "TAA"
+        },
+        {
+          "offset": 92568,
+          "codon": "TAG"
+        },
+        {
+          "offset": 92634,
+          "codon": "TGA"
+        },
+        {
+          "offset": 92712,
+          "codon": "TAA"
+        },
+        {
+          "offset": 92814,
+          "codon": "TGA"
+        },
+        {
+          "offset": 92970,
+          "codon": "TGA"
+        },
+        {
+          "offset": 93111,
+          "codon": "TGA"
+        },
+        {
+          "offset": 93249,
+          "codon": "TGA"
+        },
+        {
+          "offset": 93282,
+          "codon": "TGA"
+        },
+        {
+          "offset": 93318,
+          "codon": "TGA"
+        },
+        {
+          "offset": 93483,
+          "codon": "TGA"
+        },
+        {
+          "offset": 93582,
+          "codon": "TGA"
+        },
+        {
+          "offset": 93609,
+          "codon": "TGA"
+        },
+        {
+          "offset": 93804,
+          "codon": "TAA"
+        },
+        {
+          "offset": 94230,
+          "codon": "TGA"
+        },
+        {
+          "offset": 94281,
+          "codon": "TGA"
+        },
+        {
+          "offset": 94326,
+          "codon": "TAA"
+        },
+        {
+          "offset": 94428,
+          "codon": "TAA"
+        },
+        {
+          "offset": 94572,
+          "codon": "TGA"
+        },
+        {
+          "offset": 94584,
+          "codon": "TGA"
+        },
+        {
+          "offset": 94611,
+          "codon": "TGA"
+        },
+        {
+          "offset": 94692,
+          "codon": "TGA"
+        },
+        {
+          "offset": 94872,
+          "codon": "TGA"
+        },
+        {
+          "offset": 94947,
+          "codon": "TGA"
+        },
+        {
+          "offset": 95055,
+          "codon": "TGA"
+        },
+        {
+          "offset": 95061,
+          "codon": "TGA"
+        },
+        {
+          "offset": 95091,
+          "codon": "TGA"
+        },
+        {
+          "offset": 95391,
+          "codon": "TGA"
+        },
+        {
+          "offset": 95544,
+          "codon": "TGA"
+        },
+        {
+          "offset": 95556,
+          "codon": "TGA"
+        },
+        {
+          "offset": 95697,
+          "codon": "TGA"
+        },
+        {
+          "offset": 96117,
+          "codon": "TGA"
+        },
+        {
+          "offset": 96630,
+          "codon": "TGA"
+        },
+        {
+          "offset": 97902,
+          "codon": "TGA"
+        },
+        {
+          "offset": 98064,
+          "codon": "TGA"
+        },
+        {
+          "offset": 98718,
+          "codon": "TAG"
+        },
+        {
+          "offset": 98760,
+          "codon": "TAG"
+        },
+        {
+          "offset": 98934,
+          "codon": "TAG"
+        },
+        {
+          "offset": 99324,
+          "codon": "TGA"
+        },
+        {
+          "offset": 99606,
+          "codon": "TGA"
+        },
+        {
+          "offset": 99609,
+          "codon": "TGA"
+        },
+        {
+          "offset": 99942,
+          "codon": "TGA"
+        },
+        {
+          "offset": 99954,
+          "codon": "TGA"
+        },
+        {
+          "offset": 100032,
+          "codon": "TGA"
+        },
+        {
+          "offset": 100074,
+          "codon": "TGA"
+        },
+        {
+          "offset": 100113,
+          "codon": "TGA"
+        },
+        {
+          "offset": 100197,
+          "codon": "TGA"
+        },
+        {
+          "offset": 100239,
+          "codon": "TGA"
+        },
+        {
+          "offset": 100293,
+          "codon": "TGA"
+        },
+        {
+          "offset": 100347,
+          "codon": "TGA"
+        },
+        {
+          "offset": 100392,
+          "codon": "TGA"
+        },
+        {
+          "offset": 100425,
+          "codon": "TGA"
+        },
+        {
+          "offset": 100602,
+          "codon": "TGA"
+        },
+        {
+          "offset": 101016,
+          "codon": "TGA"
+        },
+        {
+          "offset": 101187,
+          "codon": "TGA"
+        },
+        {
+          "offset": 101274,
+          "codon": "TAG"
+        },
+        {
+          "offset": 102741,
+          "codon": "TAG"
+        },
+        {
+          "offset": 102831,
+          "codon": "TAA"
+        },
+        {
+          "offset": 102900,
+          "codon": "TGA"
+        },
+        {
+          "offset": 102906,
+          "codon": "TGA"
+        },
+        {
+          "offset": 102969,
+          "codon": "TGA"
+        },
+        {
+          "offset": 103233,
+          "codon": "TGA"
+        },
+        {
+          "offset": 103299,
+          "codon": "TGA"
+        },
+        {
+          "offset": 103353,
+          "codon": "TGA"
+        },
+        {
+          "offset": 103356,
+          "codon": "TGA"
+        },
+        {
+          "offset": 103596,
+          "codon": "TAA"
+        },
+        {
+          "offset": 103656,
+          "codon": "TGA"
+        },
+        {
+          "offset": 103815,
+          "codon": "TGA"
+        },
+        {
+          "offset": 103860,
+          "codon": "TGA"
+        },
+        {
+          "offset": 104037,
+          "codon": "TGA"
+        },
+        {
+          "offset": 104103,
+          "codon": "TGA"
+        },
+        {
+          "offset": 104286,
+          "codon": "TGA"
+        },
+        {
+          "offset": 104514,
+          "codon": "TGA"
+        },
+        {
+          "offset": 104568,
+          "codon": "TGA"
+        },
+        {
+          "offset": 104760,
+          "codon": "TGA"
+        },
+        {
+          "offset": 104958,
+          "codon": "TGA"
+        },
+        {
+          "offset": 104985,
+          "codon": "TGA"
+        },
+        {
+          "offset": 105393,
+          "codon": "TGA"
+        },
+        {
+          "offset": 105885,
+          "codon": "TGA"
+        },
+        {
+          "offset": 105906,
+          "codon": "TGA"
+        },
+        {
+          "offset": 105972,
+          "codon": "TGA"
+        },
+        {
+          "offset": 106290,
+          "codon": "TGA"
+        },
+        {
+          "offset": 106326,
+          "codon": "TGA"
+        },
+        {
+          "offset": 107163,
+          "codon": "TAG"
+        },
+        {
+          "offset": 107211,
+          "codon": "TGA"
+        },
+        {
+          "offset": 107592,
+          "codon": "TGA"
+        },
+        {
+          "offset": 107673,
+          "codon": "TGA"
+        },
+        {
+          "offset": 107751,
+          "codon": "TGA"
+        },
+        {
+          "offset": 107982,
+          "codon": "TAA"
+        },
+        {
+          "offset": 108036,
+          "codon": "TGA"
+        },
+        {
+          "offset": 108111,
+          "codon": "TGA"
+        },
+        {
+          "offset": 108261,
+          "codon": "TGA"
+        },
+        {
+          "offset": 108453,
+          "codon": "TGA"
+        },
+        {
+          "offset": 108504,
+          "codon": "TGA"
+        },
+        {
+          "offset": 108642,
+          "codon": "TGA"
+        },
+        {
+          "offset": 108681,
+          "codon": "TGA"
+        },
+        {
+          "offset": 108819,
+          "codon": "TGA"
+        },
+        {
+          "offset": 108882,
+          "codon": "TAG"
+        },
+        {
+          "offset": 108897,
+          "codon": "TAG"
+        },
+        {
+          "offset": 108900,
+          "codon": "TAG"
+        },
+        {
+          "offset": 109356,
+          "codon": "TAG"
+        },
+        {
+          "offset": 109500,
+          "codon": "TAA"
+        },
+        {
+          "offset": 109539,
+          "codon": "TGA"
+        },
+        {
+          "offset": 109548,
+          "codon": "TGA"
+        },
+        {
+          "offset": 109590,
+          "codon": "TGA"
+        },
+        {
+          "offset": 109638,
+          "codon": "TGA"
+        },
+        {
+          "offset": 109671,
+          "codon": "TGA"
+        },
+        {
+          "offset": 109767,
+          "codon": "TGA"
+        },
+        {
+          "offset": 109797,
+          "codon": "TAA"
+        },
+        {
+          "offset": 109824,
+          "codon": "TGA"
+        },
+        {
+          "offset": 109932,
+          "codon": "TGA"
+        },
+        {
+          "offset": 109938,
+          "codon": "TGA"
+        },
+        {
+          "offset": 109950,
+          "codon": "TGA"
+        },
+        {
+          "offset": 110001,
+          "codon": "TGA"
+        },
+        {
+          "offset": 110067,
+          "codon": "TGA"
+        },
+        {
+          "offset": 110214,
+          "codon": "TGA"
+        },
+        {
+          "offset": 110271,
+          "codon": "TGA"
+        },
+        {
+          "offset": 110334,
+          "codon": "TGA"
+        },
+        {
+          "offset": 110358,
+          "codon": "TGA"
+        },
+        {
+          "offset": 110418,
+          "codon": "TGA"
+        },
+        {
+          "offset": 110466,
+          "codon": "TGA"
+        },
+        {
+          "offset": 110688,
+          "codon": "TAG"
+        },
+        {
+          "offset": 110721,
+          "codon": "TAG"
+        },
+        {
+          "offset": 110985,
+          "codon": "TAG"
+        },
+        {
+          "offset": 111363,
+          "codon": "TAG"
+        },
+        {
+          "offset": 111423,
+          "codon": "TAG"
+        },
+        {
+          "offset": 111453,
+          "codon": "TAG"
+        },
+        {
+          "offset": 111465,
+          "codon": "TAG"
+        },
+        {
+          "offset": 111516,
+          "codon": "TAG"
+        },
+        {
+          "offset": 111540,
+          "codon": "TGA"
+        },
+        {
+          "offset": 111918,
+          "codon": "TGA"
+        },
+        {
+          "offset": 111960,
+          "codon": "TAA"
+        },
+        {
+          "offset": 112077,
+          "codon": "TGA"
+        },
+        {
+          "offset": 112116,
+          "codon": "TGA"
+        },
+        {
+          "offset": 112161,
+          "codon": "TGA"
+        },
+        {
+          "offset": 112263,
+          "codon": "TGA"
+        },
+        {
+          "offset": 112407,
+          "codon": "TGA"
+        },
+        {
+          "offset": 112620,
+          "codon": "TGA"
+        },
+        {
+          "offset": 112635,
+          "codon": "TGA"
+        },
+        {
+          "offset": 112638,
+          "codon": "TGA"
+        },
+        {
+          "offset": 112710,
+          "codon": "TGA"
+        },
+        {
+          "offset": 112833,
+          "codon": "TGA"
+        },
+        {
+          "offset": 112920,
+          "codon": "TGA"
+        },
+        {
+          "offset": 112923,
+          "codon": "TGA"
+        },
+        {
+          "offset": 112935,
+          "codon": "TGA"
+        },
+        {
+          "offset": 113115,
+          "codon": "TGA"
+        },
+        {
+          "offset": 113190,
+          "codon": "TGA"
+        },
+        {
+          "offset": 113238,
+          "codon": "TGA"
+        },
+        {
+          "offset": 113280,
+          "codon": "TAA"
+        },
+        {
+          "offset": 113286,
+          "codon": "TAA"
+        },
+        {
+          "offset": 113388,
+          "codon": "TGA"
+        },
+        {
+          "offset": 113583,
+          "codon": "TGA"
+        },
+        {
+          "offset": 113949,
+          "codon": "TGA"
+        },
+        {
+          "offset": 114126,
+          "codon": "TGA"
+        },
+        {
+          "offset": 114177,
+          "codon": "TGA"
+        },
+        {
+          "offset": 114186,
+          "codon": "TGA"
+        },
+        {
+          "offset": 114228,
+          "codon": "TAA"
+        },
+        {
+          "offset": 114294,
+          "codon": "TGA"
+        },
+        {
+          "offset": 114318,
+          "codon": "TGA"
+        },
+        {
+          "offset": 114444,
+          "codon": "TGA"
+        },
+        {
+          "offset": 114468,
+          "codon": "TAG"
+        },
+        {
+          "offset": 114480,
+          "codon": "TAG"
+        },
+        {
+          "offset": 114627,
+          "codon": "TGA"
+        },
+        {
+          "offset": 114687,
+          "codon": "TAG"
+        },
+        {
+          "offset": 115287,
+          "codon": "TAG"
+        },
+        {
+          "offset": 115656,
+          "codon": "TGA"
+        },
+        {
+          "offset": 115908,
+          "codon": "TGA"
+        },
+        {
+          "offset": 115932,
+          "codon": "TGA"
+        },
+        {
+          "offset": 115935,
+          "codon": "TGA"
+        },
+        {
+          "offset": 115962,
+          "codon": "TGA"
+        },
+        {
+          "offset": 115971,
+          "codon": "TGA"
+        },
+        {
+          "offset": 116094,
+          "codon": "TGA"
+        },
+        {
+          "offset": 116277,
+          "codon": "TAG"
+        },
+        {
+          "offset": 116307,
+          "codon": "TAG"
+        },
+        {
+          "offset": 116967,
+          "codon": "TAG"
+        },
+        {
+          "offset": 116985,
+          "codon": "TGA"
+        },
+        {
+          "offset": 117729,
+          "codon": "TGA"
+        },
+        {
+          "offset": 117747,
+          "codon": "TAA"
+        },
+        {
+          "offset": 117762,
+          "codon": "TGA"
+        },
+        {
+          "offset": 117810,
+          "codon": "TGA"
+        },
+        {
+          "offset": 117879,
+          "codon": "TGA"
+        },
+        {
+          "offset": 118023,
+          "codon": "TGA"
+        },
+        {
+          "offset": 118053,
+          "codon": "TGA"
+        },
+        {
+          "offset": 118110,
+          "codon": "TGA"
+        },
+        {
+          "offset": 118128,
+          "codon": "TGA"
+        },
+        {
+          "offset": 118335,
+          "codon": "TGA"
+        },
+        {
+          "offset": 118356,
+          "codon": "TGA"
+        },
+        {
+          "offset": 118365,
+          "codon": "TGA"
+        },
+        {
+          "offset": 118398,
+          "codon": "TGA"
+        },
+        {
+          "offset": 118506,
+          "codon": "TGA"
+        },
+        {
+          "offset": 118698,
+          "codon": "TGA"
+        },
+        {
+          "offset": 118818,
+          "codon": "TGA"
+        },
+        {
+          "offset": 119019,
+          "codon": "TGA"
+        },
+        {
+          "offset": 119031,
+          "codon": "TGA"
+        },
+        {
+          "offset": 119142,
+          "codon": "TGA"
+        },
+        {
+          "offset": 119157,
+          "codon": "TGA"
+        },
+        {
+          "offset": 119175,
+          "codon": "TGA"
+        },
+        {
+          "offset": 119187,
+          "codon": "TAG"
+        },
+        {
+          "offset": 119193,
+          "codon": "TAG"
+        },
+        {
+          "offset": 119196,
+          "codon": "TGA"
+        },
+        {
+          "offset": 119688,
+          "codon": "TGA"
+        },
+        {
+          "offset": 119760,
+          "codon": "TAG"
+        },
+        {
+          "offset": 120159,
+          "codon": "TGA"
+        },
+        {
+          "offset": 120330,
+          "codon": "TAG"
+        },
+        {
+          "offset": 120561,
+          "codon": "TAG"
+        },
+        {
+          "offset": 120594,
+          "codon": "TAG"
+        },
+        {
+          "offset": 120609,
+          "codon": "TAG"
+        },
+        {
+          "offset": 120612,
+          "codon": "TAG"
+        },
+        {
+          "offset": 120738,
+          "codon": "TAG"
+        },
+        {
+          "offset": 120954,
+          "codon": "TAG"
+        },
+        {
+          "offset": 121023,
+          "codon": "TAA"
+        },
+        {
+          "offset": 121095,
+          "codon": "TGA"
+        },
+        {
+          "offset": 121176,
+          "codon": "TGA"
+        },
+        {
+          "offset": 121242,
+          "codon": "TGA"
+        },
+        {
+          "offset": 122043,
+          "codon": "TGA"
+        },
+        {
+          "offset": 122187,
+          "codon": "TGA"
+        },
+        {
+          "offset": 122598,
+          "codon": "TGA"
+        },
+        {
+          "offset": 122850,
+          "codon": "TAA"
+        },
+        {
+          "offset": 122877,
+          "codon": "TGA"
+        },
+        {
+          "offset": 122928,
+          "codon": "TAG"
+        },
+        {
+          "offset": 123342,
+          "codon": "TAG"
+        },
+        {
+          "offset": 123477,
+          "codon": "TGA"
+        },
+        {
+          "offset": 123720,
+          "codon": "TAG"
+        },
+        {
+          "offset": 123804,
+          "codon": "TAG"
+        },
+        {
+          "offset": 123924,
+          "codon": "TGA"
+        },
+        {
+          "offset": 124038,
+          "codon": "TAG"
+        },
+        {
+          "offset": 124272,
+          "codon": "TGA"
+        },
+        {
+          "offset": 124299,
+          "codon": "TGA"
+        },
+        {
+          "offset": 124476,
+          "codon": "TGA"
+        },
+        {
+          "offset": 124590,
+          "codon": "TGA"
+        },
+        {
+          "offset": 124608,
+          "codon": "TGA"
+        },
+        {
+          "offset": 124632,
+          "codon": "TAA"
+        },
+        {
+          "offset": 124737,
+          "codon": "TGA"
+        },
+        {
+          "offset": 124800,
+          "codon": "TGA"
+        },
+        {
+          "offset": 124992,
+          "codon": "TGA"
+        },
+        {
+          "offset": 125055,
+          "codon": "TGA"
+        },
+        {
+          "offset": 125157,
+          "codon": "TAA"
+        },
+        {
+          "offset": 125256,
+          "codon": "TGA"
+        },
+        {
+          "offset": 125265,
+          "codon": "TGA"
+        },
+        {
+          "offset": 125397,
+          "codon": "TGA"
+        },
+        {
+          "offset": 125463,
+          "codon": "TGA"
+        },
+        {
+          "offset": 125487,
+          "codon": "TGA"
+        },
+        {
+          "offset": 125589,
+          "codon": "TGA"
+        },
+        {
+          "offset": 125625,
+          "codon": "TGA"
+        },
+        {
+          "offset": 125694,
+          "codon": "TGA"
+        },
+        {
+          "offset": 126465,
+          "codon": "TAG"
+        },
+        {
+          "offset": 126492,
+          "codon": "TAG"
+        },
+        {
+          "offset": 126504,
+          "codon": "TAG"
+        },
+        {
+          "offset": 126534,
+          "codon": "TAG"
+        },
+        {
+          "offset": 126612,
+          "codon": "TGA"
+        },
+        {
+          "offset": 126684,
+          "codon": "TAG"
+        },
+        {
+          "offset": 126816,
+          "codon": "TAG"
+        },
+        {
+          "offset": 127008,
+          "codon": "TAG"
+        },
+        {
+          "offset": 127077,
+          "codon": "TAG"
+        },
+        {
+          "offset": 127599,
+          "codon": "TAA"
+        },
+        {
+          "offset": 127692,
+          "codon": "TAG"
+        },
+        {
+          "offset": 127863,
+          "codon": "TAG"
+        },
+        {
+          "offset": 128043,
+          "codon": "TAG"
+        },
+        {
+          "offset": 128061,
+          "codon": "TAG"
+        },
+        {
+          "offset": 128778,
+          "codon": "TGA"
+        },
+        {
+          "offset": 128883,
+          "codon": "TGA"
+        },
+        {
+          "offset": 128886,
+          "codon": "TGA"
+        },
+        {
+          "offset": 129273,
+          "codon": "TGA"
+        },
+        {
+          "offset": 129330,
+          "codon": "TGA"
+        },
+        {
+          "offset": 129567,
+          "codon": "TAG"
+        },
+        {
+          "offset": 130032,
+          "codon": "TGA"
+        },
+        {
+          "offset": 130206,
+          "codon": "TGA"
+        },
+        {
+          "offset": 130335,
+          "codon": "TGA"
+        },
+        {
+          "offset": 130362,
+          "codon": "TGA"
+        },
+        {
+          "offset": 130506,
+          "codon": "TGA"
+        },
+        {
+          "offset": 130566,
+          "codon": "TGA"
+        },
+        {
+          "offset": 130752,
+          "codon": "TGA"
+        },
+        {
+          "offset": 130932,
+          "codon": "TGA"
+        },
+        {
+          "offset": 132480,
+          "codon": "TAG"
+        },
+        {
+          "offset": 132495,
+          "codon": "TAA"
+        },
+        {
+          "offset": 132564,
+          "codon": "TAA"
+        },
+        {
+          "offset": 132633,
+          "codon": "TGA"
+        },
+        {
+          "offset": 132672,
+          "codon": "TAA"
+        },
+        {
+          "offset": 132681,
+          "codon": "TAA"
+        },
+        {
+          "offset": 132684,
+          "codon": "TAG"
+        },
+        {
+          "offset": 132702,
+          "codon": "TGA"
+        },
+        {
+          "offset": 133716,
+          "codon": "TAG"
+        },
+        {
+          "offset": 133761,
+          "codon": "TAG"
+        },
+        {
+          "offset": 133902,
+          "codon": "TAA"
+        },
+        {
+          "offset": 133944,
+          "codon": "TGA"
+        },
+        {
+          "offset": 134037,
+          "codon": "TGA"
+        },
+        {
+          "offset": 134049,
+          "codon": "TGA"
+        },
+        {
+          "offset": 134154,
+          "codon": "TGA"
+        },
+        {
+          "offset": 134244,
+          "codon": "TGA"
+        },
+        {
+          "offset": 134262,
+          "codon": "TGA"
+        },
+        {
+          "offset": 134298,
+          "codon": "TGA"
+        },
+        {
+          "offset": 134403,
+          "codon": "TGA"
+        },
+        {
+          "offset": 134496,
+          "codon": "TGA"
+        },
+        {
+          "offset": 134649,
+          "codon": "TGA"
+        },
+        {
+          "offset": 134898,
+          "codon": "TGA"
+        },
+        {
+          "offset": 134928,
+          "codon": "TGA"
+        },
+        {
+          "offset": 134964,
+          "codon": "TGA"
+        },
+        {
+          "offset": 135039,
+          "codon": "TGA"
+        },
+        {
+          "offset": 135105,
+          "codon": "TGA"
+        },
+        {
+          "offset": 135123,
+          "codon": "TGA"
+        },
+        {
+          "offset": 135171,
+          "codon": "TGA"
+        },
+        {
+          "offset": 135207,
+          "codon": "TGA"
+        },
+        {
+          "offset": 135261,
+          "codon": "TGA"
+        },
+        {
+          "offset": 135264,
+          "codon": "TGA"
+        },
+        {
+          "offset": 135297,
+          "codon": "TGA"
+        },
+        {
+          "offset": 135309,
+          "codon": "TGA"
+        },
+        {
+          "offset": 135372,
+          "codon": "TGA"
+        },
+        {
+          "offset": 135393,
+          "codon": "TGA"
+        },
+        {
+          "offset": 135411,
+          "codon": "TGA"
+        },
+        {
+          "offset": 136206,
+          "codon": "TAG"
+        },
+        {
+          "offset": 136461,
+          "codon": "TAG"
+        },
+        {
+          "offset": 136719,
+          "codon": "TAG"
+        },
+        {
+          "offset": 136992,
+          "codon": "TGA"
+        },
+        {
+          "offset": 138657,
+          "codon": "TGA"
+        },
+        {
+          "offset": 139251,
+          "codon": "TGA"
+        },
+        {
+          "offset": 139425,
+          "codon": "TGA"
+        },
+        {
+          "offset": 139461,
+          "codon": "TGA"
+        },
+        {
+          "offset": 139581,
+          "codon": "TAG"
+        },
+        {
+          "offset": 139626,
+          "codon": "TAG"
+        },
+        {
+          "offset": 139674,
+          "codon": "TGA"
+        },
+        {
+          "offset": 139716,
+          "codon": "TGA"
+        },
+        {
+          "offset": 139755,
+          "codon": "TAG"
+        },
+        {
+          "offset": 139902,
+          "codon": "TGA"
+        },
+        {
+          "offset": 139965,
+          "codon": "TGA"
+        },
+        {
+          "offset": 140028,
+          "codon": "TGA"
+        },
+        {
+          "offset": 140139,
+          "codon": "TGA"
+        },
+        {
+          "offset": 140172,
+          "codon": "TGA"
+        },
+        {
+          "offset": 140214,
+          "codon": "TAA"
+        },
+        {
+          "offset": 140256,
+          "codon": "TAA"
+        },
+        {
+          "offset": 140358,
+          "codon": "TAA"
+        },
+        {
+          "offset": 140529,
+          "codon": "TAA"
+        },
+        {
+          "offset": 140613,
+          "codon": "TGA"
+        },
+        {
+          "offset": 140745,
+          "codon": "TAA"
+        },
+        {
+          "offset": 140772,
+          "codon": "TAG"
+        },
+        {
+          "offset": 140814,
+          "codon": "TAA"
+        },
+        {
+          "offset": 140820,
+          "codon": "TGA"
+        },
+        {
+          "offset": 140868,
+          "codon": "TAA"
+        },
+        {
+          "offset": 140910,
+          "codon": "TAG"
+        },
+        {
+          "offset": 140964,
+          "codon": "TAA"
+        },
+        {
+          "offset": 141132,
+          "codon": "TGA"
+        },
+        {
+          "offset": 141150,
+          "codon": "TGA"
+        },
+        {
+          "offset": 141303,
+          "codon": "TGA"
+        },
+        {
+          "offset": 142146,
+          "codon": "TAG"
+        },
+        {
+          "offset": 142164,
+          "codon": "TAG"
+        },
+        {
+          "offset": 142347,
+          "codon": "TGA"
+        },
+        {
+          "offset": 142701,
+          "codon": "TGA"
+        },
+        {
+          "offset": 142839,
+          "codon": "TGA"
+        },
+        {
+          "offset": 143178,
+          "codon": "TGA"
+        },
+        {
+          "offset": 143364,
+          "codon": "TGA"
+        },
+        {
+          "offset": 143487,
+          "codon": "TGA"
+        },
+        {
+          "offset": 143598,
+          "codon": "TGA"
+        },
+        {
+          "offset": 143673,
+          "codon": "TGA"
+        },
+        {
+          "offset": 143694,
+          "codon": "TGA"
+        },
+        {
+          "offset": 143796,
+          "codon": "TGA"
+        },
+        {
+          "offset": 143853,
+          "codon": "TGA"
+        },
+        {
+          "offset": 143862,
+          "codon": "TGA"
+        },
+        {
+          "offset": 144096,
+          "codon": "TGA"
+        },
+        {
+          "offset": 144249,
+          "codon": "TGA"
+        },
+        {
+          "offset": 144924,
+          "codon": "TGA"
+        },
+        {
+          "offset": 144981,
+          "codon": "TGA"
+        },
+        {
+          "offset": 145152,
+          "codon": "TGA"
+        },
+        {
+          "offset": 145365,
+          "codon": "TGA"
+        },
+        {
+          "offset": 145668,
+          "codon": "TGA"
+        },
+        {
+          "offset": 145749,
+          "codon": "TGA"
+        },
+        {
+          "offset": 145983,
+          "codon": "TAG"
+        },
+        {
+          "offset": 146103,
+          "codon": "TGA"
+        },
+        {
+          "offset": 146220,
+          "codon": "TAA"
+        },
+        {
+          "offset": 147936,
+          "codon": "TAA"
+        },
+        {
+          "offset": 148029,
+          "codon": "TGA"
+        },
+        {
+          "offset": 148047,
+          "codon": "TGA"
+        },
+        {
+          "offset": 148068,
+          "codon": "TAG"
+        },
+        {
+          "offset": 148077,
+          "codon": "TGA"
+        },
+        {
+          "offset": 148317,
+          "codon": "TGA"
+        },
+        {
+          "offset": 148344,
+          "codon": "TGA"
+        },
+        {
+          "offset": 148410,
+          "codon": "TGA"
+        },
+        {
+          "offset": 148476,
+          "codon": "TGA"
+        },
+        {
+          "offset": 148503,
+          "codon": "TGA"
+        },
+        {
+          "offset": 148728,
+          "codon": "TGA"
+        },
+        {
+          "offset": 148968,
+          "codon": "TGA"
+        },
+        {
+          "offset": 149052,
+          "codon": "TGA"
+        },
+        {
+          "offset": 149073,
+          "codon": "TGA"
+        },
+        {
+          "offset": 149094,
+          "codon": "TGA"
+        },
+        {
+          "offset": 149379,
+          "codon": "TAA"
+        },
+        {
+          "offset": 149448,
+          "codon": "TGA"
+        },
+        {
+          "offset": 149499,
+          "codon": "TGA"
+        },
+        {
+          "offset": 149556,
+          "codon": "TGA"
+        },
+        {
+          "offset": 149592,
+          "codon": "TGA"
+        },
+        {
+          "offset": 149598,
+          "codon": "TGA"
+        },
+        {
+          "offset": 149769,
+          "codon": "TGA"
+        },
+        {
+          "offset": 149784,
+          "codon": "TGA"
+        },
+        {
+          "offset": 149790,
+          "codon": "TAG"
+        },
+        {
+          "offset": 149841,
+          "codon": "TAG"
+        },
+        {
+          "offset": 150081,
+          "codon": "TGA"
+        },
+        {
+          "offset": 150120,
+          "codon": "TAG"
+        },
+        {
+          "offset": 150435,
+          "codon": "TAG"
+        },
+        {
+          "offset": 150450,
+          "codon": "TAG"
+        },
+        {
+          "offset": 150507,
+          "codon": "TGA"
+        },
+        {
+          "offset": 150510,
+          "codon": "TGA"
+        },
+        {
+          "offset": 150573,
+          "codon": "TAA"
+        },
+        {
+          "offset": 150582,
+          "codon": "TAA"
+        },
+        {
+          "offset": 150636,
+          "codon": "TGA"
+        },
+        {
+          "offset": 150732,
+          "codon": "TAG"
+        },
+        {
+          "offset": 150816,
+          "codon": "TGA"
+        },
+        {
+          "offset": 150888,
+          "codon": "TAA"
+        },
+        {
+          "offset": 150891,
+          "codon": "TAA"
+        },
+        {
+          "offset": 150912,
+          "codon": "TAG"
+        },
+        {
+          "offset": 151026,
+          "codon": "TAG"
+        },
+        {
+          "offset": 151029,
+          "codon": "TGA"
+        },
+        {
+          "offset": 151095,
+          "codon": "TAG"
+        },
+        {
+          "offset": 151119,
+          "codon": "TAG"
+        },
+        {
+          "offset": 151176,
+          "codon": "TAG"
+        },
+        {
+          "offset": 151398,
+          "codon": "TGA"
+        },
+        {
+          "offset": 151422,
+          "codon": "TGA"
+        },
+        {
+          "offset": 151464,
+          "codon": "TAA"
+        },
+        {
+          "offset": 151554,
+          "codon": "TGA"
+        },
+        {
+          "offset": 151557,
+          "codon": "TGA"
+        },
+        {
+          "offset": 151563,
+          "codon": "TAG"
+        },
+        {
+          "offset": 151875,
+          "codon": "TAA"
+        },
+        {
+          "offset": 151926,
+          "codon": "TAA"
+        },
+        {
+          "offset": 152190,
+          "codon": "TGA"
+        },
+        {
+          "offset": 152313,
+          "codon": "TAG"
+        },
+        {
+          "offset": 152562,
+          "codon": "TAG"
+        },
+        {
+          "offset": 152640,
+          "codon": "TGA"
+        },
+        {
+          "offset": 152688,
+          "codon": "TGA"
+        },
+        {
+          "offset": 152739,
+          "codon": "TAG"
+        },
+        {
+          "offset": 152763,
+          "codon": "TAG"
+        },
+        {
+          "offset": 152769,
+          "codon": "TAG"
+        },
+        {
+          "offset": 152829,
+          "codon": "TGA"
+        },
+        {
+          "offset": 152841,
+          "codon": "TGA"
+        },
+        {
+          "offset": 152979,
+          "codon": "TGA"
+        },
+        {
+          "offset": 152982,
+          "codon": "TGA"
+        },
+        {
+          "offset": 153030,
+          "codon": "TAG"
+        },
+        {
+          "offset": 153057,
+          "codon": "TGA"
+        },
+        {
+          "offset": 153075,
+          "codon": "TGA"
+        },
+        {
+          "offset": 153144,
+          "codon": "TGA"
+        },
+        {
+          "offset": 153153,
+          "codon": "TGA"
+        },
+        {
+          "offset": 153156,
+          "codon": "TGA"
+        },
+        {
+          "offset": 153240,
+          "codon": "TAG"
+        },
+        {
+          "offset": 153294,
+          "codon": "TGA"
+        },
+        {
+          "offset": 153300,
+          "codon": "TGA"
+        },
+        {
+          "offset": 153321,
+          "codon": "TGA"
+        },
+        {
+          "offset": 153351,
+          "codon": "TAG"
+        },
+        {
+          "offset": 153357,
+          "codon": "TAA"
+        },
+        {
+          "offset": 153387,
+          "codon": "TGA"
+        },
+        {
+          "offset": 153528,
+          "codon": "TAA"
+        },
+        {
+          "offset": 153573,
+          "codon": "TAA"
+        },
+        {
+          "offset": 153603,
+          "codon": "TGA"
+        },
+        {
+          "offset": 153672,
+          "codon": "TGA"
+        },
+        {
+          "offset": 153978,
+          "codon": "TAA"
+        },
+        {
+          "offset": 154038,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154236,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154359,
+          "codon": "TAG"
+        },
+        {
+          "offset": 154416,
+          "codon": "TAA"
+        },
+        {
+          "offset": 154428,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154449,
+          "codon": "TAA"
+        },
+        {
+          "offset": 154479,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154515,
+          "codon": "TAA"
+        },
+        {
+          "offset": 154560,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154614,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154638,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154650,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154689,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154710,
+          "codon": "TAG"
+        },
+        {
+          "offset": 154761,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154803,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154812,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154830,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154839,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154845,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154854,
+          "codon": "TAG"
+        },
+        {
+          "offset": 154866,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154938,
+          "codon": "TGA"
+        },
+        {
+          "offset": 154971,
+          "codon": "TAG"
+        },
+        {
+          "offset": 155343,
+          "codon": "TAG"
+        },
+        {
+          "offset": 155685,
+          "codon": "TAG"
+        },
+        {
+          "offset": 155805,
+          "codon": "TAG"
+        },
+        {
+          "offset": 155934,
+          "codon": "TAG"
+        },
+        {
+          "offset": 155961,
+          "codon": "TAG"
+        },
+        {
+          "offset": 156033,
+          "codon": "TAG"
+        },
+        {
+          "offset": 156114,
+          "codon": "TGA"
+        },
+        {
+          "offset": 156804,
+          "codon": "TAG"
+        },
+        {
+          "offset": 157068,
+          "codon": "TAG"
+        },
+        {
+          "offset": 157215,
+          "codon": "TAA"
+        },
+        {
+          "offset": 157257,
+          "codon": "TAG"
+        },
+        {
+          "offset": 157344,
+          "codon": "TAG"
+        },
+        {
+          "offset": 157365,
+          "codon": "TAA"
+        },
+        {
+          "offset": 157443,
+          "codon": "TAG"
+        },
+        {
+          "offset": 157473,
+          "codon": "TGA"
+        },
+        {
+          "offset": 157896,
+          "codon": "TGA"
+        },
+        {
+          "offset": 158886,
+          "codon": "TAG"
+        },
+        {
+          "offset": 159621,
+          "codon": "TGA"
+        },
+        {
+          "offset": 159693,
+          "codon": "TGA"
+        },
+        {
+          "offset": 159702,
+          "codon": "TGA"
+        },
+        {
+          "offset": 159726,
+          "codon": "TAG"
+        },
+        {
+          "offset": 159795,
+          "codon": "TGA"
+        },
+        {
+          "offset": 159828,
+          "codon": "TAG"
+        },
+        {
+          "offset": 160302,
+          "codon": "TGA"
+        },
+        {
+          "offset": 160389,
+          "codon": "TGA"
+        },
+        {
+          "offset": 160908,
+          "codon": "TGA"
+        },
+        {
+          "offset": 161043,
+          "codon": "TGA"
+        },
+        {
+          "offset": 161208,
+          "codon": "TAG"
+        },
+        {
+          "offset": 161352,
+          "codon": "TGA"
+        },
+        {
+          "offset": 161589,
+          "codon": "TGA"
+        },
+        {
+          "offset": 161796,
+          "codon": "TGA"
+        },
+        {
+          "offset": 161805,
+          "codon": "TAA"
+        },
+        {
+          "offset": 161811,
+          "codon": "TGA"
+        },
+        {
+          "offset": 161880,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162054,
+          "codon": "TAG"
+        },
+        {
+          "offset": 162108,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162159,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162183,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162195,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162219,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162258,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162273,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162294,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162384,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162447,
+          "codon": "TAA"
+        },
+        {
+          "offset": 162462,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162486,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162570,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162573,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162612,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162702,
+          "codon": "TAA"
+        },
+        {
+          "offset": 162762,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162777,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162840,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162918,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162921,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162933,
+          "codon": "TAA"
+        },
+        {
+          "offset": 162954,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162963,
+          "codon": "TGA"
+        },
+        {
+          "offset": 162987,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163104,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163137,
+          "codon": "TAG"
+        },
+        {
+          "offset": 163185,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163188,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163197,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163281,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163329,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163350,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163356,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163374,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163557,
+          "codon": "TAG"
+        },
+        {
+          "offset": 163566,
+          "codon": "TAG"
+        },
+        {
+          "offset": 163587,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163611,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163686,
+          "codon": "TAG"
+        },
+        {
+          "offset": 163731,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163752,
+          "codon": "TAA"
+        },
+        {
+          "offset": 163800,
+          "codon": "TAA"
+        },
+        {
+          "offset": 163818,
+          "codon": "TAA"
+        },
+        {
+          "offset": 163851,
+          "codon": "TGA"
+        },
+        {
+          "offset": 163920,
+          "codon": "TAG"
+        },
+        {
+          "offset": 164061,
+          "codon": "TAG"
+        },
+        {
+          "offset": 164241,
+          "codon": "TAG"
+        },
+        {
+          "offset": 164268,
+          "codon": "TAG"
+        },
+        {
+          "offset": 164544,
+          "codon": "TGA"
+        },
+        {
+          "offset": 164829,
+          "codon": "TAA"
+        },
+        {
+          "offset": 164865,
+          "codon": "TAG"
+        },
+        {
+          "offset": 164868,
+          "codon": "TGA"
+        },
+        {
+          "offset": 164916,
+          "codon": "TAG"
+        },
+        {
+          "offset": 165126,
+          "codon": "TGA"
+        },
+        {
+          "offset": 165174,
+          "codon": "TAG"
+        },
+        {
+          "offset": 165243,
+          "codon": "TGA"
+        },
+        {
+          "offset": 165285,
+          "codon": "TAG"
+        },
+        {
+          "offset": 165519,
+          "codon": "TAG"
+        },
+        {
+          "offset": 165648,
+          "codon": "TGA"
+        },
+        {
+          "offset": 165681,
+          "codon": "TGA"
+        },
+        {
+          "offset": 165750,
+          "codon": "TAG"
+        },
+        {
+          "offset": 165867,
+          "codon": "TAA"
+        },
+        {
+          "offset": 166257,
+          "codon": "TGA"
+        },
+        {
+          "offset": 166278,
+          "codon": "TAA"
+        },
+        {
+          "offset": 166332,
+          "codon": "TGA"
+        },
+        {
+          "offset": 166521,
+          "codon": "TGA"
+        },
+        {
+          "offset": 166668,
+          "codon": "TGA"
+        },
+        {
+          "offset": 166848,
+          "codon": "TGA"
+        },
+        {
+          "offset": 167208,
+          "codon": "TGA"
+        },
+        {
+          "offset": 167388,
+          "codon": "TGA"
+        },
+        {
+          "offset": 167424,
+          "codon": "TAA"
+        },
+        {
+          "offset": 167445,
+          "codon": "TGA"
+        },
+        {
+          "offset": 167466,
+          "codon": "TGA"
+        },
+        {
+          "offset": 167568,
+          "codon": "TGA"
+        },
+        {
+          "offset": 167583,
+          "codon": "TGA"
+        },
+        {
+          "offset": 167769,
+          "codon": "TGA"
+        },
+        {
+          "offset": 167775,
+          "codon": "TGA"
+        },
+        {
+          "offset": 168792,
+          "codon": "TAG"
+        },
+        {
+          "offset": 168819,
+          "codon": "TGA"
+        },
+        {
+          "offset": 168954,
+          "codon": "TGA"
+        },
+        {
+          "offset": 169038,
+          "codon": "TAA"
+        },
+        {
+          "offset": 169101,
+          "codon": "TGA"
+        },
+        {
+          "offset": 169194,
+          "codon": "TGA"
+        },
+        {
+          "offset": 169275,
+          "codon": "TGA"
+        },
+        {
+          "offset": 169446,
+          "codon": "TGA"
+        },
+        {
+          "offset": 169500,
+          "codon": "TGA"
+        },
+        {
+          "offset": 169650,
+          "codon": "TGA"
+        },
+        {
+          "offset": 169737,
+          "codon": "TGA"
+        },
+        {
+          "offset": 170127,
+          "codon": "TGA"
+        },
+        {
+          "offset": 170319,
+          "codon": "TGA"
+        },
+        {
+          "offset": 170343,
+          "codon": "TGA"
+        },
+        {
+          "offset": 170451,
+          "codon": "TGA"
+        },
+        {
+          "offset": 170646,
+          "codon": "TGA"
+        },
+        {
+          "offset": 170673,
+          "codon": "TGA"
+        },
+        {
+          "offset": 170799,
+          "codon": "TAG"
+        },
+        {
+          "offset": 170934,
+          "codon": "TAG"
+        },
+        {
+          "offset": 170973,
+          "codon": "TGA"
+        },
+        {
+          "offset": 171093,
+          "codon": "TGA"
+        },
+        {
+          "offset": 171204,
+          "codon": "TAA"
+        },
+        {
+          "offset": 171216,
+          "codon": "TGA"
+        },
+        {
+          "offset": 171222,
+          "codon": "TAG"
+        },
+        {
+          "offset": 171258,
+          "codon": "TGA"
+        },
+        {
+          "offset": 172833,
+          "codon": "TGA"
+        },
+        {
+          "offset": 172881,
+          "codon": "TGA"
+        },
+        {
+          "offset": 172932,
+          "codon": "TGA"
+        },
+        {
+          "offset": 173169,
+          "codon": "TGA"
+        },
+        {
+          "offset": 173412,
+          "codon": "TAG"
+        },
+        {
+          "offset": 173454,
+          "codon": "TAA"
+        },
+        {
+          "offset": 173613,
+          "codon": "TGA"
+        },
+        {
+          "offset": 173676,
+          "codon": "TAG"
+        },
+        {
+          "offset": 173700,
+          "codon": "TAG"
+        },
+        {
+          "offset": 173718,
+          "codon": "TAG"
+        },
+        {
+          "offset": 173841,
+          "codon": "TAG"
+        },
+        {
+          "offset": 174411,
+          "codon": "TGA"
+        },
+        {
+          "offset": 174870,
+          "codon": "TGA"
+        },
+        {
+          "offset": 175644,
+          "codon": "TGA"
+        },
+        {
+          "offset": 175770,
+          "codon": "TAG"
+        },
+        {
+          "offset": 175878,
+          "codon": "TAG"
+        },
+        {
+          "offset": 176193,
+          "codon": "TAA"
+        },
+        {
+          "offset": 176385,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177189,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177357,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177366,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177390,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177417,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177453,
+          "codon": "TAA"
+        },
+        {
+          "offset": 177534,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177651,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177717,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177723,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177744,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177771,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177840,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177918,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177939,
+          "codon": "TGA"
+        },
+        {
+          "offset": 177942,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178029,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178056,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178059,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178077,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178083,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178098,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178182,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178404,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178446,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178611,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178659,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178674,
+          "codon": "TGA"
+        },
+        {
+          "offset": 178686,
+          "codon": "TGA"
+        },
+        {
+          "offset": 179118,
+          "codon": "TAG"
+        },
+        {
+          "offset": 179235,
+          "codon": "TAG"
+        },
+        {
+          "offset": 180159,
+          "codon": "TAG"
+        },
+        {
+          "offset": 180285,
+          "codon": "TGA"
+        },
+        {
+          "offset": 180501,
+          "codon": "TGA"
+        },
+        {
+          "offset": 180654,
+          "codon": "TAG"
+        },
+        {
+          "offset": 180747,
+          "codon": "TGA"
+        },
+        {
+          "offset": 181017,
+          "codon": "TAA"
+        },
+        {
+          "offset": 181098,
+          "codon": "TGA"
+        },
+        {
+          "offset": 181335,
+          "codon": "TGA"
+        },
+        {
+          "offset": 182898,
+          "codon": "TGA"
+        },
+        {
+          "offset": 183003,
+          "codon": "TGA"
+        },
+        {
+          "offset": 183105,
+          "codon": "TAA"
+        },
+        {
+          "offset": 183369,
+          "codon": "TGA"
+        },
+        {
+          "offset": 184137,
+          "codon": "TAG"
+        },
+        {
+          "offset": 184224,
+          "codon": "TGA"
+        },
+        {
+          "offset": 184485,
+          "codon": "TAG"
+        },
+        {
+          "offset": 184941,
+          "codon": "TAG"
+        },
+        {
+          "offset": 185439,
+          "codon": "TAA"
+        },
+        {
+          "offset": 185703,
+          "codon": "TAA"
+        },
+        {
+          "offset": 185826,
+          "codon": "TGA"
+        },
+        {
+          "offset": 185850,
+          "codon": "TAA"
+        },
+        {
+          "offset": 185940,
+          "codon": "TGA"
+        },
+        {
+          "offset": 186066,
+          "codon": "TGA"
+        },
+        {
+          "offset": 186168,
+          "codon": "TGA"
+        },
+        {
+          "offset": 186234,
+          "codon": "TAG"
+        },
+        {
+          "offset": 186294,
+          "codon": "TAG"
+        },
+        {
+          "offset": 186318,
+          "codon": "TAG"
+        },
+        {
+          "offset": 186351,
+          "codon": "TGA"
+        },
+        {
+          "offset": 186393,
+          "codon": "TGA"
+        },
+        {
+          "offset": 186540,
+          "codon": "TGA"
+        },
+        {
+          "offset": 186651,
+          "codon": "TAG"
+        },
+        {
+          "offset": 186666,
+          "codon": "TGA"
+        },
+        {
+          "offset": 186756,
+          "codon": "TGA"
+        },
+        {
+          "offset": 186777,
+          "codon": "TAG"
+        },
+        {
+          "offset": 187233,
+          "codon": "TGA"
+        },
+        {
+          "offset": 187299,
+          "codon": "TGA"
+        },
+        {
+          "offset": 187572,
+          "codon": "TGA"
+        },
+        {
+          "offset": 187656,
+          "codon": "TGA"
+        },
+        {
+          "offset": 187659,
+          "codon": "TGA"
+        },
+        {
+          "offset": 187719,
+          "codon": "TGA"
+        },
+        {
+          "offset": 187770,
+          "codon": "TGA"
+        },
+        {
+          "offset": 187962,
+          "codon": "TGA"
+        },
+        {
+          "offset": 188064,
+          "codon": "TGA"
+        },
+        {
+          "offset": 188784,
+          "codon": "TGA"
+        },
+        {
+          "offset": 188916,
+          "codon": "TGA"
+        },
+        {
+          "offset": 189150,
+          "codon": "TGA"
+        },
+        {
+          "offset": 189843,
+          "codon": "TGA"
+        },
+        {
+          "offset": 189846,
+          "codon": "TGA"
+        },
+        {
+          "offset": 189882,
+          "codon": "TGA"
+        },
+        {
+          "offset": 189894,
+          "codon": "TGA"
+        },
+        {
+          "offset": 190137,
+          "codon": "TGA"
+        },
+        {
+          "offset": 190164,
+          "codon": "TGA"
+        },
+        {
+          "offset": 190644,
+          "codon": "TAG"
+        },
+        {
+          "offset": 190722,
+          "codon": "TAG"
+        },
+        {
+          "offset": 190938,
+          "codon": "TAG"
+        },
+        {
+          "offset": 191583,
+          "codon": "TGA"
+        },
+        {
+          "offset": 191640,
+          "codon": "TGA"
+        },
+        {
+          "offset": 193032,
+          "codon": "TGA"
+        },
+        {
+          "offset": 193113,
+          "codon": "TGA"
+        },
+        {
+          "offset": 193332,
+          "codon": "TGA"
+        },
+        {
+          "offset": 193380,
+          "codon": "TGA"
+        },
+        {
+          "offset": 193632,
+          "codon": "TAG"
+        },
+        {
+          "offset": 193797,
+          "codon": "TAG"
+        },
+        {
+          "offset": 193947,
+          "codon": "TAA"
+        },
+        {
+          "offset": 193965,
+          "codon": "TAG"
+        },
+        {
+          "offset": 194070,
+          "codon": "TAA"
+        },
+        {
+          "offset": 194112,
+          "codon": "TGA"
+        },
+        {
+          "offset": 194136,
+          "codon": "TAG"
+        },
+        {
+          "offset": 194142,
+          "codon": "TGA"
+        },
+        {
+          "offset": 194178,
+          "codon": "TGA"
+        },
+        {
+          "offset": 194211,
+          "codon": "TAA"
+        },
+        {
+          "offset": 194310,
+          "codon": "TAG"
+        },
+        {
+          "offset": 194388,
+          "codon": "TGA"
+        },
+        {
+          "offset": 194400,
+          "codon": "TGA"
+        },
+        {
+          "offset": 194436,
+          "codon": "TGA"
+        },
+        {
+          "offset": 194598,
+          "codon": "TAG"
+        },
+        {
+          "offset": 194628,
+          "codon": "TAG"
+        },
+        {
+          "offset": 194634,
+          "codon": "TGA"
+        },
+        {
+          "offset": 194784,
+          "codon": "TAG"
+        },
+        {
+          "offset": 194835,
+          "codon": "TAG"
+        },
+        {
+          "offset": 194910,
+          "codon": "TGA"
+        },
+        {
+          "offset": 195009,
+          "codon": "TAG"
+        },
+        {
+          "offset": 195108,
+          "codon": "TGA"
+        },
+        {
+          "offset": 195249,
+          "codon": "TAA"
+        },
+        {
+          "offset": 195291,
+          "codon": "TGA"
+        },
+        {
+          "offset": 195318,
+          "codon": "TGA"
+        },
+        {
+          "offset": 195504,
+          "codon": "TGA"
+        },
+        {
+          "offset": 195513,
+          "codon": "TAG"
+        },
+        {
+          "offset": 195651,
+          "codon": "TAG"
+        },
+        {
+          "offset": 195849,
+          "codon": "TAG"
+        },
+        {
+          "offset": 195858,
+          "codon": "TGA"
+        },
+        {
+          "offset": 195891,
+          "codon": "TAG"
+        },
+        {
+          "offset": 196098,
+          "codon": "TAG"
+        },
+        {
+          "offset": 196134,
+          "codon": "TGA"
+        },
+        {
+          "offset": 196245,
+          "codon": "TGA"
+        },
+        {
+          "offset": 196446,
+          "codon": "TAA"
+        },
+        {
+          "offset": 196515,
+          "codon": "TAG"
+        },
+        {
+          "offset": 196530,
+          "codon": "TAG"
+        },
+        {
+          "offset": 196656,
+          "codon": "TAG"
+        },
+        {
+          "offset": 196866,
+          "codon": "TAA"
+        },
+        {
+          "offset": 197097,
+          "codon": "TAG"
+        },
+        {
+          "offset": 197136,
+          "codon": "TAG"
+        },
+        {
+          "offset": 197229,
+          "codon": "TAG"
+        },
+        {
+          "offset": 197691,
+          "codon": "TAG"
+        },
+        {
+          "offset": 197736,
+          "codon": "TAG"
+        },
+        {
+          "offset": 197826,
+          "codon": "TAG"
+        },
+        {
+          "offset": 197934,
+          "codon": "TAG"
+        },
+        {
+          "offset": 198030,
+          "codon": "TAG"
+        },
+        {
+          "offset": 198039,
+          "codon": "TAG"
+        },
+        {
+          "offset": 198108,
+          "codon": "TAG"
+        },
+        {
+          "offset": 198471,
+          "codon": "TAG"
+        },
+        {
+          "offset": 198711,
+          "codon": "TGA"
+        },
+        {
+          "offset": 198753,
+          "codon": "TGA"
+        },
+        {
+          "offset": 198867,
+          "codon": "TGA"
+        },
+        {
+          "offset": 198870,
+          "codon": "TGA"
+        },
+        {
+          "offset": 198960,
+          "codon": "TAG"
+        },
+        {
+          "offset": 199080,
+          "codon": "TGA"
+        },
+        {
+          "offset": 199251,
+          "codon": "TGA"
+        },
+        {
+          "offset": 199278,
+          "codon": "TGA"
+        },
+        {
+          "offset": 199293,
+          "codon": "TGA"
+        },
+        {
+          "offset": 199470,
+          "codon": "TAG"
+        },
+        {
+          "offset": 199575,
+          "codon": "TGA"
+        },
+        {
+          "offset": 199737,
+          "codon": "TGA"
+        },
+        {
+          "offset": 199788,
+          "codon": "TGA"
+        },
+        {
+          "offset": 199872,
+          "codon": "TGA"
+        },
+        {
+          "offset": 199944,
+          "codon": "TGA"
+        },
+        {
+          "offset": 200181,
+          "codon": "TGA"
+        },
+        {
+          "offset": 200265,
+          "codon": "TGA"
+        },
+        {
+          "offset": 200352,
+          "codon": "TGA"
+        },
+        {
+          "offset": 200619,
+          "codon": "TGA"
+        },
+        {
+          "offset": 200712,
+          "codon": "TGA"
+        },
+        {
+          "offset": 200781,
+          "codon": "TGA"
+        },
+        {
+          "offset": 200910,
+          "codon": "TGA"
+        },
+        {
+          "offset": 200928,
+          "codon": "TGA"
+        },
+        {
+          "offset": 200976,
+          "codon": "TGA"
+        },
+        {
+          "offset": 201009,
+          "codon": "TGA"
+        },
+        {
+          "offset": 202086,
+          "codon": "TAA"
+        },
+        {
+          "offset": 202131,
+          "codon": "TGA"
+        },
+        {
+          "offset": 202239,
+          "codon": "TGA"
+        },
+        {
+          "offset": 202263,
+          "codon": "TGA"
+        },
+        {
+          "offset": 202401,
+          "codon": "TGA"
+        },
+        {
+          "offset": 202530,
+          "codon": "TAG"
+        },
+        {
+          "offset": 202905,
+          "codon": "TGA"
+        },
+        {
+          "offset": 202971,
+          "codon": "TGA"
+        },
+        {
+          "offset": 203019,
+          "codon": "TGA"
+        },
+        {
+          "offset": 203073,
+          "codon": "TGA"
+        },
+        {
+          "offset": 203082,
+          "codon": "TGA"
+        },
+        {
+          "offset": 203343,
+          "codon": "TGA"
+        },
+        {
+          "offset": 203427,
+          "codon": "TAA"
+        },
+        {
+          "offset": 203559,
+          "codon": "TGA"
+        },
+        {
+          "offset": 203568,
+          "codon": "TGA"
+        },
+        {
+          "offset": 203637,
+          "codon": "TGA"
+        },
+        {
+          "offset": 203799,
+          "codon": "TAA"
+        },
+        {
+          "offset": 204069,
+          "codon": "TGA"
+        },
+        {
+          "offset": 204177,
+          "codon": "TGA"
+        },
+        {
+          "offset": 204213,
+          "codon": "TGA"
+        },
+        {
+          "offset": 204294,
+          "codon": "TGA"
+        },
+        {
+          "offset": 204393,
+          "codon": "TGA"
+        },
+        {
+          "offset": 204477,
+          "codon": "TGA"
+        },
+        {
+          "offset": 204546,
+          "codon": "TGA"
+        },
+        {
+          "offset": 204783,
+          "codon": "TAG"
+        },
+        {
+          "offset": 205047,
+          "codon": "TAA"
+        },
+        {
+          "offset": 205143,
+          "codon": "TGA"
+        },
+        {
+          "offset": 205236,
+          "codon": "TGA"
+        },
+        {
+          "offset": 205260,
+          "codon": "TGA"
+        },
+        {
+          "offset": 205323,
+          "codon": "TGA"
+        },
+        {
+          "offset": 205569,
+          "codon": "TGA"
+        },
+        {
+          "offset": 205686,
+          "codon": "TGA"
+        },
+        {
+          "offset": 205743,
+          "codon": "TGA"
+        },
+        {
+          "offset": 205959,
+          "codon": "TGA"
+        },
+        {
+          "offset": 206313,
+          "codon": "TAG"
+        },
+        {
+          "offset": 206415,
+          "codon": "TGA"
+        },
+        {
+          "offset": 206469,
+          "codon": "TGA"
+        },
+        {
+          "offset": 206964,
+          "codon": "TGA"
+        },
+        {
+          "offset": 207330,
+          "codon": "TGA"
+        },
+        {
+          "offset": 207480,
+          "codon": "TGA"
+        },
+        {
+          "offset": 207600,
+          "codon": "TGA"
+        },
+        {
+          "offset": 207663,
+          "codon": "TGA"
+        },
+        {
+          "offset": 207681,
+          "codon": "TGA"
+        },
+        {
+          "offset": 207804,
+          "codon": "TGA"
+        },
+        {
+          "offset": 207993,
+          "codon": "TGA"
+        },
+        {
+          "offset": 207999,
+          "codon": "TGA"
+        },
+        {
+          "offset": 208086,
+          "codon": "TAG"
+        },
+        {
+          "offset": 208569,
+          "codon": "TGA"
+        },
+        {
+          "offset": 208575,
+          "codon": "TGA"
+        },
+        {
+          "offset": 208773,
+          "codon": "TGA"
+        },
+        {
+          "offset": 209178,
+          "codon": "TGA"
+        },
+        {
+          "offset": 209373,
+          "codon": "TGA"
+        },
+        {
+          "offset": 209658,
+          "codon": "TAG"
+        },
+        {
+          "offset": 209793,
+          "codon": "TGA"
+        },
+        {
+          "offset": 209892,
+          "codon": "TGA"
+        },
+        {
+          "offset": 209946,
+          "codon": "TGA"
+        },
+        {
+          "offset": 209985,
+          "codon": "TGA"
+        },
+        {
+          "offset": 210030,
+          "codon": "TGA"
+        },
+        {
+          "offset": 210075,
+          "codon": "TGA"
+        },
+        {
+          "offset": 210255,
+          "codon": "TGA"
+        },
+        {
+          "offset": 210408,
+          "codon": "TGA"
+        },
+        {
+          "offset": 210639,
+          "codon": "TGA"
+        },
+        {
+          "offset": 210996,
+          "codon": "TAG"
+        },
+        {
+          "offset": 211152,
+          "codon": "TAG"
+        },
+        {
+          "offset": 211320,
+          "codon": "TGA"
+        },
+        {
+          "offset": 211518,
+          "codon": "TGA"
+        },
+        {
+          "offset": 211527,
+          "codon": "TAG"
+        },
+        {
+          "offset": 211542,
+          "codon": "TAG"
+        },
+        {
+          "offset": 211623,
+          "codon": "TGA"
+        },
+        {
+          "offset": 211809,
+          "codon": "TAG"
+        },
+        {
+          "offset": 211893,
+          "codon": "TAG"
+        },
+        {
+          "offset": 212100,
+          "codon": "TGA"
+        },
+        {
+          "offset": 212322,
+          "codon": "TAG"
+        },
+        {
+          "offset": 212382,
+          "codon": "TGA"
+        },
+        {
+          "offset": 212403,
+          "codon": "TGA"
+        },
+        {
+          "offset": 212688,
+          "codon": "TGA"
+        },
+        {
+          "offset": 212751,
+          "codon": "TGA"
+        },
+        {
+          "offset": 212754,
+          "codon": "TGA"
+        },
+        {
+          "offset": 212778,
+          "codon": "TGA"
+        },
+        {
+          "offset": 212844,
+          "codon": "TGA"
+        },
+        {
+          "offset": 212874,
+          "codon": "TGA"
+        },
+        {
+          "offset": 213012,
+          "codon": "TGA"
+        },
+        {
+          "offset": 213033,
+          "codon": "TAA"
+        },
+        {
+          "offset": 213339,
+          "codon": "TGA"
+        },
+        {
+          "offset": 213582,
+          "codon": "TGA"
+        },
+        {
+          "offset": 213606,
+          "codon": "TGA"
+        },
+        {
+          "offset": 213738,
+          "codon": "TGA"
+        },
+        {
+          "offset": 213846,
+          "codon": "TGA"
+        },
+        {
+          "offset": 214065,
+          "codon": "TGA"
+        },
+        {
+          "offset": 214335,
+          "codon": "TGA"
+        },
+        {
+          "offset": 214398,
+          "codon": "TGA"
+        },
+        {
+          "offset": 214449,
+          "codon": "TGA"
+        },
+        {
+          "offset": 214728,
+          "codon": "TAG"
+        },
+        {
+          "offset": 214902,
+          "codon": "TAG"
+        },
+        {
+          "offset": 215097,
+          "codon": "TAG"
+        },
+        {
+          "offset": 215175,
+          "codon": "TAG"
+        },
+        {
+          "offset": 215424,
+          "codon": "TGA"
+        },
+        {
+          "offset": 215442,
+          "codon": "TGA"
+        },
+        {
+          "offset": 216009,
+          "codon": "TGA"
+        },
+        {
+          "offset": 216180,
+          "codon": "TGA"
+        },
+        {
+          "offset": 216453,
+          "codon": "TAG"
+        },
+        {
+          "offset": 216495,
+          "codon": "TAA"
+        },
+        {
+          "offset": 216522,
+          "codon": "TAG"
+        },
+        {
+          "offset": 217659,
+          "codon": "TGA"
+        },
+        {
+          "offset": 217674,
+          "codon": "TGA"
+        },
+        {
+          "offset": 217707,
+          "codon": "TGA"
+        },
+        {
+          "offset": 217797,
+          "codon": "TGA"
+        },
+        {
+          "offset": 218148,
+          "codon": "TGA"
+        },
+        {
+          "offset": 218313,
+          "codon": "TGA"
+        },
+        {
+          "offset": 218700,
+          "codon": "TGA"
+        },
+        {
+          "offset": 219087,
+          "codon": "TGA"
+        },
+        {
+          "offset": 219426,
+          "codon": "TGA"
+        },
+        {
+          "offset": 219483,
+          "codon": "TGA"
+        },
+        {
+          "offset": 219852,
+          "codon": "TGA"
+        },
+        {
+          "offset": 220053,
+          "codon": "TGA"
+        },
+        {
+          "offset": 220209,
+          "codon": "TAA"
+        },
+        {
+          "offset": 220248,
+          "codon": "TAG"
+        },
+        {
+          "offset": 220341,
+          "codon": "TGA"
+        },
+        {
+          "offset": 220461,
+          "codon": "TGA"
+        },
+        {
+          "offset": 220902,
+          "codon": "TAA"
+        },
+        {
+          "offset": 220914,
+          "codon": "TGA"
+        },
+        {
+          "offset": 220923,
+          "codon": "TGA"
+        },
+        {
+          "offset": 221217,
+          "codon": "TGA"
+        },
+        {
+          "offset": 221307,
+          "codon": "TGA"
+        },
+        {
+          "offset": 221439,
+          "codon": "TGA"
+        },
+        {
+          "offset": 221571,
+          "codon": "TGA"
+        },
+        {
+          "offset": 221781,
+          "codon": "TGA"
+        },
+        {
+          "offset": 221961,
+          "codon": "TGA"
+        },
+        {
+          "offset": 221991,
+          "codon": "TGA"
+        },
+        {
+          "offset": 222012,
+          "codon": "TGA"
+        },
+        {
+          "offset": 222543,
+          "codon": "TGA"
+        },
+        {
+          "offset": 222990,
+          "codon": "TAG"
+        },
+        {
+          "offset": 223527,
+          "codon": "TAA"
+        },
+        {
+          "offset": 223779,
+          "codon": "TGA"
+        },
+        {
+          "offset": 223803,
+          "codon": "TGA"
+        },
+        {
+          "offset": 223941,
+          "codon": "TGA"
+        },
+        {
+          "offset": 223956,
+          "codon": "TGA"
+        },
+        {
+          "offset": 223971,
+          "codon": "TGA"
+        },
+        {
+          "offset": 223998,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224022,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224028,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224079,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224136,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224160,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224184,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224298,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224388,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224592,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224622,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224796,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224811,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224826,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224979,
+          "codon": "TGA"
+        },
+        {
+          "offset": 224994,
+          "codon": "TGA"
+        },
+        {
+          "offset": 225015,
+          "codon": "TGA"
+        },
+        {
+          "offset": 225048,
+          "codon": "TGA"
+        },
+        {
+          "offset": 225288,
+          "codon": "TAA"
+        },
+        {
+          "offset": 225294,
+          "codon": "TGA"
+        },
+        {
+          "offset": 225366,
+          "codon": "TGA"
+        },
+        {
+          "offset": 225426,
+          "codon": "TAA"
+        },
+        {
+          "offset": 225600,
+          "codon": "TAA"
+        },
+        {
+          "offset": 225618,
+          "codon": "TGA"
+        },
+        {
+          "offset": 225843,
+          "codon": "TAA"
+        },
+        {
+          "offset": 225864,
+          "codon": "TGA"
+        },
+        {
+          "offset": 225891,
+          "codon": "TGA"
+        },
+        {
+          "offset": 225897,
+          "codon": "TAG"
+        },
+        {
+          "offset": 225927,
+          "codon": "TGA"
+        },
+        {
+          "offset": 226158,
+          "codon": "TAG"
+        },
+        {
+          "offset": 226284,
+          "codon": "TAA"
+        },
+        {
+          "offset": 226440,
+          "codon": "TGA"
+        },
+        {
+          "offset": 226695,
+          "codon": "TAG"
+        },
+        {
+          "offset": 226716,
+          "codon": "TAA"
+        },
+        {
+          "offset": 227070,
+          "codon": "TGA"
+        },
+        {
+          "offset": 227706,
+          "codon": "TGA"
+        },
+        {
+          "offset": 228882,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229017,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229068,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229098,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229218,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229311,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229368,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229377,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229512,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229527,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229551,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229581,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229596,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229665,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229713,
+          "codon": "TGA"
+        },
+        {
+          "offset": 229914,
+          "codon": "TGA"
+        },
+        {
+          "offset": 231441,
+          "codon": "TAG"
+        },
+        {
+          "offset": 231615,
+          "codon": "TGA"
+        },
+        {
+          "offset": 231732,
+          "codon": "TGA"
+        },
+        {
+          "offset": 232146,
+          "codon": "TGA"
+        },
+        {
+          "offset": 232272,
+          "codon": "TAG"
+        },
+        {
+          "offset": 232275,
+          "codon": "TGA"
+        },
+        {
+          "offset": 232518,
+          "codon": "TGA"
+        },
+        {
+          "offset": 232902,
+          "codon": "TGA"
+        },
+        {
+          "offset": 233199,
+          "codon": "TGA"
+        },
+        {
+          "offset": 233214,
+          "codon": "TGA"
+        },
+        {
+          "offset": 233358,
+          "codon": "TAG"
+        },
+        {
+          "offset": 233475,
+          "codon": "TGA"
+        },
+        {
+          "offset": 233487,
+          "codon": "TGA"
+        },
+        {
+          "offset": 233649,
+          "codon": "TGA"
+        },
+        {
+          "offset": 233691,
+          "codon": "TGA"
+        },
+        {
+          "offset": 233721,
+          "codon": "TGA"
+        },
+        {
+          "offset": 233931,
+          "codon": "TGA"
+        },
+        {
+          "offset": 234015,
+          "codon": "TGA"
+        },
+        {
+          "offset": 234402,
+          "codon": "TGA"
+        },
+        {
+          "offset": 234663,
+          "codon": "TAG"
+        },
+        {
+          "offset": 235188,
+          "codon": "TAG"
+        },
+        {
+          "offset": 235248,
+          "codon": "TGA"
+        },
+        {
+          "offset": 235347,
+          "codon": "TGA"
+        },
+        {
+          "offset": 235350,
+          "codon": "TGA"
+        },
+        {
+          "offset": 235377,
+          "codon": "TGA"
+        },
+        {
+          "offset": 235380,
+          "codon": "TGA"
+        },
+        {
+          "offset": 235515,
+          "codon": "TGA"
+        },
+        {
+          "offset": 235560,
+          "codon": "TGA"
+        },
+        {
+          "offset": 235578,
+          "codon": "TGA"
+        },
+        {
+          "offset": 235731,
+          "codon": "TGA"
+        },
+        {
+          "offset": 235887,
+          "codon": "TGA"
+        },
+        {
+          "offset": 236175,
+          "codon": "TGA"
+        },
+        {
+          "offset": 237231,
+          "codon": "TGA"
+        },
+        {
+          "offset": 237246,
+          "codon": "TGA"
+        },
+        {
+          "offset": 237264,
+          "codon": "TGA"
+        },
+        {
+          "offset": 237444,
+          "codon": "TGA"
+        },
+        {
+          "offset": 237465,
+          "codon": "TGA"
+        },
+        {
+          "offset": 237621,
+          "codon": "TAA"
+        },
+        {
+          "offset": 237672,
+          "codon": "TGA"
+        },
+        {
+          "offset": 237720,
+          "codon": "TGA"
+        },
+        {
+          "offset": 237792,
+          "codon": "TGA"
+        },
+        {
+          "offset": 238473,
+          "codon": "TGA"
+        },
+        {
+          "offset": 238536,
+          "codon": "TGA"
+        },
+        {
+          "offset": 238599,
+          "codon": "TGA"
+        },
+        {
+          "offset": 238914,
+          "codon": "TGA"
+        },
+        {
+          "offset": 241065,
+          "codon": "TGA"
+        },
+        {
+          "offset": 241164,
+          "codon": "TGA"
+        },
+        {
+          "offset": 241188,
+          "codon": "TGA"
+        },
+        {
+          "offset": 241512,
+          "codon": "TGA"
+        },
+        {
+          "offset": 241926,
+          "codon": "TGA"
+        },
+        {
+          "offset": 242001,
+          "codon": "TGA"
+        },
+        {
+          "offset": 242385,
+          "codon": "TGA"
+        },
+        {
+          "offset": 242592,
+          "codon": "TGA"
+        },
+        {
+          "offset": 242790,
+          "codon": "TGA"
+        },
+        {
+          "offset": 243183,
+          "codon": "TGA"
+        },
+        {
+          "offset": 243189,
+          "codon": "TGA"
+        },
+        {
+          "offset": 243243,
+          "codon": "TGA"
+        },
+        {
+          "offset": 243720,
+          "codon": "TGA"
+        },
+        {
+          "offset": 243726,
+          "codon": "TGA"
+        },
+        {
+          "offset": 243888,
+          "codon": "TGA"
+        },
+        {
+          "offset": 244026,
+          "codon": "TGA"
+        },
+        {
+          "offset": 244053,
+          "codon": "TGA"
+        },
+        {
+          "offset": 244419,
+          "codon": "TGA"
+        },
+        {
+          "offset": 244437,
+          "codon": "TGA"
+        },
+        {
+          "offset": 244452,
+          "codon": "TGA"
+        },
+        {
+          "offset": 246474,
+          "codon": "TAG"
+        },
+        {
+          "offset": 246603,
+          "codon": "TGA"
+        },
+        {
+          "offset": 246672,
+          "codon": "TGA"
+        },
+        {
+          "offset": 246738,
+          "codon": "TGA"
+        },
+        {
+          "offset": 246780,
+          "codon": "TGA"
+        },
+        {
+          "offset": 246990,
+          "codon": "TAG"
+        },
+        {
+          "offset": 247065,
+          "codon": "TAA"
+        },
+        {
+          "offset": 247161,
+          "codon": "TGA"
+        },
+        {
+          "offset": 247197,
+          "codon": "TGA"
+        },
+        {
+          "offset": 247266,
+          "codon": "TGA"
+        },
+        {
+          "offset": 247299,
+          "codon": "TGA"
+        },
+        {
+          "offset": 247308,
+          "codon": "TGA"
+        },
+        {
+          "offset": 247371,
+          "codon": "TGA"
+        },
+        {
+          "offset": 247515,
+          "codon": "TAG"
+        },
+        {
+          "offset": 248220,
+          "codon": "TGA"
+        },
+        {
+          "offset": 249639,
+          "codon": "TAG"
+        },
+        {
+          "offset": 249708,
+          "codon": "TGA"
+        },
+        {
+          "offset": 249732,
+          "codon": "TGA"
+        },
+        {
+          "offset": 249807,
+          "codon": "TGA"
+        },
+        {
+          "offset": 250116,
+          "codon": "TGA"
+        },
+        {
+          "offset": 250194,
+          "codon": "TGA"
+        },
+        {
+          "offset": 250269,
+          "codon": "TGA"
+        },
+        {
+          "offset": 250734,
+          "codon": "TGA"
+        },
+        {
+          "offset": 250938,
+          "codon": "TAA"
+        },
+        {
+          "offset": 251142,
+          "codon": "TGA"
+        },
+        {
+          "offset": 251157,
+          "codon": "TGA"
+        },
+        {
+          "offset": 251190,
+          "codon": "TAA"
+        },
+        {
+          "offset": 251286,
+          "codon": "TGA"
+        },
+        {
+          "offset": 251322,
+          "codon": "TGA"
+        },
+        {
+          "offset": 251478,
+          "codon": "TGA"
+        },
+        {
+          "offset": 251511,
+          "codon": "TGA"
+        },
+        {
+          "offset": 251580,
+          "codon": "TGA"
+        },
+        {
+          "offset": 251628,
+          "codon": "TGA"
+        },
+        {
+          "offset": 251748,
+          "codon": "TGA"
+        },
+        {
+          "offset": 251838,
+          "codon": "TGA"
+        },
+        {
+          "offset": 251898,
+          "codon": "TGA"
+        },
+        {
+          "offset": 251901,
+          "codon": "TGA"
+        },
+        {
+          "offset": 251934,
+          "codon": "TGA"
+        },
+        {
+          "offset": 252372,
+          "codon": "TGA"
+        },
+        {
+          "offset": 252411,
+          "codon": "TGA"
+        },
+        {
+          "offset": 252567,
+          "codon": "TGA"
+        },
+        {
+          "offset": 252684,
+          "codon": "TAG"
+        },
+        {
+          "offset": 252942,
+          "codon": "TAG"
+        },
+        {
+          "offset": 253164,
+          "codon": "TGA"
+        },
+        {
+          "offset": 253233,
+          "codon": "TAG"
+        },
+        {
+          "offset": 253632,
+          "codon": "TGA"
+        },
+        {
+          "offset": 253707,
+          "codon": "TGA"
+        },
+        {
+          "offset": 254349,
+          "codon": "TGA"
+        },
+        {
+          "offset": 254367,
+          "codon": "TAA"
+        },
+        {
+          "offset": 254433,
+          "codon": "TAA"
+        },
+        {
+          "offset": 254445,
+          "codon": "TGA"
+        },
+        {
+          "offset": 254475,
+          "codon": "TGA"
+        },
+        {
+          "offset": 254556,
+          "codon": "TGA"
+        },
+        {
+          "offset": 254568,
+          "codon": "TAA"
+        },
+        {
+          "offset": 254601,
+          "codon": "TGA"
+        },
+        {
+          "offset": 254646,
+          "codon": "TGA"
+        },
+        {
+          "offset": 254670,
+          "codon": "TGA"
+        },
+        {
+          "offset": 254685,
+          "codon": "TGA"
+        },
+        {
+          "offset": 254850,
+          "codon": "TGA"
+        },
+        {
+          "offset": 254880,
+          "codon": "TGA"
+        },
+        {
+          "offset": 254937,
+          "codon": "TGA"
+        },
+        {
+          "offset": 255429,
+          "codon": "TGA"
+        },
+        {
+          "offset": 256269,
+          "codon": "TGA"
+        },
+        {
+          "offset": 256305,
+          "codon": "TGA"
+        },
+        {
+          "offset": 256347,
+          "codon": "TGA"
+        },
+        {
+          "offset": 256485,
+          "codon": "TGA"
+        },
+        {
+          "offset": 257628,
+          "codon": "TAG"
+        },
+        {
+          "offset": 257682,
+          "codon": "TGA"
+        },
+        {
+          "offset": 257754,
+          "codon": "TGA"
+        },
+        {
+          "offset": 257784,
+          "codon": "TGA"
+        },
+        {
+          "offset": 258336,
+          "codon": "TAG"
+        },
+        {
+          "offset": 258450,
+          "codon": "TAG"
+        },
+        {
+          "offset": 258561,
+          "codon": "TAG"
+        },
+        {
+          "offset": 258666,
+          "codon": "TAG"
+        },
+        {
+          "offset": 259032,
+          "codon": "TAG"
+        },
+        {
+          "offset": 259047,
+          "codon": "TAA"
+        },
+        {
+          "offset": 259398,
+          "codon": "TAA"
+        },
+        {
+          "offset": 259437,
+          "codon": "TGA"
+        },
+        {
+          "offset": 259530,
+          "codon": "TAG"
+        },
+        {
+          "offset": 259728,
+          "codon": "TAA"
+        },
+        {
+          "offset": 259860,
+          "codon": "TAA"
+        },
+        {
+          "offset": 259980,
+          "codon": "TAG"
+        },
+        {
+          "offset": 260106,
+          "codon": "TGA"
+        },
+        {
+          "offset": 260181,
+          "codon": "TAA"
+        },
+        {
+          "offset": 260319,
+          "codon": "TAG"
+        },
+        {
+          "offset": 260472,
+          "codon": "TGA"
+        },
+        {
+          "offset": 260682,
+          "codon": "TAA"
+        },
+        {
+          "offset": 260763,
+          "codon": "TGA"
+        },
+        {
+          "offset": 260982,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261024,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261039,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261045,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261066,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261072,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261096,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261108,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261162,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261252,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261267,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261297,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261330,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261468,
+          "codon": "TAG"
+        },
+        {
+          "offset": 261597,
+          "codon": "TAG"
+        },
+        {
+          "offset": 261600,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261642,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261651,
+          "codon": "TGA"
+        },
+        {
+          "offset": 261732,
+          "codon": "TAG"
+        },
+        {
+          "offset": 262008,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262041,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262047,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262059,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262065,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262119,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262125,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262140,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262341,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262374,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262413,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262464,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262467,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262605,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262761,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262815,
+          "codon": "TGA"
+        },
+        {
+          "offset": 262908,
+          "codon": "TGA"
+        },
+        {
+          "offset": 263097,
+          "codon": "TGA"
+        },
+        {
+          "offset": 263118,
+          "codon": "TGA"
+        },
+        {
+          "offset": 263208,
+          "codon": "TGA"
+        },
+        {
+          "offset": 263409,
+          "codon": "TGA"
+        },
+        {
+          "offset": 263451,
+          "codon": "TGA"
+        },
+        {
+          "offset": 263481,
+          "codon": "TGA"
+        },
+        {
+          "offset": 263523,
+          "codon": "TGA"
+        },
+        {
+          "offset": 263595,
+          "codon": "TGA"
+        },
+        {
+          "offset": 263859,
+          "codon": "TGA"
+        },
+        {
+          "offset": 263871,
+          "codon": "TGA"
+        },
+        {
+          "offset": 264003,
+          "codon": "TAG"
+        },
+        {
+          "offset": 264018,
+          "codon": "TGA"
+        },
+        {
+          "offset": 264039,
+          "codon": "TGA"
+        },
+        {
+          "offset": 264159,
+          "codon": "TGA"
+        },
+        {
+          "offset": 264225,
+          "codon": "TGA"
+        },
+        {
+          "offset": 264231,
+          "codon": "TGA"
+        },
+        {
+          "offset": 264291,
+          "codon": "TGA"
+        },
+        {
+          "offset": 264639,
+          "codon": "TGA"
+        },
+        {
+          "offset": 264702,
+          "codon": "TGA"
+        },
+        {
+          "offset": 264804,
+          "codon": "TGA"
+        },
+        {
+          "offset": 264912,
+          "codon": "TGA"
+        },
+        {
+          "offset": 265296,
+          "codon": "TGA"
+        },
+        {
+          "offset": 265467,
+          "codon": "TGA"
+        },
+        {
+          "offset": 265491,
+          "codon": "TGA"
+        },
+        {
+          "offset": 265500,
+          "codon": "TGA"
+        },
+        {
+          "offset": 265548,
+          "codon": "TGA"
+        },
+        {
+          "offset": 265581,
+          "codon": "TGA"
+        },
+        {
+          "offset": 265611,
+          "codon": "TGA"
+        },
+        {
+          "offset": 265614,
+          "codon": "TGA"
+        },
+        {
+          "offset": 265779,
+          "codon": "TGA"
+        },
+        {
+          "offset": 265809,
+          "codon": "TGA"
+        },
+        {
+          "offset": 265815,
+          "codon": "TAA"
+        },
+        {
+          "offset": 265839,
+          "codon": "TGA"
+        },
+        {
+          "offset": 265872,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266025,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266028,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266247,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266331,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266352,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266373,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266379,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266424,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266427,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266454,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266457,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266574,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266673,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266754,
+          "codon": "TGA"
+        },
+        {
+          "offset": 266958,
+          "codon": "TGA"
+        },
+        {
+          "offset": 267054,
+          "codon": "TGA"
+        },
+        {
+          "offset": 267180,
+          "codon": "TAG"
+        },
+        {
+          "offset": 267915,
+          "codon": "TGA"
+        },
+        {
+          "offset": 268017,
+          "codon": "TGA"
+        },
+        {
+          "offset": 268023,
+          "codon": "TGA"
+        },
+        {
+          "offset": 268095,
+          "codon": "TGA"
+        },
+        {
+          "offset": 268098,
+          "codon": "TGA"
+        },
+        {
+          "offset": 268257,
+          "codon": "TGA"
+        },
+        {
+          "offset": 268308,
+          "codon": "TGA"
+        },
+        {
+          "offset": 268332,
+          "codon": "TGA"
+        },
+        {
+          "offset": 268725,
+          "codon": "TGA"
+        },
+        {
+          "offset": 268785,
+          "codon": "TGA"
+        },
+        {
+          "offset": 268848,
+          "codon": "TGA"
+        },
+        {
+          "offset": 268884,
+          "codon": "TGA"
+        },
+        {
+          "offset": 269049,
+          "codon": "TGA"
+        },
+        {
+          "offset": 269100,
+          "codon": "TGA"
+        },
+        {
+          "offset": 269253,
+          "codon": "TGA"
+        },
+        {
+          "offset": 269985,
+          "codon": "TGA"
+        },
+        {
+          "offset": 270006,
+          "codon": "TAG"
+        },
+        {
+          "offset": 270099,
+          "codon": "TGA"
+        },
+        {
+          "offset": 270165,
+          "codon": "TGA"
+        },
+        {
+          "offset": 271686,
+          "codon": "TAA"
+        },
+        {
+          "offset": 271890,
+          "codon": "TGA"
+        },
+        {
+          "offset": 272067,
+          "codon": "TGA"
+        },
+        {
+          "offset": 272238,
+          "codon": "TGA"
+        },
+        {
+          "offset": 272247,
+          "codon": "TGA"
+        },
+        {
+          "offset": 272259,
+          "codon": "TGA"
+        },
+        {
+          "offset": 272412,
+          "codon": "TAG"
+        },
+        {
+          "offset": 272457,
+          "codon": "TAG"
+        },
+        {
+          "offset": 272817,
+          "codon": "TAG"
+        },
+        {
+          "offset": 272937,
+          "codon": "TAG"
+        },
+        {
+          "offset": 273006,
+          "codon": "TAG"
+        },
+        {
+          "offset": 273072,
+          "codon": "TAG"
+        },
+        {
+          "offset": 273081,
+          "codon": "TAA"
+        },
+        {
+          "offset": 273405,
+          "codon": "TAG"
+        },
+        {
+          "offset": 273660,
+          "codon": "TAG"
+        },
+        {
+          "offset": 274002,
+          "codon": "TGA"
+        },
+        {
+          "offset": 274095,
+          "codon": "TGA"
+        },
+        {
+          "offset": 274167,
+          "codon": "TAA"
+        },
+        {
+          "offset": 274278,
+          "codon": "TGA"
+        },
+        {
+          "offset": 274437,
+          "codon": "TAG"
+        },
+        {
+          "offset": 274440,
+          "codon": "TGA"
+        },
+        {
+          "offset": 274857,
+          "codon": "TGA"
+        },
+        {
+          "offset": 275247,
+          "codon": "TAA"
+        },
+        {
+          "offset": 275277,
+          "codon": "TAG"
+        },
+        {
+          "offset": 275283,
+          "codon": "TAA"
+        },
+        {
+          "offset": 275559,
+          "codon": "TGA"
+        },
+        {
+          "offset": 275577,
+          "codon": "TGA"
+        },
+        {
+          "offset": 275595,
+          "codon": "TGA"
+        },
+        {
+          "offset": 275607,
+          "codon": "TGA"
+        },
+        {
+          "offset": 275730,
+          "codon": "TGA"
+        },
+        {
+          "offset": 275742,
+          "codon": "TGA"
+        },
+        {
+          "offset": 275790,
+          "codon": "TGA"
+        },
+        {
+          "offset": 278112,
+          "codon": "TAG"
+        },
+        {
+          "offset": 278559,
+          "codon": "TAA"
+        },
+        {
+          "offset": 278607,
+          "codon": "TGA"
+        },
+        {
+          "offset": 278646,
+          "codon": "TGA"
+        },
+        {
+          "offset": 278667,
+          "codon": "TGA"
+        },
+        {
+          "offset": 278697,
+          "codon": "TGA"
+        },
+        {
+          "offset": 278706,
+          "codon": "TGA"
+        },
+        {
+          "offset": 278739,
+          "codon": "TGA"
+        },
+        {
+          "offset": 278868,
+          "codon": "TGA"
+        },
+        {
+          "offset": 279000,
+          "codon": "TAG"
+        },
+        {
+          "offset": 279111,
+          "codon": "TGA"
+        },
+        {
+          "offset": 280905,
+          "codon": "TAG"
+        },
+        {
+          "offset": 281394,
+          "codon": "TGA"
+        },
+        {
+          "offset": 281490,
+          "codon": "TGA"
+        },
+        {
+          "offset": 281508,
+          "codon": "TGA"
+        },
+        {
+          "offset": 281763,
+          "codon": "TGA"
+        },
+        {
+          "offset": 282261,
+          "codon": "TGA"
+        },
+        {
+          "offset": 282573,
+          "codon": "TAG"
+        },
+        {
+          "offset": 282678,
+          "codon": "TGA"
+        },
+        {
+          "offset": 282969,
+          "codon": "TGA"
+        },
+        {
+          "offset": 283059,
+          "codon": "TGA"
+        },
+        {
+          "offset": 283110,
+          "codon": "TGA"
+        },
+        {
+          "offset": 283389,
+          "codon": "TGA"
+        },
+        {
+          "offset": 283605,
+          "codon": "TGA"
+        },
+        {
+          "offset": 283875,
+          "codon": "TGA"
+        },
+        {
+          "offset": 283986,
+          "codon": "TGA"
+        },
+        {
+          "offset": 283989,
+          "codon": "TGA"
+        },
+        {
+          "offset": 284034,
+          "codon": "TGA"
+        },
+        {
+          "offset": 284250,
+          "codon": "TGA"
+        },
+        {
+          "offset": 284322,
+          "codon": "TGA"
+        },
+        {
+          "offset": 284451,
+          "codon": "TGA"
+        },
+        {
+          "offset": 284691,
+          "codon": "TGA"
+        },
+        {
+          "offset": 284871,
+          "codon": "TGA"
+        },
+        {
+          "offset": 284940,
+          "codon": "TGA"
+        },
+        {
+          "offset": 284991,
+          "codon": "TGA"
+        },
+        {
+          "offset": 285177,
+          "codon": "TGA"
+        },
+        {
+          "offset": 285342,
+          "codon": "TGA"
+        },
+        {
+          "offset": 285561,
+          "codon": "TGA"
+        },
+        {
+          "offset": 285579,
+          "codon": "TGA"
+        },
+        {
+          "offset": 285897,
+          "codon": "TGA"
+        },
+        {
+          "offset": 285921,
+          "codon": "TGA"
+        },
+        {
+          "offset": 286326,
+          "codon": "TAA"
+        },
+        {
+          "offset": 286362,
+          "codon": "TGA"
+        },
+        {
+          "offset": 287949,
+          "codon": "TAG"
+        },
+        {
+          "offset": 288138,
+          "codon": "TGA"
+        },
+        {
+          "offset": 288279,
+          "codon": "TGA"
+        },
+        {
+          "offset": 290688,
+          "codon": "TAG"
+        },
+        {
+          "offset": 290793,
+          "codon": "TAG"
+        },
+        {
+          "offset": 290799,
+          "codon": "TAG"
+        },
+        {
+          "offset": 291879,
+          "codon": "TGA"
+        },
+        {
+          "offset": 291921,
+          "codon": "TGA"
+        },
+        {
+          "offset": 291936,
+          "codon": "TGA"
+        },
+        {
+          "offset": 291984,
+          "codon": "TGA"
+        },
+        {
+          "offset": 292194,
+          "codon": "TGA"
+        },
+        {
+          "offset": 293835,
+          "codon": "TGA"
+        },
+        {
+          "offset": 294375,
+          "codon": "TGA"
+        },
+        {
+          "offset": 294480,
+          "codon": "TAG"
+        },
+        {
+          "offset": 294762,
+          "codon": "TAA"
+        },
+        {
+          "offset": 294774,
+          "codon": "TAG"
+        },
+        {
+          "offset": 294792,
+          "codon": "TAG"
+        },
+        {
+          "offset": 295008,
+          "codon": "TAG"
+        },
+        {
+          "offset": 295251,
+          "codon": "TAG"
+        },
+        {
+          "offset": 295887,
+          "codon": "TAG"
+        },
+        {
+          "offset": 295893,
+          "codon": "TAG"
+        },
+        {
+          "offset": 296013,
+          "codon": "TAG"
+        },
+        {
+          "offset": 296067,
+          "codon": "TGA"
+        },
+        {
+          "offset": 296262,
+          "codon": "TGA"
+        },
+        {
+          "offset": 296379,
+          "codon": "TGA"
+        },
+        {
+          "offset": 296382,
+          "codon": "TGA"
+        },
+        {
+          "offset": 296415,
+          "codon": "TGA"
+        },
+        {
+          "offset": 296484,
+          "codon": "TGA"
+        },
+        {
+          "offset": 296700,
+          "codon": "TGA"
+        },
+        {
+          "offset": 296709,
+          "codon": "TGA"
+        },
+        {
+          "offset": 296829,
+          "codon": "TAG"
+        },
+        {
+          "offset": 296943,
+          "codon": "TAG"
+        },
+        {
+          "offset": 296979,
+          "codon": "TAG"
+        },
+        {
+          "offset": 297000,
+          "codon": "TAG"
+        },
+        {
+          "offset": 297057,
+          "codon": "TAG"
+        },
+        {
+          "offset": 297177,
+          "codon": "TAG"
+        },
+        {
+          "offset": 297213,
+          "codon": "TAG"
+        },
+        {
+          "offset": 297372,
+          "codon": "TGA"
+        },
+        {
+          "offset": 297429,
+          "codon": "TAG"
+        },
+        {
+          "offset": 297477,
+          "codon": "TAA"
+        },
+        {
+          "offset": 297516,
+          "codon": "TAG"
+        },
+        {
+          "offset": 297678,
+          "codon": "TAA"
+        },
+        {
+          "offset": 297681,
+          "codon": "TAG"
+        },
+        {
+          "offset": 297702,
+          "codon": "TAG"
+        },
+        {
+          "offset": 297753,
+          "codon": "TAA"
+        },
+        {
+          "offset": 297807,
+          "codon": "TGA"
+        },
+        {
+          "offset": 297846,
+          "codon": "TGA"
+        },
+        {
+          "offset": 297912,
+          "codon": "TGA"
+        },
+        {
+          "offset": 297921,
+          "codon": "TGA"
+        },
+        {
+          "offset": 298014,
+          "codon": "TGA"
+        },
+        {
+          "offset": 298212,
+          "codon": "TGA"
+        },
+        {
+          "offset": 298239,
+          "codon": "TGA"
+        },
+        {
+          "offset": 298314,
+          "codon": "TGA"
+        },
+        {
+          "offset": 298491,
+          "codon": "TGA"
+        },
+        {
+          "offset": 298686,
+          "codon": "TGA"
+        },
+        {
+          "offset": 298716,
+          "codon": "TGA"
+        },
+        {
+          "offset": 298845,
+          "codon": "TGA"
+        },
+        {
+          "offset": 298977,
+          "codon": "TGA"
+        },
+        {
+          "offset": 298995,
+          "codon": "TAG"
+        },
+        {
+          "offset": 299064,
+          "codon": "TGA"
+        },
+        {
+          "offset": 300105,
+          "codon": "TGA"
+        },
+        {
+          "offset": 300138,
+          "codon": "TGA"
+        },
+        {
+          "offset": 300252,
+          "codon": "TGA"
+        },
+        {
+          "offset": 300636,
+          "codon": "TGA"
+        },
+        {
+          "offset": 300702,
+          "codon": "TGA"
+        },
+        {
+          "offset": 300933,
+          "codon": "TGA"
+        },
+        {
+          "offset": 301194,
+          "codon": "TGA"
+        },
+        {
+          "offset": 301470,
+          "codon": "TGA"
+        },
+        {
+          "offset": 301644,
+          "codon": "TGA"
+        },
+        {
+          "offset": 301818,
+          "codon": "TGA"
+        },
+        {
+          "offset": 301821,
+          "codon": "TGA"
+        },
+        {
+          "offset": 301869,
+          "codon": "TGA"
+        },
+        {
+          "offset": 301914,
+          "codon": "TGA"
+        },
+        {
+          "offset": 303249,
+          "codon": "TAG"
+        },
+        {
+          "offset": 303321,
+          "codon": "TGA"
+        }
+      ],
+      "frameshifts": [],
+      "contig_edge": false,
+      "local_depth": null,
+      "annotation_agreement": null,
+      "evidence_ids": [
+        "E_family_hmm",
+        "E_locus_reconstruction"
+      ],
+      "architecture": "close_paralogue",
+      "family_gate_passed": true,
+      "provenance": {
+        "created_by": "deterministic_locus_reconstruction",
+        "operates_on": "assembly_sequence",
+        "llm_invented_scores": false,
+        "species_specific_rules": false
+      },
+      "query_identity": 0.30233,
+      "divergence": {
+        "n_members_scored": 2,
+        "identities_vs_query": {
+          "P02980": 1.0,
+          "P02982": 0.4534005037783375
+        },
+        "median_close": 1.0,
+        "median_other": 0.4534005037783375,
+        "split": 0.7267,
+        "min_other": 0.4534005037783375,
+        "max_other": 0.4534005037783375,
+        "candidate_query_identity": 0.30233,
+        "divergent": true
+      },
+      "paralogue_record": {
+        "kind": "true_duplicated_paralogue",
+        "classify_as": "close_paralogue",
+        "primary_locus": {
+          "contig": "NZ_JBYHFR010000001.1",
+          "strand": "-",
+          "genomic_start": 29928,
+          "genomic_end": 31191,
+          "hmm_from": 16,
+          "hmm_to": 386,
+          "hmm_coverage": 0.8791,
+          "orf_ids": [
+            "NZ_JBYHFR010000001.1:29928-31191:-"
+          ],
+          "contig_length": 2152187,
+          "contig_edge": false,
+          "gc": 0.654,
+          "contig_gc": 0.6417,
+          "local_depth": null,
+          "identity": null,
+          "coverage": null,
+          "family_gate_passed": true,
+          "orthologue_flags": {
+            "rbh": null,
+            "synteny": null,
+            "phylo": null
+          }
+        },
+        "secondary_locus": {
+          "contig": "NZ_JBYHFR010000003.1",
+          "strand": "+",
+          "genomic_start": 94614,
+          "genomic_end": 96204,
+          "hmm_from": 43,
+          "hmm_to": 305,
+          "hmm_coverage": 0.6232,
+          "orf_ids": [
+            "NZ_JBYHFR010000003.1:94614-96204:+"
+          ],
+          "contig_length": 555083,
+          "contig_edge": false,
+          "gc": 0.6604,
+          "contig_gc": 0.6461,
+          "local_depth": null,
+          "identity": null,
+          "coverage": null,
+          "family_gate_passed": true,
+          "orthologue_flags": {
+            "rbh": null,
+            "synteny": null,
+            "phylo": null
+          }
+        },
+        "identity": null,
+        "coverage": null,
+        "hmm_support": 0.6232,
+        "rbh_status": null,
+        "synteny_status": null,
+        "phylogenetic_evidence": null,
+        "hmm_iou": 0.7089,
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_locus_reconstruction",
+          "E_paralogy"
+        ],
+        "provenance": {
+          "created_by": "deterministic_paralogy",
+          "species_specific_rules": false,
+          "llm_invented_scores": false
+        }
+      },
+      "secondary_loci": [],
+      "competitive_family": {
+        "target_family": "tetA_tetracycline_efflux",
+        "candidate_locus": {
+          "contig": "NZ_JBYHFR010000003.1",
+          "genomic_start": 75680,
+          "genomic_end": 381823,
+          "strand": "+",
+          "protein_length": 100130
+        },
+        "target_family_score": 0.0,
+        "target_family_HMM_score": null,
+        "target_family_model_coverage": 0.0,
+        "target_family_sequence_coverage": 0.00034954559073204834,
+        "best_competing_family": "mfs_multidrug_efflux",
+        "competing_family_score": 0.0,
+        "competing_family_HMM_score": null,
+        "competing_family_model_coverage": 0.0,
+        "score_margin": 0.0,
+        "domain_architecture": [],
+        "protein_length": 100130,
+        "transmembrane_topology": {
+          "hydrophobic_windows_19aa": 309,
+          "measured": true
+        },
+        "conserved_motif_evidence": null,
+        "reciprocal_family_assignment": "mfs_multidrug_efflux",
+        "reference_family_placement": {
+          "winner": "mfs_multidrug_efflux",
+          "margin": 0.0
+        },
+        "conflicting_evidence": [],
+        "classification": "unresolved_candidate",
+        "evidence_ids": [
+          "E_family_hmm",
+          "E_competitive_family"
+        ],
+        "provenance": {
+          "created_by": "deterministic_competitive_family",
+          "llm_invented_scores": false,
+          "gene_specific_rules": false
+        },
+        "competitors_scored": [
+          {
+            "family_id": "mfs_multidrug_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.4090909090909091,
+            "sequence_coverage": 0.00044941575951263355,
+            "combined_score": 0.0
+          },
+          {
+            "family_id": "rnd_efflux",
+            "hmm_score": null,
+            "hmm_model_coverage": 0.0,
+            "hmm_evalue": null,
+            "sequence_identity": 0.4090909090909091,
+            "sequence_coverage": 0.00026964945570758013,
+            "combined_score": 0.0
+          }
+        ]
+      },
+      "multiplicity": {
+        "family": "tetA_tetracycline_efflux",
+        "number_of_candidate_loci": 1,
+        "coordinates": [
+          {
+            "contig": "NZ_JBYHFR010000001.1",
+            "start": 547831,
+            "end": 548476,
+            "strand": "-"
+          }
+        ],
+        "contigs": [
+          "NZ_JBYHFR010000001.1"
+        ],
+        "strand": [
+          "-"
+        ],
+        "sequence_identity_between_copies": null,
+        "family_evidence_per_locus": [
+          {
+            "contig": "NZ_JBYHFR010000001.1",
+            "identity": 0.244,
+            "coverage": 0.599,
+            "hmm_coverage": 0.599,
+            "family_gate_passed": true
+          }
+        ],
+        "read_depth_per_locus": [
+          null
+        ],
+        "upstream_context": [
+          "GTTGCCCATCCCGAAATTGCGAATCCGGAACAATCCGAGCGGCATCATGGGCTCTGGCGCACGATGCTCCCACCAGATGA"
+        ],
+        "downstream_context": [
+          "GAGGAGAACCCGGCTTTGCCTGGTCATGGTTCAAGGGTATTCCTGAATGCGGCATCCGGAATGGCCGGTGGGGCCGATGC"
+        ],
+        "assembly_fragment_relationship": false,
+        "plasmid_chromosome_context": null,
+        "contamination_evidence": false,
+        "classification": "single_locus",
+        "loci": [
+          {
+            "contig": "NZ_JBYHFR010000001.1",
+            "strand": "-",
+            "genomic_start": 547831,
+            "genomic_end": 548476,
+            "identity": 0.244,
+            "coverage": 0.599,
+            "query_identity": 0.244,
+            "hmm_from": 1,
+            "hmm_to": 1,
+            "hmm_coverage": 0.599,
+            "contig_length": 2152187,
+            "contig_edge": null,
+            "gc": null,
+            "contig_gc": null,
+            "orf_ids": [],
+            "upstream_context": "GTTGCCCATCCCGAAATTGCGAATCCGGAACAATCCGAGCGGCATCATGGGCTCTGGCGCACGATGCTCCCACCAGATGA",
+            "downstream_context": "GAGGAGAACCCGGCTTTGCCTGGTCATGGTTCAAGGGTATTCCTGAATGCGGCATCCGGAATGGCCGGTGGGGCCGATGC",
+            "family_gate_passed": true
+          }
+        ],
+        "provenance": {
+          "created_by": "deterministic_locus_multiplicity",
+          "llm_invented_scores": false,
+          "collapsed_near_identical_copies": false
+        },
+        "evidence_ids": [
+          "E_locus_reconstruction",
+          "E_paralogy",
+          "E_multiplicity"
+        ]
+      },
+      "accepted_candidate_count": 1
+    },
+    "competitive_family": {
+      "target_family": "tetA_tetracycline_efflux",
+      "candidate_locus": {
+        "contig": "NZ_JBYHFR010000003.1",
+        "genomic_start": 75680,
+        "genomic_end": 381823,
+        "strand": "+",
+        "protein_length": 100130
+      },
+      "target_family_score": 0.0,
+      "target_family_HMM_score": null,
+      "target_family_model_coverage": 0.0,
+      "target_family_sequence_coverage": 0.00034954559073204834,
+      "best_competing_family": "mfs_multidrug_efflux",
+      "competing_family_score": 0.0,
+      "competing_family_HMM_score": null,
+      "competing_family_model_coverage": 0.0,
+      "score_margin": 0.0,
+      "domain_architecture": [],
+      "protein_length": 100130,
+      "transmembrane_topology": {
+        "hydrophobic_windows_19aa": 309,
+        "measured": true
+      },
+      "conserved_motif_evidence": null,
+      "reciprocal_family_assignment": "mfs_multidrug_efflux",
+      "reference_family_placement": {
+        "winner": "mfs_multidrug_efflux",
+        "margin": 0.0
+      },
+      "conflicting_evidence": [],
+      "classification": "unresolved_candidate",
+      "evidence_ids": [
+        "E_family_hmm",
+        "E_competitive_family"
+      ],
+      "provenance": {
+        "created_by": "deterministic_competitive_family",
+        "llm_invented_scores": false,
+        "gene_specific_rules": false
+      },
+      "competitors_scored": [
+        {
+          "family_id": "mfs_multidrug_efflux",
+          "hmm_score": null,
+          "hmm_model_coverage": 0.0,
+          "hmm_evalue": null,
+          "sequence_identity": 0.4090909090909091,
+          "sequence_coverage": 0.00044941575951263355,
+          "combined_score": 0.0
+        },
+        {
+          "family_id": "rnd_efflux",
+          "hmm_score": null,
+          "hmm_model_coverage": 0.0,
+          "hmm_evalue": null,
+          "sequence_identity": 0.4090909090909091,
+          "sequence_coverage": 0.00026964945570758013,
+          "combined_score": 0.0
+        }
+      ]
+    },
+    "multiplicity": {
+      "family": "tetA_tetracycline_efflux",
+      "number_of_candidate_loci": 1,
+      "coordinates": [
+        {
+          "contig": "NZ_JBYHFR010000001.1",
+          "start": 547831,
+          "end": 548476,
+          "strand": "-"
+        }
+      ],
+      "contigs": [
+        "NZ_JBYHFR010000001.1"
+      ],
+      "strand": [
+        "-"
+      ],
+      "sequence_identity_between_copies": null,
+      "family_evidence_per_locus": [
+        {
+          "contig": "NZ_JBYHFR010000001.1",
+          "identity": 0.244,
+          "coverage": 0.599,
+          "hmm_coverage": 0.599,
+          "family_gate_passed": true
+        }
+      ],
+      "read_depth_per_locus": [
+        null
+      ],
+      "upstream_context": [
+        "GTTGCCCATCCCGAAATTGCGAATCCGGAACAATCCGAGCGGCATCATGGGCTCTGGCGCACGATGCTCCCACCAGATGA"
+      ],
+      "downstream_context": [
+        "GAGGAGAACCCGGCTTTGCCTGGTCATGGTTCAAGGGTATTCCTGAATGCGGCATCCGGAATGGCCGGTGGGGCCGATGC"
+      ],
+      "assembly_fragment_relationship": false,
+      "plasmid_chromosome_context": null,
+      "contamination_evidence": false,
+      "classification": "single_locus",
+      "loci": [
+        {
+          "contig": "NZ_JBYHFR010000001.1",
+          "strand": "-",
+          "genomic_start": 547831,
+          "genomic_end": 548476,
+          "identity": 0.244,
+          "coverage": 0.599,
+          "query_identity": 0.244,
+          "hmm_from": 1,
+          "hmm_to": 1,
+          "hmm_coverage": 0.599,
+          "contig_length": 2152187,
+          "contig_edge": null,
+          "gc": null,
+          "contig_gc": null,
+          "orf_ids": [],
+          "upstream_context": "GTTGCCCATCCCGAAATTGCGAATCCGGAACAATCCGAGCGGCATCATGGGCTCTGGCGCACGATGCTCCCACCAGATGA",
+          "downstream_context": "GAGGAGAACCCGGCTTTGCCTGGTCATGGTTCAAGGGTATTCCTGAATGCGGCATCCGGAATGGCCGGTGGGGCCGATGC",
+          "family_gate_passed": true
+        }
+      ],
+      "provenance": {
+        "created_by": "deterministic_locus_multiplicity",
+        "llm_invented_scores": false,
+        "collapsed_near_identical_copies": false
+      },
+      "evidence_ids": [
+        "E_locus_reconstruction",
+        "E_paralogy",
+        "E_multiplicity"
+      ]
+    },
+    "best_hmm": {
+      "target_id": "NZ_JBYHFR010000001.1:1782538-1784176:-",
+      "full_evalue": 9.7e-20,
+      "full_score": 72.0,
+      "best_domain_evalue": 3.9e-16,
+      "best_domain_score": 60.1,
+      "model_length": 422,
+      "query_length": 546,
+      "model_coverage": 0.4384,
+      "query_coverage": 0.5751,
+      "n_domains": 2,
+      "domain_order": [
+        1,
+        2
+      ],
+      "domain_completeness": [
+        {
+          "domain_index": 1,
+          "hmm_from": 19,
+          "hmm_to": 203,
+          "domain_score": 60.1,
+          "domain_i_evalue": 3.9e-16,
+          "complete": true
+        },
+        {
+          "domain_index": 2,
+          "hmm_from": 29,
+          "hmm_to": 164,
+          "domain_score": 17.7,
+          "domain_i_evalue": 0.0028,
+          "complete": true
+        }
+      ],
+      "domains": [
+        {
+          "target_id": "NZ_JBYHFR010000001.1:1782538-1784176:-",
+          "tlen": 546,
+          "query_name": "members.aln",
+          "qlen": 422,
+          "full_evalue": 9.7e-20,
+          "full_score": 72.0,
+          "domain_index": 1,
+          "n_domains": 2,
+          "domain_c_evalue": 1.2e-19,
+          "domain_i_evalue": 3.9e-16,
+          "domain_score": 60.1,
+          "hmm_from": 19,
+          "hmm_to": 203,
+          "ali_from": 167,
+          "ali_to": 347,
+          "env_from": 155,
+          "env_to": 365,
+          "model_span": 185,
+          "query_span": 181,
+          "model_coverage": 0.43838862559241704,
+          "query_coverage": 0.3315018315018315,
+          "accuracy": 0.89,
+          "search_kind": "hmm_domain",
+          "tool": "hmmsearch"
+        },
+        {
+          "target_id": "NZ_JBYHFR010000001.1:1782538-1784176:-",
+          "tlen": 546,
+          "query_name": "members.aln",
+          "qlen": 422,
+          "full_evalue": 9.7e-20,
+          "full_score": 72.0,
+          "domain_index": 2,
+          "n_domains": 2,
+          "domain_c_evalue": 8.8e-07,
+          "domain_i_evalue": 0.0028,
+          "domain_score": 17.7,
+          "hmm_from": 29,
+          "hmm_to": 164,
+          "ali_from": 380,
+          "ali_to": 512,
+          "env_from": 358,
+          "env_to": 528,
+          "model_span": 136,
+          "query_span": 133,
+          "model_coverage": 0.3222748815165877,
+          "query_coverage": 0.24358974358974358,
+          "accuracy": 0.84,
+          "search_kind": "hmm_domain",
+          "tool": "hmmsearch"
+        }
+      ],
+      "tool": "hmmsearch",
+      "invented": false
+    },
+    "metrics": {
+      "n_supporting_members": 0,
+      "supporting_members": [],
+      "n_family_members": 2,
+      "reference_set_agreement": 0.0,
+      "hmm_model_coverage": 0.4384,
+      "hmm_query_coverage": 0.5751,
+      "hmm_full_evalue": 9.7e-20,
+      "hmm_full_score": 72.0,
+      "hmm_n_domains": 2,
+      "hmm_domain_order": [
+        1,
+        2
+      ],
+      "domain_completeness": [
+        {
+          "domain_index": 1,
+          "hmm_from": 19,
+          "hmm_to": 203,
+          "domain_score": 60.1,
+          "domain_i_evalue": 3.9e-16,
+          "complete": true
+        },
+        {
+          "domain_index": 2,
+          "hmm_from": 29,
+          "hmm_to": 164,
+          "domain_score": 17.7,
+          "domain_i_evalue": 0.0028,
+          "complete": true
+        }
+      ],
+      "best_member_identity": 0.31469,
+      "best_member_coverage": 0.46633416458852867,
+      "domain_only": true,
+      "pairwise_identity_not_used_as_sole_reject": true,
+      "competitive_family_classification": "unresolved_candidate",
+      "multiplicity_classification": "single_locus",
+      "n_loci": 1
+    },
+    "limitations": [],
+    "tools_run": [
+      "family_member_search",
+      "hmmsearch"
+    ],
+    "provenance": {
+      "created_by": "deterministic_family_orthology",
+      "llm_invented_scores": false,
+      "family_id": "tetA_tetracycline_efflux",
+      "msa_provenance": {
+        "method": "star multiple alignment seeded on the first member (Needleman-Wunsch)",
+        "aligner": "genome_skeptic.families.build_star_msa"
+      },
+      "hmm_provenance": {
+        "method": "hmmbuild from members.aln.faa at first use",
+        "not_invented_by_llm": true
+      },
+      "phylo_provenance": {},
+      "n_reference_proteins": 2,
+      "reference_species": [
+        "Tn10 TetA class B",
+        "TetA/TCR1 tetracycline efflux"
+      ],
+      "reference_protein_ids": [
+        "P02980",
+        "P02982"
+      ],
+      "reference_gene_ids": [
+        null,
+        null
+      ],
+      "protein_lengths": [
+        401,
+        399
+      ],
+      "domain_architecture": [],
+      "known_fusion_or_split": []
+    },
+    "member_hit_summaries": [
+      {
+        "query_id": "P02980",
+        "contig_id": "NZ_JBYHFR010000003.1",
+        "identity": 0.27895,
+        "query_coverage": 0.46633416458852867,
+        "search_kind": "translated",
+        "evalue": 8.84e-07,
+        "near_contig_edge": true,
+        "tstart": 380659,
+        "tend": 381220,
+        "strand": "+"
+      },
+      {
+        "query_id": "P02982",
+        "contig_id": "NZ_JBYHFR010000001.1",
+        "identity": 0.31469,
+        "query_coverage": 0.3508771929824561,
+        "search_kind": "translated",
+        "evalue": 5e-06,
+        "near_contig_edge": true,
+        "tstart": 1783255,
+        "tend": 1783669,
+        "strand": "-"
+      },
+      {
+        "query_id": "P02982",
+        "contig_id": "NZ_JBYHFR010000001.1",
+        "identity": 0.30713999999999997,
+        "query_coverage": 0.3483709273182957,
+        "search_kind": "translated",
+        "evalue": 8.91e-05,
+        "near_contig_edge": true,
+        "tstart": 25424,
+        "tend": 25823,
+        "strand": "+"
+      },
+      {
+        "query_id": "P02982",
+        "contig_id": "NZ_JBYHFR010000003.1",
+        "identity": 0.27777999999999997,
+        "query_coverage": 0.3132832080200501,
+        "search_kind": "translated",
+        "evalue": 9.06e-05,
+        "near_contig_edge": true,
+        "tstart": 76178,
+        "tend": 76556,
+        "strand": "+"
+      },
+      {
+        "query_id": "P02980",
+        "contig_id": "NZ_JBYHFR010000001.1",
+        "identity": 0.272,
+        "query_coverage": 0.3092269326683292,
+        "search_kind": "translated",
+        "evalue": 0.000858,
+        "near_contig_edge": true,
+        "tstart": 25415,
+        "tend": 25778,
+        "strand": "+"
+      },
+      {
+        "query_id": "P02980",
+        "contig_id": "NZ_JBYHFR010000003.1",
+        "identity": 0.30233,
+        "query_coverage": 0.20947630922693267,
+        "search_kind": "translated",
+        "evalue": 4.75e-05,
+        "near_contig_edge": true,
+        "tstart": 76238,
+        "tend": 76493,
+        "strand": "+"
+      }
+    ]
+  },
+  "evidence_ids": [
+    "E001",
+    "E002",
+    "E003",
+    "E004",
+    "E005",
+    "E006",
+    "E007",
+    "E008"
+  ],
+  "arm_b_det_endpoint_omitted_from_judge_packet": true,
+  "arm_b_det_endpoint_for_record_only": "ABSENT",
+  "run_dir": "/mnt/c/Users/aritr/Downloads/GenomeSkeptic_Cursor/GenomeSkeptic_Cursor/role_swap_cross_task/06_SOL_CONTROLLER/RS12/GS_RUN"
+}

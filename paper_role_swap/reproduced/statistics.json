@@ -1,0 +1,147 @@
+{
+  "unblinded_utc": "2026-09-23T11:48:15.363206+00:00",
+  "n_cases": 20,
+  "n_positive": 10,
+  "n_negative": 10,
+  "arm_scores": {
+    "A": {
+      "n": 20,
+      "correct": 18,
+      "accuracy": 0.9,
+      "n_pos": 10,
+      "n_neg": 10,
+      "tp": 8,
+      "tn": 10,
+      "fp": 0,
+      "fn": 2,
+      "sensitivity": 0.8,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.9,
+      "mcc": 0.816496580927726,
+      "unresolved": 0,
+      "false_positive": 0,
+      "false_negative": 2
+    },
+    "B": {
+      "n": 20,
+      "correct": 18,
+      "accuracy": 0.9,
+      "n_pos": 10,
+      "n_neg": 10,
+      "tp": 8,
+      "tn": 10,
+      "fp": 0,
+      "fn": 2,
+      "sensitivity": 0.8,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.9,
+      "mcc": 0.816496580927726,
+      "unresolved": 0,
+      "false_positive": 0,
+      "false_negative": 2
+    },
+    "C": {
+      "n": 20,
+      "correct": 18,
+      "accuracy": 0.9,
+      "n_pos": 10,
+      "n_neg": 10,
+      "tp": 8,
+      "tn": 10,
+      "fp": 0,
+      "fn": 2,
+      "sensitivity": 0.8,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.9,
+      "mcc": 0.816496580927726,
+      "unresolved": 0,
+      "false_positive": 0,
+      "false_negative": 2
+    },
+    "D": {
+      "n": 20,
+      "correct": 11,
+      "accuracy": 0.55,
+      "n_pos": 10,
+      "n_neg": 10,
+      "tp": 8,
+      "tn": 3,
+      "fp": 7,
+      "fn": 2,
+      "sensitivity": 0.8,
+      "specificity": 0.3,
+      "balanced_accuracy": 0.55,
+      "mcc": 0.11547005383792516,
+      "unresolved": 9,
+      "false_positive": 7,
+      "false_negative": 2
+    },
+    "F": {
+      "n": 20,
+      "correct": 18,
+      "accuracy": 0.9,
+      "n_pos": 10,
+      "n_neg": 10,
+      "tp": 8,
+      "tn": 10,
+      "fp": 0,
+      "fn": 2,
+      "sensitivity": 0.8,
+      "specificity": 1.0,
+      "balanced_accuracy": 0.9,
+      "mcc": 0.816496580927726,
+      "unresolved": 0,
+      "false_positive": 0,
+      "false_negative": 2
+    }
+  },
+  "b_vs_d": {
+    "endpoint_differences": 9,
+    "both_correct": 11,
+    "both_wrong": 2,
+    "b_correct_d_wrong": 7,
+    "b_wrong_d_correct": 0,
+    "sol_corrections": 0,
+    "sol_degradations": 7,
+    "net_sol_judge_effect": -7,
+    "mcnemar": {
+      "b_correct_d_wrong": 7,
+      "b_wrong_d_correct": 0,
+      "mcnemar_p": 0.015625,
+      "mcnemar_note": "exact two-sided McNemar / binomial P=0.015625 on B+C=7"
+    },
+    "paired_bootstrap_D_minus_B": {
+      "diff_b_minus_a": -0.35,
+      "ci_low": -0.55,
+      "ci_high": -0.15000000000000002,
+      "n_bootstrap": 10000,
+      "seed": 20260920
+    },
+    "transitions": {
+      "ABSENT->UNRESOLVED": 9
+    }
+  },
+  "controller": {
+    "A_vs_B_endpoint_diff": 0,
+    "B_vs_C_endpoint_diff": 0,
+    "B_vs_F_endpoint_diff": 0,
+    "followups": {
+      "A": 57,
+      "B": 39,
+      "C": 74,
+      "F": 39
+    },
+    "B_reduction_vs_A": 0.3157894736842105,
+    "B_reduction_vs_C": 0.47297297297297297,
+    "F_reduction_vs_A": 0.3157894736842105,
+    "F_reduction_vs_C": 0.47297297297297297,
+    "sol_vs_jev_latency_ratio": 4.639972930295511,
+    "sol_vs_jev_cost_ratio": 113.09878703759581
+  },
+  "evidence_identity": {
+    "identical_evidence_assert_count": 20,
+    "arm_b_vs_d_hash_equal_count": 20
+  },
+  "scoring_rule": "UNRESOLVED vs resolved truth counts as incorrect (M60 frozen rule)",
+  "source_logic": "paper_role_swap/scripts/scoring/score_role_swap_unblind.py"
+}

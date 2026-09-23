@@ -1,0 +1,5 @@
+{
+  "truth_access_attempts": 0,
+  "log": [],
+  "path_guard": "scripts/role_swap_prediction_path_guard.py"
+}

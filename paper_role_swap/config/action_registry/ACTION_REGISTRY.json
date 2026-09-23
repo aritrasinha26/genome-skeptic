@@ -1,0 +1,77 @@
+{
+  "action_ids": [
+    "search_target_genes_nucleotide",
+    "search_target_genes_translated",
+    "inspect_contig_edges_for_target",
+    "inspect_local_coverage_for_target",
+    "inspect_synteny_neighborhood_for_target",
+    "compare_locus_to_reference",
+    "reciprocal_best_hit_search",
+    "inspect_gene_order_against_reference",
+    "search_target_proteins_mmseqs",
+    "search_target_proteins_diamond",
+    "search_target_domains_hmmer",
+    "competitive_family",
+    "inspect_paralogue_copies",
+    "inspect_catalytic_residues",
+    "inspect_hit_contig_contamination",
+    "classify_contig_taxonomy",
+    "inspect_read_supported_breaks",
+    "place_target_among_homologues"
+  ],
+  "decision_need_rank": {
+    "ASSEMBLY_SUPPORT_UNRESOLVED": 40,
+    "CONTAMINATION_UNRESOLVED": 30,
+    "COPY_NUMBER_UNRESOLVED": 90,
+    "FAMILY_IDENTITY_UNRESOLVED": 100,
+    "FRAGMENTATION_UNRESOLVED": 50,
+    "ORTHOLOG_VS_PARALOG_UNRESOLVED": 80,
+    "REMOTE_HOMOLOG_NOT_EXCLUDED": 20
+  },
+  "expected_action_registry_hash": "185390460dd990516b89eab036b5c5da11e2d28ef3371c5e4917a4e2fd6ac899",
+  "kind": "ROLE_SWAP_ACTION_REGISTRY_DUMP",
+  "need_primary_actions": {
+    "ASSEMBLY_SUPPORT_UNRESOLVED": [
+      "inspect_read_supported_breaks",
+      "inspect_local_coverage_for_target"
+    ],
+    "CONTAMINATION_UNRESOLVED": [
+      "inspect_hit_contig_contamination",
+      "classify_contig_taxonomy"
+    ],
+    "COPY_NUMBER_UNRESOLVED": [
+      "search_target_proteins_mmseqs",
+      "search_target_proteins_diamond",
+      "search_target_domains_hmmer"
+    ],
+    "FAMILY_IDENTITY_UNRESOLVED": [
+      "competitive_ortholog_references",
+      "competitive_family",
+      "place_target_among_homologues",
+      "compare_locus_to_reference"
+    ],
+    "FRAGMENTATION_UNRESOLVED": [
+      "inspect_contig_edges_for_target",
+      "inspect_read_supported_breaks"
+    ],
+    "ORTHOLOG_VS_PARALOG_UNRESOLVED": [
+      "competitive_ortholog_references",
+      "reciprocal_best_hit_search",
+      "compare_locus_to_reference",
+      "inspect_gene_order_against_reference",
+      "inspect_synteny_neighborhood_for_target",
+      "place_target_among_homologues"
+    ],
+    "REMOTE_HOMOLOG_NOT_EXCLUDED": [
+      "search_target_domains_hmmer",
+      "search_target_proteins_mmseqs",
+      "search_target_proteins_diamond",
+      "search_target_genes_translated",
+      "search_target_genes_nucleotide"
+    ]
+  },
+  "note": "Serialized from frozen V5 action-catalog modules; hash must match freeze action_registry_hash",
+  "v41_extra": [
+    "competitive_ortholog_references"
+  ]
+}

@@ -1,0 +1,840 @@
+{
+  "target": "tetA_tetracycline_efflux",
+  "biological_endpoint_options": [
+    "PRESENT",
+    "ABSENT",
+    "UNRESOLVED"
+  ],
+  "structured_biological_measurements": {
+    "n_hits": 11,
+    "n_loci": 1,
+    "architecture": "close_paralogue",
+    "supports_orthologue": true,
+    "best_hit": {
+      "identity": 0.99749,
+      "coverage": 1.0,
+      "hmm_score": 752.2,
+      "hmm_model_coverage": 0.9976
+    }
+  },
+  "candidate_loci": [
+    {
+      "contig_id": null,
+      "start": null,
+      "end": null,
+      "strand": null,
+      "architecture_state": null,
+      "evidence_ids": []
+    }
+  ],
+  "sequence_evidence": {
+    "n_evidence_items": 8,
+    "evidence_ids": [
+      "E001",
+      "E002",
+      "E003",
+      "E004",
+      "E005",
+      "E006",
+      "E007",
+      "E008"
+    ]
+  },
+  "family_competitor_profile_architecture_evidence": {
+    "family_id": "tetA_tetracycline_efflux",
+    "architecture": "close_paralogue",
+    "supports_orthologue": true,
+    "domain_only": false,
+    "n_member_hits": 11,
+    "metrics": {
+      "best_member_identity": 0.99749,
+      "best_member_coverage": 1.0,
+      "hmm_model_coverage": 0.9976,
+      "hmm_query_coverage": 0.9213,
+      "hmm_full_score": 752.2,
+      "hmm_full_evalue": 9.6e-227,
+      "reference_set_agreement": 1.0
+    },
+    "hmm_profile": {
+      "full_score": 752.2,
+      "full_evalue": 9.6e-227,
+      "model_coverage": 0.9976,
+      "query_coverage": 0.9213,
+      "n_domains": 1
+    },
+    "competitive_family": {
+      "classification": "target_family_supported",
+      "target_family_score": 0.9829,
+      "target_family_HMM_score": 752.2,
+      "target_family_model_coverage": 0.9976,
+      "best_competitor": null,
+      "score_margin": 0.9829,
+      "competitors_scored": [
+        {
+          "family_id": "mfs_multidrug_efflux",
+          "combined_score": 0.0062,
+          "hmm_score": null,
+          "hmm_model_coverage": 0.0
+        },
+        {
+          "family_id": "rnd_efflux",
+          "combined_score": 0.0033,
+          "hmm_score": null,
+          "hmm_model_coverage": 0.0
+        }
+      ]
+    },
+    "reconstruction": {
+      "architecture": "close_paralogue",
+      "sequence_identity": 0.99749,
+      "protein_coverage": 1.0,
+      "hmm_coverage": 0.9976,
+      "evidence_ids": [
+        "E_family_hmm",
+        "E_locus_reconstruction"
+      ]
+    },
+    "paralogue": {
+      "state": "multiple_loci",
+      "n_loci": 2,
+      "supported": true
+    },
+    "tools_run": [
+      "family_member_search",
+      "hmmsearch"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "E001",
+      "summary": "Homology hits for tetA_tetracycline_efflux",
+      "values": {
+        "n_hits": 9,
+        "n_strong": 1,
+        "hits": [
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000014.1",
+            "search_kind": "translated",
+            "identity": 0.47229999999999994,
+            "query_coverage": 0.9451371571072319,
+            "evalue": 9.31e-92,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 20149,
+            "tend": 21286,
+            "strand": "+",
+            "contig_length": 24639,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000001.1",
+            "search_kind": "translated",
+            "identity": 0.25964,
+            "query_coverage": 0.9276807980049875,
+            "evalue": 2.61e-18,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 814577,
+            "tend": 815702,
+            "strand": "+",
+            "contig_length": 1549500,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "search_kind": "translated",
+            "identity": 0.2907,
+            "query_coverage": 0.4114713216957606,
+            "evalue": 2.23e-07,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 373948,
+            "tend": 374452,
+            "strand": "-",
+            "contig_length": 490295,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "search_kind": "translated",
+            "identity": 0.26738,
+            "query_coverage": 0.4463840399002494,
+            "evalue": 7.02e-05,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 364067,
+            "tend": 364613,
+            "strand": "+",
+            "contig_length": 490295,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "search_kind": "translated",
+            "identity": 0.32,
+            "query_coverage": 0.3092269326683292,
+            "evalue": 2.61e-09,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 320455,
+            "tend": 320818,
+            "strand": "+",
+            "contig_length": 490295,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000001.1",
+            "search_kind": "translated",
+            "identity": 0.3211,
+            "query_coverage": 0.26932668329177056,
+            "evalue": 1.88e-05,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 1204718,
+            "tend": 1205039,
+            "strand": "+",
+            "contig_length": 1549500,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "search_kind": "translated",
+            "identity": 0.28204999999999997,
+            "query_coverage": 0.286783042394015,
+            "evalue": 0.000257,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 407890,
+            "tend": 408229,
+            "strand": "-",
+            "contig_length": 490295,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "search_kind": "translated",
+            "identity": 0.38462,
+            "query_coverage": 0.1571072319201995,
+            "evalue": 0.000195,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 438375,
+            "tend": 438570,
+            "strand": "-",
+            "contig_length": 490295,
+            "tool": "blast+",
+            "domain_name": null
+          }
+        ],
+        "tools_run": [
+          "internal_gene_search",
+          "mmseqs",
+          "diamond",
+          "family_member_search",
+          "hmmsearch"
+        ],
+        "tools_unavailable": [
+          "contig_taxonomy",
+          "local_read_depth"
+        ]
+      }
+    },
+    {
+      "id": "E002",
+      "summary": "Family orthology measurements for tetA_tetracycline_efflux",
+      "values": {
+        "family_id": "tetA_tetracycline_efflux",
+        "n_member_hits": 11,
+        "architecture": "close_paralogue",
+        "hierarchy": [
+          "exact_strong_homolog",
+          "multi_reference_protein_homolog",
+          "profile_hmm_family_match"
+        ],
+        "supports_orthologue": true,
+        "domain_only": false,
+        "fusion": {
+          "state": "not_fusion",
+          "supported": false
+        },
+        "split": {
+          "state": "not_split",
+          "supported": false
+        },
+        "fragmented": {
+          "state": "not_fragmented",
+          "supported": false
+        },
+        "paralogue": {
+          "state": "multiple_loci",
+          "n_loci": 2,
+          "supported": true
+        },
+        "best_hmm": {
+          "target_id": "NZ_JBGDTI010000014.1:20041-21337:+",
+          "full_evalue": 9.6e-227,
+          "full_score": 752.2,
+          "best_domain_evalue": 1.1e-226,
+          "best_domain_score": 752.0
+        },
+        "metrics": {
+          "n_supporting_members": 2,
+          "n_family_members": 2,
+          "reference_set_agreement": 1.0,
+          "hmm_model_coverage": 0.9976,
+          "hmm_query_coverage": 0.9213,
+          "hmm_full_evalue": 9.6e-227,
+          "hmm_full_score": 752.2,
+          "best_member_identity": 0.99749,
+          "best_member_coverage": 1.0,
+          "competitive_family_classification": "target_family_supported",
+          "multiplicity_classification": "true_gene_duplication",
+          "domain_only": false
+        },
+        "limitations": [],
+        "tools_run": [
+          "family_member_search",
+          "hmmsearch"
+        ],
+        "member_hit_summaries": [
+          {
+            "query_id": "P02982",
+            "contig_id": "NZ_JBGDTI010000014.1",
+            "identity": 0.99749,
+            "query_coverage": 1.0,
+            "search_kind": "translated",
+            "evalue": 0.0,
+            "near_contig_edge": true,
+            "tstart": 20140,
+            "tend": 21337,
+            "strand": "+"
+          },
+          {
+            "query_id": "P02980",
+            "contig_id": "NZ_JBGDTI010000014.1",
+            "identity": 0.47229999999999994,
+            "query_coverage": 0.9451371571072319,
+            "search_kind": "translated",
+            "evalue": 9.31e-92,
+            "near_contig_edge": true,
+            "tstart": 20149,
+            "tend": 21286,
+            "strand": "+"
+          },
+          {
+            "query_id": "P02982",
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "identity": 0.26303,
+            "query_coverage": 0.9448621553884712,
+            "search_kind": "translated",
+            "evalue": 2.15e-07,
+            "near_contig_edge": true,
+            "tstart": 373300,
+            "tend": 374452,
+            "strand": "-"
+          }
+        ]
+      }
+    },
+    {
+      "id": "E003",
+      "summary": "Contig-edge status for tetA_tetracycline_efflux",
+      "values": {
+        "n_edge_hits": 8,
+        "hits": [
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000014.1",
+            "search_kind": "translated",
+            "identity": 0.47229999999999994,
+            "query_coverage": 0.9451371571072319,
+            "evalue": 9.31e-92,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 20149,
+            "tend": 21286,
+            "strand": "+",
+            "contig_length": 24639,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000001.1",
+            "search_kind": "translated",
+            "identity": 0.25964,
+            "query_coverage": 0.9276807980049875,
+            "evalue": 2.61e-18,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 814577,
+            "tend": 815702,
+            "strand": "+",
+            "contig_length": 1549500,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "search_kind": "translated",
+            "identity": 0.2907,
+            "query_coverage": 0.4114713216957606,
+            "evalue": 2.23e-07,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 373948,
+            "tend": 374452,
+            "strand": "-",
+            "contig_length": 490295,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "search_kind": "translated",
+            "identity": 0.26738,
+            "query_coverage": 0.4463840399002494,
+            "evalue": 7.02e-05,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 364067,
+            "tend": 364613,
+            "strand": "+",
+            "contig_length": 490295,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "search_kind": "translated",
+            "identity": 0.32,
+            "query_coverage": 0.3092269326683292,
+            "evalue": 2.61e-09,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 320455,
+            "tend": 320818,
+            "strand": "+",
+            "contig_length": 490295,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000001.1",
+            "search_kind": "translated",
+            "identity": 0.3211,
+            "query_coverage": 0.26932668329177056,
+            "evalue": 1.88e-05,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 1204718,
+            "tend": 1205039,
+            "strand": "+",
+            "contig_length": 1549500,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "search_kind": "translated",
+            "identity": 0.28204999999999997,
+            "query_coverage": 0.286783042394015,
+            "evalue": 0.000257,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 407890,
+            "tend": 408229,
+            "strand": "-",
+            "contig_length": 490295,
+            "tool": "blast+",
+            "domain_name": null
+          },
+          {
+            "query_id": "tetA_tetracycline_efflux",
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "search_kind": "translated",
+            "identity": 0.38462,
+            "query_coverage": 0.1571072319201995,
+            "evalue": 0.000195,
+            "near_contig_edge": true,
+            "possible_edge_truncation": true,
+            "edge_distance_bp": 0,
+            "tstart": 438375,
+            "tend": 438570,
+            "strand": "-",
+            "contig_length": 490295,
+            "tool": "blast+",
+            "domain_name": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "E004",
+      "summary": "Locus evidence for tetA_tetracycline_efflux",
+      "values": {
+        "n_loci": 1,
+        "conflicts": [
+          "no_reference_genome"
+        ],
+        "orthologues": [],
+        "placement": {}
+      }
+    },
+    {
+      "id": "E005",
+      "summary": "Contig-edge recomputation for tetA_tetracycline_efflux",
+      "values": {
+        "action": "inspect_contig_edges_for_target",
+        "requested_by": "planner",
+        "status": "INFORMATIVE",
+        "status_reason": "updated measurement fields: family_evidence, hit_edge_flags",
+        "limitation": null,
+        "n_inspected": 9,
+        "edge_proximity_bp": 300,
+        "stored_flags": [
+          {
+            "contig_id": "NZ_JBGDTI010000014.1",
+            "contig_length": 24639,
+            "near_contig_edge": true,
+            "edge_distance_bp": 0
+          },
+          {
+            "contig_id": "NZ_JBGDTI010000001.1",
+            "contig_length": 1549500,
+            "near_contig_edge": true,
+            "edge_distance_bp": 0
+          },
+          {
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "contig_length": 490295,
+            "near_contig_edge": true,
+            "edge_distance_bp": 0
+          },
+          {
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "contig_length": 490295,
+            "near_contig_edge": true,
+            "edge_distance_bp": 0
+          },
+          {
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "contig_length": 490295,
+            "near_contig_edge": true,
+            "edge_distance_bp": 0
+          },
+          {
+            "contig_id": "NZ_JBGDTI010000001.1",
+            "contig_length": 1549500,
+            "near_contig_edge": true,
+            "edge_distance_bp": 0
+          },
+          {
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "contig_length": 490295,
+            "near_contig_edge": true,
+            "edge_distance_bp": 0
+          },
+          {
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "contig_length": 490295,
+            "near_contig_edge": true,
+            "edge_distance_bp": 0
+          },
+          {
+            "contig_id": "NZ_JBGDTI010000014.1",
+            "contig_length": 24639,
+            "near_contig_edge": false,
+            "edge_distance_bp": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "E006",
+      "summary": "Measurement state m0 -> m1 after inspect_contig_edges_for_target: updated family_evidence, hit_edge_flags",
+      "values": {
+        "action": "inspect_contig_edges_for_target",
+        "requested_by": "planner",
+        "status": "INFORMATIVE",
+        "from_state": "m0",
+        "to_state": "m1",
+        "measurement_state_changed": true,
+        "measurement_hash_before": "b73aa8d5cf49104658a4418c44b2a9939825522b46cf2428b8f833280e3332bb",
+        "measurement_hash_after": "3deeebf7d4f65d49e0807bf04ed5fcde885531f48d7f5852e4307d8a63fcbc72",
+        "applied_updates": [
+          {
+            "field": "hit_edge_flags",
+            "op": "revise_hit_flags",
+            "origin": "contig_edge_recomputation",
+            "n_new": 9,
+            "detail": {
+              "n_inspected": 9,
+              "revised": [
+                {
+                  "contig_id": "NZ_JBGDTI010000014.1",
+                  "tstart": 20149,
+                  "before": {
+                    "near_contig_edge": true,
+                    "possible_edge_truncation": true,
+                    "edge_distance_bp": 0
+                  },
+                  "after": {
+                    "near_contig_edge": false,
+                    "possible_edge_truncation": false,
+                    "edge_distance_bp": 3353
+                  }
+                },
+                {
+                  "contig_id": "NZ_JBGDTI010000001.1",
+                  "tstart": 814577,
+                  "before": {
+                    "near_contig_edge": true,
+                    "possible_edge_truncation": true,
+                    "edge_distance_bp": 0
+                  },
+                  "after": {
+                    "near_contig_edge": false,
+                    "possible_edge_truncation": false,
+                    "edge_distance_bp": 733798
+                  }
+                },
+                {
+                  "contig_id": "NZ_JBGDTI010000003.1",
+                  "tstart": 373948,
+                  "before": {
+                    "near_contig_edge": true,
+                    "possible_edge_truncation": true,
+                    "edge_distance_bp": 0
+                  },
+                  "after": {
+                    "near_contig_edge": false,
+                    "possible_edge_truncation": false,
+                    "edge_distance_bp": 115843
+                  }
+                },
+                {
+                  "contig_id": "NZ_JBGDTI010000003.1",
+                  "tstart": 364067,
+                  "before": {
+                    "near_contig_edge": true,
+                    "possible_edge_truncation": true,
+                    "edge_distance_bp": 0
+                  },
+                  "after": {
+                    "near_contig_edge": false,
+                    "possible_edge_truncation": false,
+                    "edge_distance_bp": 125682
+                  }
+                },
+                {
+                  "contig_id": "NZ_JBGDTI010000003.1",
+                  "tstart": 320455,
+                  "before": {
+                    "near_contig_edge": true,
+                    "possible_edge_truncation": true,
+                    "edge_distance_bp": 0
+                  },
+                  "after": {
+                    "near_contig_edge": false,
+                    "possible_edge_truncation": false,
+                    "edge_distance_bp": 169477
+                  }
+                },
+                {
+                  "contig_id": "NZ_JBGDTI010000001.1",
+                  "tstart": 1204718,
+                  "before": {
+                    "near_contig_edge": true,
+                    "possible_edge_truncation": true,
+                    "edge_distance_bp": 0
+                  },
+                  "after": {
+                    "near_contig_edge": false,
+                    "possible_edge_truncation": false,
+                    "edge_distance_bp": 344461
+                  }
+                },
+                {
+                  "contig_id": "NZ_JBGDTI010000003.1",
+                  "tstart": 407890,
+                  "before": {
+                    "near_contig_edge": true,
+                    "possible_edge_truncation": true,
+                    "edge_distance_bp": 0
+                  },
+                  "after": {
+                    "near_contig_edge": false,
+                    "possible_edge_truncation": false,
+                    "edge_distance_bp": 82066
+                  }
+                },
+                {
+                  "contig_id": "NZ_JBGDTI010000003.1",
+                  "tstart": 438375,
+                  "before": {
+                    "near_contig_edge": true,
+                    "possible_edge_truncation": true,
+                    "edge_distance_bp": 0
+                  },
+                  "after": {
+                    "near_contig_edge": false,
+                    "possible_edge_truncation": false,
+                    "edge_distance_bp": 51725
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "field": "family_evidence",
+            "op": "replace_family_evidence",
+            "origin": "locus_multiplicity_clustering",
+            "n_new": 1,
+            "detail": {
+              "reason": "recomputed hit-dependent derived fields after hits changed",
+              "n_loci": 2,
+              "multiplicity": "paralogous_copy"
+            }
+          }
+        ],
+        "n_hits_before": 9,
+        "n_hits_after": 9,
+        "source_evidence_id": "E005"
+      }
+    },
+    {
+      "id": "E007",
+      "summary": "Hit-contig composition measurement for tetA_tetracycline_efflux",
+      "values": {
+        "action": "inspect_hit_contig_contamination",
+        "requested_by": "critic",
+        "status": "INFORMATIVE",
+        "status_reason": "updated measurement fields: contig_gc, genome_gc",
+        "limitation": null,
+        "contigs": [
+          {
+            "contig_id": "NZ_JBGDTI010000014.1",
+            "length": 24639,
+            "gc": 0.4669,
+            "taxonomy": null
+          },
+          {
+            "contig_id": "NZ_JBGDTI010000001.1",
+            "length": 1549500,
+            "gc": 0.5103,
+            "taxonomy": null
+          },
+          {
+            "contig_id": "NZ_JBGDTI010000003.1",
+            "length": 490295,
+            "gc": 0.5237,
+            "taxonomy": null
+          }
+        ],
+        "genome_gc": 0.521063,
+        "taxonomy_available": false
+      }
+    },
+    {
+      "id": "E008",
+      "summary": "Measurement state m1 -> m2 after inspect_hit_contig_contamination: updated contig_gc, genome_gc",
+      "values": {
+        "action": "inspect_hit_contig_contamination",
+        "requested_by": "critic",
+        "status": "INFORMATIVE",
+        "from_state": "m1",
+        "to_state": "m2",
+        "measurement_state_changed": true,
+        "measurement_hash_before": "3c32e64208fb0e7cccb2469145d69904e6f537d528a1f78276b6c5f6d7b0fe96",
+        "measurement_hash_after": "4a99a7bc11062d9665a6628d281cc757c28eb172594a78b9fa313863cdc6fe8f",
+        "applied_updates": [
+          {
+            "field": "contig_gc",
+            "op": "merge_dict",
+            "origin": "contig_composition_inspection",
+            "n_new": 3,
+            "detail": {
+              "new_keys": [
+                "NZ_JBGDTI010000014.1",
+                "NZ_JBGDTI010000001.1",
+                "NZ_JBGDTI010000003.1"
+              ],
+              "changed_keys": [],
+              "n_total": 3
+            }
+          },
+          {
+            "field": "genome_gc",
+            "op": "set_scalar",
+            "origin": "contig_composition_inspection",
+            "n_new": 1,
+            "detail": {
+              "value": 0.521063
+            }
+          }
+        ],
+        "n_hits_before": 9,
+        "n_hits_after": 9,
+        "source_evidence_id": "E007"
+      }
+    }
+  ],
+  "valid_evidence_ids": [
+    "E001",
+    "E002",
+    "E003",
+    "E004",
+    "E005",
+    "E006",
+    "E007",
+    "E008"
+  ],
+  "executed_analyses": [
+    "inspect_contig_edges_for_target",
+    "inspect_hit_contig_contamination"
+  ],
+  "initial_measurement_hash": "b73aa8d5cf49104658a4418c44b2a9939825522b46cf2428b8f833280e3332bb",
+  "final_evidence_state_hash": "4a99a7bc11062d9665a6628d281cc757c28eb172594a78b9fa313863cdc6fe8f",
+  "constraints": [
+    "Answer only from the supplied biological evidence.",
+    "Do not request additional analyses, tools, BLAST, HMM, or follow-ups.",
+    "Do not invent measurements or evidence IDs.",
+    "Cite at most 3 evidence IDs, copied verbatim from valid_evidence_ids."
+  ]
+}

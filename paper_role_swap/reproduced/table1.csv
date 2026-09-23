@@ -1,0 +1,7 @@
+arm,label,controller,final_judge,evidence_source,correct_out_of_20,followups
+A,Fixed deterministic controller,deterministic,deterministic validator,own measurement trail,18,57
+B,GPT-5.6 Sol controller,gpt-5.6-sol (planner/critic),deterministic validator,own measurement trail,18,39
+C,Exhaustive controller,exhaustive eligible actions,deterministic validator,own measurement trail,18,74
+D,Sol final judge (role swap),none (no re-measurement),gpt-5.6-sol,exact Arm B final evidence state,11,0
+F,Jev controller,jev-latest (Choice/Noul),deterministic validator,own measurement trail,18,39
+E,Sol full authority (≡ Arm D in this design),represented by Arm D,gpt-5.6-sol,exact Arm B final evidence state,11,0

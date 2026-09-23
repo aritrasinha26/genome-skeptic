@@ -1,0 +1,17 @@
+{
+  "planner_prompt_hash": "fcffbc11cf6afbe84731c15854d37e85d929b966318acc45567f5332819d0f63",
+  "critic_prompt_hash": "8b04802de10aea03d24b26633a17d68415db74db3ba82034b6b8d1cf75f2b60e",
+  "judge_prompt_hash": "5f62fb50c6938e99949f0f150fe079dc69b70525f62b050642767bc0e4a1488d",
+  "expected_planner_prompt_hash": "fcffbc11cf6afbe84731c15854d37e85d929b966318acc45567f5332819d0f63",
+  "expected_critic_prompt_hash": "8b04802de10aea03d24b26633a17d68415db74db3ba82034b6b8d1cf75f2b60e",
+  "sol_model_alias": "gpt-5.6-sol",
+  "sol_reasoning_effort": "high",
+  "sol_temperature": 0.0,
+  "jev_alias": "jev-latest",
+  "jev_system": "TypeSafe System One",
+  "jev_primitives": [
+    "Choice",
+    "Noul"
+  ],
+  "jev_note": "Non-LLM typed decision model; final biological authority false (controller only)"
+}

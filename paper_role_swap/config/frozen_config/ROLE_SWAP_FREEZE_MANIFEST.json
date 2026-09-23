@@ -1,0 +1,133 @@
+{
+  "freeze_id": "ROLE_SWAP_TETA_V5_WITHIN_TASK",
+  "kind": "role_swap_phase1_freeze",
+  "claim_scope": "within_task_tetA_only",
+  "tasks": [
+    "tetA_tetracycline_efflux"
+  ],
+  "n_tasks": 1,
+  "planned_cases": 20,
+  "planned_positives": 10,
+  "planned_negatives": 10,
+  "cases_selected": false,
+  "truth_locked": false,
+  "execution_started": false,
+  "v5_biology_modified": false,
+  "second_target_created": false,
+  "created_utc": "2026-09-22T16:56:29.884239+00:00",
+  "git_head": "92dfacad2b67aa53562f955c0a308eed5eaad6c4",
+  "parent_scientific_freeze": {
+    "tag": "GENOME_SKEPTIC_V5_VALIDATOR_REPAIR",
+    "expected_commit_in_model_poc_freeze_py": "92dfacad2b67aa53562f955c0a308eed5eaad6c4",
+    "note": "Working tree HEAD may differ; scientific hashes must match V5 expected values."
+  },
+  "scientific_core_hash": "86af163a1e427c83ed0010fbca69ba6a9f81b7a97ae1eda2f1be35179a8ea463",
+  "validator_hash": "cf6d6c5b26d74de9f475ba6d4d7de3ddef9b95d222c08efbbc202a2164d38672",
+  "reference_panel_hash": {
+    "family_definitions_hash": "ed4210640e318b8ed94ebf6d72b9c37afa9039eed858fdd54c4165fbcce09605",
+    "ortholog_reference_hash": "9434a1902236ed7245361e47af1986357969a3bf8ec210062f889dc84580ff92",
+    "combined_reference_panel_hash": "d4caaf5dc78be9d9b9ded448c17e56093baea46289a225b910a009c3f14fee09"
+  },
+  "action_registry_hash": "185390460dd990516b89eab036b5c5da11e2d28ef3371c5e4917a4e2fd6ac899",
+  "planner_prompt_hash": "fcffbc11cf6afbe84731c15854d37e85d929b966318acc45567f5332819d0f63",
+  "critic_prompt_hash": "8b04802de10aea03d24b26633a17d68415db74db3ba82034b6b8d1cf75f2b60e",
+  "follow_up_limits": {
+    "planner_max_actions": 1,
+    "critic_max_additional_actions": 1,
+    "max_exhaustive_actions": 32
+  },
+  "model_configuration": {
+    "primary_controller_and_judge": "gpt-5.6-sol",
+    "reasoning": "high",
+    "provider": "openai_api",
+    "temperature": 0.0,
+    "sol56_yaml": "config/sol56_high_posthoc.yaml",
+    "sol56_yaml_sha256": "662a878420a1e8bd015c72e414b037249d6aa2415746621e9a135ec33dcf6bfa",
+    "sol_adapter": "scripts/model_poc_v5/sol_adapter.py",
+    "sol_adapter_sha256": "8106518b2c353754d470df23a7f72c956d48fe69f8ddd59b6af1ab8caf10b4d8",
+    "sol_reasoning_effort_constant": "high",
+    "optional_controller": {
+      "model": "jev",
+      "system": "TypeSafe System One",
+      "primitives": [
+        "Choice",
+        "Noul"
+      ],
+      "final_biological_authority": false,
+      "arm": "F",
+      "status": "optional_not_executed_at_stop2"
+    }
+  },
+  "truth_protocol": {
+    "path": "role_swap_cross_task/00_PROTOCOL/ROLE_SWAP_TRUTH_PROTOCOL.md",
+    "sha256": "3cca72e2d0e15d136e3e75ef1d51c3572585879ae9003ff70150f43f9d9bd800",
+    "routes": [
+      "target_vs_competitor_sequence_reference",
+      "independent_profile_or_phylogenetic_placement"
+    ],
+    "aligned_with": "M60 tetA truth methods / EXTERNAL_REVIEW 06_TRUTH_CONSTRUCTION"
+  },
+  "arms_protocol": {
+    "path": "role_swap_cross_task/00_PROTOCOL/ROLE_SWAP_ARMS.md",
+    "sha256": "94ed01fa92a87e4032266e4912fb1f7d05e24a0ada163ec360e215874589b708",
+    "arms": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F_optional"
+    ],
+    "critical_comparison": "B_vs_D_identical_evidence"
+  },
+  "case_selection_procedure": {
+    "path": "role_swap_cross_task/00_PROTOCOL/ROLE_SWAP_CASE_SELECTION.md",
+    "sha256": "a46ba0d82acbdd34f5dd9322f132054b9cb2595813dab4f52c90aa665c6dbc9a",
+    "cases_selected": false
+  },
+  "protocol_document_sha256": {
+    "PHASE0_TARGET_AUDIT.md": "602a93218b726c696c42d59ee3a3bde4aca9062442ae5e794c576da5a74b2348",
+    "ROLE_SWAP_PROTOCOL.md": "de7ebfe3f2c6da541b44c8b630b3acc341f4fed43f00b2918b4dbb385d855f53",
+    "ROLE_SWAP_TRUTH_PROTOCOL.md": "3cca72e2d0e15d136e3e75ef1d51c3572585879ae9003ff70150f43f9d9bd800",
+    "ROLE_SWAP_ARMS.md": "94ed01fa92a87e4032266e4912fb1f7d05e24a0ada163ec360e215874589b708",
+    "ROLE_SWAP_CASE_SELECTION.md": "a46ba0d82acbdd34f5dd9322f132054b9cb2595813dab4f52c90aa665c6dbc9a",
+    "ROLE_SWAP_STOP2.md": "d3f0198e11aedb267d2a77c5462c057bc3e79d712ca72a025c438c7a51a04e0b"
+  },
+  "v5_hash_verification": {
+    "all_match": true,
+    "scientific_core_or_validator_mismatch": false,
+    "rows": {
+      "scientific_core": {
+        "expected": "86af163a1e427c83ed0010fbca69ba6a9f81b7a97ae1eda2f1be35179a8ea463",
+        "observed": "86af163a1e427c83ed0010fbca69ba6a9f81b7a97ae1eda2f1be35179a8ea463",
+        "match": true
+      },
+      "validator": {
+        "expected": "cf6d6c5b26d74de9f475ba6d4d7de3ddef9b95d222c08efbbc202a2164d38672",
+        "observed": "cf6d6c5b26d74de9f475ba6d4d7de3ddef9b95d222c08efbbc202a2164d38672",
+        "match": true
+      },
+      "planner_prompt": {
+        "expected": "fcffbc11cf6afbe84731c15854d37e85d929b966318acc45567f5332819d0f63",
+        "observed": "fcffbc11cf6afbe84731c15854d37e85d929b966318acc45567f5332819d0f63",
+        "match": true
+      },
+      "critic_prompt": {
+        "expected": "8b04802de10aea03d24b26633a17d68415db74db3ba82034b6b8d1cf75f2b60e",
+        "observed": "8b04802de10aea03d24b26633a17d68415db74db3ba82034b6b8d1cf75f2b60e",
+        "match": true
+      },
+      "action_registry": {
+        "expected": "185390460dd990516b89eab036b5c5da11e2d28ef3371c5e4917a4e2fd6ac899",
+        "observed": "185390460dd990516b89eab036b5c5da11e2d28ef3371c5e4917a4e2fd6ac899",
+        "match": true
+      }
+    }
+  },
+  "known_disclosures": [
+    "Within-task claim only; no cross-task replication claim.",
+    "V5 residual tetA FN risk disclosed; no retuning.",
+    "M60/D8/D12/D20/DA/known-failure are historical exclusions."
+  ],
+  "stop": "STOP2_BEFORE_CASE_SELECTION"
+}
