@@ -1,5 +1,35 @@
 # Genome Skeptic
 
+*Evidence-Grounded Agentic AI for Bacterial Genome Annotation*
+
+## Interactive research demo
+
+A Streamlit demo presents the real, locked results of the pre-registered M60 benchmark (60 public RefSeq
+assemblies; targets tet(A)/tet(B) and rpoB) and, where the bioinformatics tools are installed, runs the
+deployed pipeline live on an uploaded assembly.
+
+```bash
+pip install -r requirements-demo.txt
+streamlit run streamlit_app.py
+```
+
+- **Research Showcase (default):** every value is read from `demo/results/`, a provenance-tracked bundle built
+  from the locked M60 records by `demo/scripts/build_demo_bundle.py` (source SHA256 for each input file). No model,
+  database or external tool is needed.
+- **Live Analysis:** available only when BLAST+ and HMMER are on `PATH` (MMseqs2 and DIAMOND optional). It runs the
+  GS-Deterministic or GS-Exhaustive V4.1 arm in a time-limited subprocess on a header-sanitised copy of the input,
+  and reports whether the deployed scientific core matches the frozen M60 core. The agentic arm is offered only if
+  `GS_DEMO_AGENTIC_BASE_URL` points at an OpenAI-compatible model endpoint.
+
+Key results, stated plainly: all three Genome Skeptic arms scored 33/41 on evaluable cases (conventional baseline
+20/41; specialist tools 34/41; a constant per-target rule 34/41). The language-model agent changed no final answers
+and used 67.7% fewer follow-up analyses but ran slower. tet(A)/tet(B) sensitivity was 0/7. See the
+*Benchmarking and Validation* page for limitations, and `DEMO_DEPLOYMENT.md` for hosting.
+
+Tests: `python -m pytest tests/demo`.
+
+## Full pipeline
+
 Genome Skeptic is a local-first prototype for agentic bacterial genome assembly and annotation. Its main design rule is simple: a tool finishing successfully is not enough. Every major result is challenged before the workflow advances.
 
 The first release accepts DNA sequencing data only. The intended MVP input is bacterial Illumina FASTQ, especially paired-end reads. The pipeline runs deterministic open bioinformatics tools for measurement and a local language model only for scientific reasoning over the measured results.

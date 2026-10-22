@@ -1,0 +1,11 @@
+system,system_id,target,n_cases,n_POSITIVE,n_NEGATIVE,n_UNRESOLVED,n_distinct_predicted_labels,predicted_labels
+Conventional,conventional,tetA_tetracycline_efflux,30,1,29,0,2,NEGATIVE;POSITIVE
+Conventional,conventional,rpoB_RNAP_beta,30,0,30,0,1,NEGATIVE
+Specialist comparator,specialist,tetA_tetracycline_efflux,30,0,30,0,1,NEGATIVE
+Specialist comparator,specialist,rpoB_RNAP_beta,30,29,1,0,2,NEGATIVE;POSITIVE
+GS-Deterministic V4.1,gs_det,tetA_tetracycline_efflux,30,0,30,0,1,NEGATIVE
+GS-Deterministic V4.1,gs_det,rpoB_RNAP_beta,30,29,1,0,2,NEGATIVE;POSITIVE
+GS-Agentic V4.1,gs_agent,tetA_tetracycline_efflux,30,0,30,0,1,NEGATIVE
+GS-Agentic V4.1,gs_agent,rpoB_RNAP_beta,30,29,1,0,2,NEGATIVE;POSITIVE
+GS-Exhaustive V4.1,gs_exh,tetA_tetracycline_efflux,30,0,30,0,1,NEGATIVE
+GS-Exhaustive V4.1,gs_exh,rpoB_RNAP_beta,30,29,1,0,2,NEGATIVE;POSITIVE

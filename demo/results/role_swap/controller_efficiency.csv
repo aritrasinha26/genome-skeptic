@@ -1,0 +1,5 @@
+arm,label,followups,reduction_vs_A,reduction_vs_C,median_model_latency,median_total_runtime,cost
+A,Det controller,57,0.0,0.22972972972972974,0.0,31.5575,0.0
+B,Sol controller,39,0.3157894736842105,0.47297297297297297,10.2845,39.2215,0.374832
+C,Exhaustive,74,-0.2982456140350877,0.0,0.0,27.304,0.0
+F,Jev controller,39,0.3157894736842105,0.47297297297297297,2.2165,21.4635,0.0033142

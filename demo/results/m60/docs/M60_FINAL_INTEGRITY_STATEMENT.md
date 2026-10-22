@@ -1,0 +1,22 @@
+# M60 final integrity statement
+
+- System frozen before cohort selection: GENOME_SKEPTIC_V4_1_MANUSCRIPT
+- Git commit: `8f66868850a98494778966bd729b88a6fc2952eb`
+- Scientific-core hash: `22ff045c65fa56fa3b00edf159902d85971c04eddd266fbb08893385044a9bb0`
+- System manifest SHA256: `97a94dfefcecc855ebbba2010fd3f02f79ae84fbc61ca0f173e718d6bffd863b`
+- Protocol v1.1 SHA256: `73aebeba60e7c03390920c866541a977f86776a2711f804e0b960c08a3aa8660`
+- Cohort frozen before prediction: M60 cohort SHA256 `014950b8af086c1148b68292276cdcc50f22844e14e1836381072dd936d51655`
+- Predictions locked before truth: prediction lock SHA256 `5317b33fa554f81855fa6c68854ad732c5f5127fc0ad41f224fede9159a90791`
+- Truth assigned without prediction access (Phase 3 lock unaltered)
+- Human review occurred before unblinding (Phase 3B)
+- Final truth SHA256: `a64dea4fd429ede5ea543404fba71e49280495efbbf6d68dc6de324eec35a4a9`
+- Final truth lock manifest SHA256: `787f7a96224c2c61b21a8747bc9e9e46025b126e4b9d0f5b9dd38b4b89f54eb4`
+- No prediction regenerated
+- No case replaced
+- No post-selection tuning
+- Uncertain cases excluded from primary accuracy according to frozen rules (19 TRUTH_UNCERTAIN; 41 evaluable)
+- D20 untouched
+- V4.1 not patched
+- V4.2 not created from these results
+- FINAL_UNBLIND_INTEGRITY_VERIFIED = YES
+- Verified UTC: 2026-09-21T10:17:58.831848+00:00

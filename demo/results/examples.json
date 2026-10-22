@@ -1,0 +1,34 @@
+[
+ {
+  "id": "strong_evidence",
+  "title": "Strong evidence: divergent but full-length rpoB orthologue",
+  "position": 2,
+  "category": "Supported annotation",
+  "why": "Independent truth is POSITIVE and all three Genome Skeptic arms detect rpoB. The conventional nucleotide-identity baseline misses it because a fixed 80% identity / 80% coverage rule does not fit a divergent orthologue. The family HMM and multi-member protein search carry the call.",
+  "case_id": "M60_rpoB_RNAP_beta_GCF_052786815.1"
+ },
+ {
+  "id": "uncertain_truth",
+  "title": "Unresolvable truth: rpoB in a reduced Wolbachia genome",
+  "position": 3,
+  "category": "Uncertain / not evaluable",
+  "why": "Independent adjudicators could not resolve truth (best reference similarity 0.475), so the case is excluded from accuracy. Genome Skeptic and the RefSeq/PGAP comparator disagree. The case shows why 19 of 60 M60 cases were reported separately rather than forced into a correct/incorrect label.",
+  "case_id": "M60_rpoB_RNAP_beta_GCF_965253375.1"
+ },
+ {
+  "id": "validator_rejects_hit",
+  "title": "Verification overrides a homology hit, and is wrong",
+  "position": 13,
+  "category": "Rejected annotation (error)",
+  "why": "The conventional baseline reported tetA (identity and coverage at least 80%). All three Genome Skeptic arms returned 'not detected'; independent truth is POSITIVE. Post-hoc analysis attributed the shared tetA errors to frozen family-state rules (refine_weak_family_classification relabels the competitive result as ambiguous_family, which the validator treats as a hard negative). A one-iteration counterfactual patch recovered this case; the repaired adjudicator was frozen as V5 after M60. It is shown because skepticism can also cause errors.",
+  "case_id": "M60_tetA_tetracycline_efflux_GCF_056269845.1"
+ },
+ {
+  "id": "critic_second_action",
+  "title": "Critic challenges the planner and requests a second test",
+  "position": 27,
+  "category": "Critic intervention",
+  "why": "This is the only M60 case in which the critic did not accept the planner's plan and triggered a second registered measurement. The final endpoint still came from the deterministic validator and matched GS-Deterministic, as in all 60 cases.",
+  "case_id": "M60_tetA_tetracycline_efflux_GCF_051052775.1"
+ }
+]

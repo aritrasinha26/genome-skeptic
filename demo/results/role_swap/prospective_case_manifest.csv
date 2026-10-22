@@ -1,0 +1,21 @@
+case_id,accession,species,genus,organism,assembly_level,seq_rel_date,assembly_path,assembly_sha256,target
+RS01,GCF_047713185.1,Escherichia coli,Escherichia,Escherichia coli,Scaffold,2025-02-12,<local-path>
+RS02,GCF_054185995.1,Citrobacter braakii,Citrobacter,Citrobacter braakii,Contig,2025-12-24,<local-path>
+RS03,GCF_055768945.1,Actinobacillus pleuropneumoniae,Actinobacillus,Actinobacillus pleuropneumoniae serovar 15,Scaffold,2026-03-10,<local-path>
+RS04,GCF_058245975.1,Providencia manganoxydans,Providencia,Providencia manganoxydans,Contig,2026-06-16,<local-path>
+RS05,GCF_047914675.1,Klebsiella pneumoniae,Klebsiella,Klebsiella pneumoniae,Contig,2025-02-19,<local-path>
+RS06,GCF_053605175.1,Streptomyces sp.,Streptomyces,Streptomyces sp. NPDC003952,Scaffold,2025-11-23,<local-path>
+RS07,GCF_050030575.1,Enterobacter cloacae,Enterobacter,Enterobacter cloacae complex sp. 400B2,Contig,2025-04-30,<local-path>
+RS08,GCF_056665275.1,Acinetobacter baumannii,Acinetobacter,Acinetobacter baumannii,Contig,2026-04-09,<local-path>
+RS09,GCF_058093475.1,Listeria monocytogenes,Listeria,Listeria monocytogenes,Complete Genome,2026-06-08,<local-path>
+RS10,GCF_046552895.1,Salmonella sp.,Salmonella,Salmonella sp. s59108,Contig,2025-01-08,<local-path>
+RS11,GCF_053903025.1,Escherichia coli,Escherichia,Escherichia coli,Complete Genome,2025-11-19,<local-path>
+RS12,GCF_057669585.1,Leifsonia sp.,Leifsonia,Leifsonia sp. Y862,Contig,2026-05-20,<local-path>
+RS13,GCF_047313245.1,Citrobacter braakii,Citrobacter,Citrobacter braakii,Contig,2025-01-29,<local-path>
+RS14,GCF_057572365.1,Klebsiella pneumoniae,Klebsiella,Klebsiella pneumoniae,Scaffold,2026-05-15,<local-path>
+RS15,GCF_059400085.1,Brucella melitensis,Brucella,Brucella melitensis,Contig,2026-07-14,<local-path>
+RS16,GCF_051069775.1,Ralstonia solanacearum,Ralstonia,Ralstonia solanacearum,Contig,2025-06-25,<local-path>
+RS17,GCF_057808735.1,Chromobacterium sp.,Chromobacterium,Chromobacterium sp. FG89,Contig,2026-06-01,<local-path>
+RS18,GCF_056521545.1,Enterobacter cloacae,Enterobacter,Enterobacter cloacae,Contig,2026-04-01,<local-path>
+RS19,GCF_053233725.1,Clostridioides difficile,Clostridioides,Clostridioides difficile,Contig,2025-10-28,<local-path>
+RS20,GCF_052065715.1,Ligilactobacillus salivarius,Ligilactobacillus,Ligilactobacillus salivarius,Contig,2025-08-16,<local-path>

@@ -1,0 +1,7 @@
+kind,baseline,gs_arm,n,correct,accuracy,accuracy_wilson_low,accuracy_wilson_high,accuracy_wilson,correct_over_n,b,c,net,mcnemar_p,mcnemar_note
+baseline,CONSTANT_PER_TARGET,,41,34,0.8292682926829268,0.6873738759959581,0.91474748022405,0.687–0.915,34/41,,,,,
+baseline,CONSTANT_ALL_NEGATIVE,,41,19,0.4634146341463415,0.32056233976336046,0.6125352873233052,0.321–0.613,19/41,,,,,
+baseline,CONSTANT_ALL_POSITIVE,,41,22,0.5365853658536586,0.38746471267669474,0.6794376602366394,0.387–0.679,22/41,,,,,
+mcnemar_gs_vs_CONSTANT_PER_TARGET,CONSTANT_PER_TARGET,gs_det,41,,,,,,,1,0,-1,1,exact two-sided McNemar / binomial P=1 on B+C=1
+mcnemar_gs_vs_CONSTANT_PER_TARGET,CONSTANT_PER_TARGET,gs_agent,41,,,,,,,1,0,-1,1,exact two-sided McNemar / binomial P=1 on B+C=1
+mcnemar_gs_vs_CONSTANT_PER_TARGET,CONSTANT_PER_TARGET,gs_exh,41,,,,,,,1,0,-1,1,exact two-sided McNemar / binomial P=1 on B+C=1

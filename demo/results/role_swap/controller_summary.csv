@@ -1,0 +1,6 @@
+arm,controller,judge,correct,sensitivity,specificity,balanced_accuracy,mcc,false_positive,false_negative,unresolved,followups,median_model_latency,median_total_runtime,cost
+A,deterministic,deterministic,18,0.8,1.0,0.9,0.816496580927726,0,2,0,57,0.0,31.5575,0.0
+B,sol,deterministic,18,0.8,1.0,0.9,0.816496580927726,0,2,0,39,10.2845,39.2215,0.374832
+C,exhaustive,deterministic,18,0.8,1.0,0.9,0.816496580927726,0,2,0,74,0.0,27.304,0.0
+D,sol,sol,11,0.8,0.3,0.55,0.11547005383792516,7,2,9,0,7.4205,7.4205,0.525328
+F,jev,deterministic,18,0.8,1.0,0.9,0.816496580927726,0,2,0,39,2.2165,21.4635,0.0033142

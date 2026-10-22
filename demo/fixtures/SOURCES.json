@@ -1,0 +1,25 @@
+{
+  "description": "Example assemblies for the Live Analysis page. Each file is the exact header-sanitised FASTA (headers replaced by contig_N) that the frozen M60 systems processed, gzip-compressed. Source data: NCBI RefSeq (public).",
+  "examples": [
+    {
+      "accession": "GCF_965183925.1",
+      "organism": "Candidatus Methylopumilus universalis",
+      "m60_position": 58,
+      "target": "rpoB_RNAP_beta",
+      "independent_truth": "POSITIVE",
+      "file": "GCF_965183925.1.fna.gz",
+      "uncompressed_sha256": "7bd9be073a6a11c8d8856faf2ea478b9965521925269e43cf240bb8cec6660fe",
+      "uncompressed_bytes": 1304251
+    },
+    {
+      "accession": "GCF_051052775.1",
+      "organism": "Mycoplasma leachii",
+      "m60_position": 27,
+      "target": "tetA_tetracycline_efflux",
+      "independent_truth": "NEGATIVE",
+      "file": "GCF_051052775.1.fna.gz",
+      "uncompressed_sha256": "5e560d8a35761e568a707ee35ab88acde9436922eeb62dba1f717c72b0a445b5",
+      "uncompressed_bytes": 1031932
+    }
+  ]
+}
