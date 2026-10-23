@@ -24,17 +24,18 @@ python -m pytest tests/demo        # 49 tests
 On Windows the showcase works natively; live mode needs the tools, e.g. inside WSL with the
 `genome-skeptic-prod` environment on `PATH`.
 
-## Streamlit Community Cloud (planned, not verified)
+## Streamlit Community Cloud
 
-1. Push the `demo/streamlit-showcase` branch (requires the repository owner's approval) and confirm the repository
-   is meant to be public.
-2. Create an app: main file `streamlit_app.py`, Python 3.11 or 3.12.
+1. Deploy from branch `demo/streamlit-showcase`, main file `streamlit_app.py`, Python 3.11.
+2. On this branch, `environment.yml` is a **slim demo env** (Streamlit + pandas + …). Cloud prefers
+   `environment.yml` over `requirements-demo.txt`; the production bioinformatics stack must not live in
+   that file on this branch or Cloud will install SPAdes/QUAST and then fail to install Streamlit.
 3. `packages.txt` installs `ncbi-blast+` and `hmmer` via apt. MMseqs2 and DIAMOND are not installed by it; the
-   pipeline records the follow-up tests that need them as unavailable. **Unverified:** apt package availability,
-   memory headroom, and runtime on the hosted image.
-4. To publish the showcase only, set the secret/env `GS_DEMO_DISABLE_LIVE=1`.
+   pipeline records the follow-up tests that need them as unavailable.
+4. To publish the showcase only, set the secret `GS_DEMO_DISABLE_LIVE = "1"` (TOML) in Advanced settings.
 5. Do not set `GS_DEMO_AGENTIC_BASE_URL` on a public deployment unless you accept that derived measurement
    summaries from user uploads are sent to that endpoint.
+6. After a dependency fix, use **Reboot app** or wait for Cloud to rebuild from the new commit.
 
 Verify after deployment: the Overview loads; Annotation Results shows 60 cases; the Live Analysis page either
 reports the tool versions or states that live mode is unavailable; an example assembly run reproduces the locked

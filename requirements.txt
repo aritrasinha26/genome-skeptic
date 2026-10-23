@@ -1,0 +1,9 @@
+# Used by Streamlit Community Cloud when environment.yml is absent.
+# On demo/streamlit-showcase, environment.yml is the slim demo env; this file matches it.
+streamlit>=1.50,<2
+pandas>=2.2
+altair>=5
+pydantic>=2.8
+typer>=0.12
+PyYAML>=6
+requests>=2.32
