@@ -29,8 +29,14 @@ def _run(page: str | None = None) -> AppTest:
     return at
 
 
-def test_app_starts_on_worked_example():
+def test_app_starts_on_overview():
     at = _run()
+    assert not at.exception
+    assert at.title[0].value == "Genome Skeptic"
+
+
+def test_worked_example_shows_prerecorded_rpob():
+    at = _run("demo/app/pages/worked_example.py")
     assert not at.exception
     assert at.title[0].value == "Worked example"
     text = " ".join(i.value for i in at.info) + " " + " ".join(m.value for m in at.markdown)
