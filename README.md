@@ -1,5 +1,11 @@
 # Genome Skeptic
 
+**[Launch Interactive Demo](https://genome-skeptic.streamlit.app)**
+
+Open a real **rpoB** case and inspect the sequence evidence, the critic's assessment, and the final annotation decision. The public app shows **prerecorded** results from the frozen benchmark. It does not run Qwen on the server.
+
+Streamlit source: [`streamlit_app.py`](https://github.com/aritrasinha26/genome-skeptic/blob/demo/streamlit-showcase/streamlit_app.py) on branch `demo/streamlit-showcase`.
+
 Genome Skeptic is a local-first prototype for agentic bacterial genome assembly and annotation. Its main design rule is simple: a tool finishing successfully is not enough. Every major result is challenged before the workflow advances.
 
 The first release accepts DNA sequencing data only. The intended MVP input is bacterial Illumina FASTQ, especially paired-end reads. The pipeline runs deterministic open bioinformatics tools for measurement and a local language model only for scientific reasoning over the measured results.
