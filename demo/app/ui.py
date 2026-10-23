@@ -12,6 +12,9 @@ from demo.app.services import export as ex
 from demo.app.services import trace_model as tm
 
 REPO_URL = "https://github.com/aritrasinha26/genome-skeptic"
+DEMO_BRANCH = "demo/streamlit-showcase"
+DEMO_URL = "https://genome-skeptic.streamlit.app"
+APP_SOURCE_URL = f"{REPO_URL}/blob/{DEMO_BRANCH}/streamlit_app.py"
 BENCHMARK_URL = f"{REPO_URL}/tree/main/manuscript_benchmark"
 
 KIND_STYLE = {
@@ -74,9 +77,9 @@ def guard_bundle() -> bool:
 
 def precomputed_banner() -> None:
     st.info(
-        "**Research Showcase — precomputed results from the Genome Skeptic pipeline.** "
-        "Every value on this page is copied from a locked record of the frozen M60 benchmark run "
-        "(GENOME_SKEPTIC_V4_1_MANUSCRIPT, commit 8f66868). Nothing is recomputed in your browser session.",
+        "**Prerecorded results — Qwen is not running on this server.** "
+        "These are precomputed results copied from the frozen M60 benchmark "
+        "(model qwen3:4b, commit 8f66868). Planner and critic text are locked model output, not a live call.",
         icon=":material/lock:",
     )
 

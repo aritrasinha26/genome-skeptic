@@ -2,6 +2,12 @@
 
 *Evidence-Grounded Agentic AI for Bacterial Genome Annotation*
 
+**[Launch Interactive Demo](https://genome-skeptic.streamlit.app)**
+
+Open a real **rpoB** case: the query and candidate sequences, the BLAST+/HMMER measurements, the critic's assessment, and the final annotation decision. The public app shows **prerecorded** results from the frozen benchmark. It does not run Qwen on the server.
+
+Streamlit source: [`streamlit_app.py`](https://github.com/aritrasinha26/genome-skeptic/blob/demo/streamlit-showcase/streamlit_app.py) (branch `demo/streamlit-showcase`).
+
 ## Interactive research demo
 
 A Streamlit demo presents the real, locked results of the pre-registered M60 benchmark (60 public RefSeq

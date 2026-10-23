@@ -4,6 +4,11 @@ from demo.app import ui
 
 st.title("Genome Skeptic")
 st.markdown("*Evidence-Grounded Agentic AI for Bacterial Genome Annotation*")
+st.page_link(
+    "demo/app/pages/worked_example.py",
+    label="Open a worked rpoB example (sequence, critic, decision)",
+    icon=":material/biotech:",
+)
 
 st.markdown(
     """

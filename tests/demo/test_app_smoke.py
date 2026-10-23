@@ -10,6 +10,7 @@ from demo.app.services import live_runner as lr  # noqa: E402
 
 APP = str(Path(__file__).resolve().parents[2] / "streamlit_app.py")
 PAGES = [
+    "demo/app/pages/worked_example.py",
     "demo/app/pages/overview.py",
     "demo/app/pages/case_explorer.py",
     "demo/app/pages/engine.py",
@@ -28,10 +29,14 @@ def _run(page: str | None = None) -> AppTest:
     return at
 
 
-def test_app_starts_on_overview():
+def test_app_starts_on_worked_example():
     at = _run()
     assert not at.exception
-    assert at.title[0].value == "Genome Skeptic"
+    assert at.title[0].value == "Worked example"
+    text = " ".join(i.value for i in at.info) + " " + " ".join(m.value for m in at.markdown)
+    assert "Prerecorded" in text
+    assert "Qwen is not running" in text
+    assert "rpoB" in text or "RNA polymerase" in text
 
 
 @pytest.mark.parametrize("page", PAGES)
@@ -51,7 +56,8 @@ def test_engine_page_follows_selected_case_and_arm():
 
 
 def test_showcase_pages_are_labelled_precomputed():
-    for page in PAGES[1:5]:
+    labelled = [p for p in PAGES if p.endswith(("worked_example.py", "case_explorer.py", "engine.py", "evidence.py", "benchmarks.py"))]
+    for page in labelled:
         at = _run(page)
         assert any("precomputed results" in i.value for i in at.info), page
 
